@@ -55,16 +55,14 @@ function scoreNameCandidate(name) {
   if (/^(VS|LV|WWW)$/i.test(name)) score -= 3;
   if (/[\p{sc=Cyrillic}]/u.test(name) && /[A-Za-z]{2}/.test(name)) score += 6;
   if (/\\/.test(name)) score += 8;
-  if (/MAG/i.test(name)) score += 4;
   return score;
 }
 
-/** Prefer guild-style tags; penalise HUD noise like embedded level digits. */
+/** Penalise HUD-like digit islands; reward mixed-script lines and tag separators. */
 export function arenaNameLineQuality(line) {
   const s = String(line).trim();
   if (!s) return -1000;
   let q = 0;
-  if (/MAG/i.test(s)) q += 40;
   if (/\\|\//.test(s)) q += 35;
   if (/[\p{sc=Cyrillic}]/u.test(s) && /[A-Za-z]{2,}/.test(s)) q += 25;
   if (/\s\d{2,3}\s/.test(s)) q -= 35;
@@ -72,7 +70,7 @@ export function arenaNameLineQuality(line) {
   return q;
 }
 
-/** Tighten OCR spacing around guild separators (`\`, `|`). */
+/** Tighten OCR spacing around `\` and `|` inside a line. */
 export function normalizeOpponentDisplayName(name) {
   return cleanupNamePhrase(
     String(name)
@@ -82,8 +80,8 @@ export function normalizeOpponentDisplayName(name) {
 }
 
 /**
- * In folders named `test`, merge name OCR from small sibling PNG crops (e.g. encoded
- * `Babka%5CMAG.png`) when they score higher than the full screenshot.
+ * In folders named `test`, merge name OCR from small sibling PNG crops (e.g. %-encoded
+ * reference filenames) when they score higher than the full screenshot.
  */
 export async function refineEnemyNameWithTestFolderCrops(
   folderAbsPath,
@@ -211,7 +209,6 @@ function extractBestPhraseFromRawText(rawText) {
     if (!words.some((w) => /[\p{L}]/u.test(w))) continue;
     let score = line.length;
     if (/[\p{sc=Cyrillic}]/u.test(line)) score += 20;
-    if (/SP$/i.test(line)) score += 5;
     candidates.push({ line, score });
   }
   if (candidates.length === 0) return "";
@@ -313,8 +310,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameTextLineResThreshold = await worker.recognize(nameTextLineBufThreshold);
 
   await worker.setParameters({
-    tessedit_char_whitelist:
-      "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя -",
+    tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "7",
   });
   const nameTextResCyrRaw = await worker.recognize(nameTextBufRaw);
@@ -322,8 +318,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameTextResCyrThreshold = await worker.recognize(nameTextBufThreshold);
 
   await workerRus.setParameters({
-    tessedit_char_whitelist:
-      "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэяю -",
+    tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "7",
   });
   const nameTextRusRaw = await workerRus.recognize(nameTextBufRaw);
@@ -382,12 +377,23 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   ].filter((c) => /[\p{L}].*[\p{L}]/u.test(c));
 
   if (textAreaCandidates.length > 0) {
-    const cyrLineCandidates = textAreaCandidates.filter(
+    const uniq = [...new Set(textAreaCandidates)];
+    const mixedScriptOrSep = uniq.filter(
+      (c) =>
+        /\\|\//.test(c) ||
+        (/[\p{sc=Cyrillic}]/u.test(c) && /[A-Za-z]{2,}/.test(c)),
+    );
+    const cyrLineCandidates = uniq.filter(
       (c) =>
         /[\p{sc=Cyrillic}]/u.test(c) &&
         c.split(/\s+/).filter(Boolean).length >= 2,
     );
-    const pool = cyrLineCandidates.length > 0 ? cyrLineCandidates : textAreaCandidates;
+    const pool =
+      mixedScriptOrSep.length > 0
+        ? mixedScriptOrSep
+        : cyrLineCandidates.length > 0
+          ? cyrLineCandidates
+          : uniq;
     pool.sort((a, b) => {
       const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
       if (dq !== 0) return dq;
