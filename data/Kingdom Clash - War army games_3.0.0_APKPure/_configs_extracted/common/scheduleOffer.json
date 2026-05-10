@@ -1,0 +1,182 @@
+{
+    "offerAccurateMeridaScheduler": {
+        "key": "offerAccurateMeridaScheduler"
+    },
+    "offerLegendaryTroopScheduler": {
+        "key": "offerLegendaryTroopScheduler"
+    },
+    "offerFreeVipScheduler": {
+        "key": "offerFreeVipScheduler"
+    },
+    "offerFreeMidasScheduler": {
+        "key": "offerFreeMidasScheduler"
+    },
+    "offerFreeHorsrhoeScheduler": {
+        "key": "offerFreeHorsrhoeScheduler"
+    },
+    "offerFreeBadgesX2Scheduler": {
+        "key": "offerFreeBadgesX2Scheduler"
+    },
+    "offerFreeGemScheduler": {
+        "key": "offerFreeGemScheduler"
+    },
+    "offerFreeGoldScheduler": {
+        "key": "offerFreeGoldScheduler"
+    },
+    "offerFreeChestScheduler": {
+        "key": "offerFreeChestScheduler"
+    },
+    "offerIronGuardScheduler": {
+        "key": "offerIronGuardScheduler"
+    },
+    "offerButcherScheduler": {
+        "key": "offerButcherScheduler"
+    },
+    "offerAssassinScheduler": {
+        "key": "offerAssassinScheduler"
+    },
+    "offerUndeadMageScheduler": {
+        "key": "offerUndeadMageScheduler"
+    },
+    "offerBomberScheduler": {
+        "key": "offerBomberScheduler"
+    },
+    "offerImpScheduler": {
+        "key": "offerImpScheduler"
+    },
+    "offerNecromancerScheduler": {
+        "key": "offerNecromancerScheduler"
+    },
+    "offerPaladinScheduler": {
+        "key": "offerPaladinScheduler"
+    },
+    "offerAlchemistScheduler": {
+        "key": "offerAlchemistScheduler"
+    },
+    "offerLancerScheduler": {
+        "key": "offerLancerScheduler"
+    },
+    "offerHunterScheduler": {
+        "key": "offerHunterScheduler"
+    },
+    "offerDarkKnightScheduler": {
+        "key": "offerDarkKnightScheduler"
+    },
+    "offerGeneralScheduler": {
+        "key": "offerGeneralScheduler"
+    },
+    "offerSwordmasterHeroScheduler": {
+        "key": "offerSwordmasterHeroScheduler"
+    },
+    "offerBaronBenuaScheduler": {
+        "key": "offerBaronBenuaScheduler"
+    },
+    "offerPvpChestScheduler": {
+        "key": "offerPvpChestScheduler"
+    },
+    "goldAccurateMeridaScheduler": {
+        "key": "goldAccurateMeridaScheduler"
+    },
+    "offerClericPvpScheduler": {
+        "key": "offerClericPvpScheduler"
+    },
+    "offerAccurateMeridaPvpScheduler": {
+        "key": "offerAccurateMeridaPvpScheduler"
+    },
+    "silverAccurateMeridaScheduler": {
+        "key": "silverAccurateMeridaScheduler"
+    },
+    "offerDailyScheduler": {
+        "key": "offerDailyScheduler"
+    },
+    "offerDailyGemsScheduler": {
+        "key": "offerDailyGemsScheduler"
+    },
+    "fakeOfferDailyGemsScheduler": {
+        "key": "fakeOfferDailyGemsScheduler"
+    },
+    "offerLobbyTroopsScheduler": {
+        "key": "offerLobbyTroopsScheduler"
+    },
+    "offerLobbyGiftScheduler": {
+        "key": "offerLobbyGiftScheduler"
+    },
+    "offerDailyGemsSaleScheduler": {
+        "key": "offerDailyGemsSaleScheduler"
+    },
+    "offerClanShopScheduler": {
+        "key": "offerClanShopScheduler"
+    },
+    "offerClanShopHeroScheduler_1": {
+        "key": "offerClanShopHeroScheduler_1"
+    },
+    "offerClanShopHeroScheduler_2": {
+        "key": "offerClanShopHeroScheduler_2"
+    },
+    "offerClanShopHeroScheduler_3": {
+        "key": "offerClanShopHeroScheduler_3"
+    },
+    "offerClanShopHeroScheduler_4": {
+        "key": "offerClanShopHeroScheduler_4"
+    },
+    "offerClanShopHeroScheduler_5": {
+        "key": "offerClanShopHeroScheduler_5"
+    },
+    "offerClanShopHeroScheduler_6": {
+        "key": "offerClanShopHeroScheduler_6"
+    },
+    "offerClanShopHeroScheduler_7": {
+        "key": "offerClanShopHeroScheduler_7"
+    },
+    "offerDailyGoldSaleScheduler": {
+        "key": "offerDailyGoldSaleScheduler"
+    },
+    "offerCasinoShopScheduler": {
+        "key": "offerCasinoShopScheduler"
+    },
+    "offerPvpHeroChestScheduler": {
+        "key": "offerPvpHeroChestScheduler"
+    },
+    "offerPvpTroopChestScheduler": {
+        "key": "offerPvpTroopChestScheduler"
+    },
+    "offerPvpOfferChestScheduler": {
+        "key": "offerPvpOfferChestScheduler"
+    },
+    "offerCasinoReflectWeaponShopScheduler": {
+        "key": "offerCasinoReflectWeaponShopScheduler"
+    },
+    "offerCasinoAoeWeaponShopScheduler": {
+        "key": "offerCasinoAoeWeaponShopScheduler"
+    },
+    "offerCasinoReflectArmorShopScheduler": {
+        "key": "offerCasinoReflectArmorShopScheduler"
+    },
+    "offerCasinoAoeArmorShopScheduler": {
+        "key": "offerCasinoAoeArmorShopScheduler"
+    },
+    "offerCasinoBpScheduler": {
+        "key": "offerCasinoBpScheduler"
+    },
+    "offerCasinoReflectArmorBpScheduler": {
+        "key": "offerCasinoReflectArmorBpScheduler"
+    },
+    "offerCasinoAoeArmorBpScheduler": {
+        "key": "offerCasinoAoeArmorBpScheduler"
+    },
+    "offerCasinoAoeWeaponBpScheduler": {
+        "key": "offerCasinoAoeWeaponBpScheduler"
+    },
+    "offerCasinoReflectWeaponBpScheduler": {
+        "key": "offerCasinoReflectWeaponBpScheduler"
+    },
+    "offerExpeditionShopScheduler": {
+        "key": "offerExpeditionShopScheduler"
+    },
+    "offerTowerAxeThrowersShopScheduler": {
+        "key": "offerTowerAxeThrowersShopScheduler"
+    },
+    "offerTowerAxeThrowersBpScheduler": {
+        "key": "offerTowerAxeThrowersBpScheduler"
+    }
+}

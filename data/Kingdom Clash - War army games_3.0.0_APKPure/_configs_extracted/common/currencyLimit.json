@@ -1,0 +1,26 @@
+{
+    "gearShardsLimit": {
+        "key": "gearShardsLimit",
+        "currencyId": "gearShards",
+        "limit": 6000,
+        "type": "Excess"
+    },
+    "BadgesX4Limit": {
+        "key": "BadgesX4Limit",
+        "currencyId": "BadgesX4",
+        "limit": 40,
+        "type": "Clamp"
+    },
+    "AutoBattleLimit": {
+        "key": "AutoBattleLimit",
+        "currencyId": "AutoBattle",
+        "limit": 100,
+        "type": "Clamp"
+    },
+    "TalentSphereLimit": {
+        "key": "TalentSphereLimit",
+        "currencyId": "TalentSphere",
+        "limit": 150,
+        "type": "Clamp"
+    }
+}

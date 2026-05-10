@@ -1,0 +1,1766 @@
+{
+    "libraryEffectCombo1": {
+        "key": "libraryEffectCombo1",
+        "setId": "libraryEffectSet_1",
+        "abilityId": "library_attackBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffHuman"
+    },
+    "libraryEffectCombo2": {
+        "key": "libraryEffectCombo2",
+        "setId": "libraryEffectSet_2",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo3": {
+        "key": "libraryEffectCombo3",
+        "setId": "libraryEffectSet_3",
+        "abilityId": "library_attackBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffHuman"
+    },
+    "libraryEffectCombo3_1": {
+        "key": "libraryEffectCombo3_1",
+        "setId": "libraryEffectSet_3",
+        "abilityId": "library_hpDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo4": {
+        "key": "libraryEffectCombo4",
+        "setId": "libraryEffectSet_4",
+        "abilityId": "library_hpBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffHuman"
+    },
+    "libraryEffectCombo5": {
+        "key": "libraryEffectCombo5",
+        "setId": "libraryEffectSet_5",
+        "abilityId": "library_hpBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffHuman"
+    },
+    "libraryEffectCombo5_1": {
+        "key": "libraryEffectCombo5_1",
+        "setId": "libraryEffectSet_5",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo6": {
+        "key": "libraryEffectCombo6",
+        "setId": "libraryEffectSet_6",
+        "abilityId": "library_meleeBuff_1",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo7": {
+        "key": "libraryEffectCombo7",
+        "setId": "libraryEffectSet_7",
+        "abilityId": "library_meleeDebuff_1",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo8": {
+        "key": "libraryEffectCombo8",
+        "setId": "libraryEffectSet_8",
+        "abilityId": "library_rangeBuff_1",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo8_1": {
+        "key": "libraryEffectCombo8_1",
+        "setId": "libraryEffectSet_8",
+        "abilityId": "library_hpDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo9": {
+        "key": "libraryEffectCombo9",
+        "setId": "libraryEffectSet_9",
+        "abilityId": "library_rangeBuff_1",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo10": {
+        "key": "libraryEffectCombo10",
+        "setId": "libraryEffectSet_10",
+        "abilityId": "library_hpBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffHuman"
+    },
+    "libraryEffectCombo10_1": {
+        "key": "libraryEffectCombo10_1",
+        "setId": "libraryEffectSet_10",
+        "abilityId": "library_rangeDebuff_1",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectCombo11": {
+        "key": "libraryEffectCombo11",
+        "setId": "libraryEffectSet_11",
+        "abilityId": "library_meleeBuff_1",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo11_1": {
+        "key": "libraryEffectCombo11_1",
+        "setId": "libraryEffectSet_11",
+        "abilityId": "library_hpDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo11_2": {
+        "key": "libraryEffectCombo11_2",
+        "setId": "libraryEffectSet_11",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo12": {
+        "key": "libraryEffectCombo12",
+        "setId": "libraryEffectSet_12",
+        "abilityId": "library_rangeBuff_1",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo12_1": {
+        "key": "libraryEffectCombo12_1",
+        "setId": "libraryEffectSet_12",
+        "abilityId": "library_healDebuff_1",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo12_2": {
+        "key": "libraryEffectCombo12_2",
+        "setId": "libraryEffectSet_12",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo13": {
+        "key": "libraryEffectCombo13",
+        "setId": "libraryEffectSet_13",
+        "abilityId": "library_aoeBuff_1",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectCombo13_1": {
+        "key": "libraryEffectCombo13_1",
+        "setId": "libraryEffectSet_13",
+        "abilityId": "library_hpDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo13_2": {
+        "key": "libraryEffectCombo13_2",
+        "setId": "libraryEffectSet_13",
+        "abilityId": "library_meleeDebuff_1",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo14": {
+        "key": "libraryEffectCombo14",
+        "setId": "libraryEffectSet_14",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo15": {
+        "key": "libraryEffectCombo15",
+        "setId": "libraryEffectSet_15",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo16": {
+        "key": "libraryEffectCombo16",
+        "setId": "libraryEffectSet_16",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo16_1": {
+        "key": "libraryEffectCombo16_1",
+        "setId": "libraryEffectSet_16",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo16_2": {
+        "key": "libraryEffectCombo16_2",
+        "setId": "libraryEffectSet_16",
+        "abilityId": "library_healBuff_2",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectCombo17": {
+        "key": "libraryEffectCombo17",
+        "setId": "libraryEffectSet_17",
+        "abilityId": "library_hpBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectCombo17_1": {
+        "key": "libraryEffectCombo17_1",
+        "setId": "libraryEffectSet_17",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo18": {
+        "key": "libraryEffectCombo18",
+        "setId": "libraryEffectSet_18",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo18_1": {
+        "key": "libraryEffectCombo18_1",
+        "setId": "libraryEffectSet_18",
+        "abilityId": "library_meleeDebuff_2",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo18_2": {
+        "key": "libraryEffectCombo18_2",
+        "setId": "libraryEffectSet_18",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo19": {
+        "key": "libraryEffectCombo19",
+        "setId": "libraryEffectSet_19",
+        "abilityId": "library_rangeBuff_2",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo20": {
+        "key": "libraryEffectCombo20",
+        "setId": "libraryEffectSet_20",
+        "abilityId": "library_rangeDebuff_2",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectCombo21": {
+        "key": "libraryEffectCombo21",
+        "setId": "libraryEffectSet_21",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo21_1": {
+        "key": "libraryEffectCombo21_1",
+        "setId": "libraryEffectSet_21",
+        "abilityId": "library_rangeDebuff_2",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectCombo21_2": {
+        "key": "libraryEffectCombo21_2",
+        "setId": "libraryEffectSet_21",
+        "abilityId": "library_healDebuff_2",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo22": {
+        "key": "libraryEffectCombo22",
+        "setId": "libraryEffectSet_22",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo22_1": {
+        "key": "libraryEffectCombo22_1",
+        "setId": "libraryEffectSet_22",
+        "abilityId": "library_aoeDebuff_2",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo23": {
+        "key": "libraryEffectCombo23",
+        "setId": "libraryEffectSet_23",
+        "abilityId": "library_hpBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectCombo23_1": {
+        "key": "libraryEffectCombo23_1",
+        "setId": "libraryEffectSet_23",
+        "abilityId": "library_aoeDebuff_2",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo23_2": {
+        "key": "libraryEffectCombo23_2",
+        "setId": "libraryEffectSet_23",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo24": {
+        "key": "libraryEffectCombo24",
+        "setId": "libraryEffectSet_24",
+        "abilityId": "library_attackBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffMage"
+    },
+    "libraryEffectCombo24_1": {
+        "key": "libraryEffectCombo24_1",
+        "setId": "libraryEffectSet_24",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo24_2": {
+        "key": "libraryEffectCombo24_2",
+        "setId": "libraryEffectSet_24",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo25": {
+        "key": "libraryEffectCombo25",
+        "setId": "libraryEffectSet_25",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo26": {
+        "key": "libraryEffectCombo26",
+        "setId": "libraryEffectSet_26",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo27": {
+        "key": "libraryEffectCombo27",
+        "setId": "libraryEffectSet_27",
+        "abilityId": "library_attackDebuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffMage"
+    },
+    "libraryEffectCombo28": {
+        "key": "libraryEffectCombo28",
+        "setId": "libraryEffectSet_28",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo29": {
+        "key": "libraryEffectCombo29",
+        "setId": "libraryEffectSet_29",
+        "abilityId": "library_attackDebuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffMage"
+    },
+    "libraryEffectCombo30": {
+        "key": "libraryEffectCombo30",
+        "setId": "libraryEffectSet_30",
+        "abilityId": "library_attackDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo31": {
+        "key": "libraryEffectCombo31",
+        "setId": "libraryEffectSet_31",
+        "abilityId": "library_hpDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo32": {
+        "key": "libraryEffectCombo32",
+        "setId": "libraryEffectSet_32",
+        "abilityId": "library_hpDebuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffMage"
+    },
+    "libraryEffectCombo33": {
+        "key": "libraryEffectCombo33",
+        "setId": "libraryEffectSet_33",
+        "abilityId": "library_hpDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffUndead"
+    },
+    "libraryEffectCombo34": {
+        "key": "libraryEffectCombo34",
+        "setId": "libraryEffectSet_34",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo35": {
+        "key": "libraryEffectCombo35",
+        "setId": "libraryEffectSet_35",
+        "abilityId": "library_meleeBuff_3",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo36": {
+        "key": "libraryEffectCombo36",
+        "setId": "libraryEffectSet_36",
+        "abilityId": "library_rangeDebuff_3",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectCombo37": {
+        "key": "libraryEffectCombo37",
+        "setId": "libraryEffectSet_37",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo38": {
+        "key": "libraryEffectCombo38",
+        "setId": "libraryEffectSet_38",
+        "abilityId": "library_healDebuff_3",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo39": {
+        "key": "libraryEffectCombo39",
+        "setId": "libraryEffectSet_39",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo40": {
+        "key": "libraryEffectCombo40",
+        "setId": "libraryEffectSet_40",
+        "abilityId": "library_healBuff_3",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectCombo41": {
+        "key": "libraryEffectCombo41",
+        "setId": "libraryEffectSet_41",
+        "abilityId": "library_aoeBuff_3",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectCombo42": {
+        "key": "libraryEffectCombo42",
+        "setId": "libraryEffectSet_42",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo43": {
+        "key": "libraryEffectCombo43",
+        "setId": "libraryEffectSet_43",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo43_1": {
+        "key": "libraryEffectCombo43_1",
+        "setId": "libraryEffectSet_43",
+        "abilityId": "library_hpDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo44": {
+        "key": "libraryEffectCombo44",
+        "setId": "libraryEffectSet_44",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo44_1": {
+        "key": "libraryEffectCombo44_1",
+        "setId": "libraryEffectSet_44",
+        "abilityId": "library_hpDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo45": {
+        "key": "libraryEffectCombo45",
+        "setId": "libraryEffectSet_45",
+        "abilityId": "library_attackDebuffMage_1",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffMage"
+    },
+    "libraryEffectCombo46": {
+        "key": "libraryEffectCombo46",
+        "setId": "libraryEffectSet_46",
+        "abilityId": "library_aoeBuff_1",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectCombo47": {
+        "key": "libraryEffectCombo47",
+        "setId": "libraryEffectSet_47",
+        "abilityId": "library_attackDebuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo48": {
+        "key": "libraryEffectCombo48",
+        "setId": "libraryEffectSet_48",
+        "abilityId": "library_healDebuff_1",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo49": {
+        "key": "libraryEffectCombo49",
+        "setId": "libraryEffectSet_49",
+        "abilityId": "library_hpBuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectCombo49_1": {
+        "key": "libraryEffectCombo49_1",
+        "setId": "libraryEffectSet_49",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo50": {
+        "key": "libraryEffectCombo50",
+        "setId": "libraryEffectSet_50",
+        "abilityId": "library_aoeDebuff_1",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo51": {
+        "key": "libraryEffectCombo51",
+        "setId": "libraryEffectSet_51",
+        "abilityId": "library_hpDebuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffUndead"
+    },
+    "libraryEffectCombo52": {
+        "key": "libraryEffectCombo52",
+        "setId": "libraryEffectSet_52",
+        "abilityId": "library_hpBuffMage_1",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectCombo52_1": {
+        "key": "libraryEffectCombo52_1",
+        "setId": "libraryEffectSet_52",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo53": {
+        "key": "libraryEffectCombo53",
+        "setId": "libraryEffectSet_53",
+        "abilityId": "library_hpBuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectCombo53_1": {
+        "key": "libraryEffectCombo53_1",
+        "setId": "libraryEffectSet_53",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo53_2": {
+        "key": "libraryEffectCombo53_2",
+        "setId": "libraryEffectSet_53",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo54": {
+        "key": "libraryEffectCombo54",
+        "setId": "libraryEffectSet_54",
+        "abilityId": "library_healBuff_1",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectCombo55": {
+        "key": "libraryEffectCombo55",
+        "setId": "libraryEffectSet_55",
+        "abilityId": "library_rangeBuff_3",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo56": {
+        "key": "libraryEffectCombo56",
+        "setId": "libraryEffectSet_56",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo56_1": {
+        "key": "libraryEffectCombo56_1",
+        "setId": "libraryEffectSet_56",
+        "abilityId": "library_hpDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectCombo56_2": {
+        "key": "libraryEffectCombo56_2",
+        "setId": "libraryEffectSet_56",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo57": {
+        "key": "libraryEffectCombo57",
+        "setId": "libraryEffectSet_57",
+        "abilityId": "library_meleeBuff_3",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo57_1": {
+        "key": "libraryEffectCombo57_1",
+        "setId": "libraryEffectSet_57",
+        "abilityId": "library_hpBuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectCombo58": {
+        "key": "libraryEffectCombo58",
+        "setId": "libraryEffectSet_58",
+        "abilityId": "library_rangeBuff_2",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo58_1": {
+        "key": "libraryEffectCombo58_1",
+        "setId": "libraryEffectSet_58",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo59": {
+        "key": "libraryEffectCombo59",
+        "setId": "libraryEffectSet_59",
+        "abilityId": "library_hpBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectCombo59_1": {
+        "key": "libraryEffectCombo59_1",
+        "setId": "libraryEffectSet_59",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectCombo59_2": {
+        "key": "libraryEffectCombo59_2",
+        "setId": "libraryEffectSet_59",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectCombo60": {
+        "key": "libraryEffectCombo60",
+        "setId": "libraryEffectSet_60",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo61": {
+        "key": "libraryEffectCombo61",
+        "setId": "libraryEffectSet_61",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo62": {
+        "key": "libraryEffectCombo62",
+        "setId": "libraryEffectSet_62",
+        "abilityId": "library_attackBuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffHuman"
+    },
+    "libraryEffectCombo63": {
+        "key": "libraryEffectCombo63",
+        "setId": "libraryEffectSet_63",
+        "abilityId": "library_hpBuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectCombo63_1": {
+        "key": "libraryEffectCombo63_1",
+        "setId": "libraryEffectSet_63",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectCombo63_2": {
+        "key": "libraryEffectCombo63_2",
+        "setId": "libraryEffectSet_63",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectCombo64": {
+        "key": "libraryEffectCombo64",
+        "setId": "libraryEffectSet_64",
+        "abilityId": "library_attackBuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffHuman"
+    },
+    "libraryEffectCombo64_1": {
+        "key": "libraryEffectCombo64_1",
+        "setId": "libraryEffectSet_64",
+        "abilityId": "library_attackDebuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffMage"
+    },
+    "libraryEffectCombo64_2": {
+        "key": "libraryEffectCombo64_2",
+        "setId": "libraryEffectSet_64",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo65": {
+        "key": "libraryEffectCombo65",
+        "setId": "libraryEffectSet_65",
+        "abilityId": "library_attackBuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffHuman"
+    },
+    "libraryEffectCombo65_1": {
+        "key": "libraryEffectCombo65_1",
+        "setId": "libraryEffectSet_65",
+        "abilityId": "library_healDebuff_2",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo66": {
+        "key": "libraryEffectCombo66",
+        "setId": "libraryEffectSet_66",
+        "abilityId": "library_hpBuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffHuman"
+    },
+    "libraryEffectCombo66_1": {
+        "key": "libraryEffectCombo66_1",
+        "setId": "libraryEffectSet_66",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectCombo67": {
+        "key": "libraryEffectCombo67",
+        "setId": "libraryEffectSet_67",
+        "abilityId": "library_rangeBuff_3",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectCombo67_1": {
+        "key": "libraryEffectCombo67_1",
+        "setId": "libraryEffectSet_67",
+        "abilityId": "library_hpBuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectCombo68": {
+        "key": "libraryEffectCombo68",
+        "setId": "libraryEffectSet_68",
+        "abilityId": "library_attackBuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectCombo68_1": {
+        "key": "libraryEffectCombo68_1",
+        "setId": "libraryEffectSet_68",
+        "abilityId": "library_aoeBuff_3",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectCombo68_2": {
+        "key": "libraryEffectCombo68_2",
+        "setId": "libraryEffectSet_68",
+        "abilityId": "library_healDebuff_2",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo69": {
+        "key": "libraryEffectCombo69",
+        "setId": "libraryEffectSet_69",
+        "abilityId": "library_attackDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectCombo69_1": {
+        "key": "libraryEffectCombo69_1",
+        "setId": "libraryEffectSet_69",
+        "abilityId": "library_attackBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffMage"
+    },
+    "libraryEffectSet_70": {
+        "key": "libraryEffectSet_70",
+        "setId": "libraryEffectSet_70",
+        "abilityId": "library_healDebuff_3",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectSet_70_1": {
+        "key": "libraryEffectSet_70_1",
+        "setId": "libraryEffectSet_70",
+        "abilityId": "library_hpBuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffHuman"
+    },
+    "libraryEffectSet_71": {
+        "key": "libraryEffectSet_71",
+        "setId": "libraryEffectSet_71",
+        "abilityId": "library_aoeDebuff_1",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_71_1": {
+        "key": "libraryEffectSet_71_1",
+        "setId": "libraryEffectSet_71",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectSet_72": {
+        "key": "libraryEffectSet_72",
+        "setId": "libraryEffectSet_72",
+        "abilityId": "library_rangeBuff_3",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectSet_72_1": {
+        "key": "libraryEffectSet_72_1",
+        "setId": "libraryEffectSet_72",
+        "abilityId": "library_healDebuff_3",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectSet_73": {
+        "key": "libraryEffectSet_73",
+        "setId": "libraryEffectSet_73",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_73_1": {
+        "key": "libraryEffectSet_73_1",
+        "setId": "libraryEffectSet_73",
+        "abilityId": "library_hpBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_74": {
+        "key": "libraryEffectSet_74",
+        "setId": "libraryEffectSet_74",
+        "abilityId": "library_hpBuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_74_1": {
+        "key": "libraryEffectSet_74_1",
+        "setId": "libraryEffectSet_74",
+        "abilityId": "library_healBuff_3",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectSet_75": {
+        "key": "libraryEffectSet_75",
+        "setId": "libraryEffectSet_75",
+        "abilityId": "library_rangeBuff_2",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectSet_75_1": {
+        "key": "libraryEffectSet_75_1",
+        "setId": "libraryEffectSet_75",
+        "abilityId": "library_hpDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectSet_76": {
+        "key": "libraryEffectSet_76",
+        "setId": "libraryEffectSet_76",
+        "abilityId": "library_rangeBuff_2",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectSet_76_1": {
+        "key": "libraryEffectSet_76_1",
+        "setId": "libraryEffectSet_76",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectSet_77": {
+        "key": "libraryEffectSet_77",
+        "setId": "libraryEffectSet_77",
+        "abilityId": "library_rangeBuff_2",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectSet_77_1": {
+        "key": "libraryEffectSet_77_1",
+        "setId": "libraryEffectSet_77",
+        "abilityId": "library_healDebuff_3",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectSet_77_2": {
+        "key": "libraryEffectSet_77_2",
+        "setId": "libraryEffectSet_77",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_78": {
+        "key": "libraryEffectSet_78",
+        "setId": "libraryEffectSet_78",
+        "abilityId": "library_hpBuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectSet_78_1": {
+        "key": "libraryEffectSet_78_1",
+        "setId": "libraryEffectSet_78",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_79": {
+        "key": "libraryEffectSet_79",
+        "setId": "libraryEffectSet_79",
+        "abilityId": "library_rangeBuff_1",
+        "icon": "icon_bow",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "rangeBuff"
+    },
+    "libraryEffectSet_79_1": {
+        "key": "libraryEffectSet_79_1",
+        "setId": "libraryEffectSet_79",
+        "abilityId": "library_attackDebuffHuman_1",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_80": {
+        "key": "libraryEffectSet_80",
+        "setId": "libraryEffectSet_80",
+        "abilityId": "library_aoeBuff_1",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectSet_80_1": {
+        "key": "libraryEffectSet_80_1",
+        "setId": "libraryEffectSet_80",
+        "abilityId": "library_hpDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectSet_80_2": {
+        "key": "libraryEffectSet_80_2",
+        "setId": "libraryEffectSet_80",
+        "abilityId": "library_meleeDebuff_2",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectSet_81": {
+        "key": "libraryEffectSet_81",
+        "setId": "libraryEffectSet_81",
+        "abilityId": "library_hpBuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectSet_81_1": {
+        "key": "libraryEffectSet_81_1",
+        "setId": "libraryEffectSet_81",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_82": {
+        "key": "libraryEffectSet_82",
+        "setId": "libraryEffectSet_82",
+        "abilityId": "library_attackBuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectSet_82_1": {
+        "key": "libraryEffectSet_82_1",
+        "setId": "libraryEffectSet_82",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectSet_82_2": {
+        "key": "libraryEffectSet_82_2",
+        "setId": "libraryEffectSet_82",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectSet_83": {
+        "key": "libraryEffectSet_83",
+        "setId": "libraryEffectSet_83",
+        "abilityId": "library_hpBuffMage_1",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_83_1": {
+        "key": "libraryEffectSet_83_1",
+        "setId": "libraryEffectSet_83",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_84": {
+        "key": "libraryEffectSet_84",
+        "setId": "libraryEffectSet_84",
+        "abilityId": "library_hpBuffMage_1",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_84_1": {
+        "key": "libraryEffectSet_84_1",
+        "setId": "libraryEffectSet_84",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_84_2": {
+        "key": "libraryEffectSet_84_2",
+        "setId": "libraryEffectSet_84",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_85": {
+        "key": "libraryEffectSet_85",
+        "setId": "libraryEffectSet_85",
+        "abilityId": "library_attackDebuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffMage"
+    },
+    "libraryEffectSet_85_1": {
+        "key": "libraryEffectSet_85_1",
+        "setId": "libraryEffectSet_85",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectSet_86": {
+        "key": "libraryEffectSet_86",
+        "setId": "libraryEffectSet_86",
+        "abilityId": "library_healBuff_3",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectSet_86_1": {
+        "key": "libraryEffectSet_86_1",
+        "setId": "libraryEffectSet_86",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_87": {
+        "key": "libraryEffectSet_87",
+        "setId": "libraryEffectSet_87",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectSet_87_1": {
+        "key": "libraryEffectSet_87_1",
+        "setId": "libraryEffectSet_87",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectSet_88": {
+        "key": "libraryEffectSet_88",
+        "setId": "libraryEffectSet_88",
+        "abilityId": "library_hpBuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_88_1": {
+        "key": "libraryEffectSet_88_1",
+        "setId": "libraryEffectSet_88",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_88_2": {
+        "key": "libraryEffectSet_88_2",
+        "setId": "libraryEffectSet_88",
+        "abilityId": "library_attackDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectSet_89": {
+        "key": "libraryEffectSet_89",
+        "setId": "libraryEffectSet_89",
+        "abilityId": "library_attackBuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffUndead"
+    },
+    "libraryEffectSet_89_1": {
+        "key": "libraryEffectSet_89_1",
+        "setId": "libraryEffectSet_89",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_90": {
+        "key": "libraryEffectSet_90",
+        "setId": "libraryEffectSet_90",
+        "abilityId": "library_hpBuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectSet_90_1": {
+        "key": "libraryEffectSet_90_1",
+        "setId": "libraryEffectSet_90",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_90_2": {
+        "key": "libraryEffectSet_90_2",
+        "setId": "libraryEffectSet_90",
+        "abilityId": "library_healBuff_2",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectSet_91": {
+        "key": "libraryEffectSet_91",
+        "setId": "libraryEffectSet_91",
+        "abilityId": "library_hpBuffUndead_1",
+        "icon": "icon_fr_undead",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffUndead"
+    },
+    "libraryEffectSet_91_1": {
+        "key": "libraryEffectSet_91_1",
+        "setId": "libraryEffectSet_91",
+        "abilityId": "library_attackDebuffUndead_2",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectSet_92": {
+        "key": "libraryEffectSet_92",
+        "setId": "libraryEffectSet_92",
+        "abilityId": "library_aoeBuff_3",
+        "icon": "icon_catapult",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "aoeBuff"
+    },
+    "libraryEffectSet_92_1": {
+        "key": "libraryEffectSet_92_1",
+        "setId": "libraryEffectSet_92",
+        "abilityId": "library_healDebuff_2",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectSet_93": {
+        "key": "libraryEffectSet_93",
+        "setId": "libraryEffectSet_93",
+        "abilityId": "library_meleeBuff_3",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectSet_93_1": {
+        "key": "libraryEffectSet_93_1",
+        "setId": "libraryEffectSet_93",
+        "abilityId": "library_rangeDebuff_2",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectSet_94": {
+        "key": "libraryEffectSet_94",
+        "setId": "libraryEffectSet_94",
+        "abilityId": "library_attackBuffMage_3",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffMage"
+    },
+    "libraryEffectSet_94_1": {
+        "key": "libraryEffectSet_94_1",
+        "setId": "libraryEffectSet_94",
+        "abilityId": "library_attackDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_94_2": {
+        "key": "libraryEffectSet_94_2",
+        "setId": "libraryEffectSet_94",
+        "abilityId": "library_attackDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectSet_95": {
+        "key": "libraryEffectSet_95",
+        "setId": "libraryEffectSet_95",
+        "abilityId": "library_hpBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuffMage"
+    },
+    "libraryEffectSet_95_1": {
+        "key": "libraryEffectSet_95_1",
+        "setId": "libraryEffectSet_95",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_95_2": {
+        "key": "libraryEffectSet_95_2",
+        "setId": "libraryEffectSet_95",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_96": {
+        "key": "libraryEffectSet_96",
+        "setId": "libraryEffectSet_96",
+        "abilityId": "library_healBuff_3",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "healBuff"
+    },
+    "libraryEffectSet_96_1": {
+        "key": "libraryEffectSet_96_1",
+        "setId": "libraryEffectSet_96",
+        "abilityId": "library_meleeDebuff_3",
+        "icon": "icon_knight",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "meleeDebuff"
+    },
+    "libraryEffectSet_96_2": {
+        "key": "libraryEffectSet_96_2",
+        "setId": "libraryEffectSet_96",
+        "abilityId": "library_hpDebuffHuman_3",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "libraryEffectSet_97": {
+        "key": "libraryEffectSet_97",
+        "setId": "libraryEffectSet_97",
+        "abilityId": "library_attackBuffMage_2",
+        "icon": "icon_fr_mage",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffMage"
+    },
+    "libraryEffectSet_97_1": {
+        "key": "libraryEffectSet_97_1",
+        "setId": "libraryEffectSet_97",
+        "abilityId": "library_attackDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffHuman"
+    },
+    "libraryEffectSet_97_2": {
+        "key": "libraryEffectSet_97_2",
+        "setId": "libraryEffectSet_97",
+        "abilityId": "library_attackDebuffUndead_3",
+        "icon": "icon_fr_undead",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "attackDebuffUndead"
+    },
+    "libraryEffectSet_98": {
+        "key": "libraryEffectSet_98",
+        "setId": "libraryEffectSet_98",
+        "abilityId": "library_aoeDebuff_3",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    },
+    "libraryEffectSet_98_1": {
+        "key": "libraryEffectSet_98_1",
+        "setId": "libraryEffectSet_98",
+        "abilityId": "DisableHeroAbility",
+        "icon": "icon_no_hero_skill",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "DisableHeroAbility"
+    },
+    "libraryEffectSet_99": {
+        "key": "libraryEffectSet_99",
+        "setId": "libraryEffectSet_99",
+        "abilityId": "library_meleeBuff_2",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "meleeBuff"
+    },
+    "libraryEffectSet_99_1": {
+        "key": "libraryEffectSet_99_1",
+        "setId": "libraryEffectSet_99",
+        "abilityId": "library_rangeDebuff_3",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectSet_99_2": {
+        "key": "libraryEffectSet_99_2",
+        "setId": "libraryEffectSet_99",
+        "abilityId": "library_healDebuff_2",
+        "icon": "icon_negativ_health",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "healDebuff"
+    },
+    "libraryEffectCombo61_1": {
+        "key": "libraryEffectCombo61_1",
+        "setId": "libraryEffectSet_61",
+        "abilityId": "library_rangeDebuff_3",
+        "icon": "icon_bow",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "rangeDebuff"
+    },
+    "libraryEffectCombo61_2": {
+        "key": "libraryEffectCombo61_2",
+        "setId": "libraryEffectSet_61",
+        "abilityId": "library_hpDebuffHuman_2",
+        "icon": "icon_fr_human",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "hpDebuffHuman"
+    },
+    "library_axeThrowers_effectCombo_1": {
+        "key": "library_axeThrowers_effectCombo_1",
+        "setId": "library_axeThrowers_effectSet_1",
+        "abilityId": "library_axeThrowers_cooldownBuff_hero_1",
+        "icon": "icon_no_hero_skill",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "cooldownBuffHero"
+    },
+    "library_axeThrowers_effectCombo_2": {
+        "key": "library_axeThrowers_effectCombo_2",
+        "setId": "library_axeThrowers_effectSet_2",
+        "abilityId": "library_axeThrowers_cooldownBuff_hero_1",
+        "icon": "icon_no_hero_skill",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "cooldownBuffHero"
+    },
+    "library_axeThrowers_effectCombo_3": {
+        "key": "library_axeThrowers_effectCombo_3",
+        "setId": "library_axeThrowers_effectSet_3",
+        "abilityId": "library_axeThrowers_cooldownBuff_hero_1",
+        "icon": "icon_no_hero_skill",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "cooldownBuffHero"
+    },
+    "library_axeThrowers_effectCombo_4": {
+        "key": "library_axeThrowers_effectCombo_4",
+        "setId": "library_axeThrowers_effectSet_4",
+        "abilityId": "library_axeThrowers_cooldownBuff_hero_1",
+        "icon": "icon_no_hero_skill",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "cooldownBuffHero"
+    },
+    "library_axeThrowers_effectCombo_2_1": {
+        "key": "library_axeThrowers_effectCombo_2_1",
+        "setId": "library_axeThrowers_effectSet_2",
+        "abilityId": "library_axeThrowers_attackBuff_assassins_1",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffAssassins"
+    },
+    "library_axeThrowers_effectCombo_3_1": {
+        "key": "library_axeThrowers_effectCombo_3_1",
+        "setId": "library_axeThrowers_effectSet_3",
+        "abilityId": "library_axeThrowers_attackBuff_assassins_1",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffAssassins"
+    },
+    "library_axeThrowers_effectCombo_3_2": {
+        "key": "library_axeThrowers_effectCombo_3_2",
+        "setId": "library_axeThrowers_effectSet_3",
+        "abilityId": "library_axeThrowers_hpBuff_1",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuff"
+    },
+    "library_axeThrowers_effectCombo_4_1": {
+        "key": "library_axeThrowers_effectCombo_4_1",
+        "setId": "library_axeThrowers_effectSet_4",
+        "abilityId": "library_axeThrowers_attackBuff_assassins_1",
+        "icon": "icon_knight",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "attackBuffAssassins"
+    },
+    "library_axeThrowers_effectCombo_4_2": {
+        "key": "library_axeThrowers_effectCombo_4_2",
+        "setId": "library_axeThrowers_effectSet_4",
+        "abilityId": "library_axeThrowers_hpBuff_1",
+        "icon": "icon_pozitiv_health",
+        "color": "buff_green",
+        "colorIconUnderlay": "buff_green_underlay",
+        "descriptionTemplate_Localized": "hpBuff"
+    },
+    "library_axeThrowers_effectCombo_4_3": {
+        "key": "library_axeThrowers_effectCombo_4_3",
+        "setId": "library_axeThrowers_effectSet_4",
+        "abilityId": "library_axeThrowers_aoeAttackDebuff_1",
+        "icon": "icon_catapult",
+        "color": "debuff_red",
+        "colorIconUnderlay": "debuff_red_underlay",
+        "descriptionTemplate_Localized": "aoeDebuff"
+    }
+}

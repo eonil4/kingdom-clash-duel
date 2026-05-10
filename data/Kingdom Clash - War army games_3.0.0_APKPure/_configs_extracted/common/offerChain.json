@@ -1,0 +1,72 @@
+{
+    "chainofferBoneDragon": {
+        "key": "chainofferBoneDragon",
+        "title": "caption_chain_offer",
+        "heroId": "boneDragon"
+    },
+    "chainofferForestQueen": {
+        "key": "chainofferForestQueen",
+        "title": "caption_chain_offer",
+        "heroId": "forestQueen"
+    },
+    "chainofferIceMage": {
+        "key": "chainofferIceMage",
+        "title": "caption_chain_offer",
+        "heroId": "iceMage"
+    },
+    "chainofferCharmer": {
+        "key": "chainofferCharmer",
+        "title": "caption_chain_offer",
+        "heroId": "charmer"
+    },
+    "chainofferAirMage": {
+        "key": "chainofferAirMage",
+        "title": "caption_chain_offer",
+        "heroId": "airMage"
+    },
+    "chainofferDarknessMage": {
+        "key": "chainofferDarknessMage",
+        "title": "caption_chain_offer",
+        "heroId": "darknessMage"
+    },
+    "chainofferFireMage": {
+        "key": "chainofferFireMage",
+        "title": "caption_chain_offer",
+        "heroId": "fireMage"
+    },
+    "chainofferSandMage": {
+        "key": "chainofferSandMage",
+        "title": "caption_chain_offer",
+        "heroId": "sandMage"
+    },
+    "chainofferUndeadPirate": {
+        "key": "chainofferUndeadPirate",
+        "title": "caption_chain_offer",
+        "heroId": "undeadPirate"
+    },
+    "chainofferWaterMage": {
+        "key": "chainofferWaterMage",
+        "title": "caption_chain_offer",
+        "heroId": "waterMage"
+    },
+    "chainofferLordInquisitor": {
+        "key": "chainofferLordInquisitor",
+        "title": "caption_chain_offer",
+        "heroId": "lordInquisitor"
+    },
+    "chainofferUndeadPestilence": {
+        "key": "chainofferUndeadPestilence",
+        "title": "caption_chain_offer",
+        "heroId": "undeadPestilence"
+    },
+    "chainofferBardHero": {
+        "key": "chainofferBardHero",
+        "title": "caption_chain_offer",
+        "heroId": "bardHero"
+    },
+    "chainofferDragonRider": {
+        "key": "chainofferDragonRider",
+        "title": "caption_chain_offer",
+        "heroId": "dragonRider"
+    }
+}

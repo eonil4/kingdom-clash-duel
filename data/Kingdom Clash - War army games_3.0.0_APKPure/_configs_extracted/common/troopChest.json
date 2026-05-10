@@ -1,0 +1,222 @@
+{
+    "infantryChestReward": {
+        "key": "infantryChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "firstTwoChestReward": {
+        "key": "firstTwoChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "allTroopsChestReward": {
+        "key": "allTroopsChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareTroopsReward": {
+        "key": "rareTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "epicTroopsReward": {
+        "key": "epicTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "legendaryTroopsReward": {
+        "key": "legendaryTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareTroopsReward2": {
+        "key": "rareTroopsReward2",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "oneStarKardReward": {
+        "key": "oneStarKardReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "twoStarKardReward": {
+        "key": "twoStarKardReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "threeStarKardReward": {
+        "key": "threeStarKardReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "fourStarKardReward": {
+        "key": "fourStarKardReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "commonChestReward": {
+        "key": "commonChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "allContentChestReward": {
+        "key": "allContentChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "firstLuckyOpen": {
+        "key": "firstLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "secondLuckyOpen": {
+        "key": "secondLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "thirdLuckyOpen": {
+        "key": "thirdLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "lowLuckyOpen": {
+        "key": "lowLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "middleLuckyOpen": {
+        "key": "middleLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "highLuckyOpen": {
+        "key": "highLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "woodenChest": {
+        "key": "woodenChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "archerChest": {
+        "key": "archerChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "commonChest": {
+        "key": "commonChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "comRareChest": {
+        "key": "comRareChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareTwoTroopsReward": {
+        "key": "rareTwoTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "epicTwoTroopsReward": {
+        "key": "epicTwoTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "allContentTwoChestReward": {
+        "key": "allContentTwoChestReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "legendaryTwoTroopsReward": {
+        "key": "legendaryTwoTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareThreeTroopsReward": {
+        "key": "rareThreeTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareFourTroopsReward": {
+        "key": "rareFourTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareFiveTroopsReward": {
+        "key": "rareFiveTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareSixTroopsReward": {
+        "key": "rareSixTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareEightTroopsReward": {
+        "key": "rareEightTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareTenTroopsReward": {
+        "key": "rareTenTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "rareTwelveTroopsReward": {
+        "key": "rareTwelveTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "epicLegTroopsReward": {
+        "key": "epicLegTroopsReward",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "shopChest": {
+        "key": "shopChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "goldChest": {
+        "key": "goldChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "offerDailyChestLegendary": {
+        "key": "offerDailyChestLegendary",
+        "dropAlgorithm": "All"
+    },
+    "offerDailyChestEpic": {
+        "key": "offerDailyChestEpic",
+        "dropAlgorithm": "All"
+    },
+    "humanLuckyOpen": {
+        "key": "humanLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "undeadLuckyOpen": {
+        "key": "undeadLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "magesLuckyOpen": {
+        "key": "magesLuckyOpen",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "offerTroopChestLegendary": {
+        "key": "offerTroopChestLegendary",
+        "dropAlgorithm": "All"
+    },
+    "offerTroopChestEpic": {
+        "key": "offerTroopChestEpic",
+        "dropAlgorithm": "All"
+    },
+    "NighthunterChest": {
+        "key": "NighthunterChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "StoneGolemChest": {
+        "key": "StoneGolemChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "MountainsChampionChest": {
+        "key": "MountainsChampionChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "NecromancerChest": {
+        "key": "NecromancerChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "VulkanGolemChest": {
+        "key": "VulkanGolemChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "AlchemistChest": {
+        "key": "AlchemistChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "RaceWelcomeChest": {
+        "key": "RaceWelcomeChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "EpicSquadClanShopChest": {
+        "key": "EpicSquadClanShopChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "LegSquadClanShopChest": {
+        "key": "LegSquadClanShopChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "PhoenixChest": {
+        "key": "PhoenixChest",
+        "dropAlgorithm": "UnlockedOnly"
+    },
+    "AxeThrowersChest": {
+        "key": "AxeThrowersChest",
+        "dropAlgorithm": "UnlockedOnly"
+    }
+}

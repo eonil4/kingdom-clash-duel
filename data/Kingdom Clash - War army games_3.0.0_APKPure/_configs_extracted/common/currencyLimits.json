@@ -1,0 +1,12 @@
+{
+    "BadgesX4": {
+        "key": "BadgesX4",
+        "currency": "BadgesX4",
+        "limit": 40
+    },
+    "AutoBattle": {
+        "key": "AutoBattle",
+        "currency": "AutoBattle",
+        "limit": 100
+    }
+}

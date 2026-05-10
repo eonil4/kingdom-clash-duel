@@ -1,0 +1,122 @@
+{
+    "offer_BattlePassAndLevels": {
+        "key": "offer_BattlePassAndLevels",
+        "extraLevels": 7,
+        "battlepassTypeId": "normal",
+        "type": "premium"
+    },
+    "offer_BattlePass": {
+        "key": "offer_BattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "normal",
+        "type": "premium"
+    },
+    "offer_ArenaBattlePassAndLevels": {
+        "key": "offer_ArenaBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "arena",
+        "type": "premium"
+    },
+    "offer_ArenaBattlePass": {
+        "key": "offer_ArenaBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "arena",
+        "type": "premium"
+    },
+    "offer_AdvancedBattlePassAndLevels": {
+        "key": "offer_AdvancedBattlePassAndLevels",
+        "extraLevels": 7,
+        "battlepassTypeId": "normal",
+        "type": "advanced"
+    },
+    "offer_AdvancedBattlePass": {
+        "key": "offer_AdvancedBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "normal",
+        "type": "advanced"
+    },
+    "offer_AdvancedArenaBattlePassAndLevels": {
+        "key": "offer_AdvancedArenaBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "arena",
+        "type": "advanced"
+    },
+    "offer_AdvancedArenaBattlePass": {
+        "key": "offer_AdvancedArenaBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "arena",
+        "type": "advanced"
+    },
+    "offer_CasinoBattlePassAndLevels": {
+        "key": "offer_CasinoBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "casino",
+        "type": "premium"
+    },
+    "offer_CasinoBattlePass": {
+        "key": "offer_CasinoBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "casino",
+        "type": "premium"
+    },
+    "offer_AdvancedCasinoBattlePassAndLevels": {
+        "key": "offer_AdvancedCasinoBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "casino",
+        "type": "advanced"
+    },
+    "offer_AdvancedCasinoBattlePass": {
+        "key": "offer_AdvancedCasinoBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "casino",
+        "type": "advanced"
+    },
+    "offer_CasinoKingBattlePassAndLevels": {
+        "key": "offer_CasinoKingBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "casino",
+        "type": "premium"
+    },
+    "offer_CasinoKingBattlePass": {
+        "key": "offer_CasinoKingBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "casino",
+        "type": "premium"
+    },
+    "offer_AdvancedCasinoKingBattlePassAndLevels": {
+        "key": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "casino",
+        "type": "advanced"
+    },
+    "offer_AdvancedCasinoKingBattlePass": {
+        "key": "offer_AdvancedCasinoKingBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "casino",
+        "type": "advanced"
+    },
+    "offer_TowerAxeThrowersBattlePass": {
+        "key": "offer_TowerAxeThrowersBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "tower",
+        "type": "premium"
+    },
+    "offer_TowerAxeThrowersBattlePassAndLevels": {
+        "key": "offer_TowerAxeThrowersBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "tower",
+        "type": "premium"
+    },
+    "offer_AdvancedTowerAxeThrowersBattlePass": {
+        "key": "offer_AdvancedTowerAxeThrowersBattlePass",
+        "extraLevels": 0,
+        "battlepassTypeId": "tower",
+        "type": "advanced"
+    },
+    "offer_AdvancedTowerAxeThrowersBattlePassAndLevels": {
+        "key": "offer_AdvancedTowerAxeThrowersBattlePassAndLevels",
+        "extraLevels": 5,
+        "battlepassTypeId": "tower",
+        "type": "advanced"
+    }
+}

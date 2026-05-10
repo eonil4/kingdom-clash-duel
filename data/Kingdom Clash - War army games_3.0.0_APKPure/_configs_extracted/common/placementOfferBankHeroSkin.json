@@ -1,0 +1,20 @@
+{
+    "goldSkinAccurateMerida": {
+        "key": "goldSkinAccurateMerida",
+        "offer": "goldAccurateMerida",
+        "title_Localized": "Hero_Merida_Name",
+        "category": "Pvp",
+        "categoryOrder": 0,
+        "style": "gold",
+        "icon": "offer_AccurateMeridaGold"
+    },
+    "silverSkinAccurateMerida": {
+        "key": "silverSkinAccurateMerida",
+        "offer": "silverAccurateMerida",
+        "title_Localized": "Hero_Merida_Name",
+        "category": "Skin",
+        "categoryOrder": 0,
+        "style": "silver",
+        "icon": "offer_AccurateMeridaSilver"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "offerLobbyCurrency1": {
+        "key": "offerLobbyCurrency1",
+        "currencyId": "Gem",
+        "currencyAmount": 5280,
+        "currencyAmountStroke": 2400,
+        "extraAmountPercent": 300,
+        "iconId": "store_bag_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "daily_offer_gem_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerLobbyCurrency2": {
+        "key": "offerLobbyCurrency2",
+        "currencyId": "Gem",
+        "currencyAmount": 17500,
+        "currencyAmountStroke": 5000,
+        "extraAmountPercent": 600,
+        "iconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "daily_offer_gem_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerLobbyCurrency3": {
+        "key": "offerLobbyCurrency3",
+        "currencyId": "Gold",
+        "currencyAmount": 1700000,
+        "currencyAmountStroke": 500000,
+        "extraAmountPercent": 470,
+        "iconId": "store_barrel_coin",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "daily_offer_gold_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerLobbyCurrency4": {
+        "key": "offerLobbyCurrency4",
+        "currencyId": "Gold",
+        "currencyAmount": 6000000,
+        "currencyAmountStroke": 1500000,
+        "extraAmountPercent": 500,
+        "iconId": "store_chest_coin",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "daily_offer_gold_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "headhunt_normal": {
+        "key": "headhunt_normal",
+        "levelsPerRound": 10,
+        "roundsCount": 2
+    },
+    "headhunt_hard": {
+        "key": "headhunt_hard",
+        "levelsPerRound": 10,
+        "roundsCount": 2
+    }
+}

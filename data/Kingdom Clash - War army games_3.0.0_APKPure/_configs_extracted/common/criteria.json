@@ -1,0 +1,9 @@
+{
+    "criteriaInAppPurchase_1": {
+        "key": "criteriaInAppPurchase_1",
+        "criteria": {
+            "questCriteriaInAppPurchasePromo": {}
+        },
+        "count": 1
+    }
+}

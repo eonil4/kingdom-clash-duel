@@ -1,0 +1,68 @@
+{
+    "1": {
+        "key": "1",
+        "attemptNumber": 1,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 0
+    },
+    "2": {
+        "key": "2",
+        "attemptNumber": 2,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 100
+    },
+    "3": {
+        "key": "3",
+        "attemptNumber": 3,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 200
+    },
+    "4": {
+        "key": "4",
+        "attemptNumber": 4,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 300
+    },
+    "5": {
+        "key": "5",
+        "attemptNumber": 5,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 400
+    },
+    "6": {
+        "key": "6",
+        "attemptNumber": 6,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 500
+    },
+    "7": {
+        "key": "7",
+        "attemptNumber": 7,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 600
+    },
+    "8": {
+        "key": "8",
+        "attemptNumber": 8,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 700
+    },
+    "9": {
+        "key": "9",
+        "attemptNumber": 9,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 800
+    },
+    "10": {
+        "key": "10",
+        "attemptNumber": 10,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 900
+    },
+    "11": {
+        "key": "11",
+        "attemptNumber": 11,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 1000
+    }
+}

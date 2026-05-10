@@ -1,0 +1,222 @@
+{
+    "clan_flag_color_1": {
+        "key": "clan_flag_color_1",
+        "serverId": 1,
+        "colorCode": {
+            "red": 145,
+            "green": 70,
+            "blue": 171,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 175,
+            "green": 91,
+            "blue": 208,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_2": {
+        "key": "clan_flag_color_2",
+        "serverId": 2,
+        "colorCode": {
+            "red": 9,
+            "green": 140,
+            "blue": 142,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 11,
+            "green": 168,
+            "blue": 170,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_3": {
+        "key": "clan_flag_color_3",
+        "serverId": 3,
+        "colorCode": {
+            "red": 234,
+            "green": 111,
+            "blue": 157,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 250,
+            "green": 139,
+            "blue": 183,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_4": {
+        "key": "clan_flag_color_4",
+        "serverId": 4,
+        "colorCode": {
+            "red": 224,
+            "green": 109,
+            "blue": 34,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 247,
+            "green": 138,
+            "blue": 43,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_5": {
+        "key": "clan_flag_color_5",
+        "serverId": 5,
+        "colorCode": {
+            "red": 236,
+            "green": 180,
+            "blue": 0,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 248,
+            "green": 207,
+            "blue": 0,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_6": {
+        "key": "clan_flag_color_6",
+        "serverId": 6,
+        "colorCode": {
+            "red": 188,
+            "green": 69,
+            "blue": 62,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 214,
+            "green": 79,
+            "blue": 71,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_7": {
+        "key": "clan_flag_color_7",
+        "serverId": 7,
+        "colorCode": {
+            "red": 60,
+            "green": 105,
+            "blue": 178,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 69,
+            "green": 120,
+            "blue": 204,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_8": {
+        "key": "clan_flag_color_8",
+        "serverId": 8,
+        "colorCode": {
+            "red": 53,
+            "green": 53,
+            "blue": 53,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 79,
+            "green": 79,
+            "blue": 79,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_9": {
+        "key": "clan_flag_color_9",
+        "serverId": 9,
+        "colorCode": {
+            "red": 126,
+            "green": 126,
+            "blue": 126,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 150,
+            "green": 150,
+            "blue": 150,
+            "alpha": 255
+        }
+    },
+    "clan_flag_color_10": {
+        "key": "clan_flag_color_10",
+        "serverId": 10,
+        "colorCode": {
+            "red": 76,
+            "green": 143,
+            "blue": 67,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 214,
+            "green": 170,
+            "blue": 72,
+            "alpha": 255
+        },
+        "alternativeColorCode": {
+            "red": 89,
+            "green": 168,
+            "blue": 79,
+            "alpha": 255
+        }
+    }
+}

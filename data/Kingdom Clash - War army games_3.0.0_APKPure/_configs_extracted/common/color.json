@@ -1,0 +1,218 @@
+{
+    "league_gold": {
+        "key": "league_gold",
+        "colorCode": {
+            "red": 239,
+            "green": 211,
+            "blue": 127,
+            "alpha": 255
+        }
+    },
+    "league_bronze": {
+        "key": "league_bronze",
+        "colorCode": {
+            "red": 187,
+            "green": 138,
+            "blue": 82,
+            "alpha": 255
+        }
+    },
+    "league_platinum": {
+        "key": "league_platinum",
+        "colorCode": {
+            "red": 233,
+            "green": 189,
+            "blue": 254,
+            "alpha": 255
+        }
+    },
+    "league_silver": {
+        "key": "league_silver",
+        "colorCode": {
+            "red": 224,
+            "green": 229,
+            "blue": 235,
+            "alpha": 255
+        }
+    },
+    "league_diamond": {
+        "key": "league_diamond",
+        "colorCode": {
+            "red": 167,
+            "green": 191,
+            "blue": 238,
+            "alpha": 255
+        }
+    },
+    "league_diamond_reward": {
+        "key": "league_diamond_reward",
+        "colorCode": {
+            "red": 52,
+            "green": 78,
+            "blue": 136,
+            "alpha": 255
+        }
+    },
+    "league_bronze_reward": {
+        "key": "league_bronze_reward",
+        "colorCode": {
+            "red": 114,
+            "green": 72,
+            "blue": 32,
+            "alpha": 255
+        }
+    },
+    "league_silver_reward": {
+        "key": "league_silver_reward",
+        "colorCode": {
+            "red": 71,
+            "green": 85,
+            "blue": 94,
+            "alpha": 255
+        }
+    },
+    "league_gold_reward": {
+        "key": "league_gold_reward",
+        "colorCode": {
+            "red": 150,
+            "green": 81,
+            "blue": 21,
+            "alpha": 255
+        }
+    },
+    "league_platinum_reward": {
+        "key": "league_platinum_reward",
+        "colorCode": {
+            "red": 71,
+            "green": 72,
+            "blue": 95,
+            "alpha": 255
+        }
+    },
+    "ribbon_hard_color": {
+        "key": "ribbon_hard_color",
+        "colorCode": {
+            "red": 191,
+            "green": 76,
+            "blue": 76,
+            "alpha": 255
+        }
+    },
+    "faction_humans": {
+        "key": "faction_humans",
+        "colorCode": {
+            "red": 150,
+            "green": 63,
+            "blue": 63,
+            "alpha": 255
+        }
+    },
+    "faction_undead": {
+        "key": "faction_undead",
+        "colorCode": {
+            "red": 79,
+            "green": 66,
+            "blue": 124,
+            "alpha": 255
+        }
+    },
+    "faction_mages": {
+        "key": "faction_mages",
+        "colorCode": {
+            "red": 51,
+            "green": 153,
+            "blue": 136,
+            "alpha": 255
+        }
+    },
+    "faction_humans_ribbon": {
+        "key": "faction_humans_ribbon",
+        "colorCode": {
+            "red": 195,
+            "green": 80,
+            "blue": 80,
+            "alpha": 255
+        }
+    },
+    "faction_undead_ribbon": {
+        "key": "faction_undead_ribbon",
+        "colorCode": {
+            "red": 97,
+            "green": 82,
+            "blue": 150,
+            "alpha": 255
+        }
+    },
+    "faction_mages_ribbon": {
+        "key": "faction_mages_ribbon",
+        "colorCode": {
+            "red": 59,
+            "green": 144,
+            "blue": 135,
+            "alpha": 255
+        }
+    },
+    "notification_white": {
+        "key": "notification_white",
+        "colorCode": {
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "alpha": 255
+        }
+    },
+    "buff_green": {
+        "key": "buff_green",
+        "colorCode": {
+            "red": 92,
+            "green": 163,
+            "blue": 61,
+            "alpha": 255
+        }
+    },
+    "debuff_red": {
+        "key": "debuff_red",
+        "colorCode": {
+            "red": 152,
+            "green": 52,
+            "blue": 57,
+            "alpha": 255
+        }
+    },
+    "buff_green_underlay": {
+        "key": "buff_green_underlay",
+        "colorCode": {
+            "red": 114,
+            "green": 187,
+            "blue": 81,
+            "alpha": 255
+        }
+    },
+    "debuff_red_underlay": {
+        "key": "debuff_red_underlay",
+        "colorCode": {
+            "red": 177,
+            "green": 76,
+            "blue": 80,
+            "alpha": 255
+        }
+    },
+    "league_master": {
+        "key": "league_master",
+        "colorCode": {
+            "red": 156,
+            "green": 232,
+            "blue": 148,
+            "alpha": 255
+        }
+    },
+    "league_master_reward": {
+        "key": "league_master_reward",
+        "colorCode": {
+            "red": 81,
+            "green": 153,
+            "blue": 125,
+            "alpha": 255
+        }
+    }
+}

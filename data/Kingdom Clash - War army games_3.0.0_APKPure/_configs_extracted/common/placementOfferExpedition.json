@@ -1,0 +1,37 @@
+{
+    "expedition_offer_1": {
+        "key": "expedition_offer_1",
+        "offer": "offerGear_1",
+        "order": 1,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "expedition_offer_2": {
+        "key": "expedition_offer_2",
+        "offer": "offerGear_2",
+        "order": 2,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "expedition_offer_3": {
+        "key": "expedition_offer_3",
+        "offer": "offerGear_3",
+        "order": 3,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "expedition_offer_4": {
+        "key": "expedition_offer_4",
+        "offer": "offerGear_4",
+        "order": 4,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "expedition_offer_free": {
+        "key": "expedition_offer_free",
+        "offer": "offerGearShard_free",
+        "order": 0,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    }
+}

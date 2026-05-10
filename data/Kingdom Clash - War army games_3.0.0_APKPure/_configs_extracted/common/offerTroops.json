@@ -1,0 +1,642 @@
+{
+    "offerLegendaryTroop": {
+        "key": "offerLegendaryTroop",
+        "title_Localized": "Troop_Hunter_Name",
+        "troopsLevelId": "hunter_1",
+        "amount": 1,
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_1": {
+        "key": "offerTroop_1",
+        "title_Localized": "Troop_IronGuard_Name",
+        "troopsLevelId": "ironGuards_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_2": {
+        "key": "offerTroop_2",
+        "title_Localized": "Troop_Butcher_Name",
+        "troopsLevelId": "butcher_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_3": {
+        "key": "offerTroop_3",
+        "title_Localized": "Troop_Assassin_Name",
+        "troopsLevelId": "assasin_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_4": {
+        "key": "offerTroop_4",
+        "title_Localized": "Troop_UndeadMage_Name",
+        "troopsLevelId": "undeadMage_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_5": {
+        "key": "offerTroop_5",
+        "title_Localized": "Troop_Bomber_Name",
+        "troopsLevelId": "bomber_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_6": {
+        "key": "offerTroop_6",
+        "title_Localized": "Troop_Imp_Name",
+        "troopsLevelId": "imp_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 50,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_7": {
+        "key": "offerTroop_7",
+        "title_Localized": "Troop_Necromancer_Name",
+        "troopsLevelId": "necromancer_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 75,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_8": {
+        "key": "offerTroop_8",
+        "title_Localized": "Troop_Paladin_Name",
+        "troopsLevelId": "paladin_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 75,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_9": {
+        "key": "offerTroop_9",
+        "title_Localized": "Troop_Alchemist_Name",
+        "troopsLevelId": "alchemist_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 75,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_10": {
+        "key": "offerTroop_10",
+        "title_Localized": "Troop_Lancer_Name",
+        "troopsLevelId": "lancer_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 75,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTroop_11": {
+        "key": "offerTroop_11",
+        "title_Localized": "Troop_Hunter_Name",
+        "troopsLevelId": "hunter_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 100,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_paladin_squad": {
+        "key": "oneTimeOffer_paladin_squad",
+        "title_Localized": "Troop_Paladin_Name",
+        "troopsLevelId": "paladin_1",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_paladin",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_undeadMage_squad": {
+        "key": "oneTimeOffer_undeadMage_squad",
+        "title_Localized": "Troop_UndeadMage_Name",
+        "troopsLevelId": "undeadMage_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_undeadMage",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_spiderBlast_squad": {
+        "key": "oneTimeOffer_spiderBlast_squad",
+        "title_Localized": "Troop_SpiderBlast_Name",
+        "troopsLevelId": "spiderBlast_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_spiderBlast",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_mageStudent_squad": {
+        "key": "oneTimeOffer_mageStudent_squad",
+        "title_Localized": "Troop_MageStudent_Name",
+        "troopsLevelId": "mageStudent_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_mageStudent",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_damnCatapult_squad": {
+        "key": "oneTimeOffer_damnCatapult_squad",
+        "title_Localized": "Troop_DamnCatapult_Name",
+        "troopsLevelId": "damnCatapult_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_damnCatapult",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_gravedigger_squad": {
+        "key": "oneTimeOffer_gravedigger_squad",
+        "title_Localized": "Troop_Gravedigger_Name",
+        "troopsLevelId": "gravedigger_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_gravedigger",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_monk_squad": {
+        "key": "oneTimeOffer_monk_squad",
+        "title_Localized": "Troop_Monk_Name",
+        "troopsLevelId": "monk_2",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_monk",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_magicArcher_squad": {
+        "key": "oneTimeOffer_magicArcher_squad",
+        "title_Localized": "Troop_MagicArcher_Name",
+        "troopsLevelId": "magicArcher_3",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_magicArcher",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_shaman_squad": {
+        "key": "oneTimeOffer_shaman_squad",
+        "title_Localized": "Troop_Shaman_Name",
+        "troopsLevelId": "shaman_3",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_shaman",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_undeadHeadless_squad": {
+        "key": "oneTimeOffer_undeadHeadless_squad",
+        "title_Localized": "Troop_Undead_Name",
+        "troopsLevelId": "undeadHeadless_3",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_undeadHeadless",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_flyingMonster_squad": {
+        "key": "oneTimeOffer_flyingMonster_squad",
+        "title_Localized": "Troop_FlyingMonster_Name",
+        "troopsLevelId": "flyingMonster_4",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_flyingMonster",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_stoneGolem_squad": {
+        "key": "oneTimeOffer_stoneGolem_squad",
+        "title_Localized": "Troop_StoneGolem_Name",
+        "troopsLevelId": "stoneGolem_4",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_stoneGolem",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_necromancer_squad": {
+        "key": "oneTimeOffer_necromancer_squad",
+        "title_Localized": "Troop_Necromancer_Name",
+        "troopsLevelId": "necromancer_4",
+        "amount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_necromancer",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_stormSpearman_squad": {
+        "key": "oneTimeOffer_stormSpearman_squad",
+        "title_Localized": "Troop_StormSpearman_Name",
+        "troopsLevelId": "stormSpearman_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_stormSpearman",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_vulkanGolem_squad": {
+        "key": "oneTimeOffer_vulkanGolem_squad",
+        "title_Localized": "Troop_VulkanGolem_Name",
+        "troopsLevelId": "vulkanGolem_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_vulkanGolem",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_skeletonWarrior_squad": {
+        "key": "oneTimeOffer_skeletonWarrior_squad",
+        "title_Localized": "Troop_SkeletonWarrior_Name",
+        "troopsLevelId": "skeletonWarrior_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_skeletonWarrior",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_mountainsChampion_squad": {
+        "key": "oneTimeOffer_mountainsChampion_squad",
+        "title_Localized": "Troop_MountainsChampion_Name",
+        "troopsLevelId": "mountainsChampion_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_mountainsChampion",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_eliteWarrior_squad": {
+        "key": "oneTimeOffer_eliteWarrior_squad",
+        "title_Localized": "Troop_EliteWarrior_Name",
+        "troopsLevelId": "eliteWarrior_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_eliteWarrior",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "oneTimeOffer_windElemental_squad": {
+        "key": "oneTimeOffer_windElemental_squad",
+        "title_Localized": "Troop_AirElemental_Name",
+        "troopsLevelId": "windElemental_4",
+        "amount": 16,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "oneTimeOffer_windElemental",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerTroop_stunToad": {
+        "key": "clan_offerTroop_stunToad",
+        "title_Localized": "Troop_StunToad_Name",
+        "troopsLevelId": "stunToad_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 4200,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerTroop_phoenix": {
+        "key": "clan_offerTroop_phoenix",
+        "title_Localized": "Troop_Phoenix_Name",
+        "troopsLevelId": "phoenix_1",
+        "amount": 1,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 4200,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersFree": {
+        "key": "offerTowerAxeThrowersFree",
+        "title_Localized": "tower_shop_offer_dailyBonus",
+        "troopsLevelId": "axeThrowers_1",
+        "amount": 1,
+        "analyticsCategory": "tower_free",
+        "criteriaId": "towerShop_limit_1",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersAdvanced_1": {
+        "key": "offerTowerAxeThrowersAdvanced_1",
+        "title_Localized": "tower_shop_offer_advanced1",
+        "troopsLevelId": "axeThrowers_1",
+        "amount": 3,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_advanced_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersAdvanced_2": {
+        "key": "offerTowerAxeThrowersAdvanced_2",
+        "title_Localized": "tower_shop_offer_advanced2",
+        "troopsLevelId": "axeThrowers_2",
+        "amount": 5,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_advanced_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersUltimate_1": {
+        "key": "offerTowerAxeThrowersUltimate_1",
+        "title_Localized": "tower_shop_offer_ultimate1",
+        "troopsLevelId": "axeThrowers_2",
+        "amount": 8,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_ultimate_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersUltimate_2": {
+        "key": "offerTowerAxeThrowersUltimate_2",
+        "title_Localized": "tower_shop_offer_ultimate2",
+        "troopsLevelId": "axeThrowers_2",
+        "amount": 12,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_ultimate_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersAbsolute_1": {
+        "key": "offerTowerAxeThrowersAbsolute_1",
+        "title_Localized": "tower_shop_offer_absolute1",
+        "troopsLevelId": "axeThrowers_3",
+        "amount": 12,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_absolute_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerTowerAxeThrowersAbsolute_2": {
+        "key": "offerTowerAxeThrowersAbsolute_2",
+        "title_Localized": "tower_shop_offer_absolute2",
+        "troopsLevelId": "axeThrowers_3",
+        "amount": 16,
+        "analyticsCategory": "tower",
+        "criteriaId": "towerShop_unlimited",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "toweroffer_absolute_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

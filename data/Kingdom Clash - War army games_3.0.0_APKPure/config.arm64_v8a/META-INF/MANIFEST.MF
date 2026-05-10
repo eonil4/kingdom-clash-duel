@@ -1,0 +1,80 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: e2lbvVyZwQi8hv94t6f8o1extu8=
+
+Name: lib/arm64-v8a/libFirebaseCppAnalytics.so
+SHA1-Digest: mZCvfjPjEyC2TgVMCfL+etgcxM4=
+
+Name: lib/arm64-v8a/libFirebaseCppApp-11_9_0.so
+SHA1-Digest: F8RYdVFPz2WC2KKKLLtNxbTVoUQ=
+
+Name: lib/arm64-v8a/libFirebaseCppCrashlytics.so
+SHA1-Digest: vPVfe0C5otKVA+XP169/8Kv2Sks=
+
+Name: lib/arm64-v8a/lib_burst_generated.so
+SHA1-Digest: KgRYpdmVrCo9SHUhsH7U6ufa/w4=
+
+Name: lib/arm64-v8a/libapminsighta.so
+SHA1-Digest: Gyn2scvjiVR8eJLCd4w5ubOMMDk=
+
+Name: lib/arm64-v8a/libapminsightb.so
+SHA1-Digest: gRCG8XnFDUCCHizlhz1tHJVm978=
+
+Name: lib/arm64-v8a/libapplovin-native-crash-reporter.so
+SHA1-Digest: qmJbO8GdFOYTgw5Prbg1Mcj8a2M=
+
+Name: lib/arm64-v8a/libappmetrica-native-runner.so
+SHA1-Digest: jSEWZW1XdCfJK40BXmjEWneR8nQ=
+
+Name: lib/arm64-v8a/libappmetrica-native.so
+SHA1-Digest: kyB5cmD9H6ZFkxwTJuAdErAgMZA=
+
+Name: lib/arm64-v8a/libappmetrica-service-native.so
+SHA1-Digest: fpvTtlGFLEiMGSvMEVzRedpSKR8=
+
+Name: lib/arm64-v8a/libappmetrica_crashpad_handler.so
+SHA1-Digest: O0q/J3KK0Z+/634DhCBZLd07qw0=
+
+Name: lib/arm64-v8a/libbuffer_pgl.so
+SHA1-Digest: o/v79+leONpdRWmXYinBjHFvOvQ=
+
+Name: lib/arm64-v8a/libcrashlytics-common.so
+SHA1-Digest: FNCsEgr/VjQ8hb2sLVREKaHZEd4=
+
+Name: lib/arm64-v8a/libcrashlytics-handler.so
+SHA1-Digest: rQkFoWXKJCeZvNzxNMXQ2PuHSFQ=
+
+Name: lib/arm64-v8a/libcrashlytics-trampoline.so
+SHA1-Digest: pAQaq3L1dUWMLrrNEmlQa4YxCEA=
+
+Name: lib/arm64-v8a/libcrashlytics.so
+SHA1-Digest: blehR67FBFcb6ZhcKCJsuTdZykw=
+
+Name: lib/arm64-v8a/libfile_lock_pgl.so
+SHA1-Digest: +HurTfz9JtX8QM2j4O/xTcKCSMk=
+
+Name: lib/arm64-v8a/libil2cpp.so
+SHA1-Digest: rwOCD9ZGpxZuV5+52b/PFGprGXc=
+
+Name: lib/arm64-v8a/libmain.so
+SHA1-Digest: EiLsf+LgtAAswssOSsvNqrMAx8k=
+
+Name: lib/arm64-v8a/libnms.so
+SHA1-Digest: WDTa9cRbbBrCExJMJO9ORIBbkj4=
+
+Name: lib/arm64-v8a/libpglarmor.so
+SHA1-Digest: oiu7Dh8jMzBRTU5nPQj91WlOI/U=
+
+Name: lib/arm64-v8a/libtobEmbedPagEncrypt.so
+SHA1-Digest: XvgsPJC3q1O+twadsDLRULDx71s=
+
+Name: lib/arm64-v8a/libtt_ugen_layout.so
+SHA1-Digest: uobzNFwfpcD8rnJkT28mKCHOMAM=
+
+Name: lib/arm64-v8a/libunity.so
+SHA1-Digest: 2kyo1InB4iKYBaeWvZJ9dOMJFgw=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+

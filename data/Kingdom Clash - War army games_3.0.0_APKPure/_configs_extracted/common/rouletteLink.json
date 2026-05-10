@@ -1,0 +1,59 @@
+{
+    "roulette_link_darkKnight": {
+        "key": "roulette_link_darkKnight"
+    },
+    "roulette_link_accurateMerida": {
+        "key": "roulette_link_accurateMerida"
+    },
+    "roulette_link_general": {
+        "key": "roulette_link_general"
+    },
+    "roulette_link_headHunt": {
+        "key": "roulette_link_headHunt"
+    },
+    "mw_link_chapter_1_common": {
+        "key": "mw_link_chapter_1_common"
+    },
+    "mw_link_chapter_1_premium": {
+        "key": "mw_link_chapter_1_premium"
+    },
+    "mw_link_chapter_2_common": {
+        "key": "mw_link_chapter_2_common"
+    },
+    "mw_link_chapter_2_premium": {
+        "key": "mw_link_chapter_2_premium"
+    },
+    "roulette_link_doubleShield": {
+        "key": "roulette_link_doubleShield"
+    },
+    "roulette_link_cursedGiant": {
+        "key": "roulette_link_cursedGiant"
+    },
+    "roulette_link_undeadWarrior": {
+        "key": "roulette_link_undeadWarrior"
+    },
+    "roulette_link_lightningElemental": {
+        "key": "roulette_link_lightningElemental"
+    },
+    "roulette_link_raceSwordOut": {
+        "key": "roulette_link_raceSwordOut"
+    },
+    "roulette_link_casinoRoulette_1": {
+        "key": "roulette_link_casinoRoulette_1"
+    },
+    "roulette_link_casinoRoulette_2": {
+        "key": "roulette_link_casinoRoulette_2"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new"
+    }
+}

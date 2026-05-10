@@ -1,0 +1,200 @@
+{
+    "bankChestOffer_1": {
+        "key": "bankChestOffer_1",
+        "order": 0,
+        "title_Localized": "caption_bank_free_chest",
+        "style": "normal",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 0,
+        "isOnePerDay": true,
+        "rewardChestId": "twoStarKardReward",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "bankChestOffer_2": {
+        "key": "bankChestOffer_2",
+        "order": 1,
+        "title_Localized": "caption_bank_gold_chest",
+        "style": "normal",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 350,
+        "isOnePerDay": false,
+        "rewardChestId": "shopChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "bankChestOffer_3": {
+        "key": "bankChestOffer_3",
+        "order": 2,
+        "title_Localized": "caption_bank_epic_chest",
+        "style": "highlighted",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 3000,
+        "isOnePerDay": false,
+        "rewardChestId": "shopChest_x10",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "pvpChestOffer": {
+        "key": "pvpChestOffer",
+        "order": 3,
+        "title_Localized": "caption_bank_gold_chest",
+        "style": "normal",
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 150,
+        "isOnePerDay": true,
+        "rewardChestId": "shopChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_chestOffer_EpicTroop": {
+        "key": "clan_chestOffer_EpicTroop",
+        "order": 1,
+        "title_Localized": "clanShop_EpicTroopChest",
+        "style": "normal",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": "clanRank_1_limit_2",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade1",
+        "priceCurrencyAmount": 1000,
+        "isOnePerDay": false,
+        "rewardChestId": "EpicSquadClanShopChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_chestOffer_LegTroop": {
+        "key": "clan_chestOffer_LegTroop",
+        "order": 2,
+        "title_Localized": "clanShop_LegTroopChest",
+        "style": "normal",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": "clanRank_5",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade2",
+        "priceCurrencyAmount": 2100,
+        "isOnePerDay": true,
+        "rewardChestId": "LegSquadClanShopChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_chestOffer_LegHero": {
+        "key": "clan_chestOffer_LegHero",
+        "order": 3,
+        "title_Localized": "caption_hero_legendary",
+        "style": "normal",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": "clanRank_5",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade2",
+        "priceCurrencyAmount": 15500,
+        "isOnePerDay": true,
+        "rewardChestId": "legHeroClanShopReward",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_chestOffer_EpicHero": {
+        "key": "clan_chestOffer_EpicHero",
+        "order": 4,
+        "title_Localized": "caption_hero_epic",
+        "style": "normal",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": "clanRank_1",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade1",
+        "priceCurrencyAmount": 11500,
+        "isOnePerDay": true,
+        "rewardChestId": "epicHeroClanShopReward",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "pvpOffer_LegTroop": {
+        "key": "pvpOffer_LegTroop",
+        "order": 2,
+        "title_Localized": "clanShop_LegTroopChest",
+        "style": "normal",
+        "analyticsCategory": "arena_store",
+        "criteriaId": "pvpShop_limit_1",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 500,
+        "isOnePerDay": true,
+        "rewardChestId": "LegSquadClanShopChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "pvpOffer_LegHero": {
+        "key": "pvpOffer_LegHero",
+        "order": 3,
+        "title_Localized": "caption_hero_legendary",
+        "style": "normal",
+        "analyticsCategory": "arena_store",
+        "criteriaId": "pvpShop_limit_1",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 6000,
+        "isOnePerDay": true,
+        "rewardChestId": "legHeroClanShopReward",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "pvpOffer_Chest": {
+        "key": "pvpOffer_Chest",
+        "order": 1,
+        "title_Localized": "caption_box_rare",
+        "style": "normal",
+        "analyticsCategory": "arena_store",
+        "criteriaId": "pvpShop_limit_1",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 150,
+        "isOnePerDay": true,
+        "rewardChestId": "goldChest",
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "thresholdBossDragon1": {
+        "key": "thresholdBossDragon1"
+    },
+    "thresholdBossDragon2": {
+        "key": "thresholdBossDragon2"
+    },
+    "thresholdBossSpiderQueen1": {
+        "key": "thresholdBossSpiderQueen1"
+    },
+    "thresholdBossSpiderQueen2": {
+        "key": "thresholdBossSpiderQueen2"
+    },
+    "thresholdBossKraken1": {
+        "key": "thresholdBossKraken1"
+    },
+    "thresholdBossKraken2": {
+        "key": "thresholdBossKraken2"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "oneWeaponChest": {
+        "key": "oneWeaponChest",
+        "localization": "caption_reward_one_weapon_chest",
+        "iconId": "casinoWeaponIcon",
+        "chestId": "oneWeaponChest",
+        "count": 1,
+        "countStrategy": "openChests"
+    },
+    "oneArmorChest": {
+        "key": "oneArmorChest",
+        "localization": "caption_reward_one_armor_chest",
+        "iconId": "casinoArmorIcon",
+        "chestId": "oneArmorChest",
+        "count": 1,
+        "countStrategy": "openChests"
+    },
+    "twoWeaponChest": {
+        "key": "twoWeaponChest",
+        "localization": "caption_reward_two_weapon_chest",
+        "iconId": "casinoWeaponIcon",
+        "chestId": "twoWeaponChest",
+        "count": 2,
+        "countStrategy": "multiplyReward"
+    },
+    "twoArmorChest": {
+        "key": "twoArmorChest",
+        "localization": "caption_reward_two_armor_chest",
+        "iconId": "casinoArmorIcon",
+        "chestId": "twoArmorChest",
+        "count": 2,
+        "countStrategy": "multiplyReward"
+    }
+}

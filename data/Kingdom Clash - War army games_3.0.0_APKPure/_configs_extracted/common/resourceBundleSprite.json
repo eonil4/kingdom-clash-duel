@@ -1,0 +1,1337 @@
+{
+    "generalIcon": {
+        "key": "generalIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/General.png",
+        "bundle": "main"
+    },
+    "necromancerIcon": {
+        "key": "necromancerIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Necromancer.png",
+        "bundle": "main"
+    },
+    "archerIcon": {
+        "key": "archerIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Archer.png",
+        "bundle": "main"
+    },
+    "assasinIcon": {
+        "key": "assasinIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Assassin.png",
+        "bundle": "main"
+    },
+    "bomberIcon": {
+        "key": "bomberIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Bomber.png",
+        "bundle": "main"
+    },
+    "butcherIcon": {
+        "key": "butcherIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Butcher.png",
+        "bundle": "main"
+    },
+    "catapultIcon": {
+        "key": "catapultIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Catapult.png",
+        "bundle": "main"
+    },
+    "infantryIcon": {
+        "key": "infantryIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Infantry.png",
+        "bundle": "main"
+    },
+    "ironGuardsIcon": {
+        "key": "ironGuardsIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/IronGuard.png",
+        "bundle": "main"
+    },
+    "skeletonIcon": {
+        "key": "skeletonIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Skeleton.png",
+        "bundle": "main"
+    },
+    "paladinIcon": {
+        "key": "paladinIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Paladin.png",
+        "bundle": "main"
+    },
+    "alchemistIcon": {
+        "key": "alchemistIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Alchemist.png",
+        "bundle": "main"
+    },
+    "undeadMageIcon": {
+        "key": "undeadMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/UndeadMage.png",
+        "bundle": "main"
+    },
+    "lancerIcon": {
+        "key": "lancerIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Lancer.png",
+        "bundle": "main"
+    },
+    "hunterIcon": {
+        "key": "hunterIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Hunter.png",
+        "bundle": "main"
+    },
+    "beastIcon": {
+        "key": "beastIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Beast.png",
+        "bundle": "main"
+    },
+    "mountainsChampionIcon": {
+        "key": "mountainsChampionIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/MountainsChampion.png",
+        "bundle": "main"
+    },
+    "shamanIcon": {
+        "key": "shamanIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Shaman.png",
+        "bundle": "main"
+    },
+    "impIcon": {
+        "key": "impIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Imp.png",
+        "bundle": "main"
+    },
+    "darkKnightIcon": {
+        "key": "darkKnightIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DarkKnight.png",
+        "bundle": "main"
+    },
+    "druidIcon": {
+        "key": "druidIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/Druid.png",
+        "bundle": "main"
+    },
+    "dragonRiderIcon": {
+        "key": "dragonRiderIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DragonRider.png",
+        "bundle": "main"
+    },
+    "accurateMeridaIcon": {
+        "key": "accurateMeridaIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/AccurateMerida.png",
+        "bundle": "main"
+    },
+    "baronBenuaIcon": {
+        "key": "baronBenuaIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/BaronBenua.png",
+        "bundle": "main"
+    },
+    "swordmasterHeroIcon": {
+        "key": "swordmasterHeroIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/SwordmasterHero.png",
+        "bundle": "main"
+    },
+    "clericHeroIcon": {
+        "key": "clericHeroIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ClericHero.png",
+        "bundle": "main"
+    },
+    "icon_offer_dragon": {
+        "key": "icon_offer_dragon",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_dragon.png",
+        "bundle": "main"
+    },
+    "chest_coin_wood": {
+        "key": "chest_coin_wood",
+        "path": "Assets\/Resources\/Sprites\/StoreProducts\/chest_coin_wood.png",
+        "bundle": "main"
+    },
+    "generalGoldIcon": {
+        "key": "generalGoldIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/GeneralGold.png",
+        "bundle": "main"
+    },
+    "monkIcon": {
+        "key": "monkIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Monk.png",
+        "bundle": "main"
+    },
+    "bag_coin": {
+        "key": "bag_coin",
+        "path": "Assets\/Resources\/Sprites\/StoreProducts\/bag_coin.png",
+        "bundle": "main"
+    },
+    "big_gem": {
+        "key": "big_gem",
+        "path": "Assets\/Resources\/Sprites\/StoreProducts\/big_gem.png",
+        "bundle": "main"
+    },
+    "ringleaderHeroIcon": {
+        "key": "ringleaderHeroIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/RingleaderHero.png",
+        "bundle": "main"
+    },
+    "charmerIcon": {
+        "key": "charmerIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/Charmer.png",
+        "bundle": "main"
+    },
+    "icon_offer_cleric": {
+        "key": "icon_offer_cleric",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_cleric.png",
+        "bundle": "main"
+    },
+    "icon_offer_merida": {
+        "key": "icon_offer_merida",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_merida.png",
+        "bundle": "main"
+    },
+    "accurateMeridaSilver": {
+        "key": "accurateMeridaSilver",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/AccurateMeridaSilver.png",
+        "bundle": "main"
+    },
+    "AccurateMeridaGold": {
+        "key": "AccurateMeridaGold",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/AccurateMeridaGold.png",
+        "bundle": "main"
+    },
+    "undeadInfantry": {
+        "key": "undeadInfantry",
+        "path": "Assets\/Content\/UnitIcons\/squads\/UndeadInfantry.png",
+        "bundle": "main"
+    },
+    "undeadJavelin": {
+        "key": "undeadJavelin",
+        "path": "Assets\/Content\/UnitIcons\/squads\/UndeadJavelin.png",
+        "bundle": "main"
+    },
+    "nunIcon": {
+        "key": "nunIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/Nun.png",
+        "bundle": "main"
+    },
+    "forestQueenIcon": {
+        "key": "forestQueenIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ForestQueen.png",
+        "bundle": "main"
+    },
+    "icon_race_human": {
+        "key": "icon_race_human",
+        "path": "Assets\/Resources\/Sprites\/Factions\/icon_race_human.png",
+        "bundle": "main"
+    },
+    "icon_race_mage": {
+        "key": "icon_race_mage",
+        "path": "Assets\/Resources\/Sprites\/Factions\/icon_race_mage.png",
+        "bundle": "main"
+    },
+    "icon_race_undead": {
+        "key": "icon_race_undead",
+        "path": "Assets\/Resources\/Sprites\/Factions\/icon_race_undead.png",
+        "bundle": "main"
+    },
+    "luckycard_human": {
+        "key": "luckycard_human",
+        "path": "Assets\/Resources\/Sprites\/Factions\/luckycard_human.png",
+        "bundle": "main"
+    },
+    "luckycard_mage": {
+        "key": "luckycard_mage",
+        "path": "Assets\/Resources\/Sprites\/Factions\/luckycard_mage.png",
+        "bundle": "main"
+    },
+    "luckycard_undead": {
+        "key": "luckycard_undead",
+        "path": "Assets\/Resources\/Sprites\/Factions\/luckycard_undead.png",
+        "bundle": "main"
+    },
+    "undeadHeadlessIcon": {
+        "key": "undeadHeadlessIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/HeadlessUndead.png",
+        "bundle": "main"
+    },
+    "boneDragonIcon": {
+        "key": "boneDragonIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/BoneDragon.png",
+        "bundle": "main"
+    },
+    "spiderBlastIcon": {
+        "key": "spiderBlastIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/SpiderBlast.png",
+        "bundle": "main"
+    },
+    "golemInfantryIcon": {
+        "key": "golemInfantryIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/GolemInfantryIcon.png",
+        "bundle": "main"
+    },
+    "undeadWarriorIcon": {
+        "key": "undeadWarriorIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/undeadWarrior.png",
+        "bundle": "main"
+    },
+    "undeadGunnerIcon": {
+        "key": "undeadGunnerIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/UndeadGunner.png",
+        "bundle": "main"
+    },
+    "damnCatapultIcon": {
+        "key": "damnCatapultIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/DamnCatapult.png",
+        "bundle": "main"
+    },
+    "magicArcherIcon": {
+        "key": "magicArcherIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/MagicArcher.png",
+        "bundle": "main"
+    },
+    "offer_lobby_gems": {
+        "key": "offer_lobby_gems",
+        "path": "Assets\/Content\/Sprites\/LobbyIcons\/icon_offer_gems.png",
+        "bundle": "main"
+    },
+    "store_big_gem": {
+        "key": "store_big_gem",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/big_gem.png",
+        "bundle": "main"
+    },
+    "store_chest_gem": {
+        "key": "store_chest_gem",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/chest_gem.png",
+        "bundle": "main"
+    },
+    "store_header_gems": {
+        "key": "store_header_gems",
+        "path": "Assets\/Content\/Sprites\/StoreHeaders\/header_offer_gems.png",
+        "bundle": "main"
+    },
+    "store_bag_gem": {
+        "key": "store_bag_gem",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/bag_gem.png",
+        "bundle": "main"
+    },
+    "icon_offer_forestQueen": {
+        "key": "icon_offer_forestQueen",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_forestQueen.png",
+        "bundle": "main"
+    },
+    "icon_offer_boneDragon": {
+        "key": "icon_offer_boneDragon",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_boneDragon.png",
+        "bundle": "main"
+    },
+    "icon_offer_pack_hero": {
+        "key": "icon_offer_pack_hero",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_pack_hero.png",
+        "bundle": "main"
+    },
+    "icon_offer_squads": {
+        "key": "icon_offer_squads",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_squads.png",
+        "bundle": "main"
+    },
+    "icon_dragon": {
+        "key": "icon_dragon",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_dragon.png",
+        "bundle": "main"
+    },
+    "icon_dragon_mainscreen": {
+        "key": "icon_dragon_mainscreen",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_dragon_mainscreen.png",
+        "bundle": "main"
+    },
+    "iceMageIcon": {
+        "key": "iceMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/IceMage.png",
+        "bundle": "main"
+    },
+    "darknessMageIcon": {
+        "key": "darknessMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DarknessMage.png",
+        "bundle": "main"
+    },
+    "flyingMonsterIcon": {
+        "key": "flyingMonsterIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/FlyingMonster.png",
+        "bundle": "main"
+    },
+    "stoneGolemIcon": {
+        "key": "stoneGolemIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/StoneGolem.png",
+        "bundle": "main"
+    },
+    "pyrotechnicianIcon": {
+        "key": "pyrotechnicianIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Pyrotechnician.png",
+        "bundle": "main"
+    },
+    "stormSpearmanIcon": {
+        "key": "stormSpearmanIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/StormSpearman.png",
+        "bundle": "main"
+    },
+    "airMageIcon": {
+        "key": "airMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/AirMage.png",
+        "bundle": "main"
+    },
+    "location_Meadows": {
+        "key": "location_Meadows",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_Meadows.png",
+        "bundle": "main"
+    },
+    "icon_first_gift": {
+        "key": "icon_first_gift",
+        "path": "Assets\/Content\/Sprites\/LobbyIcons\/icon_first_gift.png",
+        "bundle": "main"
+    },
+    "mageStudentIcon": {
+        "key": "mageStudentIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/MageStudent.png",
+        "bundle": "main"
+    },
+    "vulkanGolemIcon": {
+        "key": "vulkanGolemIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/VulkanGolem.png",
+        "bundle": "main"
+    },
+    "location_MagicForest": {
+        "key": "location_MagicForest",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_MagicForest.png",
+        "bundle": "main"
+    },
+    "clan_icon_1": {
+        "key": "clan_icon_1",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_1.png",
+        "bundle": "main"
+    },
+    "clan_icon_2": {
+        "key": "clan_icon_2",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_2.png",
+        "bundle": "main"
+    },
+    "clan_icon_3": {
+        "key": "clan_icon_3",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_3.png",
+        "bundle": "main"
+    },
+    "clan_icon_4": {
+        "key": "clan_icon_4",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_4.png",
+        "bundle": "main"
+    },
+    "clan_icon_5": {
+        "key": "clan_icon_5",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_5.png",
+        "bundle": "main"
+    },
+    "clan_icon_6": {
+        "key": "clan_icon_6",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_6.png",
+        "bundle": "main"
+    },
+    "clan_icon_7": {
+        "key": "clan_icon_7",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_7.png",
+        "bundle": "main"
+    },
+    "clan_icon_8": {
+        "key": "clan_icon_8",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_8.png",
+        "bundle": "main"
+    },
+    "clan_icon_9": {
+        "key": "clan_icon_9",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_9.png",
+        "bundle": "main"
+    },
+    "clan_icon_10": {
+        "key": "clan_icon_10",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_10.png",
+        "bundle": "main"
+    },
+    "clan_icon_11": {
+        "key": "clan_icon_11",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_11.png",
+        "bundle": "main"
+    },
+    "clan_icon_12": {
+        "key": "clan_icon_12",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_12.png",
+        "bundle": "main"
+    },
+    "clan_icon_13": {
+        "key": "clan_icon_13",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_13.png",
+        "bundle": "main"
+    },
+    "clan_icon_14": {
+        "key": "clan_icon_14",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_14.png",
+        "bundle": "main"
+    },
+    "clan_icon_15": {
+        "key": "clan_icon_15",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_15.png",
+        "bundle": "main"
+    },
+    "clan_icon_16": {
+        "key": "clan_icon_16",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_16.png",
+        "bundle": "main"
+    },
+    "clan_icon_17": {
+        "key": "clan_icon_17",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_17.png",
+        "bundle": "main"
+    },
+    "clan_icon_18": {
+        "key": "clan_icon_18",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_18.png",
+        "bundle": "main"
+    },
+    "clan_icon_19": {
+        "key": "clan_icon_19",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_19.png",
+        "bundle": "main"
+    },
+    "clan_icon_20": {
+        "key": "clan_icon_20",
+        "path": "Assets\/Content\/Sprites\/UI-ClanFlags\/icon_20.png",
+        "bundle": "main"
+    },
+    "eliteWarriorIcon": {
+        "key": "eliteWarriorIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/EliteWarrior.png",
+        "bundle": "main"
+    },
+    "gravediggerIcon": {
+        "key": "gravediggerIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Gravedigger.png",
+        "bundle": "main"
+    },
+    "icon_spiderQueen": {
+        "key": "icon_spiderQueen",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_spiderQueen.png",
+        "bundle": "main"
+    },
+    "icon_spiderQueen_mainscreen": {
+        "key": "icon_spiderQueen_mainscreen",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_spiderQueen_mainscreen.png",
+        "bundle": "main"
+    },
+    "rewardSpriteTroopsChest": {
+        "key": "rewardSpriteTroopsChest",
+        "path": "Assets\/Resources\/Sprites\/ChestPresentation\/wood_chest_small.png",
+        "bundle": "main"
+    },
+    "rewardSpriteCurrency": {
+        "key": "rewardSpriteCurrency",
+        "path": "Assets\/Content\/Fonts - Sprites\/sprite_currency_gold.png",
+        "bundle": "main"
+    },
+    "rewardSpriteHeroChest": {
+        "key": "rewardSpriteHeroChest",
+        "path": "Assets\/Resources\/Sprites\/ChestPresentation\/gold_chest_small.png",
+        "bundle": "main"
+    },
+    "rewardSpriteCristal": {
+        "key": "rewardSpriteCristal",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/Currency\/cristal_hud.png",
+        "bundle": "main"
+    },
+    "rewardSpriteHuntMedal": {
+        "key": "rewardSpriteHuntMedal",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/Currency\/HuntMedal.png",
+        "bundle": "main"
+    },
+    "rewardSpriteOnlineRating": {
+        "key": "rewardSpriteOnlineRating",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/Currency\/icon_reward_arena.png",
+        "bundle": "main"
+    },
+    "rewardSpriteBattlePass": {
+        "key": "rewardSpriteBattlePass",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/BattlePass\/icon_tickets.png",
+        "bundle": "main"
+    },
+    "fireMageIcon": {
+        "key": "fireMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/FireMage.png",
+        "bundle": "main"
+    },
+    "skeletonWarriorIcon": {
+        "key": "skeletonWarriorIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/SkeletonWarrior.png",
+        "bundle": "main"
+    },
+    "lightningElementalIcon": {
+        "key": "lightningElementalIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/LightningElemental.png",
+        "bundle": "main"
+    },
+    "windElementalIcon": {
+        "key": "windElementalIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/WindElemental.png",
+        "bundle": "main"
+    },
+    "offerCampaignLevelIcon": {
+        "key": "offerCampaignLevelIcon",
+        "path": "Assets\/Content\/Sprites\/LobbyIcons\/icon_offer_lvl.png",
+        "bundle": "main"
+    },
+    "location_Necropolis": {
+        "key": "location_Necropolis",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_Necropolis.png",
+        "bundle": "main"
+    },
+    "waterMageIcon": {
+        "key": "waterMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/WaterMage.png",
+        "bundle": "main"
+    },
+    "undeadPirateIcon": {
+        "key": "undeadPirateIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/UndeadPirate.png",
+        "bundle": "main"
+    },
+    "sandMageIcon": {
+        "key": "sandMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/SandMage.png",
+        "bundle": "main"
+    },
+    "cursedGiantIcon": {
+        "key": "cursedGiantIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/CursedGiant.png",
+        "bundle": "main"
+    },
+    "doubleShieldIcon": {
+        "key": "doubleShieldIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DoubleShield.png",
+        "bundle": "main"
+    },
+    "debafferOnMauntIcon": {
+        "key": "debafferOnMauntIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DebafferOnMaunt.png",
+        "bundle": "main"
+    },
+    "talent_airMage_windTamer": {
+        "key": "talent_airMage_windTamer",
+        "path": "Assets\/Content\/TalentIcons\/airMage_windTamer.png",
+        "bundle": "main"
+    },
+    "talent_boneDragon_deathAura": {
+        "key": "talent_boneDragon_deathAura",
+        "path": "Assets\/Content\/TalentIcons\/boneDragon_deathAura.png",
+        "bundle": "main"
+    },
+    "talent_charmer_revengeOfTheFallen": {
+        "key": "talent_charmer_revengeOfTheFallen",
+        "path": "Assets\/Content\/TalentIcons\/charmer_revengeOfTheFallen.png",
+        "bundle": "main"
+    },
+    "talent_darknessMage_unholyAlliance": {
+        "key": "talent_darknessMage_unholyAlliance",
+        "path": "Assets\/Content\/TalentIcons\/darknessMage_unholyAlliance.png",
+        "bundle": "main"
+    },
+    "talent_dragonRider_aerialSupport": {
+        "key": "talent_dragonRider_aerialSupport",
+        "path": "Assets\/Content\/TalentIcons\/dragonRider_aerialSupport.png",
+        "bundle": "main"
+    },
+    "talent_fireMage_flamingHeart": {
+        "key": "talent_fireMage_flamingHeart",
+        "path": "Assets\/Content\/TalentIcons\/fireMage_flamingHeart.png",
+        "bundle": "main"
+    },
+    "talent_forestQueen_thorns": {
+        "key": "talent_forestQueen_thorns",
+        "path": "Assets\/Content\/TalentIcons\/forestQueen_thorns.png",
+        "bundle": "main"
+    },
+    "talent_iceMage_frostArmor": {
+        "key": "talent_iceMage_frostArmor",
+        "path": "Assets\/Content\/TalentIcons\/iceMage_frostArmor.png",
+        "bundle": "main"
+    },
+    "talent_sandMage_sandStorm": {
+        "key": "talent_sandMage_sandStorm",
+        "path": "Assets\/Content\/TalentIcons\/sandMage_sandStorm.png",
+        "bundle": "main"
+    },
+    "talent_undeadPirate_boardingParty": {
+        "key": "talent_undeadPirate_boardingParty",
+        "path": "Assets\/Content\/TalentIcons\/undeadPirate_boardingParty.png",
+        "bundle": "main"
+    },
+    "talent_waterMage_powerOfWater": {
+        "key": "talent_waterMage_powerOfWater",
+        "path": "Assets\/Content\/TalentIcons\/waterMage_powerOfWater.png",
+        "bundle": "main"
+    },
+    "icon_bow": {
+        "key": "icon_bow",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_bow.png",
+        "bundle": "main"
+    },
+    "icon_catapult": {
+        "key": "icon_catapult",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_catapult.png",
+        "bundle": "main"
+    },
+    "icon_fr_human": {
+        "key": "icon_fr_human",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_fr_human.png",
+        "bundle": "main"
+    },
+    "icon_fr_mage": {
+        "key": "icon_fr_mage",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_fr_mage.png",
+        "bundle": "main"
+    },
+    "icon_fr_undead": {
+        "key": "icon_fr_undead",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_fr_undead.png",
+        "bundle": "main"
+    },
+    "icon_knight": {
+        "key": "icon_knight",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_knight.png",
+        "bundle": "main"
+    },
+    "icon_negativ_health": {
+        "key": "icon_negativ_health",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_negativ_health.png",
+        "bundle": "main"
+    },
+    "icon_no_hero_skill": {
+        "key": "icon_no_hero_skill",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_no_hero_skill.png",
+        "bundle": "main"
+    },
+    "icon_pozitiv_health": {
+        "key": "icon_pozitiv_health",
+        "path": "Assets\/Content\/Sprites\/BattleFieldEffectsIcons\/icon_pozitiv_health.png",
+        "bundle": "main"
+    },
+    "stunToadIcon": {
+        "key": "stunToadIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/StunToad.png",
+        "bundle": "main"
+    },
+    "floor_battle_01": {
+        "key": "floor_battle_01",
+        "path": "Assets\/Content\/Sprites\/LibraryFloors\/floor_battle_01.png",
+        "bundle": "main"
+    },
+    "floor_epic_battle_01": {
+        "key": "floor_epic_battle_01",
+        "path": "Assets\/Content\/Sprites\/LibraryFloors\/floor_epic_battle_01.png",
+        "bundle": "main"
+    },
+    "floor_library_01": {
+        "key": "floor_library_01",
+        "path": "Assets\/Content\/Sprites\/LibraryFloors\/floor_library_01.png",
+        "bundle": "main"
+    },
+    "floor_final_01": {
+        "key": "floor_final_01",
+        "path": "Assets\/Content\/Sprites\/LibraryFloors\/floor_final_01.png",
+        "bundle": "main"
+    },
+    "icon_talent_book": {
+        "key": "icon_talent_book",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/icon_talent_book.png",
+        "bundle": "main"
+    },
+    "gold_chest": {
+        "key": "gold_chest",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/gold_chest.png",
+        "bundle": "main"
+    },
+    "gold_gem": {
+        "key": "gold_gem",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/gold_gem.png",
+        "bundle": "main"
+    },
+    "gold_gem_book": {
+        "key": "gold_gem_book",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/gold_gem_book.png",
+        "bundle": "main"
+    },
+    "epic_chest_small": {
+        "key": "epic_chest_small",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/epic_chest_small.png",
+        "bundle": "main"
+    },
+    "gold_chest_small": {
+        "key": "gold_chest_small",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/gold_chest_small.png",
+        "bundle": "main"
+    },
+    "phoenixIcon": {
+        "key": "phoenixIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/Phoenix.png",
+        "bundle": "main"
+    },
+    "boss_header_dragon": {
+        "key": "boss_header_dragon",
+        "path": "Assets\/Content\/Sprites\/BossInfo\/boss_header_dragon.png",
+        "bundle": "main"
+    },
+    "boss_header_spider": {
+        "key": "boss_header_spider",
+        "path": "Assets\/Content\/Sprites\/BossInfo\/boss_header_spider.png",
+        "bundle": "main"
+    },
+    "shadowHuntressIcon": {
+        "key": "shadowHuntressIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ShadowHuntress.png",
+        "bundle": "main"
+    },
+    "barrel_gem": {
+        "key": "barrel_gem",
+        "path": "Assets\/Resources\/Sprites\/StoreProducts\/barrel_gem.png",
+        "bundle": "main"
+    },
+    "icon_kraken": {
+        "key": "icon_kraken",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_kraken.png",
+        "bundle": "main"
+    },
+    "icon_kraken_mainscreen": {
+        "key": "icon_kraken_mainscreen",
+        "path": "Assets\/Content\/UnitIcons\/bosses\/icon_kraken_mainscreen.png",
+        "bundle": "main"
+    },
+    "boss_header_kraken": {
+        "key": "boss_header_kraken",
+        "path": "Assets\/Content\/Sprites\/BossInfo\/boss_header_kraken.png",
+        "bundle": "main"
+    },
+    "location_Coast": {
+        "key": "location_Coast",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_Coast.png",
+        "bundle": "main"
+    },
+    "location_WheatField": {
+        "key": "location_WheatField",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_WheatField.png",
+        "bundle": "main"
+    },
+    "location_Town": {
+        "key": "location_Town",
+        "path": "Assets\/Content\/Sprites\/Locations\/location_Town.png",
+        "bundle": "main"
+    },
+    "rewardSpriteBattlePassArena": {
+        "key": "rewardSpriteBattlePassArena",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/BattlePass\/icon_points_victory.png",
+        "bundle": "main"
+    },
+    "undeadPestilenceIcon": {
+        "key": "undeadPestilenceIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/UndeadPestilence.png",
+        "bundle": "main"
+    },
+    "talent_undeadPestilence_plague": {
+        "key": "talent_undeadPestilence_plague",
+        "path": "Assets\/Content\/TalentIcons\/undeadPestilence_plague.png",
+        "bundle": "main"
+    },
+    "lordInquisitorIcon": {
+        "key": "lordInquisitorIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/LordInquisitor.png",
+        "bundle": "main"
+    },
+    "drunkTankIcon": {
+        "key": "drunkTankIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DrunkTank.png",
+        "bundle": "main"
+    },
+    "icon_offer_charmer": {
+        "key": "icon_offer_charmer",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_charmer.png",
+        "bundle": "main"
+    },
+    "icon_offer_airMage": {
+        "key": "icon_offer_airMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_airMage.png",
+        "bundle": "main"
+    },
+    "icon_offer_darknessMage": {
+        "key": "icon_offer_darknessMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_darknessMage.png",
+        "bundle": "main"
+    },
+    "icon_offer_iceMage": {
+        "key": "icon_offer_iceMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_iceMage.png",
+        "bundle": "main"
+    },
+    "icon_offer_fireMage": {
+        "key": "icon_offer_fireMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_fireMage.png",
+        "bundle": "main"
+    },
+    "icon_offer_sandMage": {
+        "key": "icon_offer_sandMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_sandMage.png",
+        "bundle": "main"
+    },
+    "icon_offer_undeadPirate": {
+        "key": "icon_offer_undeadPirate",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_undeadPirate.png",
+        "bundle": "main"
+    },
+    "icon_offer_waterMage": {
+        "key": "icon_offer_waterMage",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_waterMage.png",
+        "bundle": "main"
+    },
+    "bardHeroIcon": {
+        "key": "bardHeroIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/BardHero.png",
+        "bundle": "main"
+    },
+    "talent_bardHero_unitedWeStand": {
+        "key": "talent_bardHero_unitedWeStand",
+        "path": "Assets\/Content\/TalentIcons\/bardHero_unitedWeStand.png",
+        "bundle": "main"
+    },
+    "elevateTankIcon": {
+        "key": "elevateTankIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ElevateTank.png",
+        "bundle": "main"
+    },
+    "trickster_RoleIcon": {
+        "key": "trickster_RoleIcon",
+        "path": "Assets\/Content\/Sprites\/UI-TroopRoles\/icon_role_azgility.png",
+        "bundle": "main"
+    },
+    "ranger_RoleIcon": {
+        "key": "ranger_RoleIcon",
+        "path": "Assets\/Content\/Sprites\/UI-TroopRoles\/icon_role_ranger.png",
+        "bundle": "main"
+    },
+    "support_RoleIcon": {
+        "key": "support_RoleIcon",
+        "path": "Assets\/Content\/Sprites\/UI-TroopRoles\/icon_role_support.png",
+        "bundle": "main"
+    },
+    "tank_RoleIcon": {
+        "key": "tank_RoleIcon",
+        "path": "Assets\/Content\/Sprites\/UI-TroopRoles\/icon_role_tank.png",
+        "bundle": "main"
+    },
+    "clanChestIcon": {
+        "key": "clanChestIcon",
+        "path": "Assets\/Content\/Sprites\/UI-New\/ClanClash\/icon_clan_chest.png",
+        "bundle": "main"
+    },
+    "clanMembersIcon": {
+        "key": "clanMembersIcon",
+        "path": "Assets\/Content\/Sprites\/UI-New\/ClanClash\/icon_clan_members.png",
+        "bundle": "main"
+    },
+    "clanShopIcon": {
+        "key": "clanShopIcon",
+        "path": "Assets\/Content\/Sprites\/UI-New\/ClanClash\/icon_shop_clan.png",
+        "bundle": "main"
+    },
+    "talent_lordInquisitor_Immutability": {
+        "key": "talent_lordInquisitor_Immutability",
+        "path": "Assets\/Content\/TalentIcons\/lordInquisitor_talentShield.png",
+        "bundle": "main"
+    },
+    "icon_offer_lordInquisitor": {
+        "key": "icon_offer_lordInquisitor",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_lordInquisitor.png",
+        "bundle": "main"
+    },
+    "icon_offer_undeadPestilence": {
+        "key": "icon_offer_undeadPestilence",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_undeadPestilence.png",
+        "bundle": "main"
+    },
+    "rewardSpriteClanCoin": {
+        "key": "rewardSpriteClanCoin",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/Currency\/icon_clan_currency.png",
+        "bundle": "main"
+    },
+    "elevateArcherIcon": {
+        "key": "elevateArcherIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ElevateArcher.png",
+        "bundle": "main"
+    },
+    "rewardSpriteClanToken": {
+        "key": "rewardSpriteClanToken",
+        "path": "Assets\/Content\/Sprites\/UI-Bundle\/UI-New\/Currency\/icon_clan_currency_token.png",
+        "bundle": "main"
+    },
+    "miniStoneGolemIcon": {
+        "key": "miniStoneGolemIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/MiniStoneGolem.png",
+        "bundle": "main"
+    },
+    "icon_offer_gold": {
+        "key": "icon_offer_gold",
+        "path": "Assets\/Content\/Sprites\/LobbyIcons\/icon_offer_gold.png",
+        "bundle": "main"
+    },
+    "store_header_gold": {
+        "key": "store_header_gold",
+        "path": "Assets\/Content\/Sprites\/StoreHeaders\/header_offer_gold.png",
+        "bundle": "main"
+    },
+    "store_barrel_coin": {
+        "key": "store_barrel_coin",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/barrel_coin.png",
+        "bundle": "main"
+    },
+    "store_chest_coin": {
+        "key": "store_chest_coin",
+        "path": "Assets\/Content\/Sprites\/StoreProducts\/chest_coin.png",
+        "bundle": "main"
+    },
+    "talent_elevateTank_giantSlayer": {
+        "key": "talent_elevateTank_giantSlayer",
+        "path": "Assets\/Content\/TalentIcons\/elevateTank_giantSlayer.png",
+        "bundle": "main"
+    },
+    "talent_elevateArcher_weakSpot": {
+        "key": "talent_elevateArcher_weakSpot",
+        "path": "Assets\/Content\/TalentIcons\/elevateArcher_weakSpot.png",
+        "bundle": "main"
+    },
+    "elevateSupportIcon": {
+        "key": "elevateSupportIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/ElevateSupport.png",
+        "bundle": "main"
+    },
+    "demonFatIcon": {
+        "key": "demonFatIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DemonFat.png",
+        "bundle": "main"
+    },
+    "talent_elevateSupport_giftOfLight": {
+        "key": "talent_elevateSupport_giftOfLight",
+        "path": "Assets\/Content\/TalentIcons\/elevateSupport_giftOfLight.png",
+        "bundle": "main"
+    },
+    "oneTimeOfferIcon": {
+        "key": "oneTimeOfferIcon",
+        "path": "Assets\/Content\/Sprites\/UI-New\/OneTime\/icon_squad_offer.png",
+        "bundle": "main"
+    },
+    "talent_demonFat_echoOfPain": {
+        "key": "talent_demonFat_echoOfPain",
+        "path": "Assets\/Content\/TalentIcons\/demonFat_echoOfPain.png",
+        "bundle": "main"
+    },
+    "demonTankIcon": {
+        "key": "demonTankIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DemonTank.png",
+        "bundle": "main"
+    },
+    "talent_demonTank_easyPrey": {
+        "key": "talent_demonTank_easyPrey",
+        "path": "Assets\/Content\/TalentIcons\/demonTank_easyPrey.png",
+        "bundle": "main"
+    },
+    "demonMageIcon": {
+        "key": "demonMageIcon",
+        "path": "Assets\/Content\/UnitIcons\/heroes\/DemonMage.png",
+        "bundle": "main"
+    },
+    "axeThrowersIcon": {
+        "key": "axeThrowersIcon",
+        "path": "Assets\/Content\/UnitIcons\/squads\/AxeThrowers.png",
+        "bundle": "main"
+    },
+    "icon_offer_bardHero": {
+        "key": "icon_offer_bardHero",
+        "path": "Assets\/Resources\/Sprites\/Icons\/icon_offer_bard.png",
+        "bundle": "main"
+    },
+    "elevateCasinoIcon": {
+        "key": "elevateCasinoIcon",
+        "path": "Assets\/Content\/Sprites\/Casino\/icon_casino_elevate.png",
+        "bundle": "main"
+    },
+    "demonCasinoIcon": {
+        "key": "demonCasinoIcon",
+        "path": "Assets\/Content\/Sprites\/Casino\/icon_casino_demons.png",
+        "bundle": "main"
+    },
+    "talent_demonMage_meteoricRequiem": {
+        "key": "talent_demonMage_meteoricRequiem",
+        "path": "Assets\/Content\/TalentIcons\/demonMage_meteoricRequiem.png",
+        "bundle": "main"
+    },
+    "defaultArmorIcon": {
+        "key": "defaultArmorIcon",
+        "path": "Assets\/Content\/King\/Icons\/Armor\/defaultArmor.png",
+        "bundle": "main"
+    },
+    "aoeArmorIcon": {
+        "key": "aoeArmorIcon",
+        "path": "Assets\/Content\/King\/Icons\/Armor\/aoeArmor.png",
+        "bundle": "main"
+    },
+    "aoeWeaponIcon": {
+        "key": "aoeWeaponIcon",
+        "path": "Assets\/Content\/King\/Icons\/Weapon\/aoeWeapon.png",
+        "bundle": "main"
+    },
+    "reflectArmorIcon": {
+        "key": "reflectArmorIcon",
+        "path": "Assets\/Content\/King\/Icons\/Armor\/reflectArmor.png",
+        "bundle": "main"
+    },
+    "reflectWeaponIcon": {
+        "key": "reflectWeaponIcon",
+        "path": "Assets\/Content\/King\/Icons\/Weapon\/reflectWeapon.png",
+        "bundle": "main"
+    },
+    "casinoWeaponIcon": {
+        "key": "casinoWeaponIcon",
+        "path": "Assets\/Content\/Sprites\/Casino\/icon_casino_king_weapon.png",
+        "bundle": "main"
+    },
+    "casinoArmorIcon": {
+        "key": "casinoArmorIcon",
+        "path": "Assets\/Content\/Sprites\/Casino\/icon_casino_king_armor.png",
+        "bundle": "main"
+    },
+    "error_image": {
+        "key": "error_image",
+        "path": "Assets\/Content\/Sprites\/Ancillary\/error_image.png",
+        "bundle": "main"
+    },
+    "flag_symbol_01": {
+        "key": "flag_symbol_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_01.png",
+        "bundle": "main"
+    },
+    "flag_symbol_02": {
+        "key": "flag_symbol_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_02.png",
+        "bundle": "main"
+    },
+    "flag_symbol_03": {
+        "key": "flag_symbol_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_03.png",
+        "bundle": "main"
+    },
+    "flag_symbol_04": {
+        "key": "flag_symbol_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_04.png",
+        "bundle": "main"
+    },
+    "flag_symbol_05": {
+        "key": "flag_symbol_05",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_05.png",
+        "bundle": "main"
+    },
+    "flag_symbol_06": {
+        "key": "flag_symbol_06",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_06.png",
+        "bundle": "main"
+    },
+    "flag_symbol_07": {
+        "key": "flag_symbol_07",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_07.png",
+        "bundle": "main"
+    },
+    "flag_symbol_08": {
+        "key": "flag_symbol_08",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_08.png",
+        "bundle": "main"
+    },
+    "flag_symbol_09": {
+        "key": "flag_symbol_09",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_09.png",
+        "bundle": "main"
+    },
+    "flag_symbol_10": {
+        "key": "flag_symbol_10",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_10.png",
+        "bundle": "main"
+    },
+    "flag_symbol_11": {
+        "key": "flag_symbol_11",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_11.png",
+        "bundle": "main"
+    },
+    "flag_symbol_12": {
+        "key": "flag_symbol_12",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_12.png",
+        "bundle": "main"
+    },
+    "flag_symbol_13": {
+        "key": "flag_symbol_13",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_13.png",
+        "bundle": "main"
+    },
+    "flag_symbol_14": {
+        "key": "flag_symbol_14",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_14.png",
+        "bundle": "main"
+    },
+    "flag_symbol_15": {
+        "key": "flag_symbol_15",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_15.png",
+        "bundle": "main"
+    },
+    "flag_symbol_16": {
+        "key": "flag_symbol_16",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_16.png",
+        "bundle": "main"
+    },
+    "flag_symbol_17": {
+        "key": "flag_symbol_17",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_17.png",
+        "bundle": "main"
+    },
+    "flag_symbol_18": {
+        "key": "flag_symbol_18",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_18.png",
+        "bundle": "main"
+    },
+    "flag_symbol_19": {
+        "key": "flag_symbol_19",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_19.png",
+        "bundle": "main"
+    },
+    "flag_symbol_20": {
+        "key": "flag_symbol_20",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Symbols\/flag_symbol_20.png",
+        "bundle": "main"
+    },
+    "flag_pattern_01": {
+        "key": "flag_pattern_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Patterns\/flag_pattern_01.png",
+        "bundle": "main"
+    },
+    "flag_pattern_02": {
+        "key": "flag_pattern_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Patterns\/flag_pattern_02.png",
+        "bundle": "main"
+    },
+    "flag_pattern_03": {
+        "key": "flag_pattern_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Patterns\/flag_pattern_03.png",
+        "bundle": "main"
+    },
+    "flag_pattern_04": {
+        "key": "flag_pattern_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Patterns\/flag_pattern_04.png",
+        "bundle": "main"
+    },
+    "flag_pattern_05": {
+        "key": "flag_pattern_05",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Patterns\/flag_pattern_05.png",
+        "bundle": "main"
+    },
+    "flag_shape_01": {
+        "key": "flag_shape_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Shapes\/flag_shape_01.png",
+        "bundle": "main"
+    },
+    "flag_shape_02": {
+        "key": "flag_shape_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Shapes\/flag_shape_02.png",
+        "bundle": "main"
+    },
+    "flag_shape_03": {
+        "key": "flag_shape_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Shapes\/flag_shape_03.png",
+        "bundle": "main"
+    },
+    "flag_shape_04": {
+        "key": "flag_shape_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Shapes\/flag_shape_04.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_01": {
+        "key": "flag_big_shape_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_01.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_02": {
+        "key": "flag_big_shape_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_02.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_03": {
+        "key": "flag_big_shape_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_03.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_04": {
+        "key": "flag_big_shape_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_04.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_stroke_01": {
+        "key": "flag_big_shape_stroke_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_stroke_01.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_stroke_02": {
+        "key": "flag_big_shape_stroke_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_stroke_02.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_stroke_03": {
+        "key": "flag_big_shape_stroke_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_stroke_03.png",
+        "bundle": "main"
+    },
+    "flag_big_shape_stroke_04": {
+        "key": "flag_big_shape_stroke_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_big_shape_stroke_04.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_01": {
+        "key": "flag_small_shape_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_01.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_02": {
+        "key": "flag_small_shape_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_02.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_03": {
+        "key": "flag_small_shape_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_03.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_04": {
+        "key": "flag_small_shape_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_04.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_stroke_01": {
+        "key": "flag_small_shape_stroke_01",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_stroke_01.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_stroke_02": {
+        "key": "flag_small_shape_stroke_02",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_stroke_02.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_stroke_03": {
+        "key": "flag_small_shape_stroke_03",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_stroke_03.png",
+        "bundle": "main"
+    },
+    "flag_small_shape_stroke_04": {
+        "key": "flag_small_shape_stroke_04",
+        "path": "Assets\/Content\/Sprites\/ClanFlags\/Constructor\/flag_small_shape_stroke_04.png",
+        "bundle": "main"
+    },
+    "tower_unit_axeThrowers": {
+        "key": "tower_unit_axeThrowers",
+        "path": "Assets\/Content\/Sprites\/TowerUnits\/icon_tower_event.png",
+        "bundle": "main"
+    }
+}

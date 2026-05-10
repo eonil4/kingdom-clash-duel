@@ -1,0 +1,50 @@
+{
+    "selection_reflectWeapon_0": {
+        "key": "selection_reflectWeapon_0",
+        "localizationKey": "caption_reward_weapon_30"
+    },
+    "selection_reflectWeapon_1": {
+        "key": "selection_reflectWeapon_1",
+        "localizationKey": "caption_reward_weapon_1"
+    },
+    "selection_reflectWeapon_2": {
+        "key": "selection_reflectWeapon_2",
+        "localizationKey": "caption_reward_weapon_2"
+    },
+    "selection_reflectArmor_0": {
+        "key": "selection_reflectArmor_0",
+        "localizationKey": "caption_reward_armor_30"
+    },
+    "selection_reflectArmor_1": {
+        "key": "selection_reflectArmor_1",
+        "localizationKey": "caption_reward_armor_1"
+    },
+    "selection_reflectArmor_2": {
+        "key": "selection_reflectArmor_2",
+        "localizationKey": "caption_reward_armor_2"
+    },
+    "selection_aoeWeapon_0": {
+        "key": "selection_aoeWeapon_0",
+        "localizationKey": "caption_reward_weapon_30"
+    },
+    "selection_aoeWeapon_1": {
+        "key": "selection_aoeWeapon_1",
+        "localizationKey": "caption_reward_weapon_1"
+    },
+    "selection_aoeWeapon_2": {
+        "key": "selection_aoeWeapon_2",
+        "localizationKey": "caption_reward_weapon_2"
+    },
+    "selection_aoeArmor_0": {
+        "key": "selection_aoeArmor_0",
+        "localizationKey": "caption_reward_armor_30"
+    },
+    "selection_aoeArmor_1": {
+        "key": "selection_aoeArmor_1",
+        "localizationKey": "caption_reward_armor_1"
+    },
+    "selection_aoeArmor_2": {
+        "key": "selection_aoeArmor_2",
+        "localizationKey": "caption_reward_armor_2"
+    }
+}

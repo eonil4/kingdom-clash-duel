@@ -1,0 +1,1379 @@
+{
+    "dragonRider_buff_1": {
+        "key": "dragonRider_buff_1"
+    },
+    "dragonRider_buff_2": {
+        "key": "dragonRider_buff_2"
+    },
+    "dragonRider_buff_3": {
+        "key": "dragonRider_buff_3"
+    },
+    "dragonRider_buff_4": {
+        "key": "dragonRider_buff_4"
+    },
+    "dragonRider_buff_5": {
+        "key": "dragonRider_buff_5"
+    },
+    "dragonRider_buff_6": {
+        "key": "dragonRider_buff_6"
+    },
+    "dragonRider_buff_7": {
+        "key": "dragonRider_buff_7"
+    },
+    "dragonRider_buff_8": {
+        "key": "dragonRider_buff_8"
+    },
+    "dragonRider_buff_9": {
+        "key": "dragonRider_buff_9"
+    },
+    "dragonRider_buff_10": {
+        "key": "dragonRider_buff_10"
+    },
+    "boneDragon_buff_1": {
+        "key": "boneDragon_buff_1"
+    },
+    "boneDragon_buff_2": {
+        "key": "boneDragon_buff_2"
+    },
+    "boneDragon_buff_3": {
+        "key": "boneDragon_buff_3"
+    },
+    "boneDragon_buff_4": {
+        "key": "boneDragon_buff_4"
+    },
+    "boneDragon_buff_5": {
+        "key": "boneDragon_buff_5"
+    },
+    "boneDragon_buff_6": {
+        "key": "boneDragon_buff_6"
+    },
+    "boneDragon_buff_7": {
+        "key": "boneDragon_buff_7"
+    },
+    "boneDragon_buff_8": {
+        "key": "boneDragon_buff_8"
+    },
+    "boneDragon_buff_9": {
+        "key": "boneDragon_buff_9"
+    },
+    "boneDragon_buff_10": {
+        "key": "boneDragon_buff_10"
+    },
+    "fireMage_buff_1": {
+        "key": "fireMage_buff_1"
+    },
+    "fireMage_buff_2": {
+        "key": "fireMage_buff_2"
+    },
+    "fireMage_buff_3": {
+        "key": "fireMage_buff_3"
+    },
+    "fireMage_buff_4": {
+        "key": "fireMage_buff_4"
+    },
+    "fireMage_buff_5": {
+        "key": "fireMage_buff_5"
+    },
+    "fireMage_buff_6": {
+        "key": "fireMage_buff_6"
+    },
+    "fireMage_buff_7": {
+        "key": "fireMage_buff_7"
+    },
+    "fireMage_buff_8": {
+        "key": "fireMage_buff_8"
+    },
+    "fireMage_buff_9": {
+        "key": "fireMage_buff_9"
+    },
+    "fireMage_buff_10": {
+        "key": "fireMage_buff_10"
+    },
+    "charmer_buff_1": {
+        "key": "charmer_buff_1"
+    },
+    "charmer_buff_2": {
+        "key": "charmer_buff_2"
+    },
+    "charmer_buff_3": {
+        "key": "charmer_buff_3"
+    },
+    "charmer_buff_4": {
+        "key": "charmer_buff_4"
+    },
+    "charmer_buff_5": {
+        "key": "charmer_buff_5"
+    },
+    "charmer_buff_6": {
+        "key": "charmer_buff_6"
+    },
+    "charmer_buff_7": {
+        "key": "charmer_buff_7"
+    },
+    "charmer_buff_8": {
+        "key": "charmer_buff_8"
+    },
+    "charmer_buff_9": {
+        "key": "charmer_buff_9"
+    },
+    "charmer_buff_10": {
+        "key": "charmer_buff_10"
+    },
+    "forestQueen_buff_1": {
+        "key": "forestQueen_buff_1"
+    },
+    "forestQueen_buff_2": {
+        "key": "forestQueen_buff_2"
+    },
+    "forestQueen_buff_3": {
+        "key": "forestQueen_buff_3"
+    },
+    "forestQueen_buff_4": {
+        "key": "forestQueen_buff_4"
+    },
+    "forestQueen_buff_5": {
+        "key": "forestQueen_buff_5"
+    },
+    "forestQueen_buff_6": {
+        "key": "forestQueen_buff_6"
+    },
+    "forestQueen_buff_7": {
+        "key": "forestQueen_buff_7"
+    },
+    "forestQueen_buff_8": {
+        "key": "forestQueen_buff_8"
+    },
+    "forestQueen_buff_9": {
+        "key": "forestQueen_buff_9"
+    },
+    "forestQueen_buff_10": {
+        "key": "forestQueen_buff_10"
+    },
+    "iceMage_buff_1": {
+        "key": "iceMage_buff_1"
+    },
+    "iceMage_buff_2": {
+        "key": "iceMage_buff_2"
+    },
+    "iceMage_buff_3": {
+        "key": "iceMage_buff_3"
+    },
+    "iceMage_buff_4": {
+        "key": "iceMage_buff_4"
+    },
+    "iceMage_buff_5": {
+        "key": "iceMage_buff_5"
+    },
+    "iceMage_buff_6": {
+        "key": "iceMage_buff_6"
+    },
+    "iceMage_buff_7": {
+        "key": "iceMage_buff_7"
+    },
+    "iceMage_buff_8": {
+        "key": "iceMage_buff_8"
+    },
+    "iceMage_buff_9": {
+        "key": "iceMage_buff_9"
+    },
+    "iceMage_buff_10": {
+        "key": "iceMage_buff_10"
+    },
+    "airMage_buff_1": {
+        "key": "airMage_buff_1"
+    },
+    "airMage_buff_2": {
+        "key": "airMage_buff_2"
+    },
+    "airMage_buff_3": {
+        "key": "airMage_buff_3"
+    },
+    "airMage_buff_4": {
+        "key": "airMage_buff_4"
+    },
+    "airMage_buff_5": {
+        "key": "airMage_buff_5"
+    },
+    "airMage_buff_6": {
+        "key": "airMage_buff_6"
+    },
+    "airMage_buff_7": {
+        "key": "airMage_buff_7"
+    },
+    "airMage_buff_8": {
+        "key": "airMage_buff_8"
+    },
+    "airMage_buff_9": {
+        "key": "airMage_buff_9"
+    },
+    "airMage_buff_10": {
+        "key": "airMage_buff_10"
+    },
+    "sandMage_buff_1": {
+        "key": "sandMage_buff_1"
+    },
+    "sandMage_buff_2": {
+        "key": "sandMage_buff_2"
+    },
+    "sandMage_buff_3": {
+        "key": "sandMage_buff_3"
+    },
+    "sandMage_buff_4": {
+        "key": "sandMage_buff_4"
+    },
+    "sandMage_buff_5": {
+        "key": "sandMage_buff_5"
+    },
+    "sandMage_buff_6": {
+        "key": "sandMage_buff_6"
+    },
+    "sandMage_buff_7": {
+        "key": "sandMage_buff_7"
+    },
+    "sandMage_buff_8": {
+        "key": "sandMage_buff_8"
+    },
+    "sandMage_buff_9": {
+        "key": "sandMage_buff_9"
+    },
+    "sandMage_buff_10": {
+        "key": "sandMage_buff_10"
+    },
+    "undeadPirate_buff_1": {
+        "key": "undeadPirate_buff_1"
+    },
+    "undeadPirate_buff_2": {
+        "key": "undeadPirate_buff_2"
+    },
+    "undeadPirate_buff_3": {
+        "key": "undeadPirate_buff_3"
+    },
+    "undeadPirate_buff_4": {
+        "key": "undeadPirate_buff_4"
+    },
+    "undeadPirate_buff_5": {
+        "key": "undeadPirate_buff_5"
+    },
+    "undeadPirate_buff_6": {
+        "key": "undeadPirate_buff_6"
+    },
+    "undeadPirate_buff_7": {
+        "key": "undeadPirate_buff_7"
+    },
+    "undeadPirate_buff_8": {
+        "key": "undeadPirate_buff_8"
+    },
+    "undeadPirate_buff_9": {
+        "key": "undeadPirate_buff_9"
+    },
+    "undeadPirate_buff_10": {
+        "key": "undeadPirate_buff_10"
+    },
+    "waterMage_buff_1": {
+        "key": "waterMage_buff_1"
+    },
+    "waterMage_buff_2": {
+        "key": "waterMage_buff_2"
+    },
+    "waterMage_buff_3": {
+        "key": "waterMage_buff_3"
+    },
+    "waterMage_buff_4": {
+        "key": "waterMage_buff_4"
+    },
+    "waterMage_buff_5": {
+        "key": "waterMage_buff_5"
+    },
+    "waterMage_buff_6": {
+        "key": "waterMage_buff_6"
+    },
+    "waterMage_buff_7": {
+        "key": "waterMage_buff_7"
+    },
+    "waterMage_buff_8": {
+        "key": "waterMage_buff_8"
+    },
+    "waterMage_buff_9": {
+        "key": "waterMage_buff_9"
+    },
+    "waterMage_buff_10": {
+        "key": "waterMage_buff_10"
+    },
+    "darknessMage_buff_1": {
+        "key": "darknessMage_buff_1"
+    },
+    "darknessMage_buff_2": {
+        "key": "darknessMage_buff_2"
+    },
+    "darknessMage_buff_3": {
+        "key": "darknessMage_buff_3"
+    },
+    "darknessMage_buff_4": {
+        "key": "darknessMage_buff_4"
+    },
+    "darknessMage_buff_5": {
+        "key": "darknessMage_buff_5"
+    },
+    "darknessMage_buff_6": {
+        "key": "darknessMage_buff_6"
+    },
+    "darknessMage_buff_7": {
+        "key": "darknessMage_buff_7"
+    },
+    "darknessMage_buff_8": {
+        "key": "darknessMage_buff_8"
+    },
+    "darknessMage_buff_9": {
+        "key": "darknessMage_buff_9"
+    },
+    "darknessMage_buff_10": {
+        "key": "darknessMage_buff_10"
+    },
+    "attackDebuffHuman_1": {
+        "key": "attackDebuffHuman_1"
+    },
+    "attackDebuffHuman_2": {
+        "key": "attackDebuffHuman_2"
+    },
+    "attackDebuffHuman_3": {
+        "key": "attackDebuffHuman_3"
+    },
+    "attackBuffHuman_1": {
+        "key": "attackBuffHuman_1"
+    },
+    "attackBuffHuman_2": {
+        "key": "attackBuffHuman_2"
+    },
+    "attackBuffHuman_3": {
+        "key": "attackBuffHuman_3"
+    },
+    "attackDebuffMage_1": {
+        "key": "attackDebuffMage_1"
+    },
+    "attackDebuffMage_2": {
+        "key": "attackDebuffMage_2"
+    },
+    "attackDebuffMage_3": {
+        "key": "attackDebuffMage_3"
+    },
+    "attackBuffMage_1": {
+        "key": "attackBuffMage_1"
+    },
+    "attackBuffMage_2": {
+        "key": "attackBuffMage_2"
+    },
+    "attackBuffMage_3": {
+        "key": "attackBuffMage_3"
+    },
+    "attackDebuffUndead_1": {
+        "key": "attackDebuffUndead_1"
+    },
+    "attackDebuffUndead_2": {
+        "key": "attackDebuffUndead_2"
+    },
+    "attackDebuffUndead_3": {
+        "key": "attackDebuffUndead_3"
+    },
+    "attackBuffUndead_1": {
+        "key": "attackBuffUndead_1"
+    },
+    "attackBuffUndead_2": {
+        "key": "attackBuffUndead_2"
+    },
+    "attackBuffUndead_3": {
+        "key": "attackBuffUndead_3"
+    },
+    "hpDebuffHuman_1": {
+        "key": "hpDebuffHuman_1"
+    },
+    "hpDebuffHuman_2": {
+        "key": "hpDebuffHuman_2"
+    },
+    "hpDebuffHuman_3": {
+        "key": "hpDebuffHuman_3"
+    },
+    "hpBuffHuman_1": {
+        "key": "hpBuffHuman_1"
+    },
+    "hpBuffHuman_2": {
+        "key": "hpBuffHuman_2"
+    },
+    "hpBuffHuman_3": {
+        "key": "hpBuffHuman_3"
+    },
+    "hpDebuffMage_1": {
+        "key": "hpDebuffMage_1"
+    },
+    "hpDebuffMage_2": {
+        "key": "hpDebuffMage_2"
+    },
+    "hpDebuffMage_3": {
+        "key": "hpDebuffMage_3"
+    },
+    "hpBuffMage_1": {
+        "key": "hpBuffMage_1"
+    },
+    "hpBuffMage_2": {
+        "key": "hpBuffMage_2"
+    },
+    "hpBuffMage_3": {
+        "key": "hpBuffMage_3"
+    },
+    "hpDebuffUndead_1": {
+        "key": "hpDebuffUndead_1"
+    },
+    "hpDebuffUndead_2": {
+        "key": "hpDebuffUndead_2"
+    },
+    "hpDebuffUndead_3": {
+        "key": "hpDebuffUndead_3"
+    },
+    "hpBuffUndead_1": {
+        "key": "hpBuffUndead_1"
+    },
+    "hpBuffUndead_2": {
+        "key": "hpBuffUndead_2"
+    },
+    "hpBuffUndead_3": {
+        "key": "hpBuffUndead_3"
+    },
+    "meleeDebuff_1": {
+        "key": "meleeDebuff_1"
+    },
+    "meleeDebuff_2": {
+        "key": "meleeDebuff_2"
+    },
+    "meleeDebuff_3": {
+        "key": "meleeDebuff_3"
+    },
+    "meleeBuff_1": {
+        "key": "meleeBuff_1"
+    },
+    "meleeBuff_2": {
+        "key": "meleeBuff_2"
+    },
+    "meleeBuff_3": {
+        "key": "meleeBuff_3"
+    },
+    "rangeDebuff_1": {
+        "key": "rangeDebuff_1"
+    },
+    "rangeDebuff_2": {
+        "key": "rangeDebuff_2"
+    },
+    "rangeDebuff_3": {
+        "key": "rangeDebuff_3"
+    },
+    "rangeBuff_1": {
+        "key": "rangeBuff_1"
+    },
+    "rangeBuff_2": {
+        "key": "rangeBuff_2"
+    },
+    "rangeBuff_3": {
+        "key": "rangeBuff_3"
+    },
+    "aoeDebuff_1": {
+        "key": "aoeDebuff_1"
+    },
+    "aoeDebuff_2": {
+        "key": "aoeDebuff_2"
+    },
+    "aoeDebuff_3": {
+        "key": "aoeDebuff_3"
+    },
+    "aoeBuff_1": {
+        "key": "aoeBuff_1"
+    },
+    "aoeBuff_2": {
+        "key": "aoeBuff_2"
+    },
+    "aoeBuff_3": {
+        "key": "aoeBuff_3"
+    },
+    "abilityDisable": {
+        "key": "abilityDisable"
+    },
+    "healDebuff_1": {
+        "key": "healDebuff_1"
+    },
+    "healDebuff_2": {
+        "key": "healDebuff_2"
+    },
+    "healDebuff_3": {
+        "key": "healDebuff_3"
+    },
+    "healBuff_1": {
+        "key": "healBuff_1"
+    },
+    "healBuff_2": {
+        "key": "healBuff_2"
+    },
+    "healBuff_3": {
+        "key": "healBuff_3"
+    },
+    "shadowHuntress_buff_1": {
+        "key": "shadowHuntress_buff_1"
+    },
+    "shadowHuntress_buff_2": {
+        "key": "shadowHuntress_buff_2"
+    },
+    "shadowHuntress_buff_3": {
+        "key": "shadowHuntress_buff_3"
+    },
+    "undeadPestilence_buff_1": {
+        "key": "undeadPestilence_buff_1"
+    },
+    "undeadPestilence_buff_2": {
+        "key": "undeadPestilence_buff_2"
+    },
+    "undeadPestilence_buff_3": {
+        "key": "undeadPestilence_buff_3"
+    },
+    "undeadPestilence_buff_4": {
+        "key": "undeadPestilence_buff_4"
+    },
+    "undeadPestilence_buff_5": {
+        "key": "undeadPestilence_buff_5"
+    },
+    "undeadPestilence_buff_6": {
+        "key": "undeadPestilence_buff_6"
+    },
+    "undeadPestilence_buff_7": {
+        "key": "undeadPestilence_buff_7"
+    },
+    "undeadPestilence_buff_8": {
+        "key": "undeadPestilence_buff_8"
+    },
+    "undeadPestilence_buff_9": {
+        "key": "undeadPestilence_buff_9"
+    },
+    "undeadPestilence_buff_10": {
+        "key": "undeadPestilence_buff_10"
+    },
+    "bardHero_buff_1": {
+        "key": "bardHero_buff_1"
+    },
+    "bardHero_buff_2": {
+        "key": "bardHero_buff_2"
+    },
+    "bardHero_buff_3": {
+        "key": "bardHero_buff_3"
+    },
+    "bardHero_buff_4": {
+        "key": "bardHero_buff_4"
+    },
+    "bardHero_buff_5": {
+        "key": "bardHero_buff_5"
+    },
+    "bardHero_buff_6": {
+        "key": "bardHero_buff_6"
+    },
+    "bardHero_buff_7": {
+        "key": "bardHero_buff_7"
+    },
+    "bardHero_buff_8": {
+        "key": "bardHero_buff_8"
+    },
+    "bardHero_buff_9": {
+        "key": "bardHero_buff_9"
+    },
+    "bardHero_buff_10": {
+        "key": "bardHero_buff_10"
+    },
+    "lordInquisitor_buff_1": {
+        "key": "lordInquisitor_buff_1"
+    },
+    "lordInquisitor_buff_2": {
+        "key": "lordInquisitor_buff_2"
+    },
+    "lordInquisitor_buff_3": {
+        "key": "lordInquisitor_buff_3"
+    },
+    "lordInquisitor_buff_4": {
+        "key": "lordInquisitor_buff_4"
+    },
+    "lordInquisitor_buff_5": {
+        "key": "lordInquisitor_buff_5"
+    },
+    "lordInquisitor_buff_6": {
+        "key": "lordInquisitor_buff_6"
+    },
+    "lordInquisitor_buff_7": {
+        "key": "lordInquisitor_buff_7"
+    },
+    "lordInquisitor_buff_8": {
+        "key": "lordInquisitor_buff_8"
+    },
+    "lordInquisitor_buff_9": {
+        "key": "lordInquisitor_buff_9"
+    },
+    "lordInquisitor_buff_10": {
+        "key": "lordInquisitor_buff_10"
+    },
+    "elevateTank_buff_1": {
+        "key": "elevateTank_buff_1"
+    },
+    "elevateTank_buff_2": {
+        "key": "elevateTank_buff_2"
+    },
+    "elevateTank_buff_3": {
+        "key": "elevateTank_buff_3"
+    },
+    "elevateTank_buff_4": {
+        "key": "elevateTank_buff_4"
+    },
+    "elevateTank_buff_5": {
+        "key": "elevateTank_buff_5"
+    },
+    "elevateTank_buff_6": {
+        "key": "elevateTank_buff_6"
+    },
+    "elevateTank_buff_7": {
+        "key": "elevateTank_buff_7"
+    },
+    "elevateTank_buff_8": {
+        "key": "elevateTank_buff_8"
+    },
+    "elevateTank_buff_9": {
+        "key": "elevateTank_buff_9"
+    },
+    "elevateTank_buff_10": {
+        "key": "elevateTank_buff_10"
+    },
+    "elevateTank_shield_1": {
+        "key": "elevateTank_shield_1"
+    },
+    "elevateTank_shield_2": {
+        "key": "elevateTank_shield_2"
+    },
+    "elevateTank_shield_3": {
+        "key": "elevateTank_shield_3"
+    },
+    "elevateTank_shield_4": {
+        "key": "elevateTank_shield_4"
+    },
+    "elevateTank_shield_5": {
+        "key": "elevateTank_shield_5"
+    },
+    "elevateTank_shield_6": {
+        "key": "elevateTank_shield_6"
+    },
+    "elevateTank_shield_7": {
+        "key": "elevateTank_shield_7"
+    },
+    "elevateTank_shield_8": {
+        "key": "elevateTank_shield_8"
+    },
+    "elevateTank_shield_9": {
+        "key": "elevateTank_shield_9"
+    },
+    "elevateTank_shield_10": {
+        "key": "elevateTank_shield_10"
+    },
+    "elevateArcher_buff_1": {
+        "key": "elevateArcher_buff_1"
+    },
+    "elevateArcher_buff_2": {
+        "key": "elevateArcher_buff_2"
+    },
+    "elevateArcher_buff_3": {
+        "key": "elevateArcher_buff_3"
+    },
+    "elevateArcher_buff_4": {
+        "key": "elevateArcher_buff_4"
+    },
+    "elevateArcher_buff_5": {
+        "key": "elevateArcher_buff_5"
+    },
+    "elevateArcher_buff_6": {
+        "key": "elevateArcher_buff_6"
+    },
+    "elevateArcher_buff_7": {
+        "key": "elevateArcher_buff_7"
+    },
+    "elevateArcher_buff_8": {
+        "key": "elevateArcher_buff_8"
+    },
+    "elevateArcher_buff_9": {
+        "key": "elevateArcher_buff_9"
+    },
+    "elevateArcher_buff_10": {
+        "key": "elevateArcher_buff_10"
+    },
+    "demonFat_buff_1": {
+        "key": "demonFat_buff_1"
+    },
+    "demonFat_buff_2": {
+        "key": "demonFat_buff_2"
+    },
+    "demonFat_buff_3": {
+        "key": "demonFat_buff_3"
+    },
+    "demonFat_buff_4": {
+        "key": "demonFat_buff_4"
+    },
+    "demonFat_buff_5": {
+        "key": "demonFat_buff_5"
+    },
+    "demonFat_buff_6": {
+        "key": "demonFat_buff_6"
+    },
+    "demonFat_buff_7": {
+        "key": "demonFat_buff_7"
+    },
+    "demonFat_buff_8": {
+        "key": "demonFat_buff_8"
+    },
+    "demonFat_buff_9": {
+        "key": "demonFat_buff_9"
+    },
+    "demonFat_buff_10": {
+        "key": "demonFat_buff_10"
+    },
+    "demonTank_buff_1": {
+        "key": "demonTank_buff_1"
+    },
+    "demonTank_buff_2": {
+        "key": "demonTank_buff_2"
+    },
+    "demonTank_buff_3": {
+        "key": "demonTank_buff_3"
+    },
+    "demonTank_buff_4": {
+        "key": "demonTank_buff_4"
+    },
+    "demonTank_buff_5": {
+        "key": "demonTank_buff_5"
+    },
+    "demonTank_buff_6": {
+        "key": "demonTank_buff_6"
+    },
+    "demonTank_buff_7": {
+        "key": "demonTank_buff_7"
+    },
+    "demonTank_buff_8": {
+        "key": "demonTank_buff_8"
+    },
+    "demonTank_buff_9": {
+        "key": "demonTank_buff_9"
+    },
+    "demonTank_buff_10": {
+        "key": "demonTank_buff_10"
+    },
+    "demonTank_aura_1": {
+        "key": "demonTank_aura_1"
+    },
+    "demonTank_aura_2": {
+        "key": "demonTank_aura_2"
+    },
+    "demonTank_aura_3": {
+        "key": "demonTank_aura_3"
+    },
+    "demonTank_aura_4": {
+        "key": "demonTank_aura_4"
+    },
+    "demonTank_aura_5": {
+        "key": "demonTank_aura_5"
+    },
+    "demonTank_aura_6": {
+        "key": "demonTank_aura_6"
+    },
+    "demonTank_aura_7": {
+        "key": "demonTank_aura_7"
+    },
+    "demonTank_aura_8": {
+        "key": "demonTank_aura_8"
+    },
+    "demonTank_aura_9": {
+        "key": "demonTank_aura_9"
+    },
+    "demonTank_aura_10": {
+        "key": "demonTank_aura_10"
+    },
+    "aoeEvasion_aura_1": {
+        "key": "aoeEvasion_aura_1"
+    },
+    "aoeEvasion_aura_2": {
+        "key": "aoeEvasion_aura_2"
+    },
+    "aoeEvasion_aura_3": {
+        "key": "aoeEvasion_aura_3"
+    },
+    "aoeEvasion_aura_4": {
+        "key": "aoeEvasion_aura_4"
+    },
+    "aoeEvasion_aura_5": {
+        "key": "aoeEvasion_aura_5"
+    },
+    "aoeEvasion_aura_6": {
+        "key": "aoeEvasion_aura_6"
+    },
+    "aoeEvasion_aura_7": {
+        "key": "aoeEvasion_aura_7"
+    },
+    "aoeEvasion_aura_8": {
+        "key": "aoeEvasion_aura_8"
+    },
+    "aoeEvasion_aura_9": {
+        "key": "aoeEvasion_aura_9"
+    },
+    "aoeEvasion_aura_10": {
+        "key": "aoeEvasion_aura_10"
+    },
+    "aoeEvasion_aura_11": {
+        "key": "aoeEvasion_aura_11"
+    },
+    "aoeEvasion_aura_12": {
+        "key": "aoeEvasion_aura_12"
+    },
+    "aoeEvasion_aura_13": {
+        "key": "aoeEvasion_aura_13"
+    },
+    "aoeEvasion_aura_14": {
+        "key": "aoeEvasion_aura_14"
+    },
+    "aoeEvasion_aura_15": {
+        "key": "aoeEvasion_aura_15"
+    },
+    "aoeEvasion_aura_16": {
+        "key": "aoeEvasion_aura_16"
+    },
+    "aoeEvasion_aura_17": {
+        "key": "aoeEvasion_aura_17"
+    },
+    "aoeEvasion_aura_18": {
+        "key": "aoeEvasion_aura_18"
+    },
+    "aoeEvasion_aura_19": {
+        "key": "aoeEvasion_aura_19"
+    },
+    "aoeEvasion_aura_20": {
+        "key": "aoeEvasion_aura_20"
+    },
+    "aoeEvasion_aura_21": {
+        "key": "aoeEvasion_aura_21"
+    },
+    "aoeEvasion_aura_22": {
+        "key": "aoeEvasion_aura_22"
+    },
+    "aoeEvasion_aura_23": {
+        "key": "aoeEvasion_aura_23"
+    },
+    "aoeEvasion_aura_24": {
+        "key": "aoeEvasion_aura_24"
+    },
+    "aoeEvasion_aura_25": {
+        "key": "aoeEvasion_aura_25"
+    },
+    "aoeEvasion_aura_26": {
+        "key": "aoeEvasion_aura_26"
+    },
+    "aoeEvasion_aura_27": {
+        "key": "aoeEvasion_aura_27"
+    },
+    "aoeEvasion_aura_28": {
+        "key": "aoeEvasion_aura_28"
+    },
+    "aoeEvasion_aura_29": {
+        "key": "aoeEvasion_aura_29"
+    },
+    "aoeEvasion_aura_30": {
+        "key": "aoeEvasion_aura_30"
+    },
+    "aoeEvasion_aura_31": {
+        "key": "aoeEvasion_aura_31"
+    },
+    "aoeEvasion_aura_32": {
+        "key": "aoeEvasion_aura_32"
+    },
+    "aoeEvasion_aura_33": {
+        "key": "aoeEvasion_aura_33"
+    },
+    "aoeEvasion_aura_34": {
+        "key": "aoeEvasion_aura_34"
+    },
+    "aoeEvasion_aura_35": {
+        "key": "aoeEvasion_aura_35"
+    },
+    "aoeEvasion_aura_36": {
+        "key": "aoeEvasion_aura_36"
+    },
+    "aoeEvasion_aura_37": {
+        "key": "aoeEvasion_aura_37"
+    },
+    "aoeEvasion_aura_38": {
+        "key": "aoeEvasion_aura_38"
+    },
+    "aoeEvasion_aura_39": {
+        "key": "aoeEvasion_aura_39"
+    },
+    "aoeEvasion_aura_40": {
+        "key": "aoeEvasion_aura_40"
+    },
+    "aoeEvasion_aura_41": {
+        "key": "aoeEvasion_aura_41"
+    },
+    "aoeEvasion_aura_42": {
+        "key": "aoeEvasion_aura_42"
+    },
+    "aoeEvasion_aura_43": {
+        "key": "aoeEvasion_aura_43"
+    },
+    "aoeEvasion_aura_44": {
+        "key": "aoeEvasion_aura_44"
+    },
+    "aoeEvasion_aura_45": {
+        "key": "aoeEvasion_aura_45"
+    },
+    "attackReflectDamageMultiplier_aura_1": {
+        "key": "attackReflectDamageMultiplier_aura_1"
+    },
+    "attackReflectDamageMultiplier_aura_2": {
+        "key": "attackReflectDamageMultiplier_aura_2"
+    },
+    "attackReflectDamageMultiplier_aura_3": {
+        "key": "attackReflectDamageMultiplier_aura_3"
+    },
+    "attackReflectDamageMultiplier_aura_4": {
+        "key": "attackReflectDamageMultiplier_aura_4"
+    },
+    "attackReflectDamageMultiplier_aura_5": {
+        "key": "attackReflectDamageMultiplier_aura_5"
+    },
+    "attackReflectDamageMultiplier_aura_6": {
+        "key": "attackReflectDamageMultiplier_aura_6"
+    },
+    "attackReflectDamageMultiplier_aura_7": {
+        "key": "attackReflectDamageMultiplier_aura_7"
+    },
+    "attackReflectDamageMultiplier_aura_8": {
+        "key": "attackReflectDamageMultiplier_aura_8"
+    },
+    "attackReflectDamageMultiplier_aura_9": {
+        "key": "attackReflectDamageMultiplier_aura_9"
+    },
+    "attackReflectDamageMultiplier_aura_10": {
+        "key": "attackReflectDamageMultiplier_aura_10"
+    },
+    "attackReflectDamageMultiplier_aura_11": {
+        "key": "attackReflectDamageMultiplier_aura_11"
+    },
+    "attackReflectDamageMultiplier_aura_12": {
+        "key": "attackReflectDamageMultiplier_aura_12"
+    },
+    "attackReflectDamageMultiplier_aura_13": {
+        "key": "attackReflectDamageMultiplier_aura_13"
+    },
+    "attackReflectDamageMultiplier_aura_14": {
+        "key": "attackReflectDamageMultiplier_aura_14"
+    },
+    "attackReflectDamageMultiplier_aura_15": {
+        "key": "attackReflectDamageMultiplier_aura_15"
+    },
+    "attackReflectDamageMultiplier_aura_16": {
+        "key": "attackReflectDamageMultiplier_aura_16"
+    },
+    "attackReflectDamageMultiplier_aura_17": {
+        "key": "attackReflectDamageMultiplier_aura_17"
+    },
+    "attackReflectDamageMultiplier_aura_18": {
+        "key": "attackReflectDamageMultiplier_aura_18"
+    },
+    "attackReflectDamageMultiplier_aura_19": {
+        "key": "attackReflectDamageMultiplier_aura_19"
+    },
+    "attackReflectDamageMultiplier_aura_20": {
+        "key": "attackReflectDamageMultiplier_aura_20"
+    },
+    "attackReflectDamageMultiplier_aura_21": {
+        "key": "attackReflectDamageMultiplier_aura_21"
+    },
+    "attackReflectDamageMultiplier_aura_22": {
+        "key": "attackReflectDamageMultiplier_aura_22"
+    },
+    "attackReflectDamageMultiplier_aura_23": {
+        "key": "attackReflectDamageMultiplier_aura_23"
+    },
+    "attackReflectDamageMultiplier_aura_24": {
+        "key": "attackReflectDamageMultiplier_aura_24"
+    },
+    "attackReflectDamageMultiplier_aura_25": {
+        "key": "attackReflectDamageMultiplier_aura_25"
+    },
+    "attackReflectDamageMultiplier_aura_26": {
+        "key": "attackReflectDamageMultiplier_aura_26"
+    },
+    "attackReflectDamageMultiplier_aura_27": {
+        "key": "attackReflectDamageMultiplier_aura_27"
+    },
+    "attackReflectDamageMultiplier_aura_28": {
+        "key": "attackReflectDamageMultiplier_aura_28"
+    },
+    "attackReflectDamageMultiplier_aura_29": {
+        "key": "attackReflectDamageMultiplier_aura_29"
+    },
+    "attackReflectDamageMultiplier_aura_30": {
+        "key": "attackReflectDamageMultiplier_aura_30"
+    },
+    "attackReflectDamageMultiplier_aura_31": {
+        "key": "attackReflectDamageMultiplier_aura_31"
+    },
+    "attackReflectDamageMultiplier_aura_32": {
+        "key": "attackReflectDamageMultiplier_aura_32"
+    },
+    "attackReflectDamageMultiplier_aura_33": {
+        "key": "attackReflectDamageMultiplier_aura_33"
+    },
+    "attackReflectDamageMultiplier_aura_34": {
+        "key": "attackReflectDamageMultiplier_aura_34"
+    },
+    "attackReflectDamageMultiplier_aura_35": {
+        "key": "attackReflectDamageMultiplier_aura_35"
+    },
+    "attackReflectDamageMultiplier_aura_36": {
+        "key": "attackReflectDamageMultiplier_aura_36"
+    },
+    "attackReflectDamageMultiplier_aura_37": {
+        "key": "attackReflectDamageMultiplier_aura_37"
+    },
+    "attackReflectDamageMultiplier_aura_38": {
+        "key": "attackReflectDamageMultiplier_aura_38"
+    },
+    "attackReflectDamageMultiplier_aura_39": {
+        "key": "attackReflectDamageMultiplier_aura_39"
+    },
+    "attackReflectDamageMultiplier_aura_40": {
+        "key": "attackReflectDamageMultiplier_aura_40"
+    },
+    "attackReflectDamageMultiplier_aura_41": {
+        "key": "attackReflectDamageMultiplier_aura_41"
+    },
+    "attackReflectDamageMultiplier_aura_42": {
+        "key": "attackReflectDamageMultiplier_aura_42"
+    },
+    "attackReflectDamageMultiplier_aura_43": {
+        "key": "attackReflectDamageMultiplier_aura_43"
+    },
+    "attackReflectDamageMultiplier_aura_44": {
+        "key": "attackReflectDamageMultiplier_aura_44"
+    },
+    "attackReflectDamageMultiplier_aura_45": {
+        "key": "attackReflectDamageMultiplier_aura_45"
+    },
+    "evasion_aura_1": {
+        "key": "evasion_aura_1"
+    },
+    "evasion_aura_2": {
+        "key": "evasion_aura_2"
+    },
+    "evasion_aura_3": {
+        "key": "evasion_aura_3"
+    },
+    "evasion_aura_4": {
+        "key": "evasion_aura_4"
+    },
+    "evasion_aura_5": {
+        "key": "evasion_aura_5"
+    },
+    "evasion_aura_6": {
+        "key": "evasion_aura_6"
+    },
+    "evasion_aura_7": {
+        "key": "evasion_aura_7"
+    },
+    "evasion_aura_8": {
+        "key": "evasion_aura_8"
+    },
+    "evasion_aura_9": {
+        "key": "evasion_aura_9"
+    },
+    "evasion_aura_10": {
+        "key": "evasion_aura_10"
+    },
+    "attackAfterAoeEvasion_aura_1": {
+        "key": "attackAfterAoeEvasion_aura_1"
+    },
+    "attackAfterAoeEvasion_aura_2": {
+        "key": "attackAfterAoeEvasion_aura_2"
+    },
+    "attackAfterAoeEvasion_aura_3": {
+        "key": "attackAfterAoeEvasion_aura_3"
+    },
+    "attackAfterAoeEvasion_aura_4": {
+        "key": "attackAfterAoeEvasion_aura_4"
+    },
+    "attackAfterAoeEvasion_aura_5": {
+        "key": "attackAfterAoeEvasion_aura_5"
+    },
+    "attackAfterAoeEvasion_aura_6": {
+        "key": "attackAfterAoeEvasion_aura_6"
+    },
+    "attackAfterAoeEvasion_aura_7": {
+        "key": "attackAfterAoeEvasion_aura_7"
+    },
+    "attackAfterAoeEvasion_aura_8": {
+        "key": "attackAfterAoeEvasion_aura_8"
+    },
+    "attackAfterAoeEvasion_aura_9": {
+        "key": "attackAfterAoeEvasion_aura_9"
+    },
+    "attackAfterAoeEvasion_aura_10": {
+        "key": "attackAfterAoeEvasion_aura_10"
+    },
+    "attackAfterAoeEvasion_aura_11": {
+        "key": "attackAfterAoeEvasion_aura_11"
+    },
+    "attackAfterAoeEvasion_aura_12": {
+        "key": "attackAfterAoeEvasion_aura_12"
+    },
+    "attackAfterAoeEvasion_aura_13": {
+        "key": "attackAfterAoeEvasion_aura_13"
+    },
+    "attackAfterAoeEvasion_aura_14": {
+        "key": "attackAfterAoeEvasion_aura_14"
+    },
+    "attackAfterAoeEvasion_aura_15": {
+        "key": "attackAfterAoeEvasion_aura_15"
+    },
+    "attackAfterAoeEvasion_aura_16": {
+        "key": "attackAfterAoeEvasion_aura_16"
+    },
+    "attackAfterAoeEvasion_aura_17": {
+        "key": "attackAfterAoeEvasion_aura_17"
+    },
+    "attackAfterAoeEvasion_aura_18": {
+        "key": "attackAfterAoeEvasion_aura_18"
+    },
+    "attackAfterAoeEvasion_aura_19": {
+        "key": "attackAfterAoeEvasion_aura_19"
+    },
+    "attackAfterAoeEvasion_aura_20": {
+        "key": "attackAfterAoeEvasion_aura_20"
+    },
+    "attackAfterAoeEvasion_aura_21": {
+        "key": "attackAfterAoeEvasion_aura_21"
+    },
+    "attackAfterAoeEvasion_aura_22": {
+        "key": "attackAfterAoeEvasion_aura_22"
+    },
+    "attackAfterAoeEvasion_aura_23": {
+        "key": "attackAfterAoeEvasion_aura_23"
+    },
+    "attackAfterAoeEvasion_aura_24": {
+        "key": "attackAfterAoeEvasion_aura_24"
+    },
+    "attackAfterAoeEvasion_aura_25": {
+        "key": "attackAfterAoeEvasion_aura_25"
+    },
+    "attackAfterAoeEvasion_aura_26": {
+        "key": "attackAfterAoeEvasion_aura_26"
+    },
+    "attackAfterAoeEvasion_aura_27": {
+        "key": "attackAfterAoeEvasion_aura_27"
+    },
+    "attackAfterAoeEvasion_aura_28": {
+        "key": "attackAfterAoeEvasion_aura_28"
+    },
+    "attackAfterAoeEvasion_aura_29": {
+        "key": "attackAfterAoeEvasion_aura_29"
+    },
+    "attackAfterAoeEvasion_aura_30": {
+        "key": "attackAfterAoeEvasion_aura_30"
+    },
+    "attackAfterAoeEvasion_aura_31": {
+        "key": "attackAfterAoeEvasion_aura_31"
+    },
+    "attackAfterAoeEvasion_aura_32": {
+        "key": "attackAfterAoeEvasion_aura_32"
+    },
+    "attackAfterAoeEvasion_aura_33": {
+        "key": "attackAfterAoeEvasion_aura_33"
+    },
+    "attackAfterAoeEvasion_aura_34": {
+        "key": "attackAfterAoeEvasion_aura_34"
+    },
+    "attackAfterAoeEvasion_aura_35": {
+        "key": "attackAfterAoeEvasion_aura_35"
+    },
+    "attackAfterAoeEvasion_aura_36": {
+        "key": "attackAfterAoeEvasion_aura_36"
+    },
+    "attackAfterAoeEvasion_aura_37": {
+        "key": "attackAfterAoeEvasion_aura_37"
+    },
+    "attackAfterAoeEvasion_aura_38": {
+        "key": "attackAfterAoeEvasion_aura_38"
+    },
+    "attackAfterAoeEvasion_aura_39": {
+        "key": "attackAfterAoeEvasion_aura_39"
+    },
+    "attackAfterAoeEvasion_aura_40": {
+        "key": "attackAfterAoeEvasion_aura_40"
+    },
+    "attackAfterAoeEvasion_aura_41": {
+        "key": "attackAfterAoeEvasion_aura_41"
+    },
+    "attackAfterAoeEvasion_aura_42": {
+        "key": "attackAfterAoeEvasion_aura_42"
+    },
+    "attackAfterAoeEvasion_aura_43": {
+        "key": "attackAfterAoeEvasion_aura_43"
+    },
+    "attackAfterAoeEvasion_aura_44": {
+        "key": "attackAfterAoeEvasion_aura_44"
+    },
+    "attackAfterAoeEvasion_aura_45": {
+        "key": "attackAfterAoeEvasion_aura_45"
+    },
+    "reflectDamageMultiplier_aura_1": {
+        "key": "reflectDamageMultiplier_aura_1"
+    },
+    "reflectDamageMultiplier_aura_2": {
+        "key": "reflectDamageMultiplier_aura_2"
+    },
+    "reflectDamageMultiplier_aura_3": {
+        "key": "reflectDamageMultiplier_aura_3"
+    },
+    "reflectDamageMultiplier_aura_4": {
+        "key": "reflectDamageMultiplier_aura_4"
+    },
+    "reflectDamageMultiplier_aura_5": {
+        "key": "reflectDamageMultiplier_aura_5"
+    },
+    "reflectDamageMultiplier_aura_6": {
+        "key": "reflectDamageMultiplier_aura_6"
+    },
+    "reflectDamageMultiplier_aura_7": {
+        "key": "reflectDamageMultiplier_aura_7"
+    },
+    "reflectDamageMultiplier_aura_8": {
+        "key": "reflectDamageMultiplier_aura_8"
+    },
+    "reflectDamageMultiplier_aura_9": {
+        "key": "reflectDamageMultiplier_aura_9"
+    },
+    "reflectDamageMultiplier_aura_10": {
+        "key": "reflectDamageMultiplier_aura_10"
+    },
+    "reflectDamageMultiplier_aura_11": {
+        "key": "reflectDamageMultiplier_aura_11"
+    },
+    "reflectDamageMultiplier_aura_12": {
+        "key": "reflectDamageMultiplier_aura_12"
+    },
+    "reflectDamageMultiplier_aura_13": {
+        "key": "reflectDamageMultiplier_aura_13"
+    },
+    "reflectDamageMultiplier_aura_14": {
+        "key": "reflectDamageMultiplier_aura_14"
+    },
+    "reflectDamageMultiplier_aura_15": {
+        "key": "reflectDamageMultiplier_aura_15"
+    },
+    "reflectDamageMultiplier_aura_16": {
+        "key": "reflectDamageMultiplier_aura_16"
+    },
+    "reflectDamageMultiplier_aura_17": {
+        "key": "reflectDamageMultiplier_aura_17"
+    },
+    "reflectDamageMultiplier_aura_18": {
+        "key": "reflectDamageMultiplier_aura_18"
+    },
+    "reflectDamageMultiplier_aura_19": {
+        "key": "reflectDamageMultiplier_aura_19"
+    },
+    "reflectDamageMultiplier_aura_20": {
+        "key": "reflectDamageMultiplier_aura_20"
+    },
+    "reflectDamageMultiplier_aura_21": {
+        "key": "reflectDamageMultiplier_aura_21"
+    },
+    "reflectDamageMultiplier_aura_22": {
+        "key": "reflectDamageMultiplier_aura_22"
+    },
+    "reflectDamageMultiplier_aura_23": {
+        "key": "reflectDamageMultiplier_aura_23"
+    },
+    "reflectDamageMultiplier_aura_24": {
+        "key": "reflectDamageMultiplier_aura_24"
+    },
+    "reflectDamageMultiplier_aura_25": {
+        "key": "reflectDamageMultiplier_aura_25"
+    },
+    "reflectDamageMultiplier_aura_26": {
+        "key": "reflectDamageMultiplier_aura_26"
+    },
+    "reflectDamageMultiplier_aura_27": {
+        "key": "reflectDamageMultiplier_aura_27"
+    },
+    "reflectDamageMultiplier_aura_28": {
+        "key": "reflectDamageMultiplier_aura_28"
+    },
+    "reflectDamageMultiplier_aura_29": {
+        "key": "reflectDamageMultiplier_aura_29"
+    },
+    "reflectDamageMultiplier_aura_30": {
+        "key": "reflectDamageMultiplier_aura_30"
+    },
+    "reflectDamageMultiplier_aura_31": {
+        "key": "reflectDamageMultiplier_aura_31"
+    },
+    "reflectDamageMultiplier_aura_32": {
+        "key": "reflectDamageMultiplier_aura_32"
+    },
+    "reflectDamageMultiplier_aura_33": {
+        "key": "reflectDamageMultiplier_aura_33"
+    },
+    "reflectDamageMultiplier_aura_34": {
+        "key": "reflectDamageMultiplier_aura_34"
+    },
+    "reflectDamageMultiplier_aura_35": {
+        "key": "reflectDamageMultiplier_aura_35"
+    },
+    "reflectDamageMultiplier_aura_36": {
+        "key": "reflectDamageMultiplier_aura_36"
+    },
+    "reflectDamageMultiplier_aura_37": {
+        "key": "reflectDamageMultiplier_aura_37"
+    },
+    "reflectDamageMultiplier_aura_38": {
+        "key": "reflectDamageMultiplier_aura_38"
+    },
+    "reflectDamageMultiplier_aura_39": {
+        "key": "reflectDamageMultiplier_aura_39"
+    },
+    "reflectDamageMultiplier_aura_40": {
+        "key": "reflectDamageMultiplier_aura_40"
+    },
+    "reflectDamageMultiplier_aura_41": {
+        "key": "reflectDamageMultiplier_aura_41"
+    },
+    "reflectDamageMultiplier_aura_42": {
+        "key": "reflectDamageMultiplier_aura_42"
+    },
+    "reflectDamageMultiplier_aura_43": {
+        "key": "reflectDamageMultiplier_aura_43"
+    },
+    "reflectDamageMultiplier_aura_44": {
+        "key": "reflectDamageMultiplier_aura_44"
+    },
+    "reflectDamageMultiplier_aura_45": {
+        "key": "reflectDamageMultiplier_aura_45"
+    },
+    "reflect_aura_1": {
+        "key": "reflect_aura_1"
+    },
+    "library_axeThrowers_cooldownBuff_hero_1": {
+        "key": "library_axeThrowers_cooldownBuff_hero_1"
+    },
+    "library_axeThrowers_attackBuff_assassins_1": {
+        "key": "library_axeThrowers_attackBuff_assassins_1"
+    },
+    "library_axeThrowers_hpBuff_1": {
+        "key": "library_axeThrowers_hpBuff_1"
+    },
+    "library_axeThrowers_aoeAttackDebuff_1": {
+        "key": "library_axeThrowers_aoeAttackDebuff_1"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "SetPermanent_accurateMerida": {
+        "key": "SetPermanent_accurateMerida"
+    },
+    "SetPermanent_baronBenua": {
+        "key": "SetPermanent_baronBenua"
+    },
+    "SetPermanent_clericHero": {
+        "key": "SetPermanent_clericHero"
+    },
+    "SetPermanent_darkKnight": {
+        "key": "SetPermanent_darkKnight"
+    },
+    "SetPermanent_undeadPirate": {
+        "key": "SetPermanent_undeadPirate"
+    },
+    "SetPermanent_druid": {
+        "key": "SetPermanent_druid"
+    },
+    "SetPermanent_debafferOnMaunt": {
+        "key": "SetPermanent_debafferOnMaunt"
+    },
+    "SetPermanent_Casino": {
+        "key": "SetPermanent_Casino"
+    },
+    "SetPermanent_Casino_Gear": {
+        "key": "SetPermanent_Casino_Gear"
+    },
+    "SetPermanent_bardHero": {
+        "key": "SetPermanent_bardHero"
+    },
+    "SetPermanent_event_axeThrowers": {
+        "key": "SetPermanent_event_axeThrowers"
+    },
+    "SetDaily_event_axeThrowers": {
+        "key": "SetDaily_event_axeThrowers"
+    },
+    "SetPermanent_fireMage": {
+        "key": "SetPermanent_fireMage"
+    }
+}

@@ -1,0 +1,1443 @@
+{
+    "unlockArcher": {
+        "key": "unlockArcher",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "archer",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "archer",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockHeadHunt": {
+        "key": "unlockHeadHunt",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "headHunt",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockBattlePass": {
+        "key": "unlockBattlePass",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "battlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockContent": {
+                            "contentId": "dailyQuest",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockInitialTroops": {
+        "key": "unlockInitialTroops",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "infantry",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockTroops": {
+                            "troopsId": "ironGuards",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockTroops": {
+                            "troopsId": "hunter",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockTroops": {
+                            "troopsId": "pyrotechnician",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockTroops": {
+                            "troopsId": "lancer",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockTroops": {
+                            "troopsId": "alchemist",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "cheatBP500": {
+        "key": "cheatBP500",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "addBattlePassPoints": {
+                            "points": 500,
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "bornBonus": {
+        "key": "bornBonus",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "moneyAdd": {
+                            "currencyId": "Gold",
+                            "amount": 2400,
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "executeBonus": {
+                            "bonusId": "unlockInitialTroops",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "executeBonus": {
+                            "bonusId": "initialOffers",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "addTroops": {
+                            "troopsLevelId": "infantry_1",
+                            "priorityFieldId": 3,
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockArena": {
+        "key": "unlockArena",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "arena",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockBomber": {
+        "key": "unlockBomber",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "bomber",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "bomber",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCatapult": {
+        "key": "unlockCatapult",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "catapult",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "catapult",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockAssasin": {
+        "key": "unlockAssasin",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "assasin",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "assasin",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockButcher": {
+        "key": "unlockButcher",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "butcher",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "butcher",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockPaladin": {
+        "key": "unlockPaladin",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "paladin",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "paladin",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOpenNextButton": {
+        "key": "unlockOpenNextButton",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "openNextButton",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockHonorHunt": {
+        "key": "unlockHonorHunt",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "bossFight",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockLobbyChest": {
+        "key": "unlockLobbyChest",
+        "command": {
+            "unlockContent": {
+                "contentId": "lobbyChest",
+                "context": "user"
+            }
+        }
+    },
+    "unlockGloryRoad": {
+        "key": "unlockGloryRoad",
+        "command": {
+            "unlockContent": {
+                "contentId": "gloryRoad",
+                "context": "user"
+            }
+        }
+    },
+    "unlockUndeadMage": {
+        "key": "unlockUndeadMage",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockTroops": {
+                            "troopsId": "undeadMage",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "overrideCardChest": {
+                            "troopsId": "undeadMage",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "overrideCardChestButcher": {
+        "key": "overrideCardChestButcher",
+        "command": {
+            "overrideCardChest": {
+                "troopsId": "butcher",
+                "context": "user"
+            }
+        }
+    },
+    "unlockMergeAndRecallButton": {
+        "key": "unlockMergeAndRecallButton",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "mergeAllButton",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockContent": {
+                            "contentId": "recallAllButton",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "initialOffers": {
+        "key": "initialOffers",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "bankChestOffer_2",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "bankChestOffer_3",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_2",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_3",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_4",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_5",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gem_6",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_2",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_3",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_midas_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_midas_2",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_midas_3",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_vip_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_vip_2",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "subscription_vip_3",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_BattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_BattlePassAndLevels",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_4",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_5",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_gold_6",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "offerDragonRiderScheduler": {
+        "key": "offerDragonRiderScheduler",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": null,
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "offerFreeChest": {
+        "key": "offerFreeChest",
+        "command": {
+            "offerAdd": {
+                "offerId": "bankChestOffer_1",
+                "context": "user"
+            }
+        }
+    },
+    "showRateUs": {
+        "key": "showRateUs",
+        "command": {
+            "showInterface": {
+                "interfaceId": "rateUs",
+                "context": "user"
+            }
+        }
+    },
+    "rouletteOffers": {
+        "key": "rouletteOffers",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "roulette_roll_once_gems",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockRoulette": {
+        "key": "unlockRoulette",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "roulette",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "offerBeginnerBundle": {
+        "key": "offerBeginnerBundle",
+        "command": {
+            "offerAdd": {
+                "offerId": "offerBeginner1",
+                "context": "user"
+            }
+        }
+    },
+    "activateTestSchedule": {
+        "key": "activateTestSchedule",
+        "command": {
+            "scheduleActivate": {
+                "scheduleId": null,
+                "context": "user"
+            }
+        }
+    },
+    "deactivateTestSchedule": {
+        "key": "deactivateTestSchedule",
+        "command": {
+            "scheduleDeactivate": {
+                "scheduleId": null,
+                "context": "user"
+            }
+        }
+    },
+    "checkTestScheduleActivate": {
+        "key": "checkTestScheduleActivate",
+        "command": {
+            "scheduleIsActivated": {
+                "scheduleId": null,
+                "context": "user"
+            }
+        }
+    },
+    "addLobbyDragonOfferX1": {
+        "key": "addLobbyDragonOfferX1",
+        "command": {
+            "offerAdd": {
+                "offerId": "lobbyDragonOfferX1",
+                "context": "user"
+            }
+        }
+    },
+    "addLobbyDragonOfferX12": {
+        "key": "addLobbyDragonOfferX12",
+        "command": {
+            "offerAdd": {
+                "offerId": "lobbyDragonOfferX12",
+                "context": "user"
+            }
+        }
+    },
+    "unlockBeginnerBundleDailyGift": {
+        "key": "unlockBeginnerBundleDailyGift",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "executeBonus": {
+                            "bonusId": "offerBeginnerBundle",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerRemove": {
+                            "offerId": "bankChestOffer_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "dailyGiftReward",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCommunityLobbyButton": {
+        "key": "unlockCommunityLobbyButton",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "communityLobbyButton",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockGoldSkin": {
+        "key": "unlockGoldSkin",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "goldAccurateMerida",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockPvpShop": {
+        "key": "unlockPvpShop",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "goldSkin",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "pvpChest",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "pvpHero",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "pvpTroop",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "bornBonus_070": {
+        "key": "bornBonus_070",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerRemove": {
+                            "offerId": "bankChestOffer_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerRemove": {
+                            "offerId": "offer_dragonRider",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "executeBonus": {
+                            "bonusId": "unlockPvpShop",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockSilverSkin": {
+        "key": "unlockSilverSkin",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "silverAccurateMerida",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferDaily1": {
+        "key": "unlockOfferDaily1",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "offerDaily",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockExpeditions": {
+        "key": "unlockExpeditions",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "expeditions",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "bornBonus_0110": {
+        "key": "bornBonus_0110",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_BattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_BattlePassAndLevels",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockFormations": {
+        "key": "unlockFormations",
+        "command": {
+            "unlockContent": {
+                "contentId": "formations",
+                "context": "user"
+            }
+        }
+    },
+    "unlockBossFight": {
+        "key": "unlockBossFight",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "bossFight",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "unlockContent": {
+                            "contentId": "bossWidget",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferLobbyTroops": {
+        "key": "unlockOfferLobbyTroops",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "offerLobbyTroops",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockPromocodes": {
+        "key": "unlockPromocodes",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "promoCodes",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockBossWidget": {
+        "key": "unlockBossWidget",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "bossWidget",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinDefault": {
+        "key": "unlockCampaignLocationSkinDefault",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_default",
+                "context": "user"
+            }
+        }
+    },
+    "bornBonus_0140": {
+        "key": "bornBonus_0140",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockCampaignSkin": {
+                            "campaignLocationSkinId": "location_default",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockMushroomWars": {
+        "key": "unlockMushroomWars",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "mushroomWars",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferLobbyGift": {
+        "key": "unlockOfferLobbyGift",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "scheduleActivate": {
+                            "scheduleId": "offerLobbyGift",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockTempleFuse": {
+        "key": "unlockTempleFuse",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "templeFuse",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockClans": {
+        "key": "unlockClans",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "clans",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockLoseScreenHints": {
+        "key": "unlockLoseScreenHints",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "loseScreenHints",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferCampaignLevel": {
+        "key": "unlockOfferCampaignLevel",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "offerCampaignLevel01",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinMagicForest": {
+        "key": "unlockCampaignLocationSkinMagicForest",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_MagicForest",
+                "context": "user"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinNecropolis": {
+        "key": "unlockCampaignLocationSkinNecropolis",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_Necropolis",
+                "context": "user"
+            }
+        }
+    },
+    "unlockOfferCampaignLevelNew": {
+        "key": "unlockOfferCampaignLevelNew",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerRemove": {
+                            "offerId": "offerCampaignLevel01",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offerCampaignLevel01",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockLibrary": {
+        "key": "unlockLibrary",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "library",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinWheatField": {
+        "key": "unlockCampaignLocationSkinWheatField",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_WheatField",
+                "context": "user"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinCoast": {
+        "key": "unlockCampaignLocationSkinCoast",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_Coast",
+                "context": "user"
+            }
+        }
+    },
+    "unlockCampaignLocationSkinTown": {
+        "key": "unlockCampaignLocationSkinTown",
+        "command": {
+            "unlockCampaignSkin": {
+                "campaignLocationSkinId": "location_Town",
+                "context": "user"
+            }
+        }
+    },
+    "bornBonus_0210": {
+        "key": "bornBonus_0210",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "BattlePassUnlockLevel_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "BattlePassUnlockLevel_10",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "BattlePassUnlockLevel_5",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "ArenaBattlePassUnlockLevel_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "ArenaBattlePassUnlockLevel_10",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "ArenaBattlePassUnlockLevel_5",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_ArenaBattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_ArenaBattlePassAndLevels",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockRace": {
+        "key": "unlockRace",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "race",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockServerOfferSchedule": {
+        "key": "unlockServerOfferSchedule",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "serverOfferSchedule",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "bornBonus_0230": {
+        "key": "bornBonus_0230",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedArenaBattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedArenaBattlePassAndLevels",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedBattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedBattlePassAndLevels",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "cheatBP7500": {
+        "key": "cheatBP7500",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "addBattlePassPoints": {
+                            "points": 7500,
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferDailyGemsSale": {
+        "key": "unlockOfferDailyGemsSale",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "offerDailyGemsSale",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockCasinoRoulette": {
+        "key": "unlockCasinoRoulette",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "casinoRoulette",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_CasinoBattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_CasinoBattlePassAndLevels",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedCasinoBattlePass",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "offer_AdvancedCasinoBattlePassAndLevels",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "CasinoBattlePassUnlockLevel_1",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "CasinoBattlePassUnlockLevel_5",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "offerAdd": {
+                            "offerId": "CasinoBattlePassUnlockLevel_10",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferDailyGoldSale": {
+        "key": "unlockOfferDailyGoldSale",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "offerDailyGoldSale",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockKingAndAddGear": {
+        "key": "unlockKingAndAddGear",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "king",
+                            "context": "user"
+                        }
+                    },
+                    {
+                        "gearAdd": {
+                            "gearId": "aoeArmor",
+                            "amount": 1,
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockGearCasino": {
+        "key": "unlockGearCasino",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "gearCasino",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockGearShards": {
+        "key": "unlockGearShards",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "gearShard",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockSquadEventTower": {
+        "key": "unlockSquadEventTower",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "squadEventTower",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "unlockOfferChain": {
+        "key": "unlockOfferChain",
+        "command": {
+            "all": {
+                "items": [
+                    {
+                        "unlockContent": {
+                            "contentId": "offerChain",
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    }
+}

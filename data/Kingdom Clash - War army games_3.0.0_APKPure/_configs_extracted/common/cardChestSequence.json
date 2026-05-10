@@ -1,0 +1,282 @@
+{
+    "1": {
+        "key": "1",
+        "openNumber": 0,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "firstTwoChestReward",
+        "priceSoft": 300
+    },
+    "2": {
+        "key": "2",
+        "openNumber": 1,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "firstTwoChestReward",
+        "priceSoft": 720
+    },
+    "3": {
+        "key": "3",
+        "openNumber": 2,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "firstTwoChestReward",
+        "priceSoft": 1140
+    },
+    "4": {
+        "key": "4",
+        "openNumber": 3,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "firstTwoChestReward",
+        "priceSoft": 1560
+    },
+    "5": {
+        "key": "5",
+        "openNumber": 4,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 1980
+    },
+    "6": {
+        "key": "6",
+        "openNumber": 5,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 2400
+    },
+    "7": {
+        "key": "7",
+        "openNumber": 6,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 2820
+    },
+    "8": {
+        "key": "8",
+        "openNumber": 7,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 3240
+    },
+    "9": {
+        "key": "9",
+        "openNumber": 8,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 3660
+    },
+    "10": {
+        "key": "10",
+        "openNumber": 9,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 4080
+    },
+    "11": {
+        "key": "11",
+        "openNumber": 10,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 4500
+    },
+    "12": {
+        "key": "12",
+        "openNumber": 11,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 4920
+    },
+    "13": {
+        "key": "13",
+        "openNumber": 12,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 5340
+    },
+    "14": {
+        "key": "14",
+        "openNumber": 13,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 5760
+    },
+    "15": {
+        "key": "15",
+        "openNumber": 14,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 6180
+    },
+    "16": {
+        "key": "16",
+        "openNumber": 15,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 6600
+    },
+    "17": {
+        "key": "17",
+        "openNumber": 16,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 7020
+    },
+    "18": {
+        "key": "18",
+        "openNumber": 17,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 7440
+    },
+    "19": {
+        "key": "19",
+        "openNumber": 18,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 7860
+    },
+    "20": {
+        "key": "20",
+        "openNumber": 19,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 8280
+    },
+    "21": {
+        "key": "21",
+        "openNumber": 20,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 8700
+    },
+    "22": {
+        "key": "22",
+        "openNumber": 21,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 9120
+    },
+    "23": {
+        "key": "23",
+        "openNumber": 22,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 9540
+    },
+    "24": {
+        "key": "24",
+        "openNumber": 23,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 9960
+    },
+    "25": {
+        "key": "25",
+        "openNumber": 24,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 10380
+    },
+    "26": {
+        "key": "26",
+        "openNumber": 25,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 10800
+    },
+    "27": {
+        "key": "27",
+        "openNumber": 26,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 11220
+    },
+    "28": {
+        "key": "28",
+        "openNumber": 27,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 11640
+    },
+    "29": {
+        "key": "29",
+        "openNumber": 28,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 12060
+    },
+    "30": {
+        "key": "30",
+        "openNumber": 29,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 12480
+    },
+    "31": {
+        "key": "31",
+        "openNumber": 30,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 12900
+    },
+    "32": {
+        "key": "32",
+        "openNumber": 31,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 13320
+    },
+    "33": {
+        "key": "33",
+        "openNumber": 32,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 13740
+    },
+    "34": {
+        "key": "34",
+        "openNumber": 33,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 14160
+    },
+    "35": {
+        "key": "35",
+        "openNumber": 34,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 14580
+    },
+    "36": {
+        "key": "36",
+        "openNumber": 35,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 15000
+    },
+    "37": {
+        "key": "37",
+        "openNumber": 36,
+        "cardChestId": "cardChest_1",
+        "troopChestId": "oneStarKardReward",
+        "priceSoft": 15000
+    },
+    "38": {
+        "key": "38",
+        "openNumber": 36,
+        "cardChestId": "cardChest_2",
+        "troopChestId": "twoStarKardReward",
+        "priceSoft": 30000
+    },
+    "39": {
+        "key": "39",
+        "openNumber": 36,
+        "cardChestId": "cardChest_3",
+        "troopChestId": "threeStarKardReward",
+        "priceSoft": 60000
+    },
+    "40": {
+        "key": "40",
+        "openNumber": 36,
+        "cardChestId": "cardChest_4",
+        "troopChestId": "fourStarKardReward",
+        "priceSoft": 120000
+    }
+}

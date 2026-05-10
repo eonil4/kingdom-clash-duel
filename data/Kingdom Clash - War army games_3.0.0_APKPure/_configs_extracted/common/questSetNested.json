@@ -1,0 +1,2512 @@
+{
+    "1": {
+        "key": "1",
+        "questSetId": "SetDaily1",
+        "questId": "AcquireHero_1_1"
+    },
+    "2": {
+        "key": "2",
+        "questSetId": "SetDaily1",
+        "questId": "KillBomber_15_1"
+    },
+    "3": {
+        "key": "3",
+        "questSetId": "SetDaily1",
+        "questId": "KillInfantry_325_1"
+    },
+    "4": {
+        "key": "4",
+        "questSetId": "SetDaily1",
+        "questId": "PlayArena_5_1"
+    },
+    "5": {
+        "key": "5",
+        "questSetId": "SetDaily1",
+        "questId": "WinHeadhuntMissions_5_1"
+    },
+    "6": {
+        "key": "6",
+        "questSetId": "SetDaily1",
+        "questId": "LevelUpTroops_3_1"
+    },
+    "7": {
+        "key": "7",
+        "questSetId": "SetDaily1",
+        "questId": "CollectSoftFromIdleChest_1500_1"
+    },
+    "8": {
+        "key": "8",
+        "questSetId": "SetDaily2",
+        "questId": "OpenHeroChest_1_2"
+    },
+    "9": {
+        "key": "9",
+        "questSetId": "SetDaily2",
+        "questId": "KillInfantry_325_2"
+    },
+    "10": {
+        "key": "10",
+        "questSetId": "SetDaily2",
+        "questId": "UseEpicHero_15_2"
+    },
+    "11": {
+        "key": "11",
+        "questSetId": "SetDaily2",
+        "questId": "WinArena_2_2"
+    },
+    "12": {
+        "key": "12",
+        "questSetId": "SetDaily2",
+        "questId": "WinHeadhuntMissions_5_2"
+    },
+    "13": {
+        "key": "13",
+        "questSetId": "SetDaily2",
+        "questId": "LevelUpTroops_3_2"
+    },
+    "14": {
+        "key": "14",
+        "questSetId": "SetDaily2",
+        "questId": "WatchAds_1_2"
+    },
+    "15": {
+        "key": "15",
+        "questSetId": "SetDaily3",
+        "questId": "AcquireHero_1_3"
+    },
+    "16": {
+        "key": "16",
+        "questSetId": "SetDaily3",
+        "questId": "WinCampaign_5_3"
+    },
+    "17": {
+        "key": "17",
+        "questSetId": "SetDaily3",
+        "questId": "KillInfantry_325_3"
+    },
+    "18": {
+        "key": "18",
+        "questSetId": "SetDaily3",
+        "questId": "PlayArena_5_3"
+    },
+    "19": {
+        "key": "19",
+        "questSetId": "SetDaily3",
+        "questId": "WinHeadhuntMissions_5_3"
+    },
+    "20": {
+        "key": "20",
+        "questSetId": "SetDaily3",
+        "questId": "LevelUpTroops3Stars_3_3"
+    },
+    "21": {
+        "key": "21",
+        "questSetId": "SetDaily3",
+        "questId": "CollectSoftFromIdleChest_1500_3"
+    },
+    "22": {
+        "key": "22",
+        "questSetId": "SetDaily4",
+        "questId": "OpenHeroChest_1_4"
+    },
+    "23": {
+        "key": "23",
+        "questSetId": "SetDaily4",
+        "questId": "KillBomber_15_4"
+    },
+    "24": {
+        "key": "24",
+        "questSetId": "SetDaily4",
+        "questId": "KillInfantry_325_4"
+    },
+    "25": {
+        "key": "25",
+        "questSetId": "SetDaily4",
+        "questId": "WinArena_2_4"
+    },
+    "26": {
+        "key": "26",
+        "questSetId": "SetDaily4",
+        "questId": "WinHeadhuntMissions_5_4"
+    },
+    "27": {
+        "key": "27",
+        "questSetId": "SetDaily4",
+        "questId": "LevelUpTroops3Stars_3_4"
+    },
+    "28": {
+        "key": "28",
+        "questSetId": "SetDaily4",
+        "questId": "WatchAds_1_4"
+    },
+    "29": {
+        "key": "29",
+        "questSetId": "SetDaily5",
+        "questId": "AcquireHero_1_5"
+    },
+    "30": {
+        "key": "30",
+        "questSetId": "SetDaily5",
+        "questId": "KillInfantry_325_5"
+    },
+    "31": {
+        "key": "31",
+        "questSetId": "SetDaily5",
+        "questId": "UseEpicHero_15_5"
+    },
+    "32": {
+        "key": "32",
+        "questSetId": "SetDaily5",
+        "questId": "PlayArena_5_5"
+    },
+    "33": {
+        "key": "33",
+        "questSetId": "SetDaily5",
+        "questId": "WinHeadhuntMissions_5_5"
+    },
+    "34": {
+        "key": "34",
+        "questSetId": "SetDaily5",
+        "questId": "LevelUpTroops3Stars_3_5"
+    },
+    "35": {
+        "key": "35",
+        "questSetId": "SetDaily5",
+        "questId": "CollectSoftFromIdleChest_2000_5"
+    },
+    "36": {
+        "key": "36",
+        "questSetId": "SetDaily6",
+        "questId": "OpenHeroChest_1_6"
+    },
+    "37": {
+        "key": "37",
+        "questSetId": "SetDaily6",
+        "questId": "WinCampaign_5_6"
+    },
+    "38": {
+        "key": "38",
+        "questSetId": "SetDaily6",
+        "questId": "KillInfantry_325_6"
+    },
+    "39": {
+        "key": "39",
+        "questSetId": "SetDaily6",
+        "questId": "WinArena_2_6"
+    },
+    "40": {
+        "key": "40",
+        "questSetId": "SetDaily6",
+        "questId": "WinHeadhuntMissions_5_6"
+    },
+    "41": {
+        "key": "41",
+        "questSetId": "SetDaily6",
+        "questId": "LevelUpTroops3Stars_3_6"
+    },
+    "42": {
+        "key": "42",
+        "questSetId": "SetDaily6",
+        "questId": "WatchAds_1_6"
+    },
+    "43": {
+        "key": "43",
+        "questSetId": "SetDaily7",
+        "questId": "AcquireHero_1_7"
+    },
+    "44": {
+        "key": "44",
+        "questSetId": "SetDaily7",
+        "questId": "KillBomber_15_7"
+    },
+    "45": {
+        "key": "45",
+        "questSetId": "SetDaily7",
+        "questId": "KillInfantry_325_7"
+    },
+    "46": {
+        "key": "46",
+        "questSetId": "SetDaily7",
+        "questId": "PlayArena_5_7"
+    },
+    "47": {
+        "key": "47",
+        "questSetId": "SetDaily7",
+        "questId": "WinHeadhuntMissions_5_7"
+    },
+    "48": {
+        "key": "48",
+        "questSetId": "SetDaily7",
+        "questId": "LevelUpTroops3Stars_3_7"
+    },
+    "49": {
+        "key": "49",
+        "questSetId": "SetDaily7",
+        "questId": "CollectSoftFromIdleChest_2500_7"
+    },
+    "50": {
+        "key": "50",
+        "questSetId": "SetDaily8",
+        "questId": "OpenHeroChest_1_8"
+    },
+    "51": {
+        "key": "51",
+        "questSetId": "SetDaily8",
+        "questId": "KillInfantry_325_8"
+    },
+    "52": {
+        "key": "52",
+        "questSetId": "SetDaily8",
+        "questId": "UseEpicHero_15_8"
+    },
+    "53": {
+        "key": "53",
+        "questSetId": "SetDaily8",
+        "questId": "WinArena_2_8"
+    },
+    "54": {
+        "key": "54",
+        "questSetId": "SetDaily8",
+        "questId": "WinHeadhuntMissions_5_8"
+    },
+    "55": {
+        "key": "55",
+        "questSetId": "SetDaily8",
+        "questId": "LevelUpTroops3Stars_3_8"
+    },
+    "56": {
+        "key": "56",
+        "questSetId": "SetDaily8",
+        "questId": "WatchAds_1_8"
+    },
+    "57": {
+        "key": "57",
+        "questSetId": "SetDaily9",
+        "questId": "AcquireHero_1_9"
+    },
+    "58": {
+        "key": "58",
+        "questSetId": "SetDaily9",
+        "questId": "WinCampaign_5_9"
+    },
+    "59": {
+        "key": "59",
+        "questSetId": "SetDaily9",
+        "questId": "KillInfantry_325_9"
+    },
+    "60": {
+        "key": "60",
+        "questSetId": "SetDaily9",
+        "questId": "PlayArena_5_9"
+    },
+    "61": {
+        "key": "61",
+        "questSetId": "SetDaily9",
+        "questId": "WinHeadhuntMissions_5_9"
+    },
+    "62": {
+        "key": "62",
+        "questSetId": "SetDaily9",
+        "questId": "LevelUpTroops3Stars_3_9"
+    },
+    "63": {
+        "key": "63",
+        "questSetId": "SetDaily9",
+        "questId": "CollectSoftFromIdleChest_3000_9"
+    },
+    "64": {
+        "key": "64",
+        "questSetId": "SetDaily10",
+        "questId": "OpenHeroChest_1_10"
+    },
+    "65": {
+        "key": "65",
+        "questSetId": "SetDaily10",
+        "questId": "KillBomber_15_10"
+    },
+    "66": {
+        "key": "66",
+        "questSetId": "SetDaily10",
+        "questId": "KillInfantry_325_10"
+    },
+    "67": {
+        "key": "67",
+        "questSetId": "SetDaily10",
+        "questId": "WinArena_2_10"
+    },
+    "68": {
+        "key": "68",
+        "questSetId": "SetDaily10",
+        "questId": "WinHeadhuntMissions_5_10"
+    },
+    "69": {
+        "key": "69",
+        "questSetId": "SetDaily10",
+        "questId": "LevelUpTroops4Stars_3_10"
+    },
+    "70": {
+        "key": "70",
+        "questSetId": "SetDaily10",
+        "questId": "WatchAds_1_10"
+    },
+    "71": {
+        "key": "71",
+        "questSetId": "SetSpecial1",
+        "questId": "AcquireHero_2_1"
+    },
+    "72": {
+        "key": "72",
+        "questSetId": "SetSpecial1",
+        "questId": "KillBomber_75_1"
+    },
+    "73": {
+        "key": "73",
+        "questSetId": "SetSpecial1",
+        "questId": "PlayArena_50_1"
+    },
+    "74": {
+        "key": "74",
+        "questSetId": "SetSpecial1",
+        "questId": "WinHeadhuntMissions_15_1"
+    },
+    "75": {
+        "key": "75",
+        "questSetId": "SetSpecial2",
+        "questId": "OpenHeroChest_3_2"
+    },
+    "76": {
+        "key": "76",
+        "questSetId": "SetSpecial2",
+        "questId": "KillInfantry_1750_2"
+    },
+    "77": {
+        "key": "77",
+        "questSetId": "SetSpecial2",
+        "questId": "WinArena_25_2"
+    },
+    "78": {
+        "key": "78",
+        "questSetId": "SetSpecial2",
+        "questId": "WinCampaign_40_2"
+    },
+    "79": {
+        "key": "79",
+        "questSetId": "SetSpecial3",
+        "questId": "AcquireHero_3_3"
+    },
+    "80": {
+        "key": "80",
+        "questSetId": "SetSpecial3",
+        "questId": "UseEpicHero_100_3"
+    },
+    "81": {
+        "key": "81",
+        "questSetId": "SetSpecial3",
+        "questId": "PlayArena_50_3"
+    },
+    "82": {
+        "key": "82",
+        "questSetId": "SetSpecial3",
+        "questId": "LevelUpTroops3Stars_20_3"
+    },
+    "83": {
+        "key": "83",
+        "questSetId": "SetDaily11",
+        "questId": "AcquireHero_1_11"
+    },
+    "84": {
+        "key": "84",
+        "questSetId": "SetDaily11",
+        "questId": "KillBomber_25_11"
+    },
+    "85": {
+        "key": "85",
+        "questSetId": "SetDaily11",
+        "questId": "KillInfantry_350_11"
+    },
+    "86": {
+        "key": "86",
+        "questSetId": "SetDaily11",
+        "questId": "PlayArena_5_11"
+    },
+    "87": {
+        "key": "87",
+        "questSetId": "SetDaily11",
+        "questId": "WinHeadhuntMissions_10_11"
+    },
+    "88": {
+        "key": "88",
+        "questSetId": "SetDaily11",
+        "questId": "LevelUpTroops_3_11"
+    },
+    "89": {
+        "key": "89",
+        "questSetId": "SetDaily11",
+        "questId": "CollectSoftFromIdleChest_5000_11"
+    },
+    "90": {
+        "key": "90",
+        "questSetId": "SetDaily12",
+        "questId": "OpenHeroChest_1_12"
+    },
+    "91": {
+        "key": "91",
+        "questSetId": "SetDaily12",
+        "questId": "KillInfantry_400_12"
+    },
+    "92": {
+        "key": "92",
+        "questSetId": "SetDaily12",
+        "questId": "UseEpicHero_20_12"
+    },
+    "93": {
+        "key": "93",
+        "questSetId": "SetDaily12",
+        "questId": "WinArena_3_12"
+    },
+    "94": {
+        "key": "94",
+        "questSetId": "SetDaily12",
+        "questId": "WinHeadhuntMissions_10_12"
+    },
+    "95": {
+        "key": "95",
+        "questSetId": "SetDaily12",
+        "questId": "LevelUpTroops_4_12"
+    },
+    "96": {
+        "key": "96",
+        "questSetId": "SetDaily12",
+        "questId": "WatchAds_2_12"
+    },
+    "97": {
+        "key": "97",
+        "questSetId": "SetDaily13",
+        "questId": "AcquireHero_1_13"
+    },
+    "98": {
+        "key": "98",
+        "questSetId": "SetDaily13",
+        "questId": "WinCampaign_10_13"
+    },
+    "99": {
+        "key": "99",
+        "questSetId": "SetDaily13",
+        "questId": "KillInfantry_350_13"
+    },
+    "100": {
+        "key": "100",
+        "questSetId": "SetDaily13",
+        "questId": "PlayArena_7_13"
+    },
+    "101": {
+        "key": "101",
+        "questSetId": "SetDaily13",
+        "questId": "WinHeadhuntMissions_10_13"
+    },
+    "102": {
+        "key": "102",
+        "questSetId": "SetDaily13",
+        "questId": "LevelUpTroops_4_13"
+    },
+    "103": {
+        "key": "103",
+        "questSetId": "SetDaily13",
+        "questId": "CollectSoftFromIdleChest_5000_13"
+    },
+    "104": {
+        "key": "104",
+        "questSetId": "SetDaily14",
+        "questId": "OpenHeroChest_1_14"
+    },
+    "105": {
+        "key": "105",
+        "questSetId": "SetDaily14",
+        "questId": "KillBomber_35_14"
+    },
+    "106": {
+        "key": "106",
+        "questSetId": "SetDaily14",
+        "questId": "KillInfantry_350_14"
+    },
+    "107": {
+        "key": "107",
+        "questSetId": "SetDaily14",
+        "questId": "WinArena_4_14"
+    },
+    "108": {
+        "key": "108",
+        "questSetId": "SetDaily14",
+        "questId": "WinHeadhuntMissions_6_14"
+    },
+    "109": {
+        "key": "109",
+        "questSetId": "SetDaily14",
+        "questId": "LevelUpTroops_4_14"
+    },
+    "110": {
+        "key": "110",
+        "questSetId": "SetDaily14",
+        "questId": "WatchAds_2_14"
+    },
+    "111": {
+        "key": "111",
+        "questSetId": "SetDaily15",
+        "questId": "AcquireHero_1_15"
+    },
+    "112": {
+        "key": "112",
+        "questSetId": "SetDaily15",
+        "questId": "KillInfantry_425_15"
+    },
+    "113": {
+        "key": "113",
+        "questSetId": "SetDaily15",
+        "questId": "UseEpicHero_15_15"
+    },
+    "114": {
+        "key": "114",
+        "questSetId": "SetDaily15",
+        "questId": "PlayArena_7_15"
+    },
+    "115": {
+        "key": "115",
+        "questSetId": "SetDaily15",
+        "questId": "WinHeadhuntMissions_10_15"
+    },
+    "116": {
+        "key": "116",
+        "questSetId": "SetDaily15",
+        "questId": "LevelUpTroops_4_15"
+    },
+    "117": {
+        "key": "117",
+        "questSetId": "SetDaily15",
+        "questId": "CollectSoftFromIdleChest_6000_15"
+    },
+    "118": {
+        "key": "118",
+        "questSetId": "SetDaily16",
+        "questId": "OpenAnyChest_1_16"
+    },
+    "119": {
+        "key": "119",
+        "questSetId": "SetDaily16",
+        "questId": "FightBoss_3_16"
+    },
+    "120": {
+        "key": "120",
+        "questSetId": "SetDaily16",
+        "questId": "KillInfantry_400_16"
+    },
+    "121": {
+        "key": "121",
+        "questSetId": "SetDaily16",
+        "questId": "WinArena_4_16"
+    },
+    "122": {
+        "key": "122",
+        "questSetId": "SetDaily16",
+        "questId": "WinHeadhuntMissions_15_16"
+    },
+    "123": {
+        "key": "123",
+        "questSetId": "SetDaily16",
+        "questId": "LevelUpTroops_5_16"
+    },
+    "124": {
+        "key": "124",
+        "questSetId": "SetDaily16",
+        "questId": "WatchAds_2_16"
+    },
+    "125": {
+        "key": "125",
+        "questSetId": "SetDaily17",
+        "questId": "AcquireHero_1_17"
+    },
+    "126": {
+        "key": "126",
+        "questSetId": "SetDaily17",
+        "questId": "KillBomber_45_17"
+    },
+    "127": {
+        "key": "127",
+        "questSetId": "SetDaily17",
+        "questId": "KillInfantry_400_17"
+    },
+    "128": {
+        "key": "128",
+        "questSetId": "SetDaily17",
+        "questId": "PlayArena_5_17"
+    },
+    "129": {
+        "key": "129",
+        "questSetId": "SetDaily17",
+        "questId": "WinHeadhuntMissions_15_17"
+    },
+    "130": {
+        "key": "130",
+        "questSetId": "SetDaily17",
+        "questId": "LevelUpTroops_3_17"
+    },
+    "131": {
+        "key": "131",
+        "questSetId": "SetDaily17",
+        "questId": "CollectSoftFromIdleChest_6000_17"
+    },
+    "132": {
+        "key": "132",
+        "questSetId": "SetDaily18",
+        "questId": "OpenAnyChest_1_18"
+    },
+    "133": {
+        "key": "133",
+        "questSetId": "SetDaily18",
+        "questId": "KillInfantry_500_18"
+    },
+    "134": {
+        "key": "134",
+        "questSetId": "SetDaily18",
+        "questId": "UseEpicHero_15_18"
+    },
+    "135": {
+        "key": "135",
+        "questSetId": "SetDaily18",
+        "questId": "WinArena_10_18"
+    },
+    "136": {
+        "key": "136",
+        "questSetId": "SetDaily18",
+        "questId": "WinHeadhuntMissions_10_18"
+    },
+    "137": {
+        "key": "137",
+        "questSetId": "SetDaily18",
+        "questId": "LevelUpTroops_3_18"
+    },
+    "138": {
+        "key": "138",
+        "questSetId": "SetDaily18",
+        "questId": "WatchAds_2_18"
+    },
+    "139": {
+        "key": "139",
+        "questSetId": "SetDaily19",
+        "questId": "AcquireHero_1_19"
+    },
+    "140": {
+        "key": "140",
+        "questSetId": "SetDaily19",
+        "questId": "FightBoss_3_19"
+    },
+    "141": {
+        "key": "141",
+        "questSetId": "SetDaily19",
+        "questId": "KillInfantry_550_19"
+    },
+    "142": {
+        "key": "142",
+        "questSetId": "SetDaily19",
+        "questId": "PlayArena_10_19"
+    },
+    "143": {
+        "key": "143",
+        "questSetId": "SetDaily19",
+        "questId": "WinHeadhuntMissions_10_19"
+    },
+    "144": {
+        "key": "144",
+        "questSetId": "SetDaily19",
+        "questId": "LevelUpTroops_3_19"
+    },
+    "145": {
+        "key": "145",
+        "questSetId": "SetDaily19",
+        "questId": "CollectSoftFromIdleChest_6000_19"
+    },
+    "146": {
+        "key": "146",
+        "questSetId": "SetDaily20",
+        "questId": "OpenAnyChest_1_20"
+    },
+    "147": {
+        "key": "147",
+        "questSetId": "SetDaily20",
+        "questId": "KillBomber_30_20"
+    },
+    "148": {
+        "key": "148",
+        "questSetId": "SetDaily20",
+        "questId": "KillInfantry_450_20"
+    },
+    "149": {
+        "key": "149",
+        "questSetId": "SetDaily20",
+        "questId": "WinArena_10_20"
+    },
+    "150": {
+        "key": "150",
+        "questSetId": "SetDaily20",
+        "questId": "WinHeadhuntMissions_15_20"
+    },
+    "151": {
+        "key": "151",
+        "questSetId": "SetDaily20",
+        "questId": "LevelUpTroops_5_20"
+    },
+    "152": {
+        "key": "152",
+        "questSetId": "SetDaily20",
+        "questId": "WatchAds_2_20"
+    },
+    "153": {
+        "key": "153",
+        "questSetId": "SetSpecial4",
+        "questId": "AcquireHero_4_4"
+    },
+    "154": {
+        "key": "154",
+        "questSetId": "SetSpecial4",
+        "questId": "KillBomber_150_4"
+    },
+    "155": {
+        "key": "155",
+        "questSetId": "SetSpecial4",
+        "questId": "PlayArena_60_4"
+    },
+    "156": {
+        "key": "156",
+        "questSetId": "SetSpecial4",
+        "questId": "WinHeadhuntMissions_120_4"
+    },
+    "157": {
+        "key": "157",
+        "questSetId": "SetSpecial5",
+        "questId": "OpenHeroChest_3_5"
+    },
+    "158": {
+        "key": "158",
+        "questSetId": "SetSpecial5",
+        "questId": "KillInfantry_2500_5"
+    },
+    "159": {
+        "key": "159",
+        "questSetId": "SetSpecial5",
+        "questId": "WinArena_50_5"
+    },
+    "160": {
+        "key": "160",
+        "questSetId": "SetSpecial5",
+        "questId": "WinCampaign_80_5"
+    },
+    "161": {
+        "key": "161",
+        "questSetId": "SetSpecial6",
+        "questId": "AcquireHero_4_6"
+    },
+    "162": {
+        "key": "162",
+        "questSetId": "SetSpecial6",
+        "questId": "UseEpicHero_120_6"
+    },
+    "163": {
+        "key": "163",
+        "questSetId": "SetSpecial6",
+        "questId": "PlayArena_60_6"
+    },
+    "164": {
+        "key": "164",
+        "questSetId": "SetSpecial6",
+        "questId": "CollectSoftFromIdleChest_24000_6"
+    },
+    "165": {
+        "key": "165",
+        "questSetId": "SetDaily21",
+        "questId": "AcquireHero_1_21"
+    },
+    "166": {
+        "key": "166",
+        "questSetId": "SetDaily21",
+        "questId": "KillBomber_30_21"
+    },
+    "167": {
+        "key": "167",
+        "questSetId": "SetDaily21",
+        "questId": "KillInfantry_450_21"
+    },
+    "168": {
+        "key": "168",
+        "questSetId": "SetDaily21",
+        "questId": "PlayArena_10_21"
+    },
+    "169": {
+        "key": "169",
+        "questSetId": "SetDaily21",
+        "questId": "WinHeadhuntMissions_10_21"
+    },
+    "170": {
+        "key": "170",
+        "questSetId": "SetDaily21",
+        "questId": "LevelUpTroops_4_21"
+    },
+    "171": {
+        "key": "171",
+        "questSetId": "SetDaily21",
+        "questId": "CollectSoftFromIdleChest_6000_21"
+    },
+    "172": {
+        "key": "172",
+        "questSetId": "SetDaily22",
+        "questId": "OpenAnyChest_1_22"
+    },
+    "173": {
+        "key": "173",
+        "questSetId": "SetDaily22",
+        "questId": "KillInfantry_500_22"
+    },
+    "174": {
+        "key": "174",
+        "questSetId": "SetDaily22",
+        "questId": "UseEpicHero_15_22"
+    },
+    "175": {
+        "key": "175",
+        "questSetId": "SetDaily22",
+        "questId": "WinArena_5_22"
+    },
+    "176": {
+        "key": "176",
+        "questSetId": "SetDaily22",
+        "questId": "WinHeadhuntMissions_15_22"
+    },
+    "177": {
+        "key": "177",
+        "questSetId": "SetDaily22",
+        "questId": "LevelUpTroops_4_22"
+    },
+    "178": {
+        "key": "178",
+        "questSetId": "SetDaily22",
+        "questId": "WatchAds_2_22"
+    },
+    "179": {
+        "key": "179",
+        "questSetId": "SetDaily23",
+        "questId": "AcquireHero_1_23"
+    },
+    "180": {
+        "key": "180",
+        "questSetId": "SetDaily23",
+        "questId": "FightBoss_3_23"
+    },
+    "181": {
+        "key": "181",
+        "questSetId": "SetDaily23",
+        "questId": "KillInfantry_500_23"
+    },
+    "182": {
+        "key": "182",
+        "questSetId": "SetDaily23",
+        "questId": "PlayArena_10_23"
+    },
+    "183": {
+        "key": "183",
+        "questSetId": "SetDaily23",
+        "questId": "WinHeadhuntMissions_15_23"
+    },
+    "184": {
+        "key": "184",
+        "questSetId": "SetDaily23",
+        "questId": "LevelUpTroops_4_23"
+    },
+    "185": {
+        "key": "185",
+        "questSetId": "SetDaily23",
+        "questId": "CollectSoftFromIdleChest_6000_23"
+    },
+    "186": {
+        "key": "186",
+        "questSetId": "SetDaily24",
+        "questId": "OpenAnyChest_1_24"
+    },
+    "187": {
+        "key": "187",
+        "questSetId": "SetDaily24",
+        "questId": "KillBomber_40_24"
+    },
+    "188": {
+        "key": "188",
+        "questSetId": "SetDaily24",
+        "questId": "KillInfantry_500_24"
+    },
+    "189": {
+        "key": "189",
+        "questSetId": "SetDaily24",
+        "questId": "WinArena_5_24"
+    },
+    "190": {
+        "key": "190",
+        "questSetId": "SetDaily24",
+        "questId": "WinHeadhuntMissions_15_24"
+    },
+    "191": {
+        "key": "191",
+        "questSetId": "SetDaily24",
+        "questId": "LevelUpTroops_4_24"
+    },
+    "192": {
+        "key": "192",
+        "questSetId": "SetDaily24",
+        "questId": "WatchAds_2_24"
+    },
+    "193": {
+        "key": "193",
+        "questSetId": "SetDaily25",
+        "questId": "AcquireHero_1_25"
+    },
+    "194": {
+        "key": "194",
+        "questSetId": "SetDaily25",
+        "questId": "KillInfantry_500_25"
+    },
+    "195": {
+        "key": "195",
+        "questSetId": "SetDaily25",
+        "questId": "UseEpicHero_15_25"
+    },
+    "196": {
+        "key": "196",
+        "questSetId": "SetDaily25",
+        "questId": "PlayArena_10_25"
+    },
+    "197": {
+        "key": "197",
+        "questSetId": "SetDaily25",
+        "questId": "WinHeadhuntMissions_15_25"
+    },
+    "198": {
+        "key": "198",
+        "questSetId": "SetDaily25",
+        "questId": "LevelUpTroops_4_25"
+    },
+    "199": {
+        "key": "199",
+        "questSetId": "SetDaily25",
+        "questId": "CollectSoftFromIdleChest_6000_25"
+    },
+    "200": {
+        "key": "200",
+        "questSetId": "SetDaily26",
+        "questId": "OpenAnyChest_1_26"
+    },
+    "201": {
+        "key": "201",
+        "questSetId": "SetDaily26",
+        "questId": "FightBoss_3_26"
+    },
+    "202": {
+        "key": "202",
+        "questSetId": "SetDaily26",
+        "questId": "KillInfantry_500_26"
+    },
+    "203": {
+        "key": "203",
+        "questSetId": "SetDaily26",
+        "questId": "WinArena_5_26"
+    },
+    "204": {
+        "key": "204",
+        "questSetId": "SetDaily26",
+        "questId": "WinHeadhuntMissions_15_26"
+    },
+    "205": {
+        "key": "205",
+        "questSetId": "SetDaily26",
+        "questId": "LevelUpTroops_4_26"
+    },
+    "206": {
+        "key": "206",
+        "questSetId": "SetDaily26",
+        "questId": "WatchAds_2_26"
+    },
+    "207": {
+        "key": "207",
+        "questSetId": "SetDaily27",
+        "questId": "AcquireHero_1_27"
+    },
+    "208": {
+        "key": "208",
+        "questSetId": "SetDaily27",
+        "questId": "KillBomber_40_27"
+    },
+    "209": {
+        "key": "209",
+        "questSetId": "SetDaily27",
+        "questId": "KillInfantry_500_27"
+    },
+    "210": {
+        "key": "210",
+        "questSetId": "SetDaily27",
+        "questId": "PlayArena_10_27"
+    },
+    "211": {
+        "key": "211",
+        "questSetId": "SetDaily27",
+        "questId": "WinHeadhuntMissions_15_27"
+    },
+    "212": {
+        "key": "212",
+        "questSetId": "SetDaily27",
+        "questId": "LevelUpTroops_4_27"
+    },
+    "213": {
+        "key": "213",
+        "questSetId": "SetDaily27",
+        "questId": "CollectSoftFromIdleChest_6000_27"
+    },
+    "214": {
+        "key": "214",
+        "questSetId": "SetDaily28",
+        "questId": "OpenAnyChest_1_28"
+    },
+    "215": {
+        "key": "215",
+        "questSetId": "SetDaily28",
+        "questId": "KillInfantry_500_28"
+    },
+    "216": {
+        "key": "216",
+        "questSetId": "SetDaily28",
+        "questId": "UseEpicHero_15_28"
+    },
+    "217": {
+        "key": "217",
+        "questSetId": "SetDaily28",
+        "questId": "WinArena_5_28"
+    },
+    "218": {
+        "key": "218",
+        "questSetId": "SetDaily28",
+        "questId": "WinHeadhuntMissions_15_28"
+    },
+    "219": {
+        "key": "219",
+        "questSetId": "SetDaily28",
+        "questId": "LevelUpTroops_4_28"
+    },
+    "220": {
+        "key": "220",
+        "questSetId": "SetDaily28",
+        "questId": "WatchAds_2_28"
+    },
+    "221": {
+        "key": "221",
+        "questSetId": "SetDaily29",
+        "questId": "AcquireHero_1_29"
+    },
+    "222": {
+        "key": "222",
+        "questSetId": "SetDaily29",
+        "questId": "FightBoss_3_29"
+    },
+    "223": {
+        "key": "223",
+        "questSetId": "SetDaily29",
+        "questId": "KillInfantry_500_29"
+    },
+    "224": {
+        "key": "224",
+        "questSetId": "SetDaily29",
+        "questId": "PlayArena_10_29"
+    },
+    "225": {
+        "key": "225",
+        "questSetId": "SetDaily29",
+        "questId": "WinHeadhuntMissions_15_29"
+    },
+    "226": {
+        "key": "226",
+        "questSetId": "SetDaily29",
+        "questId": "LevelUpTroops_4_29"
+    },
+    "227": {
+        "key": "227",
+        "questSetId": "SetDaily29",
+        "questId": "CollectSoftFromIdleChest_6000_29"
+    },
+    "228": {
+        "key": "228",
+        "questSetId": "SetDaily30",
+        "questId": "OpenAnyChest_1_30"
+    },
+    "229": {
+        "key": "229",
+        "questSetId": "SetDaily30",
+        "questId": "KillBomber_40_30"
+    },
+    "230": {
+        "key": "230",
+        "questSetId": "SetDaily30",
+        "questId": "KillInfantry_500_30"
+    },
+    "231": {
+        "key": "231",
+        "questSetId": "SetDaily30",
+        "questId": "WinArena_5_30"
+    },
+    "232": {
+        "key": "232",
+        "questSetId": "SetDaily30",
+        "questId": "WinHeadhuntMissions_15_30"
+    },
+    "233": {
+        "key": "233",
+        "questSetId": "SetDaily30",
+        "questId": "LevelUpTroops_4_30"
+    },
+    "234": {
+        "key": "234",
+        "questSetId": "SetDaily30",
+        "questId": "WatchAds_2_30"
+    },
+    "235": {
+        "key": "235",
+        "questSetId": "SetDaily31",
+        "questId": "AcquireHero_1_31"
+    },
+    "236": {
+        "key": "236",
+        "questSetId": "SetDaily31",
+        "questId": "KillBomber_40_31"
+    },
+    "237": {
+        "key": "237",
+        "questSetId": "SetDaily31",
+        "questId": "KillInfantry_500_31"
+    },
+    "238": {
+        "key": "238",
+        "questSetId": "SetDaily31",
+        "questId": "PlayArena_10_31"
+    },
+    "239": {
+        "key": "239",
+        "questSetId": "SetDaily31",
+        "questId": "WinHeadhuntMissions_15_31"
+    },
+    "240": {
+        "key": "240",
+        "questSetId": "SetDaily31",
+        "questId": "LevelUpTroops_4_31"
+    },
+    "241": {
+        "key": "241",
+        "questSetId": "SetDaily31",
+        "questId": "CollectSoftFromIdleChest_6000_31"
+    },
+    "242": {
+        "key": "242",
+        "questSetId": "SetSpecial7",
+        "questId": "AcquireHero_4_7"
+    },
+    "243": {
+        "key": "243",
+        "questSetId": "SetSpecial7",
+        "questId": "KillBomber_150_7"
+    },
+    "244": {
+        "key": "244",
+        "questSetId": "SetSpecial7",
+        "questId": "PlayArena_60_7"
+    },
+    "245": {
+        "key": "245",
+        "questSetId": "SetSpecial7",
+        "questId": "WinHeadhuntMissions_150_7"
+    },
+    "246": {
+        "key": "246",
+        "questSetId": "SetSpecial8",
+        "questId": "OpenHeroChest_3_8"
+    },
+    "247": {
+        "key": "247",
+        "questSetId": "SetSpecial8",
+        "questId": "KillInfantry_2500_8"
+    },
+    "248": {
+        "key": "248",
+        "questSetId": "SetSpecial8",
+        "questId": "WinArena_50_8"
+    },
+    "249": {
+        "key": "249",
+        "questSetId": "SetSpecial8",
+        "questId": "WinCampaign_80_8"
+    },
+    "250": {
+        "key": "250",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_1"
+    },
+    "251": {
+        "key": "251",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_15_1"
+    },
+    "252": {
+        "key": "252",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_1"
+    },
+    "253": {
+        "key": "253",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_1"
+    },
+    "254": {
+        "key": "254",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_1"
+    },
+    "255": {
+        "key": "255",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_1"
+    },
+    "256": {
+        "key": "256",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_1500_1"
+    },
+    "257": {
+        "key": "257",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_2"
+    },
+    "258": {
+        "key": "258",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_2"
+    },
+    "259": {
+        "key": "259",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_2"
+    },
+    "260": {
+        "key": "260",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_2_2"
+    },
+    "261": {
+        "key": "261",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_2"
+    },
+    "262": {
+        "key": "262",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_2"
+    },
+    "263": {
+        "key": "263",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_1_2"
+    },
+    "264": {
+        "key": "264",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_3"
+    },
+    "265": {
+        "key": "265",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_5_3"
+    },
+    "266": {
+        "key": "266",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_3"
+    },
+    "267": {
+        "key": "267",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_3"
+    },
+    "268": {
+        "key": "268",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_3"
+    },
+    "269": {
+        "key": "269",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_3"
+    },
+    "270": {
+        "key": "270",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_1500_3"
+    },
+    "271": {
+        "key": "271",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_4"
+    },
+    "272": {
+        "key": "272",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_15_4"
+    },
+    "273": {
+        "key": "273",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_4"
+    },
+    "274": {
+        "key": "274",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_2_4"
+    },
+    "275": {
+        "key": "275",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_4"
+    },
+    "276": {
+        "key": "276",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_4"
+    },
+    "277": {
+        "key": "277",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_1_4"
+    },
+    "278": {
+        "key": "278",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_5"
+    },
+    "279": {
+        "key": "279",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_5"
+    },
+    "280": {
+        "key": "280",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_5"
+    },
+    "281": {
+        "key": "281",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_5"
+    },
+    "282": {
+        "key": "282",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_5"
+    },
+    "283": {
+        "key": "283",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_5"
+    },
+    "284": {
+        "key": "284",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_2000_5"
+    },
+    "285": {
+        "key": "285",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_6"
+    },
+    "286": {
+        "key": "286",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_5_6"
+    },
+    "287": {
+        "key": "287",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_6"
+    },
+    "288": {
+        "key": "288",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_2_6"
+    },
+    "289": {
+        "key": "289",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_6"
+    },
+    "290": {
+        "key": "290",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_6"
+    },
+    "291": {
+        "key": "291",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_1_6"
+    },
+    "292": {
+        "key": "292",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_7"
+    },
+    "293": {
+        "key": "293",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_15_7"
+    },
+    "294": {
+        "key": "294",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_7"
+    },
+    "295": {
+        "key": "295",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_7"
+    },
+    "296": {
+        "key": "296",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_7"
+    },
+    "297": {
+        "key": "297",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_7"
+    },
+    "298": {
+        "key": "298",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_2500_7"
+    },
+    "299": {
+        "key": "299",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_8"
+    },
+    "300": {
+        "key": "300",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_8"
+    },
+    "301": {
+        "key": "301",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_8"
+    },
+    "302": {
+        "key": "302",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_2_8"
+    },
+    "303": {
+        "key": "303",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_8"
+    },
+    "304": {
+        "key": "304",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_8"
+    },
+    "305": {
+        "key": "305",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_1_8"
+    },
+    "306": {
+        "key": "306",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_9"
+    },
+    "307": {
+        "key": "307",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_5_9"
+    },
+    "308": {
+        "key": "308",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_9"
+    },
+    "309": {
+        "key": "309",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_9"
+    },
+    "310": {
+        "key": "310",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_9"
+    },
+    "311": {
+        "key": "311",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_3_9"
+    },
+    "312": {
+        "key": "312",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_3000_9"
+    },
+    "313": {
+        "key": "313",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_10"
+    },
+    "314": {
+        "key": "314",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_15_10"
+    },
+    "315": {
+        "key": "315",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_325_10"
+    },
+    "316": {
+        "key": "316",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_2_10"
+    },
+    "317": {
+        "key": "317",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_5_10"
+    },
+    "318": {
+        "key": "318",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops4Stars_3_10"
+    },
+    "319": {
+        "key": "319",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_1_10"
+    },
+    "320": {
+        "key": "320",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_2_1"
+    },
+    "321": {
+        "key": "321",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_75_1"
+    },
+    "322": {
+        "key": "322",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_50_1"
+    },
+    "323": {
+        "key": "323",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_1"
+    },
+    "324": {
+        "key": "324",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_3_2"
+    },
+    "325": {
+        "key": "325",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_1750_2"
+    },
+    "326": {
+        "key": "326",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_25_2"
+    },
+    "327": {
+        "key": "327",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_40_2"
+    },
+    "328": {
+        "key": "328",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_3_3"
+    },
+    "329": {
+        "key": "329",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_100_3"
+    },
+    "330": {
+        "key": "330",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_50_3"
+    },
+    "331": {
+        "key": "331",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops3Stars_20_3"
+    },
+    "332": {
+        "key": "332",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_11"
+    },
+    "333": {
+        "key": "333",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_25_11"
+    },
+    "334": {
+        "key": "334",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_350_11"
+    },
+    "335": {
+        "key": "335",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_11"
+    },
+    "336": {
+        "key": "336",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_11"
+    },
+    "337": {
+        "key": "337",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_11"
+    },
+    "338": {
+        "key": "338",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_5000_11"
+    },
+    "339": {
+        "key": "339",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_12"
+    },
+    "340": {
+        "key": "340",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_400_12"
+    },
+    "341": {
+        "key": "341",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_20_12"
+    },
+    "342": {
+        "key": "342",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_3_12"
+    },
+    "343": {
+        "key": "343",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_12"
+    },
+    "344": {
+        "key": "344",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_12"
+    },
+    "345": {
+        "key": "345",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_12"
+    },
+    "346": {
+        "key": "346",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_13"
+    },
+    "347": {
+        "key": "347",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_10_13"
+    },
+    "348": {
+        "key": "348",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_350_13"
+    },
+    "349": {
+        "key": "349",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_7_13"
+    },
+    "350": {
+        "key": "350",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_13"
+    },
+    "351": {
+        "key": "351",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_13"
+    },
+    "352": {
+        "key": "352",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_5000_13"
+    },
+    "353": {
+        "key": "353",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_14"
+    },
+    "354": {
+        "key": "354",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_35_14"
+    },
+    "355": {
+        "key": "355",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_350_14"
+    },
+    "356": {
+        "key": "356",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_4_14"
+    },
+    "357": {
+        "key": "357",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_6_14"
+    },
+    "358": {
+        "key": "358",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_14"
+    },
+    "359": {
+        "key": "359",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_14"
+    },
+    "360": {
+        "key": "360",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_15"
+    },
+    "361": {
+        "key": "361",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_425_15"
+    },
+    "362": {
+        "key": "362",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_15"
+    },
+    "363": {
+        "key": "363",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_7_15"
+    },
+    "364": {
+        "key": "364",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_15"
+    },
+    "365": {
+        "key": "365",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_15"
+    },
+    "366": {
+        "key": "366",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_15"
+    },
+    "367": {
+        "key": "367",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_16"
+    },
+    "368": {
+        "key": "368",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_15_16"
+    },
+    "369": {
+        "key": "369",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_400_16"
+    },
+    "370": {
+        "key": "370",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_4_16"
+    },
+    "371": {
+        "key": "371",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_16"
+    },
+    "372": {
+        "key": "372",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_5_16"
+    },
+    "373": {
+        "key": "373",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_16"
+    },
+    "374": {
+        "key": "374",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_17"
+    },
+    "375": {
+        "key": "375",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_45_17"
+    },
+    "376": {
+        "key": "376",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_400_17"
+    },
+    "377": {
+        "key": "377",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_5_17"
+    },
+    "378": {
+        "key": "378",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_17"
+    },
+    "379": {
+        "key": "379",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_17"
+    },
+    "380": {
+        "key": "380",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_17"
+    },
+    "381": {
+        "key": "381",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_18"
+    },
+    "382": {
+        "key": "382",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_18"
+    },
+    "383": {
+        "key": "383",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_18"
+    },
+    "384": {
+        "key": "384",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_10_18"
+    },
+    "385": {
+        "key": "385",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_18"
+    },
+    "386": {
+        "key": "386",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_18"
+    },
+    "387": {
+        "key": "387",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_18"
+    },
+    "388": {
+        "key": "388",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_19"
+    },
+    "389": {
+        "key": "389",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_20_19"
+    },
+    "390": {
+        "key": "390",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_550_19"
+    },
+    "391": {
+        "key": "391",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_19"
+    },
+    "392": {
+        "key": "392",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_19"
+    },
+    "393": {
+        "key": "393",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_3_19"
+    },
+    "394": {
+        "key": "394",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_19"
+    },
+    "395": {
+        "key": "395",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_20"
+    },
+    "396": {
+        "key": "396",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_30_20"
+    },
+    "397": {
+        "key": "397",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_450_20"
+    },
+    "398": {
+        "key": "398",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_10_20"
+    },
+    "399": {
+        "key": "399",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_20"
+    },
+    "400": {
+        "key": "400",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_5_20"
+    },
+    "401": {
+        "key": "401",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_20"
+    },
+    "402": {
+        "key": "402",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_4_4"
+    },
+    "403": {
+        "key": "403",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_150_4"
+    },
+    "404": {
+        "key": "404",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_60_4"
+    },
+    "405": {
+        "key": "405",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_120_4"
+    },
+    "406": {
+        "key": "406",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_3_5"
+    },
+    "407": {
+        "key": "407",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_2500_5"
+    },
+    "408": {
+        "key": "408",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_50_5"
+    },
+    "409": {
+        "key": "409",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_80_5"
+    },
+    "410": {
+        "key": "410",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_4_6"
+    },
+    "411": {
+        "key": "411",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_120_6"
+    },
+    "412": {
+        "key": "412",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_60_6"
+    },
+    "413": {
+        "key": "413",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_24000_6"
+    },
+    "414": {
+        "key": "414",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_21"
+    },
+    "415": {
+        "key": "415",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_30_21"
+    },
+    "416": {
+        "key": "416",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_450_21"
+    },
+    "417": {
+        "key": "417",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_21"
+    },
+    "418": {
+        "key": "418",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_10_21"
+    },
+    "419": {
+        "key": "419",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_21"
+    },
+    "420": {
+        "key": "420",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_21"
+    },
+    "421": {
+        "key": "421",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_22"
+    },
+    "422": {
+        "key": "422",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_22"
+    },
+    "423": {
+        "key": "423",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_22"
+    },
+    "424": {
+        "key": "424",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_5_22"
+    },
+    "425": {
+        "key": "425",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_22"
+    },
+    "426": {
+        "key": "426",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_22"
+    },
+    "427": {
+        "key": "427",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_22"
+    },
+    "428": {
+        "key": "428",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_23"
+    },
+    "429": {
+        "key": "429",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_20_23"
+    },
+    "430": {
+        "key": "430",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_23"
+    },
+    "431": {
+        "key": "431",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_23"
+    },
+    "432": {
+        "key": "432",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_23"
+    },
+    "433": {
+        "key": "433",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_23"
+    },
+    "434": {
+        "key": "434",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_23"
+    },
+    "435": {
+        "key": "435",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_24"
+    },
+    "436": {
+        "key": "436",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_40_24"
+    },
+    "437": {
+        "key": "437",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_24"
+    },
+    "438": {
+        "key": "438",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_5_24"
+    },
+    "439": {
+        "key": "439",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_24"
+    },
+    "440": {
+        "key": "440",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_24"
+    },
+    "441": {
+        "key": "441",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_24"
+    },
+    "442": {
+        "key": "442",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_25"
+    },
+    "443": {
+        "key": "443",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_25"
+    },
+    "444": {
+        "key": "444",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_25"
+    },
+    "445": {
+        "key": "445",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_25"
+    },
+    "446": {
+        "key": "446",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_25"
+    },
+    "447": {
+        "key": "447",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_25"
+    },
+    "448": {
+        "key": "448",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_25"
+    },
+    "449": {
+        "key": "449",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_26"
+    },
+    "450": {
+        "key": "450",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_20_26"
+    },
+    "451": {
+        "key": "451",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_26"
+    },
+    "452": {
+        "key": "452",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_5_26"
+    },
+    "453": {
+        "key": "453",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_26"
+    },
+    "454": {
+        "key": "454",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_26"
+    },
+    "455": {
+        "key": "455",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_26"
+    },
+    "456": {
+        "key": "456",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_27"
+    },
+    "457": {
+        "key": "457",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_40_27"
+    },
+    "458": {
+        "key": "458",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_27"
+    },
+    "459": {
+        "key": "459",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_27"
+    },
+    "460": {
+        "key": "460",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_27"
+    },
+    "461": {
+        "key": "461",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_27"
+    },
+    "462": {
+        "key": "462",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_27"
+    },
+    "463": {
+        "key": "463",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_28"
+    },
+    "464": {
+        "key": "464",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_28"
+    },
+    "465": {
+        "key": "465",
+        "questSetId": "SetDailyQuest",
+        "questId": "UseEpicHero_15_28"
+    },
+    "466": {
+        "key": "466",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_5_28"
+    },
+    "467": {
+        "key": "467",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_28"
+    },
+    "468": {
+        "key": "468",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_28"
+    },
+    "469": {
+        "key": "469",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_28"
+    },
+    "470": {
+        "key": "470",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_29"
+    },
+    "471": {
+        "key": "471",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinCampaign_20_29"
+    },
+    "472": {
+        "key": "472",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_29"
+    },
+    "473": {
+        "key": "473",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_29"
+    },
+    "474": {
+        "key": "474",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_29"
+    },
+    "475": {
+        "key": "475",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_29"
+    },
+    "476": {
+        "key": "476",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_29"
+    },
+    "477": {
+        "key": "477",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenHeroChest_1_30"
+    },
+    "478": {
+        "key": "478",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_40_30"
+    },
+    "479": {
+        "key": "479",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_30"
+    },
+    "480": {
+        "key": "480",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinArena_5_30"
+    },
+    "481": {
+        "key": "481",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_30"
+    },
+    "482": {
+        "key": "482",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_30"
+    },
+    "483": {
+        "key": "483",
+        "questSetId": "SetDailyQuest",
+        "questId": "WatchAds_2_30"
+    },
+    "484": {
+        "key": "484",
+        "questSetId": "SetDailyQuest",
+        "questId": "AcquireHero_1_31"
+    },
+    "485": {
+        "key": "485",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillBomber_40_31"
+    },
+    "486": {
+        "key": "486",
+        "questSetId": "SetDailyQuest",
+        "questId": "KillInfantry_500_31"
+    },
+    "487": {
+        "key": "487",
+        "questSetId": "SetDailyQuest",
+        "questId": "PlayArena_10_31"
+    },
+    "488": {
+        "key": "488",
+        "questSetId": "SetDailyQuest",
+        "questId": "WinHeadhuntMissions_15_31"
+    },
+    "489": {
+        "key": "489",
+        "questSetId": "SetDailyQuest",
+        "questId": "LevelUpTroops_4_31"
+    },
+    "490": {
+        "key": "490",
+        "questSetId": "SetDailyQuest",
+        "questId": "CollectSoftFromIdleChest_6000_31"
+    },
+    "491": {
+        "key": "491",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_16"
+    },
+    "492": {
+        "key": "492",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_18"
+    },
+    "493": {
+        "key": "493",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_20"
+    },
+    "494": {
+        "key": "494",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_24"
+    },
+    "495": {
+        "key": "495",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_26"
+    },
+    "496": {
+        "key": "496",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_28"
+    },
+    "497": {
+        "key": "497",
+        "questSetId": "SetDailyQuest",
+        "questId": "OpenAnyChest_1_30"
+    },
+    "498": {
+        "key": "498",
+        "questSetId": "SetDailyQuest",
+        "questId": "FightBoss_3_16"
+    },
+    "499": {
+        "key": "499",
+        "questSetId": "SetDailyQuest",
+        "questId": "FightBoss_3_19"
+    },
+    "500": {
+        "key": "500",
+        "questSetId": "SetDailyQuest",
+        "questId": "FightBoss_3_23"
+    },
+    "501": {
+        "key": "501",
+        "questSetId": "SetDailyQuest",
+        "questId": "FightBoss_3_26"
+    },
+    "502": {
+        "key": "502",
+        "questSetId": "SetDailyQuest",
+        "questId": "FightBoss_3_29"
+    }
+}

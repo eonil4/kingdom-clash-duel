@@ -1,0 +1,14 @@
+{
+    "ArcherTower": {
+        "key": "ArcherTower"
+    },
+    "Cavalry": {
+        "key": "Cavalry"
+    },
+    "HeavyInfantry": {
+        "key": "HeavyInfantry"
+    },
+    "Infantry": {
+        "key": "Infantry"
+    }
+}

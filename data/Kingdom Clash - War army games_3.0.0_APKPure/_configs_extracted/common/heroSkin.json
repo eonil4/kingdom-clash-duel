@@ -1,0 +1,392 @@
+{
+    "generalPrimarySkin": {
+        "key": "generalPrimarySkin",
+        "heroId": "general",
+        "order": 3,
+        "battlePrefab": "generalBattle",
+        "showcasePrefab": "generalShowcase",
+        "gachaPrefab": "generalGacha",
+        "icon": "generalIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "darkKnightPrimarySkin": {
+        "key": "darkKnightPrimarySkin",
+        "heroId": "darkKnight",
+        "order": 4,
+        "battlePrefab": "darkKnightBattle",
+        "showcasePrefab": "darkKnightShowcase",
+        "gachaPrefab": "darkKnightGacha",
+        "icon": "darkKnightIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "dragonRiderPrimarySkin": {
+        "key": "dragonRiderPrimarySkin",
+        "heroId": "dragonRider",
+        "order": 5,
+        "battlePrefab": "dragonRiderBattle",
+        "showcasePrefab": "dragonRiderShowcase",
+        "gachaPrefab": "dragonRiderGacha",
+        "icon": "dragonRiderIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "accurateMeridaPrimarySkin": {
+        "key": "accurateMeridaPrimarySkin",
+        "heroId": "accurateMerida",
+        "order": 6,
+        "battlePrefab": "accurateMeridaBattle",
+        "showcasePrefab": "accurateMeridaShowcase",
+        "gachaPrefab": "accurateMeridaGacha",
+        "icon": "accurateMeridaIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "baronBenuaPrimarySkin": {
+        "key": "baronBenuaPrimarySkin",
+        "heroId": "baronBenua",
+        "order": 7,
+        "battlePrefab": "baronBenuaBattle",
+        "showcasePrefab": "baronBenuaShowcase",
+        "gachaPrefab": "baronBenuaGacha",
+        "icon": "baronBenuaIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "swordmasterHeroPrimarySkin": {
+        "key": "swordmasterHeroPrimarySkin",
+        "heroId": "swordmasterHero",
+        "order": 8,
+        "battlePrefab": "swordmasterHeroBattle",
+        "showcasePrefab": "swordmasterHeroShowcase",
+        "gachaPrefab": "swordmasterHeroGacha",
+        "icon": "swordmasterHeroIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "druidPrimarySkin": {
+        "key": "druidPrimarySkin",
+        "heroId": "druid",
+        "order": 20,
+        "battlePrefab": "druidBattle",
+        "showcasePrefab": "druidShowcase",
+        "gachaPrefab": "druidGacha",
+        "icon": "druidIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "clericHeroPrimarySkin": {
+        "key": "clericHeroPrimarySkin",
+        "heroId": "clericHero",
+        "order": 9,
+        "battlePrefab": "clericHeroBattle",
+        "showcasePrefab": "clericHeroShowcase",
+        "gachaPrefab": "clericHeroGacha",
+        "icon": "clericHeroIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "ringleaderHeroPrimarySkin": {
+        "key": "ringleaderHeroPrimarySkin",
+        "heroId": "ringleaderHero",
+        "order": 10,
+        "battlePrefab": "ringleaderHeroBattle",
+        "showcasePrefab": "ringleaderHeroShowcase",
+        "gachaPrefab": "ringleaderHeroGacha",
+        "icon": "ringleaderHeroIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "accurateMeridaGoldSkin": {
+        "key": "accurateMeridaGoldSkin",
+        "heroId": "accurateMerida",
+        "order": 1,
+        "battlePrefab": "accurateMeridaBattleGold",
+        "showcasePrefab": "accurateMeridaShowcaseGold",
+        "gachaPrefab": "accurateMeridaGachaGold",
+        "icon": "AccurateMeridaGold",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "charmerPrimarySkin": {
+        "key": "charmerPrimarySkin",
+        "heroId": "charmer",
+        "order": 11,
+        "battlePrefab": "charmerBattle",
+        "showcasePrefab": "charmerShowcase",
+        "gachaPrefab": "charmerGacha",
+        "icon": "charmerIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "accurateMeridaSilverSkin": {
+        "key": "accurateMeridaSilverSkin",
+        "heroId": "accurateMerida",
+        "order": 2,
+        "battlePrefab": "accurateMeridaBattleSilver",
+        "showcasePrefab": "accurateMeridaShowcaseSilver",
+        "gachaPrefab": "accurateMeridaGachaSilver",
+        "icon": "accurateMeridaSilver",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "boneDragonPrimarySkin": {
+        "key": "boneDragonPrimarySkin",
+        "heroId": "boneDragon",
+        "order": 12,
+        "battlePrefab": "boneDragonBattle",
+        "showcasePrefab": "boneDragonShowcase",
+        "gachaPrefab": "boneDragonGacha",
+        "icon": "boneDragonIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "forestQueenPrimarySkin": {
+        "key": "forestQueenPrimarySkin",
+        "heroId": "forestQueen",
+        "order": 13,
+        "battlePrefab": "forestQueenBattle",
+        "showcasePrefab": "forestQueenShowcase",
+        "gachaPrefab": "forestQueenGacha",
+        "icon": "forestQueenIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "nunPrimarySkin": {
+        "key": "nunPrimarySkin",
+        "heroId": "nun",
+        "order": 14,
+        "battlePrefab": "nunBattle",
+        "showcasePrefab": "nunShowcase",
+        "gachaPrefab": "nunGacha",
+        "icon": "nunIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "undeadWarriorPrimarySkin": {
+        "key": "undeadWarriorPrimarySkin",
+        "heroId": "undeadWarrior",
+        "order": 15,
+        "battlePrefab": "undeadWarriorBattle",
+        "showcasePrefab": "undeadWarriorShowcase",
+        "gachaPrefab": "undeadWarriorGacha",
+        "icon": "undeadWarriorIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "undeadGunnerPrimarySkin": {
+        "key": "undeadGunnerPrimarySkin",
+        "heroId": "undeadGunner",
+        "order": 16,
+        "battlePrefab": "undeadGunnerBattle",
+        "showcasePrefab": "undeadGunnerShowcase",
+        "gachaPrefab": "undeadGunnerGacha",
+        "icon": "undeadGunnerIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "darknessMagePrimarySkin": {
+        "key": "darknessMagePrimarySkin",
+        "heroId": "darknessMage",
+        "order": 17,
+        "battlePrefab": "darknessMageBattle",
+        "showcasePrefab": "darknessMageShowcase",
+        "gachaPrefab": "darknessMageGacha",
+        "icon": "darknessMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "iceMagePrimarySkin": {
+        "key": "iceMagePrimarySkin",
+        "heroId": "iceMage",
+        "order": 18,
+        "battlePrefab": "iceMageBattle",
+        "showcasePrefab": "iceMageShowcase",
+        "gachaPrefab": "iceMageGacha",
+        "icon": "iceMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "airMagePrimarySkin": {
+        "key": "airMagePrimarySkin",
+        "heroId": "airMage",
+        "order": 19,
+        "battlePrefab": "airMageBattle",
+        "showcasePrefab": "airMageShowcase",
+        "gachaPrefab": "airMageGacha",
+        "icon": "airMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "fireMagePrimarySkin": {
+        "key": "fireMagePrimarySkin",
+        "heroId": "fireMage",
+        "order": 21,
+        "battlePrefab": "fireMageBattle",
+        "showcasePrefab": "fireMageShowcase",
+        "gachaPrefab": "fireMageGacha",
+        "icon": "fireMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "lightningElementalPrimarySkin": {
+        "key": "lightningElementalPrimarySkin",
+        "heroId": "lightningElemental",
+        "order": 22,
+        "battlePrefab": "lightningElementalBattle",
+        "showcasePrefab": "lightningElementalShowcase",
+        "gachaPrefab": "lightningElementalGacha",
+        "icon": "lightningElementalIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "waterMagePrimarySkin": {
+        "key": "waterMagePrimarySkin",
+        "heroId": "waterMage",
+        "order": 23,
+        "battlePrefab": "waterMageBattle",
+        "showcasePrefab": "waterMageShowcase",
+        "gachaPrefab": "waterMageGacha",
+        "icon": "waterMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "undeadPiratePrimarySkin": {
+        "key": "undeadPiratePrimarySkin",
+        "heroId": "undeadPirate",
+        "order": 24,
+        "battlePrefab": "undeadPirateBattle",
+        "showcasePrefab": "undeadPirateShowcase",
+        "gachaPrefab": "undeadPirateGacha",
+        "icon": "undeadPirateIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "sandMagePrimarySkin": {
+        "key": "sandMagePrimarySkin",
+        "heroId": "sandMage",
+        "order": 25,
+        "battlePrefab": "sandMageBattle",
+        "showcasePrefab": "sandMageShowcase",
+        "gachaPrefab": "sandMageGacha",
+        "icon": "sandMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "cursedGiantPrimarySkin": {
+        "key": "cursedGiantPrimarySkin",
+        "heroId": "cursedGiant",
+        "order": 26,
+        "battlePrefab": "cursedGiantBattle",
+        "showcasePrefab": "cursedGiantShowcase",
+        "gachaPrefab": "cursedGiantGacha",
+        "icon": "cursedGiantIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "doubleShieldPrimarySkin": {
+        "key": "doubleShieldPrimarySkin",
+        "heroId": "doubleShield",
+        "order": 27,
+        "battlePrefab": "doubleShieldBattle",
+        "showcasePrefab": "doubleShieldShowcase",
+        "gachaPrefab": "doubleShieldGacha",
+        "icon": "doubleShieldIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "debafferOnMauntPrimarySkin": {
+        "key": "debafferOnMauntPrimarySkin",
+        "heroId": "debafferOnMaunt",
+        "order": 28,
+        "battlePrefab": "debafferOnMauntBattle",
+        "showcasePrefab": "debafferOnMauntShowcase",
+        "gachaPrefab": "debafferOnMauntGacha",
+        "icon": "debafferOnMauntIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "undeadPestilencePrimarySkin": {
+        "key": "undeadPestilencePrimarySkin",
+        "heroId": "undeadPestilence",
+        "order": 29,
+        "battlePrefab": "undeadPestilenceBattle",
+        "showcasePrefab": "undeadPestilenceShowcase",
+        "gachaPrefab": "undeadPestilenceGacha",
+        "icon": "undeadPestilenceIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    },
+    "lordInquisitorPrimarySkin": {
+        "key": "lordInquisitorPrimarySkin",
+        "heroId": "lordInquisitor",
+        "order": 30,
+        "battlePrefab": "lordInquisitorBattle",
+        "showcasePrefab": "lordInquisitorShowcase",
+        "gachaPrefab": "lordInquisitorGacha",
+        "icon": "lordInquisitorIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "drunkTankPrimarySkin": {
+        "key": "drunkTankPrimarySkin",
+        "heroId": "drunkTank",
+        "order": 31,
+        "battlePrefab": "drunkTankBattle",
+        "showcasePrefab": "drunkTankShowcase",
+        "gachaPrefab": "drunkTankGacha",
+        "icon": "drunkTankIcon",
+        "lobbyBackgroundId": "HeroLobby_Human"
+    },
+    "bardHeroPrimarySkin": {
+        "key": "bardHeroPrimarySkin",
+        "heroId": "bardHero",
+        "order": 33,
+        "battlePrefab": "bardHeroBattle",
+        "showcasePrefab": "bardHeroShowcase",
+        "gachaPrefab": "bardHeroGacha",
+        "icon": "bardHeroIcon",
+        "lobbyBackgroundId": "HeroLobby_Mage"
+    },
+    "elevateTankPrimarySkin": {
+        "key": "elevateTankPrimarySkin",
+        "heroId": "elevateTank",
+        "order": 35,
+        "battlePrefab": "elevateTankBattle",
+        "showcasePrefab": "elevateTankShowcase",
+        "gachaPrefab": "elevateTankGacha",
+        "icon": "elevateTankIcon",
+        "lobbyBackgroundId": "HeroLobby_Elevate"
+    },
+    "elevateArcherPrimarySkin": {
+        "key": "elevateArcherPrimarySkin",
+        "heroId": "elevateArcher",
+        "order": 36,
+        "battlePrefab": "elevateArcherBattle",
+        "showcasePrefab": "elevateArcherShowcase",
+        "gachaPrefab": "elevateArcherGacha",
+        "icon": "elevateArcherIcon",
+        "lobbyBackgroundId": "HeroLobby_Elevate"
+    },
+    "elevateSupportPrimarySkin": {
+        "key": "elevateSupportPrimarySkin",
+        "heroId": "elevateSupport",
+        "order": 37,
+        "battlePrefab": "elevateSupportBattle",
+        "showcasePrefab": "elevateSupportShowcase",
+        "gachaPrefab": "elevateSupportGacha",
+        "icon": "elevateSupportIcon",
+        "lobbyBackgroundId": "HeroLobby_Elevate"
+    },
+    "demonFatPrimarySkin": {
+        "key": "demonFatPrimarySkin",
+        "heroId": "demonFat",
+        "order": 38,
+        "battlePrefab": "demonFatBattle",
+        "showcasePrefab": "demonFatShowcase",
+        "gachaPrefab": "demonFatGacha",
+        "icon": "demonFatIcon",
+        "lobbyBackgroundId": "HeroLobby_Demon"
+    },
+    "demonTankPrimarySkin": {
+        "key": "demonTankPrimarySkin",
+        "heroId": "demonTank",
+        "order": 39,
+        "battlePrefab": "demonTankBattle",
+        "showcasePrefab": "demonTankShowcase",
+        "gachaPrefab": "demonTankGacha",
+        "icon": "demonTankIcon",
+        "lobbyBackgroundId": "HeroLobby_Demon"
+    },
+    "demonMagePrimarySkin": {
+        "key": "demonMagePrimarySkin",
+        "heroId": "demonMage",
+        "order": 40,
+        "battlePrefab": "demonMageBattle",
+        "showcasePrefab": "demonMageShowcase",
+        "gachaPrefab": "demonMageGacha",
+        "icon": "demonMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Demon"
+    },
+    "darknessMageSquadEventPrimarySkin": {
+        "key": "darknessMageSquadEventPrimarySkin",
+        "heroId": "darknessMageSquadEvent",
+        "order": 41,
+        "battlePrefab": "darknessMageBattle",
+        "showcasePrefab": "darknessMageShowcase",
+        "gachaPrefab": "darknessMageGacha",
+        "icon": "darknessMageIcon",
+        "lobbyBackgroundId": "HeroLobby_Undead"
+    }
+}

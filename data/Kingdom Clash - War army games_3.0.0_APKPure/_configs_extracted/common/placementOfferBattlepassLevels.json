@@ -1,0 +1,56 @@
+{
+    "BattlePass_UnlockLevels": {
+        "key": "BattlePass_UnlockLevels",
+        "offerId1": "BattlePassUnlockLevel_1",
+        "offerId2": "BattlePassUnlockLevel_5",
+        "offerId3": "BattlePassUnlockLevel_10"
+    },
+    "BattlePassArena_UnlockLevels": {
+        "key": "BattlePassArena_UnlockLevels",
+        "offerId1": "ArenaBattlePassUnlockLevel_1",
+        "offerId2": "ArenaBattlePassUnlockLevel_5",
+        "offerId3": "ArenaBattlePassUnlockLevel_10"
+    },
+    "CasinoBattlePass_UnlockLevels": {
+        "key": "CasinoBattlePass_UnlockLevels",
+        "offerId1": "CasinoBattlePassUnlockLevel_1",
+        "offerId2": "CasinoBattlePassUnlockLevel_5",
+        "offerId3": "CasinoBattlePassUnlockLevel_10"
+    },
+    "CasinoKingBattlePass_UnlockLevels": {
+        "key": "CasinoKingBattlePass_UnlockLevels",
+        "offerId1": "CasinoKingBattlePassUnlockLevel_1",
+        "offerId2": "CasinoKingBattlePassUnlockLevel_5",
+        "offerId3": "CasinoKingBattlePassUnlockLevel_10"
+    },
+    "CasinoReflectArmorBattlePass_UnlockLevels": {
+        "key": "CasinoReflectArmorBattlePass_UnlockLevels",
+        "offerId1": "casinobattlepassunlocklevel_1_reflectarmor",
+        "offerId2": "casinobattlepassunlocklevel_5_reflectarmor",
+        "offerId3": "casinobattlepassunlocklevel_10_reflectarmor"
+    },
+    "CasinoAoeArmorBattlePass_UnlockLevels": {
+        "key": "CasinoAoeArmorBattlePass_UnlockLevels",
+        "offerId1": "casinobattlepassunlocklevel_1_aoearmor",
+        "offerId2": "casinobattlepassunlocklevel_5_aoearmor",
+        "offerId3": "casinobattlepassunlocklevel_10_aoearmor"
+    },
+    "CasinoAoeWeaponBattlePass_UnlockLevels": {
+        "key": "CasinoAoeWeaponBattlePass_UnlockLevels",
+        "offerId1": "casinobattlepassunlocklevel_1_aoeweapon",
+        "offerId2": "casinobattlepassunlocklevel_5_aoeweapon",
+        "offerId3": "casinobattlepassunlocklevel_10_aoeweapon"
+    },
+    "CasinoReflectWeaponBattlePass_UnlockLevels": {
+        "key": "CasinoReflectWeaponBattlePass_UnlockLevels",
+        "offerId1": "casinobattlepassunlocklevel_1_reflectweapon",
+        "offerId2": "casinobattlepassunlocklevel_5_reflectweapon",
+        "offerId3": "casinobattlepassunlocklevel_10_reflectweapon"
+    },
+    "TowerAxeThrowersBattlePass_UnlockLevels": {
+        "key": "TowerAxeThrowersBattlePass_UnlockLevels",
+        "offerId1": "TowerAxeThrowersBattlePassUnlockLevel_1",
+        "offerId2": "TowerAxeThrowersBattlePassUnlockLevel_5",
+        "offerId3": "TowerAxeThrowersBattlePassUnlockLevel_10"
+    }
+}

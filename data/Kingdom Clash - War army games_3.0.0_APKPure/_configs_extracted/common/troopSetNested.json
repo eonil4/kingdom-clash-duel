@@ -1,0 +1,767 @@
+{
+    "Alchemist": {
+        "key": "Alchemist",
+        "troopSetId": "Human",
+        "troop": "alchemist"
+    },
+    "Archer": {
+        "key": "Archer",
+        "troopSetId": "Human",
+        "troop": "archer"
+    },
+    "Assasin": {
+        "key": "Assasin",
+        "troopSetId": "Human",
+        "troop": "assasin"
+    },
+    "Beast": {
+        "key": "Beast",
+        "troopSetId": "Human",
+        "troop": "beast"
+    },
+    "Bomber": {
+        "key": "Bomber",
+        "troopSetId": "Human",
+        "troop": "bomber"
+    },
+    "Butcher": {
+        "key": "Butcher",
+        "troopSetId": "Human",
+        "troop": "butcher"
+    },
+    "Catapult": {
+        "key": "Catapult",
+        "troopSetId": "Human",
+        "troop": "catapult"
+    },
+    "EliteWarrior": {
+        "key": "EliteWarrior",
+        "troopSetId": "Human",
+        "troop": "eliteWarrior"
+    },
+    "Hunter": {
+        "key": "Hunter",
+        "troopSetId": "Human",
+        "troop": "hunter"
+    },
+    "Infantry": {
+        "key": "Infantry",
+        "troopSetId": "Human",
+        "troop": "infantry"
+    },
+    "IronGuards": {
+        "key": "IronGuards",
+        "troopSetId": "Human",
+        "troop": "ironGuards"
+    },
+    "MountainsChampion": {
+        "key": "MountainsChampion",
+        "troopSetId": "Human",
+        "troop": "mountainsChampion"
+    },
+    "Monk": {
+        "key": "Monk",
+        "troopSetId": "Human",
+        "troop": "monk"
+    },
+    "GolemInfantry": {
+        "key": "GolemInfantry",
+        "troopSetId": "Mage",
+        "troop": "golemInfantry"
+    },
+    "Lancer": {
+        "key": "Lancer",
+        "troopSetId": "Human",
+        "troop": "lancer"
+    },
+    "MageStudent": {
+        "key": "MageStudent",
+        "troopSetId": "Mage",
+        "troop": "mageStudent"
+    },
+    "MagicArcher": {
+        "key": "MagicArcher",
+        "troopSetId": "Mage",
+        "troop": "magicArcher"
+    },
+    "Shaman": {
+        "key": "Shaman",
+        "troopSetId": "Mage",
+        "troop": "shaman"
+    },
+    "Paladin": {
+        "key": "Paladin",
+        "troopSetId": "Human",
+        "troop": "paladin"
+    },
+    "StoneGolem": {
+        "key": "StoneGolem",
+        "troopSetId": "Mage",
+        "troop": "stoneGolem"
+    },
+    "StormSpearman": {
+        "key": "StormSpearman",
+        "troopSetId": "Mage",
+        "troop": "stormSpearman"
+    },
+    "VulkanGolem": {
+        "key": "VulkanGolem",
+        "troopSetId": "Mage",
+        "troop": "vulkanGolem"
+    },
+    "CatapultSkeleton": {
+        "key": "CatapultSkeleton",
+        "troopSetId": "Undead",
+        "troop": "catapultSkeleton"
+    },
+    "DamnCatapult": {
+        "key": "DamnCatapult",
+        "troopSetId": "Undead",
+        "troop": "damnCatapult"
+    },
+    "GraveDigger": {
+        "key": "GraveDigger",
+        "troopSetId": "Undead",
+        "troop": "gravedigger"
+    },
+    "Imp": {
+        "key": "Imp",
+        "troopSetId": "Undead",
+        "troop": "imp"
+    },
+    "Necromancer": {
+        "key": "Necromancer",
+        "troopSetId": "Undead",
+        "troop": "necromancer"
+    },
+    "SkeletonWarrior": {
+        "key": "SkeletonWarrior",
+        "troopSetId": "Undead",
+        "troop": "skeletonWarrior"
+    },
+    "Pyrotechnician": {
+        "key": "Pyrotechnician",
+        "troopSetId": "Human",
+        "troop": "pyrotechnician"
+    },
+    "TombSkeleton": {
+        "key": "TombSkeleton",
+        "troopSetId": "Undead",
+        "troop": "tombSkeleton"
+    },
+    "Skeleton": {
+        "key": "Skeleton",
+        "troopSetId": "Undead",
+        "troop": "skeleton"
+    },
+    "UndeadMage": {
+        "key": "UndeadMage",
+        "troopSetId": "Undead",
+        "troop": "undeadMage"
+    },
+    "UndeadHeadless": {
+        "key": "UndeadHeadless",
+        "troopSetId": "Undead",
+        "troop": "undeadHeadless"
+    },
+    "UndeadInfantry": {
+        "key": "UndeadInfantry",
+        "troopSetId": "Undead",
+        "troop": "undeadInfantry"
+    },
+    "UndeadJavelin": {
+        "key": "UndeadJavelin",
+        "troopSetId": "Undead",
+        "troop": "undeadJavelin"
+    },
+    "FlyingMonster": {
+        "key": "FlyingMonster",
+        "troopSetId": "Undead",
+        "troop": "flyingMonster"
+    },
+    "SpiderBlast": {
+        "key": "SpiderBlast",
+        "troopSetId": "Undead",
+        "troop": "spiderBlast"
+    },
+    "UndeadSkeleton": {
+        "key": "UndeadSkeleton",
+        "troopSetId": "Undead",
+        "troop": "undeadSkeleton"
+    },
+    "Tomb": {
+        "key": "Tomb",
+        "troopSetId": "Undead",
+        "troop": "tomb"
+    },
+    "DarknessMageSkeleton": {
+        "key": "DarknessMageSkeleton",
+        "troopSetId": "Undead",
+        "troop": "darknessMageSkeleton"
+    },
+    "MiniStoneGolem": {
+        "key": "MiniStoneGolem",
+        "troopSetId": "Mage",
+        "troop": "miniStoneGolem"
+    },
+    "WindElemental": {
+        "key": "WindElemental",
+        "troopSetId": "Mage",
+        "troop": "windElemental"
+    },
+    "Alchemist_Range": {
+        "key": "Alchemist_Range",
+        "troopSetId": "Range",
+        "troop": "alchemist"
+    },
+    "Archer_Range": {
+        "key": "Archer_Range",
+        "troopSetId": "Range",
+        "troop": "archer"
+    },
+    "Bomber_Range": {
+        "key": "Bomber_Range",
+        "troopSetId": "Range",
+        "troop": "bomber"
+    },
+    "Catapult_Range": {
+        "key": "Catapult_Range",
+        "troopSetId": "Range",
+        "troop": "catapult"
+    },
+    "Hunter_Range": {
+        "key": "Hunter_Range",
+        "troopSetId": "Range",
+        "troop": "hunter"
+    },
+    "MageStudent_Range": {
+        "key": "MageStudent_Range",
+        "troopSetId": "Range",
+        "troop": "mageStudent"
+    },
+    "MagicArcher_Range": {
+        "key": "MagicArcher_Range",
+        "troopSetId": "Range",
+        "troop": "magicArcher"
+    },
+    "Shaman_Range": {
+        "key": "Shaman_Range",
+        "troopSetId": "Range",
+        "troop": "shaman"
+    },
+    "StormSpearman_Range": {
+        "key": "StormSpearman_Range",
+        "troopSetId": "Range",
+        "troop": "stormSpearman"
+    },
+    "CatapultSkeleton_Range": {
+        "key": "CatapultSkeleton_Range",
+        "troopSetId": "Range",
+        "troop": "catapultSkeleton"
+    },
+    "DamnCatapult_Range": {
+        "key": "DamnCatapult_Range",
+        "troopSetId": "Range",
+        "troop": "damnCatapult"
+    },
+    "Imp_Range": {
+        "key": "Imp_Range",
+        "troopSetId": "Range",
+        "troop": "imp"
+    },
+    "Pyrotechnician_Range": {
+        "key": "Pyrotechnician_Range",
+        "troopSetId": "Range",
+        "troop": "pyrotechnician"
+    },
+    "UndeadMage_Range": {
+        "key": "UndeadMage_Range",
+        "troopSetId": "Range",
+        "troop": "undeadMage"
+    },
+    "Necromancer_Range": {
+        "key": "Necromancer_Range",
+        "troopSetId": "Range",
+        "troop": "necromancer"
+    },
+    "UndeadJavelin_Range": {
+        "key": "UndeadJavelin_Range",
+        "troopSetId": "Range",
+        "troop": "undeadJavelin"
+    },
+    "Skeleton_Summon": {
+        "key": "Skeleton_Summon",
+        "troopSetId": "Skeleton",
+        "troop": "skeleton"
+    },
+    "UndeadSkeleton_Summon": {
+        "key": "UndeadSkeleton_Summon",
+        "troopSetId": "Skeleton",
+        "troop": "undeadSkeleton"
+    },
+    "DarknessMageSkeleton_Summon": {
+        "key": "DarknessMageSkeleton_Summon",
+        "troopSetId": "Skeleton",
+        "troop": "darknessMageSkeleton"
+    },
+    "Assasin_Melee": {
+        "key": "Assasin_Melee",
+        "troopSetId": "Melee",
+        "troop": "assasin"
+    },
+    "Beast_Melee": {
+        "key": "Beast_Melee",
+        "troopSetId": "Melee",
+        "troop": "beast"
+    },
+    "Butcher_Melee": {
+        "key": "Butcher_Melee",
+        "troopSetId": "Melee",
+        "troop": "butcher"
+    },
+    "EliteWarrior_Melee": {
+        "key": "EliteWarrior_Melee",
+        "troopSetId": "Melee",
+        "troop": "eliteWarrior"
+    },
+    "Infantry_Melee": {
+        "key": "Infantry_Melee",
+        "troopSetId": "Melee",
+        "troop": "infantry"
+    },
+    "IronGuards_Melee": {
+        "key": "IronGuards_Melee",
+        "troopSetId": "Melee",
+        "troop": "ironGuards"
+    },
+    "MountainsChampion_Melee": {
+        "key": "MountainsChampion_Melee",
+        "troopSetId": "Melee",
+        "troop": "mountainsChampion"
+    },
+    "Monk_Melee": {
+        "key": "Monk_Melee",
+        "troopSetId": "Melee",
+        "troop": "monk"
+    },
+    "GolemInfantry_Melee": {
+        "key": "GolemInfantry_Melee",
+        "troopSetId": "Melee",
+        "troop": "golemInfantry"
+    },
+    "Lancer_Melee": {
+        "key": "Lancer_Melee",
+        "troopSetId": "Melee",
+        "troop": "lancer"
+    },
+    "Paladin_Melee": {
+        "key": "Paladin_Melee",
+        "troopSetId": "Melee",
+        "troop": "paladin"
+    },
+    "StoneGolem_Melee": {
+        "key": "StoneGolem_Melee",
+        "troopSetId": "Melee",
+        "troop": "stoneGolem"
+    },
+    "VulkanGolem_Melee": {
+        "key": "VulkanGolem_Melee",
+        "troopSetId": "Melee",
+        "troop": "vulkanGolem"
+    },
+    "GraveDigger_Melee": {
+        "key": "GraveDigger_Melee",
+        "troopSetId": "Melee",
+        "troop": "gravedigger"
+    },
+    "SkeletonWarrior_Melee": {
+        "key": "SkeletonWarrior_Melee",
+        "troopSetId": "Melee",
+        "troop": "skeletonWarrior"
+    },
+    "TombSkeleton_Melee": {
+        "key": "TombSkeleton_Melee",
+        "troopSetId": "Melee",
+        "troop": "tombSkeleton"
+    },
+    "Skeleton_Melee": {
+        "key": "Skeleton_Melee",
+        "troopSetId": "Melee",
+        "troop": "skeleton"
+    },
+    "UndeadHeadless_Melee": {
+        "key": "UndeadHeadless_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadHeadless"
+    },
+    "UndeadInfantry_Melee": {
+        "key": "UndeadInfantry_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadInfantry"
+    },
+    "UndeadSkeleton_Melee": {
+        "key": "UndeadSkeleton_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadSkeleton"
+    },
+    "DarknessMageSkeleton_Melee": {
+        "key": "DarknessMageSkeleton_Melee",
+        "troopSetId": "Melee",
+        "troop": "darknessMageSkeleton"
+    },
+    "MiniStoneGolem_Melee": {
+        "key": "MiniStoneGolem_Melee",
+        "troopSetId": "Melee",
+        "troop": "miniStoneGolem"
+    },
+    "MonkGhost": {
+        "key": "MonkGhost",
+        "troopSetId": "Human",
+        "troop": "monkGhost"
+    },
+    "MonkGhost_Melee": {
+        "key": "MonkGhost_Melee",
+        "troopSetId": "Melee",
+        "troop": "monkGhost"
+    },
+    "Merida": {
+        "key": "Merida",
+        "troopSetId": "Human",
+        "troop": "accurateMerida"
+    },
+    "Merida_Range": {
+        "key": "Merida_Range",
+        "troopSetId": "Range",
+        "troop": "accurateMerida"
+    },
+    "AirMage": {
+        "key": "AirMage",
+        "troopSetId": "Mage",
+        "troop": "airMage"
+    },
+    "AirMage_Range": {
+        "key": "AirMage_Range",
+        "troopSetId": "Range",
+        "troop": "airMage"
+    },
+    "BaronBenua": {
+        "key": "BaronBenua",
+        "troopSetId": "Human",
+        "troop": "baronBenua"
+    },
+    "BaronBenua_Melee": {
+        "key": "BaronBenua_Melee",
+        "troopSetId": "Melee",
+        "troop": "baronBenua"
+    },
+    "BoneDragon": {
+        "key": "BoneDragon",
+        "troopSetId": "Undead",
+        "troop": "boneDragon"
+    },
+    "BoneDragon_Range": {
+        "key": "BoneDragon_Range",
+        "troopSetId": "Range",
+        "troop": "boneDragon"
+    },
+    "Charmer": {
+        "key": "Charmer",
+        "troopSetId": "Mage",
+        "troop": "charmer"
+    },
+    "Charmer_Range": {
+        "key": "Charmer_Range",
+        "troopSetId": "Range",
+        "troop": "charmer"
+    },
+    "Cleric": {
+        "key": "Cleric",
+        "troopSetId": "Human",
+        "troop": "clericHero"
+    },
+    "Cleric_Range": {
+        "key": "Cleric_Range",
+        "troopSetId": "Range",
+        "troop": "clericHero"
+    },
+    "CursedGiant": {
+        "key": "CursedGiant",
+        "troopSetId": "Undead",
+        "troop": "cursedGiant"
+    },
+    "CursedGiant_Melee": {
+        "key": "CursedGiant_Melee",
+        "troopSetId": "Melee",
+        "troop": "cursedGiant"
+    },
+    "DarkKnight": {
+        "key": "DarkKnight",
+        "troopSetId": "Undead",
+        "troop": "darkKnight"
+    },
+    "DarkKnight_Melee": {
+        "key": "DarkKnight_Melee",
+        "troopSetId": "Melee",
+        "troop": "darkKnight"
+    },
+    "DarknessMage": {
+        "key": "DarknessMage",
+        "troopSetId": "Undead",
+        "troop": "darknessMage"
+    },
+    "DarknessMage_Range": {
+        "key": "DarknessMage_Range",
+        "troopSetId": "Range",
+        "troop": "darknessMage"
+    },
+    "DebafferOnMaunt": {
+        "key": "DebafferOnMaunt",
+        "troopSetId": "Undead",
+        "troop": "debafferOnMaunt"
+    },
+    "DebafferOnMaunt_Range": {
+        "key": "DebafferOnMaunt_Range",
+        "troopSetId": "Range",
+        "troop": "debafferOnMaunt"
+    },
+    "DoubleShield": {
+        "key": "DoubleShield",
+        "troopSetId": "Human",
+        "troop": "doubleShield"
+    },
+    "DoubleShield_Melee": {
+        "key": "DoubleShield_Melee",
+        "troopSetId": "Melee",
+        "troop": "doubleShield"
+    },
+    "DragonRider": {
+        "key": "DragonRider",
+        "troopSetId": "Human",
+        "troop": "dragonRider"
+    },
+    "DragonRider_Range": {
+        "key": "DragonRider_Range",
+        "troopSetId": "Range",
+        "troop": "dragonRider"
+    },
+    "Druid": {
+        "key": "Druid",
+        "troopSetId": "Mage",
+        "troop": "druid"
+    },
+    "Druid_Melee": {
+        "key": "Druid_Melee",
+        "troopSetId": "Melee",
+        "troop": "druid"
+    },
+    "FireMage": {
+        "key": "FireMage",
+        "troopSetId": "Mage",
+        "troop": "fireMage"
+    },
+    "FireMage_Range": {
+        "key": "FireMage_Range",
+        "troopSetId": "Range",
+        "troop": "fireMage"
+    },
+    "ForestQueen": {
+        "key": "ForestQueen",
+        "troopSetId": "Mage",
+        "troop": "forestQueen"
+    },
+    "ForestQueen_Range": {
+        "key": "ForestQueen_Range",
+        "troopSetId": "Range",
+        "troop": "forestQueen"
+    },
+    "General": {
+        "key": "General",
+        "troopSetId": "Human",
+        "troop": "general"
+    },
+    "General_Melee": {
+        "key": "General_Melee",
+        "troopSetId": "Melee",
+        "troop": "general"
+    },
+    "IceMage": {
+        "key": "IceMage",
+        "troopSetId": "Mage",
+        "troop": "iceMage"
+    },
+    "IceMage_Range": {
+        "key": "IceMage_Range",
+        "troopSetId": "Range",
+        "troop": "iceMage"
+    },
+    "LightningElemental": {
+        "key": "LightningElemental",
+        "troopSetId": "Mage",
+        "troop": "lightningElemental"
+    },
+    "LightningElemental_Range": {
+        "key": "LightningElemental_Range",
+        "troopSetId": "Range",
+        "troop": "lightningElemental"
+    },
+    "Ringleader": {
+        "key": "Ringleader",
+        "troopSetId": "Human",
+        "troop": "ringleaderHero"
+    },
+    "Ringleader_Melee": {
+        "key": "Ringleader_Melee",
+        "troopSetId": "Melee",
+        "troop": "ringleaderHero"
+    },
+    "SandMage": {
+        "key": "SandMage",
+        "troopSetId": "Mage",
+        "troop": "sandMage"
+    },
+    "SandMage_Range": {
+        "key": "SandMage_Range",
+        "troopSetId": "Range",
+        "troop": "sandMage"
+    },
+    "Swordmaster": {
+        "key": "Swordmaster",
+        "troopSetId": "Human",
+        "troop": "swordmasterHero"
+    },
+    "Swordmaster_Melee": {
+        "key": "Swordmaster_Melee",
+        "troopSetId": "Melee",
+        "troop": "swordmasterHero"
+    },
+    "UndeadGunner": {
+        "key": "UndeadGunner",
+        "troopSetId": "Undead",
+        "troop": "undeadGunner"
+    },
+    "UndeadGunner_Range": {
+        "key": "UndeadGunner_Range",
+        "troopSetId": "Range",
+        "troop": "undeadGunner"
+    },
+    "UndeadPirate": {
+        "key": "UndeadPirate",
+        "troopSetId": "Undead",
+        "troop": "undeadPirate"
+    },
+    "UndeadPirate_Melee": {
+        "key": "UndeadPirate_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadPirate"
+    },
+    "WaterMage": {
+        "key": "WaterMage",
+        "troopSetId": "Mage",
+        "troop": "waterMage"
+    },
+    "WaterMage_Range": {
+        "key": "WaterMage_Range",
+        "troopSetId": "Range",
+        "troop": "waterMage"
+    },
+    "WindElemental_Melee": {
+        "key": "WindElemental_Melee",
+        "troopSetId": "Melee",
+        "troop": "windElemental"
+    },
+    "FlyingMonster_Melee": {
+        "key": "FlyingMonster_Melee",
+        "troopSetId": "Melee",
+        "troop": "flyingMonster"
+    },
+    "Nun": {
+        "key": "Nun",
+        "troopSetId": "Human",
+        "troop": "nun"
+    },
+    "Nun_Melee": {
+        "key": "Nun_Melee",
+        "troopSetId": "Melee",
+        "troop": "nun"
+    },
+    "undeadWarrior": {
+        "key": "undeadWarrior",
+        "troopSetId": "Undead",
+        "troop": "undeadWarrior"
+    },
+    "undeadWarrior_Melee": {
+        "key": "undeadWarrior_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadWarrior"
+    },
+    "CatapultSkeleton_Summon": {
+        "key": "CatapultSkeleton_Summon",
+        "troopSetId": "Skeleton",
+        "troop": "catapultSkeleton"
+    },
+    "TombSkeleton_Summon": {
+        "key": "TombSkeleton_Summon",
+        "troopSetId": "Skeleton",
+        "troop": "tombSkeleton"
+    },
+    "stunToad": {
+        "key": "stunToad",
+        "troopSetId": "Melee",
+        "troop": "stunToad"
+    },
+    "stunToad_Melee": {
+        "key": "stunToad_Melee",
+        "troopSetId": "Mage",
+        "troop": "stunToad"
+    },
+    "phoenix": {
+        "key": "phoenix",
+        "troopSetId": "Mage",
+        "troop": "phoenix"
+    },
+    "phoenix_Range": {
+        "key": "phoenix_Range",
+        "troopSetId": "Range",
+        "troop": "phoenix"
+    },
+    "cursedGiant": {
+        "key": "cursedGiant",
+        "troopSetId": "Undead",
+        "troop": "cursedGiant"
+    },
+    "cursedGiant_Melee": {
+        "key": "cursedGiant_Melee",
+        "troopSetId": "Melee",
+        "troop": "cursedGiant"
+    },
+    "debafferOnMaunt": {
+        "key": "debafferOnMaunt",
+        "troopSetId": "Undead",
+        "troop": "debafferOnMaunt"
+    },
+    "debafferOnMaunt_Range": {
+        "key": "debafferOnMaunt_Range",
+        "troopSetId": "Range",
+        "troop": "debafferOnMaunt"
+    },
+    "stunToad_BannedFromFuse": {
+        "key": "stunToad_BannedFromFuse",
+        "troopSetId": "BannedFromFuse",
+        "troop": "stunToad"
+    },
+    "phoenix_BannedFromFuse": {
+        "key": "phoenix_BannedFromFuse",
+        "troopSetId": "BannedFromFuse",
+        "troop": "phoenix"
+    },
+    "undeadRat": {
+        "key": "undeadRat",
+        "troopSetId": "Undead",
+        "troop": "undeadRat"
+    },
+    "undeadRat_Melee": {
+        "key": "undeadRat_Melee",
+        "troopSetId": "Melee",
+        "troop": "undeadRat"
+    }
+}

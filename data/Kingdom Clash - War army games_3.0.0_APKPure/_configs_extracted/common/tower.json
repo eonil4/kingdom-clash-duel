@@ -1,0 +1,8 @@
+{
+    "tower_AxeThrowers": {
+        "key": "tower_AxeThrowers",
+        "battlepassLinkId": "SquadEvent_axeThrowers",
+        "iconId": "tower_unit_axeThrowers",
+        "offerIds": "offerTowerAxeThrowersBpScheduler"
+    }
+}

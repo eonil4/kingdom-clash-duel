@@ -1,0 +1,10 @@
+{
+    "placementOfferLobbyTroops": {
+        "key": "placementOfferLobbyTroops",
+        "offer1": "offerLobbyTroops1",
+        "offer2": "offerLobbyTroops2",
+        "offer3": "offerLobbyTroops3",
+        "icon": "icon_offer_squads",
+        "prefabIcon": null
+    }
+}

@@ -1,0 +1,242 @@
+{
+    "commonRacePoints_1": {
+        "key": "commonRacePoints_1",
+        "rarityId": "common",
+        "level": 1,
+        "points": 1
+    },
+    "commonRacePoints_2": {
+        "key": "commonRacePoints_2",
+        "rarityId": "common",
+        "level": 2,
+        "points": 2
+    },
+    "commonRacePoints_3": {
+        "key": "commonRacePoints_3",
+        "rarityId": "common",
+        "level": 3,
+        "points": 4
+    },
+    "commonRacePoints_4": {
+        "key": "commonRacePoints_4",
+        "rarityId": "common",
+        "level": 4,
+        "points": 8
+    },
+    "rareRacePoints_1": {
+        "key": "rareRacePoints_1",
+        "rarityId": "rare",
+        "level": 1,
+        "points": 2
+    },
+    "rareRacePoints_2": {
+        "key": "rareRacePoints_2",
+        "rarityId": "rare",
+        "level": 2,
+        "points": 4
+    },
+    "rareRacePoints_3": {
+        "key": "rareRacePoints_3",
+        "rarityId": "rare",
+        "level": 3,
+        "points": 8
+    },
+    "rareRacePoints_4": {
+        "key": "rareRacePoints_4",
+        "rarityId": "rare",
+        "level": 4,
+        "points": 16
+    },
+    "epicRacePoints_1": {
+        "key": "epicRacePoints_1",
+        "rarityId": "epic",
+        "level": 1,
+        "points": 20
+    },
+    "epicRacePoints_2": {
+        "key": "epicRacePoints_2",
+        "rarityId": "epic",
+        "level": 2,
+        "points": 40
+    },
+    "epicRacePoints_3": {
+        "key": "epicRacePoints_3",
+        "rarityId": "epic",
+        "level": 3,
+        "points": 80
+    },
+    "epicRacePoints_4": {
+        "key": "epicRacePoints_4",
+        "rarityId": "epic",
+        "level": 4,
+        "points": 160
+    },
+    "legendaryRacePoints_1": {
+        "key": "legendaryRacePoints_1",
+        "rarityId": "legendary",
+        "level": 1,
+        "points": 35
+    },
+    "legendaryRacePoints_2": {
+        "key": "legendaryRacePoints_2",
+        "rarityId": "legendary",
+        "level": 2,
+        "points": 70
+    },
+    "legendaryRacePoints_3": {
+        "key": "legendaryRacePoints_3",
+        "rarityId": "legendary",
+        "level": 3,
+        "points": 140
+    },
+    "legendaryRacePoints_4": {
+        "key": "legendaryRacePoints_4",
+        "rarityId": "legendary",
+        "level": 4,
+        "points": 280
+    },
+    "commonRacePoints_5": {
+        "key": "commonRacePoints_5",
+        "rarityId": "common",
+        "level": 5,
+        "points": 16
+    },
+    "commonRacePoints_6": {
+        "key": "commonRacePoints_6",
+        "rarityId": "common",
+        "level": 6,
+        "points": 32
+    },
+    "commonRacePoints_7": {
+        "key": "commonRacePoints_7",
+        "rarityId": "common",
+        "level": 7,
+        "points": 64
+    },
+    "commonRacePoints_8": {
+        "key": "commonRacePoints_8",
+        "rarityId": "common",
+        "level": 8,
+        "points": 128
+    },
+    "commonRacePoints_9": {
+        "key": "commonRacePoints_9",
+        "rarityId": "common",
+        "level": 9,
+        "points": 256
+    },
+    "commonRacePoints_10": {
+        "key": "commonRacePoints_10",
+        "rarityId": "common",
+        "level": 10,
+        "points": 512
+    },
+    "rareRacePoints_5": {
+        "key": "rareRacePoints_5",
+        "rarityId": "rare",
+        "level": 5,
+        "points": 32
+    },
+    "rareRacePoints_6": {
+        "key": "rareRacePoints_6",
+        "rarityId": "rare",
+        "level": 6,
+        "points": 64
+    },
+    "rareRacePoints_7": {
+        "key": "rareRacePoints_7",
+        "rarityId": "rare",
+        "level": 7,
+        "points": 128
+    },
+    "rareRacePoints_8": {
+        "key": "rareRacePoints_8",
+        "rarityId": "rare",
+        "level": 8,
+        "points": 256
+    },
+    "rareRacePoints_9": {
+        "key": "rareRacePoints_9",
+        "rarityId": "rare",
+        "level": 9,
+        "points": 512
+    },
+    "rareRacePoints_10": {
+        "key": "rareRacePoints_10",
+        "rarityId": "rare",
+        "level": 10,
+        "points": 1024
+    },
+    "epicRacePoints_5": {
+        "key": "epicRacePoints_5",
+        "rarityId": "epic",
+        "level": 5,
+        "points": 320
+    },
+    "epicRacePoints_6": {
+        "key": "epicRacePoints_6",
+        "rarityId": "epic",
+        "level": 6,
+        "points": 640
+    },
+    "epicRacePoints_7": {
+        "key": "epicRacePoints_7",
+        "rarityId": "epic",
+        "level": 7,
+        "points": 1280
+    },
+    "epicRacePoints_8": {
+        "key": "epicRacePoints_8",
+        "rarityId": "epic",
+        "level": 8,
+        "points": 2560
+    },
+    "epicRacePoints_9": {
+        "key": "epicRacePoints_9",
+        "rarityId": "epic",
+        "level": 9,
+        "points": 5120
+    },
+    "epicRacePoints_10": {
+        "key": "epicRacePoints_10",
+        "rarityId": "epic",
+        "level": 10,
+        "points": 10240
+    },
+    "legendaryRacePoints_5": {
+        "key": "legendaryRacePoints_5",
+        "rarityId": "legendary",
+        "level": 5,
+        "points": 560
+    },
+    "legendaryRacePoints_6": {
+        "key": "legendaryRacePoints_6",
+        "rarityId": "legendary",
+        "level": 6,
+        "points": 1120
+    },
+    "legendaryRacePoints_7": {
+        "key": "legendaryRacePoints_7",
+        "rarityId": "legendary",
+        "level": 7,
+        "points": 2240
+    },
+    "legendaryRacePoints_8": {
+        "key": "legendaryRacePoints_8",
+        "rarityId": "legendary",
+        "level": 8,
+        "points": 4480
+    },
+    "legendaryRacePoints_9": {
+        "key": "legendaryRacePoints_9",
+        "rarityId": "legendary",
+        "level": 9,
+        "points": 8960
+    },
+    "legendaryRacePoints_10": {
+        "key": "legendaryRacePoints_10",
+        "rarityId": "legendary",
+        "level": 10,
+        "points": 17920
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "race": {
+        "key": "race",
+        "redirectIds": [
+            "shop",
+            "cardChest",
+            "campaignChestTroops"
+        ]
+    },
+    "loss": {
+        "key": "loss",
+        "redirectIds": [
+            "headHunt",
+            "arena",
+            "shop"
+        ]
+    },
+    "reflectWeapon": {
+        "key": "reflectWeapon",
+        "redirectIds": [
+            "redirectReflectWeapon_new",
+            "expeditionStore"
+        ]
+    },
+    "reflectArmor": {
+        "key": "reflectArmor",
+        "redirectIds": [
+            "redirectReflectArmor_new",
+            "expeditionStore"
+        ]
+    },
+    "aoeWeapon": {
+        "key": "aoeWeapon",
+        "redirectIds": [
+            "redirectAoeWeapon_new",
+            "expeditionStore"
+        ]
+    },
+    "aoeArmor": {
+        "key": "aoeArmor",
+        "redirectIds": [
+            "redirectAoeArmor_new",
+            "expeditionStore"
+        ]
+    },
+    "lossTower": {
+        "key": "lossTower",
+        "redirectIds": [
+            "towerQuests",
+            "towerShop"
+        ]
+    }
+}

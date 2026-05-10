@@ -1,0 +1,20 @@
+{
+    "offerFreeVip": {
+        "key": "offerFreeVip",
+        "title_Localized": "caption_vip",
+        "durationInSeconds": 1800,
+        "autobattleCount": 20,
+        "gemsCount": 50,
+        "icon": "vip_subscription",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

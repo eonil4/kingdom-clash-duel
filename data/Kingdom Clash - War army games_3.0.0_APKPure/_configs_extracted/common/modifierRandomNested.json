@@ -1,0 +1,110 @@
+{
+    "1": {
+        "key": "1",
+        "modifierId": "lucky_modifier_1",
+        "modifier": 1,
+        "weight": 100
+    },
+    "2": {
+        "key": "2",
+        "modifierId": "lucky_modifier_2",
+        "modifier": 1,
+        "weight": 50
+    },
+    "3": {
+        "key": "3",
+        "modifierId": "lucky_modifier_2",
+        "modifier": 2,
+        "weight": 50
+    },
+    "4": {
+        "key": "4",
+        "modifierId": "lucky_modifier_3",
+        "modifier": 1,
+        "weight": 650
+    },
+    "5": {
+        "key": "5",
+        "modifierId": "lucky_modifier_3",
+        "modifier": 2,
+        "weight": 175
+    },
+    "6": {
+        "key": "6",
+        "modifierId": "lucky_modifier_3",
+        "modifier": 3,
+        "weight": 100
+    },
+    "7": {
+        "key": "7",
+        "modifierId": "lucky_modifier_3",
+        "modifier": 5,
+        "weight": 50
+    },
+    "8": {
+        "key": "8",
+        "modifierId": "lucky_modifier_3",
+        "modifier": 10,
+        "weight": 25
+    },
+    "9": {
+        "key": "9",
+        "modifierId": "lucky_modifier_10",
+        "modifier": 10,
+        "weight": 1
+    },
+    "10": {
+        "key": "10",
+        "modifierId": "lucky_modifier_1_5",
+        "modifier": 1,
+        "weight": 500
+    },
+    "11": {
+        "key": "11",
+        "modifierId": "lucky_modifier_1_5",
+        "modifier": 2,
+        "weight": 250
+    },
+    "12": {
+        "key": "12",
+        "modifierId": "lucky_modifier_1_5",
+        "modifier": 3,
+        "weight": 175
+    },
+    "13": {
+        "key": "13",
+        "modifierId": "lucky_modifier_1_5",
+        "modifier": 5,
+        "weight": 75
+    },
+    "14": {
+        "key": "14",
+        "modifierId": "lucky_modifier_1_10",
+        "modifier": 1,
+        "weight": 650
+    },
+    "15": {
+        "key": "15",
+        "modifierId": "lucky_modifier_1_10",
+        "modifier": 2,
+        "weight": 175
+    },
+    "16": {
+        "key": "16",
+        "modifierId": "lucky_modifier_1_10",
+        "modifier": 3,
+        "weight": 100
+    },
+    "17": {
+        "key": "17",
+        "modifierId": "lucky_modifier_1_10",
+        "modifier": 5,
+        "weight": 50
+    },
+    "18": {
+        "key": "18",
+        "modifierId": "lucky_modifier_1_10",
+        "modifier": 10,
+        "weight": 25
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Trickster": {
+        "key": "Trickster"
+    },
+    "Ranger": {
+        "key": "Ranger"
+    },
+    "Support": {
+        "key": "Support"
+    },
+    "Tank": {
+        "key": "Tank"
+    }
+}

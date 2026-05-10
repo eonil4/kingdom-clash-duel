@@ -1,0 +1,32 @@
+{
+    "legendaryOfferSelectableHero": {
+        "key": "legendaryOfferSelectableHero",
+        "heroSetId": "legendaryShopHeroSet",
+        "heroesCount": 1,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerSelectableHeroX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "legendaryOfferSelectableThreeHero": {
+        "key": "legendaryOfferSelectableThreeHero",
+        "heroSetId": "legendaryShopHeroSet",
+        "heroesCount": 3,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerSelectableHeroX3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

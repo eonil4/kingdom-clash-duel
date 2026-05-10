@@ -1,0 +1,41 @@
+{
+    "bank_free": {
+        "key": "bank_free"
+    },
+    "bank_hard": {
+        "key": "bank_hard"
+    },
+    "arena_store": {
+        "key": "arena_store"
+    },
+    "limited_inapp": {
+        "key": "limited_inapp"
+    },
+    "inapp": {
+        "key": "inapp"
+    },
+    "limited_gift_offer": {
+        "key": "limited_gift_offer"
+    },
+    "roulette": {
+        "key": "roulette"
+    },
+    "casino": {
+        "key": "casino"
+    },
+    "expedition_gear": {
+        "key": "expedition_gear"
+    },
+    "expedition_gear_free": {
+        "key": "expedition_gear_free"
+    },
+    "tower": {
+        "key": "tower"
+    },
+    "tower_free": {
+        "key": "tower_free"
+    },
+    "chain_offer": {
+        "key": "chain_offer"
+    }
+}

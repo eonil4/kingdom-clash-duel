@@ -1,0 +1,17 @@
+{
+    "recruit": {
+        "key": "recruit",
+        "rank": 100,
+        "title_Localized": "caption_clans_title_member"
+    },
+    "officer": {
+        "key": "officer",
+        "rank": 500,
+        "title_Localized": "caption_clans_title_advisor"
+    },
+    "owner": {
+        "key": "owner",
+        "rank": 1000,
+        "title_Localized": "caption_clans_title_leader"
+    }
+}

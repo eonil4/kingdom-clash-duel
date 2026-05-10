@@ -1,0 +1,58 @@
+{
+    "offer_towerAxeThrowers_advanced_1": {
+        "key": "offer_towerAxeThrowers_advanced_1",
+        "offer": "offerTowerAxeThrowersAdvanced_1",
+        "towerId": "tower_AxeThrowers",
+        "order": 1,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_advanced_2": {
+        "key": "offer_towerAxeThrowers_advanced_2",
+        "offer": "offerTowerAxeThrowersAdvanced_2",
+        "towerId": "tower_AxeThrowers",
+        "order": 2,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_ultimate_1": {
+        "key": "offer_towerAxeThrowers_ultimate_1",
+        "offer": "offerTowerAxeThrowersUltimate_1",
+        "towerId": "tower_AxeThrowers",
+        "order": 3,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_ultimate_2": {
+        "key": "offer_towerAxeThrowers_ultimate_2",
+        "offer": "offerTowerAxeThrowersUltimate_2",
+        "towerId": "tower_AxeThrowers",
+        "order": 4,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_absolute_1": {
+        "key": "offer_towerAxeThrowers_absolute_1",
+        "offer": "offerTowerAxeThrowersAbsolute_1",
+        "towerId": "tower_AxeThrowers",
+        "order": 5,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_absolute_2": {
+        "key": "offer_towerAxeThrowers_absolute_2",
+        "offer": "offerTowerAxeThrowersAbsolute_2",
+        "towerId": "tower_AxeThrowers",
+        "order": 6,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "offer_towerAxeThrowers_free": {
+        "key": "offer_towerAxeThrowers_free",
+        "offer": "offerTowerAxeThrowersFree",
+        "towerId": "tower_AxeThrowers",
+        "order": 0,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    }
+}

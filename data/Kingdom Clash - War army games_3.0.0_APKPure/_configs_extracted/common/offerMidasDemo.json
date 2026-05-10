@@ -1,0 +1,19 @@
+{
+    "offerFreeMidas": {
+        "key": "offerFreeMidas",
+        "title_Localized": "caption_midas",
+        "durationInSeconds": 1800,
+        "babdges4Count": 5,
+        "icon": "hand_of_midas",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

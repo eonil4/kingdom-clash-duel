@@ -1,0 +1,122 @@
+{
+    "emoji_baron_angry": {
+        "key": "emoji_baron_angry",
+        "serverId": 1,
+        "order": 0,
+        "resource": "emojiBaronAngryPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_baron_discontent": {
+        "key": "emoji_baron_discontent",
+        "serverId": 2,
+        "order": 1,
+        "resource": "emojiBaronDiscontentPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_baron_idle": {
+        "key": "emoji_baron_idle",
+        "serverId": 3,
+        "order": 2,
+        "resource": "emojiBaronIdlePrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_baron_sad": {
+        "key": "emoji_baron_sad",
+        "serverId": 4,
+        "order": 3,
+        "resource": "emojiBaronSadPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_baron_thimbs": {
+        "key": "emoji_baron_thimbs",
+        "serverId": 5,
+        "order": 4,
+        "resource": "emojiBaronThimbsPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_forestQueen_goodbye": {
+        "key": "emoji_forestQueen_goodbye",
+        "serverId": 6,
+        "order": 5,
+        "resource": "emojiForestQueenGoodbyePrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_forestQueen_happy": {
+        "key": "emoji_forestQueen_happy",
+        "serverId": 7,
+        "order": 6,
+        "resource": "emojiForestQueenHappyPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_forestQueen_hello": {
+        "key": "emoji_forestQueen_hello",
+        "serverId": 8,
+        "order": 7,
+        "resource": "emojiForestQueenHelloPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_forestQueen_scared": {
+        "key": "emoji_forestQueen_scared",
+        "serverId": 9,
+        "order": 8,
+        "resource": "emojiForestQueenScaredPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_forestQueen_wistful": {
+        "key": "emoji_forestQueen_wistful",
+        "serverId": 10,
+        "order": 9,
+        "resource": "emojiForestQueenWistfulPrefab",
+        "isRewardRequired": false,
+        "hiddenBeforeTS": 1764856800
+    },
+    "emoji_firemage_determination": {
+        "key": "emoji_firemage_determination",
+        "serverId": 11,
+        "order": 10,
+        "resource": "emojiFiremageDeterminationPrefab",
+        "isRewardRequired": true,
+        "hiddenBeforeTS": 1767225601
+    },
+    "emoji_firemage_facepalm": {
+        "key": "emoji_firemage_facepalm",
+        "serverId": 12,
+        "order": 11,
+        "resource": "emojiFiremageFacepalmPrefab",
+        "isRewardRequired": true,
+        "hiddenBeforeTS": 1767225601
+    },
+    "emoji_firemage_gift": {
+        "key": "emoji_firemage_gift",
+        "serverId": 13,
+        "order": 12,
+        "resource": "emojiFiremageGiftPrefab",
+        "isRewardRequired": true,
+        "hiddenBeforeTS": 1767225601
+    },
+    "emoji_firemage_rage": {
+        "key": "emoji_firemage_rage",
+        "serverId": 14,
+        "order": 13,
+        "resource": "emojiFiremageRagePrefab",
+        "isRewardRequired": true,
+        "hiddenBeforeTS": 1767225601
+    },
+    "emoji_firemage_victory": {
+        "key": "emoji_firemage_victory",
+        "serverId": 15,
+        "order": 14,
+        "resource": "emojiFiremageVictoryPrefab",
+        "isRewardRequired": true,
+        "hiddenBeforeTS": 1767225601
+    }
+}

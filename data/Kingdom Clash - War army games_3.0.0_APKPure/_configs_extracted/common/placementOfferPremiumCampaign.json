@@ -1,0 +1,182 @@
+{
+    "offerCampaignLevelPlacement01": {
+        "key": "offerCampaignLevelPlacement01",
+        "offerId": "offerCampaignLevel01",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement02": {
+        "key": "offerCampaignLevelPlacement02",
+        "offerId": "offerCampaignLevel02",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement03": {
+        "key": "offerCampaignLevelPlacement03",
+        "offerId": "offerCampaignLevel03",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement04": {
+        "key": "offerCampaignLevelPlacement04",
+        "offerId": "offerCampaignLevel04",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement05": {
+        "key": "offerCampaignLevelPlacement05",
+        "offerId": "offerCampaignLevel05",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement06": {
+        "key": "offerCampaignLevelPlacement06",
+        "offerId": "offerCampaignLevel06",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement07": {
+        "key": "offerCampaignLevelPlacement07",
+        "offerId": "offerCampaignLevel07",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement08": {
+        "key": "offerCampaignLevelPlacement08",
+        "offerId": "offerCampaignLevel08",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement09": {
+        "key": "offerCampaignLevelPlacement09",
+        "offerId": "offerCampaignLevel09",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement10": {
+        "key": "offerCampaignLevelPlacement10",
+        "offerId": "offerCampaignLevel10",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement11": {
+        "key": "offerCampaignLevelPlacement11",
+        "offerId": "offerCampaignLevel11",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement12": {
+        "key": "offerCampaignLevelPlacement12",
+        "offerId": "offerCampaignLevel12",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement13": {
+        "key": "offerCampaignLevelPlacement13",
+        "offerId": "offerCampaignLevel13",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement14": {
+        "key": "offerCampaignLevelPlacement14",
+        "offerId": "offerCampaignLevel14",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement15": {
+        "key": "offerCampaignLevelPlacement15",
+        "offerId": "offerCampaignLevel15",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement16": {
+        "key": "offerCampaignLevelPlacement16",
+        "offerId": "offerCampaignLevel16",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement17": {
+        "key": "offerCampaignLevelPlacement17",
+        "offerId": "offerCampaignLevel17",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement18": {
+        "key": "offerCampaignLevelPlacement18",
+        "offerId": "offerCampaignLevel18",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement19": {
+        "key": "offerCampaignLevelPlacement19",
+        "offerId": "offerCampaignLevel19",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    },
+    "offerCampaignLevelPlacement20": {
+        "key": "offerCampaignLevelPlacement20",
+        "offerId": "offerCampaignLevel20",
+        "icon": "offerCampaignLevelIcon",
+        "benefitAmount": 200,
+        "discountAmount": 50,
+        "widgetShowDurationInSeconds": 86400,
+        "widgetShowCooldownInSeconds": 259200
+    }
+}

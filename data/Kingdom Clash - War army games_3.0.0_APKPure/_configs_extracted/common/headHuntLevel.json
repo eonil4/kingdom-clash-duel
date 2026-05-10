@@ -1,0 +1,182 @@
+{
+    "1": {
+        "key": "1",
+        "headHuntModeId": "headhunt_normal",
+        "level": 1,
+        "power": 700,
+        "softReward": 2500,
+        "hardReward": 10,
+        "formationKey": "Level36"
+    },
+    "2": {
+        "key": "2",
+        "headHuntModeId": "headhunt_normal",
+        "level": 2,
+        "power": 900,
+        "softReward": 2900,
+        "hardReward": 0,
+        "formationKey": "Level37"
+    },
+    "3": {
+        "key": "3",
+        "headHuntModeId": "headhunt_normal",
+        "level": 3,
+        "power": 1200,
+        "softReward": 3300,
+        "hardReward": 0,
+        "formationKey": "Level38"
+    },
+    "4": {
+        "key": "4",
+        "headHuntModeId": "headhunt_normal",
+        "level": 4,
+        "power": 1600,
+        "softReward": 3700,
+        "hardReward": 30,
+        "formationKey": "Level39"
+    },
+    "5": {
+        "key": "5",
+        "headHuntModeId": "headhunt_normal",
+        "level": 5,
+        "power": 2100,
+        "softReward": 4100,
+        "hardReward": 0,
+        "formationKey": "Level40"
+    },
+    "6": {
+        "key": "6",
+        "headHuntModeId": "headhunt_normal",
+        "level": 6,
+        "power": 2500,
+        "softReward": 4500,
+        "hardReward": 0,
+        "formationKey": "Level41"
+    },
+    "7": {
+        "key": "7",
+        "headHuntModeId": "headhunt_normal",
+        "level": 7,
+        "power": 2800,
+        "softReward": 4900,
+        "hardReward": 0,
+        "formationKey": "Level42"
+    },
+    "8": {
+        "key": "8",
+        "headHuntModeId": "headhunt_normal",
+        "level": 8,
+        "power": 3000,
+        "softReward": 5300,
+        "hardReward": 0,
+        "formationKey": "Level43"
+    },
+    "9": {
+        "key": "9",
+        "headHuntModeId": "headhunt_normal",
+        "level": 9,
+        "power": 3200,
+        "softReward": 5700,
+        "hardReward": 0,
+        "formationKey": "Level44"
+    },
+    "10": {
+        "key": "10",
+        "headHuntModeId": "headhunt_normal",
+        "level": 10,
+        "power": 3400,
+        "softReward": 6100,
+        "hardReward": 50,
+        "formationKey": "Level45"
+    },
+    "11": {
+        "key": "11",
+        "headHuntModeId": "headhunt_hard",
+        "level": 1,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "Level47"
+    },
+    "12": {
+        "key": "12",
+        "headHuntModeId": "headhunt_hard",
+        "level": 2,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "Level48"
+    },
+    "13": {
+        "key": "13",
+        "headHuntModeId": "headhunt_hard",
+        "level": 3,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "Level49"
+    },
+    "14": {
+        "key": "14",
+        "headHuntModeId": "headhunt_hard",
+        "level": 4,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "Level50"
+    },
+    "15": {
+        "key": "15",
+        "headHuntModeId": "headhunt_hard",
+        "level": 5,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "Level51"
+    },
+    "16": {
+        "key": "16",
+        "headHuntModeId": "headhunt_hard",
+        "level": 6,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "Level52"
+    },
+    "17": {
+        "key": "17",
+        "headHuntModeId": "headhunt_hard",
+        "level": 7,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "Level53"
+    },
+    "18": {
+        "key": "18",
+        "headHuntModeId": "headhunt_hard",
+        "level": 8,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "Level54"
+    },
+    "19": {
+        "key": "19",
+        "headHuntModeId": "headhunt_hard",
+        "level": 9,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "Level55"
+    },
+    "20": {
+        "key": "20",
+        "headHuntModeId": "headhunt_hard",
+        "level": 10,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "Level56"
+    }
+}

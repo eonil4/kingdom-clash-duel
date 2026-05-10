@@ -1,0 +1,135 @@
+{
+    "oneTimeOffer_paladin": {
+        "key": "oneTimeOffer_paladin",
+        "offerId": "oneTimeOffer_paladin_squad",
+        "summaryLevel": 4,
+        "discountSku": "oneTimeOffer_paladin_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_undeadMage": {
+        "key": "oneTimeOffer_undeadMage",
+        "offerId": "oneTimeOffer_undeadMage_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_undeadMage_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_spiderBlast": {
+        "key": "oneTimeOffer_spiderBlast",
+        "offerId": "oneTimeOffer_spiderBlast_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_spiderBlast_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_mageStudent": {
+        "key": "oneTimeOffer_mageStudent",
+        "offerId": "oneTimeOffer_mageStudent_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_mageStudent_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_damnCatapult": {
+        "key": "oneTimeOffer_damnCatapult",
+        "offerId": "oneTimeOffer_damnCatapult_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_damnCatapult_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_gravedigger": {
+        "key": "oneTimeOffer_gravedigger",
+        "offerId": "oneTimeOffer_gravedigger_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_gravedigger_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_monk": {
+        "key": "oneTimeOffer_monk",
+        "offerId": "oneTimeOffer_monk_squad",
+        "summaryLevel": 5,
+        "discountSku": "oneTimeOffer_monk_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_magicArcher": {
+        "key": "oneTimeOffer_magicArcher",
+        "offerId": "oneTimeOffer_magicArcher_squad",
+        "summaryLevel": 6,
+        "discountSku": "oneTimeOffer_magicArcher_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_shaman": {
+        "key": "oneTimeOffer_shaman",
+        "offerId": "oneTimeOffer_shaman_squad",
+        "summaryLevel": 6,
+        "discountSku": "oneTimeOffer_shaman_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_undeadHeadless": {
+        "key": "oneTimeOffer_undeadHeadless",
+        "offerId": "oneTimeOffer_undeadHeadless_squad",
+        "summaryLevel": 6,
+        "discountSku": "oneTimeOffer_undeadHeadless_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_flyingMonster": {
+        "key": "oneTimeOffer_flyingMonster",
+        "offerId": "oneTimeOffer_flyingMonster_squad",
+        "summaryLevel": 7,
+        "discountSku": "oneTimeOffer_flyingMonster_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_stoneGolem": {
+        "key": "oneTimeOffer_stoneGolem",
+        "offerId": "oneTimeOffer_stoneGolem_squad",
+        "summaryLevel": 7,
+        "discountSku": "oneTimeOffer_stoneGolem_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_necromancer": {
+        "key": "oneTimeOffer_necromancer",
+        "offerId": "oneTimeOffer_necromancer_squad",
+        "summaryLevel": 7,
+        "discountSku": "oneTimeOffer_necromancer_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_stormSpearman": {
+        "key": "oneTimeOffer_stormSpearman",
+        "offerId": "oneTimeOffer_stormSpearman_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_stormSpearman_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_vulkanGolem": {
+        "key": "oneTimeOffer_vulkanGolem",
+        "offerId": "oneTimeOffer_vulkanGolem_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_vulkanGolem_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_skeletonWarrior": {
+        "key": "oneTimeOffer_skeletonWarrior",
+        "offerId": "oneTimeOffer_skeletonWarrior_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_skeletonWarrior_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_mountainsChampion": {
+        "key": "oneTimeOffer_mountainsChampion",
+        "offerId": "oneTimeOffer_mountainsChampion_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_mountainsChampion_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_eliteWarrior": {
+        "key": "oneTimeOffer_eliteWarrior",
+        "offerId": "oneTimeOffer_eliteWarrior_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_eliteWarrior_fake",
+        "icon": "oneTimeOfferIcon"
+    },
+    "oneTimeOffer_windElemental": {
+        "key": "oneTimeOffer_windElemental",
+        "offerId": "oneTimeOffer_windElemental_squad",
+        "summaryLevel": 8,
+        "discountSku": "oneTimeOffer_windElemental_fake",
+        "icon": "oneTimeOfferIcon"
+    }
+}

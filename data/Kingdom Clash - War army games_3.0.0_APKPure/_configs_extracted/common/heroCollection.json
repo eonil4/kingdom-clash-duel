@@ -1,0 +1,93 @@
+{
+    "collection_HumanGenerals": {
+        "key": "collection_HumanGenerals",
+        "name": "Collection_HumanGenerals_Name",
+        "illustrationId": "collection_illustration_human_generals",
+        "heroSetId": "humanGeneralsSet",
+        "order": 1
+    },
+    "collection_IceAndFire": {
+        "key": "collection_IceAndFire",
+        "name": "Collection_IceAndFire_Name",
+        "illustrationId": "collection_illustration_ice_fire",
+        "heroSetId": "iceAndFireSet",
+        "order": 2
+    },
+    "collection_ElementalMages": {
+        "key": "collection_ElementalMages",
+        "name": "Collection_ElementalMages_Name",
+        "illustrationId": "collection_illustration_elemental",
+        "heroSetId": "elementalMagesSet",
+        "order": 3
+    },
+    "collection_SkeletonLords": {
+        "key": "collection_SkeletonLords",
+        "name": "Collection_SkeletonLords_Name",
+        "illustrationId": "collection_illustration_skeleton",
+        "heroSetId": "skeletonLordsSet",
+        "order": 4
+    },
+    "collection_ForestDefenders": {
+        "key": "collection_ForestDefenders",
+        "name": "Collection_ForestDefenders_Name",
+        "illustrationId": null,
+        "heroSetId": "forestDefendersSet",
+        "order": 7
+    },
+    "collection_BalladHeroes": {
+        "key": "collection_BalladHeroes",
+        "name": "Collection_BalladHeroes_Name",
+        "illustrationId": "collection_illustration_tavern",
+        "heroSetId": "BalladHeroesSet",
+        "order": 5
+    },
+    "collection_FortunesChosen": {
+        "key": "collection_FortunesChosen",
+        "name": "Collection_FortunesChosen_Name",
+        "illustrationId": null,
+        "heroSetId": "FortunesChosenSet",
+        "order": 8
+    },
+    "collection_WarriorsOfLight": {
+        "key": "collection_WarriorsOfLight",
+        "name": "Collection_WarriorsOfLight_Name",
+        "illustrationId": "collection_illustration_holy",
+        "heroSetId": "WarriorsOfLightSet",
+        "order": 6
+    },
+    "collection_SkyLords": {
+        "key": "collection_SkyLords",
+        "name": "Collection_SkyLords_Name",
+        "illustrationId": null,
+        "heroSetId": "SkyLordsSet",
+        "order": 9
+    },
+    "collection_CursedNoble": {
+        "key": "collection_CursedNoble",
+        "name": "Collection_CursedNoble_Name",
+        "illustrationId": null,
+        "heroSetId": "CursedNobleSet",
+        "order": 10
+    },
+    "collection_DarkCovenant": {
+        "key": "collection_DarkCovenant",
+        "name": "Collection_DarkCovenant_Name",
+        "illustrationId": null,
+        "heroSetId": "DarkCovenantSet",
+        "order": 11
+    },
+    "collection_IndestructibleGiants": {
+        "key": "collection_IndestructibleGiants",
+        "name": "Collection_IndestructibleGiants_Name",
+        "illustrationId": null,
+        "heroSetId": "IndestructibleGiantsSet",
+        "order": 12
+    },
+    "collection_DeadlyShadows": {
+        "key": "collection_DeadlyShadows",
+        "name": "Collection_DeadlyShadows_Name",
+        "illustrationId": null,
+        "heroSetId": "DeadlyShadowsSet",
+        "order": 13
+    }
+}

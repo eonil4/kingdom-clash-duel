@@ -1,0 +1,107 @@
+{
+    "clanRank_1": {
+        "key": "clanRank_1",
+        "level": 1,
+        "requiredExperience": 1000,
+        "icon": "clanShopIcon",
+        "description": "caption_clanBonus_clanShop"
+    },
+    "clanRank_2": {
+        "key": "clanRank_2",
+        "level": 2,
+        "requiredExperience": 1500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_2"
+    },
+    "clanRank_3": {
+        "key": "clanRank_3",
+        "level": 3,
+        "requiredExperience": 2500,
+        "icon": "clanChestIcon",
+        "description": "caption_clanBonus_clanChest"
+    },
+    "clanRank_4": {
+        "key": "clanRank_4",
+        "level": 4,
+        "requiredExperience": 3500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_5": {
+        "key": "clanRank_5",
+        "level": 5,
+        "requiredExperience": 4500,
+        "icon": "clanShopIcon",
+        "description": "caption_clanBonus_clanShopExtention"
+    },
+    "clanRank_6": {
+        "key": "clanRank_6",
+        "level": 6,
+        "requiredExperience": 5500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_7": {
+        "key": "clanRank_7",
+        "level": 7,
+        "requiredExperience": 6500,
+        "icon": "clanChestIcon",
+        "description": "caption_clanBonus_clanChest"
+    },
+    "clanRank_8": {
+        "key": "clanRank_8",
+        "level": 8,
+        "requiredExperience": 7500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_9": {
+        "key": "clanRank_9",
+        "level": 9,
+        "requiredExperience": 8500,
+        "icon": "clanShopIcon",
+        "description": "caption_clanBonus_clanShopExtention"
+    },
+    "clanRank_10": {
+        "key": "clanRank_10",
+        "level": 10,
+        "requiredExperience": 9500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_11": {
+        "key": "clanRank_11",
+        "level": 11,
+        "requiredExperience": 10500,
+        "icon": "clanChestIcon",
+        "description": "caption_clanBonus_clanChest"
+    },
+    "clanRank_12": {
+        "key": "clanRank_12",
+        "level": 12,
+        "requiredExperience": 11500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_13": {
+        "key": "clanRank_13",
+        "level": 13,
+        "requiredExperience": 13000,
+        "icon": "clanChestIcon",
+        "description": "caption_clanBonus_clanChest"
+    },
+    "clanRank_14": {
+        "key": "clanRank_14",
+        "level": 14,
+        "requiredExperience": 14500,
+        "icon": "clanMembersIcon",
+        "description": "caption_clanBonus_clanLimit_3"
+    },
+    "clanRank_15": {
+        "key": "clanRank_15",
+        "level": 15,
+        "requiredExperience": 16000,
+        "icon": "clanChestIcon",
+        "description": "caption_clanBonus_clanChest"
+    }
+}

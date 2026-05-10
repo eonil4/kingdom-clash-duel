@@ -1,0 +1,86 @@
+{
+    "formation1": {
+        "key": "formation1",
+        "order": 0,
+        "requiredCampaignLevel": 0,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0
+    },
+    "formation2": {
+        "key": "formation2",
+        "order": 1,
+        "requiredCampaignLevel": 0,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0
+    },
+    "formation3": {
+        "key": "formation3",
+        "order": 2,
+        "requiredCampaignLevel": 450,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0
+    },
+    "formation4": {
+        "key": "formation4",
+        "order": 3,
+        "requiredCampaignLevel": 900,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0
+    },
+    "formation5": {
+        "key": "formation5",
+        "order": 4,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0
+    },
+    "formation6": {
+        "key": "formation6",
+        "order": 5,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 1000
+    },
+    "formation7": {
+        "key": "formation7",
+        "order": 6,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 1300
+    },
+    "formation8": {
+        "key": "formation8",
+        "order": 7,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 1700
+    },
+    "formation9": {
+        "key": "formation9",
+        "order": 8,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 2000
+    },
+    "formation10": {
+        "key": "formation10",
+        "order": 9,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 2300
+    },
+    "formation11": {
+        "key": "formation11",
+        "order": 10,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 2600
+    },
+    "formation12": {
+        "key": "formation12",
+        "order": 11,
+        "requiredCampaignLevel": 1900,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 3000
+    }
+}

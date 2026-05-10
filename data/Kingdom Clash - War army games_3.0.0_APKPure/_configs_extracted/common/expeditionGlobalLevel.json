@@ -1,0 +1,193 @@
+{
+    "expedition_global_level_01": {
+        "key": "expedition_global_level_01",
+        "level": 1,
+        "progressRequirements": {
+            "global_goal_ultrashort": 1
+        },
+        "expeditionAvailability": {
+            "humans": 3
+        },
+        "simultaneousExpeditions": 3,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_02": {
+        "key": "expedition_global_level_02",
+        "level": 2,
+        "progressRequirements": {
+            "global_goal_short": 2,
+            "global_goal_medium": 2,
+            "global_goal_long": 1
+        },
+        "expeditionAvailability": {
+            "humans": 4
+        },
+        "simultaneousExpeditions": 3,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_03": {
+        "key": "expedition_global_level_03",
+        "level": 3,
+        "progressRequirements": {
+            "global_goal_short": 4,
+            "global_goal_medium": 3,
+            "global_goal_long": 3
+        },
+        "expeditionAvailability": {
+            "humans": 4
+        },
+        "simultaneousExpeditions": 4,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_04": {
+        "key": "expedition_global_level_04",
+        "level": 4,
+        "progressRequirements": {
+            "global_goal_short": 4,
+            "global_goal_medium": 4,
+            "global_goal_long": 4
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "undead": 3
+        },
+        "simultaneousExpeditions": 4,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_05": {
+        "key": "expedition_global_level_05",
+        "level": 5,
+        "progressRequirements": {
+            "global_goal_short": 10,
+            "global_goal_medium": 8,
+            "global_goal_long": 6
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "undead": 3
+        },
+        "simultaneousExpeditions": 5,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_06": {
+        "key": "expedition_global_level_06",
+        "level": 6,
+        "progressRequirements": {
+            "global_goal_short": 18,
+            "global_goal_medium": 14,
+            "global_goal_long": 10
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 5,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_07": {
+        "key": "expedition_global_level_07",
+        "level": 7,
+        "progressRequirements": {
+            "global_goal_short": 28,
+            "global_goal_medium": 22,
+            "global_goal_long": 16
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 3,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 5,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_08": {
+        "key": "expedition_global_level_08",
+        "level": 8,
+        "progressRequirements": {
+            "global_goal_short": 50,
+            "global_goal_medium": 40,
+            "global_goal_long": 30
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 3,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 6,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_09": {
+        "key": "expedition_global_level_09",
+        "level": 9,
+        "progressRequirements": {
+            "global_goal_short": 100,
+            "global_goal_medium": 70,
+            "global_goal_long": 50
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 4,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 6,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_10": {
+        "key": "expedition_global_level_10",
+        "level": 10,
+        "progressRequirements": {
+            "global_goal_short": 200,
+            "global_goal_medium": 150,
+            "global_goal_long": 100
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 4,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 7,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_11": {
+        "key": "expedition_global_level_11",
+        "level": 11,
+        "progressRequirements": {
+            "global_goal_short": 450,
+            "global_goal_medium": 300,
+            "global_goal_long": 200
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 4,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 8,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_12": {
+        "key": "expedition_global_level_12",
+        "level": 12,
+        "progressRequirements": {
+            "global_goal_short": 1000,
+            "global_goal_medium": 800,
+            "global_goal_long": 500
+        },
+        "expeditionAvailability": {
+            "humans": 4,
+            "mages": 4,
+            "undead": 4
+        },
+        "simultaneousExpeditions": 9,
+        "isButtonVisible": false
+    },
+    "expedition_global_level_0": {
+        "key": "expedition_global_level_0",
+        "level": 0,
+        "progressRequirements": {},
+        "expeditionAvailability": {
+            "humans_fake": 1
+        },
+        "simultaneousExpeditions": 1,
+        "isButtonVisible": true
+    }
+}

@@ -1,0 +1,2531 @@
+{
+    "1": {
+        "key": "1",
+        "power": 0,
+        "rewardId": "currency_Gold_2000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "2": {
+        "key": "2",
+        "power": 900,
+        "rewardId": "squad_ironGuards_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "3": {
+        "key": "3",
+        "power": 1200,
+        "rewardId": "comRareChest",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "4": {
+        "key": "4",
+        "power": 1800,
+        "rewardId": "currency_Gem_100",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "5": {
+        "key": "5",
+        "power": 3700,
+        "rewardId": "squad_bomber_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "6": {
+        "key": "6",
+        "power": 4600,
+        "rewardId": "currency_Gold_4500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "7": {
+        "key": "7",
+        "power": 5500,
+        "rewardId": "squad_butcher_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "8": {
+        "key": "8",
+        "power": 6400,
+        "rewardId": "currency_Gold_6000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "9": {
+        "key": "9",
+        "power": 7300,
+        "rewardId": "squad_assasin_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "10": {
+        "key": "10",
+        "power": 8200,
+        "rewardId": "firstHeroChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "11": {
+        "key": "11",
+        "power": 9100,
+        "rewardId": "squad_catapult_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "12": {
+        "key": "12",
+        "power": 10000,
+        "rewardId": "currency_Gold_8500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "13": {
+        "key": "13",
+        "power": 10900,
+        "rewardId": "squad_undeadInfantry_1_1",
+        "namedReward": "unlockUndeadInfantry",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "14": {
+        "key": "14",
+        "power": 11800,
+        "rewardId": "firstHeroChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "15": {
+        "key": "15",
+        "power": 12700,
+        "rewardId": "squad_undeadJavelin_1_1",
+        "namedReward": "unlockUndeadJavelin",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "16": {
+        "key": "16",
+        "power": 13600,
+        "rewardId": "currency_Gem_100",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "17": {
+        "key": "17",
+        "power": 14500,
+        "rewardId": "currency_Gold_12500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "18": {
+        "key": "18",
+        "power": 15400,
+        "rewardId": "squad_golemInfantry_1_1",
+        "namedReward": "unlockGolemInfantry",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "19": {
+        "key": "19",
+        "power": 16300,
+        "rewardId": "currency_Gold_12500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "20": {
+        "key": "20",
+        "power": 17200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "21": {
+        "key": "21",
+        "power": 18100,
+        "rewardId": "squad_imp_1_1",
+        "namedReward": "unlockImp",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "22": {
+        "key": "22",
+        "power": 19000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "23": {
+        "key": "23",
+        "power": 19900,
+        "rewardId": "currency_Gold_15000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "24": {
+        "key": "24",
+        "power": 20800,
+        "rewardId": "gloryRoad_squad_paladin_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "25": {
+        "key": "25",
+        "power": 21700,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "26": {
+        "key": "26",
+        "power": 22600,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "27": {
+        "key": "27",
+        "power": 23500,
+        "rewardId": "currency_Gem_150",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "28": {
+        "key": "28",
+        "power": 24400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "29": {
+        "key": "29",
+        "power": 25300,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "30": {
+        "key": "30",
+        "power": 27100,
+        "rewardId": "gloryRoad_squad_undeadMage_1_1",
+        "namedReward": null,
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "31": {
+        "key": "31",
+        "power": 28900,
+        "rewardId": "currency_Gold_17500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "32": {
+        "key": "32",
+        "power": 30700,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "33": {
+        "key": "33",
+        "power": 32500,
+        "rewardId": "currency_Gold_17500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "34": {
+        "key": "34",
+        "power": 34300,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "35": {
+        "key": "35",
+        "power": 36100,
+        "rewardId": "currency_Gold_17500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "36": {
+        "key": "36",
+        "power": 37900,
+        "rewardId": "gloryRoad_squad_spiderBlast_1_1",
+        "namedReward": "unlockSpiderBlast",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "37": {
+        "key": "37",
+        "power": 39700,
+        "rewardId": "currency_Gem_200",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "38": {
+        "key": "38",
+        "power": 41500,
+        "rewardId": "currency_Gold_17500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "39": {
+        "key": "39",
+        "power": 43300,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "40": {
+        "key": "40",
+        "power": 45100,
+        "rewardId": "currency_Gold_20000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "41": {
+        "key": "41",
+        "power": 46900,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "42": {
+        "key": "42",
+        "power": 48700,
+        "rewardId": "gloryRoad_squad_mageStudent_1_1",
+        "namedReward": "unlockMageStudent",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "43": {
+        "key": "43",
+        "power": 50500,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "44": {
+        "key": "44",
+        "power": 52300,
+        "rewardId": "currency_Gold_20000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "45": {
+        "key": "45",
+        "power": 54100,
+        "rewardId": "currency_Gem_250",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "46": {
+        "key": "46",
+        "power": 55900,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "47": {
+        "key": "47",
+        "power": 57700,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "48": {
+        "key": "48",
+        "power": 59500,
+        "rewardId": "gloryRoad_squad_damnCatapult_1_1",
+        "namedReward": "unlockDamnCatapult",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "49": {
+        "key": "49",
+        "power": 61300,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "50": {
+        "key": "50",
+        "power": 63100,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "51": {
+        "key": "51",
+        "power": 64900,
+        "rewardId": "currency_Gem_300",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "52": {
+        "key": "52",
+        "power": 66700,
+        "rewardId": "currency_Gold_22500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "53": {
+        "key": "53",
+        "power": 68500,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "54": {
+        "key": "54",
+        "power": 70300,
+        "rewardId": "currency_Gold_22500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "55": {
+        "key": "55",
+        "power": 72100,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "56": {
+        "key": "56",
+        "power": 73900,
+        "rewardId": "gloryRoad_squad_gravedigger_1_1",
+        "namedReward": "unlockGravedigger",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "57": {
+        "key": "57",
+        "power": 75700,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "58": {
+        "key": "58",
+        "power": 77500,
+        "rewardId": "currency_Gem_300",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "59": {
+        "key": "59",
+        "power": 79300,
+        "rewardId": "currency_Gold_22500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "60": {
+        "key": "60",
+        "power": 82000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "61": {
+        "key": "61",
+        "power": 84700,
+        "rewardId": "currency_Gold_25000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "62": {
+        "key": "62",
+        "power": 87400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "63": {
+        "key": "63",
+        "power": 90100,
+        "rewardId": "gloryRoad_squad_monk_1_1",
+        "namedReward": "unlockMonk",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "64": {
+        "key": "64",
+        "power": 92800,
+        "rewardId": "unlockHeroSlotRewardContentId",
+        "namedReward": "unlockHeroSlotReward",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "65": {
+        "key": "65",
+        "power": 95500,
+        "rewardId": "currency_Gold_25000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "66": {
+        "key": "66",
+        "power": 98200,
+        "rewardId": "freeSpeedRewardContentId",
+        "namedReward": "unlockFreeSpeedReward",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "67": {
+        "key": "67",
+        "power": 100900,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "68": {
+        "key": "68",
+        "power": 103600,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "69": {
+        "key": "69",
+        "power": 106300,
+        "rewardId": "currency_Gem_350",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "70": {
+        "key": "70",
+        "power": 109000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "71": {
+        "key": "71",
+        "power": 113000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "72": {
+        "key": "72",
+        "power": 117000,
+        "rewardId": "currency_Gem_400",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "73": {
+        "key": "73",
+        "power": 121000,
+        "rewardId": "gloryRoad_squad_magicArcher_1_1",
+        "namedReward": "unlockMagicArcher",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "74": {
+        "key": "74",
+        "power": 125000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "75": {
+        "key": "75",
+        "power": 129000,
+        "rewardId": "currency_Gold_27500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "76": {
+        "key": "76",
+        "power": 133000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "77": {
+        "key": "77",
+        "power": 137000,
+        "rewardId": "currency_Gold_27500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "78": {
+        "key": "78",
+        "power": 141000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "79": {
+        "key": "79",
+        "power": 145000,
+        "rewardId": "currency_Gem_400",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "80": {
+        "key": "80",
+        "power": 149000,
+        "rewardId": "currency_Gold_30000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "81": {
+        "key": "81",
+        "power": 153000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "82": {
+        "key": "82",
+        "power": 157000,
+        "rewardId": "currency_Gold_30000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "83": {
+        "key": "83",
+        "power": 161000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "84": {
+        "key": "84",
+        "power": 165000,
+        "rewardId": "currency_Gold_30000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "85": {
+        "key": "85",
+        "power": 169000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "86": {
+        "key": "86",
+        "power": 173000,
+        "rewardId": "gloryRoad_squad_shaman_1_1",
+        "namedReward": "unlockShaman",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "87": {
+        "key": "87",
+        "power": 177000,
+        "rewardId": "currency_Gem_450",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "88": {
+        "key": "88",
+        "power": 181000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "89": {
+        "key": "89",
+        "power": 185000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "90": {
+        "key": "90",
+        "power": 189000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "91": {
+        "key": "91",
+        "power": 193000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "92": {
+        "key": "92",
+        "power": 197000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "93": {
+        "key": "93",
+        "power": 201000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "94": {
+        "key": "94",
+        "power": 205000,
+        "rewardId": "currency_Gold_32500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "95": {
+        "key": "95",
+        "power": 209000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "96": {
+        "key": "96",
+        "power": 213000,
+        "rewardId": "currency_Gold_32500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "97": {
+        "key": "97",
+        "power": 217000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "98": {
+        "key": "98",
+        "power": 221000,
+        "rewardId": "gloryRoad_squad_undeadHeadless_1_1",
+        "namedReward": "unlockUndeadHeadless",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "99": {
+        "key": "99",
+        "power": 225000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "100": {
+        "key": "100",
+        "power": 229000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "101": {
+        "key": "101",
+        "power": 233000,
+        "rewardId": "currency_Gold_35000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "102": {
+        "key": "102",
+        "power": 237000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "103": {
+        "key": "103",
+        "power": 241000,
+        "rewardId": "currency_Gold_35000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "104": {
+        "key": "104",
+        "power": 245000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "105": {
+        "key": "105",
+        "power": 249000,
+        "rewardId": "currency_Gold_35000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "106": {
+        "key": "106",
+        "power": 253000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "107": {
+        "key": "107",
+        "power": 257000,
+        "rewardId": "currency_Gold_35000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "108": {
+        "key": "108",
+        "power": 261000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "109": {
+        "key": "109",
+        "power": 265000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "110": {
+        "key": "110",
+        "power": 269000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "111": {
+        "key": "111",
+        "power": 273000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "112": {
+        "key": "112",
+        "power": 277000,
+        "rewardId": "gloryRoad_squad_flyingMonster_1_1",
+        "namedReward": "unlockFlyingMonster",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "113": {
+        "key": "113",
+        "power": 281000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "114": {
+        "key": "114",
+        "power": 285000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "115": {
+        "key": "115",
+        "power": 289000,
+        "rewardId": "currency_Gold_37500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "116": {
+        "key": "116",
+        "power": 293000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "117": {
+        "key": "117",
+        "power": 297000,
+        "rewardId": "currency_Gold_37500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "118": {
+        "key": "118",
+        "power": 301000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "119": {
+        "key": "119",
+        "power": 305000,
+        "rewardId": "currency_Gold_37500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "120": {
+        "key": "120",
+        "power": 309000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "121": {
+        "key": "121",
+        "power": 313000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "122": {
+        "key": "122",
+        "power": 317000,
+        "rewardId": "currency_Gold_40000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "123": {
+        "key": "123",
+        "power": 321000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "124": {
+        "key": "124",
+        "power": 325000,
+        "rewardId": "currency_Gold_40000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "125": {
+        "key": "125",
+        "power": 329000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "126": {
+        "key": "126",
+        "power": 333000,
+        "rewardId": "currency_Gold_40000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "127": {
+        "key": "127",
+        "power": 337000,
+        "rewardId": "gloryRoad_squad_stoneGolem_1_1",
+        "namedReward": "unlockStoneGolem",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "128": {
+        "key": "128",
+        "power": 341000,
+        "rewardId": "currency_Gold_40000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "129": {
+        "key": "129",
+        "power": 345000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "130": {
+        "key": "130",
+        "power": 349000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "131": {
+        "key": "131",
+        "power": 353000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "132": {
+        "key": "132",
+        "power": 357000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "133": {
+        "key": "133",
+        "power": 361000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "134": {
+        "key": "134",
+        "power": 365000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "135": {
+        "key": "135",
+        "power": 369000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "136": {
+        "key": "136",
+        "power": 373000,
+        "rewardId": "currency_Gold_42500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "137": {
+        "key": "137",
+        "power": 377000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "138": {
+        "key": "138",
+        "power": 381000,
+        "rewardId": "currency_Gold_42500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "139": {
+        "key": "139",
+        "power": 385000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "140": {
+        "key": "140",
+        "power": 389000,
+        "rewardId": "currency_Gold_45000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "141": {
+        "key": "141",
+        "power": 393700,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "142": {
+        "key": "142",
+        "power": 398400,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "143": {
+        "key": "143",
+        "power": 403100,
+        "rewardId": "gloryRoad_squad_necromancer_1_1",
+        "namedReward": "unlockNecromancer",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "144": {
+        "key": "144",
+        "power": 407800,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "145": {
+        "key": "145",
+        "power": 412500,
+        "rewardId": "currency_Gold_45000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "146": {
+        "key": "146",
+        "power": 417200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "147": {
+        "key": "147",
+        "power": 421900,
+        "rewardId": "currency_Gold_45000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "148": {
+        "key": "148",
+        "power": 426600,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "149": {
+        "key": "149",
+        "power": 431300,
+        "rewardId": "currency_Gold_45000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "150": {
+        "key": "150",
+        "power": 436000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "151": {
+        "key": "151",
+        "power": 440700,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "152": {
+        "key": "152",
+        "power": 445400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "153": {
+        "key": "153",
+        "power": 450100,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "154": {
+        "key": "154",
+        "power": 454800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "155": {
+        "key": "155",
+        "power": 459500,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "156": {
+        "key": "156",
+        "power": 464200,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "157": {
+        "key": "157",
+        "power": 468900,
+        "rewardId": "gloryRoad_squad_stormSpearman_1_1",
+        "namedReward": "unlockStormSpearman",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "158": {
+        "key": "158",
+        "power": 473600,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "159": {
+        "key": "159",
+        "power": 478300,
+        "rewardId": "currency_Gold_47500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "160": {
+        "key": "160",
+        "power": 483000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "161": {
+        "key": "161",
+        "power": 487700,
+        "rewardId": "currency_Gold_50000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "162": {
+        "key": "162",
+        "power": 492400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "163": {
+        "key": "163",
+        "power": 497100,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "164": {
+        "key": "164",
+        "power": 501800,
+        "rewardId": "currency_Gold_50000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "165": {
+        "key": "165",
+        "power": 506500,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "166": {
+        "key": "166",
+        "power": 511200,
+        "rewardId": "currency_Gold_50000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "167": {
+        "key": "167",
+        "power": 515900,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "168": {
+        "key": "168",
+        "power": 520600,
+        "rewardId": "currency_Gold_50000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "169": {
+        "key": "169",
+        "power": 525300,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "170": {
+        "key": "170",
+        "power": 530000,
+        "rewardId": "currency_Gold_52500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "171": {
+        "key": "171",
+        "power": 534700,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "172": {
+        "key": "172",
+        "power": 539400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "173": {
+        "key": "173",
+        "power": 544100,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "174": {
+        "key": "174",
+        "power": 548800,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "175": {
+        "key": "175",
+        "power": 553500,
+        "rewardId": "gloryRoad_squad_vulkanGolem_1_1",
+        "namedReward": "unlockVulkanGolem",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "176": {
+        "key": "176",
+        "power": 558200,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "177": {
+        "key": "177",
+        "power": 562900,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "178": {
+        "key": "178",
+        "power": 567600,
+        "rewardId": "currency_Gold_52500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "179": {
+        "key": "179",
+        "power": 572300,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "180": {
+        "key": "180",
+        "power": 577000,
+        "rewardId": "currency_Gold_55000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "181": {
+        "key": "181",
+        "power": 581700,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "182": {
+        "key": "182",
+        "power": 586400,
+        "rewardId": "currency_Gold_55000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "183": {
+        "key": "183",
+        "power": 591100,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "184": {
+        "key": "184",
+        "power": 595800,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "185": {
+        "key": "185",
+        "power": 600500,
+        "rewardId": "currency_Gold_55000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "186": {
+        "key": "186",
+        "power": 605200,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "187": {
+        "key": "187",
+        "power": 609900,
+        "rewardId": "currency_Gold_55000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "188": {
+        "key": "188",
+        "power": 614600,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "189": {
+        "key": "189",
+        "power": 619300,
+        "rewardId": "currency_Gold_55000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "190": {
+        "key": "190",
+        "power": 624000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "191": {
+        "key": "191",
+        "power": 628700,
+        "rewardId": "currency_Gold_57500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "192": {
+        "key": "192",
+        "power": 633400,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "193": {
+        "key": "193",
+        "power": 638100,
+        "rewardId": "gloryRoad_squad_skeletonWarrior_1_1",
+        "namedReward": "unlockSkeletonWarrior",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "194": {
+        "key": "194",
+        "power": 642800,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "195": {
+        "key": "195",
+        "power": 647500,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "196": {
+        "key": "196",
+        "power": 652200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "197": {
+        "key": "197",
+        "power": 656900,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "198": {
+        "key": "198",
+        "power": 661600,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "199": {
+        "key": "199",
+        "power": 666300,
+        "rewardId": "currency_Gold_57500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "200": {
+        "key": "200",
+        "power": 671000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "201": {
+        "key": "201",
+        "power": 675700,
+        "rewardId": "currency_Gold_60000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "202": {
+        "key": "202",
+        "power": 680400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "203": {
+        "key": "203",
+        "power": 685100,
+        "rewardId": "currency_Gold_60000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "204": {
+        "key": "204",
+        "power": 689800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "205": {
+        "key": "205",
+        "power": 694500,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "206": {
+        "key": "206",
+        "power": 699200,
+        "rewardId": "currency_Gold_60000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "207": {
+        "key": "207",
+        "power": 703900,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "208": {
+        "key": "208",
+        "power": 708600,
+        "rewardId": "currency_Gold_60000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "209": {
+        "key": "209",
+        "power": 713300,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "210": {
+        "key": "210",
+        "power": 718000,
+        "rewardId": "currency_Gold_62500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "211": {
+        "key": "211",
+        "power": 722800,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "212": {
+        "key": "212",
+        "power": 727600,
+        "rewardId": "currency_Gold_62500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "213": {
+        "key": "213",
+        "power": 732400,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "214": {
+        "key": "214",
+        "power": 737200,
+        "rewardId": "gloryRoad_squad_mountainsChampion_1_1",
+        "namedReward": "unlockMountainsChampion",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "215": {
+        "key": "215",
+        "power": 742000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "216": {
+        "key": "216",
+        "power": 746800,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "217": {
+        "key": "217",
+        "power": 751600,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "218": {
+        "key": "218",
+        "power": 756400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "219": {
+        "key": "219",
+        "power": 761200,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "220": {
+        "key": "220",
+        "power": 766000,
+        "rewardId": "currency_Gold_65000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "221": {
+        "key": "221",
+        "power": 770800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "222": {
+        "key": "222",
+        "power": 775600,
+        "rewardId": "currency_Gold_65000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "223": {
+        "key": "223",
+        "power": 780400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "224": {
+        "key": "224",
+        "power": 785200,
+        "rewardId": "currency_Gold_65000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "225": {
+        "key": "225",
+        "power": 790000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "226": {
+        "key": "226",
+        "power": 794800,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "227": {
+        "key": "227",
+        "power": 799600,
+        "rewardId": "currency_Gold_65000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "228": {
+        "key": "228",
+        "power": 804400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "229": {
+        "key": "229",
+        "power": 809200,
+        "rewardId": "currency_Gold_65000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "230": {
+        "key": "230",
+        "power": 814000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "231": {
+        "key": "231",
+        "power": 818800,
+        "rewardId": "currency_Gold_67500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "232": {
+        "key": "232",
+        "power": 823600,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "233": {
+        "key": "233",
+        "power": 828400,
+        "rewardId": "currency_Gold_67500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "234": {
+        "key": "234",
+        "power": 833200,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "235": {
+        "key": "235",
+        "power": 838000,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "236": {
+        "key": "236",
+        "power": 842800,
+        "rewardId": "gloryRoad_squad_eliteWarrior_1_1",
+        "namedReward": "unlockEliteWarrior",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "237": {
+        "key": "237",
+        "power": 847600,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "238": {
+        "key": "238",
+        "power": 852400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "239": {
+        "key": "239",
+        "power": 857200,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "240": {
+        "key": "240",
+        "power": 862000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "241": {
+        "key": "241",
+        "power": 866800,
+        "rewardId": "currency_Gold_70000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "242": {
+        "key": "242",
+        "power": 871600,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "243": {
+        "key": "243",
+        "power": 876400,
+        "rewardId": "currency_Gold_70000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "244": {
+        "key": "244",
+        "power": 881200,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "245": {
+        "key": "245",
+        "power": 886000,
+        "rewardId": "currency_Gold_70000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "246": {
+        "key": "246",
+        "power": 890800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "247": {
+        "key": "247",
+        "power": 895600,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "248": {
+        "key": "248",
+        "power": 900400,
+        "rewardId": "currency_Gold_70000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "249": {
+        "key": "249",
+        "power": 905200,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "250": {
+        "key": "250",
+        "power": 910000,
+        "rewardId": "currency_Gold_72500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "251": {
+        "key": "251",
+        "power": 914800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "252": {
+        "key": "252",
+        "power": 919600,
+        "rewardId": "currency_Gold_72500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "253": {
+        "key": "253",
+        "power": 924400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "254": {
+        "key": "254",
+        "power": 929200,
+        "rewardId": "currency_Gold_72500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "255": {
+        "key": "255",
+        "power": 934000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "256": {
+        "key": "256",
+        "power": 938800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "257": {
+        "key": "257",
+        "power": 943600,
+        "rewardId": "gloryRoad_squad_windElemental_1_1",
+        "namedReward": "unlockWindElemental",
+        "isShortcut": true,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "258": {
+        "key": "258",
+        "power": 948400,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "259": {
+        "key": "259",
+        "power": 953200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "260": {
+        "key": "260",
+        "power": 958000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "261": {
+        "key": "261",
+        "power": 962800,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "262": {
+        "key": "262",
+        "power": 967600,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "263": {
+        "key": "263",
+        "power": 972400,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "264": {
+        "key": "264",
+        "power": 977200,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "265": {
+        "key": "265",
+        "power": 982000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "266": {
+        "key": "266",
+        "power": 986800,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "267": {
+        "key": "267",
+        "power": 991600,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "268": {
+        "key": "268",
+        "power": 996400,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "269": {
+        "key": "269",
+        "power": 1006600,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "270": {
+        "key": "270",
+        "power": 1016800,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "271": {
+        "key": "271",
+        "power": 1027000,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "272": {
+        "key": "272",
+        "power": 1037200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "273": {
+        "key": "273",
+        "power": 1047400,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "274": {
+        "key": "274",
+        "power": 1057600,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "275": {
+        "key": "275",
+        "power": 1067800,
+        "rewardId": "currency_Gold_75000",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "276": {
+        "key": "276",
+        "power": 1078000,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "277": {
+        "key": "277",
+        "power": 1088200,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "278": {
+        "key": "278",
+        "power": 1098400,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    },
+    "279": {
+        "key": "279",
+        "power": 1108600,
+        "rewardId": "currency_Gem_500",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "normal",
+        "effectStyle": ""
+    },
+    "280": {
+        "key": "280",
+        "power": 1118800,
+        "rewardId": "allContentChestReward",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": "effect_1"
+    },
+    "281": {
+        "key": "281",
+        "power": 1129000,
+        "rewardId": "highLuckyOpen",
+        "namedReward": null,
+        "isShortcut": false,
+        "placementStyle": "big",
+        "effectStyle": ""
+    }
+}

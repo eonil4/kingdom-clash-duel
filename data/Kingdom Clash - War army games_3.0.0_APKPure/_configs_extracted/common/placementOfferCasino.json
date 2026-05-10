@@ -1,0 +1,254 @@
+{
+    "casinoShop_lot_1": {
+        "key": "casinoShop_lot_1",
+        "offer": "casinoShop_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoShop_lot_2": {
+        "key": "casinoShop_lot_2",
+        "offer": "casinoShop_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    },
+    "casinoShop_lot_3": {
+        "key": "casinoShop_lot_3",
+        "offer": "casinoShop_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoShop_lot_4": {
+        "key": "casinoShop_lot_4",
+        "offer": "casinoShop_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoShop_lot_5": {
+        "key": "casinoShop_lot_5",
+        "offer": "casinoShop_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoShop_lot_6": {
+        "key": "casinoShop_lot_6",
+        "offer": "casinoShop_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoShop_lot_7": {
+        "key": "casinoShop_lot_7",
+        "offer": "casinoShop_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_1": {
+        "key": "casinoKingShop_lot_1",
+        "offer": "casinoKingShop_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoKingShop_lot_2": {
+        "key": "casinoKingShop_lot_2",
+        "offer": "casinoKingShop_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_3": {
+        "key": "casinoKingShop_lot_3",
+        "offer": "casinoKingShop_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_4": {
+        "key": "casinoKingShop_lot_4",
+        "offer": "casinoKingShop_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_5": {
+        "key": "casinoKingShop_lot_5",
+        "offer": "casinoKingShop_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_6": {
+        "key": "casinoKingShop_lot_6",
+        "offer": "casinoKingShop_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoKingShop_lot_7": {
+        "key": "casinoKingShop_lot_7",
+        "offer": "casinoKingShop_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_1": {
+        "key": "casinoReflectArmorShop_lot_1",
+        "offer": "casinooffer_reflectarmor_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoReflectArmorShop_lot_2": {
+        "key": "casinoReflectArmorShop_lot_2",
+        "offer": "casinooffer_reflectarmor_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_3": {
+        "key": "casinoReflectArmorShop_lot_3",
+        "offer": "casinooffer_reflectarmor_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_4": {
+        "key": "casinoReflectArmorShop_lot_4",
+        "offer": "casinooffer_reflectarmor_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_5": {
+        "key": "casinoReflectArmorShop_lot_5",
+        "offer": "casinooffer_reflectarmor_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_6": {
+        "key": "casinoReflectArmorShop_lot_6",
+        "offer": "casinooffer_reflectarmor_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoReflectArmorShop_lot_7": {
+        "key": "casinoReflectArmorShop_lot_7",
+        "offer": "casinooffer_reflectarmor_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_1": {
+        "key": "casinoAoeArmorShop_lot_1",
+        "offer": "casinooffer_aoearmor_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoAoeArmorShop_lot_2": {
+        "key": "casinoAoeArmorShop_lot_2",
+        "offer": "casinooffer_aoearmor_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_3": {
+        "key": "casinoAoeArmorShop_lot_3",
+        "offer": "casinooffer_aoearmor_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_4": {
+        "key": "casinoAoeArmorShop_lot_4",
+        "offer": "casinooffer_aoearmor_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_5": {
+        "key": "casinoAoeArmorShop_lot_5",
+        "offer": "casinooffer_aoearmor_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_6": {
+        "key": "casinoAoeArmorShop_lot_6",
+        "offer": "casinooffer_aoearmor_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoAoeArmorShop_lot_7": {
+        "key": "casinoAoeArmorShop_lot_7",
+        "offer": "casinooffer_aoearmor_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_1": {
+        "key": "casinoAoeWeaponShop_lot_1",
+        "offer": "casinooffer_aoeweapon_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoAoeWeaponShop_lot_2": {
+        "key": "casinoAoeWeaponShop_lot_2",
+        "offer": "casinooffer_aoeweapon_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_3": {
+        "key": "casinoAoeWeaponShop_lot_3",
+        "offer": "casinooffer_aoeweapon_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_4": {
+        "key": "casinoAoeWeaponShop_lot_4",
+        "offer": "casinooffer_aoeweapon_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_5": {
+        "key": "casinoAoeWeaponShop_lot_5",
+        "offer": "casinooffer_aoeweapon_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_6": {
+        "key": "casinoAoeWeaponShop_lot_6",
+        "offer": "casinooffer_aoeweapon_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoAoeWeaponShop_lot_7": {
+        "key": "casinoAoeWeaponShop_lot_7",
+        "offer": "casinooffer_aoeweapon_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_1": {
+        "key": "casinoReflectWeaponShop_lot_1",
+        "offer": "casinooffer_reflectweapon_dailyBonus",
+        "order": 0,
+        "rarityId": "rare"
+    },
+    "casinoReflectWeaponShop_lot_2": {
+        "key": "casinoReflectWeaponShop_lot_2",
+        "offer": "casinooffer_reflectweapon_absolute_2",
+        "order": 6,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_3": {
+        "key": "casinoReflectWeaponShop_lot_3",
+        "offer": "casinooffer_reflectweapon_absolute_1",
+        "order": 5,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_4": {
+        "key": "casinoReflectWeaponShop_lot_4",
+        "offer": "casinooffer_reflectweapon_ultimate_2",
+        "order": 4,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_5": {
+        "key": "casinoReflectWeaponShop_lot_5",
+        "offer": "casinooffer_reflectweapon_ultimate_1",
+        "order": 3,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_6": {
+        "key": "casinoReflectWeaponShop_lot_6",
+        "offer": "casinooffer_reflectweapon_advanced_2",
+        "order": 2,
+        "rarityId": "epic"
+    },
+    "casinoReflectWeaponShop_lot_7": {
+        "key": "casinoReflectWeaponShop_lot_7",
+        "offer": "casinooffer_reflectweapon_advanced_1",
+        "order": 1,
+        "rarityId": "epic"
+    }
+}

@@ -1,0 +1,198 @@
+{
+    "InitialPass": {
+        "key": "InitialPass",
+        "title_Localized": "InitialPass_title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "blueRed"
+    },
+    "SecondSeason": {
+        "key": "SecondSeason",
+        "title_Localized": "SecondSeason_title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "blueRed"
+    },
+    "ThirdSeason": {
+        "key": "ThirdSeason",
+        "title_Localized": "ThirdSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "brownMarine"
+    },
+    "FourthSeason": {
+        "key": "FourthSeason",
+        "title_Localized": "FourthSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "blueRed"
+    },
+    "FifthSeason": {
+        "key": "FifthSeason",
+        "title_Localized": "SeventhSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "pirateBrown"
+    },
+    "SixthSeason": {
+        "key": "SixthSeason",
+        "title_Localized": "SixthSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "darkBlue"
+    },
+    "SeventhSeason": {
+        "key": "SeventhSeason",
+        "title_Localized": "FifthSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "brownRed"
+    },
+    "EighthSeason": {
+        "key": "EighthSeason",
+        "title_Localized": "ThirdSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "brownMarine"
+    },
+    "NinthSeason": {
+        "key": "NinthSeason",
+        "title_Localized": "InitialPass_title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_Nighthunter": {
+        "key": "ArenaSeason_Nighthunter",
+        "title_Localized": "ArenaPassNighthunter_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_MountainsChampion": {
+        "key": "ArenaSeason_MountainsChampion",
+        "title_Localized": "ArenaPassMountainsChampion_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_StoneGolem": {
+        "key": "ArenaSeason_StoneGolem",
+        "title_Localized": "ArenaPassStoneGolem_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_Necromancer": {
+        "key": "ArenaSeason_Necromancer",
+        "title_Localized": "ArenaPassNecromancer_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_VulkanGolem": {
+        "key": "ArenaSeason_VulkanGolem",
+        "title_Localized": "ArenaPassVulkanGolem_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_Alchemist": {
+        "key": "ArenaSeason_Alchemist",
+        "title_Localized": "ArenaPassAlchemist_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "TenthSeason": {
+        "key": "TenthSeason",
+        "title_Localized": "TenthSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "druidGreen"
+    },
+    "EleventhSeason": {
+        "key": "EleventhSeason",
+        "title_Localized": "EleventhSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "debufferViolet"
+    },
+    "ArenaSeason_Necromancer_Fix": {
+        "key": "ArenaSeason_Necromancer_Fix",
+        "title_Localized": "ArenaPassNecromancer_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_VulkanGolem_Fix": {
+        "key": "ArenaSeason_VulkanGolem_Fix",
+        "title_Localized": "ArenaPassVulkanGolem_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "ArenaSeason_Alchemist_Fix": {
+        "key": "ArenaSeason_Alchemist_Fix",
+        "title_Localized": "ArenaPassAlchemist_Title",
+        "experienceStep": 12,
+        "experienceStepEndlessLevel": 10,
+        "styleId": "blueRed"
+    },
+    "TenthSeason_Gasket": {
+        "key": "TenthSeason_Gasket",
+        "title_Localized": "TenthSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "druidGreen"
+    },
+    "CasinoSeason_Phoenix": {
+        "key": "CasinoSeason_Phoenix",
+        "title_Localized": "caption_casino",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "azureSky"
+    },
+    "CasinoSeason_Phoenix_2": {
+        "key": "CasinoSeason_Phoenix_2",
+        "title_Localized": "caption_casino_demon",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "hotLava"
+    },
+    "TwelveSeason": {
+        "key": "TwelveSeason",
+        "title_Localized": "TwelveSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "melodicGreen"
+    },
+    "CasinoSeason_Weapon": {
+        "key": "CasinoSeason_Weapon",
+        "title_Localized": "caption_casino_weapon",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "liquidGold"
+    },
+    "CasinoSeason_Armor": {
+        "key": "CasinoSeason_Armor",
+        "title_Localized": "caption_casino_armor",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "redVelvet"
+    },
+    "SquadEvent_axeThrowers": {
+        "key": "SquadEvent_axeThrowers",
+        "title_Localized": "SquadEvent_axeThrowers_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "towerViolet"
+    },
+    "ThirteenSeason": {
+        "key": "ThirteenSeason",
+        "title_Localized": "ThirteenSeason_Title",
+        "experienceStep": 500,
+        "experienceStepEndlessLevel": 500,
+        "styleId": "brightFlame"
+    }
+}

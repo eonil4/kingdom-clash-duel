@@ -1,0 +1,38 @@
+{
+    "clan_flag_shape_default": {
+        "key": "clan_flag_shape_default",
+        "serverId": 1,
+        "spriteUi": "flag_shape_01",
+        "spriteBackgroundBig": "flag_big_shape_01",
+        "spriteStrokeBig": "flag_big_shape_stroke_01",
+        "spriteBackgroundSmall": "flag_small_shape_01",
+        "spriteStrokeSmall": "flag_small_shape_stroke_01"
+    },
+    "clan_flag_shape_bottom_up": {
+        "key": "clan_flag_shape_bottom_up",
+        "serverId": 2,
+        "spriteUi": "flag_shape_02",
+        "spriteBackgroundBig": "flag_big_shape_02",
+        "spriteStrokeBig": "flag_big_shape_stroke_02",
+        "spriteBackgroundSmall": "flag_small_shape_02",
+        "spriteStrokeSmall": "flag_small_shape_stroke_02"
+    },
+    "clan_flag_shape_bottom_down": {
+        "key": "clan_flag_shape_bottom_down",
+        "serverId": 3,
+        "spriteUi": "flag_shape_03",
+        "spriteBackgroundBig": "flag_big_shape_03",
+        "spriteStrokeBig": "flag_big_shape_stroke_03",
+        "spriteBackgroundSmall": "flag_small_shape_03",
+        "spriteStrokeSmall": "flag_small_shape_stroke_03"
+    },
+    "clan_flag_shape_bottom_cut": {
+        "key": "clan_flag_shape_bottom_cut",
+        "serverId": 4,
+        "spriteUi": "flag_shape_04",
+        "spriteBackgroundBig": "flag_big_shape_04",
+        "spriteStrokeBig": "flag_big_shape_stroke_04",
+        "spriteBackgroundSmall": "flag_small_shape_04",
+        "spriteStrokeSmall": "flag_small_shape_stroke_04"
+    }
+}

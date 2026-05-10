@@ -1,0 +1,512 @@
+{
+    "aiDisable_aiDisable": {
+        "key": "aiDisable_aiDisable",
+        "effectId": "aiDisable",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "snowballAbsorb_unTargetable": {
+        "key": "snowballAbsorb_unTargetable",
+        "effectId": "snowballAbsorb",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "snowballAbsorb_aiDisabled": {
+        "key": "snowballAbsorb_aiDisabled",
+        "effectId": "snowballAbsorb",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "invulnerability_invulnerable": {
+        "key": "invulnerability_invulnerable",
+        "effectId": "invulnerability",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "attackDisable_canNotAttack": {
+        "key": "attackDisable_canNotAttack",
+        "effectId": "attackDisable",
+        "statId": "canNotAttack",
+        "statValue": 1
+    },
+    "mindControlled_isMindControlled": {
+        "key": "mindControlled_isMindControlled",
+        "effectId": "mindControlled",
+        "statId": "isMindControlled",
+        "statValue": 1
+    },
+    "moveDisable_canNotMove": {
+        "key": "moveDisable_canNotMove",
+        "effectId": "moveDisable",
+        "statId": "canNotMove",
+        "statValue": 1
+    },
+    "specialAttackDisable_canNotSpecialAttack": {
+        "key": "specialAttackDisable_canNotSpecialAttack",
+        "effectId": "specialAttackDisable",
+        "statId": "canNotSpecialAttack",
+        "statValue": 1
+    },
+    "unTargetable_unTargetable": {
+        "key": "unTargetable_unTargetable",
+        "effectId": "unTargetable",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "freeze_aiDisable": {
+        "key": "freeze_aiDisable",
+        "effectId": "freeze",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "fear_fear": {
+        "key": "fear_fear",
+        "effectId": "fear",
+        "statId": "fear",
+        "statValue": 1
+    },
+    "tornadoAbsorb_unTargetable": {
+        "key": "tornadoAbsorb_unTargetable",
+        "effectId": "tornadoAbsorb",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "tornadoAbsorb_aiDisabled": {
+        "key": "tornadoAbsorb_aiDisabled",
+        "effectId": "tornadoAbsorb",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "darknessDebuff_summonDarknessOnDeath": {
+        "key": "darknessDebuff_summonDarknessOnDeath",
+        "effectId": "darknessDebuff",
+        "statId": "summonDarknessOnDeath",
+        "statValue": 1
+    },
+    "chargeDarkness_chargeDarknessOnDeath": {
+        "key": "chargeDarkness_chargeDarknessOnDeath",
+        "effectId": "chargeDarkness",
+        "statId": "chargeDarknessOnDeath",
+        "statValue": 1
+    },
+    "hex_canNotAttack": {
+        "key": "hex_canNotAttack",
+        "effectId": "hex",
+        "statId": "canNotAttack",
+        "statValue": 1
+    },
+    "hex_isHexed": {
+        "key": "hex_isHexed",
+        "effectId": "hex",
+        "statId": "isHexed",
+        "statValue": 1
+    },
+    "flyingMonsterInitial_fearImmune": {
+        "key": "flyingMonsterInitial_fearImmune",
+        "effectId": "flyingMonsterInitial",
+        "statId": "fearImmune",
+        "statValue": 1
+    },
+    "multiShotDebuff_multiShotDebuffUnTargetable": {
+        "key": "multiShotDebuff_multiShotDebuffUnTargetable",
+        "effectId": "multiShotDebuff",
+        "statId": "multiShotDebuffUnTargetable",
+        "statValue": 1
+    },
+    "vortex_vortex": {
+        "key": "vortex_vortex",
+        "effectId": "vortex",
+        "statId": "vortex",
+        "statValue": 1
+    },
+    "vortex_invulnerable": {
+        "key": "vortex_invulnerable",
+        "effectId": "vortex",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "vortex_aiDisabled": {
+        "key": "vortex_aiDisabled",
+        "effectId": "vortex",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "metamorph_unTargetable": {
+        "key": "metamorph_unTargetable",
+        "effectId": "metamorph",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "metamorph_canNotMove": {
+        "key": "metamorph_canNotMove",
+        "effectId": "metamorph",
+        "statId": "canNotMove",
+        "statValue": 1
+    },
+    "roots_canNotMove": {
+        "key": "roots_canNotMove",
+        "effectId": "roots",
+        "statId": "canNotMove",
+        "statValue": 1
+    },
+    "waterPuddles_invulnerable": {
+        "key": "waterPuddles_invulnerable",
+        "effectId": "waterPuddles",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "waterPuddles_aiDisabled": {
+        "key": "waterPuddles_aiDisabled",
+        "effectId": "waterPuddles",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "waterPuddles_unTargetable": {
+        "key": "waterPuddles_unTargetable",
+        "effectId": "waterPuddles",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "ghostShipDebuff_ghostShipDebuff": {
+        "key": "ghostShipDebuff_ghostShipDebuff",
+        "effectId": "ghostShipDebuff",
+        "statId": "ghostShipDebuff",
+        "statValue": 1
+    },
+    "teleport_unTargetable": {
+        "key": "teleport_unTargetable",
+        "effectId": "teleport",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "teleport_invulnerable": {
+        "key": "teleport_invulnerable",
+        "effectId": "teleport",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "pullClaws_aiDisabled": {
+        "key": "pullClaws_aiDisabled",
+        "effectId": "pullClaws",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "sleep_aiDisabled": {
+        "key": "sleep_aiDisabled",
+        "effectId": "sleep",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "chargeDarkness_noCharge": {
+        "key": "chargeDarkness_noCharge",
+        "effectId": "chargeDarkness",
+        "statId": "chargeDarkness",
+        "statValue": 1
+    },
+    "vortexSource_invulnerable": {
+        "key": "vortexSource_invulnerable",
+        "effectId": "vortexSource",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "vortexSource_unTargetable": {
+        "key": "vortexSource_unTargetable",
+        "effectId": "vortexSource",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "teleport_canNotMove": {
+        "key": "teleport_canNotMove",
+        "effectId": "teleport",
+        "statId": "canNotMove",
+        "statValue": 1
+    },
+    "controlImmune_controlImmune": {
+        "key": "controlImmune_controlImmune",
+        "effectId": "controlImmune",
+        "statId": "controlImmune",
+        "statValue": 1
+    },
+    "toadJump_unTargetable": {
+        "key": "toadJump_unTargetable",
+        "effectId": "toadJump",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "toadJump_customMove": {
+        "key": "toadJump_customMove",
+        "effectId": "toadJump",
+        "statId": "customMove",
+        "statValue": 1
+    },
+    "tentacleImmune_tentacleImmune": {
+        "key": "tentacleImmune_tentacleImmune",
+        "effectId": "tentacleImmune",
+        "statId": "tentacleImmune",
+        "statValue": 1
+    },
+    "tentacleAbsorb_unTargetable": {
+        "key": "tentacleAbsorb_unTargetable",
+        "effectId": "tentacleAbsorb",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "tentacleAbsorb_invulnerable": {
+        "key": "tentacleAbsorb_invulnerable",
+        "effectId": "tentacleAbsorb",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "tentacleAbsorb_aiDisabled": {
+        "key": "tentacleAbsorb_aiDisabled",
+        "effectId": "tentacleAbsorb",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "krakenDevour_unTargetable": {
+        "key": "krakenDevour_unTargetable",
+        "effectId": "krakenDevour",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "krakenDevour_ignoreArmyCount": {
+        "key": "krakenDevour_ignoreArmyCount",
+        "effectId": "krakenDevour",
+        "statId": "ignoreArmyCount",
+        "statValue": 1
+    },
+    "krakenDevour_invulnerable": {
+        "key": "krakenDevour_invulnerable",
+        "effectId": "krakenDevour",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "krakenDevour_aiDisabled": {
+        "key": "krakenDevour_aiDisabled",
+        "effectId": "krakenDevour",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "rebirthEffect_aiDisabled": {
+        "key": "rebirthEffect_aiDisabled",
+        "effectId": "rebirthEffect",
+        "statId": "aiDisabled",
+        "statValue": 1
+    },
+    "rebirthEffect_invulnerable": {
+        "key": "rebirthEffect_invulnerable",
+        "effectId": "rebirthEffect",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "rebirthEffect_unTargetable": {
+        "key": "rebirthEffect_unTargetable",
+        "effectId": "rebirthEffect",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "rebirthOnDeath_darknessInvulnerable": {
+        "key": "rebirthOnDeath_darknessInvulnerable",
+        "effectId": "rebirthOnDeath",
+        "statId": "darknessInvulnerable",
+        "statValue": 1
+    },
+    "controlImmune_untargetable_1": {
+        "key": "controlImmune_untargetable_1",
+        "effectId": "controlImmune_untargetable",
+        "statId": "controlImmune",
+        "statValue": 1
+    },
+    "controlImmune_untargetable_2": {
+        "key": "controlImmune_untargetable_2",
+        "effectId": "controlImmune_untargetable",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "fear_canNotAttack": {
+        "key": "fear_canNotAttack",
+        "effectId": "fear",
+        "statId": "canNotAttack",
+        "statValue": 1
+    },
+    "castImmune_castImmune": {
+        "key": "castImmune_castImmune",
+        "effectId": "castImmune",
+        "statId": "castImmune",
+        "statValue": 1
+    },
+    "toadJump_Invulnerability": {
+        "key": "toadJump_Invulnerability",
+        "effectId": "toadJump",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "fireMageSunrise_invulnerable": {
+        "key": "fireMageSunrise_invulnerable",
+        "effectId": "fireMageSunrise",
+        "statId": "invulnerable",
+        "statValue": 1
+    },
+    "fireMageSunrise_unTargetable": {
+        "key": "fireMageSunrise_unTargetable",
+        "effectId": "fireMageSunrise",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "vortex_unTargetable": {
+        "key": "vortex_unTargetable",
+        "effectId": "vortex",
+        "statId": "unTargetable",
+        "statValue": 1
+    },
+    "undeadMark_negativeDebuff": {
+        "key": "undeadMark_negativeDebuff",
+        "effectId": "undeadMark",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "freeze_negativeDebuff": {
+        "key": "freeze_negativeDebuff",
+        "effectId": "freeze",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "poison_negativeDebuff": {
+        "key": "poison_negativeDebuff",
+        "effectId": "poison",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "attackReduction_negativeDebuff": {
+        "key": "attackReduction_negativeDebuff",
+        "effectId": "attackReduction",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "flame_negativeDebuff": {
+        "key": "flame_negativeDebuff",
+        "effectId": "flame",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "ghostShipDebuff_negativeDebuff": {
+        "key": "ghostShipDebuff_negativeDebuff",
+        "effectId": "ghostShipDebuff",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "undeadPoison_negativeDebuff": {
+        "key": "undeadPoison_negativeDebuff",
+        "effectId": "undeadPoison",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "bleed_negativeDebuff": {
+        "key": "bleed_negativeDebuff",
+        "effectId": "bleed",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "fear_negativeDebuff": {
+        "key": "fear_negativeDebuff",
+        "effectId": "fear",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "hex_negativeDebuff": {
+        "key": "hex_negativeDebuff",
+        "effectId": "hex",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "toadJump_negativeDebuff": {
+        "key": "toadJump_negativeDebuff",
+        "effectId": "toadJump",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "aiDisable_negativeDebuff": {
+        "key": "aiDisable_negativeDebuff",
+        "effectId": "aiDisable",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "firePoison_negativeDebuff": {
+        "key": "firePoison_negativeDebuff",
+        "effectId": "firePoison",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "empoweredAttack_empoweredAttack": {
+        "key": "empoweredAttack_empoweredAttack",
+        "effectId": "empoweredAttack",
+        "statId": "empoweredAttack",
+        "statValue": 1
+    },
+    "krakenDevour_devouredByKraken": {
+        "key": "krakenDevour_devouredByKraken",
+        "effectId": "krakenDevour",
+        "statId": "devouredByKraken",
+        "statValue": 1
+    },
+    "negativeDebuff_negativeDebuff": {
+        "key": "negativeDebuff_negativeDebuff",
+        "effectId": "negativeDebuff",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "deathFlight_controlImmune": {
+        "key": "deathFlight_controlImmune",
+        "effectId": "deathFlight",
+        "statId": "controlImmune",
+        "statValue": 1
+    },
+    "deathFlight_customMove": {
+        "key": "deathFlight_customMove",
+        "effectId": "deathFlight",
+        "statId": "customMove",
+        "statValue": 1
+    },
+    "monkGhostInitial_healImmune": {
+        "key": "monkGhostInitial_healImmune",
+        "effectId": "monkGhostInitial",
+        "statId": "healImmune",
+        "statValue": 1
+    },
+    "monkGhostInitial_tentacleImmune": {
+        "key": "monkGhostInitial_tentacleImmune",
+        "effectId": "monkGhostInitial",
+        "statId": "tentacleImmune",
+        "statValue": 1
+    },
+    "demonPoison_negativeDebuff": {
+        "key": "demonPoison_negativeDebuff",
+        "effectId": "demonPoison",
+        "statId": "negativeDebuff",
+        "statValue": 1
+    },
+    "tombLibraryInitial_tentacleImmune": {
+        "key": "tombLibraryInitial_tentacleImmune",
+        "effectId": "tombLibraryInitial",
+        "statId": "tentacleImmune",
+        "statValue": 1
+    },
+    "tombLibraryInitial_canNotMove": {
+        "key": "tombLibraryInitial_canNotMove",
+        "effectId": "tombLibraryInitial",
+        "statId": "canNotMove",
+        "statValue": 1
+    },
+    "tombLibraryInitial_castImmune": {
+        "key": "tombLibraryInitial_castImmune",
+        "effectId": "tombLibraryInitial",
+        "statId": "castImmune",
+        "statValue": 1
+    },
+    "tombLibraryInitial_shieldDashImmune": {
+        "key": "tombLibraryInitial_shieldDashImmune",
+        "effectId": "tombLibraryInitial",
+        "statId": "shieldDashImmune",
+        "statValue": 1
+    }
+}

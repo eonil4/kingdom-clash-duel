@@ -1,0 +1,42 @@
+{
+    "Crystals": {
+        "key": "Crystals",
+        "icon": "rewardSpriteCristal"
+    },
+    "TroopsChest": {
+        "key": "TroopsChest",
+        "icon": "rewardSpriteTroopsChest"
+    },
+    "Money": {
+        "key": "Money",
+        "icon": "rewardSpriteCurrency"
+    },
+    "HeroChest": {
+        "key": "HeroChest",
+        "icon": "rewardSpriteHeroChest"
+    },
+    "HuntMedal": {
+        "key": "HuntMedal",
+        "icon": "rewardSpriteHuntMedal"
+    },
+    "OnlineRating": {
+        "key": "OnlineRating",
+        "icon": "rewardSpriteOnlineRating"
+    },
+    "BattlePassPoints": {
+        "key": "BattlePassPoints",
+        "icon": "rewardSpriteBattlePass"
+    },
+    "BattlePassArenaPoints": {
+        "key": "BattlePassArenaPoints",
+        "icon": "rewardSpriteBattlePassArena"
+    },
+    "None": {
+        "key": "None",
+        "icon": "icon_no_hero_skill"
+    },
+    "ClanToken": {
+        "key": "ClanToken",
+        "icon": "rewardSpriteClanToken"
+    }
+}

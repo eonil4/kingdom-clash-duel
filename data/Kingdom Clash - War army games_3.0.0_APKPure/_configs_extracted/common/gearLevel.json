@@ -1,0 +1,1442 @@
+{
+    "aoeArmor_level1": {
+        "key": "aoeArmor_level1",
+        "gearId": "aoeArmor",
+        "level": 1,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 1,
+        "abilityId": "aoeEvasion_1"
+    },
+    "aoeArmor_level2": {
+        "key": "aoeArmor_level2",
+        "gearId": "aoeArmor",
+        "level": 2,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 2,
+        "abilityId": "aoeEvasion_2"
+    },
+    "aoeArmor_level3": {
+        "key": "aoeArmor_level3",
+        "gearId": "aoeArmor",
+        "level": 3,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 3,
+        "abilityId": "aoeEvasion_3"
+    },
+    "aoeArmor_level4": {
+        "key": "aoeArmor_level4",
+        "gearId": "aoeArmor",
+        "level": 4,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 4,
+        "abilityId": "aoeEvasion_4"
+    },
+    "aoeArmor_level5": {
+        "key": "aoeArmor_level5",
+        "gearId": "aoeArmor",
+        "level": 5,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 5,
+        "abilityId": "aoeEvasion_5"
+    },
+    "aoeArmor_level6": {
+        "key": "aoeArmor_level6",
+        "gearId": "aoeArmor",
+        "level": 6,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 7,
+        "abilityId": "aoeEvasion_6"
+    },
+    "aoeArmor_level7": {
+        "key": "aoeArmor_level7",
+        "gearId": "aoeArmor",
+        "level": 7,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 9,
+        "abilityId": "aoeEvasion_7"
+    },
+    "aoeArmor_level8": {
+        "key": "aoeArmor_level8",
+        "gearId": "aoeArmor",
+        "level": 8,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 11,
+        "abilityId": "aoeEvasion_8"
+    },
+    "aoeArmor_level9": {
+        "key": "aoeArmor_level9",
+        "gearId": "aoeArmor",
+        "level": 9,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 14,
+        "abilityId": "aoeEvasion_9"
+    },
+    "aoeArmor_level10": {
+        "key": "aoeArmor_level10",
+        "gearId": "aoeArmor",
+        "level": 10,
+        "resource": "aoeArmorPrefab_01",
+        "shardsRequired": 17,
+        "abilityId": "aoeEvasion_10"
+    },
+    "aoeArmor_level11": {
+        "key": "aoeArmor_level11",
+        "gearId": "aoeArmor",
+        "level": 11,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 21,
+        "abilityId": "aoeEvasion_11"
+    },
+    "aoeArmor_level12": {
+        "key": "aoeArmor_level12",
+        "gearId": "aoeArmor",
+        "level": 12,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 26,
+        "abilityId": "aoeEvasion_12"
+    },
+    "aoeArmor_level13": {
+        "key": "aoeArmor_level13",
+        "gearId": "aoeArmor",
+        "level": 13,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 32,
+        "abilityId": "aoeEvasion_13"
+    },
+    "aoeArmor_level14": {
+        "key": "aoeArmor_level14",
+        "gearId": "aoeArmor",
+        "level": 14,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 39,
+        "abilityId": "aoeEvasion_14"
+    },
+    "aoeArmor_level15": {
+        "key": "aoeArmor_level15",
+        "gearId": "aoeArmor",
+        "level": 15,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 47,
+        "abilityId": "aoeEvasion_15"
+    },
+    "aoeArmor_level16": {
+        "key": "aoeArmor_level16",
+        "gearId": "aoeArmor",
+        "level": 16,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 57,
+        "abilityId": "aoeEvasion_16"
+    },
+    "aoeArmor_level17": {
+        "key": "aoeArmor_level17",
+        "gearId": "aoeArmor",
+        "level": 17,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 69,
+        "abilityId": "aoeEvasion_17"
+    },
+    "aoeArmor_level18": {
+        "key": "aoeArmor_level18",
+        "gearId": "aoeArmor",
+        "level": 18,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 84,
+        "abilityId": "aoeEvasion_18"
+    },
+    "aoeArmor_level19": {
+        "key": "aoeArmor_level19",
+        "gearId": "aoeArmor",
+        "level": 19,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 102,
+        "abilityId": "aoeEvasion_19"
+    },
+    "aoeArmor_level20": {
+        "key": "aoeArmor_level20",
+        "gearId": "aoeArmor",
+        "level": 20,
+        "resource": "aoeArmorPrefab_02",
+        "shardsRequired": 116,
+        "abilityId": "aoeEvasion_20"
+    },
+    "aoeArmor_level21": {
+        "key": "aoeArmor_level21",
+        "gearId": "aoeArmor",
+        "level": 21,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 132,
+        "abilityId": "aoeEvasion_21"
+    },
+    "aoeArmor_level22": {
+        "key": "aoeArmor_level22",
+        "gearId": "aoeArmor",
+        "level": 22,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 150,
+        "abilityId": "aoeEvasion_22"
+    },
+    "aoeArmor_level23": {
+        "key": "aoeArmor_level23",
+        "gearId": "aoeArmor",
+        "level": 23,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 170,
+        "abilityId": "aoeEvasion_23"
+    },
+    "aoeArmor_level24": {
+        "key": "aoeArmor_level24",
+        "gearId": "aoeArmor",
+        "level": 24,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 193,
+        "abilityId": "aoeEvasion_24"
+    },
+    "aoeArmor_level25": {
+        "key": "aoeArmor_level25",
+        "gearId": "aoeArmor",
+        "level": 25,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 219,
+        "abilityId": "aoeEvasion_25"
+    },
+    "aoeArmor_level26": {
+        "key": "aoeArmor_level26",
+        "gearId": "aoeArmor",
+        "level": 26,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 248,
+        "abilityId": "aoeEvasion_26"
+    },
+    "aoeArmor_level27": {
+        "key": "aoeArmor_level27",
+        "gearId": "aoeArmor",
+        "level": 27,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 281,
+        "abilityId": "aoeEvasion_27"
+    },
+    "aoeArmor_level28": {
+        "key": "aoeArmor_level28",
+        "gearId": "aoeArmor",
+        "level": 28,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 318,
+        "abilityId": "aoeEvasion_28"
+    },
+    "aoeArmor_level29": {
+        "key": "aoeArmor_level29",
+        "gearId": "aoeArmor",
+        "level": 29,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 360,
+        "abilityId": "aoeEvasion_29"
+    },
+    "aoeArmor_level30": {
+        "key": "aoeArmor_level30",
+        "gearId": "aoeArmor",
+        "level": 30,
+        "resource": "aoeArmorPrefab_03",
+        "shardsRequired": 407,
+        "abilityId": "aoeEvasion_30"
+    },
+    "aoeArmor_level31": {
+        "key": "aoeArmor_level31",
+        "gearId": "aoeArmor",
+        "level": 31,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 460,
+        "abilityId": "aoeEvasion_31"
+    },
+    "aoeArmor_level32": {
+        "key": "aoeArmor_level32",
+        "gearId": "aoeArmor",
+        "level": 32,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 520,
+        "abilityId": "aoeEvasion_32"
+    },
+    "aoeArmor_level33": {
+        "key": "aoeArmor_level33",
+        "gearId": "aoeArmor",
+        "level": 33,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 588,
+        "abilityId": "aoeEvasion_33"
+    },
+    "aoeArmor_level34": {
+        "key": "aoeArmor_level34",
+        "gearId": "aoeArmor",
+        "level": 34,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 665,
+        "abilityId": "aoeEvasion_34"
+    },
+    "aoeArmor_level35": {
+        "key": "aoeArmor_level35",
+        "gearId": "aoeArmor",
+        "level": 35,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 752,
+        "abilityId": "aoeEvasion_35"
+    },
+    "aoeArmor_level36": {
+        "key": "aoeArmor_level36",
+        "gearId": "aoeArmor",
+        "level": 36,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 850,
+        "abilityId": "aoeEvasion_36"
+    },
+    "aoeArmor_level37": {
+        "key": "aoeArmor_level37",
+        "gearId": "aoeArmor",
+        "level": 37,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 961,
+        "abilityId": "aoeEvasion_37"
+    },
+    "aoeArmor_level38": {
+        "key": "aoeArmor_level38",
+        "gearId": "aoeArmor",
+        "level": 38,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 1086,
+        "abilityId": "aoeEvasion_38"
+    },
+    "aoeArmor_level39": {
+        "key": "aoeArmor_level39",
+        "gearId": "aoeArmor",
+        "level": 39,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 1228,
+        "abilityId": "aoeEvasion_39"
+    },
+    "aoeArmor_level40": {
+        "key": "aoeArmor_level40",
+        "gearId": "aoeArmor",
+        "level": 40,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 1388,
+        "abilityId": "aoeEvasion_40"
+    },
+    "aoeArmor_level41": {
+        "key": "aoeArmor_level41",
+        "gearId": "aoeArmor",
+        "level": 41,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 1569,
+        "abilityId": "aoeEvasion_41"
+    },
+    "aoeArmor_level42": {
+        "key": "aoeArmor_level42",
+        "gearId": "aoeArmor",
+        "level": 42,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 1773,
+        "abilityId": "aoeEvasion_42"
+    },
+    "aoeArmor_level43": {
+        "key": "aoeArmor_level43",
+        "gearId": "aoeArmor",
+        "level": 43,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 2004,
+        "abilityId": "aoeEvasion_43"
+    },
+    "aoeArmor_level44": {
+        "key": "aoeArmor_level44",
+        "gearId": "aoeArmor",
+        "level": 44,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 2265,
+        "abilityId": "aoeEvasion_44"
+    },
+    "aoeArmor_level45": {
+        "key": "aoeArmor_level45",
+        "gearId": "aoeArmor",
+        "level": 45,
+        "resource": "aoeArmorPrefab_04",
+        "shardsRequired": 2560,
+        "abilityId": "aoeEvasion_45"
+    },
+    "aoeWeapon_level1": {
+        "key": "aoeWeapon_level1",
+        "gearId": "aoeWeapon",
+        "level": 1,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1,
+        "abilityId": "attackAfterAoeEvasion_1"
+    },
+    "aoeWeapon_level2": {
+        "key": "aoeWeapon_level2",
+        "gearId": "aoeWeapon",
+        "level": 2,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 2,
+        "abilityId": "attackAfterAoeEvasion_2"
+    },
+    "aoeWeapon_level3": {
+        "key": "aoeWeapon_level3",
+        "gearId": "aoeWeapon",
+        "level": 3,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 3,
+        "abilityId": "attackAfterAoeEvasion_3"
+    },
+    "aoeWeapon_level4": {
+        "key": "aoeWeapon_level4",
+        "gearId": "aoeWeapon",
+        "level": 4,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 4,
+        "abilityId": "attackAfterAoeEvasion_4"
+    },
+    "aoeWeapon_level5": {
+        "key": "aoeWeapon_level5",
+        "gearId": "aoeWeapon",
+        "level": 5,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 5,
+        "abilityId": "attackAfterAoeEvasion_5"
+    },
+    "aoeWeapon_level6": {
+        "key": "aoeWeapon_level6",
+        "gearId": "aoeWeapon",
+        "level": 6,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 7,
+        "abilityId": "attackAfterAoeEvasion_6"
+    },
+    "aoeWeapon_level7": {
+        "key": "aoeWeapon_level7",
+        "gearId": "aoeWeapon",
+        "level": 7,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 9,
+        "abilityId": "attackAfterAoeEvasion_7"
+    },
+    "aoeWeapon_level8": {
+        "key": "aoeWeapon_level8",
+        "gearId": "aoeWeapon",
+        "level": 8,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 11,
+        "abilityId": "attackAfterAoeEvasion_8"
+    },
+    "aoeWeapon_level9": {
+        "key": "aoeWeapon_level9",
+        "gearId": "aoeWeapon",
+        "level": 9,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 14,
+        "abilityId": "attackAfterAoeEvasion_9"
+    },
+    "aoeWeapon_level10": {
+        "key": "aoeWeapon_level10",
+        "gearId": "aoeWeapon",
+        "level": 10,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 17,
+        "abilityId": "attackAfterAoeEvasion_10"
+    },
+    "aoeWeapon_level11": {
+        "key": "aoeWeapon_level11",
+        "gearId": "aoeWeapon",
+        "level": 11,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 21,
+        "abilityId": "attackAfterAoeEvasion_11"
+    },
+    "aoeWeapon_level12": {
+        "key": "aoeWeapon_level12",
+        "gearId": "aoeWeapon",
+        "level": 12,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 26,
+        "abilityId": "attackAfterAoeEvasion_12"
+    },
+    "aoeWeapon_level13": {
+        "key": "aoeWeapon_level13",
+        "gearId": "aoeWeapon",
+        "level": 13,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 32,
+        "abilityId": "attackAfterAoeEvasion_13"
+    },
+    "aoeWeapon_level14": {
+        "key": "aoeWeapon_level14",
+        "gearId": "aoeWeapon",
+        "level": 14,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 39,
+        "abilityId": "attackAfterAoeEvasion_14"
+    },
+    "aoeWeapon_level15": {
+        "key": "aoeWeapon_level15",
+        "gearId": "aoeWeapon",
+        "level": 15,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 47,
+        "abilityId": "attackAfterAoeEvasion_15"
+    },
+    "aoeWeapon_level16": {
+        "key": "aoeWeapon_level16",
+        "gearId": "aoeWeapon",
+        "level": 16,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 57,
+        "abilityId": "attackAfterAoeEvasion_16"
+    },
+    "aoeWeapon_level17": {
+        "key": "aoeWeapon_level17",
+        "gearId": "aoeWeapon",
+        "level": 17,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 69,
+        "abilityId": "attackAfterAoeEvasion_17"
+    },
+    "aoeWeapon_level18": {
+        "key": "aoeWeapon_level18",
+        "gearId": "aoeWeapon",
+        "level": 18,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 84,
+        "abilityId": "attackAfterAoeEvasion_18"
+    },
+    "aoeWeapon_level19": {
+        "key": "aoeWeapon_level19",
+        "gearId": "aoeWeapon",
+        "level": 19,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 102,
+        "abilityId": "attackAfterAoeEvasion_19"
+    },
+    "aoeWeapon_level20": {
+        "key": "aoeWeapon_level20",
+        "gearId": "aoeWeapon",
+        "level": 20,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 116,
+        "abilityId": "attackAfterAoeEvasion_20"
+    },
+    "aoeWeapon_level21": {
+        "key": "aoeWeapon_level21",
+        "gearId": "aoeWeapon",
+        "level": 21,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 132,
+        "abilityId": "attackAfterAoeEvasion_21"
+    },
+    "aoeWeapon_level22": {
+        "key": "aoeWeapon_level22",
+        "gearId": "aoeWeapon",
+        "level": 22,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 150,
+        "abilityId": "attackAfterAoeEvasion_22"
+    },
+    "aoeWeapon_level23": {
+        "key": "aoeWeapon_level23",
+        "gearId": "aoeWeapon",
+        "level": 23,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 170,
+        "abilityId": "attackAfterAoeEvasion_23"
+    },
+    "aoeWeapon_level24": {
+        "key": "aoeWeapon_level24",
+        "gearId": "aoeWeapon",
+        "level": 24,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 193,
+        "abilityId": "attackAfterAoeEvasion_24"
+    },
+    "aoeWeapon_level25": {
+        "key": "aoeWeapon_level25",
+        "gearId": "aoeWeapon",
+        "level": 25,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 219,
+        "abilityId": "attackAfterAoeEvasion_25"
+    },
+    "aoeWeapon_level26": {
+        "key": "aoeWeapon_level26",
+        "gearId": "aoeWeapon",
+        "level": 26,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 248,
+        "abilityId": "attackAfterAoeEvasion_26"
+    },
+    "aoeWeapon_level27": {
+        "key": "aoeWeapon_level27",
+        "gearId": "aoeWeapon",
+        "level": 27,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 281,
+        "abilityId": "attackAfterAoeEvasion_27"
+    },
+    "aoeWeapon_level28": {
+        "key": "aoeWeapon_level28",
+        "gearId": "aoeWeapon",
+        "level": 28,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 318,
+        "abilityId": "attackAfterAoeEvasion_28"
+    },
+    "aoeWeapon_level29": {
+        "key": "aoeWeapon_level29",
+        "gearId": "aoeWeapon",
+        "level": 29,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 360,
+        "abilityId": "attackAfterAoeEvasion_29"
+    },
+    "aoeWeapon_level30": {
+        "key": "aoeWeapon_level30",
+        "gearId": "aoeWeapon",
+        "level": 30,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 407,
+        "abilityId": "attackAfterAoeEvasion_30"
+    },
+    "aoeWeapon_level31": {
+        "key": "aoeWeapon_level31",
+        "gearId": "aoeWeapon",
+        "level": 31,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 460,
+        "abilityId": "attackAfterAoeEvasion_31"
+    },
+    "aoeWeapon_level32": {
+        "key": "aoeWeapon_level32",
+        "gearId": "aoeWeapon",
+        "level": 32,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 520,
+        "abilityId": "attackAfterAoeEvasion_32"
+    },
+    "aoeWeapon_level33": {
+        "key": "aoeWeapon_level33",
+        "gearId": "aoeWeapon",
+        "level": 33,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 588,
+        "abilityId": "attackAfterAoeEvasion_33"
+    },
+    "aoeWeapon_level34": {
+        "key": "aoeWeapon_level34",
+        "gearId": "aoeWeapon",
+        "level": 34,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 665,
+        "abilityId": "attackAfterAoeEvasion_34"
+    },
+    "aoeWeapon_level35": {
+        "key": "aoeWeapon_level35",
+        "gearId": "aoeWeapon",
+        "level": 35,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 752,
+        "abilityId": "attackAfterAoeEvasion_35"
+    },
+    "aoeWeapon_level36": {
+        "key": "aoeWeapon_level36",
+        "gearId": "aoeWeapon",
+        "level": 36,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 850,
+        "abilityId": "attackAfterAoeEvasion_36"
+    },
+    "aoeWeapon_level37": {
+        "key": "aoeWeapon_level37",
+        "gearId": "aoeWeapon",
+        "level": 37,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 961,
+        "abilityId": "attackAfterAoeEvasion_37"
+    },
+    "aoeWeapon_level38": {
+        "key": "aoeWeapon_level38",
+        "gearId": "aoeWeapon",
+        "level": 38,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1086,
+        "abilityId": "attackAfterAoeEvasion_38"
+    },
+    "aoeWeapon_level39": {
+        "key": "aoeWeapon_level39",
+        "gearId": "aoeWeapon",
+        "level": 39,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1228,
+        "abilityId": "attackAfterAoeEvasion_39"
+    },
+    "aoeWeapon_level40": {
+        "key": "aoeWeapon_level40",
+        "gearId": "aoeWeapon",
+        "level": 40,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1388,
+        "abilityId": "attackAfterAoeEvasion_40"
+    },
+    "aoeWeapon_level41": {
+        "key": "aoeWeapon_level41",
+        "gearId": "aoeWeapon",
+        "level": 41,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1569,
+        "abilityId": "attackAfterAoeEvasion_41"
+    },
+    "aoeWeapon_level42": {
+        "key": "aoeWeapon_level42",
+        "gearId": "aoeWeapon",
+        "level": 42,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 1773,
+        "abilityId": "attackAfterAoeEvasion_42"
+    },
+    "aoeWeapon_level43": {
+        "key": "aoeWeapon_level43",
+        "gearId": "aoeWeapon",
+        "level": 43,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 2004,
+        "abilityId": "attackAfterAoeEvasion_43"
+    },
+    "aoeWeapon_level44": {
+        "key": "aoeWeapon_level44",
+        "gearId": "aoeWeapon",
+        "level": 44,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 2265,
+        "abilityId": "attackAfterAoeEvasion_44"
+    },
+    "aoeWeapon_level45": {
+        "key": "aoeWeapon_level45",
+        "gearId": "aoeWeapon",
+        "level": 45,
+        "resource": "aoeWeaponPrefab",
+        "shardsRequired": 2560,
+        "abilityId": "attackAfterAoeEvasion_45"
+    },
+    "reflectArmor_level1": {
+        "key": "reflectArmor_level1",
+        "gearId": "reflectArmor",
+        "level": 1,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 1,
+        "abilityId": "reflectDamageMultiplier_1"
+    },
+    "reflectArmor_level2": {
+        "key": "reflectArmor_level2",
+        "gearId": "reflectArmor",
+        "level": 2,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 2,
+        "abilityId": "reflectDamageMultiplier_2"
+    },
+    "reflectArmor_level3": {
+        "key": "reflectArmor_level3",
+        "gearId": "reflectArmor",
+        "level": 3,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 3,
+        "abilityId": "reflectDamageMultiplier_3"
+    },
+    "reflectArmor_level4": {
+        "key": "reflectArmor_level4",
+        "gearId": "reflectArmor",
+        "level": 4,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 4,
+        "abilityId": "reflectDamageMultiplier_4"
+    },
+    "reflectArmor_level5": {
+        "key": "reflectArmor_level5",
+        "gearId": "reflectArmor",
+        "level": 5,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 5,
+        "abilityId": "reflectDamageMultiplier_5"
+    },
+    "reflectArmor_level6": {
+        "key": "reflectArmor_level6",
+        "gearId": "reflectArmor",
+        "level": 6,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 7,
+        "abilityId": "reflectDamageMultiplier_6"
+    },
+    "reflectArmor_level7": {
+        "key": "reflectArmor_level7",
+        "gearId": "reflectArmor",
+        "level": 7,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 9,
+        "abilityId": "reflectDamageMultiplier_7"
+    },
+    "reflectArmor_level8": {
+        "key": "reflectArmor_level8",
+        "gearId": "reflectArmor",
+        "level": 8,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 11,
+        "abilityId": "reflectDamageMultiplier_8"
+    },
+    "reflectArmor_level9": {
+        "key": "reflectArmor_level9",
+        "gearId": "reflectArmor",
+        "level": 9,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 14,
+        "abilityId": "reflectDamageMultiplier_9"
+    },
+    "reflectArmor_level10": {
+        "key": "reflectArmor_level10",
+        "gearId": "reflectArmor",
+        "level": 10,
+        "resource": "reflectArmorPrefab_01",
+        "shardsRequired": 17,
+        "abilityId": "reflectDamageMultiplier_10"
+    },
+    "reflectArmor_level11": {
+        "key": "reflectArmor_level11",
+        "gearId": "reflectArmor",
+        "level": 11,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 21,
+        "abilityId": "reflectDamageMultiplier_11"
+    },
+    "reflectArmor_level12": {
+        "key": "reflectArmor_level12",
+        "gearId": "reflectArmor",
+        "level": 12,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 26,
+        "abilityId": "reflectDamageMultiplier_12"
+    },
+    "reflectArmor_level13": {
+        "key": "reflectArmor_level13",
+        "gearId": "reflectArmor",
+        "level": 13,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 32,
+        "abilityId": "reflectDamageMultiplier_13"
+    },
+    "reflectArmor_level14": {
+        "key": "reflectArmor_level14",
+        "gearId": "reflectArmor",
+        "level": 14,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 39,
+        "abilityId": "reflectDamageMultiplier_14"
+    },
+    "reflectArmor_level15": {
+        "key": "reflectArmor_level15",
+        "gearId": "reflectArmor",
+        "level": 15,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 47,
+        "abilityId": "reflectDamageMultiplier_15"
+    },
+    "reflectArmor_level16": {
+        "key": "reflectArmor_level16",
+        "gearId": "reflectArmor",
+        "level": 16,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 57,
+        "abilityId": "reflectDamageMultiplier_16"
+    },
+    "reflectArmor_level17": {
+        "key": "reflectArmor_level17",
+        "gearId": "reflectArmor",
+        "level": 17,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 69,
+        "abilityId": "reflectDamageMultiplier_17"
+    },
+    "reflectArmor_level18": {
+        "key": "reflectArmor_level18",
+        "gearId": "reflectArmor",
+        "level": 18,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 84,
+        "abilityId": "reflectDamageMultiplier_18"
+    },
+    "reflectArmor_level19": {
+        "key": "reflectArmor_level19",
+        "gearId": "reflectArmor",
+        "level": 19,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 102,
+        "abilityId": "reflectDamageMultiplier_19"
+    },
+    "reflectArmor_level20": {
+        "key": "reflectArmor_level20",
+        "gearId": "reflectArmor",
+        "level": 20,
+        "resource": "reflectArmorPrefab_02",
+        "shardsRequired": 116,
+        "abilityId": "reflectDamageMultiplier_20"
+    },
+    "reflectArmor_level21": {
+        "key": "reflectArmor_level21",
+        "gearId": "reflectArmor",
+        "level": 21,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 132,
+        "abilityId": "reflectDamageMultiplier_21"
+    },
+    "reflectArmor_level22": {
+        "key": "reflectArmor_level22",
+        "gearId": "reflectArmor",
+        "level": 22,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 150,
+        "abilityId": "reflectDamageMultiplier_22"
+    },
+    "reflectArmor_level23": {
+        "key": "reflectArmor_level23",
+        "gearId": "reflectArmor",
+        "level": 23,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 170,
+        "abilityId": "reflectDamageMultiplier_23"
+    },
+    "reflectArmor_level24": {
+        "key": "reflectArmor_level24",
+        "gearId": "reflectArmor",
+        "level": 24,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 193,
+        "abilityId": "reflectDamageMultiplier_24"
+    },
+    "reflectArmor_level25": {
+        "key": "reflectArmor_level25",
+        "gearId": "reflectArmor",
+        "level": 25,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 219,
+        "abilityId": "reflectDamageMultiplier_25"
+    },
+    "reflectArmor_level26": {
+        "key": "reflectArmor_level26",
+        "gearId": "reflectArmor",
+        "level": 26,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 248,
+        "abilityId": "reflectDamageMultiplier_26"
+    },
+    "reflectArmor_level27": {
+        "key": "reflectArmor_level27",
+        "gearId": "reflectArmor",
+        "level": 27,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 281,
+        "abilityId": "reflectDamageMultiplier_27"
+    },
+    "reflectArmor_level28": {
+        "key": "reflectArmor_level28",
+        "gearId": "reflectArmor",
+        "level": 28,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 318,
+        "abilityId": "reflectDamageMultiplier_28"
+    },
+    "reflectArmor_level29": {
+        "key": "reflectArmor_level29",
+        "gearId": "reflectArmor",
+        "level": 29,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 360,
+        "abilityId": "reflectDamageMultiplier_29"
+    },
+    "reflectArmor_level30": {
+        "key": "reflectArmor_level30",
+        "gearId": "reflectArmor",
+        "level": 30,
+        "resource": "reflectArmorPrefab_03",
+        "shardsRequired": 407,
+        "abilityId": "reflectDamageMultiplier_30"
+    },
+    "reflectArmor_level31": {
+        "key": "reflectArmor_level31",
+        "gearId": "reflectArmor",
+        "level": 31,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 460,
+        "abilityId": "reflectDamageMultiplier_31"
+    },
+    "reflectArmor_level32": {
+        "key": "reflectArmor_level32",
+        "gearId": "reflectArmor",
+        "level": 32,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 520,
+        "abilityId": "reflectDamageMultiplier_32"
+    },
+    "reflectArmor_level33": {
+        "key": "reflectArmor_level33",
+        "gearId": "reflectArmor",
+        "level": 33,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 588,
+        "abilityId": "reflectDamageMultiplier_33"
+    },
+    "reflectArmor_level34": {
+        "key": "reflectArmor_level34",
+        "gearId": "reflectArmor",
+        "level": 34,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 665,
+        "abilityId": "reflectDamageMultiplier_34"
+    },
+    "reflectArmor_level35": {
+        "key": "reflectArmor_level35",
+        "gearId": "reflectArmor",
+        "level": 35,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 752,
+        "abilityId": "reflectDamageMultiplier_35"
+    },
+    "reflectArmor_level36": {
+        "key": "reflectArmor_level36",
+        "gearId": "reflectArmor",
+        "level": 36,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 850,
+        "abilityId": "reflectDamageMultiplier_36"
+    },
+    "reflectArmor_level37": {
+        "key": "reflectArmor_level37",
+        "gearId": "reflectArmor",
+        "level": 37,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 961,
+        "abilityId": "reflectDamageMultiplier_37"
+    },
+    "reflectArmor_level38": {
+        "key": "reflectArmor_level38",
+        "gearId": "reflectArmor",
+        "level": 38,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 1086,
+        "abilityId": "reflectDamageMultiplier_38"
+    },
+    "reflectArmor_level39": {
+        "key": "reflectArmor_level39",
+        "gearId": "reflectArmor",
+        "level": 39,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 1228,
+        "abilityId": "reflectDamageMultiplier_39"
+    },
+    "reflectArmor_level40": {
+        "key": "reflectArmor_level40",
+        "gearId": "reflectArmor",
+        "level": 40,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 1388,
+        "abilityId": "reflectDamageMultiplier_40"
+    },
+    "reflectArmor_level41": {
+        "key": "reflectArmor_level41",
+        "gearId": "reflectArmor",
+        "level": 41,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 1569,
+        "abilityId": "reflectDamageMultiplier_41"
+    },
+    "reflectArmor_level42": {
+        "key": "reflectArmor_level42",
+        "gearId": "reflectArmor",
+        "level": 42,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 1773,
+        "abilityId": "reflectDamageMultiplier_42"
+    },
+    "reflectArmor_level43": {
+        "key": "reflectArmor_level43",
+        "gearId": "reflectArmor",
+        "level": 43,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 2004,
+        "abilityId": "reflectDamageMultiplier_43"
+    },
+    "reflectArmor_level44": {
+        "key": "reflectArmor_level44",
+        "gearId": "reflectArmor",
+        "level": 44,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 2265,
+        "abilityId": "reflectDamageMultiplier_44"
+    },
+    "reflectArmor_level45": {
+        "key": "reflectArmor_level45",
+        "gearId": "reflectArmor",
+        "level": 45,
+        "resource": "reflectArmorPrefab_04",
+        "shardsRequired": 2560,
+        "abilityId": "reflectDamageMultiplier_45"
+    },
+    "reflectWeapon_level1": {
+        "key": "reflectWeapon_level1",
+        "gearId": "reflectWeapon",
+        "level": 1,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1,
+        "abilityId": "attackReflectDamageMultiplier_1"
+    },
+    "reflectWeapon_level2": {
+        "key": "reflectWeapon_level2",
+        "gearId": "reflectWeapon",
+        "level": 2,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 2,
+        "abilityId": "attackReflectDamageMultiplier_2"
+    },
+    "reflectWeapon_level3": {
+        "key": "reflectWeapon_level3",
+        "gearId": "reflectWeapon",
+        "level": 3,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 3,
+        "abilityId": "attackReflectDamageMultiplier_3"
+    },
+    "reflectWeapon_level4": {
+        "key": "reflectWeapon_level4",
+        "gearId": "reflectWeapon",
+        "level": 4,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 4,
+        "abilityId": "attackReflectDamageMultiplier_4"
+    },
+    "reflectWeapon_level5": {
+        "key": "reflectWeapon_level5",
+        "gearId": "reflectWeapon",
+        "level": 5,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 5,
+        "abilityId": "attackReflectDamageMultiplier_5"
+    },
+    "reflectWeapon_level6": {
+        "key": "reflectWeapon_level6",
+        "gearId": "reflectWeapon",
+        "level": 6,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 7,
+        "abilityId": "attackReflectDamageMultiplier_6"
+    },
+    "reflectWeapon_level7": {
+        "key": "reflectWeapon_level7",
+        "gearId": "reflectWeapon",
+        "level": 7,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 9,
+        "abilityId": "attackReflectDamageMultiplier_7"
+    },
+    "reflectWeapon_level8": {
+        "key": "reflectWeapon_level8",
+        "gearId": "reflectWeapon",
+        "level": 8,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 11,
+        "abilityId": "attackReflectDamageMultiplier_8"
+    },
+    "reflectWeapon_level9": {
+        "key": "reflectWeapon_level9",
+        "gearId": "reflectWeapon",
+        "level": 9,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 14,
+        "abilityId": "attackReflectDamageMultiplier_9"
+    },
+    "reflectWeapon_level10": {
+        "key": "reflectWeapon_level10",
+        "gearId": "reflectWeapon",
+        "level": 10,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 17,
+        "abilityId": "attackReflectDamageMultiplier_10"
+    },
+    "reflectWeapon_level11": {
+        "key": "reflectWeapon_level11",
+        "gearId": "reflectWeapon",
+        "level": 11,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 21,
+        "abilityId": "attackReflectDamageMultiplier_11"
+    },
+    "reflectWeapon_level12": {
+        "key": "reflectWeapon_level12",
+        "gearId": "reflectWeapon",
+        "level": 12,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 26,
+        "abilityId": "attackReflectDamageMultiplier_12"
+    },
+    "reflectWeapon_level13": {
+        "key": "reflectWeapon_level13",
+        "gearId": "reflectWeapon",
+        "level": 13,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 32,
+        "abilityId": "attackReflectDamageMultiplier_13"
+    },
+    "reflectWeapon_level14": {
+        "key": "reflectWeapon_level14",
+        "gearId": "reflectWeapon",
+        "level": 14,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 39,
+        "abilityId": "attackReflectDamageMultiplier_14"
+    },
+    "reflectWeapon_level15": {
+        "key": "reflectWeapon_level15",
+        "gearId": "reflectWeapon",
+        "level": 15,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 47,
+        "abilityId": "attackReflectDamageMultiplier_15"
+    },
+    "reflectWeapon_level16": {
+        "key": "reflectWeapon_level16",
+        "gearId": "reflectWeapon",
+        "level": 16,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 57,
+        "abilityId": "attackReflectDamageMultiplier_16"
+    },
+    "reflectWeapon_level17": {
+        "key": "reflectWeapon_level17",
+        "gearId": "reflectWeapon",
+        "level": 17,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 69,
+        "abilityId": "attackReflectDamageMultiplier_17"
+    },
+    "reflectWeapon_level18": {
+        "key": "reflectWeapon_level18",
+        "gearId": "reflectWeapon",
+        "level": 18,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 84,
+        "abilityId": "attackReflectDamageMultiplier_18"
+    },
+    "reflectWeapon_level19": {
+        "key": "reflectWeapon_level19",
+        "gearId": "reflectWeapon",
+        "level": 19,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 102,
+        "abilityId": "attackReflectDamageMultiplier_19"
+    },
+    "reflectWeapon_level20": {
+        "key": "reflectWeapon_level20",
+        "gearId": "reflectWeapon",
+        "level": 20,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 116,
+        "abilityId": "attackReflectDamageMultiplier_20"
+    },
+    "reflectWeapon_level21": {
+        "key": "reflectWeapon_level21",
+        "gearId": "reflectWeapon",
+        "level": 21,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 132,
+        "abilityId": "attackReflectDamageMultiplier_21"
+    },
+    "reflectWeapon_level22": {
+        "key": "reflectWeapon_level22",
+        "gearId": "reflectWeapon",
+        "level": 22,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 150,
+        "abilityId": "attackReflectDamageMultiplier_22"
+    },
+    "reflectWeapon_level23": {
+        "key": "reflectWeapon_level23",
+        "gearId": "reflectWeapon",
+        "level": 23,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 170,
+        "abilityId": "attackReflectDamageMultiplier_23"
+    },
+    "reflectWeapon_level24": {
+        "key": "reflectWeapon_level24",
+        "gearId": "reflectWeapon",
+        "level": 24,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 193,
+        "abilityId": "attackReflectDamageMultiplier_24"
+    },
+    "reflectWeapon_level25": {
+        "key": "reflectWeapon_level25",
+        "gearId": "reflectWeapon",
+        "level": 25,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 219,
+        "abilityId": "attackReflectDamageMultiplier_25"
+    },
+    "reflectWeapon_level26": {
+        "key": "reflectWeapon_level26",
+        "gearId": "reflectWeapon",
+        "level": 26,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 248,
+        "abilityId": "attackReflectDamageMultiplier_26"
+    },
+    "reflectWeapon_level27": {
+        "key": "reflectWeapon_level27",
+        "gearId": "reflectWeapon",
+        "level": 27,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 281,
+        "abilityId": "attackReflectDamageMultiplier_27"
+    },
+    "reflectWeapon_level28": {
+        "key": "reflectWeapon_level28",
+        "gearId": "reflectWeapon",
+        "level": 28,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 318,
+        "abilityId": "attackReflectDamageMultiplier_28"
+    },
+    "reflectWeapon_level29": {
+        "key": "reflectWeapon_level29",
+        "gearId": "reflectWeapon",
+        "level": 29,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 360,
+        "abilityId": "attackReflectDamageMultiplier_29"
+    },
+    "reflectWeapon_level30": {
+        "key": "reflectWeapon_level30",
+        "gearId": "reflectWeapon",
+        "level": 30,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 407,
+        "abilityId": "attackReflectDamageMultiplier_30"
+    },
+    "reflectWeapon_level31": {
+        "key": "reflectWeapon_level31",
+        "gearId": "reflectWeapon",
+        "level": 31,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 460,
+        "abilityId": "attackReflectDamageMultiplier_31"
+    },
+    "reflectWeapon_level32": {
+        "key": "reflectWeapon_level32",
+        "gearId": "reflectWeapon",
+        "level": 32,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 520,
+        "abilityId": "attackReflectDamageMultiplier_32"
+    },
+    "reflectWeapon_level33": {
+        "key": "reflectWeapon_level33",
+        "gearId": "reflectWeapon",
+        "level": 33,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 588,
+        "abilityId": "attackReflectDamageMultiplier_33"
+    },
+    "reflectWeapon_level34": {
+        "key": "reflectWeapon_level34",
+        "gearId": "reflectWeapon",
+        "level": 34,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 665,
+        "abilityId": "attackReflectDamageMultiplier_34"
+    },
+    "reflectWeapon_level35": {
+        "key": "reflectWeapon_level35",
+        "gearId": "reflectWeapon",
+        "level": 35,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 752,
+        "abilityId": "attackReflectDamageMultiplier_35"
+    },
+    "reflectWeapon_level36": {
+        "key": "reflectWeapon_level36",
+        "gearId": "reflectWeapon",
+        "level": 36,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 850,
+        "abilityId": "attackReflectDamageMultiplier_36"
+    },
+    "reflectWeapon_level37": {
+        "key": "reflectWeapon_level37",
+        "gearId": "reflectWeapon",
+        "level": 37,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 961,
+        "abilityId": "attackReflectDamageMultiplier_37"
+    },
+    "reflectWeapon_level38": {
+        "key": "reflectWeapon_level38",
+        "gearId": "reflectWeapon",
+        "level": 38,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1086,
+        "abilityId": "attackReflectDamageMultiplier_38"
+    },
+    "reflectWeapon_level39": {
+        "key": "reflectWeapon_level39",
+        "gearId": "reflectWeapon",
+        "level": 39,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1228,
+        "abilityId": "attackReflectDamageMultiplier_39"
+    },
+    "reflectWeapon_level40": {
+        "key": "reflectWeapon_level40",
+        "gearId": "reflectWeapon",
+        "level": 40,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1388,
+        "abilityId": "attackReflectDamageMultiplier_40"
+    },
+    "reflectWeapon_level41": {
+        "key": "reflectWeapon_level41",
+        "gearId": "reflectWeapon",
+        "level": 41,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1569,
+        "abilityId": "attackReflectDamageMultiplier_41"
+    },
+    "reflectWeapon_level42": {
+        "key": "reflectWeapon_level42",
+        "gearId": "reflectWeapon",
+        "level": 42,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 1773,
+        "abilityId": "attackReflectDamageMultiplier_42"
+    },
+    "reflectWeapon_level43": {
+        "key": "reflectWeapon_level43",
+        "gearId": "reflectWeapon",
+        "level": 43,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 2004,
+        "abilityId": "attackReflectDamageMultiplier_43"
+    },
+    "reflectWeapon_level44": {
+        "key": "reflectWeapon_level44",
+        "gearId": "reflectWeapon",
+        "level": 44,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 2265,
+        "abilityId": "attackReflectDamageMultiplier_44"
+    },
+    "reflectWeapon_level45": {
+        "key": "reflectWeapon_level45",
+        "gearId": "reflectWeapon",
+        "level": 45,
+        "resource": "reflectWeaponPrefab",
+        "shardsRequired": 2560,
+        "abilityId": "attackReflectDamageMultiplier_45"
+    }
+}

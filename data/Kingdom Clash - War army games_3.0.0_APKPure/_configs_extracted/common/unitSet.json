@@ -1,0 +1,35 @@
+{
+    "Mage": {
+        "key": "Mage"
+    },
+    "Human": {
+        "key": "Human"
+    },
+    "Undead": {
+        "key": "Undead"
+    },
+    "Range": {
+        "key": "Range"
+    },
+    "Skeleton": {
+        "key": "Skeleton"
+    },
+    "Melee": {
+        "key": "Melee"
+    },
+    "BannedFromFuse": {
+        "key": "BannedFromFuse"
+    },
+    "Tank": {
+        "key": "Tank"
+    },
+    "Trickster": {
+        "key": "Trickster"
+    },
+    "Hero": {
+        "key": "Hero"
+    },
+    "Assassin": {
+        "key": "Assassin"
+    }
+}

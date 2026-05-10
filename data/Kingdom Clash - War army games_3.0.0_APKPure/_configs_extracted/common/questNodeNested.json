@@ -1,0 +1,262 @@
+{
+    "1": {
+        "key": "1",
+        "questNodeId": "daily1",
+        "nextQuestNodeId": "daily2"
+    },
+    "2": {
+        "key": "2",
+        "questNodeId": "daily2",
+        "nextQuestNodeId": "daily3"
+    },
+    "3": {
+        "key": "3",
+        "questNodeId": "daily3",
+        "nextQuestNodeId": "daily4"
+    },
+    "4": {
+        "key": "4",
+        "questNodeId": "daily4",
+        "nextQuestNodeId": "daily5"
+    },
+    "5": {
+        "key": "5",
+        "questNodeId": "daily5",
+        "nextQuestNodeId": "daily6"
+    },
+    "6": {
+        "key": "6",
+        "questNodeId": "daily6",
+        "nextQuestNodeId": "daily7"
+    },
+    "7": {
+        "key": "7",
+        "questNodeId": "daily7",
+        "nextQuestNodeId": "daily8"
+    },
+    "8": {
+        "key": "8",
+        "questNodeId": "daily8",
+        "nextQuestNodeId": "daily9"
+    },
+    "9": {
+        "key": "9",
+        "questNodeId": "daily9",
+        "nextQuestNodeId": "daily10"
+    },
+    "12": {
+        "key": "12",
+        "questNodeId": "daily10",
+        "nextQuestNodeId": "daily11"
+    },
+    "13": {
+        "key": "13",
+        "questNodeId": "daily11",
+        "nextQuestNodeId": "daily12"
+    },
+    "14": {
+        "key": "14",
+        "questNodeId": "daily12",
+        "nextQuestNodeId": "daily13"
+    },
+    "15": {
+        "key": "15",
+        "questNodeId": "daily13",
+        "nextQuestNodeId": "daily14"
+    },
+    "16": {
+        "key": "16",
+        "questNodeId": "daily14",
+        "nextQuestNodeId": "daily15"
+    },
+    "17": {
+        "key": "17",
+        "questNodeId": "daily15",
+        "nextQuestNodeId": "daily16"
+    },
+    "18": {
+        "key": "18",
+        "questNodeId": "daily16",
+        "nextQuestNodeId": "daily17"
+    },
+    "19": {
+        "key": "19",
+        "questNodeId": "daily17",
+        "nextQuestNodeId": "daily18"
+    },
+    "20": {
+        "key": "20",
+        "questNodeId": "daily18",
+        "nextQuestNodeId": "daily19"
+    },
+    "21": {
+        "key": "21",
+        "questNodeId": "daily19",
+        "nextQuestNodeId": "daily20"
+    },
+    "22": {
+        "key": "22",
+        "questNodeId": "daily20",
+        "nextQuestNodeId": "daily21"
+    },
+    "23": {
+        "key": "23",
+        "questNodeId": "daily21",
+        "nextQuestNodeId": "daily22"
+    },
+    "24": {
+        "key": "24",
+        "questNodeId": "daily22",
+        "nextQuestNodeId": "daily23"
+    },
+    "25": {
+        "key": "25",
+        "questNodeId": "daily23",
+        "nextQuestNodeId": "daily24"
+    },
+    "26": {
+        "key": "26",
+        "questNodeId": "daily24",
+        "nextQuestNodeId": "daily25"
+    },
+    "27": {
+        "key": "27",
+        "questNodeId": "daily25",
+        "nextQuestNodeId": "daily26"
+    },
+    "28": {
+        "key": "28",
+        "questNodeId": "daily26",
+        "nextQuestNodeId": "daily27"
+    },
+    "29": {
+        "key": "29",
+        "questNodeId": "daily27",
+        "nextQuestNodeId": "daily28"
+    },
+    "30": {
+        "key": "30",
+        "questNodeId": "daily28",
+        "nextQuestNodeId": "daily29"
+    },
+    "31": {
+        "key": "31",
+        "questNodeId": "daily29",
+        "nextQuestNodeId": "daily30"
+    },
+    "32": {
+        "key": "32",
+        "questNodeId": "daily30",
+        "nextQuestNodeId": "daily31"
+    },
+    "33": {
+        "key": "33",
+        "questNodeId": "daily31",
+        "nextQuestNodeId": "daily15"
+    },
+    "34": {
+        "key": "34",
+        "questNodeId": "special1",
+        "nextQuestNodeId": "special2"
+    },
+    "35": {
+        "key": "35",
+        "questNodeId": "special2",
+        "nextQuestNodeId": "special3"
+    },
+    "36": {
+        "key": "36",
+        "questNodeId": "special3",
+        "nextQuestNodeId": "special4"
+    },
+    "37": {
+        "key": "37",
+        "questNodeId": "special4",
+        "nextQuestNodeId": "special5"
+    },
+    "38": {
+        "key": "38",
+        "questNodeId": "special5",
+        "nextQuestNodeId": "special6"
+    },
+    "39": {
+        "key": "39",
+        "questNodeId": "special6",
+        "nextQuestNodeId": "special7"
+    },
+    "40": {
+        "key": "40",
+        "questNodeId": "special7",
+        "nextQuestNodeId": "special8"
+    },
+    "41": {
+        "key": "41",
+        "questNodeId": "special8",
+        "nextQuestNodeId": "special4"
+    },
+    "43": {
+        "key": "43",
+        "questNodeId": "permanent_baronBenua",
+        "nextQuestNodeId": "permanent_baronBenua"
+    },
+    "44": {
+        "key": "44",
+        "questNodeId": "permanent_clericHero",
+        "nextQuestNodeId": "permanent_clericHero"
+    },
+    "45": {
+        "key": "45",
+        "questNodeId": "permanent_darkKnight",
+        "nextQuestNodeId": "permanent_darkKnight"
+    },
+    "46": {
+        "key": "46",
+        "questNodeId": "permanent_undeadPirate",
+        "nextQuestNodeId": "permanent_undeadPirate"
+    },
+    "47": {
+        "key": "47",
+        "questNodeId": "dailyQuest",
+        "nextQuestNodeId": "dailyQuest"
+    },
+    "42": {
+        "key": "42",
+        "questNodeId": "permanent_accurateMerida",
+        "nextQuestNodeId": "permanent_accurateMerida"
+    },
+    "48": {
+        "key": "48",
+        "questNodeId": "permanent_druid",
+        "nextQuestNodeId": "permanent_druid"
+    },
+    "49": {
+        "key": "49",
+        "questNodeId": "permanent_debafferOnMaunt",
+        "nextQuestNodeId": "permanent_debafferOnMaunt"
+    },
+    "50": {
+        "key": "50",
+        "questNodeId": "casinoQuest",
+        "nextQuestNodeId": "casinoQuest"
+    },
+    "51": {
+        "key": "51",
+        "questNodeId": "casinoGearQuest",
+        "nextQuestNodeId": "casinoGearQuest"
+    },
+    "52": {
+        "key": "52",
+        "questNodeId": "permanent_bardHero",
+        "nextQuestNodeId": "permanent_bardHero"
+    },
+    "53": {
+        "key": "53",
+        "questNodeId": "towerAxeThrowersQuest",
+        "nextQuestNodeId": "towerAxeThrowersQuest"
+    },
+    "54": {
+        "key": "54",
+        "questNodeId": "permanent_fireMage",
+        "nextQuestNodeId": "permanent_fireMage"
+    }
+}

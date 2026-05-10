@@ -1,0 +1,308 @@
+{
+    "hero_general_1": {
+        "key": "hero_general_1",
+        "localizationKey": "caption_reward_general_1",
+        "heroId": "general",
+        "count": 1
+    },
+    "hero_general_2": {
+        "key": "hero_general_2",
+        "localizationKey": "caption_reward_general_2",
+        "heroId": "general",
+        "count": 2
+    },
+    "hero_general_4": {
+        "key": "hero_general_4",
+        "localizationKey": "",
+        "heroId": "general",
+        "count": 4
+    },
+    "hero_doubleShield_1": {
+        "key": "hero_doubleShield_1",
+        "localizationKey": "caption_reward_doubleShield_1",
+        "heroId": "doubleShield",
+        "count": 1
+    },
+    "hero_doubleShield_2": {
+        "key": "hero_doubleShield_2",
+        "localizationKey": "caption_reward_doubleShield_2",
+        "heroId": "doubleShield",
+        "count": 2
+    },
+    "hero_doubleShield_4": {
+        "key": "hero_doubleShield_4",
+        "localizationKey": "",
+        "heroId": "doubleShield",
+        "count": 4
+    },
+    "hero_cursedGiant_1": {
+        "key": "hero_cursedGiant_1",
+        "localizationKey": "caption_reward_cursedGiant_1",
+        "heroId": "cursedGiant",
+        "count": 1
+    },
+    "hero_cursedGiant_2": {
+        "key": "hero_cursedGiant_2",
+        "localizationKey": "caption_reward_cursedGiant_2",
+        "heroId": "cursedGiant",
+        "count": 2
+    },
+    "hero_cursedGiant_4": {
+        "key": "hero_cursedGiant_4",
+        "localizationKey": "",
+        "heroId": "cursedGiant",
+        "count": 4
+    },
+    "hero_undeadWarrior_1": {
+        "key": "hero_undeadWarrior_1",
+        "localizationKey": "caption_reward_undeadWarrior_1",
+        "heroId": "undeadWarrior",
+        "count": 1
+    },
+    "hero_undeadWarrior_2": {
+        "key": "hero_undeadWarrior_2",
+        "localizationKey": "caption_reward_undeadWarrior_2",
+        "heroId": "undeadWarrior",
+        "count": 2
+    },
+    "hero_undeadWarrior_4": {
+        "key": "hero_undeadWarrior_4",
+        "localizationKey": "",
+        "heroId": "undeadWarrior",
+        "count": 4
+    },
+    "hero_lightningElemental_1": {
+        "key": "hero_lightningElemental_1",
+        "localizationKey": "caption_reward_lightningElemental_1",
+        "heroId": "lightningElemental",
+        "count": 1
+    },
+    "hero_lightningElemental_2": {
+        "key": "hero_lightningElemental_2",
+        "localizationKey": "caption_reward_lightningElemental_2",
+        "heroId": "lightningElemental",
+        "count": 2
+    },
+    "hero_lightningElemental_4": {
+        "key": "hero_lightningElemental_4",
+        "localizationKey": "",
+        "heroId": "lightningElemental",
+        "count": 4
+    },
+    "hero_druid_1": {
+        "key": "hero_druid_1",
+        "localizationKey": "",
+        "heroId": "druid",
+        "count": 1
+    },
+    "hero_druid_2": {
+        "key": "hero_druid_2",
+        "localizationKey": "",
+        "heroId": "druid",
+        "count": 2
+    },
+    "hero_debafferOnMaunt_1": {
+        "key": "hero_debafferOnMaunt_1",
+        "localizationKey": "",
+        "heroId": "debafferOnMaunt",
+        "count": 1
+    },
+    "hero_debafferOnMaunt_2": {
+        "key": "hero_debafferOnMaunt_2",
+        "localizationKey": "",
+        "heroId": "debafferOnMaunt",
+        "count": 2
+    },
+    "hero_darkKnight_3": {
+        "key": "hero_darkKnight_3",
+        "localizationKey": "",
+        "heroId": "darkKnight",
+        "count": 3
+    },
+    "hero_dragonRider_3": {
+        "key": "hero_dragonRider_3",
+        "localizationKey": "",
+        "heroId": "dragonRider",
+        "count": 3
+    },
+    "hero_accurateMerida_3": {
+        "key": "hero_accurateMerida_3",
+        "localizationKey": "",
+        "heroId": "accurateMerida",
+        "count": 3
+    },
+    "hero_undeadPirate_1": {
+        "key": "hero_undeadPirate_1",
+        "localizationKey": "",
+        "heroId": "undeadPirate",
+        "count": 1
+    },
+    "hero_undeadPirate_2": {
+        "key": "hero_undeadPirate_2",
+        "localizationKey": "",
+        "heroId": "undeadPirate",
+        "count": 2
+    },
+    "hero_clericHero_1": {
+        "key": "hero_clericHero_1",
+        "localizationKey": "",
+        "heroId": "clericHero",
+        "count": 1
+    },
+    "hero_clericHero_2": {
+        "key": "hero_clericHero_2",
+        "localizationKey": "",
+        "heroId": "clericHero",
+        "count": 2
+    },
+    "hero_baronBenua_1": {
+        "key": "hero_baronBenua_1",
+        "localizationKey": "",
+        "heroId": "baronBenua",
+        "count": 1
+    },
+    "hero_baronBenua_2": {
+        "key": "hero_baronBenua_2",
+        "localizationKey": "",
+        "heroId": "baronBenua",
+        "count": 2
+    },
+    "hero_accurateMerida_1": {
+        "key": "hero_accurateMerida_1",
+        "localizationKey": "caption_reward_merida_1",
+        "heroId": "accurateMerida",
+        "count": 1
+    },
+    "hero_accurateMerida_2": {
+        "key": "hero_accurateMerida_2",
+        "localizationKey": "caption_reward_merida_2",
+        "heroId": "accurateMerida",
+        "count": 2
+    },
+    "hero_darkKnight_1": {
+        "key": "hero_darkKnight_1",
+        "localizationKey": "caption_reward_dark_knight_1",
+        "heroId": "darkKnight",
+        "count": 1
+    },
+    "hero_darkKnight_2": {
+        "key": "hero_darkKnight_2",
+        "localizationKey": "caption_reward_dark_knight_2",
+        "heroId": "darkKnight",
+        "count": 2
+    },
+    "hero_darkKnight_4": {
+        "key": "hero_darkKnight_4",
+        "localizationKey": "",
+        "heroId": "darkKnight",
+        "count": 4
+    },
+    "hero_dragonRider_1": {
+        "key": "hero_dragonRider_1",
+        "localizationKey": "",
+        "heroId": "dragonRider",
+        "count": 1
+    },
+    "hero_dragonRider_2": {
+        "key": "hero_dragonRider_2",
+        "localizationKey": "",
+        "heroId": "dragonRider",
+        "count": 2
+    },
+    "hero_dragonRider_4": {
+        "key": "hero_dragonRider_4",
+        "localizationKey": "",
+        "heroId": "dragonRider",
+        "count": 4
+    },
+    "hero_accurateMerida_4": {
+        "key": "hero_accurateMerida_4",
+        "localizationKey": "",
+        "heroId": "accurateMerida",
+        "count": 4
+    },
+    "hero_undeadPestilence_1": {
+        "key": "hero_undeadPestilence_1",
+        "localizationKey": "",
+        "heroId": "undeadPestilence",
+        "count": 1
+    },
+    "hero_undeadPirate_3": {
+        "key": "hero_undeadPirate_3",
+        "localizationKey": "",
+        "heroId": "undeadPirate",
+        "count": 3
+    },
+    "hero_clericHero_3": {
+        "key": "hero_clericHero_3",
+        "localizationKey": "",
+        "heroId": "clericHero",
+        "count": 3
+    },
+    "hero_baronBenua_3": {
+        "key": "hero_baronBenua_3",
+        "localizationKey": "",
+        "heroId": "baronBenua",
+        "count": 3
+    },
+    "hero_druid_3": {
+        "key": "hero_druid_3",
+        "localizationKey": "",
+        "heroId": "druid",
+        "count": 3
+    },
+    "hero_debafferOnMaunt_3": {
+        "key": "hero_debafferOnMaunt_3",
+        "localizationKey": "",
+        "heroId": "debafferOnMaunt",
+        "count": 3
+    },
+    "hero_druid_4": {
+        "key": "hero_druid_4",
+        "localizationKey": "",
+        "heroId": "druid",
+        "count": 4
+    },
+    "hero_debafferOnMaunt_4": {
+        "key": "hero_debafferOnMaunt_4",
+        "localizationKey": "",
+        "heroId": "debafferOnMaunt",
+        "count": 4
+    },
+    "hero_bardHero_1": {
+        "key": "hero_bardHero_1",
+        "localizationKey": "",
+        "heroId": "bardHero",
+        "count": 1
+    },
+    "hero_bardHero_2": {
+        "key": "hero_bardHero_2",
+        "localizationKey": "",
+        "heroId": "bardHero",
+        "count": 2
+    },
+    "hero_bardHero_3": {
+        "key": "hero_bardHero_3",
+        "localizationKey": "",
+        "heroId": "bardHero",
+        "count": 3
+    },
+    "hero_fireMage_1": {
+        "key": "hero_fireMage_1",
+        "localizationKey": "",
+        "heroId": "fireMage",
+        "count": 1
+    },
+    "hero_fireMage_2": {
+        "key": "hero_fireMage_2",
+        "localizationKey": "",
+        "heroId": "fireMage",
+        "count": 2
+    },
+    "hero_fireMage_3": {
+        "key": "hero_fireMage_3",
+        "localizationKey": "",
+        "heroId": "fireMage",
+        "count": 3
+    }
+}

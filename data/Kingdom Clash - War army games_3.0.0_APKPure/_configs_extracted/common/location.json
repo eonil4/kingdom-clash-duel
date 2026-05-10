@@ -1,0 +1,18 @@
+{
+    "desert": {
+        "key": "desert",
+        "locationPrefabId": "locationMissionsNormalDefault"
+    },
+    "winter": {
+        "key": "winter",
+        "locationPrefabId": "locationMissionsHardDefault"
+    },
+    "green": {
+        "key": "green",
+        "locationPrefabId": "locationCampaignDefault"
+    },
+    "library": {
+        "key": "library",
+        "locationPrefabId": "locationLibraryFloorDefault"
+    }
+}

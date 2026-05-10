@@ -1,0 +1,32 @@
+{
+    "mw_chapter_1": {
+        "key": "mw_chapter_1",
+        "order": 1,
+        "locationPrefab": "mushroomWarsMapMeadow",
+        "previewPrefab": "mushroomWarsChapterNormalIsland",
+        "requiredCampaignLevel": 100,
+        "premiumUnlockCost": 1500,
+        "commonRewardLineId": "mw_link_chapter_1_common",
+        "premiumRewardLineId": "mw_link_chapter_1_premium"
+    },
+    "mw_chapter_2": {
+        "key": "mw_chapter_2",
+        "order": 2,
+        "locationPrefab": "mushroomWarsMapMeadow",
+        "previewPrefab": "mushroomWarsChapterMagicIsland",
+        "requiredCampaignLevel": 250,
+        "premiumUnlockCost": 1700,
+        "commonRewardLineId": "mw_link_chapter_2_common",
+        "premiumRewardLineId": "mw_link_chapter_2_premium"
+    },
+    "mw_chapter_3": {
+        "key": "mw_chapter_3",
+        "order": 3,
+        "locationPrefab": "mushroomWarsMapMeadow",
+        "previewPrefab": "mushroomWarsChapterNecroIsland",
+        "requiredCampaignLevel": 10000,
+        "premiumUnlockCost": 1900,
+        "commonRewardLineId": "mw_link_chapter_2_common",
+        "premiumRewardLineId": "mw_link_chapter_2_premium"
+    }
+}

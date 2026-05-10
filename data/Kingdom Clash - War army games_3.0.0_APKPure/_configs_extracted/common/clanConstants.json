@@ -1,0 +1,21 @@
+{
+    "maxMembersCount": 50,
+    "nameMinCharacters": 2,
+    "nameMaxCharacters": 15,
+    "descriptionMinCharacters": 1,
+    "descriptionMaxCharacters": 220,
+    "chatMinMessageLength": 1,
+    "chatMaxMessageLength": 512,
+    "experienceGainPerChestClaim": 100,
+    "createCurrencyId": "Gem",
+    "createCurrencyAmount": 2500,
+    "editCurrencyId": "Gem",
+    "editCurrencyAmount": 1500,
+    "banReasonLength": 40,
+    "pvpClashPointToTokenRate": 0.00037,
+    "pvpClashTokenBattleLimit": 2000,
+    "bannerShapeRequirement": "clanRank_6",
+    "bannerPatternRequirement": "clanRank_10",
+    "bannerShapeFallback": "clan_flag_shape_default",
+    "bannerPatternFallback": "clan_flag_pattern_default"
+}

@@ -1,0 +1,22 @@
+{
+    "casino_reflectWeapon": {
+        "key": "casino_reflectWeapon",
+        "casinoId": "casinoRoulette_reflectWeapon_new",
+        "preferredSelectableRewardId": "1"
+    },
+    "casino_aoeWeapon": {
+        "key": "casino_aoeWeapon",
+        "casinoId": "casinoRoulette_reflectWeapon_new",
+        "preferredSelectableRewardId": "14"
+    },
+    "casino_reflectArmor": {
+        "key": "casino_reflectArmor",
+        "casinoId": "casinoRoulette_reflectArmor_new",
+        "preferredSelectableRewardId": "7"
+    },
+    "casino_aoeArmor": {
+        "key": "casino_aoeArmor",
+        "casinoId": "casinoRoulette_reflectArmor_new",
+        "preferredSelectableRewardId": "20"
+    }
+}

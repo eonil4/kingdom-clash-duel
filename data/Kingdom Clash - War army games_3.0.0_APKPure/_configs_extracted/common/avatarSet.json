@@ -1,0 +1,107 @@
+{
+    "quickMatchResult": {
+        "key": "quickMatchResult",
+        "avatars": [
+            "Archer",
+            "Infantry"
+        ]
+    },
+    "bronzeLeague1": {
+        "key": "bronzeLeague1",
+        "avatars": [
+            "Archer",
+            "Infantry",
+            "Bomber",
+            "Ironguards"
+        ]
+    },
+    "bronzeLeague2": {
+        "key": "bronzeLeague2",
+        "avatars": [
+            "Archer",
+            "Infantry",
+            "Bomber",
+            "Ironguards",
+            "Butcher"
+        ]
+    },
+    "bronzeLeague3": {
+        "key": "bronzeLeague3",
+        "avatars": [
+            "Infantry",
+            "Archer",
+            "Ironguards",
+            "Bomber",
+            "Butcher",
+            "Assasin",
+            "General"
+        ]
+    },
+    "silverLeague1": {
+        "key": "silverLeague1",
+        "avatars": [
+            "Infantry",
+            "Archer",
+            "Ironguards",
+            "Bomber",
+            "Butcher",
+            "Assasin",
+            "Catapult",
+            "General"
+        ]
+    },
+    "silverLeague2": {
+        "key": "silverLeague2",
+        "avatars": [
+            "Infantry",
+            "Archer",
+            "Ironguards",
+            "Bomber",
+            "Butcher",
+            "Assasin",
+            "Catapult",
+            "Undeadmage",
+            "Paladin",
+            "Alchemist",
+            "Lancer",
+            "General",
+            "Darkknight"
+        ]
+    },
+    "silverLeague3": {
+        "key": "silverLeague3",
+        "avatars": [
+            "Infantry",
+            "Ironguards",
+            "Archer",
+            "Catapult",
+            "Bomber",
+            "Assasin",
+            "Butcher",
+            "Undeadmage",
+            "Necromancer",
+            "Paladin",
+            "Alchemist",
+            "Lancer",
+            "Hunter",
+            "Skeleton",
+            "Beast",
+            "General",
+            "Darkknight"
+        ]
+    },
+    "quickMatchAll": {
+        "key": "quickMatchAll",
+        "avatars": [
+            "Archer",
+            "Infantry",
+            "Alchemist",
+            "Assasin",
+            "Bomber",
+            "Catapult",
+            "Beast",
+            "General",
+            "Dragonrider"
+        ]
+    }
+}

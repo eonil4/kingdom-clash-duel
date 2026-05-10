@@ -1,0 +1,298 @@
+{
+    "human_expedition_01": {
+        "key": "human_expedition_01",
+        "factionId": "humans",
+        "mapSlotId": "human_fort",
+        "description": "description_expedition_human_04",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_02": {
+        "key": "human_expedition_02",
+        "factionId": "humans",
+        "mapSlotId": "human_port",
+        "description": "description_expedition_human_01",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_03": {
+        "key": "human_expedition_03",
+        "factionId": "humans",
+        "mapSlotId": "human_fish",
+        "description": "description_expedition_human_03",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_04": {
+        "key": "human_expedition_04",
+        "factionId": "humans",
+        "mapSlotId": "human_village",
+        "description": "description_expedition_human_02",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_05": {
+        "key": "human_expedition_05",
+        "factionId": "humans",
+        "mapSlotId": "undead_cave",
+        "description": "description_expedition_human_05",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_06": {
+        "key": "human_expedition_06",
+        "factionId": "humans",
+        "mapSlotId": "undead_vampire",
+        "description": "description_expedition_human_07",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_07": {
+        "key": "human_expedition_07",
+        "factionId": "humans",
+        "mapSlotId": "undead_obelisk",
+        "description": "description_expedition_human_06",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_08": {
+        "key": "human_expedition_08",
+        "factionId": "humans",
+        "mapSlotId": "undead_church",
+        "description": "description_expedition_human_08",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_09": {
+        "key": "human_expedition_09",
+        "factionId": "humans",
+        "mapSlotId": "mage_mountain",
+        "description": "description_expedition_human_12",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_10": {
+        "key": "human_expedition_10",
+        "factionId": "humans",
+        "mapSlotId": "mage_lake",
+        "description": "description_expedition_human_10",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_11": {
+        "key": "human_expedition_11",
+        "factionId": "humans",
+        "mapSlotId": "mage_tree",
+        "description": "description_expedition_human_09",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_12": {
+        "key": "human_expedition_12",
+        "factionId": "humans",
+        "mapSlotId": "mage_forest",
+        "description": "description_expedition_mage_11",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_01": {
+        "key": "undead_expedition_01",
+        "factionId": "undead",
+        "mapSlotId": "undead_cave",
+        "description": "description_expedition_undead_05",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_02": {
+        "key": "undead_expedition_02",
+        "factionId": "undead",
+        "mapSlotId": "undead_vampire",
+        "description": "description_expedition_undead_07",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_03": {
+        "key": "undead_expedition_03",
+        "factionId": "undead",
+        "mapSlotId": "undead_obelisk",
+        "description": "description_expedition_undead_06",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_04": {
+        "key": "undead_expedition_04",
+        "factionId": "undead",
+        "mapSlotId": "undead_church",
+        "description": "description_expedition_undead_08",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_05": {
+        "key": "undead_expedition_05",
+        "factionId": "undead",
+        "mapSlotId": "human_fort",
+        "description": "description_expedition_undead_04",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_06": {
+        "key": "undead_expedition_06",
+        "factionId": "undead",
+        "mapSlotId": "human_port",
+        "description": "description_expedition_undead_01",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_07": {
+        "key": "undead_expedition_07",
+        "factionId": "undead",
+        "mapSlotId": "human_fish",
+        "description": "description_expedition_undead_03",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_08": {
+        "key": "undead_expedition_08",
+        "factionId": "undead",
+        "mapSlotId": "human_village",
+        "description": "description_expedition_undead_02",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_09": {
+        "key": "undead_expedition_09",
+        "factionId": "undead",
+        "mapSlotId": "mage_mountain",
+        "description": "description_expedition_undead_12",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_10": {
+        "key": "undead_expedition_10",
+        "factionId": "undead",
+        "mapSlotId": "mage_lake",
+        "description": "description_expedition_undead_10",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_11": {
+        "key": "undead_expedition_11",
+        "factionId": "undead",
+        "mapSlotId": "mage_tree",
+        "description": "description_expedition_undead_09",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "undead_expedition_12": {
+        "key": "undead_expedition_12",
+        "factionId": "undead",
+        "mapSlotId": "mage_forest",
+        "description": "description_expedition_undead_11",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_01": {
+        "key": "mage_expedition_01",
+        "factionId": "mages",
+        "mapSlotId": "mage_mountain",
+        "description": "description_expedition_mage_12",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_02": {
+        "key": "mage_expedition_02",
+        "factionId": "mages",
+        "mapSlotId": "mage_lake",
+        "description": "description_expedition_mage_10",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_03": {
+        "key": "mage_expedition_03",
+        "factionId": "mages",
+        "mapSlotId": "mage_tree",
+        "description": "description_expedition_mage_09",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_04": {
+        "key": "mage_expedition_04",
+        "factionId": "mages",
+        "mapSlotId": "mage_forest",
+        "description": "description_expedition_mage_11",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_05": {
+        "key": "mage_expedition_05",
+        "factionId": "mages",
+        "mapSlotId": "human_fort",
+        "description": "description_expedition_mage_04",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_06": {
+        "key": "mage_expedition_06",
+        "factionId": "mages",
+        "mapSlotId": "human_port",
+        "description": "description_expedition_mage_01",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_07": {
+        "key": "mage_expedition_07",
+        "factionId": "mages",
+        "mapSlotId": "human_fish",
+        "description": "description_expedition_mage_03",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_08": {
+        "key": "mage_expedition_08",
+        "factionId": "mages",
+        "mapSlotId": "human_village",
+        "description": "description_expedition_mage_02",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_09": {
+        "key": "mage_expedition_09",
+        "factionId": "mages",
+        "mapSlotId": "undead_cave",
+        "description": "description_expedition_mage_05",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_10": {
+        "key": "mage_expedition_10",
+        "factionId": "mages",
+        "mapSlotId": "undead_vampire",
+        "description": "description_expedition_mage_07",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_11": {
+        "key": "mage_expedition_11",
+        "factionId": "mages",
+        "mapSlotId": "undead_obelisk",
+        "description": "description_expedition_mage_06",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "mage_expedition_12": {
+        "key": "mage_expedition_12",
+        "factionId": "mages",
+        "mapSlotId": "undead_church",
+        "description": "description_expedition_mage_08",
+        "expeditionTaskSetId": "common_task_set",
+        "isTutorial": false
+    },
+    "human_expedition_fake": {
+        "key": "human_expedition_fake",
+        "factionId": "humans_fake",
+        "mapSlotId": "human_fort",
+        "description": "description_expedition_human_04",
+        "expeditionTaskSetId": "common_task_set_tutorial",
+        "isTutorial": true
+    }
+}

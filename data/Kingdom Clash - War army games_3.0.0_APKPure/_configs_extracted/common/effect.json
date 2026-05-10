@@ -1,0 +1,167 @@
+{
+    "aiDisable": {
+        "key": "aiDisable"
+    },
+    "snowballAbsorb": {
+        "key": "snowballAbsorb"
+    },
+    "invulnerability": {
+        "key": "invulnerability"
+    },
+    "specialAttackDisable": {
+        "key": "specialAttackDisable"
+    },
+    "attackDisable": {
+        "key": "attackDisable"
+    },
+    "unTargetable": {
+        "key": "unTargetable"
+    },
+    "moveDisable": {
+        "key": "moveDisable"
+    },
+    "mindControlled": {
+        "key": "mindControlled"
+    },
+    "freeze": {
+        "key": "freeze"
+    },
+    "fear": {
+        "key": "fear"
+    },
+    "tornadoAbsorb": {
+        "key": "tornadoAbsorb"
+    },
+    "attackReduction": {
+        "key": "attackReduction"
+    },
+    "auraBlessing": {
+        "key": "auraBlessing"
+    },
+    "bleed": {
+        "key": "bleed"
+    },
+    "darknessDebuff": {
+        "key": "darknessDebuff"
+    },
+    "chargeDarkness": {
+        "key": "chargeDarkness"
+    },
+    "hex": {
+        "key": "hex"
+    },
+    "paladinShield": {
+        "key": "paladinShield"
+    },
+    "shapeshiftBuff": {
+        "key": "shapeshiftBuff"
+    },
+    "poison": {
+        "key": "poison"
+    },
+    "roots": {
+        "key": "roots"
+    },
+    "undeadPoison": {
+        "key": "undeadPoison"
+    },
+    "flyingMonsterInitial": {
+        "key": "flyingMonsterInitial"
+    },
+    "flame": {
+        "key": "flame"
+    },
+    "sunriseBuff": {
+        "key": "sunriseBuff"
+    },
+    "multiShotDebuff": {
+        "key": "multiShotDebuff"
+    },
+    "vortex": {
+        "key": "vortex"
+    },
+    "metamorph": {
+        "key": "metamorph"
+    },
+    "waterPuddles": {
+        "key": "waterPuddles"
+    },
+    "ghostShipDebuff": {
+        "key": "ghostShipDebuff"
+    },
+    "teleport": {
+        "key": "teleport"
+    },
+    "pullClaws": {
+        "key": "pullClaws"
+    },
+    "sleep": {
+        "key": "sleep"
+    },
+    "vortexSource": {
+        "key": "vortexSource"
+    },
+    "controlImmune": {
+        "key": "controlImmune"
+    },
+    "toadJump": {
+        "key": "toadJump"
+    },
+    "tentacleImmune": {
+        "key": "tentacleImmune"
+    },
+    "tentacleAbsorb": {
+        "key": "tentacleAbsorb"
+    },
+    "krakenDevour": {
+        "key": "krakenDevour"
+    },
+    "rebirthEffect": {
+        "key": "rebirthEffect"
+    },
+    "rebirthOnDeath": {
+        "key": "rebirthOnDeath"
+    },
+    "controlImmune_untargetable": {
+        "key": "controlImmune_untargetable"
+    },
+    "castImmune": {
+        "key": "castImmune"
+    },
+    "fireMageSunrise": {
+        "key": "fireMageSunrise"
+    },
+    "undeadMark": {
+        "key": "undeadMark"
+    },
+    "firePoison": {
+        "key": "firePoison"
+    },
+    "empoweredAttack": {
+        "key": "empoweredAttack"
+    },
+    "bardMusic": {
+        "key": "bardMusic"
+    },
+    "negativeDebuff": {
+        "key": "negativeDebuff"
+    },
+    "shieldLimit": {
+        "key": "shieldLimit"
+    },
+    "deathFlight": {
+        "key": "deathFlight"
+    },
+    "monkGhostInitial": {
+        "key": "monkGhostInitial"
+    },
+    "counterFear": {
+        "key": "counterFear"
+    },
+    "demonPoison": {
+        "key": "demonPoison"
+    },
+    "tombLibraryInitial": {
+        "key": "tombLibraryInitial"
+    }
+}

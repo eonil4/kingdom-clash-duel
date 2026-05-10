@@ -1,0 +1,629 @@
+{
+    "lobbyDragonOfferX1": {
+        "key": "lobbyDragonOfferX1",
+        "heroId": "dragonRider",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_dragonRiderX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyDragonOfferX12": {
+        "key": "lobbyDragonOfferX12",
+        "heroId": "dragonRider",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_dragonRiderX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyClericOfferX1": {
+        "key": "lobbyClericOfferX1",
+        "heroId": "clericHero",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_clericX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyClericOfferX12": {
+        "key": "lobbyClericOfferX12",
+        "heroId": "clericHero",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_clericX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyAccurateMeridaOfferX1": {
+        "key": "lobbyAccurateMeridaOfferX1",
+        "heroId": "accurateMerida",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_meridaX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyAccurateMeridaOfferX12": {
+        "key": "lobbyAccurateMeridaOfferX12",
+        "heroId": "accurateMerida",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_meridaX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyBoneDragonOfferX1": {
+        "key": "lobbyBoneDragonOfferX1",
+        "heroId": "boneDragon",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_boneDragonX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyBoneDragonOfferX12": {
+        "key": "lobbyBoneDragonOfferX12",
+        "heroId": "boneDragon",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_boneDragonX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyForestQueenOfferX1": {
+        "key": "lobbyForestQueenOfferX1",
+        "heroId": "forestQueen",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_forestQueenX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyForestQueenOfferX12": {
+        "key": "lobbyForestQueenOfferX12",
+        "heroId": "forestQueen",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_forestQueenX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerIceMage_gift": {
+        "key": "offerIceMage_gift",
+        "heroId": "iceMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_gift_offer",
+        "criteriaId": "IceMageCriteria",
+        "onCriteria": {
+            "offerRemoveDueDate": true
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "lobbyCharmerOfferX1": {
+        "key": "lobbyCharmerOfferX1",
+        "heroId": "charmer",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_charmerX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyCharmerOfferX12": {
+        "key": "lobbyCharmerOfferX12",
+        "heroId": "charmer",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_charmerX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyAirMageOfferX1": {
+        "key": "lobbyAirMageOfferX1",
+        "heroId": "airMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_airMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyAirMageOfferX12": {
+        "key": "lobbyAirMageOfferX12",
+        "heroId": "airMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_airMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyDarknessMageOfferX1": {
+        "key": "lobbyDarknessMageOfferX1",
+        "heroId": "darknessMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_darknessMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyDarknessMageOfferX12": {
+        "key": "lobbyDarknessMageOfferX12",
+        "heroId": "darknessMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_darknessMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyIceMageOfferX1": {
+        "key": "lobbyIceMageOfferX1",
+        "heroId": "iceMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_iceMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyIceMageOfferX12": {
+        "key": "lobbyIceMageOfferX12",
+        "heroId": "iceMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_iceMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyFireMageOfferX1": {
+        "key": "lobbyFireMageOfferX1",
+        "heroId": "fireMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_fireMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyFireMageOfferX12": {
+        "key": "lobbyFireMageOfferX12",
+        "heroId": "fireMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_fireMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbySandMageOfferX1": {
+        "key": "lobbySandMageOfferX1",
+        "heroId": "sandMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_sandMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbySandMageOfferX12": {
+        "key": "lobbySandMageOfferX12",
+        "heroId": "sandMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_sandMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyUndeadPirateOfferX1": {
+        "key": "lobbyUndeadPirateOfferX1",
+        "heroId": "undeadPirate",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_undeadPirateX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyUndeadPirateOfferX12": {
+        "key": "lobbyUndeadPirateOfferX12",
+        "heroId": "undeadPirate",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_undeadPirateX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyWaterMageOfferX1": {
+        "key": "lobbyWaterMageOfferX1",
+        "heroId": "waterMage",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_waterMageX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyWaterMageOfferX12": {
+        "key": "lobbyWaterMageOfferX12",
+        "heroId": "waterMage",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_waterMageX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyLordInquisitorOfferX1": {
+        "key": "lobbyLordInquisitorOfferX1",
+        "heroId": "lordInquisitor",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_lordInquisitorX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyLordInquisitorOfferX12": {
+        "key": "lobbyLordInquisitorOfferX12",
+        "heroId": "lordInquisitor",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_lordInquisitorX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyUndeadPestilenceOfferX1": {
+        "key": "lobbyUndeadPestilenceOfferX1",
+        "heroId": "undeadPestilence",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_undeadPestilenceX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyUndeadPestilenceOfferX12": {
+        "key": "lobbyUndeadPestilenceOfferX12",
+        "heroId": "undeadPestilence",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_undeadPestilenceX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyBardHeroOfferX1": {
+        "key": "lobbyBardHeroOfferX1",
+        "heroId": "bardHero",
+        "heroCount": 1,
+        "goldAmount": 60000,
+        "goldIconId": "bag_coin",
+        "gemCount": 300,
+        "gemIconId": "big_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_bardHeroX1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "lobbyBardHeroOfferX12": {
+        "key": "lobbyBardHeroOfferX12",
+        "heroId": "bardHero",
+        "heroCount": 12,
+        "goldAmount": 800000,
+        "goldIconId": "chest_coin_wood",
+        "gemCount": 3600,
+        "gemIconId": "barrel_gem",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_bardHeroX12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    }
+}

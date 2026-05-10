@@ -1,0 +1,50 @@
+{
+    "headHunt_localNotificacion": {
+        "key": "headHunt_localNotificacion",
+        "title": "title_notifications_headHunt",
+        "text": "caption_notifications_headHunt",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_headhunt"
+    },
+    "idleChest_localNotificacion": {
+        "key": "idleChest_localNotificacion",
+        "title": "title_notifications_idleChest",
+        "text": "caption_notifications_idleChest",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_idle_chest"
+    },
+    "dailyContent_localNotificacion": {
+        "key": "dailyContent_localNotificacion",
+        "title": "title_notifications_dailyContent",
+        "text": "caption_notifications_dailyContent",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_daily"
+    },
+    "libraryKeysFull_localNotification": {
+        "key": "libraryKeysFull_localNotification",
+        "title": "title_libraryKeysFull_localNotification",
+        "text": "caption_libraryKeysFull_localNotification",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_daily"
+    },
+    "libraryReset_localNotification": {
+        "key": "libraryReset_localNotification",
+        "title": "title_libraryReset_localNotification",
+        "text": "caption_libraryReset_localNotification",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_daily"
+    },
+    "expeditionsCompleted_localNotification": {
+        "key": "expeditionsCompleted_localNotification",
+        "title": "title_notifications_expeditionsCompleted",
+        "text": "caption_notifications_expeditionsCompleted",
+        "iconName": "icon_device_notification_mights",
+        "colorId": "notification_white",
+        "bigPictureName": "big_picture_daily"
+    }
+}

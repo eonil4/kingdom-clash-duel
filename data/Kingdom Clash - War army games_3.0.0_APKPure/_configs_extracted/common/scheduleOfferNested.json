@@ -1,0 +1,632 @@
+{
+    "1": {
+        "key": "1",
+        "linkId": "offerLegendaryTroopScheduler",
+        "offerId": "offerLegendaryTroop"
+    },
+    "2": {
+        "key": "2",
+        "linkId": "offerFreeVipScheduler",
+        "offerId": "offerFreeVip"
+    },
+    "3": {
+        "key": "3",
+        "linkId": "offerFreeMidasScheduler",
+        "offerId": "offerFreeMidas"
+    },
+    "4": {
+        "key": "4",
+        "linkId": "offerFreeHorsrhoeScheduler",
+        "offerId": "daily_gift_horsehoe"
+    },
+    "5": {
+        "key": "5",
+        "linkId": "offerFreeBadgesX2Scheduler",
+        "offerId": "daily_gift_badgesX2"
+    },
+    "6": {
+        "key": "6",
+        "linkId": "offerFreeGemScheduler",
+        "offerId": "daily_gift_gem"
+    },
+    "7": {
+        "key": "7",
+        "linkId": "offerFreeGoldScheduler",
+        "offerId": "daily_gift_gold"
+    },
+    "8": {
+        "key": "8",
+        "linkId": "offerFreeChestScheduler",
+        "offerId": "bankChestOffer_1"
+    },
+    "19": {
+        "key": "19",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_offer_gold"
+    },
+    "20": {
+        "key": "20",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_offer_gem"
+    },
+    "26": {
+        "key": "26",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_chestOffer_LegHero"
+    },
+    "27": {
+        "key": "27",
+        "linkId": "offerClanShopHeroScheduler_1",
+        "offerId": "clan_offerHero_leg_lordInquisitor"
+    },
+    "28": {
+        "key": "28",
+        "linkId": "offerClanShopHeroScheduler_2",
+        "offerId": "clan_offerHero_leg_undeadPestilence"
+    },
+    "29": {
+        "key": "29",
+        "linkId": "offerClanShopHeroScheduler_3",
+        "offerId": "clan_offerHero_leg_sandMage"
+    },
+    "30": {
+        "key": "30",
+        "linkId": "offerClanShopHeroScheduler_4",
+        "offerId": "clan_offerHero_leg_forestQueen"
+    },
+    "31": {
+        "key": "31",
+        "linkId": "offerClanShopHeroScheduler_5",
+        "offerId": "clan_offerHero_leg_fireMage"
+    },
+    "32": {
+        "key": "32",
+        "linkId": "offerClanShopHeroScheduler_6",
+        "offerId": "clan_offerHero_leg_darknessMage"
+    },
+    "33": {
+        "key": "33",
+        "linkId": "offerClanShopHeroScheduler_7",
+        "offerId": "clan_offerHero_leg_undeadPirate"
+    },
+    "34": {
+        "key": "34",
+        "linkId": "offerDailyGemsSaleScheduler",
+        "offerId": "offerLobbyCurrency1"
+    },
+    "35": {
+        "key": "35",
+        "linkId": "offerDailyGemsSaleScheduler",
+        "offerId": "offerLobbyCurrency2"
+    },
+    "36": {
+        "key": "36",
+        "linkId": "offerDailyGoldSaleScheduler",
+        "offerId": "offerLobbyCurrency3"
+    },
+    "37": {
+        "key": "37",
+        "linkId": "offerDailyGoldSaleScheduler",
+        "offerId": "offerLobbyCurrency4"
+    },
+    "38": {
+        "key": "38",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_dailyBonus"
+    },
+    "39": {
+        "key": "39",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_advanced_1"
+    },
+    "40": {
+        "key": "40",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_advanced_2"
+    },
+    "41": {
+        "key": "41",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_ultimate_1"
+    },
+    "42": {
+        "key": "42",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_ultimate_2"
+    },
+    "43": {
+        "key": "43",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_absolute_1"
+    },
+    "44": {
+        "key": "44",
+        "linkId": "offerCasinoShopScheduler",
+        "offerId": "casinoShop_absolute_2"
+    },
+    "52": {
+        "key": "52",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_dailyBonus"
+    },
+    "53": {
+        "key": "53",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_10_reflectarmor"
+    },
+    "54": {
+        "key": "54",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_5_reflectarmor"
+    },
+    "55": {
+        "key": "55",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_1_reflectarmor"
+    },
+    "56": {
+        "key": "56",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "advancedcasinobattlepasspremium_reflectarmor"
+    },
+    "57": {
+        "key": "57",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "advancedcasinobattlepass_reflectarmor"
+    },
+    "58": {
+        "key": "58",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "casinobattlepasspremium_reflectarmor"
+    },
+    "9": {
+        "key": "9",
+        "linkId": "offerPvpTroopChestScheduler",
+        "offerId": "pvpOffer_LegTroop"
+    },
+    "10": {
+        "key": "10",
+        "linkId": "offerPvpHeroChestScheduler",
+        "offerId": "pvpOffer_LegHero"
+    },
+    "11": {
+        "key": "11",
+        "linkId": "offerPvpOfferChestScheduler",
+        "offerId": "pvpOffer_Chest"
+    },
+    "12": {
+        "key": "12",
+        "linkId": "goldAccurateMeridaScheduler",
+        "offerId": "goldAccurateMerida"
+    },
+    "13": {
+        "key": "13",
+        "linkId": "silverAccurateMeridaScheduler",
+        "offerId": "silverAccurateMerida"
+    },
+    "14": {
+        "key": "14",
+        "linkId": "offerDailyScheduler",
+        "offerId": "offerDaily1"
+    },
+    "15": {
+        "key": "15",
+        "linkId": "offerLobbyTroopsScheduler",
+        "offerId": "offerLobbyTroops1"
+    },
+    "16": {
+        "key": "16",
+        "linkId": "offerLobbyTroopsScheduler",
+        "offerId": "offerLobbyTroops2"
+    },
+    "17": {
+        "key": "17",
+        "linkId": "offerLobbyTroopsScheduler",
+        "offerId": "offerLobbyTroops3"
+    },
+    "18": {
+        "key": "18",
+        "linkId": "offerLobbyGiftScheduler",
+        "offerId": "offerIceMage_gift"
+    },
+    "21": {
+        "key": "21",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_offerTroop_stunToad"
+    },
+    "22": {
+        "key": "22",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_chestOffer_EpicTroop"
+    },
+    "23": {
+        "key": "23",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_chestOffer_LegTroop"
+    },
+    "24": {
+        "key": "24",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_offerTroop_phoenix"
+    },
+    "25": {
+        "key": "25",
+        "linkId": "offerClanShopScheduler",
+        "offerId": "clan_chestOffer_EpicHero"
+    },
+    "59": {
+        "key": "59",
+        "linkId": "offerCasinoReflectArmorBpScheduler",
+        "offerId": "casinobattlepass_reflectarmor"
+    },
+    "60": {
+        "key": "60",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_absolute_2"
+    },
+    "61": {
+        "key": "61",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_absolute_1"
+    },
+    "62": {
+        "key": "62",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_ultimate_2"
+    },
+    "63": {
+        "key": "63",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_ultimate_1"
+    },
+    "64": {
+        "key": "64",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_advanced_2"
+    },
+    "65": {
+        "key": "65",
+        "linkId": "offerCasinoReflectArmorShopScheduler",
+        "offerId": "casinooffer_reflectarmor_advanced_1"
+    },
+    "66": {
+        "key": "66",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_dailyBonus"
+    },
+    "67": {
+        "key": "67",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_10_aoearmor"
+    },
+    "68": {
+        "key": "68",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_5_aoearmor"
+    },
+    "69": {
+        "key": "69",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_1_aoearmor"
+    },
+    "70": {
+        "key": "70",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "advancedcasinobattlepasspremium_aoearmor"
+    },
+    "71": {
+        "key": "71",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "advancedcasinobattlepass_aoearmor"
+    },
+    "72": {
+        "key": "72",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "casinobattlepasspremium_aoearmor"
+    },
+    "73": {
+        "key": "73",
+        "linkId": "offerCasinoAoeArmorBpScheduler",
+        "offerId": "casinobattlepass_aoearmor"
+    },
+    "74": {
+        "key": "74",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_absolute_2"
+    },
+    "75": {
+        "key": "75",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_absolute_1"
+    },
+    "76": {
+        "key": "76",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_ultimate_2"
+    },
+    "77": {
+        "key": "77",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_ultimate_1"
+    },
+    "78": {
+        "key": "78",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_advanced_2"
+    },
+    "79": {
+        "key": "79",
+        "linkId": "offerCasinoAoeArmorShopScheduler",
+        "offerId": "casinooffer_aoearmor_advanced_1"
+    },
+    "80": {
+        "key": "80",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_dailyBonus"
+    },
+    "81": {
+        "key": "81",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_10_aoeweapon"
+    },
+    "82": {
+        "key": "82",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_5_aoeweapon"
+    },
+    "83": {
+        "key": "83",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_1_aoeweapon"
+    },
+    "84": {
+        "key": "84",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "advancedcasinobattlepasspremium_aoeweapon"
+    },
+    "85": {
+        "key": "85",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "advancedcasinobattlepass_aoeweapon"
+    },
+    "86": {
+        "key": "86",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "casinobattlepasspremium_aoeweapon"
+    },
+    "87": {
+        "key": "87",
+        "linkId": "offerCasinoAoeWeaponBpScheduler",
+        "offerId": "casinobattlepass_aoeweapon"
+    },
+    "88": {
+        "key": "88",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_absolute_2"
+    },
+    "89": {
+        "key": "89",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_absolute_1"
+    },
+    "90": {
+        "key": "90",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_ultimate_2"
+    },
+    "91": {
+        "key": "91",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_ultimate_1"
+    },
+    "92": {
+        "key": "92",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_advanced_2"
+    },
+    "93": {
+        "key": "93",
+        "linkId": "offerCasinoAoeWeaponShopScheduler",
+        "offerId": "casinooffer_aoeweapon_advanced_1"
+    },
+    "94": {
+        "key": "94",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_dailyBonus"
+    },
+    "95": {
+        "key": "95",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_10_reflectweapon"
+    },
+    "96": {
+        "key": "96",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_5_reflectweapon"
+    },
+    "97": {
+        "key": "97",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "casinobattlepassunlocklevel_1_reflectweapon"
+    },
+    "98": {
+        "key": "98",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "advancedcasinobattlepasspremium_reflectweapon"
+    },
+    "99": {
+        "key": "99",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "advancedcasinobattlepass_reflectweapon"
+    },
+    "100": {
+        "key": "100",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "casinobattlepasspremium_reflectweapon"
+    },
+    "101": {
+        "key": "101",
+        "linkId": "offerCasinoReflectWeaponBpScheduler",
+        "offerId": "casinobattlepass_reflectweapon"
+    },
+    "102": {
+        "key": "102",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_absolute_2"
+    },
+    "103": {
+        "key": "103",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_absolute_1"
+    },
+    "104": {
+        "key": "104",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_ultimate_2"
+    },
+    "105": {
+        "key": "105",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_ultimate_1"
+    },
+    "106": {
+        "key": "106",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_advanced_2"
+    },
+    "107": {
+        "key": "107",
+        "linkId": "offerCasinoReflectWeaponShopScheduler",
+        "offerId": "casinooffer_reflectweapon_advanced_1"
+    },
+    "45": {
+        "key": "45",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "CasinoBattlePassUnlockLevel_1"
+    },
+    "46": {
+        "key": "46",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "CasinoBattlePassUnlockLevel_5"
+    },
+    "47": {
+        "key": "47",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "CasinoBattlePassUnlockLevel_10"
+    },
+    "48": {
+        "key": "48",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "offer_CasinoBattlePass"
+    },
+    "49": {
+        "key": "49",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "offer_CasinoBattlePassAndLevels"
+    },
+    "50": {
+        "key": "50",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "offer_AdvancedCasinoBattlePass"
+    },
+    "51": {
+        "key": "51",
+        "linkId": "offerCasinoBpScheduler",
+        "offerId": "offer_AdvancedCasinoBattlePassAndLevels"
+    },
+    "108": {
+        "key": "108",
+        "linkId": "offerExpeditionShopScheduler",
+        "offerId": "offerGearShard_free"
+    },
+    "109": {
+        "key": "109",
+        "linkId": "offerExpeditionShopScheduler",
+        "offerId": "offerGear_1"
+    },
+    "110": {
+        "key": "110",
+        "linkId": "offerExpeditionShopScheduler",
+        "offerId": "offerGear_2"
+    },
+    "111": {
+        "key": "111",
+        "linkId": "offerExpeditionShopScheduler",
+        "offerId": "offerGear_3"
+    },
+    "112": {
+        "key": "112",
+        "linkId": "offerExpeditionShopScheduler",
+        "offerId": "offerGear_4"
+    },
+    "113": {
+        "key": "113",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersFree"
+    },
+    "114": {
+        "key": "114",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersAdvanced_1"
+    },
+    "115": {
+        "key": "115",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersAdvanced_2"
+    },
+    "116": {
+        "key": "116",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersUltimate_1"
+    },
+    "117": {
+        "key": "117",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersUltimate_2"
+    },
+    "118": {
+        "key": "118",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersAbsolute_1"
+    },
+    "119": {
+        "key": "119",
+        "linkId": "offerTowerAxeThrowersShopScheduler",
+        "offerId": "offerTowerAxeThrowersAbsolute_2"
+    },
+    "120": {
+        "key": "120",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "TowerAxeThrowersBattlePassUnlockLevel_1"
+    },
+    "121": {
+        "key": "121",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "TowerAxeThrowersBattlePassUnlockLevel_5"
+    },
+    "122": {
+        "key": "122",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "TowerAxeThrowersBattlePassUnlockLevel_10"
+    },
+    "123": {
+        "key": "123",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "offer_TowerAxeThrowersBattlePass"
+    },
+    "124": {
+        "key": "124",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "offer_TowerAxeThrowersBattlePassAndLevels"
+    },
+    "125": {
+        "key": "125",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "offer_advancedTowerAxeThrowersBattlePass"
+    },
+    "126": {
+        "key": "126",
+        "linkId": "offerTowerAxeThrowersBpScheduler",
+        "offerId": "offer_advancedTowerAxeThrowersBattlePassAndLevels"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "offerBeginner1": {
+        "key": "offerBeginner1",
+        "title": "beginnerOffer_title",
+        "description": "beginnerOffer_description",
+        "profitBadgeAmount": 800,
+        "entries": [
+            {
+                "minCampaignLevel": 0,
+                "goldAmount": 30000,
+                "gemAmount": 200,
+                "badgesX2Amount": 5,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            },
+            {
+                "minCampaignLevel": 100,
+                "goldAmount": 60000,
+                "gemAmount": 250,
+                "badgesX2Amount": 10,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            },
+            {
+                "minCampaignLevel": 250,
+                "goldAmount": 90000,
+                "gemAmount": 300,
+                "badgesX2Amount": 15,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            },
+            {
+                "minCampaignLevel": 500,
+                "goldAmount": 120000,
+                "gemAmount": 350,
+                "badgesX2Amount": 20,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            },
+            {
+                "minCampaignLevel": 750,
+                "goldAmount": 150000,
+                "gemAmount": 400,
+                "badgesX2Amount": 25,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            },
+            {
+                "minCampaignLevel": 1000,
+                "goldAmount": 150000,
+                "gemAmount": 400,
+                "badgesX2Amount": 25,
+                "heroId": "swordmasterHero",
+                "heroAmount": 1,
+                "troopsLevelId": "hunter_1",
+                "troopsAmount": 1
+            }
+        ],
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": "boughtOncePurchaseCriteria",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_beginnerBundle",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

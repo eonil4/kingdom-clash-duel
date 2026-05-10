@@ -1,0 +1,156 @@
+{
+    "1": {
+        "key": "1",
+        "oldLevelFromIn": 401,
+        "oldLevelToIn": 750,
+        "newLevelFromIn": 360,
+        "newLevelToIn": 390
+    },
+    "2": {
+        "key": "2",
+        "oldLevelFromIn": 751,
+        "oldLevelToIn": 1000,
+        "newLevelFromIn": 390,
+        "newLevelToIn": 450
+    },
+    "3": {
+        "key": "3",
+        "oldLevelFromIn": 1001,
+        "oldLevelToIn": 1250,
+        "newLevelFromIn": 450,
+        "newLevelToIn": 550
+    },
+    "4": {
+        "key": "4",
+        "oldLevelFromIn": 1251,
+        "oldLevelToIn": 1500,
+        "newLevelFromIn": 550,
+        "newLevelToIn": 690
+    },
+    "5": {
+        "key": "5",
+        "oldLevelFromIn": 1501,
+        "oldLevelToIn": 1750,
+        "newLevelFromIn": 690,
+        "newLevelToIn": 770
+    },
+    "6": {
+        "key": "6",
+        "oldLevelFromIn": 1751,
+        "oldLevelToIn": 2000,
+        "newLevelFromIn": 770,
+        "newLevelToIn": 840
+    },
+    "7": {
+        "key": "7",
+        "oldLevelFromIn": 2001,
+        "oldLevelToIn": 2500,
+        "newLevelFromIn": 840,
+        "newLevelToIn": 1000
+    },
+    "8": {
+        "key": "8",
+        "oldLevelFromIn": 2501,
+        "oldLevelToIn": 3000,
+        "newLevelFromIn": 1000,
+        "newLevelToIn": 1340
+    },
+    "9": {
+        "key": "9",
+        "oldLevelFromIn": 3001,
+        "oldLevelToIn": 3500,
+        "newLevelFromIn": 1340,
+        "newLevelToIn": 1580
+    },
+    "10": {
+        "key": "10",
+        "oldLevelFromIn": 3501,
+        "oldLevelToIn": 4000,
+        "newLevelFromIn": 1580,
+        "newLevelToIn": 1830
+    },
+    "11": {
+        "key": "11",
+        "oldLevelFromIn": 4001,
+        "oldLevelToIn": 4500,
+        "newLevelFromIn": 1830,
+        "newLevelToIn": 2000
+    },
+    "12": {
+        "key": "12",
+        "oldLevelFromIn": 4501,
+        "oldLevelToIn": 5000,
+        "newLevelFromIn": 2000,
+        "newLevelToIn": 2230
+    },
+    "13": {
+        "key": "13",
+        "oldLevelFromIn": 5001,
+        "oldLevelToIn": 5500,
+        "newLevelFromIn": 2230,
+        "newLevelToIn": 2490
+    },
+    "14": {
+        "key": "14",
+        "oldLevelFromIn": 5501,
+        "oldLevelToIn": 6000,
+        "newLevelFromIn": 2490,
+        "newLevelToIn": 2660
+    },
+    "15": {
+        "key": "15",
+        "oldLevelFromIn": 6001,
+        "oldLevelToIn": 6500,
+        "newLevelFromIn": 2660,
+        "newLevelToIn": 2830
+    },
+    "16": {
+        "key": "16",
+        "oldLevelFromIn": 6501,
+        "oldLevelToIn": 7000,
+        "newLevelFromIn": 2830,
+        "newLevelToIn": 3060
+    },
+    "17": {
+        "key": "17",
+        "oldLevelFromIn": 7001,
+        "oldLevelToIn": 7500,
+        "newLevelFromIn": 3060,
+        "newLevelToIn": 3330
+    },
+    "18": {
+        "key": "18",
+        "oldLevelFromIn": 7501,
+        "oldLevelToIn": 8000,
+        "newLevelFromIn": 3330,
+        "newLevelToIn": 3690
+    },
+    "19": {
+        "key": "19",
+        "oldLevelFromIn": 8001,
+        "oldLevelToIn": 8500,
+        "newLevelFromIn": 3690,
+        "newLevelToIn": 3930
+    },
+    "20": {
+        "key": "20",
+        "oldLevelFromIn": 8501,
+        "oldLevelToIn": 9000,
+        "newLevelFromIn": 3930,
+        "newLevelToIn": 4190
+    },
+    "21": {
+        "key": "21",
+        "oldLevelFromIn": 9001,
+        "oldLevelToIn": 9500,
+        "newLevelFromIn": 4190,
+        "newLevelToIn": 4460
+    },
+    "22": {
+        "key": "22",
+        "oldLevelFromIn": 9501,
+        "oldLevelToIn": 10000,
+        "newLevelFromIn": 4460,
+        "newLevelToIn": 5250
+    }
+}

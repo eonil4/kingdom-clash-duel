@@ -1,0 +1,14 @@
+{
+    "headhunt_normal": {
+        "key": "headhunt_normal"
+    },
+    "headhunt_hard": {
+        "key": "headhunt_hard"
+    },
+    "hand_of_midas": {
+        "key": "hand_of_midas"
+    },
+    "vip_subscription": {
+        "key": "vip_subscription"
+    }
+}

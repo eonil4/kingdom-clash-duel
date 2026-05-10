@@ -1,0 +1,101 @@
+{
+    "aiDisabled": {
+        "key": "aiDisabled"
+    },
+    "canNotMove": {
+        "key": "canNotMove"
+    },
+    "canNotAttack": {
+        "key": "canNotAttack"
+    },
+    "canNotSpecialAttack": {
+        "key": "canNotSpecialAttack"
+    },
+    "isBoss": {
+        "key": "isBoss"
+    },
+    "isHero": {
+        "key": "isHero"
+    },
+    "isMindControlled": {
+        "key": "isMindControlled"
+    },
+    "invulnerable": {
+        "key": "invulnerable"
+    },
+    "unTargetable": {
+        "key": "unTargetable"
+    },
+    "fear": {
+        "key": "fear"
+    },
+    "summonDarknessOnDeath": {
+        "key": "summonDarknessOnDeath"
+    },
+    "chargeDarknessOnDeath": {
+        "key": "chargeDarknessOnDeath"
+    },
+    "isHexed": {
+        "key": "isHexed"
+    },
+    "fearImmune": {
+        "key": "fearImmune"
+    },
+    "multiShotDebuffUnTargetable": {
+        "key": "multiShotDebuffUnTargetable"
+    },
+    "vortex": {
+        "key": "vortex"
+    },
+    "ghostShipDebuff": {
+        "key": "ghostShipDebuff"
+    },
+    "chargeDarkness": {
+        "key": "chargeDarkness"
+    },
+    "controlImmune": {
+        "key": "controlImmune"
+    },
+    "customMove": {
+        "key": "customMove"
+    },
+    "tentacleImmune": {
+        "key": "tentacleImmune"
+    },
+    "ignoreArmyCount": {
+        "key": "ignoreArmyCount"
+    },
+    "darknessInvulnerable": {
+        "key": "darknessInvulnerable"
+    },
+    "castImmune": {
+        "key": "castImmune"
+    },
+    "negativeDebuff": {
+        "key": "negativeDebuff"
+    },
+    "empoweredAttack": {
+        "key": "empoweredAttack"
+    },
+    "devouredByKraken": {
+        "key": "devouredByKraken"
+    },
+    "healImmune": {
+        "key": "healImmune"
+    },
+    "fatMode": {
+        "key": "fatMode"
+    },
+    "noDamage": {
+        "key": "noDamage"
+    },
+    "oneShot": {
+        "key": "oneShot"
+    },
+    "noDamageDot": {
+        "key": "noDamageDot"
+    },
+    "shieldDashImmune": {
+        "key": "shieldDashImmune"
+    }
+}

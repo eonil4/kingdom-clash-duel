@@ -1,0 +1,42 @@
+{
+    "aoeArmor": {
+        "key": "aoeArmor",
+        "title": "aoeArmorTitle",
+        "description": "aoeArmorDescription",
+        "ownershipBonusHint": "description_ownership_bonus_hint",
+        "ownershipBonusPerLevel": 0.2,
+        "icon": "aoeArmorIcon",
+        "slot": "Armor",
+        "hintId": "aoeArmor"
+    },
+    "aoeWeapon": {
+        "key": "aoeWeapon",
+        "title": "aoeSwordTitle",
+        "description": "aoeSwordDescription",
+        "ownershipBonusHint": "description_ownership_bonus_hint",
+        "ownershipBonusPerLevel": 0.2,
+        "icon": "aoeWeaponIcon",
+        "slot": "Weapon",
+        "hintId": "aoeWeapon"
+    },
+    "reflectArmor": {
+        "key": "reflectArmor",
+        "title": "reflectArmorTitle",
+        "description": "reflectArmorDescription",
+        "ownershipBonusHint": "description_ownership_bonus_hint",
+        "ownershipBonusPerLevel": 0.2,
+        "icon": "reflectArmorIcon",
+        "slot": "Armor",
+        "hintId": "reflectArmor"
+    },
+    "reflectWeapon": {
+        "key": "reflectWeapon",
+        "title": "reflectSwordTitle",
+        "description": "reflectSwordDescription",
+        "ownershipBonusHint": "description_ownership_bonus_hint",
+        "ownershipBonusPerLevel": 0.2,
+        "icon": "reflectWeaponIcon",
+        "slot": "Weapon",
+        "hintId": "reflectWeapon"
+    }
+}

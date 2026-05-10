@@ -1,0 +1,10 @@
+{
+    "TowerBpAxeThrowersSettings": {
+        "key": "TowerBpAxeThrowersSettings",
+        "battlepassLinkId": "SquadEvent_axeThrowers",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "permanentQuestSetSpecialId": "SetPermanent_event_axeThrowers",
+        "permanentQuestRatioScheduleId": "PermanentQuestRatioEventAxeThrowers",
+        "featuredUnitId": "axeThrowers"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "HeroLobby_Mage": {
+        "key": "HeroLobby_Mage",
+        "lobbyPrefab": "HeroLobby_Mage"
+    },
+    "HeroLobby_Undead": {
+        "key": "HeroLobby_Undead",
+        "lobbyPrefab": "HeroLobby_Undead"
+    },
+    "HeroLobby_Human": {
+        "key": "HeroLobby_Human",
+        "lobbyPrefab": "HeroLobby_Human"
+    },
+    "HeroLobby_Default": {
+        "key": "HeroLobby_Default",
+        "lobbyPrefab": "HeroLobby_Default"
+    },
+    "HeroLobby_Elevate": {
+        "key": "HeroLobby_Elevate",
+        "lobbyPrefab": "HeroLobby_Elevate"
+    },
+    "HeroLobby_Demon": {
+        "key": "HeroLobby_Demon",
+        "lobbyPrefab": "HeroLobby_Demon"
+    }
+}

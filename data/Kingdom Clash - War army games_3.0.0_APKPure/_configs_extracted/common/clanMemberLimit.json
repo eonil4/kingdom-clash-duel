@@ -1,0 +1,77 @@
+{
+    "clanRank_1": {
+        "key": "clanRank_1",
+        "level": 1,
+        "limit": 50
+    },
+    "clanRank_2": {
+        "key": "clanRank_2",
+        "level": 2,
+        "limit": 50
+    },
+    "clanRank_3": {
+        "key": "clanRank_3",
+        "level": 3,
+        "limit": 50
+    },
+    "clanRank_4": {
+        "key": "clanRank_4",
+        "level": 4,
+        "limit": 50
+    },
+    "clanRank_5": {
+        "key": "clanRank_5",
+        "level": 5,
+        "limit": 50
+    },
+    "clanRank_6": {
+        "key": "clanRank_6",
+        "level": 6,
+        "limit": 50
+    },
+    "clanRank_7": {
+        "key": "clanRank_7",
+        "level": 7,
+        "limit": 50
+    },
+    "clanRank_8": {
+        "key": "clanRank_8",
+        "level": 8,
+        "limit": 50
+    },
+    "clanRank_9": {
+        "key": "clanRank_9",
+        "level": 9,
+        "limit": 50
+    },
+    "clanRank_10": {
+        "key": "clanRank_10",
+        "level": 10,
+        "limit": 50
+    },
+    "clanRank_11": {
+        "key": "clanRank_11",
+        "level": 11,
+        "limit": 50
+    },
+    "clanRank_12": {
+        "key": "clanRank_12",
+        "level": 12,
+        "limit": 50
+    },
+    "clanRank_13": {
+        "key": "clanRank_13",
+        "level": 13,
+        "limit": 50
+    },
+    "clanRank_14": {
+        "key": "clanRank_14",
+        "level": 14,
+        "limit": 50
+    },
+    "clanRank_15": {
+        "key": "clanRank_15",
+        "level": 15,
+        "limit": 50
+    }
+}

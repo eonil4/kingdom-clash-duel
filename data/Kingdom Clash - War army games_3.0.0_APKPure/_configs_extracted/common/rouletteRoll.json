@@ -1,0 +1,2198 @@
+{
+    "darkKnightRoulette_roll_1": {
+        "key": "darkKnightRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_darkKnight_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_2": {
+        "key": "darkKnightRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_3": {
+        "key": "darkKnightRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_undeadHeadless_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_4": {
+        "key": "darkKnightRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_5": {
+        "key": "darkKnightRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_6": {
+        "key": "darkKnightRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_7": {
+        "key": "darkKnightRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_darkKnight_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_8": {
+        "key": "darkKnightRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_9": {
+        "key": "darkKnightRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_undeadHeadless_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_10": {
+        "key": "darkKnightRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_11": {
+        "key": "darkKnightRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "darkKnightRoulette_roll_12": {
+        "key": "darkKnightRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_darkKnight",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_1": {
+        "key": "accurateMeridaRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_accurateMerida_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_2": {
+        "key": "accurateMeridaRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_3": {
+        "key": "accurateMeridaRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_hunter_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_4": {
+        "key": "accurateMeridaRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_5": {
+        "key": "accurateMeridaRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_6": {
+        "key": "accurateMeridaRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_7": {
+        "key": "accurateMeridaRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_accurateMerida_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_8": {
+        "key": "accurateMeridaRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_9": {
+        "key": "accurateMeridaRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_hunter_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_10": {
+        "key": "accurateMeridaRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_11": {
+        "key": "accurateMeridaRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "accurateMeridaRoulette_roll_12": {
+        "key": "accurateMeridaRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_accurateMerida",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_1": {
+        "key": "generalRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_general_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_2": {
+        "key": "generalRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_3": {
+        "key": "generalRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_hunter_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_4": {
+        "key": "generalRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_5": {
+        "key": "generalRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_6": {
+        "key": "generalRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_7": {
+        "key": "generalRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_general_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_8": {
+        "key": "generalRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_9": {
+        "key": "generalRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_hunter_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_10": {
+        "key": "generalRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_11": {
+        "key": "generalRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "generalRoulette_roll_12": {
+        "key": "generalRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_general",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_1": {
+        "key": "doubleShieldRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_doubleShield_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_2": {
+        "key": "doubleShieldRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_3": {
+        "key": "doubleShieldRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_paladin_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_4": {
+        "key": "doubleShieldRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_5": {
+        "key": "doubleShieldRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_6": {
+        "key": "doubleShieldRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_7": {
+        "key": "doubleShieldRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_doubleShield_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_8": {
+        "key": "doubleShieldRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_9": {
+        "key": "doubleShieldRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_paladin_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_10": {
+        "key": "doubleShieldRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_11": {
+        "key": "doubleShieldRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "doubleShieldRoulette_roll_12": {
+        "key": "doubleShieldRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_doubleShield",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_1": {
+        "key": "cursedGiantRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_cursedGiant_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_2": {
+        "key": "cursedGiantRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_3": {
+        "key": "cursedGiantRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_4": {
+        "key": "cursedGiantRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_5": {
+        "key": "cursedGiantRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_6": {
+        "key": "cursedGiantRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_7": {
+        "key": "cursedGiantRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_cursedGiant_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_8": {
+        "key": "cursedGiantRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_9": {
+        "key": "cursedGiantRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_monk_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_10": {
+        "key": "cursedGiantRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_11": {
+        "key": "cursedGiantRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "cursedGiantRoulette_roll_12": {
+        "key": "cursedGiantRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_cursedGiant",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_1": {
+        "key": "undeadWarriorRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_undeadWarrior_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_2": {
+        "key": "undeadWarriorRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_3": {
+        "key": "undeadWarriorRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_skeletonWarrior_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_4": {
+        "key": "undeadWarriorRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_5": {
+        "key": "undeadWarriorRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_6": {
+        "key": "undeadWarriorRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_7": {
+        "key": "undeadWarriorRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_undeadWarrior_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_8": {
+        "key": "undeadWarriorRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_9": {
+        "key": "undeadWarriorRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_skeletonWarrior_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_10": {
+        "key": "undeadWarriorRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_11": {
+        "key": "undeadWarriorRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "undeadWarriorRoulette_roll_12": {
+        "key": "undeadWarriorRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_undeadWarrior",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_1": {
+        "key": "lightningElementalRoulette_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 1,
+        "weight": 3,
+        "rewardId": "hero_lightningElemental_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_2": {
+        "key": "lightningElementalRoulette_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 2,
+        "weight": 12,
+        "rewardId": "currency_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_3": {
+        "key": "lightningElementalRoulette_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 3,
+        "weight": 10,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_4": {
+        "key": "lightningElementalRoulette_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 4,
+        "weight": 60,
+        "rewardId": "currency_Gold_15000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_5": {
+        "key": "lightningElementalRoulette_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 5,
+        "weight": 55,
+        "rewardId": "BadgesX2_5",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_6": {
+        "key": "lightningElementalRoulette_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 6,
+        "weight": 20,
+        "rewardId": "currency_roulette_spin_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_7": {
+        "key": "lightningElementalRoulette_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 7,
+        "weight": 1,
+        "rewardId": "hero_lightningElemental_2",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_8": {
+        "key": "lightningElementalRoulette_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 8,
+        "weight": 2,
+        "rewardId": "currency_Gem_400",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_9": {
+        "key": "lightningElementalRoulette_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 9,
+        "weight": 3,
+        "rewardId": "squad_stormSpearman_4_1",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_10": {
+        "key": "lightningElementalRoulette_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 10,
+        "weight": 20,
+        "rewardId": "currency_Gold_40000",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_11": {
+        "key": "lightningElementalRoulette_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 11,
+        "weight": 6,
+        "rewardId": "BadgesX2_10",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "lightningElementalRoulette_roll_12": {
+        "key": "lightningElementalRoulette_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_lightningElemental",
+        "order": 12,
+        "weight": 8,
+        "rewardId": "currency_roulette_spin_3",
+        "isGuaranteed": false,
+        "rarityId": null
+    },
+    "casinoRoulette_1_roll_1": {
+        "key": "casinoRoulette_1_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_2": {
+        "key": "casinoRoulette_1_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_3": {
+        "key": "casinoRoulette_1_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 3,
+        "weight": 100,
+        "rewardId": "mythHeroElevateChest",
+        "isGuaranteed": true,
+        "rarityId": "mythic"
+    },
+    "casinoRoulette_1_roll_4": {
+        "key": "casinoRoulette_1_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_5": {
+        "key": "casinoRoulette_1_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 5,
+        "weight": 500,
+        "rewardId": "squad_mountainsChampion_1_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_1_roll_6": {
+        "key": "casinoRoulette_1_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_7": {
+        "key": "casinoRoulette_1_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_8": {
+        "key": "casinoRoulette_1_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 8,
+        "weight": 700,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_1_roll_9": {
+        "key": "casinoRoulette_1_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 9,
+        "weight": 1100,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_1_roll_10": {
+        "key": "casinoRoulette_1_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 10,
+        "weight": 2145,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_11": {
+        "key": "casinoRoulette_1_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_12": {
+        "key": "casinoRoulette_1_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 12,
+        "weight": 1100,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_1_roll_13": {
+        "key": "casinoRoulette_1_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_14": {
+        "key": "casinoRoulette_1_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 14,
+        "weight": 500,
+        "rewardId": "squad_phoenix_1_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_1_roll_15": {
+        "key": "casinoRoulette_1_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_1_roll_16": {
+        "key": "casinoRoulette_1_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_1",
+        "order": 16,
+        "weight": 700,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_2_roll_1": {
+        "key": "casinoRoulette_2_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_2": {
+        "key": "casinoRoulette_2_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_3": {
+        "key": "casinoRoulette_2_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 3,
+        "weight": 100,
+        "rewardId": "mythHeroDemonChest",
+        "isGuaranteed": true,
+        "rarityId": "mythic"
+    },
+    "casinoRoulette_2_roll_4": {
+        "key": "casinoRoulette_2_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_5": {
+        "key": "casinoRoulette_2_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 5,
+        "weight": 500,
+        "rewardId": "squad_mountainsChampion_1_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_2_roll_6": {
+        "key": "casinoRoulette_2_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_7": {
+        "key": "casinoRoulette_2_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_8": {
+        "key": "casinoRoulette_2_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 8,
+        "weight": 700,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_2_roll_9": {
+        "key": "casinoRoulette_2_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 9,
+        "weight": 1100,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_2_roll_10": {
+        "key": "casinoRoulette_2_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 10,
+        "weight": 2145,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_11": {
+        "key": "casinoRoulette_2_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_12": {
+        "key": "casinoRoulette_2_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 12,
+        "weight": 1100,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_2_roll_13": {
+        "key": "casinoRoulette_2_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_14": {
+        "key": "casinoRoulette_2_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 14,
+        "weight": 500,
+        "rewardId": "squad_phoenix_1_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_2_roll_15": {
+        "key": "casinoRoulette_2_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_2_roll_16": {
+        "key": "casinoRoulette_2_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_2",
+        "order": 16,
+        "weight": 700,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectWeapon_roll_1": {
+        "key": "casinoRoulette_reflectWeapon_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_2": {
+        "key": "casinoRoulette_reflectWeapon_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_3": {
+        "key": "casinoRoulette_reflectWeapon_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "casinoReflectWeapon",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_roll_4": {
+        "key": "casinoRoulette_reflectWeapon_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_5": {
+        "key": "casinoRoulette_reflectWeapon_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "oneWeaponChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_roll_6": {
+        "key": "casinoRoulette_reflectWeapon_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_7": {
+        "key": "casinoRoulette_reflectWeapon_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_8": {
+        "key": "casinoRoulette_reflectWeapon_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectWeapon_roll_9": {
+        "key": "casinoRoulette_reflectWeapon_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectWeapon_roll_10": {
+        "key": "casinoRoulette_reflectWeapon_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_11": {
+        "key": "casinoRoulette_reflectWeapon_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_12": {
+        "key": "casinoRoulette_reflectWeapon_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectWeapon_roll_13": {
+        "key": "casinoRoulette_reflectWeapon_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_14": {
+        "key": "casinoRoulette_reflectWeapon_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "twoWeaponChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_roll_15": {
+        "key": "casinoRoulette_reflectWeapon_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_roll_16": {
+        "key": "casinoRoulette_reflectWeapon_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectArmor_roll_1": {
+        "key": "casinoRoulette_reflectArmor_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_2": {
+        "key": "casinoRoulette_reflectArmor_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_3": {
+        "key": "casinoRoulette_reflectArmor_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "casinoReflectArmor",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_roll_4": {
+        "key": "casinoRoulette_reflectArmor_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_5": {
+        "key": "casinoRoulette_reflectArmor_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "oneArmorChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_roll_6": {
+        "key": "casinoRoulette_reflectArmor_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_7": {
+        "key": "casinoRoulette_reflectArmor_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_8": {
+        "key": "casinoRoulette_reflectArmor_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectArmor_roll_9": {
+        "key": "casinoRoulette_reflectArmor_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectArmor_roll_10": {
+        "key": "casinoRoulette_reflectArmor_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_11": {
+        "key": "casinoRoulette_reflectArmor_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_12": {
+        "key": "casinoRoulette_reflectArmor_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectArmor_roll_13": {
+        "key": "casinoRoulette_reflectArmor_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_14": {
+        "key": "casinoRoulette_reflectArmor_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "twoArmorChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_roll_15": {
+        "key": "casinoRoulette_reflectArmor_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_roll_16": {
+        "key": "casinoRoulette_reflectArmor_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeWeapon_roll_1": {
+        "key": "casinoRoulette_aoeWeapon_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_2": {
+        "key": "casinoRoulette_aoeWeapon_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_3": {
+        "key": "casinoRoulette_aoeWeapon_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "casinoAoeWeapon",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_roll_4": {
+        "key": "casinoRoulette_aoeWeapon_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_5": {
+        "key": "casinoRoulette_aoeWeapon_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "oneWeaponChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_roll_6": {
+        "key": "casinoRoulette_aoeWeapon_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_7": {
+        "key": "casinoRoulette_aoeWeapon_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_8": {
+        "key": "casinoRoulette_aoeWeapon_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeWeapon_roll_9": {
+        "key": "casinoRoulette_aoeWeapon_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeWeapon_roll_10": {
+        "key": "casinoRoulette_aoeWeapon_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_11": {
+        "key": "casinoRoulette_aoeWeapon_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_12": {
+        "key": "casinoRoulette_aoeWeapon_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeWeapon_roll_13": {
+        "key": "casinoRoulette_aoeWeapon_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_14": {
+        "key": "casinoRoulette_aoeWeapon_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "twoWeaponChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_roll_15": {
+        "key": "casinoRoulette_aoeWeapon_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_roll_16": {
+        "key": "casinoRoulette_aoeWeapon_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeArmor_roll_1": {
+        "key": "casinoRoulette_aoeArmor_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_2": {
+        "key": "casinoRoulette_aoeArmor_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_3": {
+        "key": "casinoRoulette_aoeArmor_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "casinoAoeArmor",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_roll_4": {
+        "key": "casinoRoulette_aoeArmor_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_5": {
+        "key": "casinoRoulette_aoeArmor_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "oneArmorChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_roll_6": {
+        "key": "casinoRoulette_aoeArmor_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_7": {
+        "key": "casinoRoulette_aoeArmor_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_8": {
+        "key": "casinoRoulette_aoeArmor_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeArmor_roll_9": {
+        "key": "casinoRoulette_aoeArmor_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeArmor_roll_10": {
+        "key": "casinoRoulette_aoeArmor_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_11": {
+        "key": "casinoRoulette_aoeArmor_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_12": {
+        "key": "casinoRoulette_aoeArmor_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeArmor_roll_13": {
+        "key": "casinoRoulette_aoeArmor_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_14": {
+        "key": "casinoRoulette_aoeArmor_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "twoArmorChest",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_roll_15": {
+        "key": "casinoRoulette_aoeArmor_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_roll_16": {
+        "key": "casinoRoulette_aoeArmor_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_1": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_2": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_3": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "selection_reflectWeapon_0",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_4": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_5": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "selection_reflectWeapon_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_6": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_7": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_8": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_9": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_10": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_11": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_12": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_13": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_14": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "selection_reflectWeapon_2",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_15": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectWeapon_new_roll_16": {
+        "key": "casinoRoulette_reflectWeapon_new_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectWeapon_new",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectArmor_new_roll_1": {
+        "key": "casinoRoulette_reflectArmor_new_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_2": {
+        "key": "casinoRoulette_reflectArmor_new_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_3": {
+        "key": "casinoRoulette_reflectArmor_new_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "selection_reflectArmor_0",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_new_roll_4": {
+        "key": "casinoRoulette_reflectArmor_new_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_5": {
+        "key": "casinoRoulette_reflectArmor_new_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "selection_reflectArmor_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_new_roll_6": {
+        "key": "casinoRoulette_reflectArmor_new_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_7": {
+        "key": "casinoRoulette_reflectArmor_new_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_8": {
+        "key": "casinoRoulette_reflectArmor_new_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_reflectArmor_new_roll_9": {
+        "key": "casinoRoulette_reflectArmor_new_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectArmor_new_roll_10": {
+        "key": "casinoRoulette_reflectArmor_new_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_11": {
+        "key": "casinoRoulette_reflectArmor_new_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_12": {
+        "key": "casinoRoulette_reflectArmor_new_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_reflectArmor_new_roll_13": {
+        "key": "casinoRoulette_reflectArmor_new_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_14": {
+        "key": "casinoRoulette_reflectArmor_new_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "selection_reflectArmor_2",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_reflectArmor_new_roll_15": {
+        "key": "casinoRoulette_reflectArmor_new_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_reflectArmor_new_roll_16": {
+        "key": "casinoRoulette_reflectArmor_new_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_reflectArmor_new",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_1": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_2": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_3": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "selection_aoeWeapon_0",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_4": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_5": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "selection_aoeWeapon_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_6": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_7": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_8": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_9": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_10": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_11": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_12": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_13": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_14": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "selection_aoeWeapon_2",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_15": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeWeapon_new_roll_16": {
+        "key": "casinoRoulette_aoeWeapon_new_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeWeapon_new",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeArmor_new_roll_1": {
+        "key": "casinoRoulette_aoeArmor_new_roll_1",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 1,
+        "weight": 1,
+        "rewardId": "currencyCasino_Gold_1000000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_2": {
+        "key": "casinoRoulette_aoeArmor_new_roll_2",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 2,
+        "weight": 150,
+        "rewardId": "currencyCasino_Gem_300",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_3": {
+        "key": "casinoRoulette_aoeArmor_new_roll_3",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 3,
+        "weight": 300,
+        "rewardId": "selection_aoeArmor_0",
+        "isGuaranteed": true,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_new_roll_4": {
+        "key": "casinoRoulette_aoeArmor_new_roll_4",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 4,
+        "weight": 1000,
+        "rewardId": "currencyCasino_Gold_30000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_5": {
+        "key": "casinoRoulette_aoeArmor_new_roll_5",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 5,
+        "weight": 1200,
+        "rewardId": "selection_aoeArmor_1",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_new_roll_6": {
+        "key": "casinoRoulette_aoeArmor_new_roll_6",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 6,
+        "weight": 200,
+        "rewardId": "currencyCasino_Gem_200",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_7": {
+        "key": "casinoRoulette_aoeArmor_new_roll_7",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 7,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gold_500000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_8": {
+        "key": "casinoRoulette_aoeArmor_new_roll_8",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 8,
+        "weight": 500,
+        "rewardId": "squad_monk_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    },
+    "casinoRoulette_aoeArmor_new_roll_9": {
+        "key": "casinoRoulette_aoeArmor_new_roll_9",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 9,
+        "weight": 800,
+        "rewardId": "squad_bomber_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeArmor_new_roll_10": {
+        "key": "casinoRoulette_aoeArmor_new_roll_10",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 10,
+        "weight": 2045,
+        "rewardId": "currencyCasino_Gold_10000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_11": {
+        "key": "casinoRoulette_aoeArmor_new_roll_11",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 11,
+        "weight": 600,
+        "rewardId": "currencyCasino_Gem_100",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_12": {
+        "key": "casinoRoulette_aoeArmor_new_roll_12",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 12,
+        "weight": 800,
+        "rewardId": "squad_assasin_1_1",
+        "isGuaranteed": false,
+        "rarityId": "rare"
+    },
+    "casinoRoulette_aoeArmor_new_roll_13": {
+        "key": "casinoRoulette_aoeArmor_new_roll_13",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 13,
+        "weight": 1200,
+        "rewardId": "currencyCasino_Gold_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_14": {
+        "key": "casinoRoulette_aoeArmor_new_roll_14",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 14,
+        "weight": 700,
+        "rewardId": "selection_aoeArmor_2",
+        "isGuaranteed": false,
+        "rarityId": "legendary"
+    },
+    "casinoRoulette_aoeArmor_new_roll_15": {
+        "key": "casinoRoulette_aoeArmor_new_roll_15",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 15,
+        "weight": 2,
+        "rewardId": "currencyCasino_Gem_20000",
+        "isGuaranteed": false,
+        "rarityId": "common"
+    },
+    "casinoRoulette_aoeArmor_new_roll_16": {
+        "key": "casinoRoulette_aoeArmor_new_roll_16",
+        "rouletteRollLinkId": "roulette_roll_link_casinoRoulette_aoeArmor_new",
+        "order": 16,
+        "weight": 500,
+        "rewardId": "squad_stormSpearman_1_1",
+        "isGuaranteed": false,
+        "rarityId": "epic"
+    }
+}

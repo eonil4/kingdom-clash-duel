@@ -1,0 +1,23 @@
+{
+    "Infantry": {
+        "key": "Infantry",
+        "prefab": "mwInfantry",
+        "speed": 6,
+        "attack": 1,
+        "hp": 1
+    },
+    "IronGuard": {
+        "key": "IronGuard",
+        "prefab": "mwIronGuard",
+        "speed": 4,
+        "attack": 1.6,
+        "hp": 1
+    },
+    "Lancer": {
+        "key": "Lancer",
+        "prefab": "mwLancer",
+        "speed": 8,
+        "attack": 1,
+        "hp": 1
+    }
+}

@@ -1,0 +1,5502 @@
+{
+    "1": {
+        "key": "1",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 1,
+        "power": 700,
+        "softReward": 2500,
+        "hardReward": 10,
+        "formationKey": "Level36"
+    },
+    "2": {
+        "key": "2",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 2,
+        "power": 900,
+        "softReward": 2900,
+        "hardReward": 0,
+        "formationKey": "Level37"
+    },
+    "3": {
+        "key": "3",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 3,
+        "power": 1200,
+        "softReward": 3300,
+        "hardReward": 0,
+        "formationKey": "Level38"
+    },
+    "4": {
+        "key": "4",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 4,
+        "power": 1600,
+        "softReward": 3700,
+        "hardReward": 30,
+        "formationKey": "Level39"
+    },
+    "5": {
+        "key": "5",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 5,
+        "power": 2100,
+        "softReward": 4100,
+        "hardReward": 0,
+        "formationKey": "Level40"
+    },
+    "6": {
+        "key": "6",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 6,
+        "power": 2500,
+        "softReward": 4500,
+        "hardReward": 0,
+        "formationKey": "Level41"
+    },
+    "7": {
+        "key": "7",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 7,
+        "power": 2800,
+        "softReward": 4900,
+        "hardReward": 0,
+        "formationKey": "Level42"
+    },
+    "8": {
+        "key": "8",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 8,
+        "power": 3000,
+        "softReward": 5300,
+        "hardReward": 0,
+        "formationKey": "Level43"
+    },
+    "9": {
+        "key": "9",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 9,
+        "power": 3200,
+        "softReward": 5700,
+        "hardReward": 0,
+        "formationKey": "Level44"
+    },
+    "10": {
+        "key": "10",
+        "levelSetId": "hh_set_normal",
+        "locationId": "desert",
+        "order": 10,
+        "power": 3400,
+        "softReward": 6100,
+        "hardReward": 50,
+        "formationKey": "Level45"
+    },
+    "11": {
+        "key": "11",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 11,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "12": {
+        "key": "12",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 12,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "13": {
+        "key": "13",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 13,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "14": {
+        "key": "14",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 14,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "15": {
+        "key": "15",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 15,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "16": {
+        "key": "16",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 16,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "17": {
+        "key": "17",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 17,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "18": {
+        "key": "18",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 18,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "19": {
+        "key": "19",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 19,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "20": {
+        "key": "20",
+        "levelSetId": "hh_set_hard",
+        "locationId": "winter",
+        "order": 20,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "21": {
+        "key": "21",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 21,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "22": {
+        "key": "22",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 22,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "23": {
+        "key": "23",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 23,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "24": {
+        "key": "24",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 24,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "25": {
+        "key": "25",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 25,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "26": {
+        "key": "26",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 26,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "27": {
+        "key": "27",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 27,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "28": {
+        "key": "28",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 28,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "29": {
+        "key": "29",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 29,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "30": {
+        "key": "30",
+        "levelSetId": "hh_set_hard_1",
+        "locationId": "winter",
+        "order": 30,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "31": {
+        "key": "31",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 31,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "32": {
+        "key": "32",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 32,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "33": {
+        "key": "33",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 33,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "34": {
+        "key": "34",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 34,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "35": {
+        "key": "35",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 35,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "36": {
+        "key": "36",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 36,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "37": {
+        "key": "37",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 37,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "38": {
+        "key": "38",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 38,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "39": {
+        "key": "39",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 39,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "40": {
+        "key": "40",
+        "levelSetId": "hh_set_hard_2",
+        "locationId": "winter",
+        "order": 40,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "41": {
+        "key": "41",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 41,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "42": {
+        "key": "42",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 42,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "43": {
+        "key": "43",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 43,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "44": {
+        "key": "44",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 44,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "45": {
+        "key": "45",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 45,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "46": {
+        "key": "46",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 46,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "47": {
+        "key": "47",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 47,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "48": {
+        "key": "48",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 48,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "49": {
+        "key": "49",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 49,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "50": {
+        "key": "50",
+        "levelSetId": "hh_set_hard_3",
+        "locationId": "winter",
+        "order": 50,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "51": {
+        "key": "51",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 51,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "52": {
+        "key": "52",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 52,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "53": {
+        "key": "53",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 53,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "54": {
+        "key": "54",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 54,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "55": {
+        "key": "55",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 55,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "56": {
+        "key": "56",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 56,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "57": {
+        "key": "57",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 57,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "58": {
+        "key": "58",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 58,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "59": {
+        "key": "59",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 59,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "60": {
+        "key": "60",
+        "levelSetId": "hh_set_hard_4",
+        "locationId": "winter",
+        "order": 60,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "61": {
+        "key": "61",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 61,
+        "power": 3000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "62": {
+        "key": "62",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 62,
+        "power": 3500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "63": {
+        "key": "63",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 63,
+        "power": 4000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "64": {
+        "key": "64",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 64,
+        "power": 4500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "65": {
+        "key": "65",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 65,
+        "power": 5000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "66": {
+        "key": "66",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 66,
+        "power": 5500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "67": {
+        "key": "67",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 67,
+        "power": 6000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "68": {
+        "key": "68",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 68,
+        "power": 6500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "69": {
+        "key": "69",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 69,
+        "power": 7000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "70": {
+        "key": "70",
+        "levelSetId": "hh_set_hard_5",
+        "locationId": "winter",
+        "order": 70,
+        "power": 7500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "71": {
+        "key": "71",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 71,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "72": {
+        "key": "72",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 72,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "73": {
+        "key": "73",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 73,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "74": {
+        "key": "74",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 74,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "75": {
+        "key": "75",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 75,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "76": {
+        "key": "76",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 76,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "77": {
+        "key": "77",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 77,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "78": {
+        "key": "78",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 78,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "79": {
+        "key": "79",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 79,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "80": {
+        "key": "80",
+        "levelSetId": "hh_set_hard_6",
+        "locationId": "winter",
+        "order": 80,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "81": {
+        "key": "81",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 81,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "82": {
+        "key": "82",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 82,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "83": {
+        "key": "83",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 83,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "84": {
+        "key": "84",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 84,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "85": {
+        "key": "85",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 85,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "86": {
+        "key": "86",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 86,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "87": {
+        "key": "87",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 87,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "88": {
+        "key": "88",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 88,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "89": {
+        "key": "89",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 89,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "90": {
+        "key": "90",
+        "levelSetId": "hh_set_hard_7",
+        "locationId": "winter",
+        "order": 90,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "91": {
+        "key": "91",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 91,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "92": {
+        "key": "92",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 92,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "93": {
+        "key": "93",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 93,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "94": {
+        "key": "94",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 94,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "95": {
+        "key": "95",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 95,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "96": {
+        "key": "96",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 96,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "97": {
+        "key": "97",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 97,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "98": {
+        "key": "98",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 98,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "99": {
+        "key": "99",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 99,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "100": {
+        "key": "100",
+        "levelSetId": "hh_set_hard_8",
+        "locationId": "winter",
+        "order": 100,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "101": {
+        "key": "101",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 101,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "102": {
+        "key": "102",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 102,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "103": {
+        "key": "103",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 103,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "104": {
+        "key": "104",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 104,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "105": {
+        "key": "105",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 105,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "106": {
+        "key": "106",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 106,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "107": {
+        "key": "107",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 107,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "108": {
+        "key": "108",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 108,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "109": {
+        "key": "109",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 109,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "110": {
+        "key": "110",
+        "levelSetId": "hh_set_hard_9",
+        "locationId": "winter",
+        "order": 110,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "111": {
+        "key": "111",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 111,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "112": {
+        "key": "112",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 112,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "113": {
+        "key": "113",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 113,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "114": {
+        "key": "114",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 114,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "115": {
+        "key": "115",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 115,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "116": {
+        "key": "116",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 116,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "117": {
+        "key": "117",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 117,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "118": {
+        "key": "118",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 118,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "119": {
+        "key": "119",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 119,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "120": {
+        "key": "120",
+        "levelSetId": "hh_set_hard_10",
+        "locationId": "winter",
+        "order": 120,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "121": {
+        "key": "121",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 121,
+        "power": 8000,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "122": {
+        "key": "122",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 122,
+        "power": 8500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "123": {
+        "key": "123",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 123,
+        "power": 9000,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "124": {
+        "key": "124",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 124,
+        "power": 9500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "125": {
+        "key": "125",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 125,
+        "power": 10000,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "126": {
+        "key": "126",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 126,
+        "power": 10500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "127": {
+        "key": "127",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 127,
+        "power": 11000,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "128": {
+        "key": "128",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 128,
+        "power": 11500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "129": {
+        "key": "129",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 129,
+        "power": 12000,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "130": {
+        "key": "130",
+        "levelSetId": "hh_set_hard_11",
+        "locationId": "winter",
+        "order": 130,
+        "power": 12500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "131": {
+        "key": "131",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 131,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "132": {
+        "key": "132",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 132,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "133": {
+        "key": "133",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 133,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "134": {
+        "key": "134",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 134,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "135": {
+        "key": "135",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 135,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "136": {
+        "key": "136",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 136,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "137": {
+        "key": "137",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 137,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "138": {
+        "key": "138",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 138,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "139": {
+        "key": "139",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 139,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "140": {
+        "key": "140",
+        "levelSetId": "hh_set_hard_12",
+        "locationId": "winter",
+        "order": 140,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "141": {
+        "key": "141",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 141,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "142": {
+        "key": "142",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 142,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "143": {
+        "key": "143",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 143,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "144": {
+        "key": "144",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 144,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "145": {
+        "key": "145",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 145,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "146": {
+        "key": "146",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 146,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "147": {
+        "key": "147",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 147,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "148": {
+        "key": "148",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 148,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "149": {
+        "key": "149",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 149,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "150": {
+        "key": "150",
+        "levelSetId": "hh_set_hard_13",
+        "locationId": "winter",
+        "order": 150,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "151": {
+        "key": "151",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 151,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "152": {
+        "key": "152",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 152,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "153": {
+        "key": "153",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 153,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "154": {
+        "key": "154",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 154,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "155": {
+        "key": "155",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 155,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "156": {
+        "key": "156",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 156,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "157": {
+        "key": "157",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 157,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "158": {
+        "key": "158",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 158,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "159": {
+        "key": "159",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 159,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "160": {
+        "key": "160",
+        "levelSetId": "hh_set_hard_14",
+        "locationId": "winter",
+        "order": 160,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "161": {
+        "key": "161",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 161,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "162": {
+        "key": "162",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 162,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "163": {
+        "key": "163",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 163,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "164": {
+        "key": "164",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 164,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "165": {
+        "key": "165",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 165,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "166": {
+        "key": "166",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 166,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "167": {
+        "key": "167",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 167,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "168": {
+        "key": "168",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 168,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "169": {
+        "key": "169",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 169,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "170": {
+        "key": "170",
+        "levelSetId": "hh_set_hard_15",
+        "locationId": "winter",
+        "order": 170,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "171": {
+        "key": "171",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 171,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "172": {
+        "key": "172",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 172,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "173": {
+        "key": "173",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 173,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "174": {
+        "key": "174",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 174,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "175": {
+        "key": "175",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 175,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "176": {
+        "key": "176",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 176,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "177": {
+        "key": "177",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 177,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "178": {
+        "key": "178",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 178,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "179": {
+        "key": "179",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 179,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "180": {
+        "key": "180",
+        "levelSetId": "hh_set_hard_16",
+        "locationId": "winter",
+        "order": 180,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "181": {
+        "key": "181",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 181,
+        "power": 13500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "182": {
+        "key": "182",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 182,
+        "power": 14500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "183": {
+        "key": "183",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 183,
+        "power": 15500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "184": {
+        "key": "184",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 184,
+        "power": 16500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "185": {
+        "key": "185",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 185,
+        "power": 17500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "186": {
+        "key": "186",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 186,
+        "power": 18500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "187": {
+        "key": "187",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 187,
+        "power": 19500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "188": {
+        "key": "188",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 188,
+        "power": 20500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "189": {
+        "key": "189",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 189,
+        "power": 21500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "190": {
+        "key": "190",
+        "levelSetId": "hh_set_hard_17",
+        "locationId": "winter",
+        "order": 190,
+        "power": 22500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "191": {
+        "key": "191",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 191,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "192": {
+        "key": "192",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 192,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "193": {
+        "key": "193",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 193,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "194": {
+        "key": "194",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 194,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "195": {
+        "key": "195",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 195,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "196": {
+        "key": "196",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 196,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "197": {
+        "key": "197",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 197,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "198": {
+        "key": "198",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 198,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "199": {
+        "key": "199",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 199,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "200": {
+        "key": "200",
+        "levelSetId": "hh_set_hard_18",
+        "locationId": "winter",
+        "order": 200,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "201": {
+        "key": "201",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 201,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "202": {
+        "key": "202",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 202,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "203": {
+        "key": "203",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 203,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "204": {
+        "key": "204",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 204,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "205": {
+        "key": "205",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 205,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "206": {
+        "key": "206",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 206,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "207": {
+        "key": "207",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 207,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "208": {
+        "key": "208",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 208,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "209": {
+        "key": "209",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 209,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "210": {
+        "key": "210",
+        "levelSetId": "hh_set_hard_19",
+        "locationId": "winter",
+        "order": 210,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "211": {
+        "key": "211",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 211,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "212": {
+        "key": "212",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 212,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "213": {
+        "key": "213",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 213,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "214": {
+        "key": "214",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 214,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "215": {
+        "key": "215",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 215,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "216": {
+        "key": "216",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 216,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "217": {
+        "key": "217",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 217,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "218": {
+        "key": "218",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 218,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "219": {
+        "key": "219",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 219,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "220": {
+        "key": "220",
+        "levelSetId": "hh_set_hard_20",
+        "locationId": "winter",
+        "order": 220,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "221": {
+        "key": "221",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 221,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "222": {
+        "key": "222",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 222,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "223": {
+        "key": "223",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 223,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "224": {
+        "key": "224",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 224,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "225": {
+        "key": "225",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 225,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "226": {
+        "key": "226",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 226,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "227": {
+        "key": "227",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 227,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "228": {
+        "key": "228",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 228,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "229": {
+        "key": "229",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 229,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "230": {
+        "key": "230",
+        "levelSetId": "hh_set_hard_21",
+        "locationId": "winter",
+        "order": 230,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "231": {
+        "key": "231",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 231,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "232": {
+        "key": "232",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 232,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "233": {
+        "key": "233",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 233,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "234": {
+        "key": "234",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 234,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "235": {
+        "key": "235",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 235,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "236": {
+        "key": "236",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 236,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "237": {
+        "key": "237",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 237,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "238": {
+        "key": "238",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 238,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "239": {
+        "key": "239",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 239,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "240": {
+        "key": "240",
+        "levelSetId": "hh_set_hard_22",
+        "locationId": "winter",
+        "order": 240,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "241": {
+        "key": "241",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 241,
+        "power": 23500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "242": {
+        "key": "242",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 242,
+        "power": 24500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "243": {
+        "key": "243",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 243,
+        "power": 25500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "244": {
+        "key": "244",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 244,
+        "power": 26500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "245": {
+        "key": "245",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 245,
+        "power": 27500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "246": {
+        "key": "246",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 246,
+        "power": 28500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "247": {
+        "key": "247",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 247,
+        "power": 29500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "248": {
+        "key": "248",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 248,
+        "power": 30500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "249": {
+        "key": "249",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 249,
+        "power": 31500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "250": {
+        "key": "250",
+        "levelSetId": "hh_set_hard_23",
+        "locationId": "winter",
+        "order": 250,
+        "power": 32500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "251": {
+        "key": "251",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 251,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "252": {
+        "key": "252",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 252,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "253": {
+        "key": "253",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 253,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "254": {
+        "key": "254",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 254,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "255": {
+        "key": "255",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 255,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "256": {
+        "key": "256",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 256,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "257": {
+        "key": "257",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 257,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "258": {
+        "key": "258",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 258,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "259": {
+        "key": "259",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 259,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "260": {
+        "key": "260",
+        "levelSetId": "hh_set_hard_24",
+        "locationId": "winter",
+        "order": 260,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "261": {
+        "key": "261",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 261,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "262": {
+        "key": "262",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 262,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "263": {
+        "key": "263",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 263,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "264": {
+        "key": "264",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 264,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "265": {
+        "key": "265",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 265,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "266": {
+        "key": "266",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 266,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "267": {
+        "key": "267",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 267,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "268": {
+        "key": "268",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 268,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "269": {
+        "key": "269",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 269,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "270": {
+        "key": "270",
+        "levelSetId": "hh_set_hard_25",
+        "locationId": "winter",
+        "order": 270,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "271": {
+        "key": "271",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 271,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "272": {
+        "key": "272",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 272,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "273": {
+        "key": "273",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 273,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "274": {
+        "key": "274",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 274,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "275": {
+        "key": "275",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 275,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "276": {
+        "key": "276",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 276,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "277": {
+        "key": "277",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 277,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "278": {
+        "key": "278",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 278,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "279": {
+        "key": "279",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 279,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "280": {
+        "key": "280",
+        "levelSetId": "hh_set_hard_26",
+        "locationId": "winter",
+        "order": 280,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "281": {
+        "key": "281",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 281,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "282": {
+        "key": "282",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 282,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "283": {
+        "key": "283",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 283,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "284": {
+        "key": "284",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 284,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "285": {
+        "key": "285",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 285,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "286": {
+        "key": "286",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 286,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "287": {
+        "key": "287",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 287,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "288": {
+        "key": "288",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 288,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "289": {
+        "key": "289",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 289,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "290": {
+        "key": "290",
+        "levelSetId": "hh_set_hard_27",
+        "locationId": "winter",
+        "order": 290,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "291": {
+        "key": "291",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 291,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "292": {
+        "key": "292",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 292,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "293": {
+        "key": "293",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 293,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "294": {
+        "key": "294",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 294,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "295": {
+        "key": "295",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 295,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "296": {
+        "key": "296",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 296,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "297": {
+        "key": "297",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 297,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "298": {
+        "key": "298",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 298,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "299": {
+        "key": "299",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 299,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "300": {
+        "key": "300",
+        "levelSetId": "hh_set_hard_28",
+        "locationId": "winter",
+        "order": 300,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "301": {
+        "key": "301",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 301,
+        "power": 34500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "302": {
+        "key": "302",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 302,
+        "power": 36500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "303": {
+        "key": "303",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 303,
+        "power": 38500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "304": {
+        "key": "304",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 304,
+        "power": 40500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "305": {
+        "key": "305",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 305,
+        "power": 42500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "306": {
+        "key": "306",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 306,
+        "power": 44500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "307": {
+        "key": "307",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 307,
+        "power": 46500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "308": {
+        "key": "308",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 308,
+        "power": 48500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "309": {
+        "key": "309",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 309,
+        "power": 50500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "310": {
+        "key": "310",
+        "levelSetId": "hh_set_hard_29",
+        "locationId": "winter",
+        "order": 310,
+        "power": 52500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "311": {
+        "key": "311",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 311,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "312": {
+        "key": "312",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 312,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "313": {
+        "key": "313",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 313,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "314": {
+        "key": "314",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 314,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "315": {
+        "key": "315",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 315,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "316": {
+        "key": "316",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 316,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "317": {
+        "key": "317",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 317,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "318": {
+        "key": "318",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 318,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "319": {
+        "key": "319",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 319,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "320": {
+        "key": "320",
+        "levelSetId": "hh_set_hard_30",
+        "locationId": "winter",
+        "order": 320,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "321": {
+        "key": "321",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 321,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "322": {
+        "key": "322",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 322,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "323": {
+        "key": "323",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 323,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "324": {
+        "key": "324",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 324,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "325": {
+        "key": "325",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 325,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "326": {
+        "key": "326",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 326,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "327": {
+        "key": "327",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 327,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "328": {
+        "key": "328",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 328,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "329": {
+        "key": "329",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 329,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "330": {
+        "key": "330",
+        "levelSetId": "hh_set_hard_31",
+        "locationId": "winter",
+        "order": 330,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "331": {
+        "key": "331",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 331,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "332": {
+        "key": "332",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 332,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "333": {
+        "key": "333",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 333,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "334": {
+        "key": "334",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 334,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "335": {
+        "key": "335",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 335,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "336": {
+        "key": "336",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 336,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "337": {
+        "key": "337",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 337,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "338": {
+        "key": "338",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 338,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "339": {
+        "key": "339",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 339,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "340": {
+        "key": "340",
+        "levelSetId": "hh_set_hard_32",
+        "locationId": "winter",
+        "order": 340,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "341": {
+        "key": "341",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 341,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "342": {
+        "key": "342",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 342,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "343": {
+        "key": "343",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 343,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "344": {
+        "key": "344",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 344,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "345": {
+        "key": "345",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 345,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "346": {
+        "key": "346",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 346,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "347": {
+        "key": "347",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 347,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "348": {
+        "key": "348",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 348,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "349": {
+        "key": "349",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 349,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "350": {
+        "key": "350",
+        "levelSetId": "hh_set_hard_33",
+        "locationId": "winter",
+        "order": 350,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "351": {
+        "key": "351",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 351,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "352": {
+        "key": "352",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 352,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "353": {
+        "key": "353",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 353,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "354": {
+        "key": "354",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 354,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "355": {
+        "key": "355",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 355,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "356": {
+        "key": "356",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 356,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "357": {
+        "key": "357",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 357,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "358": {
+        "key": "358",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 358,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "359": {
+        "key": "359",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 359,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "360": {
+        "key": "360",
+        "levelSetId": "hh_set_hard_34",
+        "locationId": "winter",
+        "order": 360,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "361": {
+        "key": "361",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 361,
+        "power": 54500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "362": {
+        "key": "362",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 362,
+        "power": 56500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "363": {
+        "key": "363",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 363,
+        "power": 58500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "364": {
+        "key": "364",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 364,
+        "power": 60500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "365": {
+        "key": "365",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 365,
+        "power": 62500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "366": {
+        "key": "366",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 366,
+        "power": 64500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "367": {
+        "key": "367",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 367,
+        "power": 66500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "368": {
+        "key": "368",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 368,
+        "power": 68500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "369": {
+        "key": "369",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 369,
+        "power": 70500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "370": {
+        "key": "370",
+        "levelSetId": "hh_set_hard_35",
+        "locationId": "winter",
+        "order": 370,
+        "power": 72500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "371": {
+        "key": "371",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 371,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "372": {
+        "key": "372",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 372,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "373": {
+        "key": "373",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 373,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "374": {
+        "key": "374",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 374,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "375": {
+        "key": "375",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 375,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "376": {
+        "key": "376",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 376,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "377": {
+        "key": "377",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 377,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "378": {
+        "key": "378",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 378,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "379": {
+        "key": "379",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 379,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "380": {
+        "key": "380",
+        "levelSetId": "hh_set_hard_36",
+        "locationId": "winter",
+        "order": 380,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "381": {
+        "key": "381",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 381,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "382": {
+        "key": "382",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 382,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "383": {
+        "key": "383",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 383,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "384": {
+        "key": "384",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 384,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "385": {
+        "key": "385",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 385,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "386": {
+        "key": "386",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 386,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "387": {
+        "key": "387",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 387,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "388": {
+        "key": "388",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 388,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "389": {
+        "key": "389",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 389,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "390": {
+        "key": "390",
+        "levelSetId": "hh_set_hard_37",
+        "locationId": "winter",
+        "order": 390,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "391": {
+        "key": "391",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 391,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "392": {
+        "key": "392",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 392,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "393": {
+        "key": "393",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 393,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "394": {
+        "key": "394",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 394,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "395": {
+        "key": "395",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 395,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "396": {
+        "key": "396",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 396,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "397": {
+        "key": "397",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 397,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "398": {
+        "key": "398",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 398,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "399": {
+        "key": "399",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 399,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "400": {
+        "key": "400",
+        "levelSetId": "hh_set_hard_38",
+        "locationId": "winter",
+        "order": 400,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "401": {
+        "key": "401",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 401,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "402": {
+        "key": "402",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 402,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "403": {
+        "key": "403",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 403,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "404": {
+        "key": "404",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 404,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "405": {
+        "key": "405",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 405,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "406": {
+        "key": "406",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 406,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "407": {
+        "key": "407",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 407,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "408": {
+        "key": "408",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 408,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "409": {
+        "key": "409",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 409,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "410": {
+        "key": "410",
+        "levelSetId": "hh_set_hard_39",
+        "locationId": "winter",
+        "order": 410,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "411": {
+        "key": "411",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 411,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "412": {
+        "key": "412",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 412,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "413": {
+        "key": "413",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 413,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "414": {
+        "key": "414",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 414,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "415": {
+        "key": "415",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 415,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "416": {
+        "key": "416",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 416,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "417": {
+        "key": "417",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 417,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "418": {
+        "key": "418",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 418,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "419": {
+        "key": "419",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 419,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "420": {
+        "key": "420",
+        "levelSetId": "hh_set_hard_40",
+        "locationId": "winter",
+        "order": 420,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "421": {
+        "key": "421",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 421,
+        "power": 74500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "422": {
+        "key": "422",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 422,
+        "power": 76500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "423": {
+        "key": "423",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 423,
+        "power": 78500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "424": {
+        "key": "424",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 424,
+        "power": 80500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "425": {
+        "key": "425",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 425,
+        "power": 82500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "426": {
+        "key": "426",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 426,
+        "power": 84500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "427": {
+        "key": "427",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 427,
+        "power": 86500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "428": {
+        "key": "428",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 428,
+        "power": 88500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "429": {
+        "key": "429",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 429,
+        "power": 90500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "430": {
+        "key": "430",
+        "levelSetId": "hh_set_hard_41",
+        "locationId": "winter",
+        "order": 430,
+        "power": 92500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "431": {
+        "key": "431",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 431,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "432": {
+        "key": "432",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 432,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "433": {
+        "key": "433",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 433,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "434": {
+        "key": "434",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 434,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "435": {
+        "key": "435",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 435,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "436": {
+        "key": "436",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 436,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "437": {
+        "key": "437",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 437,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "438": {
+        "key": "438",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 438,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "439": {
+        "key": "439",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 439,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "440": {
+        "key": "440",
+        "levelSetId": "hh_set_hard_42",
+        "locationId": "winter",
+        "order": 440,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "441": {
+        "key": "441",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 441,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "442": {
+        "key": "442",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 442,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "443": {
+        "key": "443",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 443,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "444": {
+        "key": "444",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 444,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "445": {
+        "key": "445",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 445,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "446": {
+        "key": "446",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 446,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "447": {
+        "key": "447",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 447,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "448": {
+        "key": "448",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 448,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "449": {
+        "key": "449",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 449,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "450": {
+        "key": "450",
+        "levelSetId": "hh_set_hard_43",
+        "locationId": "winter",
+        "order": 450,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "451": {
+        "key": "451",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 451,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "452": {
+        "key": "452",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 452,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "453": {
+        "key": "453",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 453,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "454": {
+        "key": "454",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 454,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "455": {
+        "key": "455",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 455,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "456": {
+        "key": "456",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 456,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "457": {
+        "key": "457",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 457,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "458": {
+        "key": "458",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 458,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "459": {
+        "key": "459",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 459,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "460": {
+        "key": "460",
+        "levelSetId": "hh_set_hard_44",
+        "locationId": "winter",
+        "order": 460,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "461": {
+        "key": "461",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 461,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "462": {
+        "key": "462",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 462,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "463": {
+        "key": "463",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 463,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "464": {
+        "key": "464",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 464,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "465": {
+        "key": "465",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 465,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "466": {
+        "key": "466",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 466,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "467": {
+        "key": "467",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 467,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "468": {
+        "key": "468",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 468,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "469": {
+        "key": "469",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 469,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "470": {
+        "key": "470",
+        "levelSetId": "hh_set_hard_45",
+        "locationId": "winter",
+        "order": 470,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "471": {
+        "key": "471",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 471,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "472": {
+        "key": "472",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 472,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "473": {
+        "key": "473",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 473,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "474": {
+        "key": "474",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 474,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "475": {
+        "key": "475",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 475,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "476": {
+        "key": "476",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 476,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "477": {
+        "key": "477",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 477,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "478": {
+        "key": "478",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 478,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "479": {
+        "key": "479",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 479,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "480": {
+        "key": "480",
+        "levelSetId": "hh_set_hard_46",
+        "locationId": "winter",
+        "order": 480,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "481": {
+        "key": "481",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 481,
+        "power": 95500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "482": {
+        "key": "482",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 482,
+        "power": 98500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "483": {
+        "key": "483",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 483,
+        "power": 101500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "484": {
+        "key": "484",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 484,
+        "power": 104500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "485": {
+        "key": "485",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 485,
+        "power": 107500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "486": {
+        "key": "486",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 486,
+        "power": 110500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "487": {
+        "key": "487",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 487,
+        "power": 113500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "488": {
+        "key": "488",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 488,
+        "power": 116500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "489": {
+        "key": "489",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 489,
+        "power": 119500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "490": {
+        "key": "490",
+        "levelSetId": "hh_set_hard_47",
+        "locationId": "winter",
+        "order": 490,
+        "power": 122500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "491": {
+        "key": "491",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 491,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel1"
+    },
+    "492": {
+        "key": "492",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 492,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel2"
+    },
+    "493": {
+        "key": "493",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 493,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel3"
+    },
+    "494": {
+        "key": "494",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 494,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel4"
+    },
+    "495": {
+        "key": "495",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 495,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel5"
+    },
+    "496": {
+        "key": "496",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 496,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel6"
+    },
+    "497": {
+        "key": "497",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 497,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel7"
+    },
+    "498": {
+        "key": "498",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 498,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel8"
+    },
+    "499": {
+        "key": "499",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 499,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel9"
+    },
+    "500": {
+        "key": "500",
+        "levelSetId": "hh_set_hard_48",
+        "locationId": "winter",
+        "order": 500,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel10"
+    },
+    "501": {
+        "key": "501",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 501,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel11"
+    },
+    "502": {
+        "key": "502",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 502,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel12"
+    },
+    "503": {
+        "key": "503",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 503,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel13"
+    },
+    "504": {
+        "key": "504",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 504,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel14"
+    },
+    "505": {
+        "key": "505",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 505,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel15"
+    },
+    "506": {
+        "key": "506",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 506,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel16"
+    },
+    "507": {
+        "key": "507",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 507,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel17"
+    },
+    "508": {
+        "key": "508",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 508,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel18"
+    },
+    "509": {
+        "key": "509",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 509,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel19"
+    },
+    "510": {
+        "key": "510",
+        "levelSetId": "hh_set_hard_49",
+        "locationId": "winter",
+        "order": 510,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel20"
+    },
+    "511": {
+        "key": "511",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 511,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "512": {
+        "key": "512",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 512,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "513": {
+        "key": "513",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 513,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "514": {
+        "key": "514",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 514,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "515": {
+        "key": "515",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 515,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "516": {
+        "key": "516",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 516,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "517": {
+        "key": "517",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 517,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "518": {
+        "key": "518",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 518,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "519": {
+        "key": "519",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 519,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "520": {
+        "key": "520",
+        "levelSetId": "hh_set_hard_50",
+        "locationId": "winter",
+        "order": 520,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    },
+    "521": {
+        "key": "521",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 521,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel31"
+    },
+    "522": {
+        "key": "522",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 522,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel32"
+    },
+    "523": {
+        "key": "523",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 523,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel33"
+    },
+    "524": {
+        "key": "524",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 524,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel34"
+    },
+    "525": {
+        "key": "525",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 525,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel35"
+    },
+    "526": {
+        "key": "526",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 526,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel36"
+    },
+    "527": {
+        "key": "527",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 527,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel37"
+    },
+    "528": {
+        "key": "528",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 528,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel38"
+    },
+    "529": {
+        "key": "529",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 529,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel39"
+    },
+    "530": {
+        "key": "530",
+        "levelSetId": "hh_set_hard_51",
+        "locationId": "winter",
+        "order": 530,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel40"
+    },
+    "531": {
+        "key": "531",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 531,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel41"
+    },
+    "532": {
+        "key": "532",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 532,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel42"
+    },
+    "533": {
+        "key": "533",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 533,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel43"
+    },
+    "534": {
+        "key": "534",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 534,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel44"
+    },
+    "535": {
+        "key": "535",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 535,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel45"
+    },
+    "536": {
+        "key": "536",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 536,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel46"
+    },
+    "537": {
+        "key": "537",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 537,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel47"
+    },
+    "538": {
+        "key": "538",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 538,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel48"
+    },
+    "539": {
+        "key": "539",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 539,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel49"
+    },
+    "540": {
+        "key": "540",
+        "levelSetId": "hh_set_hard_52",
+        "locationId": "winter",
+        "order": 540,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel50"
+    },
+    "541": {
+        "key": "541",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 541,
+        "power": 125500,
+        "softReward": 3800,
+        "hardReward": 30,
+        "formationKey": "HHLevel21"
+    },
+    "542": {
+        "key": "542",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 542,
+        "power": 128500,
+        "softReward": 4200,
+        "hardReward": 0,
+        "formationKey": "HHLevel22"
+    },
+    "543": {
+        "key": "543",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 543,
+        "power": 131500,
+        "softReward": 4600,
+        "hardReward": 0,
+        "formationKey": "HHLevel23"
+    },
+    "544": {
+        "key": "544",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 544,
+        "power": 134500,
+        "softReward": 5000,
+        "hardReward": 0,
+        "formationKey": "HHLevel24"
+    },
+    "545": {
+        "key": "545",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 545,
+        "power": 137500,
+        "softReward": 5400,
+        "hardReward": 0,
+        "formationKey": "HHLevel25"
+    },
+    "546": {
+        "key": "546",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 546,
+        "power": 140500,
+        "softReward": 5800,
+        "hardReward": 50,
+        "formationKey": "HHLevel26"
+    },
+    "547": {
+        "key": "547",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 547,
+        "power": 143500,
+        "softReward": 6200,
+        "hardReward": 0,
+        "formationKey": "HHLevel27"
+    },
+    "548": {
+        "key": "548",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 548,
+        "power": 146500,
+        "softReward": 6600,
+        "hardReward": 0,
+        "formationKey": "HHLevel28"
+    },
+    "549": {
+        "key": "549",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 549,
+        "power": 149500,
+        "softReward": 7000,
+        "hardReward": 0,
+        "formationKey": "HHLevel29"
+    },
+    "550": {
+        "key": "550",
+        "levelSetId": "hh_set_hard_53",
+        "locationId": "winter",
+        "order": 550,
+        "power": 152500,
+        "softReward": 7400,
+        "hardReward": 70,
+        "formationKey": "HHLevel30"
+    }
+}

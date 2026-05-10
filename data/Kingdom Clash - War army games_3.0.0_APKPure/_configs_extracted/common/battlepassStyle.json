@@ -1,0 +1,122 @@
+{
+    "blueRed": {
+        "key": "blueRed",
+        "backgroundId": "battlePassFlag_01",
+        "popupBackgroundId": "battlePassFlag_popup_01",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_01",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_01",
+        "style": "DarkBlueAndRed"
+    },
+    "brownMarine": {
+        "key": "brownMarine",
+        "backgroundId": "battlePassFlag_02",
+        "popupBackgroundId": "battlePassFlag_popup_02",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_02",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_02",
+        "style": "LightBrownAndMarine"
+    },
+    "brownRed": {
+        "key": "brownRed",
+        "backgroundId": "battlePassFlag_03",
+        "popupBackgroundId": "battlePassFlag_popup_03",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_03",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_03",
+        "style": "BrownAndRed"
+    },
+    "darkBlue": {
+        "key": "darkBlue",
+        "backgroundId": "battlePassFlag_04",
+        "popupBackgroundId": "battlePassFlag_popup_04",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_04",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_04",
+        "style": "DarkBlue"
+    },
+    "pirateBrown": {
+        "key": "pirateBrown",
+        "backgroundId": "battlePassFlag_05",
+        "popupBackgroundId": "battlePassFlag_popup_05",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_05",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_05",
+        "style": "PirateBrown"
+    },
+    "druidGreen": {
+        "key": "druidGreen",
+        "backgroundId": "battlePassFlag_06",
+        "popupBackgroundId": "battlePassFlag_popup_06",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_06",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_06",
+        "style": "DarkBlueAndGreen"
+    },
+    "debufferViolet": {
+        "key": "debufferViolet",
+        "backgroundId": "battlePassFlag_07",
+        "popupBackgroundId": "battlePassFlag_popup_07",
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_07",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_07",
+        "style": "UndeadViolet"
+    },
+    "grassGreen": {
+        "key": "grassGreen",
+        "backgroundId": null,
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": null,
+        "popupOfferLevelsBackgroundId": null,
+        "style": "GrassGreen"
+    },
+    "azureSky": {
+        "key": "azureSky",
+        "backgroundId": null,
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": null,
+        "popupOfferLevelsBackgroundId": null,
+        "style": "AzureSky"
+    },
+    "hotLava": {
+        "key": "hotLava",
+        "backgroundId": null,
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": null,
+        "popupOfferLevelsBackgroundId": null,
+        "style": "HotLava"
+    },
+    "melodicGreen": {
+        "key": "melodicGreen",
+        "backgroundId": "battlePassFlag_08",
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_08",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_08",
+        "style": "MelodicGreen"
+    },
+    "redVelvet": {
+        "key": "redVelvet",
+        "backgroundId": null,
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": null,
+        "popupOfferLevelsBackgroundId": null,
+        "style": "RedVelvet"
+    },
+    "liquidGold": {
+        "key": "liquidGold",
+        "backgroundId": null,
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": null,
+        "popupOfferLevelsBackgroundId": null,
+        "style": "LiquidGold"
+    },
+    "towerViolet": {
+        "key": "towerViolet",
+        "backgroundId": "battlePassFlagTower_common",
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": "battlePassFlagTower_offer",
+        "popupOfferLevelsBackgroundId": "battlePassFlagTower_popupLevels_common",
+        "style": "UndeadViolet"
+    },
+    "brightFlame": {
+        "key": "brightFlame",
+        "backgroundId": "battlePassFlag_09",
+        "popupBackgroundId": null,
+        "popupOfferBackgroundId": "battlePassFlag_popup_offers_09",
+        "popupOfferLevelsBackgroundId": "battlePassFlag_popupLevels_09",
+        "style": "BrightFlame"
+    }
+}

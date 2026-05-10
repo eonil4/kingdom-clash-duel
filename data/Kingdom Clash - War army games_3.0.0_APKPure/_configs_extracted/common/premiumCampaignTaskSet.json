@@ -1,0 +1,82 @@
+{
+    "offerCampaignLevelSet01": {
+        "key": "offerCampaignLevelSet01",
+        "nextOfferId": "offerCampaignLevel02"
+    },
+    "offerCampaignLevelSet02": {
+        "key": "offerCampaignLevelSet02",
+        "nextOfferId": "offerCampaignLevel03"
+    },
+    "offerCampaignLevelSet03": {
+        "key": "offerCampaignLevelSet03",
+        "nextOfferId": "offerCampaignLevel04"
+    },
+    "offerCampaignLevelSet04": {
+        "key": "offerCampaignLevelSet04",
+        "nextOfferId": "offerCampaignLevel05"
+    },
+    "offerCampaignLevelSet05": {
+        "key": "offerCampaignLevelSet05",
+        "nextOfferId": "offerCampaignLevel06"
+    },
+    "offerCampaignLevelSet06": {
+        "key": "offerCampaignLevelSet06",
+        "nextOfferId": "offerCampaignLevel07"
+    },
+    "offerCampaignLevelSet07": {
+        "key": "offerCampaignLevelSet07",
+        "nextOfferId": "offerCampaignLevel08"
+    },
+    "offerCampaignLevelSet08": {
+        "key": "offerCampaignLevelSet08",
+        "nextOfferId": "offerCampaignLevel09"
+    },
+    "offerCampaignLevelSet09": {
+        "key": "offerCampaignLevelSet09",
+        "nextOfferId": "offerCampaignLevel10"
+    },
+    "offerCampaignLevelSet10": {
+        "key": "offerCampaignLevelSet10",
+        "nextOfferId": "offerCampaignLevel11"
+    },
+    "offerCampaignLevelSet11": {
+        "key": "offerCampaignLevelSet11",
+        "nextOfferId": "offerCampaignLevel12"
+    },
+    "offerCampaignLevelSet12": {
+        "key": "offerCampaignLevelSet12",
+        "nextOfferId": "offerCampaignLevel13"
+    },
+    "offerCampaignLevelSet13": {
+        "key": "offerCampaignLevelSet13",
+        "nextOfferId": "offerCampaignLevel14"
+    },
+    "offerCampaignLevelSet14": {
+        "key": "offerCampaignLevelSet14",
+        "nextOfferId": "offerCampaignLevel15"
+    },
+    "offerCampaignLevelSet15": {
+        "key": "offerCampaignLevelSet15",
+        "nextOfferId": "offerCampaignLevel16"
+    },
+    "offerCampaignLevelSet16": {
+        "key": "offerCampaignLevelSet16",
+        "nextOfferId": "offerCampaignLevel17"
+    },
+    "offerCampaignLevelSet17": {
+        "key": "offerCampaignLevelSet17",
+        "nextOfferId": "offerCampaignLevel18"
+    },
+    "offerCampaignLevelSet18": {
+        "key": "offerCampaignLevelSet18",
+        "nextOfferId": "offerCampaignLevel19"
+    },
+    "offerCampaignLevelSet19": {
+        "key": "offerCampaignLevelSet19",
+        "nextOfferId": "offerCampaignLevel20"
+    },
+    "offerCampaignLevelSet20": {
+        "key": "offerCampaignLevelSet20",
+        "nextOfferId": null
+    }
+}

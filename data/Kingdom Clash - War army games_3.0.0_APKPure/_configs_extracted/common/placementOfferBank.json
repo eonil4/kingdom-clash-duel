@@ -1,0 +1,416 @@
+{
+    "dailyGift_2": {
+        "key": "dailyGift_2",
+        "offer": "bankChestOffer_1",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "chest_2": {
+        "key": "chest_2",
+        "offer": "bankChestOffer_2",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "chest_3": {
+        "key": "chest_3",
+        "offer": "bankChestOffer_3",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "gem_1": {
+        "key": "gem_1",
+        "offer": "offer_gem_1",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 1,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gem_2": {
+        "key": "gem_2",
+        "offer": "offer_gem_2",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 2,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gem_3": {
+        "key": "gem_3",
+        "offer": "offer_gem_3",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 3,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gem_4": {
+        "key": "gem_4",
+        "offer": "offer_gem_4",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 4,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gem_5": {
+        "key": "gem_5",
+        "offer": "offer_gem_5",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 5,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gem_6": {
+        "key": "gem_6",
+        "offer": "offer_gem_6",
+        "customStyleId": null,
+        "category": "Gems",
+        "categoryOrder": 6,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gold_1": {
+        "key": "gold_1",
+        "offer": "offer_gold_1",
+        "customStyleId": null,
+        "category": "Gold",
+        "categoryOrder": 1,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gold_2": {
+        "key": "gold_2",
+        "offer": "offer_gold_2",
+        "customStyleId": null,
+        "category": "Gold",
+        "categoryOrder": 2,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "gold_3": {
+        "key": "gold_3",
+        "offer": "offer_gold_3",
+        "customStyleId": null,
+        "category": "Gold",
+        "categoryOrder": 3,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "midas_1": {
+        "key": "midas_1",
+        "offer": "subscription_midas_1",
+        "customStyleId": null,
+        "category": "Midas",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "midas_2": {
+        "key": "midas_2",
+        "offer": "subscription_midas_2",
+        "customStyleId": null,
+        "category": "Midas",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "midas_3": {
+        "key": "midas_3",
+        "offer": "subscription_midas_3",
+        "customStyleId": null,
+        "category": "Midas",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "vip_1": {
+        "key": "vip_1",
+        "offer": "subscription_vip_1",
+        "customStyleId": null,
+        "category": "Vip",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "vip_2": {
+        "key": "vip_2",
+        "offer": "subscription_vip_2",
+        "customStyleId": null,
+        "category": "Vip",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "vip_3": {
+        "key": "vip_3",
+        "offer": "subscription_vip_3",
+        "customStyleId": null,
+        "category": "Vip",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_1": {
+        "key": "dailyGift_1",
+        "offer": "offerLegendaryTroop",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_3": {
+        "key": "dailyGift_3",
+        "offer": "offerFreeVip",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_4": {
+        "key": "dailyGift_4",
+        "offer": "offerFreeMidas",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_5": {
+        "key": "dailyGift_5",
+        "offer": "daily_gift_horsehoe",
+        "customStyleId": "horseshoe",
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_6": {
+        "key": "dailyGift_6",
+        "offer": "daily_gift_badgesX2",
+        "customStyleId": "badgesX2",
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "dailyGift_7": {
+        "key": "dailyGift_7",
+        "offer": "daily_gift_gem",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "dailyGift_8": {
+        "key": "dailyGift_8",
+        "offer": "daily_gift_gold",
+        "customStyleId": null,
+        "category": "Chest",
+        "categoryOrder": 1,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "pvpChest": {
+        "key": "pvpChest",
+        "offer": "pvpChestOffer",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_1": {
+        "key": "pvpTroop_1",
+        "offer": "offerTroop_1",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_1": {
+        "key": "pvpHero_1",
+        "offer": "offerHero_1",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_2": {
+        "key": "pvpTroop_2",
+        "offer": "offerTroop_2",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_3": {
+        "key": "pvpTroop_3",
+        "offer": "offerTroop_3",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_4": {
+        "key": "pvpTroop_4",
+        "offer": "offerTroop_4",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_5": {
+        "key": "pvpTroop_5",
+        "offer": "offerTroop_5",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_6": {
+        "key": "pvpTroop_6",
+        "offer": "offerTroop_6",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_7": {
+        "key": "pvpTroop_7",
+        "offer": "offerTroop_7",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_8": {
+        "key": "pvpTroop_8",
+        "offer": "offerTroop_8",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_9": {
+        "key": "pvpTroop_9",
+        "offer": "offerTroop_9",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_10": {
+        "key": "pvpTroop_10",
+        "offer": "offerTroop_10",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop_11": {
+        "key": "pvpTroop_11",
+        "offer": "offerTroop_11",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_2": {
+        "key": "pvpHero_2",
+        "offer": "offerHero_2",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_3": {
+        "key": "pvpHero_3",
+        "offer": "offerHero_3",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_4": {
+        "key": "pvpHero_4",
+        "offer": "offerHero_4",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_5": {
+        "key": "pvpHero_5",
+        "offer": "offerHero_5",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero_6": {
+        "key": "pvpHero_6",
+        "offer": "offerHero_6",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpTroop": {
+        "key": "pvpTroop",
+        "offer": "pvpOffer_LegTroop",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 2,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpHero": {
+        "key": "pvpHero",
+        "offer": "pvpOffer_LegHero",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 3,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    },
+    "pvpChest_new": {
+        "key": "pvpChest_new",
+        "offer": "pvpOffer_Chest",
+        "customStyleId": null,
+        "category": "Pvp",
+        "categoryOrder": 1,
+        "headerStyle": "normal",
+        "contentStyle": "extended"
+    }
+}

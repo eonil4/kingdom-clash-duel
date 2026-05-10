@@ -1,0 +1,10 @@
+{
+    "quickMatchAvatarSetId": "quickMatchAll",
+    "quickMatchAvatarResultSetId": "quickMatchResult",
+    "arenaHistoryDuartionSec": 86400,
+    "requestArenaDefenceAtPeriodInSec": 60,
+    "killGoldMultiplier": 3,
+    "winBattlePassPoints": 0,
+    "missingHeroId": "dragonRider",
+    "missingTroopId": "paladin"
+}

@@ -1,0 +1,22 @@
+{
+    "Mage": {
+        "key": "Mage",
+        "name": "Faction_Mage_Name"
+    },
+    "Undead": {
+        "key": "Undead",
+        "name": "Faction_Undead_Name"
+    },
+    "Human": {
+        "key": "Human",
+        "name": "Faction_Human_Name"
+    },
+    "Elevate": {
+        "key": "Elevate",
+        "name": "Faction_Elevate_Name"
+    },
+    "Demon": {
+        "key": "Demon",
+        "name": "Faction_Demon_Name"
+    }
+}

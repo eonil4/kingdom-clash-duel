@@ -1,0 +1,32 @@
+{
+    "rareHeroSet": {
+        "key": "rareHeroSet"
+    },
+    "epicHeroSet": {
+        "key": "epicHeroSet"
+    },
+    "legendaryHeroSet": {
+        "key": "legendaryHeroSet"
+    },
+    "firstHeroSet": {
+        "key": "firstHeroSet"
+    },
+    "secondHeroSet": {
+        "key": "secondHeroSet"
+    },
+    "thirdHeroSet": {
+        "key": "thirdHeroSet"
+    },
+    "epicHeroClanShopSet": {
+        "key": "epicHeroClanShopSet"
+    },
+    "legHeroClanShopSet": {
+        "key": "legHeroClanShopSet"
+    },
+    "mythHeroElevateSet": {
+        "key": "mythHeroElevateSet"
+    },
+    "mythHeroDemonSet": {
+        "key": "mythHeroDemonSet"
+    }
+}

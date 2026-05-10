@@ -1,0 +1,110 @@
+{
+    "subscription_vip_1": {
+        "key": "subscription_vip_1",
+        "order": 0,
+        "duration_Localized": "caption_vip_7_days_plus",
+        "subscribtionType": "vip",
+        "duration": 604800,
+        "discount": 0,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_vip_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "vip_subscription",
+        "isPromoFlag": false
+    },
+    "subscription_vip_2": {
+        "key": "subscription_vip_2",
+        "order": 1,
+        "duration_Localized": "caption_vip_30_days_plus",
+        "subscribtionType": "vip",
+        "duration": 2592000,
+        "discount": 60,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_vip_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "vip_subscription",
+        "isPromoFlag": true
+    },
+    "subscription_vip_3": {
+        "key": "subscription_vip_3",
+        "order": 2,
+        "duration_Localized": "caption_vip_365_days_plus",
+        "subscribtionType": "vip",
+        "duration": 31536000,
+        "discount": 70,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_vip_3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "vip_subscription",
+        "isPromoFlag": true
+    },
+    "subscription_midas_1": {
+        "key": "subscription_midas_1",
+        "order": 0,
+        "duration_Localized": "caption_vip_day",
+        "subscribtionType": "midas",
+        "duration": 86400,
+        "discount": 0,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_midas_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "hand_of_midas",
+        "isPromoFlag": false
+    },
+    "subscription_midas_2": {
+        "key": "subscription_midas_2",
+        "order": 1,
+        "duration_Localized": "caption_vip_7_days",
+        "subscribtionType": "midas",
+        "duration": 604800,
+        "discount": 40,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_midas_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "hand_of_midas",
+        "isPromoFlag": true
+    },
+    "subscription_midas_3": {
+        "key": "subscription_midas_3",
+        "order": 2,
+        "duration_Localized": "caption_vip_30_days",
+        "subscribtionType": "midas",
+        "duration": 2592000,
+        "discount": 70,
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_midas_3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": "hand_of_midas",
+        "isPromoFlag": true
+    }
+}

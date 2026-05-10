@@ -1,0 +1,20 @@
+{
+  "presets": [
+    {
+      "id": "mixed-7col",
+      "label": "Mixed 7 columns (like arena deploy)",
+      "playerSlots": ["spearline", "spearline", "longbow", "runecaller", "colossus", "longbow", "champion"],
+      "enemySlots": ["spearline", "spearline", "spearline", "runecaller", "runecaller", "longbow", "champion"],
+      "playerGear": { "weapon": 19, "armor": 20 },
+      "enemyGear": { "weapon": 17, "armor": 18 }
+    },
+    {
+      "id": "brute-rush",
+      "label": "Heavy front / you skew ranged",
+      "playerSlots": ["longbow", "runecaller", "longbow", "spearline", "colossus", "spearline", "champion"],
+      "enemySlots": ["colossus", "colossus", "spearline", "spearline", "longbow", "runecaller", "champion"],
+      "playerGear": { "weapon": 19, "armor": 20 },
+      "enemyGear": { "weapon": 20, "armor": 22 }
+    }
+  ]
+}

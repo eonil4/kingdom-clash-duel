@@ -1,0 +1,22 @@
+{
+    "rewardEmoji_fireMage_determination": {
+        "key": "rewardEmoji_fireMage_determination",
+        "emojiId": "emoji_firemage_determination"
+    },
+    "rewardEmoji_fireMage_facePalm": {
+        "key": "rewardEmoji_fireMage_facePalm",
+        "emojiId": "emoji_firemage_facepalm"
+    },
+    "rewardEmoji_fireMage_gift": {
+        "key": "rewardEmoji_fireMage_gift",
+        "emojiId": "emoji_firemage_gift"
+    },
+    "rewardEmoji_fireMage_rage": {
+        "key": "rewardEmoji_fireMage_rage",
+        "emojiId": "emoji_firemage_rage"
+    },
+    "rewardEmoji_fireMage_victory": {
+        "key": "rewardEmoji_fireMage_victory",
+        "emojiId": "emoji_firemage_victory"
+    }
+}

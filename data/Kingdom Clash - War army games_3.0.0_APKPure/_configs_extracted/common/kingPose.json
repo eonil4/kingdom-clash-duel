@@ -1,0 +1,72 @@
+{
+    "pose_man_1": {
+        "key": "pose_man_1",
+        "serverKey": "pose-standard",
+        "kingVariantId": "kingMale",
+        "prefabId": "king_pose_01",
+        "order": 0
+    },
+    "pose_woman_1": {
+        "key": "pose_woman_1",
+        "serverKey": "pose-standard",
+        "kingVariantId": "queenFemale",
+        "prefabId": "queen_pose_01",
+        "order": 0
+    },
+    "pose_man_2": {
+        "key": "pose_man_2",
+        "serverKey": "pose-ready",
+        "kingVariantId": "kingMale",
+        "prefabId": "king_pose_02",
+        "order": 1
+    },
+    "pose_man_3": {
+        "key": "pose_man_3",
+        "serverKey": "pose-aggressive",
+        "kingVariantId": "kingMale",
+        "prefabId": "king_pose_03",
+        "order": 2
+    },
+    "pose_man_4": {
+        "key": "pose_man_4",
+        "serverKey": "pose-provocative",
+        "kingVariantId": "kingMale",
+        "prefabId": "king_pose_04",
+        "order": 3
+    },
+    "pose_man_5": {
+        "key": "pose_man_5",
+        "serverKey": "pose-cocky",
+        "kingVariantId": "kingMale",
+        "prefabId": "king_pose_05",
+        "order": 4
+    },
+    "pose_woman_2": {
+        "key": "pose_woman_2",
+        "serverKey": "pose-ready",
+        "kingVariantId": "queenFemale",
+        "prefabId": "queen_pose_02",
+        "order": 1
+    },
+    "pose_woman_3": {
+        "key": "pose_woman_3",
+        "serverKey": "pose-aggressive",
+        "kingVariantId": "queenFemale",
+        "prefabId": "queen_pose_03",
+        "order": 2
+    },
+    "pose_woman_4": {
+        "key": "pose_woman_4",
+        "serverKey": "pose-provocative",
+        "kingVariantId": "queenFemale",
+        "prefabId": "queen_pose_04",
+        "order": 3
+    },
+    "pose_woman_5": {
+        "key": "pose_woman_5",
+        "serverKey": "pose-cocky",
+        "kingVariantId": "queenFemale",
+        "prefabId": "queen_pose_05",
+        "order": 4
+    }
+}

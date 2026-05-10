@@ -1,0 +1,10 @@
+{
+    "normal": {
+        "key": "normal",
+        "order": 0
+    },
+    "hard": {
+        "key": "hard",
+        "order": 1
+    }
+}

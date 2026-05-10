@@ -1,0 +1,322 @@
+{
+    "color_1": {
+        "key": "color_1",
+        "serverAvatarColorId": 1,
+        "colorCode": {
+            "red": 59,
+            "green": 144,
+            "blue": 135,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 42,
+            "green": 109,
+            "blue": 102,
+            "alpha": 255
+        }
+    },
+    "color_2": {
+        "key": "color_2",
+        "serverAvatarColorId": 2,
+        "colorCode": {
+            "red": 97,
+            "green": 82,
+            "blue": 150,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 68,
+            "green": 68,
+            "blue": 51,
+            "alpha": 255
+        }
+    },
+    "color_3": {
+        "key": "color_3",
+        "serverAvatarColorId": 3,
+        "colorCode": {
+            "red": 195,
+            "green": 80,
+            "blue": 80,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 140,
+            "green": 50,
+            "blue": 50,
+            "alpha": 255
+        }
+    },
+    "color_4": {
+        "key": "color_4",
+        "serverAvatarColorId": 4,
+        "colorCode": {
+            "red": 225,
+            "green": 154,
+            "blue": 70,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 163,
+            "green": 105,
+            "blue": 43,
+            "alpha": 255
+        }
+    },
+    "color_5": {
+        "key": "color_5",
+        "serverAvatarColorId": 5,
+        "colorCode": {
+            "red": 86,
+            "green": 86,
+            "blue": 86,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 54,
+            "green": 54,
+            "blue": 54,
+            "alpha": 255
+        }
+    },
+    "color_6": {
+        "key": "color_6",
+        "serverAvatarColorId": 6,
+        "colorCode": {
+            "red": 81,
+            "green": 116,
+            "blue": 195,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 81,
+            "green": 116,
+            "blue": 196,
+            "alpha": 255
+        }
+    },
+    "color_7": {
+        "key": "color_7",
+        "serverAvatarColorId": 7,
+        "colorCode": {
+            "red": 189,
+            "green": 115,
+            "blue": 167,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 143,
+            "green": 82,
+            "blue": 125,
+            "alpha": 255
+        }
+    },
+    "color_8": {
+        "key": "color_8",
+        "serverAvatarColorId": 8,
+        "colorCode": {
+            "red": 113,
+            "green": 159,
+            "blue": 97,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 79,
+            "green": 112,
+            "blue": 67,
+            "alpha": 255
+        }
+    },
+    "color_9": {
+        "key": "color_9",
+        "serverAvatarColorId": 9,
+        "colorCode": {
+            "red": 103,
+            "green": 152,
+            "blue": 187,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 72,
+            "green": 108,
+            "blue": 133,
+            "alpha": 255
+        }
+    },
+    "color_10": {
+        "key": "color_10",
+        "serverAvatarColorId": 10,
+        "colorCode": {
+            "red": 144,
+            "green": 65,
+            "blue": 98,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 107,
+            "green": 46,
+            "blue": 60,
+            "alpha": 255
+        }
+    },
+    "color_11": {
+        "key": "color_11",
+        "serverAvatarColorId": 11,
+        "colorCode": {
+            "red": 208,
+            "green": 111,
+            "blue": 111,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 167,
+            "green": 85,
+            "blue": 85,
+            "alpha": 255
+        }
+    },
+    "color_12": {
+        "key": "color_12",
+        "serverAvatarColorId": 12,
+        "colorCode": {
+            "red": 48,
+            "green": 138,
+            "blue": 90,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 31,
+            "green": 97,
+            "blue": 62,
+            "alpha": 255
+        }
+    },
+    "color_13": {
+        "key": "color_13",
+        "serverAvatarColorId": 13,
+        "colorCode": {
+            "red": 155,
+            "green": 112,
+            "blue": 66,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 111,
+            "green": 79,
+            "blue": 44,
+            "alpha": 255
+        }
+    },
+    "color_14": {
+        "key": "color_14",
+        "serverAvatarColorId": 14,
+        "colorCode": {
+            "red": 228,
+            "green": 179,
+            "blue": 86,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 161,
+            "green": 119,
+            "blue": 56,
+            "alpha": 255
+        }
+    },
+    "color_15": {
+        "key": "color_15",
+        "serverAvatarColorId": 15,
+        "colorCode": {
+            "red": 135,
+            "green": 108,
+            "blue": 173,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 96,
+            "green": 76,
+            "blue": 124,
+            "alpha": 255
+        }
+    },
+    "color_16": {
+        "key": "color_16",
+        "serverAvatarColorId": 16,
+        "colorCode": {
+            "red": 46,
+            "green": 112,
+            "blue": 105,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 31,
+            "green": 79,
+            "blue": 74,
+            "alpha": 255
+        }
+    },
+    "color_17": {
+        "key": "color_17",
+        "serverAvatarColorId": 17,
+        "colorCode": {
+            "red": 78,
+            "green": 78,
+            "blue": 78,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 55,
+            "green": 55,
+            "blue": 55,
+            "alpha": 255
+        }
+    },
+    "color_18": {
+        "key": "color_18",
+        "serverAvatarColorId": 18,
+        "colorCode": {
+            "red": 89,
+            "green": 141,
+            "blue": 177,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 60,
+            "green": 99,
+            "blue": 125,
+            "alpha": 255
+        }
+    },
+    "color_19": {
+        "key": "color_19",
+        "serverAvatarColorId": 19,
+        "colorCode": {
+            "red": 155,
+            "green": 90,
+            "blue": 136,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 110,
+            "green": 61,
+            "blue": 95,
+            "alpha": 255
+        }
+    },
+    "color_20": {
+        "key": "color_20",
+        "serverAvatarColorId": 20,
+        "colorCode": {
+            "red": 91,
+            "green": 164,
+            "blue": 143,
+            "alpha": 255
+        },
+        "colorOutlineCode": {
+            "red": 61,
+            "green": 120,
+            "blue": 103,
+            "alpha": 255
+        }
+    }
+}

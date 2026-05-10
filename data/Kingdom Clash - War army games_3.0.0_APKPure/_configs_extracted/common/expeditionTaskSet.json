@@ -1,0 +1,16 @@
+{
+    "common_task_set": {
+        "key": "common_task_set",
+        "tasks": [
+            "task_short",
+            "task_medium",
+            "task_long"
+        ]
+    },
+    "common_task_set_tutorial": {
+        "key": "common_task_set_tutorial",
+        "tasks": [
+            "task_ultrashort"
+        ]
+    }
+}

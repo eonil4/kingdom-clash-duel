@@ -1,0 +1,100 @@
+{
+    "InitialPassSettings": {
+        "key": "InitialPassSettings",
+        "battlepassLinkId": "InitialPass",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": null,
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "SecondSeasonSettings": {
+        "key": "SecondSeasonSettings",
+        "battlepassLinkId": "SecondSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": null,
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "ThirdSeasonSettings": {
+        "key": "ThirdSeasonSettings",
+        "battlepassLinkId": "ThirdSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": null,
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "FourthSeasonSettings": {
+        "key": "FourthSeasonSettings",
+        "battlepassLinkId": "FourthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": null,
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "FifthSeasonSettings": {
+        "key": "FifthSeasonSettings",
+        "battlepassLinkId": "FifthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "SixthSeasonSettings": {
+        "key": "SixthSeasonSettings",
+        "battlepassLinkId": "SixthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "SeventhSeasonSettings": {
+        "key": "SeventhSeasonSettings",
+        "battlepassLinkId": "SeventhSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "EighthSeasonSettings": {
+        "key": "EighthSeasonSettings",
+        "battlepassLinkId": "EighthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "NinthSeasonSettings": {
+        "key": "NinthSeasonSettings",
+        "battlepassLinkId": "NinthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "TenthSeasonSettings": {
+        "key": "TenthSeasonSettings",
+        "battlepassLinkId": "TenthSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_druid",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "EleventhSeasonSettings": {
+        "key": "EleventhSeasonSettings",
+        "battlepassLinkId": "EleventhSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "TenthSeason_Gasket_Settings": {
+        "key": "TenthSeason_Gasket_Settings",
+        "battlepassLinkId": "TenthSeason_Gasket",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_druid",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "TwelveSeasonSettings": {
+        "key": "TwelveSeasonSettings",
+        "battlepassLinkId": "TwelveSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "scheduleRatioId": "PermanentQuestRatio"
+    },
+    "ThirteenSeasonSettings": {
+        "key": "ThirteenSeasonSettings",
+        "battlepassLinkId": "ThirteenSeason",
+        "initialDailyQuestNodeId": "daily1",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "scheduleRatioId": "PermanentQuestRatio"
+    }
+}

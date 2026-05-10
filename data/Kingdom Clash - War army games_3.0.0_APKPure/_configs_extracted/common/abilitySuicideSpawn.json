@@ -1,0 +1,52 @@
+{
+    "minotaurCage_spawn_1": {
+        "key": "minotaurCage_spawn_1",
+        "abilityInfoId": "minotaurCage_spawn",
+        "spawnTroop": null,
+        "spawnDelay": 1,
+        "suicideDelay": 0.1,
+        "spawnDistance": 2,
+        "spawnCount": 5,
+        "aoeDamage": 1000
+    },
+    "minotaurCage_spawn_2": {
+        "key": "minotaurCage_spawn_2",
+        "abilityInfoId": "minotaurCage_spawn",
+        "spawnTroop": null,
+        "spawnDelay": 1,
+        "suicideDelay": 0.1,
+        "spawnDistance": 2,
+        "spawnCount": 5,
+        "aoeDamage": 1500
+    },
+    "minotaurCage_spawn_3": {
+        "key": "minotaurCage_spawn_3",
+        "abilityInfoId": "minotaurCage_spawn",
+        "spawnTroop": null,
+        "spawnDelay": 1,
+        "suicideDelay": 0.1,
+        "spawnDistance": 2,
+        "spawnCount": 5,
+        "aoeDamage": 2000
+    },
+    "minotaurCage_spawn_4": {
+        "key": "minotaurCage_spawn_4",
+        "abilityInfoId": "minotaurCage_spawn",
+        "spawnTroop": null,
+        "spawnDelay": 1,
+        "suicideDelay": 0.1,
+        "spawnDistance": 2,
+        "spawnCount": 5,
+        "aoeDamage": 2500
+    },
+    "minotaurCage_spawn_5": {
+        "key": "minotaurCage_spawn_5",
+        "abilityInfoId": "minotaurCage_spawn",
+        "spawnTroop": null,
+        "spawnDelay": 1,
+        "suicideDelay": 0.1,
+        "spawnDistance": 2,
+        "spawnCount": 5,
+        "aoeDamage": 3000
+    }
+}

@@ -1,0 +1,322 @@
+{
+    "1": {
+        "key": "1",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "infantryChestReward"
+    },
+    "2": {
+        "key": "2",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allTroopsChestReward"
+    },
+    "3": {
+        "key": "3",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareTroopsReward"
+    },
+    "4": {
+        "key": "4",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicTroopsReward"
+    },
+    "5": {
+        "key": "5",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "legendaryTroopsReward"
+    },
+    "6": {
+        "key": "6",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareTroopsReward2"
+    },
+    "7": {
+        "key": "7",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "commonChestReward"
+    },
+    "8": {
+        "key": "8",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allContentChestReward"
+    },
+    "9": {
+        "key": "9",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "woodenChest"
+    },
+    "10": {
+        "key": "10",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "archerChest"
+    },
+    "11": {
+        "key": "11",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "commonChest"
+    },
+    "12": {
+        "key": "12",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "comRareChest"
+    },
+    "13": {
+        "key": "13",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareTwoTroopsReward"
+    },
+    "14": {
+        "key": "14",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicTwoTroopsReward"
+    },
+    "15": {
+        "key": "15",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allContentTwoChestReward"
+    },
+    "16": {
+        "key": "16",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "legendaryTwoTroopsReward"
+    },
+    "17": {
+        "key": "17",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareThreeTroopsReward"
+    },
+    "18": {
+        "key": "18",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareFourTroopsReward"
+    },
+    "19": {
+        "key": "19",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareFiveTroopsReward"
+    },
+    "20": {
+        "key": "20",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareSixTroopsReward"
+    },
+    "21": {
+        "key": "21",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareEightTroopsReward"
+    },
+    "22": {
+        "key": "22",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareTenTroopsReward"
+    },
+    "23": {
+        "key": "23",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareTwelveTroopsReward"
+    },
+    "24": {
+        "key": "24",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicLegTroopsReward"
+    },
+    "25": {
+        "key": "25",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "shopChest"
+    },
+    "26": {
+        "key": "26",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "goldChest"
+    },
+    "27": {
+        "key": "27",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "offerDailyChestLegendary"
+    },
+    "28": {
+        "key": "28",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "offerDailyChestEpic"
+    },
+    "29": {
+        "key": "29",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "offerTroopChestLegendary"
+    },
+    "30": {
+        "key": "30",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "offerTroopChestEpic"
+    },
+    "31": {
+        "key": "31",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "NighthunterChest"
+    },
+    "32": {
+        "key": "32",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "StoneGolemChest"
+    },
+    "33": {
+        "key": "33",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "MountainsChampionChest"
+    },
+    "34": {
+        "key": "34",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "NecromancerChest"
+    },
+    "35": {
+        "key": "35",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "VulkanGolemChest"
+    },
+    "36": {
+        "key": "36",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "AlchemistChest"
+    },
+    "37": {
+        "key": "37",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "RaceWelcomeChest"
+    },
+    "38": {
+        "key": "38",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "EpicSquadClanShopChest"
+    },
+    "39": {
+        "key": "39",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "LegSquadClanShopChest"
+    },
+    "40": {
+        "key": "40",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "PhoenixChest"
+    },
+    "41": {
+        "key": "41",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "firstHeroChestReward"
+    },
+    "42": {
+        "key": "42",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "secondHeroChestReward"
+    },
+    "43": {
+        "key": "43",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "thirdHeroChestReward"
+    },
+    "44": {
+        "key": "44",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allHeroChestReward"
+    },
+    "45": {
+        "key": "45",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allHeroTwoChestReward"
+    },
+    "46": {
+        "key": "46",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allHeroThreeChestReward"
+    },
+    "47": {
+        "key": "47",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allHeroFourChestReward"
+    },
+    "48": {
+        "key": "48",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicLegChestReward"
+    },
+    "49": {
+        "key": "49",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "rareEpicChestReward"
+    },
+    "50": {
+        "key": "50",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicHeroClanShopReward"
+    },
+    "51": {
+        "key": "51",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "legHeroClanShopReward"
+    },
+    "52": {
+        "key": "52",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "woodenChest_x2"
+    },
+    "53": {
+        "key": "53",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "woodenChest_x3"
+    },
+    "54": {
+        "key": "54",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allContentChestReward_x2"
+    },
+    "55": {
+        "key": "55",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allContentChestReward_x3"
+    },
+    "56": {
+        "key": "56",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "shopChest_x2"
+    },
+    "57": {
+        "key": "57",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "shopChest_x3"
+    },
+    "58": {
+        "key": "58",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "shopChest_x10"
+    },
+    "59": {
+        "key": "59",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "clanChest"
+    },
+    "60": {
+        "key": "60",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "legendaryTroopsReward_x3"
+    },
+    "61": {
+        "key": "61",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicTwoTroopsReward_x2"
+    },
+    "62": {
+        "key": "62",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "epicTwoTroopsReward_x5"
+    },
+    "63": {
+        "key": "63",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "allContentChestReward_x3"
+    },
+    "64": {
+        "key": "64",
+        "setRewardChestId": "SetChestAny",
+        "rewardChestId": "shopChest_x7"
+    }
+}

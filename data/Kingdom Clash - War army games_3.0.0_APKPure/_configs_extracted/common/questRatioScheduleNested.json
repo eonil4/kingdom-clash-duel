@@ -1,0 +1,34 @@
+{
+    "QuestRatio_1": {
+        "key": "QuestRatio_1",
+        "sheduleId": "PermanentQuestRatio",
+        "dayStart": 0,
+        "dayEnd": 14,
+        "free": 5,
+        "premium": 1
+    },
+    "QuestRatio_2": {
+        "key": "QuestRatio_2",
+        "sheduleId": "PermanentQuestRatio",
+        "dayStart": 15,
+        "dayEnd": 21,
+        "free": 4,
+        "premium": 2
+    },
+    "QuestRatio_3": {
+        "key": "QuestRatio_3",
+        "sheduleId": "PermanentQuestRatio",
+        "dayStart": 22,
+        "dayEnd": 31,
+        "free": 3,
+        "premium": 3
+    },
+    "QuestRatio_Event_AxeThrowers_1": {
+        "key": "QuestRatio_Event_AxeThrowers_1",
+        "sheduleId": "PermanentQuestRatioEventAxeThrowers",
+        "dayStart": 0,
+        "dayEnd": 3,
+        "free": 4,
+        "premium": 4
+    }
+}

@@ -1,0 +1,407 @@
+{
+    "BattlePassUnlockLevel_1": {
+        "key": "BattlePassUnlockLevel_1",
+        "levels": 1,
+        "battlepassTypeId": "normal",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "BattlePassUnlockLevel_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "BattlePassUnlockLevel_5": {
+        "key": "BattlePassUnlockLevel_5",
+        "levels": 5,
+        "battlepassTypeId": "normal",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "BattlePassUnlockLevel_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "BattlePassUnlockLevel_10": {
+        "key": "BattlePassUnlockLevel_10",
+        "levels": 10,
+        "battlepassTypeId": "normal",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "BattlePassUnlockLevel_10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "ArenaBattlePassUnlockLevel_1": {
+        "key": "ArenaBattlePassUnlockLevel_1",
+        "levels": 1,
+        "battlepassTypeId": "arena",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "ArenaBattlePassUnlockLevel_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "ArenaBattlePassUnlockLevel_5": {
+        "key": "ArenaBattlePassUnlockLevel_5",
+        "levels": 5,
+        "battlepassTypeId": "arena",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "ArenaBattlePassUnlockLevel_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "ArenaBattlePassUnlockLevel_10": {
+        "key": "ArenaBattlePassUnlockLevel_10",
+        "levels": 10,
+        "battlepassTypeId": "arena",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "ArenaBattlePassUnlockLevel_10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoBattlePassUnlockLevel_1": {
+        "key": "CasinoBattlePassUnlockLevel_1",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoBattlePassUnlockLevel_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoBattlePassUnlockLevel_5": {
+        "key": "CasinoBattlePassUnlockLevel_5",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoBattlePassUnlockLevel_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoBattlePassUnlockLevel_10": {
+        "key": "CasinoBattlePassUnlockLevel_10",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoBattlePassUnlockLevel_10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoKingBattlePassUnlockLevel_1": {
+        "key": "CasinoKingBattlePassUnlockLevel_1",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoKingBattlePassUnlockLevel_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoKingBattlePassUnlockLevel_5": {
+        "key": "CasinoKingBattlePassUnlockLevel_5",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoKingBattlePassUnlockLevel_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "CasinoKingBattlePassUnlockLevel_10": {
+        "key": "CasinoKingBattlePassUnlockLevel_10",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoKingBattlePassUnlockLevel_10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_10_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_10_reflectarmor",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_10_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_5_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_5_reflectarmor",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_5_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_1_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_1_reflectarmor",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_1_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_10_aoearmor": {
+        "key": "casinobattlepassunlocklevel_10_aoearmor",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_10_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_5_aoearmor": {
+        "key": "casinobattlepassunlocklevel_5_aoearmor",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_5_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_1_aoearmor": {
+        "key": "casinobattlepassunlocklevel_1_aoearmor",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_1_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_10_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_10_aoeweapon",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_10_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_5_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_5_aoeweapon",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_5_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_1_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_1_aoeweapon",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_1_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_10_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_10_reflectweapon",
+        "levels": 10,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_10_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_5_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_5_reflectweapon",
+        "levels": 5,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_5_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepassunlocklevel_1_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_1_reflectweapon",
+        "levels": 1,
+        "battlepassTypeId": "casino",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepassunlocklevel_1_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "TowerAxeThrowersBattlePassUnlockLevel_1": {
+        "key": "TowerAxeThrowersBattlePassUnlockLevel_1",
+        "levels": 1,
+        "battlepassTypeId": "tower",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "SquadEventBattlePassUnlockLevel_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "TowerAxeThrowersBattlePassUnlockLevel_5": {
+        "key": "TowerAxeThrowersBattlePassUnlockLevel_5",
+        "levels": 5,
+        "battlepassTypeId": "tower",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "SquadEventBattlePassUnlockLevel_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "TowerAxeThrowersBattlePassUnlockLevel_10": {
+        "key": "TowerAxeThrowersBattlePassUnlockLevel_10",
+        "levels": 10,
+        "battlepassTypeId": "tower",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "SquadEventBattlePassUnlockLevel_10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

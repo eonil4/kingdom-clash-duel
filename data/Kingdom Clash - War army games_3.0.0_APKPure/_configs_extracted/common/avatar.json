@@ -1,0 +1,452 @@
+{
+    "Alchemist": {
+        "key": "Alchemist",
+        "resourceId": null,
+        "resourceBundleId": "alchemistIcon",
+        "requiredUnitId": "alchemist"
+    },
+    "Infantry": {
+        "key": "Infantry",
+        "resourceId": null,
+        "resourceBundleId": "infantryIcon",
+        "requiredUnitId": "infantry"
+    },
+    "Archer": {
+        "key": "Archer",
+        "resourceId": null,
+        "resourceBundleId": "archerIcon",
+        "requiredUnitId": "archer"
+    },
+    "Ironguards": {
+        "key": "Ironguards",
+        "resourceId": null,
+        "resourceBundleId": "ironGuardsIcon",
+        "requiredUnitId": "ironGuards"
+    },
+    "Bomber": {
+        "key": "Bomber",
+        "resourceId": null,
+        "resourceBundleId": "bomberIcon",
+        "requiredUnitId": "bomber"
+    },
+    "Catapult": {
+        "key": "Catapult",
+        "resourceId": null,
+        "resourceBundleId": "catapultIcon",
+        "requiredUnitId": "catapult"
+    },
+    "Assasin": {
+        "key": "Assasin",
+        "resourceId": null,
+        "resourceBundleId": "assasinIcon",
+        "requiredUnitId": "assasin"
+    },
+    "Skeleton": {
+        "key": "Skeleton",
+        "resourceId": null,
+        "resourceBundleId": "skeletonIcon",
+        "requiredUnitId": "necromancer"
+    },
+    "Necromancer": {
+        "key": "Necromancer",
+        "resourceId": null,
+        "resourceBundleId": "necromancerIcon",
+        "requiredUnitId": "necromancer"
+    },
+    "Butcher": {
+        "key": "Butcher",
+        "resourceId": null,
+        "resourceBundleId": "butcherIcon",
+        "requiredUnitId": "butcher"
+    },
+    "Paladin": {
+        "key": "Paladin",
+        "resourceId": null,
+        "resourceBundleId": "paladinIcon",
+        "requiredUnitId": "paladin"
+    },
+    "Undeadmage": {
+        "key": "Undeadmage",
+        "resourceId": null,
+        "resourceBundleId": "undeadMageIcon",
+        "requiredUnitId": "undeadMage"
+    },
+    "Lancer": {
+        "key": "Lancer",
+        "resourceId": null,
+        "resourceBundleId": "lancerIcon",
+        "requiredUnitId": "lancer"
+    },
+    "Hunter": {
+        "key": "Hunter",
+        "resourceId": null,
+        "resourceBundleId": "hunterIcon",
+        "requiredUnitId": "hunter"
+    },
+    "Beast": {
+        "key": "Beast",
+        "resourceId": null,
+        "resourceBundleId": "beastIcon",
+        "requiredUnitId": "hunter"
+    },
+    "Shaman": {
+        "key": "Shaman",
+        "resourceId": null,
+        "resourceBundleId": "shamanIcon",
+        "requiredUnitId": "shaman"
+    },
+    "General": {
+        "key": "General",
+        "resourceId": null,
+        "resourceBundleId": "generalIcon",
+        "requiredUnitId": "general"
+    },
+    "Darkknight": {
+        "key": "Darkknight",
+        "resourceId": null,
+        "resourceBundleId": "darkKnightIcon",
+        "requiredUnitId": "darkKnight"
+    },
+    "Dragonrider": {
+        "key": "Dragonrider",
+        "resourceId": null,
+        "resourceBundleId": "dragonRiderIcon",
+        "requiredUnitId": "dragonRider"
+    },
+    "Accuratemerida": {
+        "key": "Accuratemerida",
+        "resourceId": null,
+        "resourceBundleId": "accurateMeridaIcon",
+        "requiredUnitId": "accurateMerida"
+    },
+    "Baronbenua": {
+        "key": "Baronbenua",
+        "resourceId": null,
+        "resourceBundleId": "baronBenuaIcon",
+        "requiredUnitId": "baronBenua"
+    },
+    "Mountainschampion": {
+        "key": "Mountainschampion",
+        "resourceId": null,
+        "resourceBundleId": "mountainsChampionIcon",
+        "requiredUnitId": "mountainsChampion"
+    },
+    "Swordmasterhero": {
+        "key": "Swordmasterhero",
+        "resourceId": null,
+        "resourceBundleId": "swordmasterHeroIcon",
+        "requiredUnitId": "swordmasterHero"
+    },
+    "Clerichero": {
+        "key": "Clerichero",
+        "resourceId": null,
+        "resourceBundleId": "clericHeroIcon",
+        "requiredUnitId": "clericHero"
+    },
+    "Ringleaderhero": {
+        "key": "Ringleaderhero",
+        "resourceId": null,
+        "resourceBundleId": "ringleaderHeroIcon",
+        "requiredUnitId": "ringleaderHero"
+    },
+    "Charmer": {
+        "key": "Charmer",
+        "resourceId": null,
+        "resourceBundleId": "charmerIcon",
+        "requiredUnitId": "charmer"
+    },
+    "Monk": {
+        "key": "Monk",
+        "resourceId": null,
+        "resourceBundleId": "monkIcon",
+        "requiredUnitId": "monk"
+    },
+    "Undeadinfantry": {
+        "key": "Undeadinfantry",
+        "resourceId": null,
+        "resourceBundleId": "undeadInfantry",
+        "requiredUnitId": "undeadInfantry"
+    },
+    "Undeadjavelin": {
+        "key": "Undeadjavelin",
+        "resourceId": null,
+        "resourceBundleId": "undeadJavelin",
+        "requiredUnitId": "undeadJavelin"
+    },
+    "BoneDragon": {
+        "key": "BoneDragon",
+        "resourceId": null,
+        "resourceBundleId": "boneDragonIcon",
+        "requiredUnitId": "boneDragon"
+    },
+    "ForestQueen": {
+        "key": "ForestQueen",
+        "resourceId": null,
+        "resourceBundleId": "forestQueenIcon",
+        "requiredUnitId": "forestQueen"
+    },
+    "Nun": {
+        "key": "Nun",
+        "resourceId": null,
+        "resourceBundleId": "nunIcon",
+        "requiredUnitId": "nun"
+    },
+    "UndeadHeadless": {
+        "key": "UndeadHeadless",
+        "resourceId": null,
+        "resourceBundleId": "undeadHeadlessIcon",
+        "requiredUnitId": "undeadHeadless"
+    },
+    "SpiderBlast": {
+        "key": "SpiderBlast",
+        "resourceId": null,
+        "resourceBundleId": "spiderBlastIcon",
+        "requiredUnitId": "spiderBlast"
+    },
+    "GolemInfantry": {
+        "key": "GolemInfantry",
+        "resourceId": null,
+        "resourceBundleId": "golemInfantryIcon",
+        "requiredUnitId": "golemInfantry"
+    },
+    "UndeadWarrior": {
+        "key": "UndeadWarrior",
+        "resourceId": null,
+        "resourceBundleId": "undeadWarriorIcon",
+        "requiredUnitId": "undeadWarrior"
+    },
+    "UndeadGunner": {
+        "key": "UndeadGunner",
+        "resourceId": null,
+        "resourceBundleId": "undeadGunnerIcon",
+        "requiredUnitId": "undeadGunner"
+    },
+    "DamnCatapult": {
+        "key": "DamnCatapult",
+        "resourceId": null,
+        "resourceBundleId": "damnCatapultIcon",
+        "requiredUnitId": "damnCatapult"
+    },
+    "MagicArcher": {
+        "key": "MagicArcher",
+        "resourceId": null,
+        "resourceBundleId": "magicArcherIcon",
+        "requiredUnitId": "magicArcher"
+    },
+    "IceMage": {
+        "key": "IceMage",
+        "resourceId": null,
+        "resourceBundleId": "iceMageIcon",
+        "requiredUnitId": "iceMage"
+    },
+    "DarknessMage": {
+        "key": "DarknessMage",
+        "resourceId": null,
+        "resourceBundleId": "darknessMageIcon",
+        "requiredUnitId": "darknessMage"
+    },
+    "FlyingMonster": {
+        "key": "FlyingMonster",
+        "resourceId": null,
+        "resourceBundleId": "flyingMonsterIcon",
+        "requiredUnitId": "flyingMonster"
+    },
+    "StoneGolem": {
+        "key": "StoneGolem",
+        "resourceId": null,
+        "resourceBundleId": "stoneGolemIcon",
+        "requiredUnitId": "stoneGolem"
+    },
+    "Pyrotechnician": {
+        "key": "Pyrotechnician",
+        "resourceId": null,
+        "resourceBundleId": "pyrotechnicianIcon",
+        "requiredUnitId": "pyrotechnician"
+    },
+    "StormSpearman": {
+        "key": "StormSpearman",
+        "resourceId": null,
+        "resourceBundleId": "stormSpearmanIcon",
+        "requiredUnitId": "stormSpearman"
+    },
+    "AirMage": {
+        "key": "AirMage",
+        "resourceId": null,
+        "resourceBundleId": "airMageIcon",
+        "requiredUnitId": "airMage"
+    },
+    "MageStudent": {
+        "key": "MageStudent",
+        "resourceId": null,
+        "resourceBundleId": "mageStudentIcon",
+        "requiredUnitId": "mageStudent"
+    },
+    "VulkanGolem": {
+        "key": "VulkanGolem",
+        "resourceId": null,
+        "resourceBundleId": "vulkanGolemIcon",
+        "requiredUnitId": "vulkanGolem"
+    },
+    "Druid": {
+        "key": "Druid",
+        "resourceId": null,
+        "resourceBundleId": "druidIcon",
+        "requiredUnitId": "druid"
+    },
+    "Imp": {
+        "key": "Imp",
+        "resourceId": null,
+        "resourceBundleId": "impIcon",
+        "requiredUnitId": "imp"
+    },
+    "EliteWarrior": {
+        "key": "EliteWarrior",
+        "resourceId": null,
+        "resourceBundleId": "eliteWarriorIcon",
+        "requiredUnitId": "eliteWarrior"
+    },
+    "Gravedigger": {
+        "key": "Gravedigger",
+        "resourceId": null,
+        "resourceBundleId": "gravediggerIcon",
+        "requiredUnitId": "gravedigger"
+    },
+    "SkeletonWarrior": {
+        "key": "SkeletonWarrior",
+        "resourceId": null,
+        "resourceBundleId": "skeletonWarriorIcon",
+        "requiredUnitId": "skeletonWarrior"
+    },
+    "LightningElemental": {
+        "key": "LightningElemental",
+        "resourceId": null,
+        "resourceBundleId": "lightningElementalIcon",
+        "requiredUnitId": "lightningElemental"
+    },
+    "UndeadPirate": {
+        "key": "UndeadPirate",
+        "resourceId": null,
+        "resourceBundleId": "undeadPirateIcon",
+        "requiredUnitId": "undeadPirate"
+    },
+    "FireMage": {
+        "key": "FireMage",
+        "resourceId": null,
+        "resourceBundleId": "fireMageIcon",
+        "requiredUnitId": "fireMage"
+    },
+    "WindElemental": {
+        "key": "WindElemental",
+        "resourceId": null,
+        "resourceBundleId": "windElementalIcon",
+        "requiredUnitId": "windElemental"
+    },
+    "WaterMage": {
+        "key": "WaterMage",
+        "resourceId": null,
+        "resourceBundleId": "waterMageIcon",
+        "requiredUnitId": "waterMage"
+    },
+    "SandMage": {
+        "key": "SandMage",
+        "resourceId": null,
+        "resourceBundleId": "sandMageIcon",
+        "requiredUnitId": "sandMage"
+    },
+    "DebafferOnMaunt": {
+        "key": "DebafferOnMaunt",
+        "resourceId": null,
+        "resourceBundleId": "debafferOnMauntIcon",
+        "requiredUnitId": "debafferOnMaunt"
+    },
+    "Phoenix": {
+        "key": "Phoenix",
+        "resourceId": null,
+        "resourceBundleId": "phoenixIcon",
+        "requiredUnitId": "phoenix"
+    },
+    "CursedGiant": {
+        "key": "CursedGiant",
+        "resourceId": null,
+        "resourceBundleId": "cursedGiantIcon",
+        "requiredUnitId": "cursedGiant"
+    },
+    "DoubleShield": {
+        "key": "DoubleShield",
+        "resourceId": null,
+        "resourceBundleId": "doubleShieldIcon",
+        "requiredUnitId": "doubleShield"
+    },
+    "StunToad": {
+        "key": "StunToad",
+        "resourceId": null,
+        "resourceBundleId": "stunToadIcon",
+        "requiredUnitId": "stunToad"
+    },
+    "UndeadPestilence": {
+        "key": "UndeadPestilence",
+        "resourceId": null,
+        "resourceBundleId": "undeadPestilenceIcon",
+        "requiredUnitId": "undeadPestilence"
+    },
+    "LordInquisitor": {
+        "key": "LordInquisitor",
+        "resourceId": null,
+        "resourceBundleId": "lordInquisitorIcon",
+        "requiredUnitId": "lordInquisitor"
+    },
+    "DrunkTank": {
+        "key": "DrunkTank",
+        "resourceId": null,
+        "resourceBundleId": "drunkTankIcon",
+        "requiredUnitId": "drunkTank"
+    },
+    "BardHero": {
+        "key": "BardHero",
+        "resourceId": null,
+        "resourceBundleId": "bardHeroIcon",
+        "requiredUnitId": "bardHero"
+    },
+    "ElevateTank": {
+        "key": "ElevateTank",
+        "resourceId": null,
+        "resourceBundleId": "elevateTankIcon",
+        "requiredUnitId": "elevateTank"
+    },
+    "ElevateArcher": {
+        "key": "ElevateArcher",
+        "resourceId": null,
+        "resourceBundleId": "elevateArcherIcon",
+        "requiredUnitId": "elevateArcher"
+    },
+    "ElevateSupport": {
+        "key": "ElevateSupport",
+        "resourceId": null,
+        "resourceBundleId": "elevateSupportIcon",
+        "requiredUnitId": "elevateSupport"
+    },
+    "DemonFat": {
+        "key": "DemonFat",
+        "resourceId": null,
+        "resourceBundleId": "demonFatIcon",
+        "requiredUnitId": "demonFat"
+    },
+    "DemonTank": {
+        "key": "DemonTank",
+        "resourceId": null,
+        "resourceBundleId": "demonTankIcon",
+        "requiredUnitId": "demonTank"
+    },
+    "DemonMage": {
+        "key": "DemonMage",
+        "resourceId": null,
+        "resourceBundleId": "demonMageIcon",
+        "requiredUnitId": "demonMage"
+    },
+    "AxeThrowers": {
+        "key": "AxeThrowers",
+        "resourceId": null,
+        "resourceBundleId": "axeThrowersIcon",
+        "requiredUnitId": "axeThrowers"
+    }
+}

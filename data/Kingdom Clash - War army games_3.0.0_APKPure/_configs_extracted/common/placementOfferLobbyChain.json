@@ -1,0 +1,86 @@
+{
+    "chainOffer_BoneDragon": {
+        "key": "chainOffer_BoneDragon",
+        "offerChainId": "chainofferBoneDragon",
+        "order": 0,
+        "icon": "icon_offer_boneDragon"
+    },
+    "chainOffer_ForestQueen": {
+        "key": "chainOffer_ForestQueen",
+        "offerChainId": "chainofferForestQueen",
+        "order": 0,
+        "icon": "icon_offer_forestQueen"
+    },
+    "chainOffer_IceMage": {
+        "key": "chainOffer_IceMage",
+        "offerChainId": "chainofferIceMage",
+        "order": 0,
+        "icon": "icon_offer_iceMage"
+    },
+    "chainOffer_Charmer": {
+        "key": "chainOffer_Charmer",
+        "offerChainId": "chainofferCharmer",
+        "order": 0,
+        "icon": "icon_offer_charmer"
+    },
+    "chainOffer_AirMage": {
+        "key": "chainOffer_AirMage",
+        "offerChainId": "chainofferAirMage",
+        "order": 0,
+        "icon": "icon_offer_airMage"
+    },
+    "chainOffer_DarknessMage": {
+        "key": "chainOffer_DarknessMage",
+        "offerChainId": "chainofferDarknessMage",
+        "order": 0,
+        "icon": "icon_offer_darknessMage"
+    },
+    "chainOffer_FireMage": {
+        "key": "chainOffer_FireMage",
+        "offerChainId": "chainofferFireMage",
+        "order": 0,
+        "icon": "icon_offer_fireMage"
+    },
+    "chainOffer_SandMage": {
+        "key": "chainOffer_SandMage",
+        "offerChainId": "chainofferSandMage",
+        "order": 0,
+        "icon": "icon_offer_sandMage"
+    },
+    "chainOffer_UndeadPirate": {
+        "key": "chainOffer_UndeadPirate",
+        "offerChainId": "chainofferUndeadPirate",
+        "order": 0,
+        "icon": "icon_offer_undeadPirate"
+    },
+    "chainOffer_WaterMage": {
+        "key": "chainOffer_WaterMage",
+        "offerChainId": "chainofferWaterMage",
+        "order": 0,
+        "icon": "icon_offer_waterMage"
+    },
+    "chainOffer_LordInquisitor": {
+        "key": "chainOffer_LordInquisitor",
+        "offerChainId": "chainofferLordInquisitor",
+        "order": 0,
+        "icon": "icon_offer_lordInquisitor"
+    },
+    "chainOffer_UndeadPestilence": {
+        "key": "chainOffer_UndeadPestilence",
+        "offerChainId": "chainofferUndeadPestilence",
+        "order": 0,
+        "icon": "icon_offer_undeadPestilence"
+    },
+    "chainOffer_BardHero": {
+        "key": "chainOffer_BardHero",
+        "offerChainId": "chainofferBardHero",
+        "order": 0,
+        "icon": "icon_offer_bardHero"
+    },
+    "chainOffer_DragonRider": {
+        "key": "chainOffer_DragonRider",
+        "offerChainId": "chainofferDragonRider",
+        "order": 0,
+        "icon": "icon_offer_dragon"
+    }
+}

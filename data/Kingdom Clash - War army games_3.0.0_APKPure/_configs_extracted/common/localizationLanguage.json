@@ -1,0 +1,210 @@
+{
+    "en": {
+        "key": "en",
+        "title": "English",
+        "order": 0,
+        "localizationFolder": "en",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "english"
+        ]
+    },
+    "ru": {
+        "key": "ru",
+        "title": "Русский",
+        "order": 1,
+        "localizationFolder": "ru",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "russian"
+        ]
+    },
+    "fr": {
+        "key": "fr",
+        "title": "Français",
+        "order": 2,
+        "localizationFolder": "fr",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "french"
+        ]
+    },
+    "de": {
+        "key": "de",
+        "title": "German",
+        "order": 3,
+        "localizationFolder": "de",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "german"
+        ]
+    },
+    "ko": {
+        "key": "ko",
+        "title": "Korean",
+        "order": 4,
+        "localizationFolder": "ko",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "korean"
+        ]
+    },
+    "ja": {
+        "key": "ja",
+        "title": "Japanese",
+        "order": 5,
+        "localizationFolder": "ja",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "japanese"
+        ]
+    },
+    "es_es": {
+        "key": "es_es",
+        "title": "Spanish",
+        "order": 6,
+        "localizationFolder": "es-es",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "spanish"
+        ]
+    },
+    "es_us": {
+        "key": "es_us",
+        "title": "Spanish (Latin America)",
+        "order": 7,
+        "localizationFolder": "es-us",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "spanish"
+        ]
+    },
+    "pt_br": {
+        "key": "pt_br",
+        "title": "Portuguese (Brazil)",
+        "order": 8,
+        "localizationFolder": "pt-br",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "portuguese"
+        ]
+    },
+    "pt_pt": {
+        "key": "pt_pt",
+        "title": "Portuguese",
+        "order": 9,
+        "localizationFolder": "pt-pt",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "portuguese"
+        ]
+    },
+    "vi": {
+        "key": "vi",
+        "title": "Vietnamese",
+        "order": 10,
+        "localizationFolder": "vi",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "vietnamese"
+        ]
+    },
+    "tr": {
+        "key": "tr",
+        "title": "Turkish",
+        "order": 11,
+        "localizationFolder": "tr",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "turkish"
+        ]
+    },
+    "ind": {
+        "key": "ind",
+        "title": "Indonesian",
+        "order": 12,
+        "localizationFolder": "ind",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "indonesian"
+        ]
+    },
+    "pl": {
+        "key": "pl",
+        "title": "Polish",
+        "order": 13,
+        "localizationFolder": "pl",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "polish"
+        ]
+    },
+    "it": {
+        "key": "it",
+        "title": "Italian",
+        "order": 14,
+        "localizationFolder": "it",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "italian"
+        ]
+    },
+    "ar": {
+        "key": "ar",
+        "title": "Arabic",
+        "order": 15,
+        "localizationFolder": "ar",
+        "allowedPlatforms": [
+            "android",
+            "ios"
+        ],
+        "deviceLocals": [
+            "arabic"
+        ]
+    }
+}

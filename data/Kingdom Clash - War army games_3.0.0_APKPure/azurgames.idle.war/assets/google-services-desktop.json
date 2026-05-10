@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552471907262",
+    "project_id": "kingdom-clash---battle-sim",
+    "storage_bucket": "kingdom-clash---battle-sim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552471907262:android:7d2b07237b36d71de847ef",
+        "android_client_info": {
+          "package_name": "azurgames.idle.war"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552471907262-53dc5johov4crp8v9jouutki5nujos35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7KrN5tP5-6OC5f1nj__qPL3yydKhg9tA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552471907262-53dc5johov4crp8v9jouutki5nujos35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

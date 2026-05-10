@@ -1,0 +1,16 @@
+{
+    "horseshoe": {
+        "key": "horseshoe",
+        "imageWidth": 145,
+        "imageHeigh": 145,
+        "imageAngle": 25,
+        "counterRightPadding": 30
+    },
+    "badgesX2": {
+        "key": "badgesX2",
+        "imageWidth": 150,
+        "imageHeigh": 150,
+        "imageAngle": 345,
+        "counterRightPadding": 30
+    }
+}
