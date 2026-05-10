@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import { spawn } from "child_process";
-import sharp from "sharp";
+import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
 import {
   collectEnemyEntriesFromMap,
@@ -368,18 +368,7 @@ async function main() {
         // target does not exist
       }
       console.log(`Converting to webp:\n  ${filePath}\n  -> ${newPath}`);
-      const sourceMeta = await sharp(filePath).metadata();
-      const sourceDensity =
-        Number.isFinite(sourceMeta.density) && sourceMeta.density > 0
-          ? sourceMeta.density
-          : undefined;
-      let converter = sharp(filePath).webp({ quality: 82 });
-      if (sourceDensity) {
-        converter = converter.withMetadata({ density: sourceDensity });
-      } else {
-        converter = converter.withMetadata();
-      }
-      await converter.toFile(newPath);
+      await writeWebpFromRasterFile(filePath, newPath);
       await unlinkWithRetry(filePath);
       continue;
     }

@@ -37,13 +37,12 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 | Command | Description |
 |--------|-------------|
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update `scripts/fileMap.json` |
-| `pnpm ocr:enemies` | Same as `ocr:enemy` (wrapper for older docs) |
+| `pnpm ocr:enemies` | Same as `ocr:enemy` (alias for older docs / scripts) |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm convert:webp` | From map: create `.webp` beside originals if missing (keeps sources) |
-| `pnpm rename:originals` | From map: rename/convert sources to canonical names |
-| `pnpm rename:enemies` | Optional OCR refresh + rename pipeline |
+| `pnpm enemies:process` | Runs `ocr:enemies` then `convert:webp` (refresh map, then create missing WebPs) |
 
 Pass arguments to Node after `--`:
 
@@ -52,9 +51,12 @@ pnpm ocr:enemy -- --only test.png --force-ocr
 pnpm ocr:enemy:power -- data/enemies/2026-05-08/test/test.png
 pnpm enemy:latin -- "Бабка\\MAG"
 pnpm convert:webp -- --dry-run
+pnpm enemies:process
 ```
 
 Common flags for **`ocr:enemy`** / **`ocr-enemy.mjs`**: `--out`, `--only`, `--limit`, `--debug-crops`, `--force-ocr`.
+
+To **rename or convert sources** onto canonical names (and drop PNG/JPEG after convert), run `node scripts/rename-enemies.mjs` (`--skip-ocr` if the map is already fresh).
 
 ### `test/` fixture folders
 

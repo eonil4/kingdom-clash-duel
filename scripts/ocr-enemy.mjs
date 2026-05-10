@@ -30,7 +30,6 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".png",
   ".jpg",
   ".jpeg",
-  ".webp",
   ".bmp",
   ".tif",
   ".tiff",

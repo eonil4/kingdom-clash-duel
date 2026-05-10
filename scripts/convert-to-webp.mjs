@@ -8,8 +8,8 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import sharp from "sharp";
 import { fileURLToPath } from "url";
+import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import {
   collectEnemyEntriesFromMap,
   DEFAULT_FILE_MAP_PATH,
@@ -75,18 +75,7 @@ async function main() {
     }
 
     console.log(`Converting:\n  ${fromPath}\n  -> ${toPath}`);
-    const sourceMeta = await sharp(fromPath).metadata();
-    const sourceDensity =
-      Number.isFinite(sourceMeta.density) && sourceMeta.density > 0
-        ? sourceMeta.density
-        : undefined;
-    let converter = sharp(fromPath).webp({ quality: 82 });
-    if (sourceDensity) {
-      converter = converter.withMetadata({ density: sourceDensity });
-    } else {
-      converter = converter.withMetadata();
-    }
-    await converter.toFile(toPath);
+    await writeWebpFromRasterFile(fromPath, toPath);
   }
 
   console.log(

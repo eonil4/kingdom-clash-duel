@@ -15,11 +15,10 @@
     "convert:webp": "node scripts/convert-to-webp.mjs",
     "enemy:latin": "node scripts/convert-text-to-latin.mjs",
     "ocr:enemy": "node scripts/ocr-enemy.mjs",
-    "ocr:enemies": "node scripts/ocr-enemies.mjs",
+    "ocr:enemies": "node scripts/ocr-enemy.mjs",
     "ocr:enemy:name": "node scripts/ocr-enemy-name.mjs",
     "ocr:enemy:power": "node scripts/ocr-enemy-power.mjs",
-    "rename:enemies": "node scripts/rename-enemies.mjs",
-    "rename:originals": "node scripts/rename-originals-from-filemap.mjs"
+    "enemies:process": "pnpm ocr:enemies && pnpm convert:webp"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
