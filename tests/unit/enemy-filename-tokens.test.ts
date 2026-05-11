@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { toSafeEnemyFilenameToken } from "../../scripts/enemy-filename-tokens.mjs";
+import {
+  decodeEnemyFilenamePercent,
+  parseLatinNameHintFromEncodedOriginalBasename,
+  toSafeEnemyFilenameToken,
+} from "../../scripts/enemy-filename-tokens.mjs";
 
 describe("toSafeEnemyFilenameToken", () => {
   it("percent-encodes Windows reserved characters", () => {
@@ -19,5 +23,30 @@ describe("toSafeEnemyFilenameToken", () => {
 
   it("replaces other unsafe characters with underscore", () => {
     expect(toSafeEnemyFilenameToken("a@b#c")).toBe("a_b_c");
+  });
+});
+
+describe("decodeEnemyFilenamePercent", () => {
+  it("decodes percent hex sequences", () => {
+    expect(decodeEnemyFilenamePercent("Babka%5CMAG")).toBe(String.raw`Babka\MAG`);
+    expect(decodeEnemyFilenamePercent("a%7Cb")).toBe("a|b");
+  });
+
+  it("iterates so literal percent can be represented", () => {
+    expect(decodeEnemyFilenamePercent("100%25off")).toBe("100%off");
+  });
+});
+
+describe("parseLatinNameHintFromEncodedOriginalBasename", () => {
+  it("returns decoded slug when power-prefix basename uses escapes", () => {
+    expect(parseLatinNameHintFromEncodedOriginalBasename("002_295_202-Babka%5CMAG.png")).toBe(
+      String.raw`Babka\MAG`,
+    );
+  });
+
+  it("returns undefined when slug has no percent escapes (OCR path)", () => {
+    expect(parseLatinNameHintFromEncodedOriginalBasename("002_295_202-Gu_22_u.png")).toBe(
+      undefined,
+    );
   });
 });

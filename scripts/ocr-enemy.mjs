@@ -20,7 +20,12 @@ import {
   WORKSPACE_ROOT,
 } from "./file-map-enemies.mjs";
 import { convertTextToLatinArtifacts } from "./convert-text-to-latin.mjs";
-import { ocrEnemyName, refineEnemyNameWithTestFolderCrops } from "./ocr-enemy-name.mjs";
+import { parseLatinNameHintFromEncodedOriginalBasename } from "./enemy-filename-tokens.mjs";
+import {
+  normalizeOpponentDisplayName,
+  ocrEnemyName,
+  refineEnemyNameWithTestFolderCrops,
+} from "./ocr-enemy-name.mjs";
 import { ocrEnemyPower } from "./ocr-enemy-power.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -181,18 +186,42 @@ async function main() {
           { debugDir, baseLabel: base },
         );
 
-        if (!name || power === undefined) {
+        const latinHintRaw = parseLatinNameHintFromEncodedOriginalBasename(base);
+        const latinHint =
+          latinHintRaw !== undefined
+            ? normalizeOpponentDisplayName(latinHintRaw)
+            : undefined;
+
+        const ocrName = String(name ?? "").trim();
+        const displayName = (() => {
+          if (ocrName && /[\p{sc=Cyrillic}]/u.test(ocrName)) return ocrName;
+          if (latinHint) return latinHint;
+          return ocrName;
+        })();
+
+        if ((!displayName && !latinHint) || power === undefined) {
           console.warn(
             `OCR incomplete, skipping: ${filePath} (name="${name}", power="${power ?? ""}")`,
           );
           continue;
         }
 
-        const art = convertTextToLatinArtifacts(name);
+        const art = convertTextToLatinArtifacts(displayName || latinHint || "");
+        let finalArt = art;
+        if (latinHint) {
+          const hintArt = convertTextToLatinArtifacts(latinHint);
+          finalArt = {
+            ...art,
+            latinRaw: hintArt.latinRaw,
+            ...(hintArt.nameEnglish ? { nameEnglish: hintArt.nameEnglish } : {}),
+          };
+          console.log(`Latin label from percent-encoded filename slug: ${latinHint}`);
+        }
+
         const mapKeyCanonical = canonicalEnemyMapKey(filePath, {
           power,
-          nameLatinRaw: art.latinRaw,
-          nameEnglish: art.nameEnglish,
+          nameLatinRaw: finalArt.latinRaw,
+          nameEnglish: finalArt.nameEnglish,
         });
         const prevRow = findEnemyRowBySourceRel(fileMap, mapKeySource);
         if (prevRow && prevRow.fullMapKey !== mapKeyCanonical) {
@@ -200,12 +229,12 @@ async function main() {
         }
         setNestedMapping(fileMap, mapKeyCanonical, {
           power,
-          name,
-          nameLatin: art.latinRaw,
-          ...(art.nameEnglish ? { nameEnglish: art.nameEnglish } : {}),
+          name: displayName || latinHint || "",
+          nameLatin: finalArt.latinRaw,
+          ...(finalArt.nameEnglish ? { nameEnglish: finalArt.nameEnglish } : {}),
         });
         console.log(
-          `OK: ${filePath} -> ${path.posix.basename(mapKeyCanonical)} { power: ${power}, name: "${name}", alphabet: "${art.alphabet}", latinRaw: "${art.latinRaw}"${art.nameEnglish ? `, nameEnglish: "${art.nameEnglish}"` : ""} }`,
+          `OK: ${filePath} -> ${path.posix.basename(mapKeyCanonical)} { power: ${power}, name: "${displayName || latinHint}", alphabet: "${finalArt.alphabet}", latinRaw: "${finalArt.latinRaw}"${finalArt.nameEnglish ? `, nameEnglish: "${finalArt.nameEnglish}"` : ""} }`,
         );
       } catch (e) {
         console.warn(`Failed OCR: ${filePath}`);

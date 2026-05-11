@@ -30,10 +30,10 @@
             "power": 2033742
           }
         },
-        "002_295_202-Gu_22_u.png": {
-          "002_295_202-Gu_22_u.webp": {
+        "002_295_202-Babka%5CMAG.png": {
+          "002_295_202-Babka%5CMAG.webp": {
             "name": "Гу 22 у",
-            "nameLatin": "Gu 22 u",
+            "nameLatin": "Babka\\MAG",
             "power": 2295202
           }
         },
@@ -73,9 +73,9 @@
           }
         },
         "003_087_788-Gu_22_u.png": {
-          "003_087_788-its_V_o_eYo.webp": {
-            "name": "its В о эЁ",
-            "nameLatin": "its V o eYo",
+          "003_087_788-%7Ci%5C3_wl.webp": {
+            "name": "|i\\3 wl",
+            "nameLatin": "|i\\3 wl",
             "power": 3087788
           }
         },
@@ -94,9 +94,9 @@
           }
         },
         "003_693_511-Be.png": {
-          "003_693_511--_-_EY.webp": {
-            "name": "- - ЕЙ",
-            "nameLatin": "- - EY",
+          "003_693_511--_V_y.webp": {
+            "name": "_- В й",
+            "nameLatin": "_- V y",
             "power": 3693511
           }
         },
