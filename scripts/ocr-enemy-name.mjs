@@ -16,14 +16,17 @@ import {
   preprocessRawForOcr,
 } from "./ocr-enemy-crops.mjs";
 
+/** Letters, digits, tag punctuation (Windows-safe); excludes reserved filename chars. */
+const NAME_STRIP_OUTSIDE_CLASS = /[^\p{L}\d_\- \\|\[\]]+/gu;
+
 function cleanupName(text) {
   const cleaned = String(text)
     .replace(/\s+/g, " ")
-    .replace(/[^\p{L}\d_\- \\|]+/gu, "")
+    .replace(NAME_STRIP_OUTSIDE_CLASS, "")
     .trim();
   const tokens = cleaned.split(" ").filter(Boolean);
   const candidates = tokens.filter((t) =>
-    /^[\p{L}][\p{L}\d_\-\\|]{1,}$/u.test(t),
+    /^[\p{L}][\p{L}\d_\-\\|\[\]]+$/u.test(t),
   );
   if (candidates.length === 0) return "";
 
@@ -33,7 +36,7 @@ function cleanupName(text) {
   }
 
   const titleCase = candidates.filter((c) =>
-    /^[\p{Lu}][\p{L}\d_\-\\|]{1,}$/u.test(c),
+    /^[\p{Lu}][\p{L}\d_\-\\|\[\]]+$/u.test(c),
   );
   const pool = titleCase.length > 0 ? titleCase : candidates;
   return pool[pool.length - 1] ?? "";
@@ -41,20 +44,21 @@ function cleanupName(text) {
 
 function cleanupNamePhrase(text) {
   return String(text)
-    .replace(/[^\p{L}\d_\- \\|]+/gu, " ")
+    .replace(NAME_STRIP_OUTSIDE_CLASS, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
 function scoreNameCandidate(name) {
   if (!name) return -1;
-  if (!/^[\p{L}][\p{L}\d_\-\\|]{1,40}$/u.test(name)) return -1;
+  if (!/^[\p{L}][\p{L}\d_\-\\|\[\]]{1,48}$/u.test(name)) return -1;
   let score = name.length;
   if (/\p{Lu}/u.test(name) && /\p{Ll}/u.test(name)) score += 4;
   if (/^\d+$/.test(name)) score -= 10;
   if (/^(VS|LV|WWW)$/i.test(name)) score -= 3;
   if (/[\p{sc=Cyrillic}]/u.test(name) && /[A-Za-z]{2}/.test(name)) score += 6;
   if (/\\/.test(name)) score += 8;
+  if (/[\[\]]/.test(name)) score += 5;
   return score;
 }
 
@@ -64,18 +68,21 @@ export function arenaNameLineQuality(line) {
   if (!s) return -1000;
   let q = 0;
   if (/\\|\//.test(s)) q += 35;
+  if (/[\[\]]/.test(s)) q += 22;
   if (/[\p{sc=Cyrillic}]/u.test(s) && /[A-Za-z]{2,}/.test(s)) q += 25;
   if (/\s\d{2,3}\s/.test(s)) q -= 35;
   if (/^\d+\s/.test(s) || /\s\d+$/.test(s)) q -= 15;
   return q;
 }
 
-/** Tighten OCR spacing around `\` and `|` inside a line. */
+/** Tighten OCR spacing around `\`, `|`, and bracket tags. */
 export function normalizeOpponentDisplayName(name) {
   return cleanupNamePhrase(
     String(name)
       .replace(/\s*\\\s*/g, "\\")
-      .replace(/\s*\|\s*/g, "|"),
+      .replace(/\s*\|\s*/g, "|")
+      .replace(/\s*\[\s*/g, "[")
+      .replace(/\s*\]\s*/g, "]"),
   );
 }
 
@@ -217,7 +224,7 @@ function extractBestPhraseFromRawText(rawText) {
 }
 
 const LATIN_WHITELIST =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789_- \\| ";
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789_- \\|[] ";
 
 /**
  * @param {import("tesseract.js").Worker} worker
@@ -381,6 +388,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     const mixedScriptOrSep = uniq.filter(
       (c) =>
         /\\|\//.test(c) ||
+        /[\[\]]/.test(c) ||
         (/[\p{sc=Cyrillic}]/u.test(c) && /[A-Za-z]{2,}/.test(c)),
     );
     const cyrLineCandidates = uniq.filter(

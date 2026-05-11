@@ -17,6 +17,10 @@ describe("toSafeEnemyFilenameToken", () => {
     expect(toSafeEnemyFilenameToken("100%")).toBe("100%25");
   });
 
+  it("preserves square brackets (Windows-safe)", () => {
+    expect(toSafeEnemyFilenameToken("POP[MaG]")).toBe("POP[MaG]");
+  });
+
   it("collapses spaces to underscores", () => {
     expect(toSafeEnemyFilenameToken("foo bar")).toBe("foo_bar");
   });

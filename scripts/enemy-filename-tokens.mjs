@@ -56,7 +56,7 @@ export function toSafeEnemyFilenameToken(input) {
       out += esc;
       continue;
     }
-    if (/[A-Za-z0-9_.-]/.test(ch) || ch === "_") {
+    if (/[A-Za-z0-9_.\-[\]]/.test(ch) || ch === "_") {
       out += ch;
       continue;
     }
