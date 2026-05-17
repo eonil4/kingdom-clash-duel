@@ -8,3 +8,5 @@ coverage
 data/**/*_APKPure.zip
 data/**/*_APKPure/main/assets/assetpack/main
 data/**/*_APKPure/**/libil2cpp.so
+
+**/*.zip

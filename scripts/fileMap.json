@@ -1,355 +1,334 @@
 {
   "data": {
     "enemies": {
-      "2026-05-08": {
-        "000_471_711--_Ko_Ch.png": {
-          "000_471_711-chto_Cama.webp": {
-            "name": "что Cama",
-            "nameLatin": "chto Cama",
-            "power": 471711
+      "2026-05-15": {
+        "Screenshot_2026.05.16_00.26.32.107.png": {
+          "000_234_009-U_polu_LNONNyya.webp": {
+            "name": "У полу ЛНОННыя",
+            "nameLatin": "U polu LNONNyya",
+            "power": 234009
           }
         },
-        "001_975_347-UE_b_855_813.png": {
-          "001_975_347-FL_naaaaianio.webp": {
-            "name": "FL нааааианио",
-            "nameLatin": "FL naaaaianio",
-            "power": 1975347
+        "Screenshot_2026.05.16_00.26.56.675.png": {
+          "005_911_506-%7Cm_Lo_mel%7C.webp": {
+            "name": "|м Lo mel|",
+            "nameLatin": "|m Lo mel|",
+            "power": 5911506
           }
         },
-        "001_983_306-Gu_22_u.png": {
-          "001_983_306-wis_9_Ra_V.webp": {
-            "name": "wis 9 Ра В",
-            "nameLatin": "wis 9 Ra V",
-            "power": 1983306
+        "Screenshot_2026.05.16_00.27.06.842.png": {
+          "004_594_251-4_I_LONONNNYy.webp": {
+            "name": "4 I ЛОНОНННЫй",
+            "nameLatin": "4 I LONONNNYy",
+            "power": 4594251
           }
         },
-        "002_033_742-Yat.png": {
-          "002_033_742-dey_kaya_of.webp": {
-            "name": "дей кая of",
-            "nameLatin": "dey kaya of",
-            "power": 2033742
+        "Screenshot_2026.05.16_00.27.15.858.png": {
+          "000_120_679-go_K%7C%7C.webp": {
+            "name": "go К||",
+            "nameLatin": "go K||",
+            "power": 120679
           }
         },
-        "002_295_202-Babka%5CMAG.png": {
-          "002_295_202-Babka%5CMAG.webp": {
-            "name": "Гу 22 у",
-            "nameLatin": "Babka\\MAG",
-            "power": 2295202
+        "Screenshot_2026.05.16_00.27.26.542.png": {
+          "000_008_209-1c_Ts_jo_t_kr%7C.webp": {
+            "name": "1c Ц jo т kr|",
+            "nameLatin": "1c Ts jo t kr|",
+            "power": 8209
           }
         },
-        "002_776_990-Ok_OOO_LONANNNNYya.png": {
-          "002_776_990-Ch_POY%7C.webp": {
-            "name": "Ч ПОЙ|",
-            "nameLatin": "Ch POY|",
-            "power": 2776990
+        "Screenshot_2026.05.16_00.28.07.491.png": {
+          "000_132_959-Ka_iss%7Cs_NE%7C.webp": {
+            "name": "Ka iss|с НЕ|",
+            "nameLatin": "Ka iss|s NE|",
+            "power": 132959
           }
         },
-        "002_805_172-Sh_u_-_im_oy_el_E_Y.png": {
-          "002_805_172-Som_Koni_chae.webp": {
-            "name": "Som Кони чае",
-            "nameLatin": "Som Koni chae",
-            "power": 2805172
+        "Screenshot_2026.05.16_00.28.26.623.png": {
+          "003_620_437-pres.webp": {
+            "name": "pres",
+            "nameLatin": "pres",
+            "power": 3620437
           }
         },
-        "002_918_457-gad_Xe_ku_Cals.png": {
-          "002_918_457-%7C%7Cie_u_oly.webp": {
-            "name": "||ie у oly",
-            "nameLatin": "||ie u oly",
-            "power": 2918457
+        "Screenshot_2026.05.16_00.28.53.374.png": {
+          "009_377_549-Dzhekson_e%5Ca.webp": {
+            "name": "Джексон е\\а",
+            "nameLatin": "Dzhekson e\\a",
+            "power": 9377549
           }
         },
-        "002_926_672-Sf_Chena_si.png": {
-          "002_926_672-Si_for.webp": {
-            "name": "Си for",
-            "nameLatin": "Si for",
-            "power": 2926672
+        "Screenshot_2026.05.16_00.29.08.057.png": {
+          "004_544_689-SCh_podlyy_LONONNNyy.webp": {
+            "name": "СЧ подлый ЛОНОНННый",
+            "nameLatin": "SCh podlyy LONONNNyy",
+            "power": 4544689
           }
         },
-        "002_949_574-ws_RE_V.png": {
-          "002_949_574-ch_i_los_ey.webp": {
-            "name": "ч i los эй",
-            "nameLatin": "ch i los ey",
-            "power": 2949574
+        "Screenshot_2026.05.16_00.29.23.274.png": {
+          "003_559_446-cho_soraioolnit.webp": {
+            "name": "чо сораиоолнитьь",
+            "nameLatin": "cho soraioolnit",
+            "power": 3559446
           }
         },
-        "003_087_788-Gu_22_u.png": {
-          "003_087_788-%7Ci%5C3_wl.webp": {
-            "name": "|i\\3 wl",
-            "nameLatin": "|i\\3 wl",
-            "power": 3087788
+        "Screenshot_2026.05.16_00.30.03.640.png": {
+          "002_002_056-onaya_duZnanitNichto.webp": {
+            "name": "оная дуЗнанитНичто",
+            "nameLatin": "onaya duZnanitNichto",
+            "power": 2002056
           }
         },
-        "003_561_902-ya_WP_iyy_V.png": {
-          "003_561_902-Gu_22_u.webp": {
-            "name": "Гу 22 у",
-            "nameLatin": "Gu 22 u",
-            "power": 3561902
+        "Screenshot_2026.05.16_00.30.16.756.png": {
+          "005_688_210-%7C-_kh_-%7CIY%7C.webp": {
+            "name": "|- х -|IY|",
+            "nameLatin": "|- kh -|IY|",
+            "power": 5688210
           }
         },
-        "003_671_426-O_y_ya_v.png": {
-          "003_671_426-%7C%7CPon_5%7CJ%7Cy.webp": {
-            "name": "||Pon 5|J|й",
-            "nameLatin": "||Pon 5|J|y",
-            "power": 3671426
+        "Screenshot_2026.05.16_00.30.31.156.png": {
+          "007_171_422-ws_Wy_V.webp": {
+            "name": "ws Wy В",
+            "nameLatin": "ws Wy V",
+            "power": 7171422
           }
         },
-        "003_693_511-Be.png": {
-          "003_693_511--_V_y.webp": {
-            "name": "_- В й",
-            "nameLatin": "_- V y",
-            "power": 3693511
+        "Screenshot_2026.05.16_00.30.51.823.png": {
+          "006_444_341-FL_sopuiiooliitny.webp": {
+            "name": "FL сопуииоолиитны",
+            "nameLatin": "FL sopuiiooliitny",
+            "power": 6444341
           }
         },
-        "004_043_149-ws_ply_V.png": {
-          "004_043_149-Lo_yo_6_855_813.webp": {
-            "name": "Lo ё 6 855 813",
-            "nameLatin": "Lo yo 6 855 813",
-            "power": 4043149
+        "Screenshot_2026.05.16_00.31.10.423.png": {
+          "002_181_918-%7Co_K_-_V%7C.webp": {
+            "name": "|о К _- В|",
+            "nameLatin": "|o K _- V|",
+            "power": 2181918
           }
         },
-        "004_236_438-Ls_Yo_6_855_813.png": {
-          "004_236_438-a_des_ey.webp": {
-            "name": "a des ей",
-            "nameLatin": "a des ey",
-            "power": 4236438
+        "Screenshot_2026.05.16_00.31.29.806.png": {
+          "000_005_456-%7CN_y_7_ya_y_cbr.webp": {
+            "name": "|N y 7 я ы cbr",
+            "nameLatin": "|N y 7 ya y cbr",
+            "power": 5456
           }
         },
-        "004_462_935-i_HN_Ch_Ee_3_L_Tk.png": {
-          "004_462_935-ly_che.webp": {
-            "name": "ly че",
-            "nameLatin": "ly che",
-            "power": 4462935
+        "Screenshot_2026.05.16_00.31.59.989.png": {
+          "009_169_208-%7Cy_i_of%7C.webp": {
+            "name": "|ы и of|",
+            "nameLatin": "|y i of|",
+            "power": 9169208
           }
         },
-        "004_520_835-VO_i_y_Shchkh_ny_t_iy.png": {
-          "004_520_835-ee_Le_Chan.webp": {
-            "name": "ee Le Чан",
-            "nameLatin": "ee Le Chan",
-            "power": 4520835
+        "Screenshot_2026.05.16_00.32.15.539.png": {
+          "007_785_735-o_Linushino.webp": {
+            "name": "о Линушино",
+            "nameLatin": "o Linushino",
+            "power": 7785735
           }
         },
-        "004_718_085-cho_tsao_oni_u.png": {
-          "004_718_085-Blacklis_MAS.webp": {
-            "name": "Blacklis МАС",
-            "nameLatin": "Blacklis MAS",
-            "power": 4718085
-          }
-        },
-        "004_729_828-we_ChR_V.png": {
-          "004_729_828-VERES_MAS_pa.webp": {
-            "name": "ВЕРЕС МАС па",
-            "nameLatin": "VERES MAS pa",
-            "power": 4729828
-          }
-        },
-        "004_746_014-v_Why.png": {
-          "004_746_014-Saio_MA_4.webp": {
-            "name": "Saio МА 4",
-            "nameLatin": "Saio MA 4",
-            "power": 4746014
-          }
-        },
-        "004_822_161-ws_RE_V.png": {
-          "004_822_161-Yo_6855_s.webp": {
-            "name": "Ё 6855 с",
-            "nameLatin": "Yo 6855 s",
-            "power": 4822161
-          }
-        },
-        "005_012_073-j_DE_ey.png": {
-          "005_012_073-Ya_Shy_ey.webp": {
-            "name": "Я Shy эй",
-            "nameLatin": "Ya Shy ey",
-            "power": 5012073
-          }
-        },
-        "005_099_035-2_yana_Sle_a_enn.png": {
-          "005_099_035-%5Co_Anatsnio.webp": {
-            "name": "\\о Анацнио",
-            "nameLatin": "\\o Anatsnio",
-            "power": 5099035
-          }
-        },
-        "005_104_958-m_Andriy_Striy_MAS.png": {
-          "005_104_958-HAPIM_Striy_MAS.webp": {
-            "name": "HAPIM Стрий МАС",
-            "nameLatin": "HAPIM Striy MAS",
-            "power": 5104958
-          }
-        },
-        "005_220_323-Zak_yf.png": {
-          "005_220_323-MK_MAS_yach.webp": {
-            "name": "MK МАС яч",
-            "nameLatin": "MK MAS yach",
-            "power": 5220323
-          }
-        },
-        "005_402_231-Nik19-_MAG.png": {
-          "005_402_231-Nik19-_MAG.webp": {
-            "name": "Ник19- MAG",
-            "nameLatin": "Nik19- MAG",
-            "power": 5402231
-          }
-        },
-        "005_663_395-NC_DARK_AGT_Ts.png": {
-          "005_663_395-i_A_-_oa_M_ey%7C.webp": {
-            "name": "i A - oa М ей|",
-            "nameLatin": "i A - oa M ey|",
-            "power": 5663395
-          }
-        },
-        "005_797_255-GRU_TS.png": {
-          "005_797_255-x_2p_Ku_i.webp": {
-            "name": "x 2p Ку i",
-            "nameLatin": "x 2p Ku i",
-            "power": 5797255
-          }
-        },
-        "005_846_676-By.png": {
-          "005_846_676-Gu_22_u.webp": {
+        "Screenshot_2026.05.16_00.32.33.073.png": {
+          "000_000_422-Gu_22_u.webp": {
             "name": "Гу 22 у",
             "nameLatin": "Gu 22 u",
-            "power": 5846676
+            "power": 422
           }
         },
-        "005_891_602-w_3_DE_RT.png": {
-          "005_891_602-pa_REE%7C.webp": {
-            "name": "па REE|",
-            "nameLatin": "pa REE|",
-            "power": 5891602
+        "Screenshot_2026.05.16_00.32.54.673.png": {
+          "007_489_978-Pi.webp": {
+            "name": "Pi",
+            "nameLatin": "Pi",
+            "power": 7489978
           }
         },
-        "006_006_360-Ok_POLON_Dunaya_OOONANNNNyya.png": {
-          "006_006_360-ya_oa_-_A_kr%7C.webp": {
-            "name": "я oa - A kr|",
-            "nameLatin": "ya oa - A kr|",
-            "power": 6006360
+        "Screenshot_2026.05.16_00.33.17.506.png": {
+          "008_122_876-Cos_-%7CEy%7C.webp": {
+            "name": "Cos -|Ей|",
+            "nameLatin": "Cos -|Ey|",
+            "power": 8122876
           }
         },
-        "006_211_110-w_80_nN_A_J_u_he_Bl.png": {
-          "006_211_110-2y_ShEORAT1256MAS.webp": {
-            "name": "2й ШЕОРАТ1256МАС",
-            "nameLatin": "2y ShEORAT1256MAS",
-            "power": 6211110
+        "Screenshot_2026.05.16_00.33.34.889.png": {
+          "005_870_760-A_al%7CE_A%7C.webp": {
+            "name": "A al|Е A|",
+            "nameLatin": "A al|E A|",
+            "power": 5870760
           }
         },
-        "006_289_633-Yao.png": {
-          "006_289_633-of_Als_AG_t_oy.webp": {
-            "name": "of Als AG т ой",
-            "nameLatin": "of Als AG t oy",
-            "power": 6289633
+        "Screenshot_2026.05.16_00.33.54.290.png": {
+          "008_962_200-Sh_KOChEVNIK_-V-.webp": {
+            "name": "Ш КОЧЕВНИК -V-",
+            "nameLatin": "Sh KOChEVNIK -V-",
+            "power": 8962200
           }
         },
-        "006_348_865-i_g_y_Shcho_-_m_EY.png": {
-          "006_348_865-be_ya_yu_ey.webp": {
-            "name": "be я ю эй",
-            "nameLatin": "be ya yu ey",
-            "power": 6348865
+        "Screenshot_2026.05.16_00.34.17.424.png": {
+          "006_462_092-B_Vankholvsyn_ale.webp": {
+            "name": "B Ванхолвсйн ale",
+            "nameLatin": "B Vankholvsyn ale",
+            "power": 6462092
           }
         },
-        "006_366_876-Gu_22_u.png": {
-          "006_366_876-fy_ey.webp": {
-            "name": "fy эй",
-            "nameLatin": "fy ey",
-            "power": 6366876
+        "Screenshot_2026.05.16_00.34.46.473.png": {
+          "007_255_694-%7Cr_B_i_BN_Ts.webp": {
+            "name": "|р B i BN Ц",
+            "nameLatin": "|r B i BN Ts",
+            "power": 7255694
           }
         },
-        "006_489_866-Vo_-Y_m_Ya_-_v.png": {
-          "006_489_866-os_ned.webp": {
-            "name": "os нед",
-            "nameLatin": "os ned",
-            "power": 6489866
+        "Screenshot_2026.05.16_00.35.13.190.png": {
+          "000_004_551-ws_WY_iy_V.webp": {
+            "name": "ws WY iy В",
+            "nameLatin": "ws WY iy V",
+            "power": 4551
           }
         },
-        "006_566_973-Gu_22_u.png": {
-          "006_566_973-K_he_5_ey.webp": {
-            "name": "К he 5 эй",
-            "nameLatin": "K he 5 ey",
-            "power": 6566973
+        "Screenshot_2026.05.16_00.35.33.273.png": {
+          "008_151_930-Gu_22_u.webp": {
+            "name": "Гу 22 у",
+            "nameLatin": "Gu 22 u",
+            "power": 8151930
           }
         },
-        "007_387_057-Shurik_MAG.png": {
-          "007_387_057-Shurik_MAGT%7C-.webp": {
-            "name": "Шурик MAGT|-",
-            "nameLatin": "Shurik MAGT|-",
-            "power": 7387057
+        "Screenshot_2026.05.16_00.35.51.823.png": {
+          "005_087_808-o_anv_D%7C.webp": {
+            "name": "о анв Д|",
+            "nameLatin": "o anv D|",
+            "power": 5087808
           }
         },
-        "007_492_660-Vo_-D_M_De_-_v.png": {
-          "007_492_660-rr_ey%7C.webp": {
-            "name": "rr ей|",
-            "nameLatin": "rr ey|",
-            "power": 7492660
+        "Screenshot_2026.05.16_00.36.08.589.png": {
+          "007_062_385-I_Sadomigamora_zV.webp": {
+            "name": "И Sadomigamora zV",
+            "nameLatin": "I Sadomigamora zV",
+            "power": 7062385
           }
         },
-        "007_998_092-Ok_POLON_Du_OOONANNNNyya.png": {
-          "007_998_092-uly_ey.webp": {
-            "name": "uly эй",
-            "nameLatin": "uly ey",
-            "power": 7998092
+        "Screenshot_2026.05.16_00.36.29.089.png": {
+          "000_000_096-YE_LOOONNNyy.webp": {
+            "name": "YE ЛОООНННый",
+            "nameLatin": "YE LOOONNNyy",
+            "power": 96
           }
         },
-        "008_484_357-Be.png": {
-          "008_484_357-Chaya_Ay_i_%7C.webp": {
-            "name": "Чая Ay i ь|",
-            "nameLatin": "Chaya Ay i |",
-            "power": 8484357
+        "Screenshot_2026.05.16_00.36.47.740.png": {
+          "005_339_327-LE_o%7C%7C.webp": {
+            "name": "LE о||",
+            "nameLatin": "LE o||",
+            "power": 5339327
           }
         },
-        "008_495_971-s_raninnnio.png": {
-          "008_495_971-i_kg_ey.webp": {
-            "name": "i kg эй",
-            "nameLatin": "i kg ey",
-            "power": 8495971
+        "Screenshot_2026.05.16_00.37.10.207.png": {
+          "005_285_791-[%7Ca_ChR_Zi.webp": {
+            "name": "[|a ЧР Зи",
+            "nameLatin": "[|a ChR Zi",
+            "power": 5285791
           }
         },
-        "008_577_168-den_i_NI_oo.png": {
-          "008_577_168-i_6855_S.webp": {
-            "name": "i 6855 С",
-            "nameLatin": "i 6855 S",
-            "power": 8577168
+        "Screenshot_2026.05.16_00.37.27.589.png": {
+          "000_002_510-Ch_polon_LOONANNNyya.webp": {
+            "name": "Ч полон ЛООНАНННыя",
+            "nameLatin": "Ch polon LOONANNNyya",
+            "power": 2510
           }
         },
-        "008_581_458-Ya_aiutoi.png": {
-          "008_581_458-hg_ey.webp": {
-            "name": "hg эй",
-            "nameLatin": "hg ey",
-            "power": 8581458
+        "Screenshot_2026.05.16_00.37.51.673.png": {
+          "006_001_850-%7Csito_oonniv.webp": {
+            "name": "|сито ооннивьь",
+            "nameLatin": "|sito oonniv",
+            "power": 6001850
           }
         },
-        "008_749_033-VO_J_5_hy_Ww_7.png": {
-          "008_749_033-by_ny%7C%7Cey%7C.webp": {
-            "name": "бы ны||ей|",
-            "nameLatin": "by ny||ey|",
-            "power": 8749033
+        "Screenshot_2026.05.16_00.38.21.973.png": {
+          "007_359_353-v%7Cue_-_wh%7C%7C.webp": {
+            "name": "v|уе - wh||",
+            "nameLatin": "v|ue - wh||",
+            "power": 7359353
           }
         },
-        "008_827_802-u_el_Vs_hoe_NI_A.png": {
-          "008_827_802-g%7C%7CNE_re_ok.webp": {
-            "name": "г||NE re ok",
-            "nameLatin": "g||NE re ok",
-            "power": 8827802
+        "Screenshot_2026.05.16_00.38.45.189.png": {
+          "008_507_566-Gu_22_u.webp": {
+            "name": "Гу 22 у",
+            "nameLatin": "Gu 22 u",
+            "power": 8507566
           }
         },
-        "008_853_942-o_4_7_och_ay_Nl_g_j.png": {
-          "008_853_942-u_BAL_ya.webp": {
-            "name": "у BAL йа",
-            "nameLatin": "u BAL ya",
-            "power": 8853942
+        "Screenshot_2026.05.16_00.39.04.224.png": {
+          "007_227_481-ORD_ovy.webp": {
+            "name": "ОРД овй",
+            "nameLatin": "ORD ovy",
+            "power": 7227481
           }
         },
-        "008_990_903-VO_U_Do_Ve_-_v.png": {
-          "008_990_903-pin_ks_ay_uf.webp": {
-            "name": "пин кс ай uf",
-            "nameLatin": "pin ks ay uf",
-            "power": 8990903
+        "Screenshot_2026.05.16_00.39.24.506.png": {
+          "007_580_577-cha_ok.webp": {
+            "name": "ча ok",
+            "nameLatin": "cha ok",
+            "power": 7580577
           }
         },
-        "009_254_338-ws_Wily_V.png": {
-          "009_254_338-ya_u_G_oN_ey%7C.webp": {
-            "name": "я у Г oN эй|",
-            "nameLatin": "ya u G oN ey|",
-            "power": 9254338
+        "Screenshot_2026.05.16_00.39.45.790.png": {
+          "004_044_096-polno%7C-%7C%7C%7C.webp": {
+            "name": "полно|-|||",
+            "nameLatin": "polno|-|||",
+            "power": 4044096
+          }
+        },
+        "Screenshot_2026.05.16_00.40.09.373.png": {
+          "004_755_405-[SUCH_k.webp": {
+            "name": "[SUCH к",
+            "nameLatin": "[SUCH k",
+            "power": 4755405
+          }
+        },
+        "Screenshot_2026.05.16_00.40.41.739.png": {
+          "004_908_594-i_nii.webp": {
+            "name": "i нии",
+            "nameLatin": "i nii",
+            "power": 4908594
+          }
+        },
+        "Screenshot_2026.05.16_00.41.01.423.png": {
+          "004_349_108-Se_gor]%7C.webp": {
+            "name": "Se gor]|",
+            "nameLatin": "Se gor]|",
+            "power": 4349108
+          }
+        },
+        "Screenshot_2026.05.16_00.41.24.173.png": {
+          "000_009_976-obyvincheiii_doiinitiNich.webp": {
+            "name": "обывинчеиии доиинитиНич",
+            "nameLatin": "obyvincheiii doiinitiNich",
+            "power": 9976
+          }
+        },
+        "Screenshot_2026.05.16_00.41.42.823.png": {
+          "005_424_553-anny.webp": {
+            "name": "anny",
+            "nameLatin": "anny",
+            "power": 5424553
+          }
+        },
+        "Screenshot_2026.05.16_00.42.18.340.png": {
+          "009_937_566-chyo_Ui_ok.webp": {
+            "name": "чё Уи ok",
+            "nameLatin": "chyo Ui ok",
+            "power": 9937566
+          }
+        },
+        "Screenshot_2026.05.16_00.42.54.556.png": {
+          "000_002_646-[P_Oy_a_wl%7C.webp": {
+            "name": "[П Oy а wl|",
+            "nameLatin": "[P Oy a wl|",
+            "power": 2646
+          }
+        },
+        "Screenshot_2026.05.16_00.43.12.506.png": {
+          "009_130_817-ava_ov_IME.webp": {
+            "name": "ава ов ИМЕ",
+            "nameLatin": "ava ov IME",
+            "power": 9130817
           }
         }
       }
