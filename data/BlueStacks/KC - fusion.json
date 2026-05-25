@@ -1,0 +1,158 @@
+{
+    "Acceleration": 1,
+    "CreationTime": "20260522T012934",
+    "DoNotShowWindowOnFinish": false,
+    "Events": [
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 456,
+            "X": 13.449999809265137,
+            "Y": 82.48999786376953
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 553,
+            "X": 13.449999809265137,
+            "Y": 82.4000015258789
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 554,
+            "X": 13.449999809265137,
+            "Y": 82.4000015258789
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 1096,
+            "X": 24.469999313354492,
+            "Y": 82.04000091552734
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 1208,
+            "X": 24.6299991607666,
+            "Y": 82.04000091552734
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 1209,
+            "X": 24.6299991607666,
+            "Y": 82.04000091552734
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 1745,
+            "X": 40.029998779296875,
+            "Y": 81.48999786376953
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 1897,
+            "X": 40.349998474121094,
+            "Y": 81.48999786376953
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 1897,
+            "X": 40.349998474121094,
+            "Y": 81.48999786376953
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 2441,
+            "X": 50.400001525878906,
+            "Y": 58.880001068115234
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 2593,
+            "X": 50.400001525878906,
+            "Y": 58.880001068115234
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 3312,
+            "X": 50.88999938964844,
+            "Y": 60.34000015258789
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 3441,
+            "X": 51.70000076293945,
+            "Y": 60.15999984741211
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 3442,
+            "X": 51.70000076293945,
+            "Y": 60.15999984741211
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseDown",
+            "Timestamp": 7648,
+            "X": 52.02000045776367,
+            "Y": 74.37999725341797
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 7752,
+            "X": 52.349998474121094,
+            "Y": 74.37999725341797
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 7760,
+            "X": 52.66999816894531,
+            "Y": 74.11000061035156
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 7769,
+            "X": 53.31999969482422,
+            "Y": 73.6500015258789
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseMove",
+            "Timestamp": 7777,
+            "X": 54.130001068115234,
+            "Y": 73.29000091552734
+        },
+        {
+            "Delta": 0,
+            "EventType": "MouseUp",
+            "Timestamp": 7778,
+            "X": 54.130001068115234,
+            "Y": 73.29000091552734
+        }
+    ],
+    "LoopDuration": 0,
+    "LoopInterval": 0,
+    "LoopIterations": 12,
+    "LoopType": "TillLoopNumber",
+    "MacroSchemaVersion": 3,
+    "MergeConfigurations": [
+    ],
+    "RestartPlayer": false,
+    "RestartPlayerAfterMinutes": 60,
+    "Shortcut": "",
+    "StopOnHomeScreen": false
+}
