@@ -8,7 +8,7 @@ before - [auto off][x1 speed]
 03:51 - [heal]
 03:42 - [run] második karom után és 2. képesség előtt
 03:23 - [run] 1. képesség aktív lesz
-(idáig jutottam)
+03:08 - (idáig jutottam)
 02:59 - [run] második karom után és 2. képesség előtt
 02:40 - [run] 1. képesség aktív lesz
 02:16 - [run] második karom után és 2. képesség előtt
