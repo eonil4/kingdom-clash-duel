@@ -1,11 +1,10 @@
 /**
- * Process enemy screenshots in a folder: Ollama vision extraction, WebP conversion, fileMap update.
+ * Process enemy screenshots in a folder: LM Studio vision extraction, WebP conversion, fileMap update.
  *
  * Usage:
- *   node scripts/convert.js data/enemies/2026-05-22/test
+ *   node scripts/convert-with-llm.js data/enemies/2026-05-22/test
  *
- * Requires a local vision LLM (default: LM Studio on :1234):
- *   LLM_PROVIDER=lmstudio
+ * Requires LM Studio with a loaded vision model:
  *   LLM_MODEL=google/gemma-4-e4b
  *   LLM_HOST=http://127.0.0.1:1234
  */
@@ -17,18 +16,23 @@ import {
   canonicalEnemyMapKey,
   DEFAULT_FILE_MAP_PATH,
   loadExistingFileMap,
+  saveFileMap,
   setNestedMapping,
-  sortMapNode,
   WORKSPACE_ROOT,
 } from "./file-map-enemies.mjs";
-import { extractEnemyDataFromScreenshot } from "./ollama-enemy-extract.mjs";
+import {
+  DEFAULT_LLM_MODEL,
+  extractEnemyDataFromScreenshot,
+} from "./llm-enemy-extract.mjs";
 
 /**
  * @param {string} imagePath
  */
 async function callLLMApiForDataExtraction(imagePath) {
   console.log(`\t[LLM] ${path.basename(imagePath)}...`);
-  const extracted = await extractEnemyDataFromScreenshot(imagePath);
+  const extracted = await extractEnemyDataFromScreenshot(imagePath, {
+    model: process.env.LLM_MODEL ?? DEFAULT_LLM_MODEL,
+  });
   console.log(
     `\t[LLM] power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
       (extracted.englishName ? ` english=${JSON.stringify(extracted.englishName)}` : ""),
@@ -95,6 +99,8 @@ async function processImageFolder(folderArg) {
       try {
         await fs.access(outputPath);
         console.log(`\t[Skip] WebP already exists: ${canonicalName}`);
+        await saveFileMap(mapRoot);
+        console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
         skipped++;
         continue;
       } catch {
@@ -103,17 +109,16 @@ async function processImageFolder(folderArg) {
 
       console.log(`\t[Conversion] -> ${canonicalName}`);
       await writeWebpFromRasterFile(imagePath, outputPath);
+      await saveFileMap(mapRoot);
+      console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
       converted++;
     } catch (err) {
       console.error(`\t[Error] ${originalFileName}:`, err instanceof Error ? err.message : err);
     }
   }
 
-  const sorted = sortMapNode(mapRoot);
-  await fs.writeFile(DEFAULT_FILE_MAP_PATH, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
-
   console.log(
-    `\nDone: ${converted} converted, ${skipped} already existed. Map written to ${DEFAULT_FILE_MAP_PATH}`,
+    `\nDone: ${converted} converted, ${skipped} already existed. Map: ${DEFAULT_FILE_MAP_PATH}`,
   );
 }
 

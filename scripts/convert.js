@@ -8,7 +8,7 @@
  *   node scripts/convert.js data/enemies/2026-05-22/test
  *   node scripts/convert.js data/enemies/2026-05-22/test --force
  *
- * Env: LLM_PROVIDER, LLM_MODEL, LLM_HOST (see ollama-enemy-extract.mjs)
+ * Env: LLM_MODEL, LLM_HOST (see llm-enemy-extract.mjs)
  */
 import fs from "fs/promises";
 import path from "path";
@@ -19,12 +19,12 @@ import {
   DEFAULT_FILE_MAP_PATH,
   findEnemyRowBySourceRel,
   loadExistingFileMap,
+  saveFileMap,
   setNestedMapping,
-  sortMapNode,
   toMapKey,
   WORKSPACE_ROOT,
 } from "./file-map-enemies.mjs";
-import { extractEnemyDataFromScreenshot } from "./ollama-enemy-extract.mjs";
+import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
 
 const LLM_MAX_ATTEMPTS = 3;
 const RETRY_BASE_DELAY_MS = 1500;
@@ -229,6 +229,10 @@ async function processImageFolder(folderArg, options = {}) {
         try {
           await fs.access(outputPath);
           console.log(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
+          if (!usedMapOnly) {
+            await saveFileMap(mapRoot);
+            console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
+          }
           skippedComplete++;
           continue;
         } catch {
@@ -238,6 +242,8 @@ async function processImageFolder(folderArg, options = {}) {
 
       console.log(`\t[Conversion] -> ${path.basename(outputPath)}`);
       await writeWebpFromRasterFile(imagePath, outputPath);
+      await saveFileMap(mapRoot);
+      console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
       if (usedMapOnly) {
         convertedFromMap++;
       } else {
@@ -248,9 +254,6 @@ async function processImageFolder(folderArg, options = {}) {
       console.error(`\t[Error] ${originalFileName}:`, err instanceof Error ? err.message : err);
     }
   }
-
-  const sorted = sortMapNode(mapRoot);
-  await fs.writeFile(DEFAULT_FILE_MAP_PATH, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
 
   const llmStats = summarizeDurations(llmDurationsMs);
   const timingSuffix = llmStats

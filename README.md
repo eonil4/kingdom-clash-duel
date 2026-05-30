@@ -42,32 +42,22 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm convert:webp` | From map: create `.webp` beside originals if missing (keeps sources) |
-| `pnpm convert:20260522test` | Ollama vision → WebP + `fileMap.json` for `data/enemies/2026-05-22/test` |
-| `pnpm convert:ollama:test` | Single-image Ollama extraction smoke test |
+| `pnpm convert:20260529` | LM Studio vision → WebP + `fileMap.json` |
+| `pnpm convert:llm:test` | Single-image LM Studio extraction smoke test |
 | `pnpm enemies:process` | Runs `ocr:enemies` then `convert:webp` (refresh map, then create missing WebPs) |
 
-### Local vision LLM (LM Studio or Ollama)
+### Local vision LLM (LM Studio)
 
-For `convert.js` / `ollama-enemy-extract.mjs`, default is **[LM Studio](https://lmstudio.ai/)** `POST /api/v1/chat` on port **1234**:
+For `convert-with-llm.js` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
 
 ```bash
-# Load google/gemma-4-e4b (or another vision model) in LM Studio, then:
-set LLM_PROVIDER=lmstudio
 set LLM_MODEL=google/gemma-4-e4b
 set LLM_HOST=http://127.0.0.1:1234
-pnpm convert:ollama:test
-pnpm convert:20260522test
+pnpm convert:llm:test
+pnpm convert:20260529
 ```
 
 `convert.js` skips PNGs that already have a canonical WebP (per `fileMap.json`). Use `--force` to re-run LLM and overwrite. Failed LLM calls retry 3 times.
-
-Optional [Ollama](https://ollama.com/) instead:
-
-```bash
-set LLM_PROVIDER=ollama
-set LLM_MODEL=llava
-set LLM_HOST=http://127.0.0.1:11434
-```
 
 Pass arguments to Node after `--`:
 

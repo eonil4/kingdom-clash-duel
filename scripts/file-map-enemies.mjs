@@ -187,6 +187,12 @@ export function sortMapNode(node) {
   return Object.fromEntries(entries);
 }
 
+/** Write sorted map to disk (call after each processed image to persist progress). */
+export async function saveFileMap(mapRoot, mapPath = DEFAULT_FILE_MAP_PATH) {
+  const sorted = sortMapNode(mapRoot);
+  await fs.writeFile(mapPath, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
+}
+
 function resolveDiskOriginalFromMapParts(parts, entry, workspaceRoot) {
   const last = parts[parts.length - 1];
   if (last && /\.(png|jpe?g)$/i.test(last)) {
