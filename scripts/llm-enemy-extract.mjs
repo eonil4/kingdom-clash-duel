@@ -10,7 +10,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
-export const DEFAULT_LLM_MODEL = "google/gemma-4-e4b";
+export const DEFAULT_LLM_MODEL = "google/gemma-4-26b-a4b";
 const DEFAULT_HOST = "http://127.0.0.1:1234";
 const CHAT_PATH = "/api/v1/chat";
 const MODELS_PATH = "/api/v1/models";
