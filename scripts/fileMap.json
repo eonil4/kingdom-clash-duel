@@ -1,1474 +1,377 @@
 {
   "data": {
     "enemies": {
-      "2026-05-15": {
-        "Screenshot_2026.05.16_00.26.32.107.png": {
-          "000_234_009-U_polu_LNONNyya.webp": {
-            "name": "У полу ЛНОННыя",
-            "nameLatin": "U polu LNONNyya",
-            "power": 234009
-          }
-        },
-        "Screenshot_2026.05.16_00.26.56.675.png": {
-          "005_911_506-%7Cm_Lo_mel%7C.webp": {
-            "name": "|м Lo mel|",
-            "nameLatin": "|m Lo mel|",
-            "power": 5911506
-          }
-        },
-        "Screenshot_2026.05.16_00.27.06.842.png": {
-          "004_594_251-4_I_LONONNNYy.webp": {
-            "name": "4 I ЛОНОНННЫй",
-            "nameLatin": "4 I LONONNNYy",
-            "power": 4594251
-          }
-        },
-        "Screenshot_2026.05.16_00.27.15.858.png": {
-          "000_120_679-go_K%7C%7C.webp": {
-            "name": "go К||",
-            "nameLatin": "go K||",
-            "power": 120679
-          }
-        },
-        "Screenshot_2026.05.16_00.27.26.542.png": {
-          "000_008_209-1c_Ts_jo_t_kr%7C.webp": {
-            "name": "1c Ц jo т kr|",
-            "nameLatin": "1c Ts jo t kr|",
-            "power": 8209
-          }
-        },
-        "Screenshot_2026.05.16_00.28.07.491.png": {
-          "000_132_959-Ka_iss%7Cs_NE%7C.webp": {
-            "name": "Ka iss|с НЕ|",
-            "nameLatin": "Ka iss|s NE|",
-            "power": 132959
-          }
-        },
-        "Screenshot_2026.05.16_00.28.26.623.png": {
-          "003_620_437-pres.webp": {
-            "name": "pres",
-            "nameLatin": "pres",
-            "power": 3620437
-          }
-        },
-        "Screenshot_2026.05.16_00.28.53.374.png": {
-          "009_377_549-Dzhekson_e%5Ca.webp": {
-            "name": "Джексон е\\а",
-            "nameLatin": "Dzhekson e\\a",
-            "power": 9377549
-          }
-        },
-        "Screenshot_2026.05.16_00.29.08.057.png": {
-          "004_544_689-SCh_podlyy_LONONNNyy.webp": {
-            "name": "СЧ подлый ЛОНОНННый",
-            "nameLatin": "SCh podlyy LONONNNyy",
-            "power": 4544689
-          }
-        },
-        "Screenshot_2026.05.16_00.29.23.274.png": {
-          "003_559_446-cho_soraioolnit.webp": {
-            "name": "чо сораиоолнитьь",
-            "nameLatin": "cho soraioolnit",
-            "power": 3559446
-          }
-        },
-        "Screenshot_2026.05.16_00.30.03.640.png": {
-          "002_002_056-onaya_duZnanitNichto.webp": {
-            "name": "оная дуЗнанитНичто",
-            "nameLatin": "onaya duZnanitNichto",
-            "power": 2002056
-          }
-        },
-        "Screenshot_2026.05.16_00.30.16.756.png": {
-          "005_688_210-%7C-_kh_-%7CIY%7C.webp": {
-            "name": "|- х -|IY|",
-            "nameLatin": "|- kh -|IY|",
-            "power": 5688210
-          }
-        },
-        "Screenshot_2026.05.16_00.30.31.156.png": {
-          "007_171_422-ws_Wy_V.webp": {
-            "name": "ws Wy В",
-            "nameLatin": "ws Wy V",
-            "power": 7171422
-          }
-        },
-        "Screenshot_2026.05.16_00.30.51.823.png": {
-          "006_444_341-FL_sopuiiooliitny.webp": {
-            "name": "FL сопуииоолиитны",
-            "nameLatin": "FL sopuiiooliitny",
-            "power": 6444341
-          }
-        },
-        "Screenshot_2026.05.16_00.31.10.423.png": {
-          "002_181_918-%7Co_K_-_V%7C.webp": {
-            "name": "|о К _- В|",
-            "nameLatin": "|o K _- V|",
-            "power": 2181918
-          }
-        },
-        "Screenshot_2026.05.16_00.31.29.806.png": {
-          "000_005_456-%7CN_y_7_ya_y_cbr.webp": {
-            "name": "|N y 7 я ы cbr",
-            "nameLatin": "|N y 7 ya y cbr",
-            "power": 5456
-          }
-        },
-        "Screenshot_2026.05.16_00.31.59.989.png": {
-          "009_169_208-%7Cy_i_of%7C.webp": {
-            "name": "|ы и of|",
-            "nameLatin": "|y i of|",
-            "power": 9169208
-          }
-        },
-        "Screenshot_2026.05.16_00.32.15.539.png": {
-          "007_785_735-o_Linushino.webp": {
-            "name": "о Линушино",
-            "nameLatin": "o Linushino",
-            "power": 7785735
-          }
-        },
-        "Screenshot_2026.05.16_00.32.33.073.png": {
-          "000_000_422-Gu_22_u.webp": {
-            "name": "Гу 22 у",
-            "nameLatin": "Gu 22 u",
-            "power": 422
-          }
-        },
-        "Screenshot_2026.05.16_00.32.54.673.png": {
-          "007_489_978-Pi.webp": {
-            "name": "Pi",
-            "nameLatin": "Pi",
-            "power": 7489978
-          }
-        },
-        "Screenshot_2026.05.16_00.33.17.506.png": {
-          "008_122_876-Cos_-%7CEy%7C.webp": {
-            "name": "Cos -|Ей|",
-            "nameLatin": "Cos -|Ey|",
-            "power": 8122876
-          }
-        },
-        "Screenshot_2026.05.16_00.33.34.889.png": {
-          "005_870_760-A_al%7CE_A%7C.webp": {
-            "name": "A al|Е A|",
-            "nameLatin": "A al|E A|",
-            "power": 5870760
-          }
-        },
-        "Screenshot_2026.05.16_00.33.54.290.png": {
-          "008_962_200-Sh_KOChEVNIK_-V-.webp": {
-            "name": "Ш КОЧЕВНИК -V-",
-            "nameLatin": "Sh KOChEVNIK -V-",
-            "power": 8962200
-          }
-        },
-        "Screenshot_2026.05.16_00.34.17.424.png": {
-          "006_462_092-B_Vankholvsyn_ale.webp": {
-            "name": "B Ванхолвсйн ale",
-            "nameLatin": "B Vankholvsyn ale",
-            "power": 6462092
-          }
-        },
-        "Screenshot_2026.05.16_00.34.46.473.png": {
-          "007_255_694-%7Cr_B_i_BN_Ts.webp": {
-            "name": "|р B i BN Ц",
-            "nameLatin": "|r B i BN Ts",
-            "power": 7255694
-          }
-        },
-        "Screenshot_2026.05.16_00.35.13.190.png": {
-          "000_004_551-ws_WY_iy_V.webp": {
-            "name": "ws WY iy В",
-            "nameLatin": "ws WY iy V",
-            "power": 4551
-          }
-        },
-        "Screenshot_2026.05.16_00.35.33.273.png": {
-          "008_151_930-Gu_22_u.webp": {
-            "name": "Гу 22 у",
-            "nameLatin": "Gu 22 u",
-            "power": 8151930
-          }
-        },
-        "Screenshot_2026.05.16_00.35.51.823.png": {
-          "005_087_808-o_anv_D%7C.webp": {
-            "name": "о анв Д|",
-            "nameLatin": "o anv D|",
-            "power": 5087808
-          }
-        },
-        "Screenshot_2026.05.16_00.36.08.589.png": {
-          "007_062_385-I_Sadomigamora_zV.webp": {
-            "name": "И Sadomigamora zV",
-            "nameLatin": "I Sadomigamora zV",
-            "power": 7062385
-          }
-        },
-        "Screenshot_2026.05.16_00.36.29.089.png": {
-          "000_000_096-YE_LOOONNNyy.webp": {
-            "name": "YE ЛОООНННый",
-            "nameLatin": "YE LOOONNNyy",
-            "power": 96
-          }
-        },
-        "Screenshot_2026.05.16_00.36.47.740.png": {
-          "005_339_327-LE_o%7C%7C.webp": {
-            "name": "LE о||",
-            "nameLatin": "LE o||",
-            "power": 5339327
-          }
-        },
-        "Screenshot_2026.05.16_00.37.10.207.png": {
-          "005_285_791-[%7Ca_ChR_Zi.webp": {
-            "name": "[|a ЧР Зи",
-            "nameLatin": "[|a ChR Zi",
-            "power": 5285791
-          }
-        },
-        "Screenshot_2026.05.16_00.37.27.589.png": {
-          "000_002_510-Ch_polon_LOONANNNyya.webp": {
-            "name": "Ч полон ЛООНАНННыя",
-            "nameLatin": "Ch polon LOONANNNyya",
-            "power": 2510
-          }
-        },
-        "Screenshot_2026.05.16_00.37.51.673.png": {
-          "006_001_850-%7Csito_oonniv.webp": {
-            "name": "|сито ооннивьь",
-            "nameLatin": "|sito oonniv",
-            "power": 6001850
-          }
-        },
-        "Screenshot_2026.05.16_00.38.21.973.png": {
-          "007_359_353-v%7Cue_-_wh%7C%7C.webp": {
-            "name": "v|уе - wh||",
-            "nameLatin": "v|ue - wh||",
-            "power": 7359353
-          }
-        },
-        "Screenshot_2026.05.16_00.38.45.189.png": {
-          "008_507_566-Gu_22_u.webp": {
-            "name": "Гу 22 у",
-            "nameLatin": "Gu 22 u",
-            "power": 8507566
-          }
-        },
-        "Screenshot_2026.05.16_00.39.04.224.png": {
-          "007_227_481-ORD_ovy.webp": {
-            "name": "ОРД овй",
-            "nameLatin": "ORD ovy",
-            "power": 7227481
-          }
-        },
-        "Screenshot_2026.05.16_00.39.24.506.png": {
-          "007_580_577-cha_ok.webp": {
-            "name": "ча ok",
-            "nameLatin": "cha ok",
-            "power": 7580577
-          }
-        },
-        "Screenshot_2026.05.16_00.39.45.790.png": {
-          "004_044_096-polno%7C-%7C%7C%7C.webp": {
-            "name": "полно|-|||",
-            "nameLatin": "polno|-|||",
-            "power": 4044096
-          }
-        },
-        "Screenshot_2026.05.16_00.40.09.373.png": {
-          "004_755_405-[SUCH_k.webp": {
-            "name": "[SUCH к",
-            "nameLatin": "[SUCH k",
-            "power": 4755405
-          }
-        },
-        "Screenshot_2026.05.16_00.40.41.739.png": {
-          "004_908_594-i_nii.webp": {
-            "name": "i нии",
-            "nameLatin": "i nii",
-            "power": 4908594
-          }
-        },
-        "Screenshot_2026.05.16_00.41.01.423.png": {
-          "004_349_108-Se_gor]%7C.webp": {
-            "name": "Se gor]|",
-            "nameLatin": "Se gor]|",
-            "power": 4349108
-          }
-        },
-        "Screenshot_2026.05.16_00.41.24.173.png": {
-          "000_009_976-obyvincheiii_doiinitiNich.webp": {
-            "name": "обывинчеиии доиинитиНич",
-            "nameLatin": "obyvincheiii doiinitiNich",
-            "power": 9976
-          }
-        },
-        "Screenshot_2026.05.16_00.41.42.823.png": {
-          "005_424_553-anny.webp": {
-            "name": "anny",
-            "nameLatin": "anny",
-            "power": 5424553
-          }
-        },
-        "Screenshot_2026.05.16_00.42.18.340.png": {
-          "009_937_566-chyo_Ui_ok.webp": {
-            "name": "чё Уи ok",
-            "nameLatin": "chyo Ui ok",
-            "power": 9937566
-          }
-        },
-        "Screenshot_2026.05.16_00.42.54.556.png": {
-          "000_002_646-[P_Oy_a_wl%7C.webp": {
-            "name": "[П Oy а wl|",
-            "nameLatin": "[P Oy a wl|",
-            "power": 2646
-          }
-        },
-        "Screenshot_2026.05.16_00.43.12.506.png": {
-          "009_130_817-ava_ov_IME.webp": {
-            "name": "ава ов ИМЕ",
-            "nameLatin": "ava ov IME",
-            "power": 9130817
-          }
-        }
-      },
-      "2026-05-22": {
-        "Screenshot_2026.05.22_02.15.01.977.png": {
-          "005_567_251-EA_I%7C%7C.webp": {
-            "name": "EA И||",
-            "nameLatin": "EA I||",
-            "power": 5567251
-          }
-        },
-        "Screenshot_2026.05.22_02.15.55.461.png": {
-          "008_175_434-Kn_imusn-1_922.webp": {
-            "name": "Kn имусн-1 922",
-            "nameLatin": "Kn imusn-1 922",
-            "power": 8175434
-          }
-        },
-        "Screenshot_2026.05.22_02.16.05.660.png": {
-          "007_136_264-N-1922_ARES.webp": {
-            "name": "Н-1922 ARES",
-            "nameLatin": "N-1922 ARES",
-            "power": 7136264
-          }
-        },
-        "Screenshot_2026.05.22_02.16.14.644.png": {
-          "000_128_622-z%7C[Ta%7C%7Cey.webp": {
-            "name": "z|[Та||эй",
-            "nameLatin": "z|[Ta||ey",
-            "power": 128622
-          }
-        },
-        "Screenshot_2026.05.22_02.16.24.627.png": {
-          "010_443_709-Em_sooloolalui_Anny.webp": {
-            "name": "Ем соолоолалуиь Анны",
-            "nameLatin": "Em sooloolalui Anny",
-            "power": 10443709
-          }
-        },
-        "Screenshot_2026.05.22_02.16.36.177.png": {
-          "004_429_499-Ya_yo_6942_220.webp": {
-            "name": "Я ё 6942 220",
-            "nameLatin": "Ya yo 6942 220",
-            "power": 4429499
-          }
-        },
-        "Screenshot_2026.05.22_02.16.45.210.png": {
-          "003_388_571-nnnnnnounv_LONOLNNNy.webp": {
-            "name": "нннннноунвь ЛОНОЛНННы",
-            "nameLatin": "nnnnnnounv LONOLNNNy",
-            "power": 3388571
-          }
-        },
-        "Screenshot_2026.05.22_02.17.56.094.png": {
-          "000_615_256-u%7C%7Cu_t_3_%7CV%7C.webp": {
-            "name": "у||у т 3 ь|В|",
-            "nameLatin": "u||u t 3 |V|",
-            "power": 615256
-          }
-        },
-        "Screenshot_2026.05.22_02.18.20.727.png": {
-          "000_575_150-8y_srayoilte.webp": {
-            "name": "8ы сраыоилтье",
-            "nameLatin": "8y srayoilte",
-            "power": 575150
-          }
-        },
-        "Screenshot_2026.05.22_02.18.56.494.png": {
-          "000_592_062-%7C%7CLo_i_V_G.webp": {
-            "name": "||Lo i В Г",
-            "nameLatin": "||Lo i V G",
-            "power": 592062
-          }
-        },
-        "Screenshot_2026.05.22_02.19.17.977.png": {
-          "000_003_881-AON_Nl922.webp": {
-            "name": "АОН Нл922",
-            "nameLatin": "AON Nl922",
-            "power": 3881
-          }
-        },
-        "Screenshot_2026.05.22_02.19.36.144.png": {
-          "004_318_785-N-1922_Apostoll_p.webp": {
-            "name": "Н-1922 Apostoll п",
-            "nameLatin": "N-1922 Apostoll p",
-            "power": 4318785
-          }
-        },
-        "Screenshot_2026.05.22_02.19.52.710.png": {
-          "000_114_646-Sh_AELITA_H1922.webp": {
-            "name": "Ш АЭЛИТА H1922",
-            "nameLatin": "Sh AELITA H1922",
-            "power": 114646
-          }
-        },
-        "Screenshot_2026.05.22_02.20.55.827.png": {
-          "010_294_874-H-IMP_d.webp": {
-            "name": "H-IMP д",
-            "nameLatin": "H-IMP d",
-            "power": 10294874
-          }
-        },
-        "Screenshot_2026.05.22_02.21.17.994.png": {
-          "007_201_827-V%7CHH_xt_ONS_alg_L.webp": {
-            "name": "В|HH xt ONS alg L",
-            "nameLatin": "V|HH xt ONS alg L",
-            "power": 7201827
-          }
-        },
-        "Screenshot_2026.05.22_02.21.39.760.png": {
-          "006_879_040-%7CEr_e_u_-%7C.webp": {
-            "name": "|Er e у _-|",
-            "nameLatin": "|Er e u _-|",
-            "power": 6879040
-          }
-        },
-        "Screenshot_2026.05.22_02.22.14.060.png": {
-          "005_922_489-chyo[Sy_7.webp": {
-            "name": "чё[Sy 7",
-            "nameLatin": "chyo[Sy 7",
-            "power": 5922489
-          }
-        },
-        "Screenshot_2026.05.22_02.23.03.960.png": {
-          "007_860_400-LES_LOG.webp": {
-            "name": "LES ЛОГ",
-            "nameLatin": "LES LOG",
-            "power": 7860400
-          }
-        },
-        "Screenshot_2026.05.22_02.23.22.927.png": {
-          "007_174_092-y%7C%7Csurshosi.webp": {
-            "name": "ы||суршосиьь",
-            "nameLatin": "y||surshosi",
-            "power": 7174092
-          }
-        },
-        "Screenshot_2026.05.22_02.28.32.427.png": {
-          "007_268_161-iv_Nyy.webp": {
-            "name": "ив Nyy",
-            "nameLatin": "iv Nyy",
-            "power": 7268161
-          }
-        },
-        "Screenshot_2026.05.22_02.28.51.794.png": {
-          "007_509_629-E_7_sho%7Cey.webp": {
-            "name": "Е 7 sho|эй",
-            "nameLatin": "E 7 sho|ey",
-            "power": 7509629
-          }
-        },
-        "Screenshot_2026.05.22_02.29.13.744.png": {
-          "012_463_547-Sh_shchi_-_a_N_0%5C%7C%7C.webp": {
-            "name": "Ш щи - a N 0\\||",
-            "nameLatin": "Sh shchi - a N 0\\||",
-            "power": 12463547
-          }
-        },
-        "Screenshot_2026.05.22_02.29.29.560.png": {
-          "006_855_640-%7CSil_o_vYo%7C.webp": {
-            "name": "|Sil о вЁ|",
-            "nameLatin": "|Sil o vYo|",
-            "power": 6855640
-          }
-        },
-        "Screenshot_2026.05.22_02.29.50.477.png": {
-          "007_513_272-H-1_VOZAZA_S.webp": {
-            "name": "H-1 ВОЗАЗА С",
-            "nameLatin": "H-1 VOZAZA S",
-            "power": 7513272
-          }
-        },
-        "Screenshot_2026.05.22_02.30.07.394.png": {
-          "008_639_998-Shkalik_HA_922.webp": {
-            "name": "Шкалик HA 922",
-            "nameLatin": "Shkalik HA 922",
-            "power": 8639998
-          }
-        },
-        "Screenshot_2026.05.22_02.31.38.810.png": {
-          "006_454_028-1_Nl922_lato_442.webp": {
-            "name": "1 Нл922 lato 442",
-            "nameLatin": "1 Nl922 lato 442",
-            "power": 6454028
-          }
-        },
-        "Screenshot_2026.05.22_02.32.26.327.png": {
-          "008_237_223-4%7Cak_by_y.webp": {
-            "name": "4|ak by й",
-            "nameLatin": "4|ak by y",
-            "power": 8237223
-          }
-        },
-        "Screenshot_2026.05.22_02.32.48.894.png": {
-          "005_618_099-H-1922_VON_ya.webp": {
-            "name": "H-1922 ВОН я",
-            "nameLatin": "H-1922 VON ya",
-            "power": 5618099
-          }
-        },
-        "Screenshot_2026.05.22_02.33.11.593.png": {
-          "009_968_374-8_sopoailui_Nny.webp": {
-            "name": "8 сопоаилуиь Нны",
-            "nameLatin": "8 sopoailui Nny",
-            "power": 9968374
-          }
-        },
-        "Screenshot_2026.05.22_02.33.32.744.png": {
-          "009_267_747-%7CSh_ao_by_Ts.webp": {
-            "name": "|Ш ao by Ц",
-            "nameLatin": "|Sh ao by Ts",
-            "power": 9267747
-          }
-        },
-        "Screenshot_2026.05.22_02.33.51.510.png": {
-          "007_771_737-MLDG_N1922.webp": {
-            "name": "MLDG Н1922",
-            "nameLatin": "MLDG N1922",
-            "power": 7771737
-          }
-        },
-        "Screenshot_2026.05.22_02.34.11.094.png": {
-          "000_190_064-Sh_al_NYY.webp": {
-            "name": "Ш ал NYY",
-            "nameLatin": "Sh al NYY",
-            "power": 190064
-          }
-        },
-        "Screenshot_2026.05.22_02.34.29.977.png": {
-          "000_006_841-ol_VEN_H1922.webp": {
-            "name": "ol ВЕН H1922",
-            "nameLatin": "ol VEN H1922",
-            "power": 6841
-          }
-        },
-        "Screenshot_2026.05.22_02.34.52.060.png": {
-          "008_167_265-Chaya_nNNNNNNNoranl_LOONNNNYYa.webp": {
-            "name": "Чая нНННННННоранлЬ ЛООННННЫЯ",
-            "nameLatin": "Chaya nNNNNNNNoranl LOONNNNYYa",
-            "power": 8167265
-          }
-        },
-        "Screenshot_2026.05.22_02.35.13.660.png": {
-          "012_220_714-SIRE]nl922.webp": {
-            "name": "SIRE]нл922",
-            "nameLatin": "SIRE]nl922",
-            "power": 12220714
-          }
-        },
-        "Screenshot_2026.05.22_02.35.52.460.png": {
-          "008_685_815-19225]2%7CpAdE_B.webp": {
-            "name": "19225]2|пАдЭ B",
-            "nameLatin": "19225]2|pAdE B",
-            "power": 8685815
-          }
-        },
-        "Screenshot_2026.05.22_02.36.13.827.png": {
-          "007_577_866-EA_voy.webp": {
-            "name": "EA вой",
-            "nameLatin": "EA voy",
-            "power": 7577866
-          }
-        },
-        "Screenshot_2026.05.22_02.36.35.544.png": {
-          "008_086_649-Cow_fly.webp": {
-            "name": "Cow fly",
-            "nameLatin": "Cow fly",
-            "power": 8086649
-          }
-        },
-        "Screenshot_2026.05.22_02.36.55.093.png": {
-          "000_715_683-HI_Ni1922.webp": {
-            "name": "HI Ни1922",
-            "nameLatin": "HI Ni1922",
-            "power": 715683
-          }
-        },
-        "Screenshot_2026.05.22_02.37.14.610.png": {
-          "000_008_961-SA_n_5.webp": {
-            "name": "SA нь 5",
-            "nameLatin": "SA n 5",
-            "power": 8961
-          }
-        },
-        "Screenshot_2026.05.22_02.37.33.760.png": {
-          "006_860_572-%7Cch_sh%7C%7Ca_i%7C.webp": {
-            "name": "|ч sh||а i|",
-            "nameLatin": "|ch sh||a i|",
-            "power": 6860572
-          }
-        },
-        "Screenshot_2026.05.22_02.37.55.077.png": {
-          "006_687_487-AR_H_i_1%7C.webp": {
-            "name": "AR H и 1|",
-            "nameLatin": "AR H i 1|",
-            "power": 6687487
-          }
-        },
-        "Screenshot_2026.05.22_02.38.17.127.png": {
-          "007_579_412--_elo_t_kr.webp": {
-            "name": "- elo т kr",
-            "nameLatin": "- elo t kr",
-            "power": 7579412
-          }
-        },
-        "Screenshot_2026.05.22_02.38.33.077.png": {
-          "006_906_186-Sh]RR_G_-%7C%7C.webp": {
-            "name": "Ш]РР Г -||",
-            "nameLatin": "Sh]RR G -||",
-            "power": 6906186
-          }
-        },
-        "Screenshot_2026.05.22_02.38.52.643.png": {
-          "006_076_220-Kez_al.webp": {
-            "name": "Кез al",
-            "nameLatin": "Kez al",
-            "power": 6076220
-          }
-        },
-        "Screenshot_2026.05.22_02.39.09.477.png": {
-          "007_485_883-Soso_N-_11922_ena.webp": {
-            "name": "Сосо Н- 11922 ena",
-            "nameLatin": "Soso N- 11922 ena",
-            "power": 7485883
-          }
-        },
-        "Screenshot_2026.05.22_02.39.21.160.png": {
-          "007_459_515-um_V_K_s_3_9%7Cii.webp": {
-            "name": "ум ь В К с 3 9|ii",
-            "nameLatin": "um V K s 3 9|ii",
-            "power": 7459515
-          }
-        },
-        "Screenshot_2026.05.22_02.39.39.494.png": {
-          "005_569_817-%7C%7CUs_t_Yo.webp": {
-            "name": "||Us т Ё",
-            "nameLatin": "||Us t Yo",
-            "power": 5569817
-          }
-        },
-        "Screenshot_2026.05.22_02.40.03.110.png": {
-          "009_054_071-nnnnnnnrin_LONaLNNNy.webp": {
-            "name": "нннннннринь ЛОНаЛНННы",
-            "nameLatin": "nnnnnnnrin LONaLNNNy",
-            "power": 9054071
-          }
-        },
-        "Screenshot_2026.05.22_02.40.23.693.png": {
-          "007_872_543-%7Cs_iiooinit.webp": {
-            "name": "|с ииооинитьь",
-            "nameLatin": "|s iiooinit",
-            "power": 7872543
-          }
-        },
-        "test": {
-          "Screenshot_2026.05.22_02.15.01.977.png": {
-            "005_567_251-Mishkiny_S_N-1922-Mishkiny_S_N-1922.webp": {
-              "name": "Мишкины С Н-1922",
-              "nameEnglish": "Mishkiny S N-1922",
-              "nameLatin": "Mishkiny S N-1922",
-              "power": 5567251
-            }
-          },
-          "Screenshot_2026.05.22_02.15.55.461.png": {
-            "008_175_434-Klimus-1922-Klimus-1922.webp": {
-              "name": "Климус-1922",
-              "nameEnglish": "Klimus-1922",
-              "nameLatin": "Klimus-1922",
-              "power": 8175434
-            }
-          },
-          "Screenshot_2026.05.22_02.16.05.660.png": {
-            "007_136_264-H-1922_ARES-H-1922_ARES.webp": {
-              "name": "H-1922 ARES",
-              "nameEnglish": "H-1922 ARES",
-              "nameLatin": "H-1922 ARES",
-              "power": 7136264
-            }
-          },
-          "Screenshot_2026.05.22_02.16.14.644.png": {
-            "004_128_622-H-1922.webp": {
-              "name": "H-1922 막무가내",
-              "nameLatin": "H-1922",
-              "power": 4128622
-            }
-          },
-          "Screenshot_2026.05.22_02.16.24.627.png": {
-            "010_443_709-El_Man...-El_Man....webp": {
-              "name": "EL MAN...",
-              "nameEnglish": "El Man...",
-              "nameLatin": "El Man...",
-              "power": 10443709
-            }
-          },
-          "Screenshot_2026.05.22_02.16.36.177.png": {
-            "004_429_499-Wang_Pai-Wang_Pai.webp": {
-              "name": "王牌",
-              "nameEnglish": "Wang Pai",
-              "nameLatin": "Wang Pai",
-              "power": 4429499
-            }
-          },
-          "Screenshot_2026.05.22_02.16.45.210.png": {
-            "003_388_571-Sergo_PNZ_H1922-Sergo_PNZ_H1922.webp": {
-              "name": "Sergo_PNZ H1922",
-              "nameEnglish": "Sergo_PNZ H1922",
-              "nameLatin": "Sergo_PNZ H1922",
-              "power": 3388571
-            }
-          },
-          "Screenshot_2026.05.22_02.17.56.094.png": {
-            "000_615_256-265.webp": {
-              "name": "265",
-              "nameLatin": "265",
-              "power": 615256
-            }
-          },
-          "Screenshot_2026.05.22_02.18.20.727.png": {
-            "000_000_263-Wushen-Wushen.webp": {
-              "name": "武神",
-              "nameEnglish": "Wushen",
-              "nameLatin": "Wushen",
-              "power": 263
-            }
-          },
-          "Screenshot_2026.05.22_02.18.56.494.png": {
-            "000_592_062-Chundaejang-Chundaejang.webp": {
-              "name": "춘대장",
-              "nameEnglish": "Chundaejang",
-              "nameLatin": "Chundaejang",
-              "power": 592062
-            }
-          },
-          "Screenshot_2026.05.22_02.19.17.977.png": {
-            "003_881_108-Sasaakgi_H-1922-Sasaakgi_H-1922.webp": {
-              "name": "사사악기 H-1922",
-              "nameEnglish": "Sasaakgi H-1922",
-              "nameLatin": "Sasaakgi H-1922",
-              "power": 3881108
-            }
-          },
-          "Screenshot_2026.05.22_02.19.36.144.png": {
-            "004_318_785-Apostoli-Apostoli.webp": {
-              "name": "H-1922 Apostoli",
-              "nameEnglish": "Apostoli",
-              "nameLatin": "Apostoli",
-              "power": 4318785
-            }
-          },
-          "Screenshot_2026.05.22_02.19.52.710.png": {
-            "005_114_646-AELITA_N-1922-AELITA_N-1922.webp": {
-              "name": "АЭЛИТА Н-1922.",
-              "nameEnglish": "AELITA N-1922",
-              "nameLatin": "AELITA N-1922",
-              "power": 5114646
-            }
-          },
-          "Screenshot_2026.05.22_02.20.55.827.png": {
-            "010_294_874-H-IMP-H-IMP.webp": {
-              "name": "H-IMP",
-              "nameEnglish": "H-IMP",
-              "nameLatin": "H-IMP",
-              "power": 10294874
-            }
-          },
-          "Screenshot_2026.05.22_02.21.17.994.png": {
-            "007_201_827-H-1992_4444.webp": {
-              "name": "지배자 H-1992 4444",
-              "nameLatin": "H-1992_4444",
-              "power": 7201827
-            }
-          },
-          "Screenshot_2026.05.22_02.21.39.760.png": {
-            "006_879_040-Lianelia-Lianelia.webp": {
-              "name": "H-1922 Lianelia",
-              "nameEnglish": "Lianelia",
-              "nameLatin": "Lianelia",
-              "power": 6879040
-            }
-          },
-          "Screenshot_2026.05.22_02.22.14.060.png": {
-            "005_922_489-H-1922_Tesla-H-1922_Tesla.webp": {
-              "name": "H-1922 Tesla",
-              "nameEnglish": "H-1922 Tesla",
-              "nameLatin": "H-1922 Tesla",
-              "power": 5922489
-            }
-          },
-          "Screenshot_2026.05.22_02.23.03.960.png": {
-            "007_860_400-1_H-1922.webp": {
-              "name": "매춘 1 H-1922",
-              "nameLatin": "1_H-1922",
-              "power": 7860400
-            }
-          },
-          "Screenshot_2026.05.22_02.23.22.927.png": {
-            "007_174_092-%253F%253F%253F.webp": {
-              "name": "???",
-              "nameLatin": "%3F%3F%3F",
-              "power": 7174092
-            }
-          },
-          "Screenshot_2026.05.22_02.28.32.427.png": {
-            "000_000_257-Kwon-Kwon.webp": {
-              "name": "H-1922 Kwon",
-              "nameEnglish": "Kwon",
-              "nameLatin": "Kwon",
-              "power": 257
-            }
-          },
-          "Screenshot_2026.05.22_02.28.51.794.png": {
-            "007_509_629-HanQH1922-HanQH1922.webp": {
-              "name": "Han'Q H-1922",
-              "nameEnglish": "HanQH1922",
-              "nameLatin": "HanQH1922",
-              "power": 7509629
-            }
-          },
-          "Screenshot_2026.05.22_02.29.13.744.png": {
-            "012_463_547-Happy_Day_H1922-Happy_Day_H1922.webp": {
-              "name": "Happy Day H1922",
-              "nameEnglish": "Happy Day H1922",
-              "nameLatin": "Happy Day H1922",
-              "power": 12463547
-            }
-          },
-          "Screenshot_2026.05.22_02.29.29.560.png": {
-            "006_855_640-H.1922.webp": {
-              "name": "H.1922좌",
-              "nameLatin": "H.1922",
-              "power": 6855640
-            }
-          },
-          "Screenshot_2026.05.22_02.29.50.477.png": {
-            "007_513_272-H-1922A-H-1922A.webp": {
-              "name": "H-1922AΔ",
-              "nameEnglish": "H-1922AΔ",
-              "nameLatin": "H-1922AΔ",
-              "power": 7513272
-            }
-          },
-          "Screenshot_2026.05.22_02.30.07.394.png": {
-            "008_639_998-Shkalik_N-1922-Shkalik_N-1922.webp": {
-              "name": "Шкалик Н-1922",
-              "nameEnglish": "Shkalik N-1922",
-              "nameLatin": "Shkalik N-1922",
-              "power": 8639998
-            }
-          },
-          "Screenshot_2026.05.22_02.31.38.810.png": {
-            "006_454_028-H-1922_Baeklatto_442-H-1922_Baeklatto_442.webp": {
-              "name": "H-1922 백라또 442",
-              "nameEnglish": "H-1922 Baeklatto 442",
-              "nameLatin": "H-1922 Baeklatto 442",
-              "power": 6454028
-            }
-          },
-          "Screenshot_2026.05.22_02.32.26.327.png": {
-            "008_237_223-.webp": {
-              "name": "洪武",
-              "nameLatin": "",
-              "power": 8237223
-            }
-          },
-          "Screenshot_2026.05.22_02.32.48.894.png": {
-            "005_618_099-H-1922_RDH-H-1922_RDH.webp": {
-              "name": "H-1922 RDH",
-              "nameEnglish": "H-1922 RDH",
-              "nameLatin": "H-1922 RDH",
-              "power": 5618099
-            }
-          },
-          "Screenshot_2026.05.22_02.33.11.593.png": {
-            "009_668_374-H-1922_igrok-H-1922_igrok.webp": {
-              "name": "H-1922_igrok",
-              "nameEnglish": "H-1922_igrok",
-              "nameLatin": "H-1922_igrok",
-              "power": 9668374
-            }
-          },
-          "Screenshot_2026.05.22_02.33.32.744.png": {
-            "000_000_217-hilih1922-hilih1922.webp": {
-              "name": "hili H-1922",
-              "nameEnglish": "hilih1922",
-              "nameLatin": "hilih1922",
-              "power": 217
-            }
-          },
-          "Screenshot_2026.05.22_02.33.51.510.png": {
-            "007_771_737-MLDG_H-1922-MLDG_H-1922.webp": {
-              "name": "MLDG H-1922",
-              "nameEnglish": "MLDG H-1922",
-              "nameLatin": "MLDG H-1922",
-              "power": 7771737
-            }
-          },
-          "Screenshot_2026.05.22_02.34.11.094.png": {
-            "005_190_064-H.1992.webp": {
-              "name": "국산H.1992",
-              "nameLatin": "H.1992",
-              "power": 5190064
-            }
-          },
-          "Screenshot_2026.05.22_02.34.29.977.png": {
-            "006_841_032-H-1922.webp": {
-              "name": "네일 클로버 H-1922",
-              "nameLatin": "H-1922",
-              "power": 6841032
-            }
-          },
-          "Screenshot_2026.05.22_02.34.52.060.png": {
-            "008_167_265-Clan_HERO_1922-Clan_HERO_1922.webp": {
-              "name": "Клан HERO 1922",
-              "nameEnglish": "Clan HERO 1922",
-              "nameLatin": "Clan HERO 1922",
-              "power": 8167265
-            }
-          },
-          "Screenshot_2026.05.22_02.35.13.660.png": {
-            "012_220_714-Kajamanjin-Kajamanjin.webp": {
-              "name": "카자만진 H-1922",
-              "nameEnglish": "Kajamanjin",
-              "nameLatin": "Kajamanjin",
-              "power": 12220714
-            }
-          },
-          "Screenshot_2026.05.22_02.35.52.460.png": {
-            "008_685_815-H.1922_n442.webp": {
-              "name": "H.1922모지리n442",
-              "nameLatin": "H.1922_n442",
-              "power": 8685815
-            }
-          },
-          "Screenshot_2026.05.22_02.36.13.827.png": {
-            "007_577_866-NOBEL_H-1922-NOBEL_H-1922.webp": {
-              "name": "NOBEL H-1922",
-              "nameEnglish": "NOBEL H-1922",
-              "nameLatin": "NOBEL H-1922",
-              "power": 7577866
-            }
-          },
-          "Screenshot_2026.05.22_02.36.35.544.png": {
-            "008_086_649-Kiss.H-1922.-Kiss.H-1922..webp": {
-              "name": "Kiss.H-1922.",
-              "nameEnglish": "Kiss.H-1922.",
-              "nameLatin": "Kiss.H-1922.",
-              "power": 8086649
-            }
-          },
-          "Screenshot_2026.05.22_02.36.55.093.png": {
-            "004_715_683-H_1922.webp": {
-              "name": "제국 H・1922",
-              "nameLatin": "H_1922",
-              "power": 4715683
-            }
-          },
-          "Screenshot_2026.05.22_02.37.14.610.png": {
-            "008_961_008-Doc_H1922-Doc_H1922.webp": {
-              "name": "Doc H1922",
-              "nameEnglish": "Doc H1922",
-              "nameLatin": "Doc H1922",
-              "power": 8961008
-            }
-          },
-          "Screenshot_2026.05.22_02.37.33.760.png": {
-            "006_860_572-Return_H-1922-Return_H-1922.webp": {
-              "name": "Return H-1922",
-              "nameEnglish": "Return H-1922",
-              "nameLatin": "Return H-1922",
-              "power": 6860572
-            }
-          },
-          "Screenshot_2026.05.22_02.37.55.077.png": {
-            "006_687_487-HoonHa_H-1922-HoonHa_H-1922.webp": {
-              "name": "HoonHa H-1922",
-              "nameEnglish": "HoonHa H-1922",
-              "nameLatin": "HoonHa H-1922",
-              "power": 6687487
-            }
-          },
-          "Screenshot_2026.05.22_02.38.17.127.png": {
-            "007_579_412-alwa78_H-1922.webp": {
-              "name": "alwa78 H-1922",
-              "nameLatin": "alwa78_H-1922",
-              "power": 7579412
-            }
-          },
-          "Screenshot_2026.05.22_02.38.33.077.png": {
-            "006_906_186-Miki_Nuna-Miki_Nuna.webp": {
-              "name": "미키누나 H-1922",
-              "nameEnglish": "Miki Nuna",
-              "nameLatin": "Miki Nuna",
-              "power": 6906186
-            }
-          },
-          "Screenshot_2026.05.22_02.38.52.643.png": {
-            "006_076_220-1922.webp": {
-              "name": "클드 하1922",
-              "nameLatin": "1922",
-              "power": 6076220
-            }
-          },
-          "Screenshot_2026.05.22_02.39.09.477.png": {
-            "007_485_883-Coco-Coco.webp": {
-              "name": "Coco H-1922",
-              "nameEnglish": "Coco",
-              "nameLatin": "Coco",
-              "power": 7485883
-            }
-          },
-          "Screenshot_2026.05.22_02.39.21.160.png": {
-            "007_459_515-H-1922_Legend_Become-H-1922_Legend_Become.webp": {
-              "name": "H-1922 전설의 되어라",
-              "nameEnglish": "H-1922 Legend Become",
-              "nameLatin": "H-1922 Legend Become",
-              "power": 7459515
-            }
-          },
-          "Screenshot_2026.05.22_02.39.39.494.png": {
-            "005_569_817-H-1922_King-H-1922_King.webp": {
-              "name": "H-1922 King",
-              "nameEnglish": "H-1922 King",
-              "nameLatin": "H-1922 King",
-              "power": 5569817
-            }
-          },
-          "Screenshot_2026.05.22_02.40.03.110.png": {
-            "009_054_071-Daechong-Daechong.webp": {
-              "name": "대총 H-1922",
-              "nameEnglish": "Daechong",
-              "nameLatin": "Daechong",
-              "power": 9054071
-            }
-          },
-          "Screenshot_2026.05.22_02.40.23.693.png": {
-            "007_872_543-S_sniper%2A_H-1922-S_sniper%2A_H-1922.webp": {
-              "name": "S sniper* H-1922",
-              "nameEnglish": "S sniper* H-1922",
-              "nameLatin": "S sniper* H-1922",
-              "power": 7872543
-            }
-          }
-        }
-      },
-      "2026-05-29": {
-        "Screenshot_2026.05.29_02.20.10.901.png": {
-          "006_484_998-Kverdugo-Kverdugo.webp": {
-            "name": "KVERDUGO",
-            "nameEnglish": "Kverdugo",
-            "nameLatin": "Kverdugo",
-            "power": 6484998
-          }
-        },
-        "Screenshot_2026.05.29_02.20.22.418.png": {
-          "006_134_697-KHADES-KHADES.webp": {
-            "name": "K HADES",
-            "nameEnglish": "KHADES",
-            "nameLatin": "KHADES",
-            "power": 6134697
-          }
-        },
-        "Screenshot_2026.05.29_02.20.31.334.png": {
-          "004_028_481-KI-KI.webp": {
-            "name": "KI",
-            "nameEnglish": "KI",
-            "nameLatin": "KI",
-            "power": 4028481
-          }
-        },
-        "Screenshot_2026.05.29_02.20.46.651.png": {
-          "003_420_852-K.webp": {
-            "name": "K",
-            "nameLatin": "K",
-            "power": 3420852
-          }
-        },
-        "Screenshot_2026.05.29_02.20.59.084.png": {
-          "005_520_105-K-K.webp": {
-            "name": "K",
-            "nameEnglish": "K",
-            "nameLatin": "K",
-            "power": 5520105
-          }
-        },
-        "Screenshot_2026.05.29_02.21.11.868.png": {
-          "004_205_892-K-K.webp": {
-            "name": "K",
-            "nameEnglish": "K",
-            "nameLatin": "K",
-            "power": 4205892
-          }
-        },
-        "Screenshot_2026.05.29_02.22.02.551.png": {
-          "003_203_512-Kl_victor-Kl_victor.webp": {
-            "name": "Kl victor",
-            "nameEnglish": "Kl victor",
-            "nameLatin": "Kl victor",
-            "power": 3203512
-          }
-        },
-        "Screenshot_2026.05.29_02.22.14.501.png": {
-          "004_973_135-K-K.webp": {
-            "name": "K",
-            "nameEnglish": "K",
-            "nameLatin": "K",
-            "power": 4973135
-          }
-        },
-        "Screenshot_2026.05.29_02.22.28.601.png": {
-          "003_366_910-KIFATEL-KIFATEL.webp": {
-            "name": "KI FATEL",
-            "nameEnglish": "KIFATEL",
-            "nameLatin": "KIFATEL",
-            "power": 3366910
-          }
-        },
-        "Screenshot_2026.05.29_02.22.44.451.png": {
-          "007_192_619-Gordopilo-Gordopilo.webp": {
-            "name": "K| Gordopilo",
-            "nameEnglish": "Gordopilo",
-            "nameLatin": "Gordopilo",
-            "power": 7192619
-          }
-        },
-        "Screenshot_2026.05.29_02.23.05.718.png": {
-          "009_427_887-K%7CFondo-K%7CFondo.webp": {
-            "name": "K|Fondo",
-            "nameEnglish": "K|Fondo",
-            "nameLatin": "K|Fondo",
-            "power": 9427887
-          }
-        },
-        "Screenshot_2026.05.29_02.23.19.584.png": {
-          "012_032_016-KIPokhara-KIPokhara.webp": {
-            "name": "KIPokhara",
-            "nameEnglish": "KIPokhara",
-            "nameLatin": "KIPokhara",
-            "power": 12032016
-          }
-        },
-        "Screenshot_2026.05.29_02.23.37.684.png": {
-          "007_809_301-Ki-Ki.webp": {
-            "name": "Ki",
-            "nameEnglish": "Ki",
-            "nameLatin": "Ki",
-            "power": 7809301
-          }
-        },
-        "Screenshot_2026.05.29_02.23.55.068.png": {
-          "008_133_702-KI_Archer-KI_Archer.webp": {
-            "name": "KI ARCHER",
-            "nameEnglish": "KI Archer",
-            "nameLatin": "KI Archer",
-            "power": 8133702
-          }
-        },
-        "Screenshot_2026.05.29_02.24.10.401.png": {
-          "008_091_847-K_DominGO-K_DominGO.webp": {
-            "name": "K DominGO",
-            "nameEnglish": "K DominGO",
-            "nameLatin": "K DominGO",
-            "power": 8091847
-          }
-        },
-        "Screenshot_2026.05.29_02.24.30.501.png": {
-          "005_834_648-Sopy-Sopy.webp": {
-            "name": "Sopy",
-            "nameEnglish": "Sopy",
-            "nameLatin": "Sopy",
-            "power": 5834648
-          }
-        },
-        "Screenshot_2026.05.29_02.24.47.818.png": {
-          "009_168_634-KMALAS_NOTICIAS.webp": {
-            "name": "KMALAS NOTICIAS",
-            "nameLatin": "KMALAS_NOTICIAS",
-            "power": 9168634
-          }
-        },
-        "Screenshot_2026.05.29_02.25.04.301.png": {
-          "008_189_766-Kor-Kor.webp": {
-            "name": "KOR",
-            "nameEnglish": "Kor",
-            "nameLatin": "Kor",
-            "power": 8189766
-          }
-        },
-        "Screenshot_2026.05.29_02.25.25.767.png": {
-          "011_626_610-K-K.webp": {
-            "name": "K",
-            "nameEnglish": "K",
-            "nameLatin": "K",
-            "power": 11626610
-          }
-        },
-        "Screenshot_2026.05.29_02.25.40.951.png": {
-          "006_112_068-K_Saru-K_Saru.webp": {
-            "name": "K Saru",
-            "nameEnglish": "K Saru",
-            "nameLatin": "K Saru",
-            "power": 6112068
-          }
-        },
-        "Screenshot_2026.05.29_02.25.56.418.png": {
-          "000_000_443-Koiika-Koiika.webp": {
-            "name": "Koiika",
-            "nameEnglish": "Koiika",
-            "nameLatin": "Koiika",
-            "power": 443
-          }
-        },
-        "Screenshot_2026.05.29_02.26.17.134.png": {
-          "007_133_778-K%7C_Akelarre-K%7C_Akelarre.webp": {
-            "name": "K| AKELARRE",
-            "nameEnglish": "K| Akelarre",
-            "nameLatin": "K| Akelarre",
-            "power": 7133778
-          }
-        },
-        "Screenshot_2026.05.29_02.26.35.501.png": {
-          "006_332_502-K_sirpot-K_sirpot.webp": {
-            "name": "K sirpotí",
-            "nameEnglish": "K sirpotí",
-            "nameLatin": "K sirpotí",
-            "power": 6332502
-          }
-        },
-        "Screenshot_2026.05.29_02.26.55.218.png": {
-          "006_045_725-kMai-kMai.webp": {
-            "name": "kMaI",
-            "nameEnglish": "kMai",
-            "nameLatin": "kMai",
-            "power": 6045725
-          }
-        },
-        "Screenshot_2026.05.29_02.27.12.118.png": {
-          "005_539_858-Maryflowers-Maryflowers.webp": {
-            "name": "K| Maryflowers",
-            "nameEnglish": "Maryflowers",
-            "nameLatin": "Maryflowers",
-            "power": 5539858
-          }
-        },
-        "Screenshot_2026.05.29_02.27.30.934.png": {
-          "005_975_746-Hun-Hun.webp": {
+      "2026-06-05": {
+        "Screenshot_2026.06.05_17.14.21.139.png": {
+          "005_472_617-RW.webp": {
+            "name": "БАБА ЗИНА RW",
+            "nameLatin": "RW",
+            "power": 5472617
+          }
+        },
+        "Screenshot_2026.06.05_17.14.52.105.png": {
+          "006_571_400-Tatunya-Tatunya.webp": {
+            "name": "Татуня",
+            "nameEnglish": "Tatunya",
+            "nameLatin": "Tatunya",
+            "power": 6571400
+          }
+        },
+        "Screenshot_2026.06.05_17.15.13.439.png": {
+          "006_105_108-Orc-Orc.webp": {
+            "name": "орк",
+            "nameEnglish": "Orc",
+            "nameLatin": "Orc",
+            "power": 6105108
+          }
+        },
+        "Screenshot_2026.06.05_17.15.23.238.png": {
+          "008_555_456-RW-RW.webp": {
+            "name": "RW",
+            "nameEnglish": "RW",
+            "nameLatin": "RW",
+            "power": 8555456
+          }
+        },
+        "Screenshot_2026.06.05_17.15.42.038.png": {
+          "004_812_917-Hun-Hun.webp": {
             "name": "Hun",
             "nameEnglish": "Hun",
             "nameLatin": "Hun",
-            "power": 5975746
+            "power": 4812917
           }
         },
-        "Screenshot_2026.05.29_02.27.48.084.png": {
-          "006_771_487-K%7CMatze_9-K%7CMatze_9.webp": {
-            "name": "K|Matze #9",
-            "nameEnglish": "K|Matze #9",
-            "nameLatin": "K|Matze #9",
-            "power": 6771487
+        "Screenshot_2026.06.05_17.15.52.822.png": {
+          "003_602_817-Archer_RW-Archer_RW.webp": {
+            "name": "Арчер RW",
+            "nameEnglish": "Archer RW",
+            "nameLatin": "Archer RW",
+            "power": 3602817
           }
         },
-        "Screenshot_2026.05.29_02.28.21.568.png": {
-          "007_174_682-Tripichuelas-Tripichuelas.webp": {
-            "name": "K] Tripichuelas",
-            "nameEnglish": "Tripichuelas",
-            "nameLatin": "Tripichuelas",
-            "power": 7174682
+        "Screenshot_2026.06.05_17.16.00.072.png": {
+          "003_366_543-Hun-Hun.webp": {
+            "name": "Hun",
+            "nameEnglish": "Hun",
+            "nameLatin": "Hun",
+            "power": 3366543
           }
         },
-        "Screenshot_2026.05.29_02.28.41.018.png": {
-          "007_647_079-KISI-KISI.webp": {
-            "name": "KISI",
-            "nameEnglish": "KISI",
-            "nameLatin": "KISI",
-            "power": 7647079
+        "Screenshot_2026.06.05_17.16.10.255.png": {
+          "004_228_051-Aivan-Aivan.webp": {
+            "name": "Айван",
+            "nameEnglish": "Aivan",
+            "nameLatin": "Aivan",
+            "power": 4228051
           }
         },
-        "Screenshot_2026.05.29_02.28.59.034.png": {
-          "006_443_748-Safety-Safety.webp": {
-            "name": "k| Safety",
-            "nameEnglish": "Safety",
-            "nameLatin": "Safety",
-            "power": 6443748
+        "Screenshot_2026.06.05_17.16.33.389.png": {
+          "004_085_477-Krasnodar_RW-Krasnodar_RW.webp": {
+            "name": "Краснодар RW",
+            "nameEnglish": "Krasnodar RW",
+            "nameLatin": "Krasnodar RW",
+            "power": 4085477
           }
         },
-        "Screenshot_2026.05.29_02.29.13.218.png": {
-          "005_918_130-Ki_Darso-Ki_Darso.webp": {
-            "name": "Ki Darso",
-            "nameEnglish": "Ki Darso",
-            "nameLatin": "Ki Darso",
-            "power": 5918130
+        "Screenshot_2026.06.05_17.16.51.455.png": {
+          "011_275_424-Produman_RW-Produman_RW.webp": {
+            "name": "Produman RW",
+            "nameEnglish": "Produman RW",
+            "nameLatin": "Produman RW",
+            "power": 11275424
           }
         },
-        "Screenshot_2026.05.29_02.29.31.518.png": {
-          "006_686_329-ovpp01-ovpp01.webp": {
-            "name": "K| ovpp01",
-            "nameEnglish": "ovpp01",
-            "nameLatin": "ovpp01",
-            "power": 6686329
+        "Screenshot_2026.06.05_17.17.08.438.png": {
+          "002_660_210-RW.webp": {
+            "name": "RW",
+            "nameLatin": "RW",
+            "power": 2660210
           }
         },
-        "Screenshot_2026.05.29_02.29.47.351.png": {
-          "007_508_267-KAitor-KAitor.webp": {
-            "name": "K)Aitor (K)",
-            "nameEnglish": "KAitor",
-            "nameLatin": "KAitor",
-            "power": 7508267
+        "Screenshot_2026.06.05_17.17.17.455.png": {
+          "005_100_757-Napoleonic_RW-Napoleonic_RW.webp": {
+            "name": "Napoleonic RW",
+            "nameEnglish": "Napoleonic RW",
+            "nameLatin": "Napoleonic RW",
+            "power": 5100757
           }
         },
-        "Screenshot_2026.05.29_02.30.05.134.png": {
-          "008_795_623-Pa-Pa.webp": {
-            "name": "Па",
-            "nameEnglish": "Pa",
-            "nameLatin": "Pa",
-            "power": 8795623
+        "Screenshot_2026.06.05_17.17.28.739.png": {
+          "001_745_506-SIII_RW-SIII_RW.webp": {
+            "name": "СИИИ RW",
+            "nameEnglish": "SIII RW",
+            "nameLatin": "SIII RW",
+            "power": 1745506
           }
         },
-        "Screenshot_2026.05.29_02.30.19.618.png": {
-          "005_613_864-Sargos-Sargos.webp": {
-            "name": "K|Sargos",
-            "nameEnglish": "Sargos",
-            "nameLatin": "Sargos",
-            "power": 5613864
+        "Screenshot_2026.06.05_17.17.40.172.png": {
+          "007_520_348-Sky-Sky.webp": {
+            "name": "Sky",
+            "nameEnglish": "Sky",
+            "nameLatin": "Sky",
+            "power": 7520348
           }
         },
-        "Screenshot_2026.05.29_02.30.44.451.png": {
-          "000_768_332-K.webp": {
-            "name": "K",
-            "nameLatin": "K",
-            "power": 768332
+        "Screenshot_2026.06.05_17.17.50.338.png": {
+          "006_917_571-DCCAN]RW.webp": {
+            "name": "DCCAN]RW",
+            "nameLatin": "DCCAN]RW",
+            "power": 6917571
           }
         },
-        "Screenshot_2026.05.29_02.31.02.968.png": {
-          "004_322_365-Martinez-Martinez.webp": {
-            "name": "K| Martinez",
-            "nameEnglish": "Martinez",
-            "nameLatin": "Martinez",
-            "power": 4322365
+        "Screenshot_2026.06.05_17.18.28.638.png": {
+          "008_622_333-ClintLeo.webp": {
+            "name": "ClintLeo",
+            "nameLatin": "ClintLeo",
+            "power": 8622333
           }
         },
-        "Screenshot_2026.05.29_02.31.24.417.png": {
-          "006_213_551-Kibildur-Kibildur.webp": {
-            "name": "Kibildur",
-            "nameEnglish": "Kibildur",
-            "nameLatin": "Kibildur",
-            "power": 6213551
+        "Screenshot_2026.06.05_17.18.58.122.png": {
+          "006_431_915-Rostov161_Rw-Rostov161_Rw.webp": {
+            "name": "Ростов161_Rw",
+            "nameEnglish": "Rostov161_Rw",
+            "nameLatin": "Rostov161_Rw",
+            "power": 6431915
           }
         },
-        "Screenshot_2026.05.29_02.31.40.017.png": {
-          "006_630_257-Davit-Davit.webp": {
-            "name": "K| davit 13",
-            "nameEnglish": "Davit",
-            "nameLatin": "Davit",
-            "power": 6630257
+        "Screenshot_2026.06.05_17.19.16.755.png": {
+          "011_330_682-detroit-detroit.webp": {
+            "name": "detroit",
+            "nameEnglish": "detroit",
+            "nameLatin": "detroit",
+            "power": 11330682
           }
         },
-        "Screenshot_2026.05.29_02.31.55.051.png": {
-          "000_705_170-Kj-Kj.webp": {
-            "name": "Kj",
-            "nameEnglish": "Kj",
-            "nameLatin": "Kj",
-            "power": 705170
+        "Screenshot_2026.06.05_17.19.36.305.png": {
+          "008_897_575-TOP-TOP.webp": {
+            "name": "TOP",
+            "nameEnglish": "TOP",
+            "nameLatin": "TOP",
+            "power": 8897575
           }
         },
-        "Screenshot_2026.05.29_02.32.12.734.png": {
-          "005_123_566-Bjarki-Bjarki.webp": {
-            "name": "K|Bjarki",
-            "nameEnglish": "Bjarki",
-            "nameLatin": "Bjarki",
-            "power": 5123566
+        "Screenshot_2026.06.05_17.19.52.839.png": {
+          "009_369_606-DengRW-DengRW.webp": {
+            "name": "DengRW",
+            "nameEnglish": "DengRW",
+            "nameLatin": "DengRW",
+            "power": 9369606
           }
         },
-        "Screenshot_2026.05.29_02.32.27.118.png": {
-          "009_941_594-KTorKe-KTorKe.webp": {
-            "name": "KTorKe",
-            "nameEnglish": "KTorKe",
-            "nameLatin": "KTorKe",
-            "power": 9941594
+        "Screenshot_2026.06.05_17.20.09.922.png": {
+          "007_821_149-TikTak_354_RW.webp": {
+            "name": "TikTak 354 RW",
+            "nameLatin": "TikTak_354_RW",
+            "power": 7821149
           }
         },
-        "Screenshot_2026.05.29_02.32.43.318.png": {
-          "006_394_544-K-K.webp": {
-            "name": "K",
-            "nameEnglish": "K",
-            "nameLatin": "K",
-            "power": 6394544
+        "Screenshot_2026.06.05_17.20.23.838.png": {
+          "008_399_746-RedRW-RedRW.webp": {
+            "name": "RedRW",
+            "nameEnglish": "RedRW",
+            "nameLatin": "RedRW",
+            "power": 8399746
           }
         },
-        "Screenshot_2026.05.29_02.32.59.034.png": {
-          "006_139_871-KHun-KHun.webp": {
-            "name": "K Hun",
-            "nameEnglish": "KHun",
-            "nameLatin": "KHun",
-            "power": 6139871
+        "Screenshot_2026.06.05_17.20.41.972.png": {
+          "008_327_991-KeMuL.webp": {
+            "name": "KeMuL",
+            "nameLatin": "KeMuL",
+            "power": 8327991
           }
         },
-        "Screenshot_2026.05.29_02.33.13.734.png": {
-          "004_632_135-K_Xavi-K_Xavi.webp": {
-            "name": "K Xavi",
-            "nameEnglish": "K Xavi",
-            "nameLatin": "K Xavi",
-            "power": 4632135
+        "Screenshot_2026.06.05_17.20.57.039.png": {
+          "006_100_986-DUZER_RW-DUZER_RW.webp": {
+            "name": "ДУЗЕР RW",
+            "nameEnglish": "DUZER RW",
+            "nameLatin": "DUZER RW",
+            "power": 6100986
           }
         },
-        "Screenshot_2026.05.29_02.33.27.934.png": {
-          "005_271_068-Culeratupio-Culeratupio.webp": {
-            "name": "K| Culeratupio",
-            "nameEnglish": "Culeratupio",
-            "nameLatin": "Culeratupio",
-            "power": 5271068
+        "Screenshot_2026.06.05_17.21.10.938.png": {
+          "005_939_573-Bltproff_RW-Bltproff_RW.webp": {
+            "name": "Bltproff RW",
+            "nameEnglish": "Bltproff RW",
+            "nameLatin": "Bltproff RW",
+            "power": 5939573
           }
         },
-        "Screenshot_2026.05.29_02.33.40.617.png": {
-          "004_966_232-K_Shimray-K_Shimray.webp": {
-            "name": "K Shimray",
-            "nameEnglish": "K Shimray",
-            "nameLatin": "K Shimray",
-            "power": 4966232
+        "Screenshot_2026.06.05_17.21.30.872.png": {
+          "007_198_359-CT_26rwM.webp": {
+            "name": "CT 26rwM",
+            "nameLatin": "CT_26rwM",
+            "power": 7198359
           }
         },
-        "Screenshot_2026.05.29_02.33.57.084.png": {
-          "004_563_948-K%2FFER-K%2FFER.webp": {
-            "name": "K/FER",
-            "nameEnglish": "K/FER",
-            "nameLatin": "K/FER",
-            "power": 4563948
+        "Screenshot_2026.06.05_17.21.44.105.png": {
+          "003_705_122-Paps.webp": {
+            "name": "Paps",
+            "nameLatin": "Paps",
+            "power": 3705122
           }
         },
-        "Screenshot_2026.05.29_02.34.16.084.png": {
-          "007_637_317-K_Tizona-K_Tizona.webp": {
-            "name": "K TIZONA",
-            "nameEnglish": "K Tizona",
-            "nameLatin": "K Tizona",
-            "power": 7637317
+        "Screenshot_2026.06.05_17.22.01.822.png": {
+          "005_345_350-highenergy_RW-highenergy_RW.webp": {
+            "name": "highenergy RW",
+            "nameEnglish": "highenergy RW",
+            "nameLatin": "highenergy RW",
+            "power": 5345350
           }
         },
-        "Screenshot_2026.05.29_02.34.38.018.png": {
-          "006_928_902-Sephiroth-Sephiroth.webp": {
-            "name": "K| Sephiroth",
-            "nameEnglish": "Sephiroth",
-            "nameLatin": "Sephiroth",
-            "power": 6928902
+        "Screenshot_2026.06.05_17.22.15.972.png": {
+          "006_623_448-DENZZI.webp": {
+            "name": "DENZZI",
+            "nameLatin": "DENZZI",
+            "power": 6623448
+          }
+        },
+        "Screenshot_2026.06.05_17.22.30.055.png": {
+          "003_090_675-haTteN_RW.webp": {
+            "name": "§€haTteN RW",
+            "nameLatin": "haTteN_RW",
+            "power": 3090675
+          }
+        },
+        "Screenshot_2026.06.05_17.22.44.122.png": {
+          "006_632_619-Alex-Alex.webp": {
+            "name": "Алекс",
+            "nameEnglish": "Alex",
+            "nameLatin": "Alex",
+            "power": 6632619
+          }
+        },
+        "Screenshot_2026.06.05_17.23.04.105.png": {
+          "004_717_752-Nick_RW.webp": {
+            "name": "Nick_RW",
+            "nameLatin": "Nick_RW",
+            "power": 4717752
+          }
+        },
+        "Screenshot_2026.06.05_17.23.20.839.png": {
+          "005_805_362-iggi_RW.webp": {
+            "name": "iggi RW",
+            "nameLatin": "iggi_RW",
+            "power": 5805362
+          }
+        },
+        "Screenshot_2026.06.05_17.23.34.255.png": {
+          "010_772_243-Tanya_RM.webp": {
+            "name": "Tanya RM",
+            "nameLatin": "Tanya_RM",
+            "power": 10772243
+          }
+        },
+        "Screenshot_2026.06.05_17.23.45.888.png": {
+          "005_282_280-FXKW.webp": {
+            "name": "FXKW",
+            "nameLatin": "FXKW",
+            "power": 5282280
+          }
+        },
+        "Screenshot_2026.06.05_17.24.15.889.png": {
+          "004_998_943-SeRaFiM-SeRaFiM.webp": {
+            "name": "SeRaFiM",
+            "nameEnglish": "SeRaFiM",
+            "nameLatin": "SeRaFiM",
+            "power": 4998943
+          }
+        },
+        "Screenshot_2026.06.05_17.24.33.472.png": {
+          "005_671_600-KW-KW.webp": {
+            "name": "KW",
+            "nameEnglish": "KW",
+            "nameLatin": "KW",
+            "power": 5671600
+          }
+        },
+        "Screenshot_2026.06.05_17.24.47.622.png": {
+          "004_037_930-ReynekeLis%2ARW-ReynekeLis%2ARW.webp": {
+            "name": "РейнекеЛис*RW",
+            "nameEnglish": "ReynekeLis*RW",
+            "nameLatin": "ReynekeLis*RW",
+            "power": 4037930
+          }
+        },
+        "Screenshot_2026.06.05_17.25.17.105.png": {
+          "009_554_088-BABA_NADYA_RW-BABA_NADYA_RW.webp": {
+            "name": "БАБА НАДЯ RW",
+            "nameEnglish": "BABA NADYA RW",
+            "nameLatin": "BABA NADYA RW",
+            "power": 9554088
+          }
+        },
+        "Screenshot_2026.06.05_17.25.34.855.png": {
+          "004_979_990-Alex_RW.webp": {
+            "name": "Alex RW",
+            "nameLatin": "Alex_RW",
+            "power": 4979990
+          }
+        },
+        "Screenshot_2026.06.05_17.25.49.355.png": {
+          "006_449_249-Ton_RW.webp": {
+            "name": "Ton RW",
+            "nameLatin": "Ton_RW",
+            "power": 6449249
+          }
+        },
+        "Screenshot_2026.06.05_17.26.03.955.png": {
+          "007_149_917-AZAZEL_RW-AZAZEL_RW.webp": {
+            "name": "AZAZEL RW",
+            "nameEnglish": "AZAZEL RW",
+            "nameLatin": "AZAZEL RW",
+            "power": 7149917
+          }
+        },
+        "Screenshot_2026.06.05_17.26.16.505.png": {
+          "007_560_760-Dant-Dant.webp": {
+            "name": "Дант",
+            "nameEnglish": "Dant",
+            "nameLatin": "Dant",
+            "power": 7560760
+          }
+        },
+        "Screenshot_2026.06.05_17.26.36.572.png": {
+          "008_856_080-StafMew.webp": {
+            "name": "StafMew",
+            "nameLatin": "StafMew",
+            "power": 8856080
+          }
+        },
+        "Screenshot_2026.06.05_17.27.03.972.png": {
+          "002_531_820-PrIMyS.webp": {
+            "name": "PrIMyS",
+            "nameLatin": "PrIMyS",
+            "power": 2531820
+          }
+        },
+        "Screenshot_2026.06.05_17.27.16.572.png": {
+          "005_670_756-EasiRW.webp": {
+            "name": "EasiRW",
+            "nameLatin": "EasiRW",
+            "power": 5670756
+          }
+        },
+        "Screenshot_2026.06.05_17.27.32.905.png": {
+          "002_907_720-Andrey_RW-Andrey_RW.webp": {
+            "name": "АНДРЕЙ )RW",
+            "nameEnglish": "Andrey )RW",
+            "nameLatin": "Andrey )RW",
+            "power": 2907720
+          }
+        },
+        "Screenshot_2026.06.05_17.27.50.039.png": {
+          "004_539_473-AndreyRW-AndreyRW.webp": {
+            "name": "АндрейRW",
+            "nameEnglish": "AndreyRW",
+            "nameLatin": "AndreyRW",
+            "power": 4539473
+          }
+        },
+        "Screenshot_2026.06.05_17.28.15.788.png": {
+          "010_529_031-Sariel_RW.webp": {
+            "name": "Sariel RW",
+            "nameLatin": "Sariel_RW",
+            "power": 10529031
           }
         }
       }
