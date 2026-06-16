@@ -28,8 +28,8 @@ import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
 
 const LLM_MAX_ATTEMPTS = 3;
 const RETRY_BASE_DELAY_MS = 1500;
-/** Per-attempt LLM request timeout: attempt × 3 min */
-const LLM_TIMEOUT_PER_ATTEMPT_MS = 180_000;
+/** Per-attempt LLM request timeout: attempt × 10 min */
+const LLM_TIMEOUT_PER_ATTEMPT_MS = 600_000;
 
 function parseArgs(argv) {
   const args = { folder: undefined, force: false };
