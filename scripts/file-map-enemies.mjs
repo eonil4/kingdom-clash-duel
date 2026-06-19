@@ -104,11 +104,15 @@ export function parsePowerFromOriginalBasename(fileBasename) {
 }
 
 /**
- * Map path for a canonical entry: `<dir>/<originalBasename>/<power>-<nameLatin>.webp`.
+ * Map path for a canonical entry: `<dir>/<originalBasename>/<power>-<nameLatin>[-<name>][-<nameEnglish>].webp`.
+ *
+ * - `nameRaw` is the display name as OCR/LLM returned it (may be non-Latin).
+ * - `nameLatinRaw` is the Latin filename token (preferred canonical token).
+ * - The `name` token (derived from `nameRaw`) is included only when it differs from the Latin token.
  */
 export function canonicalEnemyMapKey(
   filePath,
-  { power, nameLatinRaw, nameEnglish },
+  { power, nameLatinRaw, nameEnglish, nameRaw },
   workspaceRoot = WORKSPACE_ROOT,
 ) {
   const rel = toMapKey(filePath, workspaceRoot).replace(/\\/g, "/");
@@ -117,9 +121,15 @@ export function canonicalEnemyMapKey(
   const formattedPower = formatPowerForFilename(power);
   const latinNameToken = toSafeEnemyFilenameToken(nameLatinRaw);
   const englishNameToken = nameEnglish ? toSafeEnemyFilenameToken(nameEnglish) : "";
-  const webpBase = englishNameToken
-    ? `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`
-    : `${formattedPower}-${latinNameToken}.webp`;
+  const nameToken = nameRaw ? toSafeEnemyFilenameToken(nameRaw) : "";
+
+  const parts = [formattedPower, latinNameToken];
+  // Include the raw display name token only if it is present and different
+  // from the latin token (avoids duplicates like "Foo-Foo").
+  if (nameToken && nameToken !== latinNameToken) parts.push(nameToken);
+  if (englishNameToken) parts.push(englishNameToken);
+
+  const webpBase = `${parts.join("-")}.webp`;
   return `${dir}/${originalBase}/${webpBase}`;
 }
 

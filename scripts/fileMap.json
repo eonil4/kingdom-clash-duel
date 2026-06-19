@@ -1,339 +1,374 @@
 {
   "data": {
     "enemies": {
-      "2026-06-12": {
-        "Screenshot_2026.06.12_02.04.11.731.png": {
-          "005_793_714-ZOID-ZOID.webp": {
-            "name": "ZOID™ω[f",
-            "nameEnglish": "ZOID",
-            "nameLatin": "ZOID",
-            "power": 5793714
+      "2026-06-19": {
+        "Screenshot_2026.06.19_09.48.56.559.png": {
+          "007_950_634-Omera_TMT-Omera_TMT.webp": {
+            "name": "Омера ТМТ",
+            "nameEnglish": "Omera TMT",
+            "nameLatin": "Omera TMT",
+            "power": 7950634
           }
         },
-        "Screenshot_2026.06.12_02.04.21.113.png": {
-          "002_801_573-AllegroPelo_WLF.webp": {
-            "name": "AllegroPelo WLF",
-            "nameLatin": "AllegroPelo_WLF",
-            "power": 2801573
+        "Screenshot_2026.06.19_09.49.05.025.png": {
+          "005_486_908-Hun-Hun.webp": {
+            "name": "Hun",
+            "nameEnglish": "Hun",
+            "nameLatin": "Hun",
+            "power": 5486908
           }
         },
-        "Screenshot_2026.06.12_02.04.29.963.png": {
-          "006_917_078-Axl_Sparrow_WLF-Axl_Sparrow_WLF.webp": {
-            "name": "Axl Sparrow WLF",
-            "nameEnglish": "Axl Sparrow WLF",
-            "nameLatin": "Axl Sparrow WLF",
-            "power": 6917078
+        "Screenshot_2026.06.19_09.49.13.392.png": {
+          "007_492_794-Lisenok-Lisenok.webp": {
+            "name": "Лисенок",
+            "nameEnglish": "Lisenok",
+            "nameLatin": "Lisenok",
+            "power": 7492794
           }
         },
-        "Screenshot_2026.06.12_02.04.38.280.png": {
-          "008_441_360-SHARLUK.webp": {
-            "name": "SHARLUK",
-            "nameLatin": "SHARLUK",
-            "power": 8441360
+        "Screenshot_2026.06.19_09.49.27.775.png": {
+          "007_966_217-Hun-Hun.webp": {
+            "name": "Hun",
+            "nameEnglish": "Hun",
+            "nameLatin": "Hun",
+            "power": 7966217
           }
         },
-        "Screenshot_2026.06.12_02.04.47.247.png": {
-          "009_677_059-Ismaele_WLF-Ismaele_WLF.webp": {
-            "name": "Ismaele WLF",
-            "nameEnglish": "Ismaele WLF",
-            "nameLatin": "Ismaele WLF",
-            "power": 9677059
+        "Screenshot_2026.06.19_09.49.39.225.png": {
+          "007_605_243-STA_TMT-STA_TMT.webp": {
+            "name": "STAŠ TMT",
+            "nameEnglish": "STAŠ TMT",
+            "nameLatin": "STAŠ TMT",
+            "power": 7605243
           }
         },
-        "Screenshot_2026.06.12_02.04.55.913.png": {
-          "005_157_648-JoKeR_WLF.webp": {
-            "name": "JoKeR WLF",
-            "nameLatin": "JoKeR_WLF",
-            "power": 5157648
+        "Screenshot_2026.06.19_09.49.47.958.png": {
+          "000_794_812-Hun-Hun.webp": {
+            "name": "Hun",
+            "nameEnglish": "Hun",
+            "nameLatin": "Hun",
+            "power": 794812
           }
         },
-        "Screenshot_2026.06.12_02.05.03.980.png": {
-          "007_358_347-PorcuDighel_WLF.webp": {
-            "name": "PorcuDighel WLF",
-            "nameLatin": "PorcuDighel_WLF",
-            "power": 7358347
+        "Screenshot_2026.06.19_09.49.56.258.png": {
+          "007_630_806-MonakhTMT-MonakhTMT.webp": {
+            "name": "МонахТМТ",
+            "nameEnglish": "MonakhTMT",
+            "nameLatin": "MonakhTMT",
+            "power": 7630806
           }
         },
-        "Screenshot_2026.06.12_02.05.13.430.png": {
-          "007_124_995-ARAGON_WLF.webp": {
-            "name": "ARAGON WLF",
-            "nameLatin": "ARAGON_WLF",
-            "power": 7124995
+        "Screenshot_2026.06.19_09.50.06.725.png": {
+          "009_146_977-RM_%7C_TMT-RM_%7C_TMT.webp": {
+            "name": "ÖRM | TMT",
+            "nameEnglish": "ÖRM | TMT",
+            "nameLatin": "ÖRM | TMT",
+            "power": 9146977
           }
         },
-        "Screenshot_2026.06.12_02.05.24.330.png": {
-          "007_626_153-Beps_WLF.webp": {
-            "name": "Beps WLF",
-            "nameLatin": "Beps_WLF",
-            "power": 7626153
+        "Screenshot_2026.06.19_09.50.15.825.png": {
+          "009_270_614-RUS_TMT-RUS_TMT.webp": {
+            "name": "RUS TMT",
+            "nameEnglish": "RUS TMT",
+            "nameLatin": "RUS TMT",
+            "power": 9270614
           }
         },
-        "Screenshot_2026.06.12_02.05.34.946.png": {
-          "007_915_593-SYK-SYK.webp": {
-            "name": "SYK",
-            "nameEnglish": "SYK",
-            "nameLatin": "SYK",
-            "power": 7915593
+        "Screenshot_2026.06.19_09.50.27.491.png": {
+          "007_776_778-Terra-Terra.webp": {
+            "name": "Terra",
+            "nameEnglish": "Terra",
+            "nameLatin": "Terra",
+            "power": 7776778
           }
         },
-        "Screenshot_2026.06.12_02.06.08.547.png": {
-          "006_413_315-super_sex_WLf.webp": {
-            "name": "super sex WLf",
-            "nameLatin": "super_sex_WLf",
-            "power": 6413315
+        "Screenshot_2026.06.19_09.50.38.308.png": {
+          "007_508_686-ZaDonbassTMT-ZaDonbassTMT.webp": {
+            "name": "ZaDonbassTMT",
+            "nameEnglish": "ZaDonbassTMT",
+            "nameLatin": "ZaDonbassTMT",
+            "power": 7508686
           }
         },
-        "Screenshot_2026.06.12_02.06.21.313.png": {
-          "006_341_761-Togo_WLF-Togo_WLF.webp": {
-            "name": "Togo WLF",
-            "nameEnglish": "Togo WLF",
-            "nameLatin": "Togo WLF",
-            "power": 6341761
+        "Screenshot_2026.06.19_09.50.50.008.png": {
+          "008_403_959-Lev_TMT-Lev_TMT.webp": {
+            "name": "Лев ТМТ",
+            "nameEnglish": "Lev TMT",
+            "nameLatin": "Lev TMT",
+            "power": 8403959
           }
         },
-        "Screenshot_2026.06.12_02.06.38.530.png": {
-          "008_987_556-Mossx_WLF-Mossx_WLF.webp": {
-            "name": "Mossx WLF",
-            "nameEnglish": "Mossx WLF",
-            "nameLatin": "Mossx WLF",
-            "power": 8987556
+        "Screenshot_2026.06.19_09.51.02.175.png": {
+          "007_725_910-Dream_66-Dream_66_[TMT]-Dream_66.webp": {
+            "name": "Dream 66 [TMT]",
+            "nameEnglish": "Dream 66",
+            "nameLatin": "Dream 66",
+            "power": 7725910
           }
         },
-        "Screenshot_2026.06.12_02.06.52.030.png": {
-          "006_521_753-ALB_WLF.webp": {
-            "name": "ALB WLF",
-            "nameLatin": "ALB_WLF",
-            "power": 6521753
+        "Screenshot_2026.06.19_09.51.13.708.png": {
+          "006_116_459-VAI-VAI.webp": {
+            "name": "VAI",
+            "nameEnglish": "VAI",
+            "nameLatin": "VAI",
+            "power": 6116459
           }
         },
-        "Screenshot_2026.06.12_02.07.08.263.png": {
-          "009_465_925-Simo.webp": {
-            "name": "Simo",
-            "nameLatin": "Simo",
-            "power": 9465925
+        "Screenshot_2026.06.19_09.51.35.159.png": {
+          "006_666_481-ZakhodiZavtraTMT-TMT-ZakhodiZavtraTMT.webp": {
+            "name": "ЗаходиЗавтраTMT",
+            "nameEnglish": "ZakhodiZavtraTMT",
+            "nameLatin": "ZakhodiZavtraTMT",
+            "power": 6666481
           }
         },
-        "Screenshot_2026.06.12_02.07.19.830.png": {
-          "005_457_646-Valkromm_WLF.webp": {
-            "name": "Valkromm WLF",
-            "nameLatin": "Valkromm_WLF",
-            "power": 5457646
+        "Screenshot_2026.06.19_09.51.49.792.png": {
+          "008_759_432-Ural_TMT-TMT-Ural_TMT.webp": {
+            "name": "Урал TMT",
+            "nameEnglish": "Ural TMT",
+            "nameLatin": "Ural TMT",
+            "power": 8759432
           }
         },
-        "Screenshot_2026.06.12_02.07.31.413.png": {
-          "008_160_178-widower_WLF.webp": {
-            "name": "widower WLF",
-            "nameLatin": "widower_WLF",
-            "power": 8160178
+        "Screenshot_2026.06.19_09.51.59.642.png": {
+          "007_352_422-SporTMTal.webp": {
+            "name": "SporTMTal",
+            "nameLatin": "SporTMTal",
+            "power": 7352422
           }
         },
-        "Screenshot_2026.06.12_02.07.42.947.png": {
-          "007_320_061-Rother_WLF-Rother_WLF.webp": {
-            "name": "Rother WLF",
-            "nameEnglish": "Rother WLF",
-            "nameLatin": "Rother WLF",
-            "power": 7320061
+        "Screenshot_2026.06.19_09.52.09.325.png": {
+          "008_439_669-Jhonny.webp": {
+            "name": "Jhonny",
+            "nameLatin": "Jhonny",
+            "power": 8439669
           }
         },
-        "Screenshot_2026.06.12_02.07.58.046.png": {
-          "006_172_858-R_TM_WLF.webp": {
-            "name": "R@TM {WLF}",
-            "nameLatin": "R_TM_WLF",
-            "power": 6172858
+        "Screenshot_2026.06.19_09.52.21.225.png": {
+          "005_503_927-MR.FARHAD_TMT.webp": {
+            "name": "MR.FARHAD TMT",
+            "nameLatin": "MR.FARHAD_TMT",
+            "power": 5503927
           }
         },
-        "Screenshot_2026.06.12_02.08.17.730.png": {
-          "006_004_340-J_Sobieski_WLF-J_Sobieski_WLF.webp": {
-            "name": "J³∞Sobieski∞WLF",
-            "nameEnglish": "J³∞Sobieski∞WLF",
-            "nameLatin": "J³∞Sobieski∞WLF",
-            "power": 6004340
+        "Screenshot_2026.06.19_09.52.46.008.png": {
+          "009_382_148-TMT_XKER.webp": {
+            "name": "TMT XKER",
+            "nameLatin": "TMT_XKER",
+            "power": 9382148
           }
         },
-        "Screenshot_2026.06.12_02.08.29.897.png": {
-          "004_951_904-PEDAGNA_WLF-PEDAGNA_WLF.webp": {
-            "name": "PEDAGNA WLF",
-            "nameEnglish": "PEDAGNA WLF",
-            "nameLatin": "PEDAGNA WLF",
-            "power": 4951904
+        "Screenshot_2026.06.19_09.53.00.808.png": {
+          "007_103_144-TMTArturowicz.webp": {
+            "name": "TMTArturowicz",
+            "nameLatin": "TMTArturowicz",
+            "power": 7103144
           }
         },
-        "Screenshot_2026.06.12_02.08.44.663.png": {
-          "007_494_270-Werlh_f_WLF.webp": {
-            "name": "Werlhöf WLF",
-            "nameLatin": "Werlh_f_WLF",
-            "power": 7494270
+        "Screenshot_2026.06.19_09.53.14.342.png": {
+          "006_591_357-eiv_[TMT].webp": {
+            "name": "eiv [TMT]",
+            "nameLatin": "eiv_[TMT]",
+            "power": 6591357
           }
         },
-        "Screenshot_2026.06.12_02.09.06.563.png": {
-          "004_343_502-Conqueror_WLF.webp": {
-            "name": "Conqueror WLF",
-            "nameLatin": "Conqueror_WLF",
-            "power": 4343502
+        "Screenshot_2026.06.19_09.53.27.958.png": {
+          "006_314_746-Ilyukha-Ilyukha.webp": {
+            "name": "Илюха",
+            "nameEnglish": "Ilyukha",
+            "nameLatin": "Ilyukha",
+            "power": 6314746
           }
         },
-        "Screenshot_2026.06.12_02.09.20.930.png": {
-          "005_490_519-Perps.webp": {
-            "name": "Perps",
-            "nameLatin": "Perps",
-            "power": 5490519
+        "Screenshot_2026.06.19_09.53.45.375.png": {
+          "007_159_814-Slan_TMT.webp": {
+            "name": "Slan TMT",
+            "nameLatin": "Slan_TMT",
+            "power": 7159814
           }
         },
-        "Screenshot_2026.06.12_02.10.06.079.png": {
-          "005_934_680-Gian_WLF-Gian_WLF.webp": {
-            "name": "Gian WLF",
-            "nameEnglish": "Gian WLF",
-            "nameLatin": "Gian WLF",
-            "power": 5934680
+        "Screenshot_2026.06.19_09.54.04.542.png": {
+          "008_429_588-Sweetmt.webp": {
+            "name": "Sweetmt",
+            "nameLatin": "Sweetmt",
+            "power": 8429588
           }
         },
-        "Screenshot_2026.06.12_02.10.19.513.png": {
-          "003_754_124-FelixWLF.webp": {
-            "name": "FelixWLF",
-            "nameLatin": "FelixWLF",
-            "power": 3754124
+        "Screenshot_2026.06.19_09.54.16.642.png": {
+          "008_754_404-Skorpion_TMT-TMT-Skorpion_TMT.webp": {
+            "name": "Скорпион TMT",
+            "nameEnglish": "Skorpion TMT",
+            "nameLatin": "Skorpion TMT",
+            "power": 8754404
           }
         },
-        "Screenshot_2026.06.12_02.10.31.446.png": {
-          "006_349_120-Temunjin_WLF-Temunjin_WLF.webp": {
-            "name": "Temunjin WLF",
-            "nameEnglish": "Temunjin WLF",
-            "nameLatin": "Temunjin WLF",
-            "power": 6349120
+        "Screenshot_2026.06.19_09.54.47.025.png": {
+          "005_864_813-milanTmT.webp": {
+            "name": "milanTmT",
+            "nameLatin": "milanTmT",
+            "power": 5864813
           }
         },
-        "Screenshot_2026.06.12_02.10.43.863.png": {
-          "006_906_500-Dark_Side_WLF-Dark_Side_WLF.webp": {
-            "name": "Dark Side WLF",
-            "nameEnglish": "Dark Side WLF",
-            "nameLatin": "Dark Side WLF",
-            "power": 6906500
+        "Screenshot_2026.06.19_09.55.06.058.png": {
+          "007_708_471-Kort.webp": {
+            "name": "Kort",
+            "nameLatin": "Kort",
+            "power": 7708471
           }
         },
-        "Screenshot_2026.06.12_02.11.03.730.png": {
-          "007_403_255-Fenice_WLF.webp": {
-            "name": "Fenice WLF",
-            "nameLatin": "Fenice_WLF",
-            "power": 7403255
+        "Screenshot_2026.06.19_09.55.54.492.png": {
+          "007_017_213-Kiborg_TMT-TMT-Kiborg_TMT.webp": {
+            "name": "Киборг TMT",
+            "nameEnglish": "Kiborg TMT",
+            "nameLatin": "Kiborg TMT",
+            "power": 7017213
           }
         },
-        "Screenshot_2026.06.12_02.11.21.880.png": {
-          "010_199_619-Miracle_WLF.webp": {
-            "name": "Miracle WLF",
-            "nameLatin": "Miracle_WLF",
-            "power": 10199619
+        "Screenshot_2026.06.19_09.56.12.858.png": {
+          "006_633_840-Ivory_TMT.webp": {
+            "name": "Ivory TMT",
+            "nameLatin": "Ivory_TMT",
+            "power": 6633840
           }
         },
-        "Screenshot_2026.06.12_02.11.38.746.png": {
-          "006_727_553-Peppe_Magno_Wlf.webp": {
-            "name": "Peppe Magno Wlf",
-            "nameLatin": "Peppe_Magno_Wlf",
-            "power": 6727553
+        "Screenshot_2026.06.19_09.56.29.125.png": {
+          "007_954_714-Stason_%7C_TMT-%7C_TMT-Stason_%7C_TMT.webp": {
+            "name": "Стасон | TMT",
+            "nameEnglish": "Stason | TMT",
+            "nameLatin": "Stason | TMT",
+            "power": 7954714
           }
         },
-        "Screenshot_2026.06.12_02.11.52.513.png": {
-          "004_273_100-BABA_YAGA_WLF-BABA_YAGA_WLF.webp": {
-            "name": "BABA YAGA WLF",
-            "nameEnglish": "BABA YAGA WLF",
-            "nameLatin": "BABA YAGA WLF",
-            "power": 4273100
+        "Screenshot_2026.06.19_09.56.46.492.png": {
+          "007_657_774-Richy_%257C_TMT-Richy_%7C_TMT.webp": {
+            "name": "Richy | TMT",
+            "nameLatin": "Richy_%7C_TMT",
+            "power": 7657774
           }
         },
-        "Screenshot_2026.06.12_02.12.07.663.png": {
-          "005_289_917-Edgar_wlf-Edgar_wlf.webp": {
-            "name": "Edgar wlf",
-            "nameEnglish": "Edgar wlf",
-            "nameLatin": "Edgar wlf",
-            "power": 5289917
+        "Screenshot_2026.06.19_09.57.04.492.png": {
+          "006_484_946-TMTAD.webp": {
+            "name": "TMTAD",
+            "nameLatin": "TMTAD",
+            "power": 6484946
           }
         },
-        "Screenshot_2026.06.12_02.12.22.580.png": {
-          "007_423_193-Bostol_WLF.webp": {
-            "name": "Bostol WLF",
-            "nameLatin": "Bostol_WLF",
-            "power": 7423193
+        "Screenshot_2026.06.19_09.57.18.575.png": {
+          "008_291_839-BerSTMT-BerSTMT.webp": {
+            "name": "~БерСТМТ~",
+            "nameEnglish": "~BerSTMT~",
+            "nameLatin": "~BerSTMT~",
+            "power": 8291839
           }
         },
-        "Screenshot_2026.06.12_02.12.37.880.png": {
-          "004_256_992-Binotauro_WLF-Binotauro_WLF.webp": {
-            "name": "Binotauro =WLF=",
-            "nameEnglish": "Binotauro =WLF=",
-            "nameLatin": "Binotauro =WLF=",
-            "power": 4256992
+        "Screenshot_2026.06.19_09.57.38.758.png": {
+          "005_860_110-TmT_EROS.webp": {
+            "name": "TmT~EROS~",
+            "nameLatin": "TmT_EROS",
+            "power": 5860110
           }
         },
-        "Screenshot_2026.06.12_02.12.49.680.png": {
-          "006_708_544-SJ_WLF-SJ_WLF.webp": {
-            "name": "SJ WLF",
-            "nameEnglish": "SJ WLF",
-            "nameLatin": "SJ WLF",
-            "power": 6708544
+        "Screenshot_2026.06.19_09.58.00.559.png": {
+          "006_413_872-TMT_Kto_Zdes%3F%3F-TMT_%3F%3F-TMT_Kto_Zdes%3F%3F.webp": {
+            "name": "TMT Кто Здесь??",
+            "nameEnglish": "TMT Kto Zdes??",
+            "nameLatin": "TMT Kto Zdes??",
+            "power": 6413872
           }
         },
-        "Screenshot_2026.06.12_02.13.01.180.png": {
-          "003_356_846-malnatWLF-malnatWLF.webp": {
-            "name": "malnatWLF",
-            "nameEnglish": "malnatWLF",
-            "nameLatin": "malnatWLF",
-            "power": 3356846
+        "Screenshot_2026.06.19_09.58.19.275.png": {
+          "008_341_914-PDV_TMT.webp": {
+            "name": "PDV TMT",
+            "nameLatin": "PDV_TMT",
+            "power": 8341914
           }
         },
-        "Screenshot_2026.06.12_02.13.13.163.png": {
-          "003_852_752-ShallowWlf.webp": {
-            "name": "ShallowWlf",
-            "nameLatin": "ShallowWlf",
-            "power": 3852752
+        "Screenshot_2026.06.19_09.58.32.458.png": {
+          "010_769_014-Fil_TMT-Fil_TMT.webp": {
+            "name": "Fil TMT",
+            "nameEnglish": "Fil TMT",
+            "nameLatin": "Fil TMT",
+            "power": 10769014
           }
         },
-        "Screenshot_2026.06.12_02.13.29.213.png": {
-          "006_606_774-SHAKE.webp": {
-            "name": "SHAKE",
-            "nameLatin": "SHAKE",
-            "power": 6606774
+        "Screenshot_2026.06.19_09.58.50.908.png": {
+          "008_554_110-DickTarop.webp": {
+            "name": "DickTarop",
+            "nameLatin": "DickTarop",
+            "power": 8554110
           }
         },
-        "Screenshot_2026.06.12_02.13.41.463.png": {
-          "005_697_428-CarloP_WLF.webp": {
-            "name": "CarloP WLF",
-            "nameLatin": "CarloP_WLF",
-            "power": 5697428
+        "Screenshot_2026.06.19_09.59.04.142.png": {
+          "007_639_943-Artemis_TMT.webp": {
+            "name": "Artemis TMT",
+            "nameLatin": "Artemis_TMT",
+            "power": 7639943
           }
         },
-        "Screenshot_2026.06.12_02.13.51.930.png": {
-          "007_794_075-Arto-Arto.webp": {
-            "name": "Arto",
-            "nameEnglish": "Arto",
-            "nameLatin": "Arto",
-            "power": 7794075
+        "Screenshot_2026.06.19_09.59.17.825.png": {
+          "008_193_613-D_GTMT.webp": {
+            "name": "DÈGTMT",
+            "nameLatin": "D_GTMT",
+            "power": 8193613
           }
         },
-        "Screenshot_2026.06.12_02.14.01.813.png": {
-          "010_039_026-MUL_WLF.webp": {
-            "name": "MUL WLF",
-            "nameLatin": "MUL_WLF",
-            "power": 10039026
+        "Screenshot_2026.06.19_09.59.30.892.png": {
+          "005_194_844-Dramat_TMT.webp": {
+            "name": "Dramat TMT",
+            "nameLatin": "Dramat_TMT",
+            "power": 5194844
           }
         },
-        "Screenshot_2026.06.12_02.14.11.746.png": {
-          "004_800_942-LUCA_WLF.webp": {
-            "name": "LUCA WLF",
-            "nameLatin": "LUCA_WLF",
-            "power": 4800942
+        "Screenshot_2026.06.19_09.59.52.608.png": {
+          "006_342_419-JASEM_TMT.webp": {
+            "name": "JASEM TMT",
+            "nameLatin": "JASEM_TMT",
+            "power": 6342419
           }
         },
-        "Screenshot_2026.06.12_02.14.21.813.png": {
-          "004_635_519-Gherghisan_WLF-Gherghisan_WLF.webp": {
-            "name": "Gherghisan WLF",
-            "nameEnglish": "Gherghisan WLF",
-            "nameLatin": "Gherghisan WLF",
-            "power": 4635519
+        "Screenshot_2026.06.19_10.00.05.192.png": {
+          "008_650_173-Toffee_tmt.webp": {
+            "name": "Toffee tmt",
+            "nameLatin": "Toffee_tmt",
+            "power": 8650173
           }
         },
-        "Screenshot_2026.06.12_02.14.33.296.png": {
-          "002_765_130-Cingackuk_WLF.webp": {
-            "name": "Cingackuk WLF",
-            "nameLatin": "Cingackuk_WLF",
-            "power": 2765130
+        "Screenshot_2026.06.19_10.00.14.892.png": {
+          "008_833_077-Battle_FILL_TMT.webp": {
+            "name": "Battle FILL TMT",
+            "nameLatin": "Battle_FILL_TMT",
+            "power": 8833077
+          }
+        },
+        "Screenshot_2026.06.19_10.00.24.691.png": {
+          "008_278_056-Deich_TMT.webp": {
+            "name": "Deich TMT",
+            "nameLatin": "Deich_TMT",
+            "power": 8278056
+          }
+        },
+        "Screenshot_2026.06.19_10.00.35.475.png": {
+          "007_926_500-Gmoszeka_TMT-TMT-Gmoszeka_TMT.webp": {
+            "name": "Γμοσζεκα™TMT",
+            "nameEnglish": "Gmoszeka™TMT",
+            "nameLatin": "Gmoszeka™TMT",
+            "power": 7926500
+          }
+        },
+        "Screenshot_2026.06.19_10.00.46.725.png": {
+          "007_494_543-SpartanetsTmT-TmT-SpartanetsTmT.webp": {
+            "name": "СпартанецTmT",
+            "nameEnglish": "SpartanetsTmT",
+            "nameLatin": "SpartanetsTmT",
+            "power": 7494543
+          }
+        },
+        "Screenshot_2026.06.19_10.00.57.958.png": {
+          "006_697_396-Garri_TMT-TMT-Garri_TMT.webp": {
+            "name": "Гарри TMT",
+            "nameEnglish": "Garri TMT",
+            "nameLatin": "Garri TMT",
+            "power": 6697396
           }
         }
       }

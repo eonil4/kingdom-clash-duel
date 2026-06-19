@@ -90,6 +90,7 @@ async function processImageFolder(folderArg) {
         power: mapEntry.power,
         nameLatinRaw,
         nameEnglish: mapEntry.nameEnglish,
+        nameRaw: mapEntry.name,
       });
       const canonicalName = path.posix.basename(mapKey);
       const outputPath = path.join(folderAbs, canonicalName);

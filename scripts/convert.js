@@ -220,6 +220,7 @@ async function processImageFolder(folderArg, options = {}) {
           power: mapEntry.power,
           nameLatinRaw,
           nameEnglish: mapEntry.nameEnglish,
+          nameRaw: mapEntry.name,
         });
         outputPath = path.join(folderAbs, path.posix.basename(mapKey));
         setNestedMapping(mapRoot, mapKey, mapEntry);

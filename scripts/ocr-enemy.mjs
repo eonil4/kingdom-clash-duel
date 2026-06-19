@@ -222,6 +222,7 @@ async function main() {
           power,
           nameLatinRaw: finalArt.latinRaw,
           nameEnglish: finalArt.nameEnglish,
+          nameRaw: displayName || latinHint || "",
         });
         const prevRow = findEnemyRowBySourceRel(fileMap, mapKeySource);
         if (prevRow && prevRow.fullMapKey !== mapKeyCanonical) {
