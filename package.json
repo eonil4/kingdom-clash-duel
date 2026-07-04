@@ -14,7 +14,7 @@
     "ci": "pnpm lint && pnpm build && pnpm test:unit",
     "convert:webp": "node scripts/convert-to-webp.mjs",
     "convert:clear-lm-cache": "rimraf \"%USERPROFILE%/.lmstudio/.internal/api-prediction-history/packs\" \"%USERPROFILE%/.cache/lm-studio/.internal/api-prediction-history/packs\"",
-    "convert": "npm run convert:clear-lm-cache && node scripts/convert.js data/enemies/2026-06-19",
+    "convert": "npm run convert:clear-lm-cache && node scripts/convert.js data/enemies/2026-06-26",
     "convert:llm:test": "node scripts/llm-enemy-extract.mjs data/enemies/2026-05-22/test/Screenshot_2026.05.22_02.15.01.977.png",
     "enemy:latin": "node scripts/convert-text-to-latin.mjs",
     "ocr:enemy": "node scripts/ocr-enemy.mjs",
