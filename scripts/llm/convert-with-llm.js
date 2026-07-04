@@ -2,16 +2,16 @@
  * Process enemy screenshots in a folder: LM Studio vision extraction, WebP conversion, fileMap update.
  *
  * Usage:
- *   node scripts/convert-with-llm.js data/enemies/2026-05-22/test
+ *   node scripts/llm/convert-with-llm.js data/enemies/2026-05-22/test
  *
  * Requires LM Studio with a loaded vision model:
- *   LLM_MODEL=google/gemma-4-e4b
+ *   LLM_MODEL=google/gemma-4-26b-a4b
  *   LLM_HOST=http://127.0.0.1:1234
  */
 import fs from "fs/promises";
 import path from "path";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
-import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
+import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   canonicalEnemyMapKey,
   DEFAULT_FILE_MAP_PATH,
@@ -19,7 +19,7 @@ import {
   saveFileMap,
   setNestedMapping,
   WORKSPACE_ROOT,
-} from "./file-map-enemies.mjs";
+} from "../file-map-enemies.mjs";
 import {
   DEFAULT_LLM_MODEL,
   extractEnemyDataFromScreenshot,
@@ -132,3 +132,4 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
+

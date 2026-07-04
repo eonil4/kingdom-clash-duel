@@ -3,14 +3,14 @@ import {
   decodeEnemyFilenamePercent,
   parseLatinNameHintFromEncodedOriginalBasename,
   toSafeEnemyFilenameToken,
-} from "../../scripts/enemy-filename-tokens.mjs";
+} from "../../enemy-filename-tokens.mjs";
 
 describe("toSafeEnemyFilenameToken", () => {
   it("percent-encodes Windows reserved characters", () => {
     expect(toSafeEnemyFilenameToken(String.raw`Babka\MAG`)).toBe("Babka%5CMAG");
     expect(toSafeEnemyFilenameToken(`HuN|Leonil`)).toBe("HuN%7CLeonil");
     expect(toSafeEnemyFilenameToken(`a:b*c?d`)).toBe("a%3Ab%2Ac%3Fd");
-    expect(toSafeEnemyFilenameToken(`<> "'/`)).toBe("%3C%3E_%22%27%2F");
+    expect(toSafeEnemyFilenameToken(`<> \"'/`)).toBe("%3C%3E_%22%27%2F");
   });
 
   it("escapes literal percent signs", () => {
@@ -54,3 +54,4 @@ describe("parseLatinNameHintFromEncodedOriginalBasename", () => {
     );
   });
 });
+

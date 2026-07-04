@@ -3,6 +3,7 @@ dist
 *.local
 .DS_Store
 coverage
+/.env.local
 
 # APK / native bundles — exceed GitHub's 100 MB per-file limit (keep locally only)
 data/**/*_APKPure.zip

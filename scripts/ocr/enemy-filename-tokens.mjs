@@ -64,3 +64,4 @@ export function toSafeEnemyFilenameToken(input) {
   }
   return out.replace(/_+/g, "_").replace(/^_+|_+$/g, "");
 }
+

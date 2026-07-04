@@ -3,7 +3,7 @@ import {
   convertTextToLatinArtifacts,
   detectAlphabetKind,
   transliterateToLatin,
-} from "../../scripts/convert-text-to-latin.mjs";
+} from "../../convert-text-to-latin.mjs";
 
 describe("convert-text-to-latin", () => {
   it("transliterates Cyrillic", () => {
@@ -28,3 +28,4 @@ describe("convert-text-to-latin", () => {
     expect(art.nameLatinToken).toBe("Babka%5CMAG");
   });
 });
+

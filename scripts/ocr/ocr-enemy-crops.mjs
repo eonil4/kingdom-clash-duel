@@ -36,3 +36,4 @@ export async function preprocessForOcr(img, { threshold, width = 900, negate = f
 export async function preprocessRawForOcr(img, { width = 900 } = {}) {
   return await img.removeAlpha().resize({ width, withoutEnlargement: false }).png().toBuffer();
 }
+

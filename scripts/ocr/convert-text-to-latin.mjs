@@ -4,7 +4,7 @@
  */
 import path from "path";
 import { fileURLToPath } from "url";
-import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
+import { toSafeEnemyFilenameToken } from "../enemy-filename-tokens.mjs";
 
 const CYR_TO_LAT = {
   А: "A",
@@ -156,7 +156,7 @@ async function cliMain() {
   const argv = process.argv.slice(2).filter((a) => a !== "--");
   const text = argv.join(" ").trim();
   if (!text) {
-    console.error('Usage: node scripts/convert-text-to-latin.mjs "Some Name"');
+    console.error('Usage: node scripts/ocr/convert-text-to-latin.mjs "Some Name"');
     process.exit(1);
   }
   console.log(JSON.stringify(convertTextToLatinArtifacts(text), null, 2));
@@ -170,3 +170,4 @@ if (invokedDirectly) {
     process.exit(1);
   });
 }
+

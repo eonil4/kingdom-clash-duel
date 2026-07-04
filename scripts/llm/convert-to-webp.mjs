@@ -1,10 +1,10 @@
 /**
- * Keep originals on disk; create canonical `.webp` files from fileMap.json when missing.
+ * Convert originals to canonical .webp files (moved into LLM scripts).
  *
  * Usage:
- *   node scripts/convert-to-webp.mjs
- *   node scripts/convert-to-webp.mjs --map scripts/fileMap.json
- *   node scripts/convert-to-webp.mjs --dry-run
+ *   node scripts/llm/convert-to-webp.mjs
+ *   node scripts/llm/convert-to-webp.mjs --map scripts/fileMap.json
+ *   node scripts/llm/convert-to-webp.mjs --dry-run
  */
 import fs from "fs/promises";
 import path from "path";
@@ -15,7 +15,7 @@ import {
   DEFAULT_FILE_MAP_PATH,
   loadExistingFileMap,
   WORKSPACE_ROOT,
-} from "./file-map-enemies.mjs";
+} from "../file-map-enemies.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -89,3 +89,4 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
+

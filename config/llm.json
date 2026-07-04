@@ -1,0 +1,19 @@
+{
+  "host": "http://127.0.0.1:1234",
+  "defaultModel": "google/gemma-4-26b-a4b",
+  "requestTimeoutMs": 180000,
+  "visionModelHints": ["gemma-4", "qwen2.5-vl", "qwen3-vl", "llava"],
+  "clearPredictionCacheBeforeRun": true,
+  "predictionCachePaths": [
+    "%USERPROFILE%/.lmstudio/.internal/api-prediction-history/packs",
+    "%USERPROFILE%/.cache/lm-studio/.internal/api-prediction-history/packs"
+  ]
+  ,
+  "systemPrompt": "You extract structured data from Kingdom Clash arena screenshots.\\nReply with JSON only — no markdown, no prose outside the JSON object.",
+  "userPrompt": "You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).\\n\\nCRITICAL INSTRUCTION: Focus ONLY on the dedicated opponent status panel located on the right side of the screen. This panel has a specific visual structure, usually containing three elements in order: [Name] -> [Unit Count/Icon] -> [Total Power Score].\\n\\nYou must identify the **TOTAL POWER SCORE**, which is always the most prominent large number displayed at the bottom of this status grouping.\\n\\nExtract these fields with extreme precision:\\n1. Opponent Display Name: The text label (e.g., 'Hun') in the panel.\\n2. Opponent Power Score: This must be the final, single, combined integer power score shown on the status card. Ignore the unit count and any other numbers like level or individual stats. Return it as a continuous positive integer with NO spaces, commas, or separators (e.g., 575150).\\n3. Language: The language of the name text in the UI.\\n\\nReturn ONLY this JSON shape. Do not include any preceding text, explanation, or markdown outside of the JSON object itself.\\n\\n{\\n  \"power\": <positive integer, 6-8 digits>,\\n  \"name\": \"<name exactly as shown in the game UI>\",\\n  \"language\": \"<language of the name text, e.g. Korean, Russian, English>\",\\n  \"englishName\": \"<Latin/English transliteration for filenames; omit if name is already Latin>\"\\n}"
+  ,
+  "llmMaxAttempts": 3,
+  "retryBaseDelayMs": 1500,
+  "llmTimeoutPerAttemptMs": 90000
+}
+

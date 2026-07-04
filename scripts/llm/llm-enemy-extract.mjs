@@ -3,38 +3,54 @@
  *
  * Env:
  *   LLM_HOST       — default http://127.0.0.1:1234
- *   LLM_MODEL      — default google/gemma-4-e4b
+ *   LLM_MODEL      — default google/gemma-4-26b-a4b
  *   LM_API_TOKEN   — optional Bearer token
  */
 import fs from "fs/promises";
+import { readFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-export const DEFAULT_LLM_MODEL = "google/gemma-4-26b-a4b";
-const DEFAULT_HOST = "http://127.0.0.1:1234";
+// local paths (adjusted for scripts/llm location)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const CONFIG_PATH = path.join(__dirname, "..", "..", "config", "llm.json");
+
+let _llmConfig = {};
+try {
+  const raw = readFileSync(CONFIG_PATH, "utf8");
+  _llmConfig = JSON.parse(raw);
+} catch {
+  _llmConfig = {};
+}
+
+export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "google/gemma-4-26b-a4b";
+const DEFAULT_HOST = _llmConfig.host ?? "http://127.0.0.1:1234";
 const CHAT_PATH = "/api/v1/chat";
 const MODELS_PATH = "/api/v1/models";
-const REQUEST_TIMEOUT_MS = 180_000;
+const REQUEST_TIMEOUT_MS = _llmConfig.requestTimeoutMs ?? 180_000;
 
-const VISION_MODEL_HINTS = [
-  "gemma-4",
-  "qwen2.5-vl",
-  "qwen2.5vl",
-  "qwen3-vl",
-  "gemma3",
-  "vision",
-  "vl",
-  "llava",
-  "moondream",
-  "minicpm-v",
-  "bakllava",
-  "llama3.2",
-];
+const VISION_MODEL_HINTS = Array.isArray(_llmConfig.visionModelHints)
+  ? _llmConfig.visionModelHints
+  : [
+      "gemma-4",
+      "qwen2.5-vl",
+      "qwen2.5vl",
+      "qwen3-vl",
+      "gemma3",
+      "vision",
+      "vl",
+      "llava",
+      "moondream",
+      "minicpm-v",
+      "bakllava",
+      "llama3.2",
+    ];
 
-const SYSTEM_PROMPT = `You extract structured data from Kingdom Clash arena screenshots.
+const SYSTEM_PROMPT = _llmConfig.systemPrompt ?? `You extract structured data from Kingdom Clash arena screenshots.
 Reply with JSON only — no markdown, no prose outside the JSON object.`;
 
-const USER_PROMPT = `You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).
+const USER_PROMPT = _llmConfig.userPrompt ?? `You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).
 
 CRITICAL INSTRUCTION: Focus ONLY on the dedicated opponent status panel located on the right side of the screen. This panel has a specific visual structure, usually containing three elements in order: [Name] -> [Unit Count/Icon] -> [Total Power Score].
 
@@ -283,7 +299,6 @@ async function cliMain() {
   console.log(JSON.stringify(result, null, 2));
 }
 
-const __filename = fileURLToPath(import.meta.url);
 const invokedDirectly =
   path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
 if (invokedDirectly) {
@@ -292,3 +307,4 @@ if (invokedDirectly) {
     process.exit(1);
   });
 }
+

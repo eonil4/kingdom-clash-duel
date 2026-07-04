@@ -87,3 +87,4 @@ if (invokedDirectly) {
     process.exit(1);
   });
 }
+

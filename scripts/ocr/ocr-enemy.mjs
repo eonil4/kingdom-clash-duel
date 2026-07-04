@@ -18,9 +18,9 @@ import {
   sortMapNode,
   toMapKey,
   WORKSPACE_ROOT,
-} from "./file-map-enemies.mjs";
+} from "../file-map-enemies.mjs";
 import { convertTextToLatinArtifacts } from "./convert-text-to-latin.mjs";
-import { parseLatinNameHintFromEncodedOriginalBasename } from "./enemy-filename-tokens.mjs";
+import { parseLatinNameHintFromEncodedOriginalBasename } from "../enemy-filename-tokens.mjs";
 import {
   normalizeOpponentDisplayName,
   ocrEnemyName,
@@ -257,3 +257,4 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
+

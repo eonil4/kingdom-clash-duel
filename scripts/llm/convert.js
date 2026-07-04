@@ -5,15 +5,17 @@
  * Use --force to re-run LLM and conversion for every PNG.
  *
  * Usage:
- *   node scripts/convert.js data/enemies/2026-05-22/test
- *   node scripts/convert.js data/enemies/2026-05-22/test --force
+ *   node scripts/llm/convert.js data/enemies/2026-05-22/test
+ *   node scripts/llm/convert.js data/enemies/2026-05-22/test --force
  *
  * Env: LLM_MODEL, LLM_HOST (see llm-enemy-extract.mjs)
  */
 import fs from "fs/promises";
+import { readFileSync } from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
-import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
+import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   canonicalEnemyMapKey,
   DEFAULT_FILE_MAP_PATH,
@@ -23,20 +25,37 @@ import {
   setNestedMapping,
   toMapKey,
   WORKSPACE_ROOT,
-} from "./file-map-enemies.mjs";
+} from "../file-map-enemies.mjs";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
 
-const LLM_MAX_ATTEMPTS = 3;
-const RETRY_BASE_DELAY_MS = 1500;
-/** Per-attempt LLM request timeout: attempt × 10 min */
-const LLM_TIMEOUT_PER_ATTEMPT_MS = 600_000;
+// Load optional LM config overrides from config/llm.json
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const CONFIG_PATH = path.join(__dirname, "..", "..", "config", "llm.json");
+let _llmConfig = {};
+try {
+  const raw = readFileSync(CONFIG_PATH, "utf8");
+  _llmConfig = JSON.parse(raw);
+} catch {
+  _llmConfig = {};
+}
+
+const LLM_MAX_ATTEMPTS = Number.isFinite(Number(_llmConfig.llmMaxAttempts ?? _llmConfig.maxAttempts))
+  ? Number(_llmConfig.llmMaxAttempts ?? _llmConfig.maxAttempts)
+  : 3;
+const RETRY_BASE_DELAY_MS = Number.isFinite(Number(_llmConfig.retryBaseDelayMs)) ? Number(_llmConfig.retryBaseDelayMs) : 1500;
+/** Per-attempt LLM request timeout: attempt × configured ms (default 10 min) */
+const LLM_TIMEOUT_PER_ATTEMPT_MS = Number.isFinite(Number(_llmConfig.llmTimeoutPerAttemptMs))
+  ? Number(_llmConfig.llmTimeoutPerAttemptMs)
+  : 600_000;
 
 function parseArgs(argv) {
-  const args = { folder: undefined, force: false };
+  const args = { folder: undefined, force: false, model: undefined };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--" || a === undefined) continue;
     if (a === "--force") args.force = true;
+    else if (a === "--model" || a === "-m") args.model = argv[++i];
     else if (!a.startsWith("-") && !args.folder) args.folder = a;
   }
   return args;
@@ -86,7 +105,7 @@ async function resolveExistingOutput(mapRoot, imagePath) {
 /**
  * @param {string} imagePath
  */
-async function callLLMApiForDataExtraction(imagePath) {
+async function callLLMApiForDataExtraction(imagePath, model) {
   const startedAt = performance.now();
   let lastErr;
   for (let attempt = 1; attempt <= LLM_MAX_ATTEMPTS; attempt++) {
@@ -95,7 +114,7 @@ async function callLLMApiForDataExtraction(imagePath) {
       console.log(
         `\t[LLM] ${path.basename(imagePath)} (attempt ${attempt}/${LLM_MAX_ATTEMPTS}, timeout ${timeoutMs / 1000}s)...`,
       );
-      const extracted = await extractEnemyDataFromScreenshot(imagePath, { timeoutMs });
+      const extracted = await extractEnemyDataFromScreenshot(imagePath, { timeoutMs, model });
       const durationMs = performance.now() - startedAt;
       console.log(
         `\t[LLM] power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
@@ -141,7 +160,7 @@ function mapEntryFromRow(entry) {
  * @param {{ force?: boolean }} [options]
  */
 async function processImageFolder(folderArg, options = {}) {
-  const { force = false } = options;
+  const { force = false, model = undefined } = options;
   const folderAbs = path.isAbsolute(folderArg)
     ? folderArg
     : path.resolve(WORKSPACE_ROOT, folderArg.replace(/^(\.\.\/)+/, ""));
@@ -199,7 +218,7 @@ async function processImageFolder(folderArg, options = {}) {
         usedMapOnly = true;
         console.log(`\t[Map] Using existing entry -> ${path.basename(outputPath)}`);
       } else {
-        const { extracted, durationMs } = await callLLMApiForDataExtraction(imagePath);
+        const { extracted, durationMs } = await callLLMApiForDataExtraction(imagePath, model);
         llmDurationsMs.push(durationMs);
         if (!extracted?.power || !extracted?.name) {
           throw new Error("LLM did not return power and name.");
@@ -268,11 +287,12 @@ async function processImageFolder(folderArg, options = {}) {
 }
 
 async function main() {
-  const { folder, force } = parseArgs(process.argv.slice(2));
-  await processImageFolder(folder ?? "data/enemies/2026-05-22/test", { force });
+  const { folder, force, model } = parseArgs(process.argv.slice(2));
+  await processImageFolder(folder ?? "data/enemies/2026-05-22/test", { force, model });
 }
 
 main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
+

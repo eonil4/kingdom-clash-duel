@@ -23,3 +23,4 @@ export async function writeWebpFromRasterFile(fromPath, toPath) {
   }
   await converter.toFile(toPath);
 }
+
