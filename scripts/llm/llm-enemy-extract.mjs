@@ -3,7 +3,7 @@
  *
  * Env:
  *   LLM_HOST       — default http://127.0.0.1:1234
- *   LLM_MODEL      — default google/gemma-4-26b-a4b
+ *   LLM_MODEL      — default qwen/qwen3-vl-4b
  *   LM_API_TOKEN   — optional Bearer token
  */
 import fs from "fs/promises";
@@ -24,7 +24,7 @@ try {
   _llmConfig = {};
 }
 
-export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "google/gemma-4-26b-a4b";
+export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "qwen/qwen3-vl-4b";
 const DEFAULT_HOST = _llmConfig.host ?? "http://127.0.0.1:1234";
 const CHAT_PATH = "/api/v1/chat";
 const MODELS_PATH = "/api/v1/models";

@@ -4,12 +4,12 @@ import path from "path";
 /*
 import { extractEnemyDataFromScreenshot } from "../../llm-enemy-extract.mjs";
 
-it("real LM (google/gemma-4-26b-a4b) extracts name and power from test screenshot", async () => {
+it("real LM (qwen/qwen3-vl-4b) extracts name and power from test screenshot", async () => {
   const src = path.resolve("data/enemies/test/Screenshot_2026.06.19_09.49.47.958.png");
   await fs.access(src);
 
   const host = process.env.LLM_HOST ?? undefined;
-  const model = process.env.LLM_MODEL ?? "google/gemma-4-26b-a4b";
+  const model = process.env.LLM_MODEL ?? "qwen/qwen3-vl-4b";
   const timeoutMs = Number(process.env.LLM_TEST_TIMEOUT_MS ?? 180_000);
 
   const result = await extractEnemyDataFromScreenshot(src, { host, model, timeoutMs });
@@ -24,7 +24,7 @@ import { writeWebpFromRasterFile } from "../../scripts/llm/enemy-image-webp.mjs"
 import { toSafeEnemyFilenameToken } from "../../scripts/ocr/enemy-filename-tokens.mjs";
 
 it("converts test screenshot into model-named output folder", async () => {
-  const model = "google/gemma-4-26b-a4b";
+  const model = "qwen/qwen3-vl-4b";
   const modelFolder = toSafeEnemyFilenameToken(model);
   const src = path.resolve("data/enemies/test/Screenshot_2026.06.19_09.49.47.958.png");
 

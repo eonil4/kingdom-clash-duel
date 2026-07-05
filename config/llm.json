@@ -1,6 +1,6 @@
 {
   "host": "http://127.0.0.1:1234",
-  "defaultModel": "google/gemma-4-26b-a4b",
+  "defaultModel": "qwen/qwen3-vl-4b",
   "requestTimeoutMs": 180000,
   "visionModelHints": ["gemma-4", "qwen2.5-vl", "qwen3-vl", "llava"],
   "clearPredictionCacheBeforeRun": true,
@@ -10,10 +10,9 @@
   ]
   ,
   "systemPrompt": "You extract structured data from Kingdom Clash arena screenshots.\\nReply with JSON only — no markdown, no prose outside the JSON object.",
-  "userPrompt": "You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).\\n\\nCRITICAL INSTRUCTION: Focus ONLY on the dedicated opponent status panel located on the right side of the screen. This panel has a specific visual structure, usually containing three elements in order: [Name] -> [Unit Count/Icon] -> [Total Power Score].\\n\\nYou must identify the **TOTAL POWER SCORE**, which is always the most prominent large number displayed at the bottom of this status grouping.\\n\\nExtract these fields with extreme precision:\\n1. Opponent Display Name: The text label (e.g., 'Hun') in the panel.\\n2. Opponent Power Score: This must be the final, single, combined integer power score shown on the status card. Ignore the unit count and any other numbers like level or individual stats. Return it as a continuous positive integer with NO spaces, commas, or separators (e.g., 575150).\\n3. Language: The language of the name text in the UI.\\n\\nReturn ONLY this JSON shape. Do not include any preceding text, explanation, or markdown outside of the JSON object itself.\\n\\n{\\n  \"power\": <positive integer, 6-8 digits>,\\n  \"name\": \"<name exactly as shown in the game UI>\",\\n  \"language\": \"<language of the name text, e.g. Korean, Russian, English>\",\\n  \"englishName\": \"<Latin/English transliteration for filenames; omit if name is already Latin>\"\\n}"
-  ,
+  "userPrompt": "You are an expert data extraction engine specializing in complex video game UIs. Your task is to extract the primary combat statistics for the OPPONENT (right side) using the following Region of Interest (ROI) coordinates to guide your OCR focus.\n\n### REGION OF INTEREST (ROI) GUIDANCE:\n1. OPPONENT NAME WINDOW:\n   - Position: [X: 62.1%, Y: 7.6%]\n   - Size: [Width: 34.2%, Height: 4.1%]\n   - Expected Content: Text with potential special symbols (e.g., \"+|R_ostr1ng+|+\").\n\n2. OPPONENT POWER WINDOW:\n   - Position: [X: 68.2%, Y: 13.8%]\n   - Size: [Width: 29.3%, Height: 3.5%]\n   - Expected Content: A large multi-digit number (e.g., \"2069919\").\n\n### EXTRACTION RULES:\n- name: Extract the exact string from the Name ROI. Include all symbols (+, |, _, etc.) and preserve case sensitivity.\n- nameLatin: Provide a Latin transliteration. If already Latin, return the original string without any symbols.\n- power: Extract the number from the Power ROI. Return as a single continuous positive integer (NO spaces or commas).\n- language: Identify the language of the name text.\n\nReturn ONLY this JSON shape:\n\n{\n  \"name\": \"<exact_name>\",\n  \"nameLatin\": \"<transliteration>\",\n  \"power\": <integer>,\n  \"language\": \"<detected_language>\"\n}",
   "llmMaxAttempts": 3,
   "retryBaseDelayMs": 1500,
-  "llmTimeoutPerAttemptMs": 90000
+  "llmTimeoutPerAttemptMs": 600000
 }
 

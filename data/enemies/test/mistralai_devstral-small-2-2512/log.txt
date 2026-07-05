@@ -1,0 +1,23 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\test\mistralai_devstral-small-2-2512 (3 PNGs, missing only)
+
+[Processing] Screenshot_2026.06.19_09.49.47.958.png
+	[LLM] Screenshot_2026.06.19_09.49.47.958.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7948112 name="Tyrant" (1.4m)
+	[Conversion] -> 007_948_112-Tyrant.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.06.27_00.22.21.117.png
+	[LLM] Screenshot_2026.06.27_00.22.21.117.png (attempt 1/3, timeout 600s)...
+	[LLM] power=11230093 name="NW | Telchary" (1.2m)
+	[Conversion] -> 011_230_093-NW_%257C_Telchary-NW_%7C_Telchary.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.04_12.27.26.944.png
+	[LLM] Screenshot_2026.07.04_12.27.26.944.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2069919 name="+|R_ostr1ng+|+" (1.3m)
+	[Conversion] -> 002_069_919-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 3 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 1.2m / 1.3m / 1.4m
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
