@@ -1,6 +1,225 @@
 {
   "data": {
     "enemies": {
+      "2026-07-03": {
+        "Screenshot_2026.07.04_12.25.39.194.png": {
+          "005_743_553-HuNjeonil.webp": {
+            "name": "HuNjeonil",
+            "nameLatin": "HuNjeonil",
+            "power": 5743553
+          }
+        },
+        "Screenshot_2026.07.04_12.25.55.461.png": {
+          "004_613_767-Olegbv.webp": {
+            "name": "Olegbv++",
+            "nameLatin": "Olegbv",
+            "power": 4613767
+          }
+        },
+        "Screenshot_2026.07.04_12.26.09.644.png": {
+          "005_073_771-BMW.webp": {
+            "name": "BMW",
+            "nameLatin": "BMW",
+            "power": 5073771
+          }
+        },
+        "Screenshot_2026.07.04_12.26.18.194.png": {
+          "004_923_860-HuN%257Csonil-HuN%7Csonil.webp": {
+            "name": "HuN|sonil",
+            "nameLatin": "HuN%7Csonil",
+            "power": 4923860
+          }
+        },
+        "Screenshot_2026.07.04_12.26.25.844.png": {
+          "008_335_695-Winchester_1.webp": {
+            "name": "Winchester +1+",
+            "nameLatin": "Winchester_1",
+            "power": 8335695
+          }
+        },
+        "Screenshot_2026.07.04_12.26.34.544.png": {
+          "008_138_402-Katiousha.webp": {
+            "name": "Katiousha++",
+            "nameLatin": "Katiousha",
+            "power": 8138402
+          }
+        },
+        "Screenshot_2026.07.04_12.26.44.977.png": {
+          "006_402_505-Miltiad_1.webp": {
+            "name": "Miltiad +1+",
+            "nameLatin": "Miltiad_1",
+            "power": 6402505
+          }
+        },
+        "Screenshot_2026.07.04_12.26.56.110.png": {
+          "003_387_938-Siver_%257C-Siver_%7C.webp": {
+            "name": "Siver+|+",
+            "nameLatin": "Siver_%7C",
+            "power": 3387938
+          }
+        },
+        "Screenshot_2026.07.04_12.27.04.094.png": {
+          "004_135_347-HuNepnil.webp": {
+            "name": "HuNepnil",
+            "nameLatin": "HuNepnil",
+            "power": 4135347
+          }
+        },
+        "Screenshot_2026.07.04_12.27.13.077.png": {
+          "003_482_360-.webp": {
+            "name": "Бджола++",
+            "nameLatin": "",
+            "power": 3482360
+          }
+        },
+        "Screenshot_2026.07.04_12.27.26.944.png": {
+          "002_069_919-l_R_ostriing_%257C-l_R_ostriing_%7C.webp": {
+            "name": "+l+R_ostriing+|",
+            "nameLatin": "l_R_ostriing_%7C",
+            "power": 2069919
+          }
+        },
+        "Screenshot_2026.07.04_12.27.36.727.png": {
+          "003_826_986-SERG_1.webp": {
+            "name": "SERG+1+",
+            "nameLatin": "SERG_1",
+            "power": 3826986
+          }
+        },
+        "Screenshot_2026.07.04_12.27.47.144.png": {
+          "002_937_960-1.webp": {
+            "name": "Богун +1+",
+            "nameLatin": "1",
+            "power": 2937960
+          }
+        },
+        "Screenshot_2026.07.04_12.27.57.977.png": {
+          "007_975_638-1.webp": {
+            "name": "Псих +1+",
+            "nameLatin": "1",
+            "power": 7975638
+          }
+        },
+        "Screenshot_2026.07.04_12.28.08.210.png": {
+          "000_848_855-Felix777.webp": {
+            "name": "Felix777",
+            "nameLatin": "Felix777",
+            "power": 848855
+          }
+        },
+        "Screenshot_2026.07.04_12.28.34.944.png": {
+          "009_575_655-Stafik_%252F-Stafik_%2F.webp": {
+            "name": "Stafik +/+",
+            "nameLatin": "Stafik_%2F",
+            "power": 9575655
+          }
+        },
+        "Screenshot_2026.07.04_12.28.45.493.png": {
+          "006_506_290-Ebreh.webp": {
+            "name": "Ebreh++",
+            "nameLatin": "Ebreh",
+            "power": 6506290
+          }
+        },
+        "Screenshot_2026.07.04_12.29.01.827.png": {
+          "006_706_731-alexeY1976.webp": {
+            "name": "alexeY1976",
+            "nameLatin": "alexeY1976",
+            "power": 6706731
+          }
+        },
+        "Screenshot_2026.07.04_12.29.15.210.png": {
+          "003_237_110-.webp": {
+            "name": "СиначкаАрта++",
+            "nameLatin": "",
+            "power": 3237110
+          }
+        },
+        "Screenshot_2026.07.04_12.29.27.977.png": {
+          "004_957_046-Choovi.webp": {
+            "name": "Choovi++",
+            "nameLatin": "Choovi",
+            "power": 4957046
+          }
+        },
+        "Screenshot_2026.07.04_12.29.41.027.png": {
+          "006_651_578-1.webp": {
+            "name": "Легион +1+",
+            "nameLatin": "1",
+            "power": 6651578
+          }
+        },
+        "Screenshot_2026.07.04_12.30.00.311.png": {
+          "006_192_472-Anatoli.webp": {
+            "name": "Anatoli++",
+            "nameLatin": "Anatoli",
+            "power": 6192472
+          }
+        },
+        "Screenshot_2026.07.04_12.30.37.527.png": {
+          "005_312_820-Tolik.webp": {
+            "name": "Tolik",
+            "nameLatin": "Tolik",
+            "power": 5312820
+          }
+        },
+        "Screenshot_2026.07.04_12.30.48.810.png": {
+          "009_946_089-Gipard.webp": {
+            "name": "@Gipard@++",
+            "nameLatin": "Gipard",
+            "power": 9946089
+          }
+        },
+        "Screenshot_2026.07.04_12.31.02.010.png": {
+          "006_023_628-.webp": {
+            "name": "Оркодав++",
+            "nameLatin": "",
+            "power": 6023628
+          }
+        },
+        "Screenshot_2026.07.04_12.31.21.027.png": {
+          "006_230_754-Fiks_1.webp": {
+            "name": "Fiks +1+",
+            "nameLatin": "Fiks_1",
+            "power": 6230754
+          }
+        },
+        "Screenshot_2026.07.04_12.31.30.494.png": {
+          "000_942_753-Positron_%252F-Positron_%2F.webp": {
+            "name": "Positron +/+",
+            "nameLatin": "Positron_%2F",
+            "power": 942753
+          }
+        },
+        "Screenshot_2026.07.04_12.31.47.294.png": {
+          "005_506_032-RAGNAR_%257C-RAGNAR_%7C.webp": {
+            "name": "RAGNAR+|+",
+            "nameLatin": "RAGNAR_%7C",
+            "power": 5506032
+          }
+        },
+        "Screenshot_2026.07.04_12.31.58.177.png": {
+          "005_829_350-BlAma.webp": {
+            "name": "BlAma",
+            "nameLatin": "BlAma",
+            "power": 5829350
+          }
+        },
+        "Screenshot_2026.07.04_12.32.07.194.png": {
+          "004_229_746-UA_OBUHIV_I.webp": {
+            "name": "UA OBUHIV+I+",
+            "nameLatin": "UA_OBUHIV_I",
+            "power": 4229746
+          }
+        },
+        "Screenshot_2026.07.04_12.32.21.227.png": {
+          "005_531_203-TasmyT_%257C-TasmyT_%7C.webp": {
+            "name": "TasmyT+|+",
+            "nameLatin": "TasmyT_%7C",
+            "power": 5531203
+          }
+        }
+      },
       "test": {
         "mistralai_devstral-small-2-2512": {
           "Screenshot_2026.06.19_09.49.47.958.png": {
