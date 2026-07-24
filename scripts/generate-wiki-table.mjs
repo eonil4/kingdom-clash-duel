@@ -3,6 +3,7 @@ import path from 'path';
 
 // 1. Get the target folder path from command line arguments
 const targetFolder = process.argv[2];
+const extension = process.argv[3] || '.webp';
 
 if (!targetFolder) {
   console.error("Error: Please provide the folder path!");
@@ -28,7 +29,7 @@ try {
   
   // Filter exclusively for .webp images
   const images = files.filter(file => 
-    path.extname(file).toLowerCase() === '.webp'
+    path.extname(file).toLowerCase() === extension
   );
 
   if (images.length === 0) {

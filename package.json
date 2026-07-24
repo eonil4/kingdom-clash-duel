@@ -24,7 +24,8 @@
     "ocr:enemy:name": "node scripts/ocr/ocr-enemy-name.mjs",
     "ocr:enemy:power": "node scripts/ocr/ocr-enemy-power.mjs",
     "ocr:enemies:process": "pnpm ocr:enemies && pnpm convert:webp",
-    "generate-wiki-table": "node scripts/generate-wiki-table.mjs data/enemies/2026-07-24"
+    "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/enemies/2026-07-24",
+    "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan/2026-07-24 .png"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
