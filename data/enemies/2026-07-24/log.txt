@@ -524,3 +524,98 @@ Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-24 (
 
 Done: 43 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 18.6s / 21.0s / 39.5s
 Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-24 (45 PNGs, missing only)
+
+[Skip] Screenshot_2026.07.24_10.09.13.053.png — WebP exists: 004_782_665-WODZUAN%252AEU%252A-WODZUAN%2AEU%2A.webp
+
+[Skip] Screenshot_2026.07.24_10.09.20.536.png — WebP exists: 005_115_396-Mirek666_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.09.28.436.png — WebP exists: 005_120_719-Zusla_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.09.36.119.png — WebP exists: 005_163_007-Gluun_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.09.43.803.png — WebP exists: 005_253_579-.webp
+
+[Skip] Screenshot_2026.07.24_10.09.52.153.png — WebP exists: 010_365_682-KMICIC_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.10.00.386.png — WebP exists: 002_057_199-FELIX.webp
+
+[Skip] Screenshot_2026.07.24_10.10.22.386.png — WebP exists: 004_516_255-Sei_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.10.30.569.png — WebP exists: 001_671_157-kokos321_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.10.43.086.png — WebP exists: 009_837_787-L_CR_0.webp
+
+[Skip] Screenshot_2026.07.24_10.10.52.436.png — WebP exists: 003_078_474-Palaloo_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.11.01.169.png — WebP exists: 002_478_079-klystek_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.11.13.736.png — WebP exists: 002_825_075-Sebcio_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.11.27.369.png — WebP exists: 002_616_618-albercik_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.11.59.669.png — WebP exists: 001_539_612-Maddermax_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.12.09.419.png — WebP exists: 003_002_970-Switek_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.12.25.536.png — WebP exists: 006_493_453-Kacper_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.12.38.336.png — WebP exists: 010_035_001-Danko_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.12.53.252.png — WebP exists: 010_296_086-LU_Stalin.webp
+
+[Skip] Screenshot_2026.07.24_10.13.02.986.png — WebP exists: 010_802_844-M_w.Mi.Olo%257CLU-M_w.Mi.Olo%7CLU.webp
+
+[Skip] Screenshot_2026.07.24_10.13.18.602.png — WebP exists: 008_328_218-LUYon.webp
+
+[Skip] Screenshot_2026.07.24_10.13.30.402.png — WebP exists: 002_978_923-Dominquez_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.13.43.369.png — WebP exists: 005_119_285-LU%257C_DrOpSiK%257C-LU%7C_DrOpSiK%7C.webp
+
+[Skip] Screenshot_2026.07.24_10.14.00.069.png — WebP exists: 008_984_439-X_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.14.09.569.png — WebP exists: 009_423_250-hubertmx_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.14.20.819.png — WebP exists: 006_018_206-WkunMaxLU.webp
+
+[Skip] Screenshot_2026.07.24_10.14.35.886.png — WebP exists: 003_943_247-Kr_lowaBasiaLU.webp
+
+[Skip] Screenshot_2026.07.24_10.14.45.319.png — WebP exists: 006_927_998-LU_Koszmar_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.14.56.419.png — WebP exists: 005_233_957-Stallone_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.15.06.769.png — WebP exists: 004_812_025-SADYSTA_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.15.20.269.png — WebP exists: 008_427_384-Arnold_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.15.30.569.png — WebP exists: 007_906_287-Marcel_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.15.41.036.png — WebP exists: 008_648_922-b_r_eloch.webp
+
+[Skip] Screenshot_2026.07.24_10.15.53.069.png — WebP exists: 006_832_418-LOL_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.16.04.686.png — WebP exists: 005_500_895-LUKapelan.webp
+
+[Skip] Screenshot_2026.07.24_10.16.16.586.png — WebP exists: 010_542_242-LUI_Hera.webp
+
+[Skip] Screenshot_2026.07.24_10.16.32.969.png — WebP exists: 008_664_014-B_%257C_MBERLU-B_%7C_MBERLU.webp
+
+[Skip] Screenshot_2026.07.24_10.16.44.386.png — WebP exists: 006_764_055-LU_Kraft.webp
+
+[Skip] Screenshot_2026.07.24_10.17.11.052.png — WebP exists: 008_542_971-Knypek_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.17.28.036.png — WebP exists: 009_841_560-ICEMAN_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.17.36.453.png — WebP exists: 006_554_373-Lucky_Luke_L.webp
+
+[Skip] Screenshot_2026.07.24_10.17.47.619.png — WebP exists: 006_264_292-Seaper_LD.webp
+
+[Skip] Screenshot_2026.07.24_10.17.56.852.png — WebP exists: 003_663_823-Sebix_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.18.09.536.png — WebP exists: 005_760_466-MIKI_LU.webp
+
+[Skip] Screenshot_2026.07.24_10.18.23.069.png — WebP exists: 007_608_710-Saloo132_LU.webp
+
+Done: 0 new (LLM), 0 from map only, 45 skipped (complete), 0 failed.
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json

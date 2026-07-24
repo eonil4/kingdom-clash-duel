@@ -10,16 +10,17 @@ if (!targetFolder) {
   process.exit(1);
 }
 
-// Configuration based on the provided GitHub repository details
+// Configuration updated to match the exact working GitHub structure
+const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
 const GITHUB_USER = 'eonil4';
 const GITHUB_REPO = 'kingdom-clash-duel';
-const GITHUB_BRANCH = 'refs/heads/main';
+const GITHUB_BRANCH = 'main';
 
 // Ensure correct slashes for URL path construction (cross-platform compatibility)
 const normalizedPath = targetFolder.replace(/\\/g, '/');
 
-// Generate the base GitHub RAW URL for direct image embedding
-const baseUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${normalizedPath}`;
+// Generate the base GitHub RAW URL with standard /refs/heads/ path
+const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${normalizedPath}`;
 
 try {
   // Read all files from the target directory
@@ -40,7 +41,11 @@ try {
 
   for (let i = 0; i < images.length; i++) {
     const imageName = images[i];
-    const imageUrl = `${baseUrl}/${imageName}`;
+    
+    // Crucial fix: Encode the filename to correctly escape % and special characters
+    const encodedImageName = encodeURIComponent(imageName);
+    const imageUrl = `${baseUrl}/${encodedImageName}`;
+    
     const displayName = path.basename(imageName, path.extname(imageName));
 
     html += '  <tr>\n';
