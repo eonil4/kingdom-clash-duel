@@ -11,7 +11,7 @@
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
     "ci": "pnpm lint && pnpm build && pnpm test:unit",
-    "llm:convert": "npm run llm:convert:clear-lm-cache && cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-07-24 >>data/enemies/2026-07-24/log.txt",
+    "llm:convert": "npm run llm:convert:clear-lm-cache && cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-07-31 >>data/enemies/2026-07-31/log.txt",
     "llm:convert:test:qwen/qwen3-vl-4b": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/test/qwen_qwen3-vl-4b >data/enemies/test/qwen_qwen3-vl-4b/log.txt // 25.8s, 23.6s, 23.8s",
     "llm:convert:test:mistralai/devstral-small-2-2512": "cross-env LLM_MODEL=mistralai/devstral-small-2-2512 node scripts/llm/convert.js data/enemies/test/mistralai_devstral-small-2-2512 >data/enemies/test/mistralai_devstral-small-2-2512/log.txt // 1.4m, 1.2m, 1.3m",
     "llm:convert:test:google/gemma-4-26b-a4b": "cross-env LLM_MODEL=google/gemma-4-26b-a4b node scripts/llm/convert.js data/enemies/test/google_gemma-4-26b-a4b >data/enemies/test/google_gemma-4-26b-a4b/log.txt // 3.9m, 1.6m",
@@ -24,8 +24,8 @@
     "ocr:enemy:name": "node scripts/ocr/ocr-enemy-name.mjs",
     "ocr:enemy:power": "node scripts/ocr/ocr-enemy-power.mjs",
     "ocr:enemies:process": "pnpm ocr:enemies && pnpm convert:webp",
-    "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/enemies/2026-07-24",
-    "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan/2026-07-24 .png"
+    "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/enemies/2026-07-31",
+    "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan/2026-07-31 .png"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
