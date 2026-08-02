@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 import fs from "fs/promises";
 import path from "path";
+import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 
 // ROOT is two levels up from scripts/llm -> project root
-const ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathname), "..", ".."));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT = path.resolve(__dirname, "..", "..");
 const CONFIG_PATH = path.join(ROOT, "config", "llm.json");
 const ENV_EXAMPLE = path.join(ROOT, ".env.local.example");
 const ENV_LOCAL = path.join(ROOT, ".env.local");
@@ -50,6 +53,10 @@ async function main() {
     requestTimeoutMs: formatSource(config.requestTimeoutMs ?? 180000, "config"),
     clearPredictionCacheBeforeRun: formatSource(
       config.clearPredictionCacheBeforeRun === true,
+      "config",
+    ),
+    clearPredictionCacheBeforeEachCall: formatSource(
+      config.clearPredictionCacheBeforeEachCall === true,
       "config",
     ),
     predictionCachePaths: formatSource(config.predictionCachePaths ?? [], "config"),

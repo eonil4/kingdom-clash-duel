@@ -15,3 +15,163 @@ Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\w
 
 Done: 2 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 6.4s / 12.6s / 18.7s
 Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (2 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=true]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (8.1s)
+	[Skip] WebP already exists: 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM] power=233 name="HuN|sonil" (7.6s)
+	[Skip] WebP already exists: 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 0 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 7.6s / 7.9s / 8.1s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (2 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=true]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (5.8s)
+	[Skip] WebP already exists: 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Skip] Screenshot_2026.07.31_11.15.07.045.png — WebP exists: 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
+
+Done: 0 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 5.8s / 5.8s / 5.8s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (2 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=true]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (22.4s)
+	[Skip] WebP already exists: 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Skip] Screenshot_2026.07.31_11.15.07.045.png — WebP exists: 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
+
+Done: 0 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 22.4s / 22.4s / 22.4s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (3 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (11.3s)
+	[Conversion] -> 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[LLM] power=233 name="HuN|sonil" (5.9s)
+	[Conversion] -> 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.17.41.795.png
+	[LLM] Screenshot_2026.07.31_11.17.41.795.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10729955 name="ΓενδαλβφριμμύΒΡ" (7.5s)
+	[Conversion] -> 010_729_955-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 3 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 5.9s / 7.5s / 11.3s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (3 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (19.8s)
+	[Skip] WebP already exists: 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7675527 name="+|R_ostr1ng+|+" (20.6s)
+	[Conversion] -> 007_675_527-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.17.41.795.png
+	[LLM] Screenshot_2026.07.31_11.17.41.795.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10729955 name="ΓενδαλβφριμμύΒΡ" (20.9s)
+	[Skip] WebP already exists: 010_729_955-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 1 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 19.8s / 20.6s / 20.9s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (3 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (20.0s)
+	[Conversion] -> 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7675527 name="+|R_ostr1ng+|+" (21.5s)
+	[Conversion] -> 007_675_527-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.17.41.795.png
+	[LLM] Screenshot_2026.07.31_11.17.41.795.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10729955 name="ΓενδαλβφριμμύΒΡ" (21.5s)
+	[Conversion] -> 010_729_955-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 3 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 20.0s / 21.5s / 21.5s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (3 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4152157 name="Askat_BP" (20.0s)
+	[Conversion] -> 004_152_157-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Skip] Screenshot_2026.07.31_11.15.07.045.png — WebP exists: 007_675_527-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
+
+[Skip] Screenshot_2026.07.31_11.17.41.795.png — WebP exists: 010_729_955-.webp
+
+Done: 1 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 20.0s / 20.0s / 20.0s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (3 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Skip] Screenshot_2026.07.31_10.53.50.395.png — WebP exists: 004_152_157-Askat_BP.webp
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7675527 name="HuN|sonil" (20.3s)
+	[Conversion] -> 007_675_527-HuN%257Csonil-HuN%7Csonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Skip] Screenshot_2026.07.31_11.17.41.795.png — WebP exists: 010_729_955-.webp
+
+Done: 1 new (LLM), 0 from map only, 2 skipped (complete), 0 failed. LLM min/median/max: 20.3s / 20.3s / 20.3s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json

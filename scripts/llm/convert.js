@@ -7,8 +7,10 @@
  * Usage:
  *   node scripts/llm/convert.js data/enemies/2026-05-22/test
  *   node scripts/llm/convert.js data/enemies/2026-05-22/test --force
+ *   node scripts/llm/convert.js data/enemies/2026-05-22/test --clear-cache
+ *   node scripts/llm/convert.js data/enemies/2026-05-22/test --no-clear-cache
  *
- * Env: LLM_MODEL, LLM_HOST (see llm-enemy-extract.mjs)
+ * Env: LLM_MODEL, LLM_HOST, LLM_SKIP_CACHE_CLEAR (see llm-enemy-extract.mjs)
  */
 import fs from "fs/promises";
 import { readFileSync } from "fs";
@@ -27,6 +29,11 @@ import {
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
+import {
+  clearLmPredictionCache,
+  shouldClearPredictionCacheBeforeEachCall,
+  shouldClearPredictionCacheBeforeRun,
+} from "./clear-lm-prediction-cache.mjs";
 
 // Load optional LM config overrides from config/llm.json
 const __filename = fileURLToPath(import.meta.url);
@@ -50,11 +57,19 @@ const LLM_TIMEOUT_PER_ATTEMPT_MS = Number.isFinite(Number(_llmConfig.llmTimeoutP
   : 600_000;
 
 function parseArgs(argv) {
-  const args = { folder: undefined, force: false, model: undefined };
+  const args = {
+    folder: undefined,
+    force: false,
+    model: undefined,
+    /** @type {boolean | undefined} */
+    clearCache: undefined,
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--" || a === undefined) continue;
     if (a === "--force") args.force = true;
+    else if (a === "--clear-cache") args.clearCache = true;
+    else if (a === "--no-clear-cache") args.clearCache = false;
     else if (a === "--model" || a === "-m") args.model = argv[++i];
     else if (!a.startsWith("-") && !args.folder) args.folder = a;
   }
@@ -104,8 +119,10 @@ async function resolveExistingOutput(mapRoot, imagePath) {
 
 /**
  * @param {string} imagePath
+ * @param {string | undefined} model
+ * @param {{ clearCacheBeforeEachCall?: boolean }} [options]
  */
-async function callLLMApiForDataExtraction(imagePath, model) {
+async function callLLMApiForDataExtraction(imagePath, model, options = {}) {
   const startedAt = performance.now();
   let lastErr;
   for (let attempt = 1; attempt <= LLM_MAX_ATTEMPTS; attempt++) {
@@ -114,7 +131,11 @@ async function callLLMApiForDataExtraction(imagePath, model) {
       console.log(
         `\t[LLM] ${path.basename(imagePath)} (attempt ${attempt}/${LLM_MAX_ATTEMPTS}, timeout ${timeoutMs / 1000}s)...`,
       );
-      const extracted = await extractEnemyDataFromScreenshot(imagePath, { timeoutMs, model });
+      const extracted = await extractEnemyDataFromScreenshot(imagePath, {
+        timeoutMs,
+        model,
+        clearCacheBeforeEachCall: options.clearCacheBeforeEachCall,
+      });
       const durationMs = performance.now() - startedAt;
       console.log(
         `\t[LLM] power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
@@ -157,10 +178,18 @@ function mapEntryFromRow(entry) {
 
 /**
  * @param {string} folderArg
- * @param {{ force?: boolean }} [options]
+ * @param {{ force?: boolean, model?: string, clearCache?: boolean }} [options]
  */
 async function processImageFolder(folderArg, options = {}) {
-  const { force = false, model = undefined } = options;
+  const { force = false, model = undefined, clearCache = undefined } = options;
+  const clearBeforeEach = shouldClearPredictionCacheBeforeEachCall({
+    cliOverride: clearCache,
+    config: _llmConfig,
+  });
+  const clearBeforeRun = shouldClearPredictionCacheBeforeRun({
+    config: _llmConfig,
+  });
+
   const folderAbs = path.isAbsolute(folderArg)
     ? folderArg
     : path.resolve(WORKSPACE_ROOT, folderArg.replace(/^(\.\.\/)+/, ""));
@@ -177,8 +206,16 @@ async function processImageFolder(folderArg, options = {}) {
   }
 
   console.log(
-    `\nProcessing folder: ${folderAbs} (${pngFiles.length} PNGs, ${force ? "force" : "missing only"})`,
+    `\nProcessing folder: ${folderAbs} (${pngFiles.length} PNGs, ${force ? "force" : "missing only"})` +
+      ` [cache: beforeRun=${clearBeforeRun}, beforeEachCall=${clearBeforeEach}]`,
   );
+
+  if (clearBeforeRun) {
+    await clearLmPredictionCache({
+      config: _llmConfig,
+      label: "before run",
+    });
+  }
 
   const mapRoot = await loadExistingFileMap(DEFAULT_FILE_MAP_PATH);
   let converted = 0;
@@ -218,7 +255,9 @@ async function processImageFolder(folderArg, options = {}) {
         usedMapOnly = true;
         console.log(`\t[Map] Using existing entry -> ${path.basename(outputPath)}`);
       } else {
-        const { extracted, durationMs } = await callLLMApiForDataExtraction(imagePath, model);
+        const { extracted, durationMs } = await callLLMApiForDataExtraction(imagePath, model, {
+          clearCacheBeforeEachCall: clearBeforeEach,
+        });
         llmDurationsMs.push(durationMs);
         if (!extracted?.power || !extracted?.name) {
           throw new Error("LLM did not return power and name.");
@@ -287,8 +326,12 @@ async function processImageFolder(folderArg, options = {}) {
 }
 
 async function main() {
-  const { folder, force, model } = parseArgs(process.argv.slice(2));
-  await processImageFolder(folder ?? "data/enemies/2026-05-22/test", { force, model });
+  const { folder, force, model, clearCache } = parseArgs(process.argv.slice(2));
+  await processImageFolder(folder ?? "data/enemies/2026-05-22/test", {
+    force,
+    model,
+    clearCache,
+  });
 }
 
 main().catch((err) => {

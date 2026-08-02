@@ -5,11 +5,16 @@
  *   LLM_HOST       — default http://127.0.0.1:1234
  *   LLM_MODEL      — default qwen/qwen3-vl-4b
  *   LM_API_TOKEN   — optional Bearer token
+ *   LLM_SKIP_CACHE_CLEAR — set 1 to skip prediction-cache clearing
  */
 import fs from "fs/promises";
 import { readFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import {
+  clearLmPredictionCache,
+  shouldClearPredictionCacheBeforeEachCall,
+} from "./clear-lm-prediction-cache.mjs";
 
 // local paths (adjusted for scripts/llm location)
 const __filename = fileURLToPath(import.meta.url);
@@ -231,13 +236,24 @@ async function fetchWithTimeout(url, init, timeoutMs = REQUEST_TIMEOUT_MS) {
 
 /**
  * @param {string} imagePath
- * @param {{ host?: string, model?: string, timeoutMs?: number }} [options]
+ * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
  * @returns {Promise<{ power: number, name: string, language?: string, englishName?: string }>}
  */
 export async function extractEnemyDataFromScreenshot(imagePath, options = {}) {
   const host = resolveHost(options.host);
   const model = await resolveVisionModel(host, options.model);
   const timeoutMs = options.timeoutMs ?? REQUEST_TIMEOUT_MS;
+  const clearBeforeEach =
+    options.clearCacheBeforeEachCall !== undefined
+      ? options.clearCacheBeforeEachCall === true
+      : shouldClearPredictionCacheBeforeEachCall({ config: _llmConfig });
+
+  if (clearBeforeEach) {
+    await clearLmPredictionCache({
+      config: _llmConfig,
+      label: "before LLM call",
+    });
+  }
 
   const imageBytes = await fs.readFile(imagePath);
   const mime = mimeForImagePath(imagePath);
@@ -279,23 +295,50 @@ export async function extractEnemyDataFromScreenshot(imagePath, options = {}) {
   return normalizeEnemyExtraction(parseEnemyJsonFromLlm(content));
 }
 
+function parseExtractCliArgs(argv) {
+  const args = {
+    imagePath: undefined,
+    /** @type {boolean | undefined} */
+    clearCache: undefined,
+  };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === "--" || a === undefined) continue;
+    if (a === "--clear-cache") args.clearCache = true;
+    else if (a === "--no-clear-cache") args.clearCache = false;
+    else if (!a.startsWith("-") && !args.imagePath) args.imagePath = a;
+  }
+  return args;
+}
+
 async function cliMain() {
-  const imagePath = process.argv[2];
+  const { imagePath, clearCache } = parseExtractCliArgs(process.argv.slice(2));
   if (!imagePath) {
-    console.error("Usage: node scripts/llm-enemy-extract.mjs <image.png>");
+    console.error(
+      "Usage: node scripts/llm/llm-enemy-extract.mjs <image.png> [--clear-cache|--no-clear-cache]",
+    );
     process.exit(1);
   }
 
   const host = resolveHost();
   const model = await resolveVisionModel(host, resolvePreferredModel());
   const resolved = path.resolve(imagePath);
+  const clearCacheBeforeEachCall = shouldClearPredictionCacheBeforeEachCall({
+    cliOverride: clearCache,
+    config: _llmConfig,
+  });
 
   console.log(`Provider: LM Studio`);
   console.log(`Model: ${model}`);
   console.log(`Host: ${host}`);
+  console.log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
   console.log(`Image: ${resolved}\n`);
 
-  const result = await extractEnemyDataFromScreenshot(resolved, { host, model });
+  const result = await extractEnemyDataFromScreenshot(resolved, {
+    host,
+    model,
+    clearCacheBeforeEachCall,
+  });
   console.log(JSON.stringify(result, null, 2));
 }
 

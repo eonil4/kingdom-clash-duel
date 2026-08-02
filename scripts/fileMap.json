@@ -1221,17 +1221,24 @@
         },
         "wrong": {
           "Screenshot_2026.07.31_10.53.50.395.png": {
-            "000_000_241-Askat_BP.webp": {
+            "004_152_157-Askat_BP.webp": {
               "name": "Askat_BP",
               "nameLatin": "Askat_BP",
-              "power": 241
+              "power": 4152157
             }
           },
           "Screenshot_2026.07.31_11.15.07.045.png": {
-            "000_000_233-HuN%257Csonil-HuN%7Csonil.webp": {
+            "007_675_527-HuN%257Csonil-HuN%7Csonil.webp": {
               "name": "HuN|sonil",
               "nameLatin": "HuN%7Csonil",
-              "power": 233
+              "power": 7675527
+            }
+          },
+          "Screenshot_2026.07.31_11.17.41.795.png": {
+            "010_729_955-.webp": {
+              "name": "ΓενδαλβφριμμύΒΡ",
+              "nameLatin": "",
+              "power": 10729955
             }
           }
         }
