@@ -884,23 +884,23 @@
       },
       "2026-07-31": {
         "Screenshot_2026.07.31_10.51.21.911.png": {
-          "000_000_215-.webp": {
+          "005_356_724-.webp": {
             "name": "Влбд вр",
             "nameLatin": "",
-            "power": 215
+            "power": 5356724
           }
         },
         "Screenshot_2026.07.31_10.51.30.246.png": {
-          "008_864_246-Grigoriy.webp": {
-            "name": "Grigoriy",
-            "nameLatin": "Grigoriy",
+          "008_864_246-Grigoriy_174_BP.webp": {
+            "name": "Grigoriy 174 BP",
+            "nameLatin": "Grigoriy_174_BP",
             "power": 8864246
           }
         },
         "Screenshot_2026.07.31_10.51.38.979.png": {
-          "007_547_910-.webp": {
-            "name": "ЯГА",
-            "nameLatin": "",
+          "007_547_910-%255C-%5C.webp": {
+            "name": "ЯГА\\ВР",
+            "nameLatin": "%5C",
             "power": 7547910
           }
         },
@@ -933,9 +933,9 @@
           }
         },
         "Screenshot_2026.07.31_10.52.26.679.png": {
-          "000_322_645-HuNisonil.webp": {
-            "name": "HuNisonil",
-            "nameLatin": "HuNisonil",
+          "000_322_645-N.webp": {
+            "name": "N我",
+            "nameLatin": "N",
             "power": 322645
           }
         },
@@ -948,7 +948,7 @@
         },
         "Screenshot_2026.07.31_10.52.49.195.png": {
           "002_793_744-%252F_BP-%2F_BP.webp": {
-            "name": "Сигма / BP",
+            "name": "Ситма / BP",
             "nameLatin": "%2F_BP",
             "power": 2793744
           }
@@ -962,7 +962,7 @@
         },
         "Screenshot_2026.07.31_10.53.27.045.png": {
           "000_336_520-.webp": {
-            "name": "игорь",
+            "name": "игорьб",
             "nameLatin": "",
             "power": 336520
           }
@@ -1031,9 +1031,9 @@
           }
         },
         "Screenshot_2026.07.31_10.57.17.345.png": {
-          "008_163_347-GOBLIN_BP.webp": {
-            "name": "GOBLIN BP",
-            "nameLatin": "GOBLIN_BP",
+          "008_163_347-GoblinBP.webp": {
+            "name": "GoblinBP",
+            "nameLatin": "GoblinBP",
             "power": 8163347
           }
         },
@@ -1052,17 +1052,17 @@
           }
         },
         "Screenshot_2026.07.31_11.14.52.762.png": {
-          "000_000_295-EVgeniusBP.webp": {
+          "009_558_026-EVgeniusBP.webp": {
             "name": "EVgeniusBP",
             "nameLatin": "EVgeniusBP",
-            "power": 295
+            "power": 9558026
           }
         },
         "Screenshot_2026.07.31_11.15.07.045.png": {
-          "000_000_303-HuN%257Csonil-HuN%7Csonil.webp": {
+          "000_000_233-HuN%257Csonil-HuN%7Csonil.webp": {
             "name": "HuN|sonil",
             "nameLatin": "HuN%7Csonil",
-            "power": 303
+            "power": 233
           }
         },
         "Screenshot_2026.07.31_11.15.18.662.png": {
@@ -1094,17 +1094,17 @@
           }
         },
         "Screenshot_2026.07.31_11.16.05.245.png": {
-          "009_204_852-Bibi.webp": {
-            "name": "Bibi",
-            "nameLatin": "Bibi",
+          "009_204_852-%257CB_iB_i%257C-%7CB_iB_i%7C.webp": {
+            "name": "+|B_iB_i|+",
+            "nameLatin": "%7CB_iB_i%7C",
             "power": 9204852
           }
         },
         "Screenshot_2026.07.31_11.16.19.429.png": {
-          "000_000_267-.webp": {
+          "010_844_840-.webp": {
             "name": "Лысый ВР",
             "nameLatin": "",
-            "power": 267
+            "power": 10844840
           }
         },
         "Screenshot_2026.07.31_11.16.40.545.png": {
@@ -1115,10 +1115,10 @@
           }
         },
         "Screenshot_2026.07.31_11.16.58.312.png": {
-          "000_000_221-Hunapril.webp": {
-            "name": "Hunapril",
-            "nameLatin": "Hunapril",
-            "power": 221
+          "008_801_777-Eara_bp.webp": {
+            "name": "Eara bp",
+            "nameLatin": "Eara_bp",
+            "power": 8801777
           }
         },
         "Screenshot_2026.07.31_11.17.20.545.png": {
@@ -1130,7 +1130,7 @@
         },
         "Screenshot_2026.07.31_11.17.41.795.png": {
           "010_729_955-.webp": {
-            "name": "ΓενηλβφριμμύΒΡ",
+            "name": "ΓενδαλβφριμμύΒΡ",
             "nameLatin": "",
             "power": 10729955
           }
@@ -1199,9 +1199,9 @@
           }
         },
         "Screenshot_2026.07.31_11.19.55.595.png": {
-          "005_239_856-MaPuu4_BP.webp": {
-            "name": "MaPuu4 BP",
-            "nameLatin": "MaPuu4_BP",
+          "005_239_856-MaPui4_BP.webp": {
+            "name": "MaPui4 BP",
+            "nameLatin": "MaPui4_BP",
             "power": 5239856
           }
         },
@@ -1217,6 +1217,22 @@
             "name": "New BP",
             "nameLatin": "New_BP",
             "power": 8158333
+          }
+        },
+        "wrong": {
+          "Screenshot_2026.07.31_10.53.50.395.png": {
+            "000_000_241-Askat_BP.webp": {
+              "name": "Askat_BP",
+              "nameLatin": "Askat_BP",
+              "power": 241
+            }
+          },
+          "Screenshot_2026.07.31_11.15.07.045.png": {
+            "000_000_233-HuN%257Csonil-HuN%7Csonil.webp": {
+              "name": "HuN|sonil",
+              "nameLatin": "HuN%7Csonil",
+              "power": 233
+            }
           }
         }
       },

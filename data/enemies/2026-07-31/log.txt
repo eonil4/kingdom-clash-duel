@@ -2,311 +2,276 @@
 Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31 (48 PNGs, missing only)
 
 [Processing] Screenshot_2026.07.31_10.51.21.911.png
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 1/3, timeout 600s)...
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 2/3, timeout 1200s)...
-
-Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31 (48 PNGs, missing only)
-
-[Processing] Screenshot_2026.07.31_10.51.21.911.png
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 1/3, timeout 600s)...
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 2/3, timeout 1200s)...
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 3/3, timeout 1800s)...
-
-[Processing] Screenshot_2026.07.31_10.51.30.246.png
-	[LLM] Screenshot_2026.07.31_10.51.30.246.png (attempt 1/3, timeout 600s)...
-	[LLM] Screenshot_2026.07.31_10.51.30.246.png (attempt 2/3, timeout 1200s)...
-
-Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31 (48 PNGs, missing only)
-
-[Processing] Screenshot_2026.07.31_10.51.21.911.png
-	[LLM] Screenshot_2026.07.31_10.51.21.911.png (attempt 1/3, timeout 600s)...
-	[LLM] power=215 name="Влбд вр" (26.7s)
-	[Conversion] -> 000_000_215-.webp
+	[Map] Using existing entry -> 005_356_724-.webp
+	[Conversion] -> 005_356_724-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.51.30.246.png
-	[LLM] Screenshot_2026.07.31_10.51.30.246.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8864246 name="Grigoriy" (23.0s)
-	[Conversion] -> 008_864_246-Grigoriy.webp
+	[Map] Using existing entry -> 008_864_246-Grigoriy_174_BP.webp
+	[Conversion] -> 008_864_246-Grigoriy_174_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.51.38.979.png
-	[LLM] Screenshot_2026.07.31_10.51.38.979.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7547910 name="ЯГА" (21.7s)
-	[Conversion] -> 007_547_910-.webp
+	[Map] Using existing entry -> 007_547_910-%255C-%5C.webp
+	[Conversion] -> 007_547_910-%255C-%5C.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.51.48.695.png
-	[LLM] Screenshot_2026.07.31_10.51.48.695.png (attempt 1/3, timeout 600s)...
-	[LLM] Screenshot_2026.07.31_10.51.48.695.png (attempt 2/3, timeout 1200s)...
-	[LLM] power=4066369 name="Гієна. BP" (44.0s)
+	[Map] Using existing entry -> 004_066_369-._BP.webp
 	[Conversion] -> 004_066_369-._BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.51.59.045.png
-	[LLM] Screenshot_2026.07.31_10.51.59.045.png (attempt 1/3, timeout 600s)...
-	[LLM] power=2641995 name="татьяна" (22.2s)
+	[Map] Using existing entry -> 002_641_995-.webp
 	[Conversion] -> 002_641_995-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.52.09.262.png
-	[LLM] Screenshot_2026.07.31_10.52.09.262.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6947821 name="Бріолик вр" (22.2s)
+	[Map] Using existing entry -> 006_947_821-.webp
 	[Conversion] -> 006_947_821-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.52.17.162.png
-	[LLM] Screenshot_2026.07.31_10.52.17.162.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1100740 name="Марк Лютый!" (21.8s)
+	[Map] Using existing entry -> 001_100_740-.webp
 	[Conversion] -> 001_100_740-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.52.26.679.png
-	[LLM] Screenshot_2026.07.31_10.52.26.679.png (attempt 1/3, timeout 600s)...
-	[LLM] power=322645 name="HuNisonil" (21.6s)
-	[Conversion] -> 000_322_645-HuNisonil.webp
+	[Map] Using existing entry -> 000_322_645-N.webp
+	[Conversion] -> 000_322_645-N.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.52.37.279.png
-	[LLM] Screenshot_2026.07.31_10.52.37.279.png (attempt 1/3, timeout 600s)...
-	[LLM] Screenshot_2026.07.31_10.52.37.279.png (attempt 2/3, timeout 1200s)...
-	[LLM] power=2429097 name="Elm" (41.4s)
+	[Map] Using existing entry -> 002_429_097-Elm.webp
 	[Conversion] -> 002_429_097-Elm.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.52.49.195.png
-	[LLM] Screenshot_2026.07.31_10.52.49.195.png (attempt 1/3, timeout 600s)...
-	[LLM] power=2793744 name="Сигма / BP" (21.9s)
+	[Map] Using existing entry -> 002_793_744-%252F_BP-%2F_BP.webp
 	[Conversion] -> 002_793_744-%252F_BP-%2F_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.53.17.629.png
-	[LLM] Screenshot_2026.07.31_10.53.17.629.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8115839 name="ALFA.BP" (21.8s)
+	[Map] Using existing entry -> 008_115_839-ALFA.BP.webp
 	[Conversion] -> 008_115_839-ALFA.BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.53.27.045.png
-	[LLM] Screenshot_2026.07.31_10.53.27.045.png (attempt 1/3, timeout 600s)...
-	[LLM] power=336520 name="игорь" (21.6s)
+	[Map] Using existing entry -> 000_336_520-.webp
 	[Conversion] -> 000_336_520-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.53.38.328.png
-	[LLM] Screenshot_2026.07.31_10.53.38.328.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8197837 name="«БЫВАЛЫЙ» ВР" (22.3s)
+	[Map] Using existing entry -> 008_197_837-.webp
 	[Conversion] -> 008_197_837-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.53.50.395.png
-	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
-	[LLM] power=241 name="Askat_BP" (23.3s)
+	[Map] Using existing entry -> 000_000_241-Askat_BP.webp
 	[Conversion] -> 000_000_241-Askat_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.54.00.662.png
-	[LLM] Screenshot_2026.07.31_10.54.00.662.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8759306 name="ЧАКИВР" (22.3s)
+	[Map] Using existing entry -> 008_759_306-.webp
 	[Conversion] -> 008_759_306-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.54.12.695.png
-	[LLM] Screenshot_2026.07.31_10.54.12.695.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7001250 name="BPeddyna" (23.4s)
+	[Map] Using existing entry -> 007_001_250-BPeddyna.webp
 	[Conversion] -> 007_001_250-BPeddyna.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.54.30.279.png
 	[LLM] Screenshot_2026.07.31_10.54.30.279.png (attempt 1/3, timeout 600s)...
-	[LLM] power=4241309 name="космос Вр" (22.4s)
+	[LLM] power=4241309 name="космос Вр" (4.0s)
 	[Conversion] -> 004_241_309-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.54.41.678.png
 	[LLM] Screenshot_2026.07.31_10.54.41.678.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9344750 name="КЭПвр" (22.2s)
+	[LLM] power=9344750 name="КЭПвр" (19.7s)
 	[Conversion] -> 009_344_750-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.54.56.962.png
 	[LLM] Screenshot_2026.07.31_10.54.56.962.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5863302 name="Александр ВР" (22.3s)
+	[LLM] power=5863302 name="Александр ВР" (19.1s)
 	[Conversion] -> 005_863_302-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.55.14.979.png
 	[LLM] Screenshot_2026.07.31_10.55.14.979.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7228911 name="Manal BPot terti" (22.7s)
+	[LLM] power=7228911 name="Manal BPot terti" (19.8s)
 	[Conversion] -> 007_228_911-Manal_BPot_terti.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.56.59.129.png
 	[LLM] Screenshot_2026.07.31_10.56.59.129.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10299527 name="пифтер_вр" (22.6s)
+	[LLM] power=10299527 name="пифтер_вр" (19.5s)
 	[Conversion] -> 010_299_527-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.57.17.345.png
 	[LLM] Screenshot_2026.07.31_10.57.17.345.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8163347 name="GOBLIN BP" (22.3s)
-	[Conversion] -> 008_163_347-GOBLIN_BP.webp
+	[LLM] power=8163347 name="GoblinBP" (18.8s)
+	[Conversion] -> 008_163_347-GoblinBP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.57.30.895.png
 	[LLM] Screenshot_2026.07.31_10.57.30.895.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6712252 name="Geo_BP" (21.9s)
+	[LLM] power=6712252 name="Geo_BP" (18.9s)
 	[Conversion] -> 006_712_252-Geo_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_10.57.45.878.png
 	[LLM] Screenshot_2026.07.31_10.57.45.878.png (attempt 1/3, timeout 600s)...
-	[LLM] power=12059431 name="DQN BP" (23.7s)
+	[LLM] power=12059431 name="DQN BP" (19.0s)
 	[Conversion] -> 012_059_431-DQN_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.14.52.762.png
 	[LLM] Screenshot_2026.07.31_11.14.52.762.png (attempt 1/3, timeout 600s)...
-	[LLM] power=295 name="EVgeniusBP" (22.3s)
-	[Conversion] -> 000_000_295-EVgeniusBP.webp
+	[LLM] power=9558026 name="EVgeniusBP" (19.4s)
+	[Conversion] -> 009_558_026-EVgeniusBP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.15.07.045.png
 	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
-	[LLM] power=303 name="HuN|sonil" (22.3s)
-	[Conversion] -> 000_000_303-HuN%257Csonil-HuN%7Csonil.webp
+	[LLM] power=233 name="HuN|sonil" (18.8s)
+	[Conversion] -> 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.15.18.662.png
 	[LLM] Screenshot_2026.07.31_11.15.18.662.png (attempt 1/3, timeout 600s)...
-	[LLM] power=4230611 name="ASIF BP" (22.1s)
+	[LLM] power=4230611 name="ASIF BP" (19.4s)
 	[Conversion] -> 004_230_611-ASIF_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.15.31.378.png
 	[LLM] Screenshot_2026.07.31_11.15.31.378.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9573847 name="SUSLIK BP" (23.9s)
+	[LLM] power=9573847 name="SUSLIK BP" (19.6s)
 	[Conversion] -> 009_573_847-SUSLIK_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.15.42.912.png
 	[LLM] Screenshot_2026.07.31_11.15.42.912.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7231462 name="Лїєха BP" (23.3s)
+	[LLM] power=7231462 name="Лїєха BP" (20.0s)
 	[Conversion] -> 007_231_462-BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.15.54.729.png
 	[LLM] Screenshot_2026.07.31_11.15.54.729.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8832249 name="Эл-Банди ВР" (22.7s)
+	[LLM] power=8832249 name="Эл-Банди ВР" (20.5s)
 	[Conversion] -> 008_832_249--.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.16.05.245.png
 	[LLM] Screenshot_2026.07.31_11.16.05.245.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9204852 name="Bibi" (22.4s)
-	[Conversion] -> 009_204_852-Bibi.webp
+	[LLM] power=9204852 name="+|B_iB_i|+" (20.3s)
+	[Conversion] -> 009_204_852-%257CB_iB_i%257C-%7CB_iB_i%7C.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.16.19.429.png
 	[LLM] Screenshot_2026.07.31_11.16.19.429.png (attempt 1/3, timeout 600s)...
-	[LLM] power=267 name="Лысый ВР" (22.4s)
-	[Conversion] -> 000_000_267-.webp
+	[LLM] power=10844840 name="Лысый ВР" (20.8s)
+	[Conversion] -> 010_844_840-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.16.40.545.png
 	[LLM] Screenshot_2026.07.31_11.16.40.545.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6159119 name="BpTVEN" (22.6s)
+	[LLM] power=6159119 name="BpTVEN" (20.5s)
 	[Conversion] -> 006_159_119-BpTVEN.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.16.58.312.png
 	[LLM] Screenshot_2026.07.31_11.16.58.312.png (attempt 1/3, timeout 600s)...
-	[LLM] power=221 name="Hunapril" (22.7s)
-	[Conversion] -> 000_000_221-Hunapril.webp
+	[LLM] power=8801777 name="Eara bp" (20.2s)
+	[Conversion] -> 008_801_777-Eara_bp.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.17.20.545.png
 	[LLM] Screenshot_2026.07.31_11.17.20.545.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6192893 name="BILLI $1" (22.8s)
+	[LLM] power=6192893 name="BILLI $1" (20.5s)
 	[Conversion] -> 006_192_893-BILLI_1.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.17.41.795.png
 	[LLM] Screenshot_2026.07.31_11.17.41.795.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10729955 name="ΓενηλβφριμμύΒΡ" (24.6s)
+	[LLM] power=10729955 name="ΓενδαλβφριμμύΒΡ" (22.0s)
 	[Conversion] -> 010_729_955-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.18.01.695.png
 	[LLM] Screenshot_2026.07.31_11.18.01.695.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8065964 name="Boffka BP" (23.3s)
+	[LLM] power=8065964 name="Boffka BP" (20.5s)
 	[Conversion] -> 008_065_964-Boffka_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.18.17.329.png
 	[LLM] Screenshot_2026.07.31_11.18.17.329.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9388118 name="ValleEsp" (22.8s)
+	[LLM] power=9388118 name="ValleEsp" (20.9s)
 	[Conversion] -> 009_388_118-ValleEsp.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.18.31.395.png
 	[LLM] Screenshot_2026.07.31_11.18.31.395.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6963404 name="Tabu BP" (22.4s)
+	[LLM] power=6963404 name="Tabu BP" (20.8s)
 	[Conversion] -> 006_963_404-Tabu_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.18.45.179.png
 	[LLM] Screenshot_2026.07.31_11.18.45.179.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7194652 name="Bolfka BP" (22.6s)
+	[LLM] power=7194652 name="Bolfka BP" (21.3s)
 	[Conversion] -> 007_194_652-Bolfka_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.18.58.178.png
 	[LLM] Screenshot_2026.07.31_11.18.58.178.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8570829 name="WIK€Pp" (23.4s)
+	[LLM] power=8570829 name="WIK€Pp" (21.8s)
 	[Conversion] -> 008_570_829-WIK_Pp.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.19.11.329.png
 	[LLM] Screenshot_2026.07.31_11.19.11.329.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9705076 name="ÁRÉS ep" (22.9s)
+	[LLM] power=9705076 name="ÁRÉS ep" (22.6s)
 	[Conversion] -> 009_705_076-R_S_ep.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.19.23.962.png
 	[LLM] Screenshot_2026.07.31_11.19.23.962.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5519948 name="DIM56 BP" (23.0s)
+	[LLM] power=5519948 name="DIM56 BP" (22.4s)
 	[Conversion] -> 005_519_948-DIM56_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.19.34.679.png
 	[LLM] Screenshot_2026.07.31_11.19.34.679.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5186821 name="Liana<BP>" (23.0s)
+	[LLM] power=5186821 name="Liana<BP>" (21.5s)
 	[Conversion] -> 005_186_821-Liana%253CBP%253E-Liana%3CBP%3E.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.19.45.962.png
 	[LLM] Screenshot_2026.07.31_11.19.45.962.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8606823 name="乙开尺开乙开" (23.1s)
+	[LLM] power=8606823 name="乙开尺开乙开" (21.9s)
 	[Conversion] -> 008_606_823-.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.19.55.595.png
 	[LLM] Screenshot_2026.07.31_11.19.55.595.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5239856 name="MaPuu4 BP" (24.0s)
-	[Conversion] -> 005_239_856-MaPuu4_BP.webp
+	[LLM] power=5239856 name="MaPui4 BP" (21.8s)
+	[Conversion] -> 005_239_856-MaPui4_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.20.05.579.png
 	[LLM] Screenshot_2026.07.31_11.20.05.579.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7035121 name="ky70 BP" (23.6s)
+	[LLM] power=7035121 name="ky70 BP" (21.5s)
 	[Conversion] -> 007_035_121-ky70_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
 [Processing] Screenshot_2026.07.31_11.20.18.862.png
 	[LLM] Screenshot_2026.07.31_11.20.18.862.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8158333 name="New BP" (23.2s)
+	[LLM] power=8158333 name="New BP" (21.2s)
 	[Conversion] -> 008_158_333-New_BP.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
 
-Done: 48 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 21.6s / 22.7s / 44.0s
+Done: 32 new (LLM), 16 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 4.0s / 20.5s / 22.6s
 Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json

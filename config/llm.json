@@ -2,7 +2,7 @@
   "host": "http://127.0.0.1:1234",
   "defaultModel": "qwen/qwen3-vl-4b",
   "requestTimeoutMs": 180000,
-  "visionModelHints": ["gemma-4", "qwen2.5-vl", "qwen3-vl", "llava"],
+  "visionModelHints": ["qwen3-vl"],
   "clearPredictionCacheBeforeRun": true,
   "predictionCachePaths": [
     "%USERPROFILE%/.lmstudio/.internal/api-prediction-history/packs",
@@ -10,7 +10,7 @@
   ]
   ,
   "systemPrompt": "You extract structured data from Kingdom Clash arena screenshots.\\nReply with JSON only — no markdown, no prose outside the JSON object.",
-  "userPrompt": "You are an expert data extraction engine specializing in complex video game UIs. Your task is to extract the primary combat statistics for the OPPONENT (right side) using the following Region of Interest (ROI) coordinates to guide your OCR focus. ### ROI GUIDANCE: 1. OPPONENT NAME WINDOW: - Position: [X: 62.1%, Y: 7.6%] - Size: [Width: 34.2%, Height: 4.1%] - Expected Content: Text with potential special symbols ('\/:*?\"<>|'). 2. OPPONENT POWER WINDOW: - Position: [X: 68.2%, Y: 13.8%] - Size: [Width: 29.3%, Height: 3.5%] - the Power ROI is in a gray bar and ends with a fist icon - Expected Content: A large multi-digit number (e.g., '2069919'). ### EXTRACTION RULES: - IGNORE the smaller 2-3 digit number (e.g., '209') located inside the blue/purple crest shield icon between the name and power bar. That is army size, NOT the power statistic. - name: Extract the exact string from the Name ROI. Include all symbols and preserve case sensitivity. - nameLatin: Provide a Latin transliteration. If already Latin, return the original string without special symbols ('\/:*?\"<>|'). - power: Extract the number from the Power ROI. Return as a single continuous positive integer. - language: Identify the language of the name text. Return ONLY this JSON shape: { \"name\": \"<exact_name>\", \"nameLatin\": \"<transliteration>\", \"power\": <integer>, \"language\": \"<detected_language>\" }",
+  "userPrompt": "You are an expert data extraction engine specializing in complex video game UIs. Your task is to extract the primary combat statistics for the OPPONENT (right side) using the following Region of Interest (ROI) coordinates to guide your OCR focus.\n\n### REGION OF INTEREST (ROI) GUIDANCE:\n1. OPPONENT NAME WINDOW:\n   - Position: [X: 62.1%, Y: 7.6%]\n   - Size: [Width: 34.2%, Height: 4.1%]\n   - Expected Content: Text with potential special symbols (e.g., \"+|R_ostr1ng+|+\").\n\n2. OPPONENT POWER WINDOW:\n   - Position: [X: 68.2%, Y: 13.8%]\n   - Size: [Width: 29.3%, Height: 3.5%]\n   - Expected Content: A large multi-digit number (e.g., \"2069919\").\n\n### EXTRACTION RULES:\n- name: Extract the exact string from the Name ROI. Include all symbols (+, |, _, etc.) and preserve case sensitivity.\n- nameLatin: Provide a Latin transliteration. If already Latin, return the original string without any symbols.\n- power: Extract the number from the Power ROI. Return as a single continuous positive integer (NO spaces or commas).\n- language: Identify the language of the name text.\n\nReturn ONLY this JSON shape:\n\n{\n  \"name\": \"<exact_name>\",\n  \"nameLatin\": \"<transliteration>\",\n  \"power\": <integer>,\n  \"language\": \"<detected_language>\"\n}",
   "llmMaxAttempts": 3,
   "retryBaseDelayMs": 1500,
   "llmTimeoutPerAttemptMs": 600000

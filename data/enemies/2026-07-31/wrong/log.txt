@@ -1,0 +1,17 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-31\wrong (2 PNGs, missing only)
+
+[Processing] Screenshot_2026.07.31_10.53.50.395.png
+	[LLM] Screenshot_2026.07.31_10.53.50.395.png (attempt 1/3, timeout 600s)...
+	[LLM] power=241 name="Askat_BP" (18.7s)
+	[Conversion] -> 000_000_241-Askat_BP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.31_11.15.07.045.png
+	[LLM] Screenshot_2026.07.31_11.15.07.045.png (attempt 1/3, timeout 600s)...
+	[LLM] power=233 name="HuN|sonil" (6.4s)
+	[Conversion] -> 000_000_233-HuN%257Csonil-HuN%7Csonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 2 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 6.4s / 12.6s / 18.7s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json

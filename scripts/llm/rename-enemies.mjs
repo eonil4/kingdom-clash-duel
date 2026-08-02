@@ -314,9 +314,9 @@ async function main() {
     const formattedPower = formatPower(power);
     const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
     const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
-    const newName = englishNameToken
-      ? `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`
-      : `${formattedPower}-${latinNameToken}.webp`;
+    const newName = latinNameToken?.equals(englishNameToken)
+      ? `${formattedPower}-${latinNameToken}.webp`
+      : `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`;
     const newPath = canonicalKey
       ? path.join(dir, canonicalKey)
       : path.join(dir, newName);
