@@ -1,0 +1,309 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-07 (50 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.08.07_19.58.10.036.png
+	[LLM] Screenshot_2026.08.07_19.58.10.036.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5874483 name="WPreZo" (17.6s)
+	[Conversion] -> 005_874_483-WPreZo.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.58.19.769.png
+	[LLM] Screenshot_2026.08.07_19.58.19.769.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5636602 name="JoHnWTH" (20.7s)
+	[Conversion] -> 005_636_602-JoHnWTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.58.28.902.png
+	[LLM] Screenshot_2026.08.07_19.58.28.902.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5063070 name="DziadekgodziWTH" (22.5s)
+	[Conversion] -> 005_063_070-DziadekgodziWTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.58.38.619.png
+	[LLM] Screenshot_2026.08.07_19.58.38.619.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7683207 name="WthTomek" (21.6s)
+	[Conversion] -> 007_683_207-WthTomek.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.58.47.452.png
+	[LLM] Screenshot_2026.08.07_19.58.47.452.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7605997 name="W|ZLYsymi" (21.5s)
+	[Conversion] -> 007_605_997-W%257CZLYsymi-W%7CZLYsymi.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.07.136.png
+	[LLM] Screenshot_2026.08.07_19.59.07.136.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4610858 name="Janski WATAHA" (21.6s)
+	[Conversion] -> 004_610_858-Janski_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.16.952.png
+	[LLM] Screenshot_2026.08.07_19.59.16.952.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7670650 name="300 WATAHA" (21.3s)
+	[Conversion] -> 007_670_650-300_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.25.919.png
+	[LLM] Screenshot_2026.08.07_19.59.25.919.png (attempt 1/3, timeout 600s)...
+	[LLM] power=205 name="Radzio21:WATAHA" (21.7s)
+	[Conversion] -> 000_000_205-Radzio21%253AWATAHA-Radzio21%3AWATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.34.819.png
+	[LLM] Screenshot_2026.08.07_19.59.34.819.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9545736 name="ddd WATAHA" (21.7s)
+	[Conversion] -> 009_545_736-ddd_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.44.802.png
+	[LLM] Screenshot_2026.08.07_19.59.44.802.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4168695 name="GumitronWATAHA" (21.4s)
+	[Conversion] -> 004_168_695-GumitronWATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_19.59.54.186.png
+	[LLM] Screenshot_2026.08.07_19.59.54.186.png (attempt 1/3, timeout 600s)...
+	[LLM] power=11059164 name="+++W/Dz.A++" (21.4s)
+	[Conversion] -> 011_059_164-W%252FDz.A-W%2FDz.A.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.00.03.019.png
+	[LLM] Screenshot_2026.08.07_20.00.03.019.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10160816 name="Jaguar®WATAHA®" (23.6s)
+	[Conversion] -> 010_160_816-Jaguar_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.00.34.219.png
+	[LLM] Screenshot_2026.08.07_20.00.34.219.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9503916 name="Patriota WATAHA" (21.5s)
+	[Conversion] -> 009_503_916-Patriota_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.00.42.953.png
+	[LLM] Screenshot_2026.08.07_20.00.42.953.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9259576 name="@Bródk@WATAHA" (23.8s)
+	[Conversion] -> 009_259_576-Br_dk_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.00.52.386.png
+	[LLM] Screenshot_2026.08.07_20.00.52.386.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9215944 name="W®Krzychu" (22.4s)
+	[Conversion] -> 009_215_944-W_Krzychu.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.01.04.952.png
+	[LLM] Screenshot_2026.08.07_20.01.04.952.png (attempt 1/3, timeout 600s)...
+	[LLM] power=225 name="WATAHA OLDBOY" (23.1s)
+	[Conversion] -> 000_000_225-WATAHA_OLDBOY.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.01.14.652.png
+	[LLM] Screenshot_2026.08.07_20.01.14.652.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6626434 name="<KILER>WATAHA" (23.3s)
+	[Conversion] -> 006_626_434-%253CKILER%253EWATAHA-%3CKILER%3EWATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.01.34.719.png
+	[LLM] Screenshot_2026.08.07_20.01.34.719.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8037230 name="kafar 95 WATAHA" (22.9s)
+	[Conversion] -> 008_037_230-kafar_95_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.01.49.002.png
+	[LLM] Screenshot_2026.08.07_20.01.49.002.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7210844 name="Frayer WATAHA" (24.1s)
+	[Conversion] -> 007_210_844-Frayer_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.02.04.652.png
+	[LLM] Screenshot_2026.08.07_20.02.04.652.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9393463 name="pifko WATAHA" (22.5s)
+	[Conversion] -> 009_393_463-pifko_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.02.30.236.png
+	[LLM] Screenshot_2026.08.07_20.02.30.236.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6675056 name="WATAHA Vito" (22.3s)
+	[Conversion] -> 006_675_056-WATAHA_Vito.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.03.42.402.png
+	[LLM] Screenshot_2026.08.07_20.03.42.402.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9115699 name="Max23WTH" (22.4s)
+	[Conversion] -> 009_115_699-Max23WTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.03.54.819.png
+	[LLM] Screenshot_2026.08.07_20.03.54.819.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7989942 name="Talaáš WATAHA" (22.5s)
+	[Conversion] -> 007_989_942-Tala_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.04.16.669.png
+	[LLM] Screenshot_2026.08.07_20.04.16.669.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8818789 name="Kano WATAHA" (23.1s)
+	[Conversion] -> 008_818_789-Kano_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.04.37.352.png
+	[LLM] Screenshot_2026.08.07_20.04.37.352.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9255699 name="Tadek58 wataha" (23.4s)
+	[Conversion] -> 009_255_699-Tadek58_wataha.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.05.30.102.png
+	[LLM] Screenshot_2026.08.07_20.05.30.102.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9104211 name="W| Rafat" (22.4s)
+	[Conversion] -> 009_104_211-W%257C_Rafat-W%7C_Rafat.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.05.43.236.png
+	[LLM] Screenshot_2026.08.07_20.05.43.236.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7263840 name="WATAHA gill" (22.7s)
+	[Conversion] -> 007_263_840-WATAHA_gill.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.05.56.586.png
+	[LLM] Screenshot_2026.08.07_20.05.56.586.png (attempt 1/3, timeout 600s)...
+	[LLM] power=213 name="piżmak WTHA" (23.2s)
+	[Conversion] -> 000_000_213-pi_mak_WTHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.06.09.269.png
+	[LLM] Screenshot_2026.08.07_20.06.09.269.png (attempt 1/3, timeout 600s)...
+	[LLM] power=205 name="RK |WILKI" (23.2s)
+	[Conversion] -> 000_000_205-RK_%257CWILKI-RK_%7CWILKI.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.06.28.102.png
+	[LLM] Screenshot_2026.08.07_20.06.28.102.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10614842 name="MAGWATAHA" (23.9s)
+	[Conversion] -> 010_614_842-MAGWATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.06.46.136.png
+	[LLM] Screenshot_2026.08.07_20.06.46.136.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10042579 name="AL Wataha AL" (23.4s)
+	[Conversion] -> 010_042_579-AL_Wataha_AL.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.06.56.819.png
+	[LLM] Screenshot_2026.08.07_20.06.56.819.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7463166 name="Rav WTH" (24.6s)
+	[Conversion] -> 007_463_166-Rav_WTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.07.27.902.png
+	[LLM] Screenshot_2026.08.07_20.07.27.902.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7300819 name="Damian /Wataha\\" (24.8s)
+	[Conversion] -> 007_300_819-Damian_%252FWataha%255C-Damian_%2FWataha%5C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.07.55.269.png
+	[LLM] Screenshot_2026.08.07_20.07.55.269.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9429816 name="v\\wMlOdy/" (23.7s)
+	[Conversion] -> 009_429_816-v%255CwMlOdy%252F-v%5CwMlOdy%2F.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.08.12.002.png
+	[LLM] Screenshot_2026.08.07_20.08.12.002.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6693968 name="Guana WATAHA" (23.2s)
+	[Conversion] -> 006_693_968-Guana_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.08.25.486.png
+	[LLM] Screenshot_2026.08.07_20.08.25.486.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6753771 name="Medevil_WATAHA" (23.6s)
+	[Conversion] -> 006_753_771-Medevil_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.09.03.586.png
+	[LLM] Screenshot_2026.08.07_20.09.03.586.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7905227 name="ManiekHuntWATAH" (23.7s)
+	[Conversion] -> 007_905_227-ManiekHuntWATAH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.09.17.869.png
+	[LLM] Screenshot_2026.08.07_20.09.17.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=205 name="Richat/RWATAHA" (23.0s)
+	[Conversion] -> 000_000_205-Richat%252FRWATAHA-Richat%2FRWATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.09.31.852.png
+	[LLM] Screenshot_2026.08.07_20.09.31.852.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10305891 name="Waldinio WATAHA" (23.5s)
+	[Conversion] -> 010_305_891-Waldinio_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.09.43.786.png
+	[LLM] Screenshot_2026.08.07_20.09.43.786.png (attempt 1/3, timeout 600s)...
+	[LLM] power=197 name="Wth×M" (23.3s)
+	[Conversion] -> 000_000_197-Wth_M.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.10.01.752.png
+	[LLM] Screenshot_2026.08.07_20.10.01.752.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4900124 name="WATAHA Kondzio" (23.8s)
+	[Conversion] -> 004_900_124-WATAHA_Kondzio.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.10.17.035.png
+	[LLM] Screenshot_2026.08.07_20.10.17.035.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7217357 name="wCORLEON2" (24.0s)
+	[Conversion] -> 007_217_357-wCORLEON2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.10.34.352.png
+	[LLM] Screenshot_2026.08.07_20.10.34.352.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9632636 name="Maro11 WTH" (23.9s)
+	[Conversion] -> 009_632_636-Maro11_WTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.10.50.419.png
+	[LLM] Screenshot_2026.08.07_20.10.50.419.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6059284 name="WTH | SOKIJAMA" (24.8s)
+	[Conversion] -> 006_059_284-WTH_%257C_SOKIJAMA-WTH_%7C_SOKIJAMA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.00.769.png
+	[LLM] Screenshot_2026.08.07_20.11.00.769.png (attempt 1/3, timeout 600s)...
+	[LLM] power=11031238 name="ab°wataha" (26.1s)
+	[Conversion] -> 011_031_238-ab_wataha.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.10.936.png
+	[LLM] Screenshot_2026.08.07_20.11.10.936.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9219297 name="Ślusarz Wataha" (25.3s)
+	[Conversion] -> 009_219_297-lusarz_Wataha.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.20.836.png
+	[LLM] Screenshot_2026.08.07_20.11.20.836.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7255667 name="FATHER WATAHA" (24.6s)
+	[Conversion] -> 007_255_667-FATHER_WATAHA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.38.736.png
+	[LLM] Screenshot_2026.08.07_20.11.38.736.png (attempt 1/3, timeout 600s)...
+	[LLM] Screenshot_2026.08.07_20.11.38.736.png (attempt 2/3, timeout 1200s)...
+	[LLM] Screenshot_2026.08.07_20.11.38.736.png (attempt 3/3, timeout 1800s)...
+	[LLM] power=8476146 name="Gringo WTH (L)" (48.2s)
+	[Conversion] -> 008_476_146-Gringo_WTH_L.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.50.286.png
+	[LLM] Screenshot_2026.08.07_20.11.50.286.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7837860 name="AryaSalar★WTH" (23.8s)
+	[Conversion] -> 007_837_860-AryaSalar_WTH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.07_20.11.59.869.png
+	[LLM] Screenshot_2026.08.07_20.11.59.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10272862 name="W♠Madpix" (23.5s)
+	[Conversion] -> 010_272_862-W_Madpix.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 50 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 17.6s / 23.2s / 48.2s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
