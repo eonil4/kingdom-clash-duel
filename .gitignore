@@ -10,4 +10,8 @@ data/**/*_APKPure.zip
 data/**/*_APKPure/main/assets/assetpack/main
 data/**/*_APKPure/**/libil2cpp.so
 
+# Derived APK unpacks
+data/_apk_analysis_casual/
+data/_apk_analysis_casual.zip
+
 **/*.zip
