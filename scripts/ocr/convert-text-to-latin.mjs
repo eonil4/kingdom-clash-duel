@@ -4,7 +4,7 @@
  */
 import path from "path";
 import { fileURLToPath } from "url";
-import { toSafeEnemyFilenameToken } from "../enemy-filename-tokens.mjs";
+import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
 
 const CYR_TO_LAT = {
   А: "A",

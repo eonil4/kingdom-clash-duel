@@ -1,6 +1,6 @@
 # Arena fight practice
 
-React + TypeScript app for arena combat practice, built with Vite. Enemy screenshots can be processed with Node scripts (Sharp + Tesseract) into a structured `fileMap.json` and WebP assets.
+Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into `scripts/fileMap.json` and WebP assets.
 
 ## Prerequisites
 
@@ -13,20 +13,15 @@ React + TypeScript app for arena combat practice, built with Vite. Enemy screens
 pnpm install
 ```
 
-Native addons (**sharp**, **tesseract.js**) may compile on first install; `package.json` lists them under `pnpm.onlyBuiltDependencies`.
+Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first install; builds are allowed in `pnpm-workspace.yaml` (`allowBuilds`).
 
-## App commands
+## Commands
 
 | Command | Description |
 |--------|-------------|
-| `pnpm dev` | Start Vite dev server |
-| `pnpm build` | Typecheck and production build |
-| `pnpm preview` | Preview production build |
-| `pnpm lint` | ESLint |
 | `pnpm test:unit` | Vitest (single run) |
 | `pnpm test:unit:watch` | Vitest watch mode |
-| `pnpm example:run` | Run example battle execution test |
-| `pnpm ci` | Lint, build, and unit tests |
+| `pnpm run ci` | Unit tests |
 
 ## Enemy OCR and asset scripts
 
@@ -37,41 +32,46 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 | Command | Description |
 |--------|-------------|
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update `scripts/fileMap.json` |
-| `pnpm ocr:enemies` | Same as `ocr:enemy` (alias for older docs / scripts) |
+| `pnpm ocr:enemies` | Same as `ocr:enemy` |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
-| `pnpm enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
-| `pnpm convert:webp` | From map: create `.webp` beside originals if missing (keeps sources) |
-| `pnpm convert:20260529` | LM Studio vision → WebP + `fileMap.json` |
-| `pnpm convert:llm:test` | Single-image LM Studio extraction smoke test |
-| `pnpm enemies:process` | Runs `ocr:enemies` then `convert:webp` (refresh map, then create missing WebPs) |
+| `pnpm ocr:enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
+| `pnpm llm:convert:webp` | From map: create `.webp` beside originals if missing |
+| `pnpm ocr:enemies:process` | Runs `ocr:enemies` then `llm:convert:webp` |
+| `pnpm llm:convert` | LM Studio vision → WebP + `fileMap.json` |
+| `pnpm llm:show-llm-config` | Print resolved LLM host / model / cache settings |
 
 ### Local vision LLM (LM Studio)
 
-For `convert-with-llm.js` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
+For `convert.js` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
 
 ```bash
-set LLM_MODEL=google/gemma-4-e4b
+set LLM_MODEL=qwen/qwen3-vl-4b
 set LLM_HOST=http://127.0.0.1:1234
-pnpm convert:llm:test
-pnpm convert:20260529
+pnpm llm:convert
 ```
 
-`convert.js` skips PNGs that already have a canonical WebP (per `fileMap.json`). Use `--force` to re-run LLM and overwrite. Failed LLM calls retry 3 times.
+`convert.js` skips PNGs that already have a canonical WebP (per `fileMap.json`). Use `--force` to re-run LLM and overwrite. Failed LLM calls retry per `config/llm.json`.
 
 Pass arguments to Node after `--`:
 
 ```bash
 pnpm ocr:enemy -- --only test.png --force-ocr
 pnpm ocr:enemy:power -- data/enemies/2026-05-08/test/test.png
-pnpm enemy:latin -- "Бабка\\MAG"
-pnpm convert:webp -- --dry-run
-pnpm enemies:process
+pnpm ocr:enemy:latin -- "Бабка\\MAG"
+pnpm llm:convert:webp -- --dry-run
+pnpm ocr:enemies:process
 ```
 
 Common flags for **`ocr:enemy`** / **`ocr-enemy.mjs`**: `--out`, `--only`, `--limit`, `--debug-crops`, `--force-ocr`.
 
-To **rename or convert sources** onto canonical names (and drop PNG/JPEG after convert), run `node scripts/rename-enemies.mjs` (`--skip-ocr` if the map is already fresh).
+To **rename or convert sources** onto canonical names (and drop PNG/JPEG after convert), run `node scripts/llm/rename-enemies.mjs` (`--skip-ocr` if the map is already fresh).
+
+Crop a rectangle from an image:
+
+```bash
+node scripts/extract_image.mjs <input> <output> <x> <y> <width> <height>
+```
 
 ### `test/` fixture folders
 
@@ -103,10 +103,10 @@ On disk, sources stay in **`data/enemies/2026-05-08/test/`** next to generated *
 
 ## Project layout (high level)
 
-- `src/` — React app (features, components, store, pages)
-- `scripts/` — Enemy OCR, `fileMap.json`, WebP conversion
+- `scripts/` — Enemy OCR, LLM convert, `fileMap.json`, WebP helpers
+- `config/` — LLM settings (`llm.json`)
 - `tests/unit/` — Vitest unit tests
-- `data/enemies/` — Example enemy images (by date / folder)
+- `data/enemies/` — Enemy images (by date / folder)
 
 ## License
 

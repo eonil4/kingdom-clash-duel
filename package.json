@@ -4,13 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
-    "ci": "pnpm lint && pnpm build && pnpm test:unit",
+    "ci": "pnpm test:unit",
     "llm:convert": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-08-14 >>data/enemies/2026-08-14/log.txt",
     "llm:convert:wrong": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-08-14/wrong >>data/enemies/2026-08-14/wrong/log.txt",
     "llm:convert:test:qwen/qwen3-vl-4b": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/test/qwen_qwen3-vl-4b >data/enemies/test/qwen_qwen3-vl-4b/log.txt // 25.8s, 23.6s, 23.8s",
@@ -24,7 +20,7 @@
     "ocr:enemies": "node scripts/ocr/ocr-enemy.mjs",
     "ocr:enemy:name": "node scripts/ocr/ocr-enemy-name.mjs",
     "ocr:enemy:power": "node scripts/ocr/ocr-enemy-power.mjs",
-    "ocr:enemies:process": "pnpm ocr:enemies && pnpm convert:webp",
+    "ocr:enemies:process": "pnpm ocr:enemies && pnpm llm:convert:webp",
     "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/enemies/2026-08-14",
     "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan/2026-08-14 .png",
     "extract:image:name": "node scripts/extract_image.mjs data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795.png data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795_name.webp 486 118 290 36",
@@ -35,45 +31,14 @@
     "extract:image:power2": "node scripts/extract_image.mjs data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.15.07.045.png data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.15.07.045_power2.webp 666 234 162 24",
     "extract:image:power3": "node scripts/extract_image.mjs data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_10.53.50.395.png data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_10.53.50.395_power3.webp 666 234 162 24"
   },
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.0",
-    "@mui/material": "^6.4.0",
-    "@reduxjs/toolkit": "^2.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-redux": "^9.2.0",
-    "redux-saga": "^1.3.0"
-  },
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.5",
-    "@types/react": "^19.0.2",
-    "@types/react-dom": "^19.0.2",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.17.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.14.0",
-    "jsdom": "^25.0.1",
-    "rimraf": "^6.0.1",
-    "dotenv": "^16.1.4",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.1.4",
+    "rimraf": "^6.0.1",
     "sharp": "^0.34.5",
     "tesseract.js": "^7.0.0",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5",
     "vitest": "^3.0.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp",
-      "tesseract.js"
-    ]
   }
 }

@@ -1,8 +1,8 @@
 import { it, expect } from "vitest";
 import fs from "fs/promises";
 import path from "path";
-import { writeWebpFromRasterFile } from "../../scripts/llm/enemy-image-webp.mjs";
-import { toSafeEnemyFilenameToken } from "../../scripts/ocr/enemy-filename-tokens.mjs";
+import { writeWebpFromRasterFile } from "../enemy-image-webp.mjs";
+import { toSafeEnemyFilenameToken } from "../../ocr/enemy-filename-tokens.mjs";
 
 it("converts test screenshot into model-named output folder", async () => {
   const model = "qwen/qwen3-vl-4b";
