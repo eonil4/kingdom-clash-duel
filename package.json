@@ -22,6 +22,7 @@
     "ocr:enemy:power": "node scripts/ocr/ocr-enemy-power.mjs",
     "ocr:enemies:process": "pnpm ocr:enemies && pnpm llm:convert:webp",
     "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/enemies/2026-08-14",
+    "generate-wiki-table:clan:victories": "node scripts/generate-wiki-table.mjs data/enemies/2026-08-14/clan_victories .jpg",
     "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan/2026-08-14 .png",
     "extract:image:name": "node scripts/extract_image.mjs data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795.png data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795_name.webp 486 118 290 36",
     "extract:image:name1": "node scripts/extract_image.mjs data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795.png data/enemies/2026-07-31/wrong/Screenshot_2026.07.31_11.17.41.795_name1.webp 486 98 290 70",

@@ -33,7 +33,7 @@ try {
   );
 
   if (images.length === 0) {
-    console.log(`No .webp images found in the specified folder: ${targetFolder}`);
+    console.log(`No ${extension} images found in the specified folder: ${targetFolder}`);
     process.exit(0);
   }
 
@@ -63,7 +63,7 @@ try {
   fs.writeFileSync(outputPath, html, 'utf8');
 
   console.log(`Successfully generated: ${outputPath}`);
-  console.log(`Total .webp images in the table: ${images.length}`);
+  console.log(`Total ${extension} images in the table: ${images.length}`);
 
 } catch (error) {
   console.error(`An error occurred while processing the folder: ${error.message}`);
