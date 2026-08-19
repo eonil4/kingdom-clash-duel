@@ -7,6 +7,8 @@
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
     "ci": "pnpm test:unit",
+    "battle:clan-clash": "node scripts/battle/run-battle.mjs",
+    "battle:clan-clash:example": "node scripts/battle/run-battle.mjs data/battle/examples/attacker.json data/battle/examples/defender.json data/battle/examples/battleResult.json",
     "llm:convert": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-08-14 >>data/enemies/2026-08-14/log.txt",
     "llm:convert:wrong": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/2026-08-14/wrong >>data/enemies/2026-08-14/wrong/log.txt",
     "llm:convert:test:qwen/qwen3-vl-4b": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/convert.js data/enemies/test/qwen_qwen3-vl-4b >data/enemies/test/qwen_qwen3-vl-4b/log.txt // 25.8s, 23.6s, 23.8s",

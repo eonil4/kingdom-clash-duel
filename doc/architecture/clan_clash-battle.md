@@ -493,10 +493,20 @@ Path root:
 
 | Asset | Use |
 |-------|-----|
+| `scripts/battle/run-battle.mjs` | **Headless Clan Clash sim CLI** (attacker.json, defender.json → battleResult.json) |
+| `data/battle/examples/` | Sample armies + output |
 | `data/clan/**` screenshots | Validate HUD power/name; compare report fields |
 | `data/scenarios.json` | Early fixture style (slots + gear levels) — map names to real `troopId`/`heroId` |
 | `doc/architecture/apk-reverse-engineering.MD` | Broader APK / Arena / Clash context |
 | OCR / LLM pipelines | Not required for headless sim; useful for ingesting real enemy armies from screenshots later |
+
+### CLI
+
+```bash
+node scripts/battle/run-battle.mjs <attacker.json> <defender.json> <battleResult.json> [--seed N]
+# or
+pnpm battle:clan-clash:example
+```
 
 ---
 

@@ -1,0 +1,24 @@
+{
+  "playerId": "attacker",
+  "displayName": "ClanAttacker",
+  "seed": 42,
+  "slots": [
+    { "slotIndex": 0, "kind": "troop", "troopId": "infantry", "level": 8 },
+    { "slotIndex": 1, "kind": "troop", "troopId": "ironGuards", "level": 7 },
+    { "slotIndex": 2, "kind": "troop", "troopId": "archer", "level": 9 },
+    { "slotIndex": 3, "kind": "troop", "troopId": "bomber", "level": 6 },
+    { "slotIndex": 4, "kind": "troop", "troopId": "paladin", "level": 7 },
+    {
+      "slotIndex": 5,
+      "kind": "hero",
+      "heroId": "general",
+      "level": 10,
+      "gear": {
+        "weapon": "aoeWeapon",
+        "weaponLevel": 12,
+        "armor": "aoeArmor",
+        "armorLevel": 12
+      }
+    }
+  ]
+}
