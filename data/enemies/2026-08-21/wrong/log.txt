@@ -1,0 +1,93 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-21\wrong (5 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+
+[Processing] Screenshot_2026.08.21_02.13.23.869.png
+	[LLM] Screenshot_2026.08.21_02.13.23.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=199 name="Requiemnti" (27.3s)
+	[Conversion] -> 000_000_199-Requiemnti.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.21_02.14.42.436.png
+	[LLM] Screenshot_2026.08.21_02.14.42.436.png (attempt 1/3, timeout 600s)...
+	[LLM] power=209 name="Archetto {NTI}" (21.5s)
+	[Conversion] -> 000_000_209-Archetto_NTI.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.21_02.15.04.302.png
+	[LLM] Screenshot_2026.08.21_02.15.04.302.png (attempt 1/3, timeout 600s)...
+	[LLM] power=227 name="SAINIS_NTI" (22.0s)
+	[Conversion] -> 000_000_227-SAINIS_NTI.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.21_02.38.12.802.png
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 1/3, timeout 600s)...
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 2/3, timeout 1200s)...
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 3/3, timeout 1800s)...
+
+[Processing] Screenshot_2026.08.21_02.39.31.535.png
+	[LLM] Screenshot_2026.08.21_02.39.31.535.png (attempt 1/3, timeout 600s)...
+	[LLM] Screenshot_2026.08.21_02.39.31.535.png (attempt 2/3, timeout 1200s)...
+	[LLM] power=201 name="Rupert ★NTI★" (30.7s)
+	[Conversion] -> 000_000_201-Rupert_NTI.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 4 new (LLM), 0 from map only, 0 skipped (complete), 1 failed. LLM min/median/max: 21.5s / 24.6s / 30.7s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-21\wrong (5 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Skip] Screenshot_2026.08.21_02.13.23.869.png — WebP exists: 000_000_199-Requiemnti.webp
+
+[Skip] Screenshot_2026.08.21_02.14.42.436.png — WebP exists: 000_000_209-Archetto_NTI.webp
+
+[Skip] Screenshot_2026.08.21_02.15.04.302.png — WebP exists: 000_000_227-SAINIS_NTI.webp
+
+[Processing] Screenshot_2026.08.21_02.38.12.802.png
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 1/3, timeout 600s)...
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 2/3, timeout 1200s)...
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 3/3, timeout 1800s)...
+
+[Skip] Screenshot_2026.08.21_02.39.31.535.png — WebP exists: 000_000_201-Rupert_NTI.webp
+
+Done: 0 new (LLM), 0 from map only, 4 skipped (complete), 1 failed.
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-21\wrong (5 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Skip] Screenshot_2026.08.21_02.13.23.869.png — WebP exists: 000_000_199-Requiemnti.webp
+
+[Skip] Screenshot_2026.08.21_02.14.42.436.png — WebP exists: 000_000_209-Archetto_NTI.webp
+
+[Skip] Screenshot_2026.08.21_02.15.04.302.png — WebP exists: 000_000_227-SAINIS_NTI.webp
+
+[Processing] Screenshot_2026.08.21_02.38.12.802.png
+	[LLM] Screenshot_2026.08.21_02.38.12.802.png (attempt 1/3, timeout 600s)...
+	[LLM] power=205 name="Callolino [NTI]" (23.5s)
+	[Conversion] -> 000_000_205-Callolino_[NTI].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Skip] Screenshot_2026.08.21_02.39.31.535.png — WebP exists: 000_000_201-Rupert_NTI.webp
+
+Done: 1 new (LLM), 0 from map only, 4 skipped (complete), 0 failed. LLM min/median/max: 23.5s / 23.5s / 23.5s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-21\wrong (5 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Skip] Screenshot_2026.08.21_02.13.23.869.png — WebP exists: 000_000_199-Requiemnti.webp
+
+[Skip] Screenshot_2026.08.21_02.14.42.436.png — WebP exists: 000_000_209-Archetto_NTI.webp
+
+[Skip] Screenshot_2026.08.21_02.15.04.302.png — WebP exists: 000_000_227-SAINIS_NTI.webp
+
+[Skip] Screenshot_2026.08.21_02.38.12.802.png — WebP exists: 000_000_205-Callolino_[NTI].webp
+
+[Skip] Screenshot_2026.08.21_02.39.31.535.png — WebP exists: 000_000_201-Rupert_NTI.webp
+
+Done: 0 new (LLM), 0 from map only, 5 skipped (complete), 0 failed.
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
