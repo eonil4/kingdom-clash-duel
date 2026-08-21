@@ -2276,43 +2276,6 @@
             "nameLatin": "Athos_nTi",
             "power": 7573442
           }
-        },
-        "wrong": {
-          "Screenshot_2026.08.21_02.13.23.869.png": {
-            "000_000_199-Requiemnti.webp": {
-              "name": "Requiemnti",
-              "nameLatin": "Requiemnti",
-              "power": 199
-            }
-          },
-          "Screenshot_2026.08.21_02.14.42.436.png": {
-            "000_000_209-Archetto_NTI.webp": {
-              "name": "Archetto {NTI}",
-              "nameLatin": "Archetto_NTI",
-              "power": 209
-            }
-          },
-          "Screenshot_2026.08.21_02.15.04.302.png": {
-            "000_000_227-SAINIS_NTI.webp": {
-              "name": "SAINIS_NTI",
-              "nameLatin": "SAINIS_NTI",
-              "power": 227
-            }
-          },
-          "Screenshot_2026.08.21_02.38.12.802.png": {
-            "000_000_205-Callolino_[NTI].webp": {
-              "name": "Callolino [NTI]",
-              "nameLatin": "Callolino_[NTI]",
-              "power": 205
-            }
-          },
-          "Screenshot_2026.08.21_02.39.31.535.png": {
-            "000_000_201-Rupert_NTI.webp": {
-              "name": "Rupert ★NTI★",
-              "nameLatin": "Rupert_NTI",
-              "power": 201
-            }
-          }
         }
       },
       "test": {
