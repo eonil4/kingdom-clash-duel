@@ -3,13 +3,52 @@ import path from 'path';
 
 // 1. Get the target folder path from command line arguments
 const targetFolder = process.argv[2];
-const extension = process.argv[3] || '.webp';
+const extensionParts = process.argv.slice(3);
+const extensionArg =
+  extensionParts.length === 0
+    ? '.webp'
+    : extensionParts.length === 1
+      ? extensionParts[0]
+      : extensionParts.join(',');
 
 if (!targetFolder) {
   console.error("Error: Please provide the folder path!");
-  console.log("Usage: node generate-wiki-table.mjs <folder_path>");
+  console.log(
+    "Usage: node generate-wiki-table.mjs <folder_path> [ext|ext1 ext2|ext1,ext2|\"ext1|ext2\"]",
+  );
+  console.log(
+    "Examples: .webp | jpg png | jpg,png | \".jpg|.png\" (quote pipe on Windows/cmd)",
+  );
   process.exit(1);
 }
+
+/**
+ * Parse extension filter: `.webp`, `.jpg`, `.png`, `.jpg|.png`, `.(jpg|png)`, `jpg,png`
+ * @param {string} raw
+ * @returns {string[]}
+ */
+function parseExtensions(raw) {
+  let value = String(raw).trim();
+  if (!value) return ['.webp'];
+
+  if (value.startsWith('.(') && value.endsWith(')')) {
+    value = value.slice(2, -1);
+  } else if (value.startsWith('(') && value.endsWith(')')) {
+    value = value.slice(1, -1);
+  } else if (!value.includes('|') && !value.includes(',')) {
+    const single = value.startsWith('.') ? value : `.${value}`;
+    return [single.toLowerCase()];
+  }
+
+  return value
+    .split(/[|,]/)
+    .map((part) => part.trim().toLowerCase())
+    .filter(Boolean)
+    .map((part) => (part.startsWith('.') ? part : `.${part}`));
+}
+
+const extensions = parseExtensions(extensionArg);
+const extensionSet = new Set(extensions);
 
 // Configuration updated to match the exact working GitHub structure
 const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
@@ -27,13 +66,14 @@ try {
   // Read all files from the target directory
   const files = fs.readdirSync(targetFolder);
   
-  // Filter exclusively for .webp images
-  const images = files.filter(file => 
-    path.extname(file).toLowerCase() === extension
-  );
+  const images = files
+    .filter((file) => extensionSet.has(path.extname(file).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
   if (images.length === 0) {
-    console.log(`No ${extension} images found in the specified folder: ${targetFolder}`);
+    console.log(
+      `No images with extension(s) ${extensions.join(', ')} found in: ${targetFolder}`,
+    );
     process.exit(0);
   }
 
@@ -63,7 +103,8 @@ try {
   fs.writeFileSync(outputPath, html, 'utf8');
 
   console.log(`Successfully generated: ${outputPath}`);
-  console.log(`Total ${extension} images in the table: ${images.length}`);
+  console.log(`Extensions: ${extensions.join(', ')}`);
+  console.log(`Total images in the table: ${images.length}`);
 
 } catch (error) {
   console.error(`An error occurred while processing the folder: ${error.message}`);
