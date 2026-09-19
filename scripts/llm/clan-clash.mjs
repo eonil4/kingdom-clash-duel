@@ -1,18 +1,23 @@
 #!/usr/bin/env node
 /**
  * Usage:
- *   pnpm llm:convert
- *   pnpm llm:convert -- <dir>
- *   pnpm llm:clan_clash -- <dir> --full
- *   node scripts/llm/clan-clash.mjs [<dir>] [--full] [--force] [--clear-cache|--no-clear-cache] [--model <id>] [--script convert|convert2]
+ *   pnpm llm:clan_clash
+ *   pnpm llm:clan_clash -- <dir>
+ *   pnpm llm:clan_clash:full -- <dir>
+ *   node scripts/llm/clan-clash.mjs [<dir>] [--full] [--recursive <n>] [--force] [--model <id>] [--script convert|convert2]
  *
  * When <dir> is omitted, uses the latest data/clan_clash/YYYY-MM-DD folder.
- * With `--full` / `--full=true` (default false), after convert also runs:
- *   - enemies wiki table for <dir>
- *   - clan wiki if <dir>/clan exists and is not empty
- *   - clan_duels wiki if <dir>/clan_duels exists and is not empty
  *
- * Writes/append stdout+stderr to `<dir>/log.txt` while still printing to the console.
+ * `--recursive <n>` / `--recursive=<n>` (default 0 = root only):
+ *   Run convert (and optional wiki) on the root and every subdirectory down to depth n,
+ *   even if the root folder has no images. Depth 0 = root only; 1 = root + children; etc.
+ *
+ * With `--full` / `--full=true` (default false), after each folder's convert also runs:
+ *   - enemies wiki table for that folder
+ *   - clan wiki if <folder>/clan exists and is not empty
+ *   - clan_duels wiki if <folder>/clan_duels exists and is not empty
+ *
+ * Writes/append stdout+stderr to `<root>/log.txt` while still printing to the console.
  * Model: --model / LLM_MODEL / config/llm.json defaultModel.
  */
 import fs from "fs";
@@ -63,12 +68,29 @@ function parseFullFlag(raw) {
   throw new Error(`Invalid --full value: ${JSON.stringify(raw)} (use true|false)`);
 }
 
+/**
+ * @param {string | undefined} raw
+ * @returns {number}
+ */
+function parseRecursiveLevel(raw) {
+  if (raw === undefined || raw === null || raw === "") return 1;
+  const n = Number(raw);
+  if (!Number.isInteger(n) || n < 0) {
+    throw new Error(
+      `Invalid --recursive value: ${JSON.stringify(raw)} (use integer >= 0)`,
+    );
+  }
+  return n;
+}
+
 function parseArgs(argv) {
   const args = {
     dir: undefined,
     script: "convert2",
     model: undefined,
     full: false,
+    /** @type {number} 0 = root only */
+    recursive: 0,
     passthrough: /** @type {string[]} */ ([]),
   };
   for (let i = 0; i < argv.length; i++) {
@@ -92,6 +114,20 @@ function parseArgs(argv) {
     }
     if (a === "--no-full") {
       args.full = false;
+      continue;
+    }
+    if (a === "--recursive" || a === "-r") {
+      const next = argv[i + 1];
+      if (next !== undefined && !next.startsWith("-") && /^\d+$/.test(next)) {
+        args.recursive = parseRecursiveLevel(next);
+        i++;
+      } else {
+        args.recursive = 1;
+      }
+      continue;
+    }
+    if (a.startsWith("--recursive=")) {
+      args.recursive = parseRecursiveLevel(a.slice("--recursive=".length));
       continue;
     }
     if (a === "--force" || a === "--clear-cache" || a === "--no-clear-cache") {
@@ -118,6 +154,43 @@ function resolveConvertScript(name) {
     throw new Error(`Unknown --script ${JSON.stringify(name)} (use convert or convert2)`);
   }
   return path.join(__dirname, file);
+}
+
+/**
+ * Collect root + subdirectories down to `maxDepth` (0 = root only).
+ * Root is always included, even when empty.
+ * @param {string} rootAbs
+ * @param {number} maxDepth
+ * @returns {string[]}
+ */
+function collectDirsUpToDepth(rootAbs, maxDepth) {
+  /** @type {string[]} */
+  const out = [];
+
+  /**
+   * @param {string} abs
+   * @param {number} depth
+   */
+  function walk(abs, depth) {
+    out.push(abs);
+    if (depth >= maxDepth) return;
+    let entries;
+    try {
+      entries = fs.readdirSync(abs, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    const children = entries
+      .filter((e) => e.isDirectory() && !e.name.startsWith("."))
+      .map((e) => e.name)
+      .sort((a, b) => a.localeCompare(b));
+    for (const name of children) {
+      walk(path.join(abs, name), depth + 1);
+    }
+  }
+
+  walk(rootAbs, 0);
+  return out;
 }
 
 /**
@@ -196,13 +269,47 @@ async function runWikiTablesAfterConvert(dirAbs, logFd) {
   return 0;
 }
 
+/**
+ * @param {object} options
+ * @param {string} options.folderAbs
+ * @param {string} options.convertScript
+ * @param {string[]} options.passthrough
+ * @param {boolean} options.full
+ * @param {NodeJS.ProcessEnv} options.env
+ * @param {number} options.logFd
+ */
+async function processFolder({
+  folderAbs,
+  convertScript,
+  passthrough,
+  full,
+  env,
+  logFd,
+}) {
+  const rel = path.relative(ROOT, folderAbs).replace(/\\/g, "/") || folderAbs;
+  console.log(`\n======== ${rel} ========`);
+
+  const convertCode = await runNode([convertScript, folderAbs, ...passthrough], {
+    env,
+    logFd,
+  });
+  if (convertCode !== 0) return convertCode;
+
+  if (!full) {
+    console.log("\n[Wiki] skipped (pass --full to generate wiki tables)");
+    return 0;
+  }
+
+  return runWikiTablesAfterConvert(folderAbs, logFd);
+}
+
 async function main() {
   const parsed = parseArgs(process.argv.slice(2));
   const dir = parsed.dir ?? resolveDefaultDir();
-  const { script, model, passthrough, full } = parsed;
+  const { script, model, passthrough, full, recursive } = parsed;
   if (!dir) {
     console.error(
-      "Usage: pnpm llm:convert -- <dir> [--full] [--force] [--model <id>] [--script convert|convert2]\n" +
+      "Usage: node scripts/llm/clan-clash.mjs [<dir>] [--full] [--recursive <n>] [--force] [--model <id>]\n" +
         "(no dir given and no data/clan_clash/YYYY-MM-DD folder found)",
     );
     process.exit(1);
@@ -217,35 +324,38 @@ async function main() {
   const convertScript = resolveConvertScript(script);
   const logPath = path.join(dirAbs, "log.txt");
   const resolvedModel = model ?? process.env.LLM_MODEL ?? loadDefaultModel();
+  const folders = collectDirsUpToDepth(dirAbs, recursive);
 
   await fs.promises.mkdir(dirAbs, { recursive: true });
   const logFd = fs.openSync(logPath, "a");
 
   const childEnv = { ...process.env, LLM_MODEL: resolvedModel };
 
-  console.log(`LLM convert: script=${path.basename(convertScript)} model=${resolvedModel} full=${full}`);
-  console.log(`Dir: ${dirAbs}`);
+  console.log(
+    `LLM convert: script=${path.basename(convertScript)} model=${resolvedModel} full=${full} recursive=${recursive}`,
+  );
+  console.log(`Root: ${dirAbs}`);
+  console.log(`Folders (${folders.length}):`);
+  for (const f of folders) {
+    console.log(`  - ${path.relative(ROOT, f).replace(/\\/g, "/") || f}`);
+  }
   console.log(`Log: ${logPath}`);
 
-  const convertCode = await runNode([convertScript, dirAbs, ...passthrough], {
-    env: childEnv,
-    logFd,
-  });
-
-  if (convertCode !== 0) {
-    fs.closeSync(logFd);
-    process.exit(convertCode);
+  let worstCode = 0;
+  for (const folderAbs of folders) {
+    const code = await processFolder({
+      folderAbs,
+      convertScript,
+      passthrough,
+      full,
+      env: childEnv,
+      logFd,
+    });
+    if (code !== 0) worstCode = code;
   }
 
-  if (!full) {
-    console.log("\n[Wiki] skipped (pass --full to generate wiki tables)");
-    fs.closeSync(logFd);
-    process.exit(0);
-  }
-
-  const wikiCode = await runWikiTablesAfterConvert(dirAbs, logFd);
   fs.closeSync(logFd);
-  process.exit(wikiCode);
+  process.exit(worstCode);
 }
 
 main().catch((err) => {
