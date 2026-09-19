@@ -1,0 +1,23 @@
+{
+  "playerId": "defender",
+  "displayName": "ClanDefender",
+  "slots": [
+    { "slotIndex": 0, "kind": "troop", "troopId": "infantry", "level": 7 },
+    { "slotIndex": 1, "kind": "troop", "troopId": "skeleton", "level": 8 },
+    { "slotIndex": 2, "kind": "troop", "troopId": "archer", "level": 8 },
+    { "slotIndex": 3, "kind": "troop", "troopId": "necromancer", "level": 6 },
+    { "slotIndex": 4, "kind": "troop", "troopId": "undeadInfantry", "level": 7 },
+    {
+      "slotIndex": 5,
+      "kind": "hero",
+      "heroId": "darkKnight",
+      "level": 9,
+      "gear": {
+        "weapon": "reflectWeapon",
+        "weaponLevel": 10,
+        "armor": "reflectArmor",
+        "armorLevel": 10
+      }
+    }
+  ]
+}

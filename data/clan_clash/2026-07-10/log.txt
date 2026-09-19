@@ -1,0 +1,299 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-07-10 (49 PNGs, missing only)
+
+[Processing] Screenshot_2026.07.10_02.25.51.176.png
+	[LLM] Screenshot_2026.07.10_02.25.51.176.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3205902 name="VV TIME" (21.6s)
+	[Conversion] -> 003_205_902-VV_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.26.04.209.png
+	[LLM] Screenshot_2026.07.10_02.26.04.209.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2386563 name="Кирио_TIME" (22.3s)
+	[Conversion] -> 002_386_563-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.26.12.759.png
+	[LLM] Screenshot_2026.07.10_02.26.12.759.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4651192 name="ГИРО-ТИМЭ" (22.1s)
+	[Conversion] -> 004_651_192--.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.26.21.042.png
+	[LLM] Screenshot_2026.07.10_02.26.21.042.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2880602 name="NoRess Time" (21.7s)
+	[Conversion] -> 002_880_602-NoRess_Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.26.54.109.png
+	[LLM] Screenshot_2026.07.10_02.26.54.109.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8900289 name="ШАХ(Time)" (21.8s)
+	[Conversion] -> 008_900_289-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.27.10.826.png
+	[LLM] Screenshot_2026.07.10_02.27.10.826.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8840545 name="МелкийКот TIME" (22.1s)
+	[Conversion] -> 008_840_545-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.30.24.659.png
+	[LLM] Screenshot_2026.07.10_02.30.24.659.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5275630 name="DENIST★TIME" (21.7s)
+	[Conversion] -> 005_275_630-DENIST_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.30.34.076.png
+	[LLM] Screenshot_2026.07.10_02.30.34.076.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3127586 name="TimeKing" (21.7s)
+	[Conversion] -> 003_127_586-TimeKing.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.30.42.642.png
+	[LLM] Screenshot_2026.07.10_02.30.42.642.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2490392 name="карпачо_time" (22.0s)
+	[Conversion] -> 002_490_392-time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.30.52.459.png
+	[LLM] Screenshot_2026.07.10_02.30.52.459.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5144812 name="Дмитрий TIME" (22.1s)
+	[Conversion] -> 005_144_812-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.31.01.626.png
+	[LLM] Screenshot_2026.07.10_02.31.01.626.png (attempt 1/3, timeout 600s)...
+	[LLM] power=253 name="Щастьееeee★ТиМ€" (22.6s)
+	[Conversion] -> 000_000_253-eee.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.31.25.176.png
+	[LLM] Screenshot_2026.07.10_02.31.25.176.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4636245 name="INSANE-TIME" (22.0s)
+	[Conversion] -> 004_636_245-INSANE-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.31.36.159.png
+	[LLM] Screenshot_2026.07.10_02.31.36.159.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3333579 name="ΓΡΕΚ-ΤΙΜΣ" (22.4s)
+	[Conversion] -> 003_333_579--.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.31.46.592.png
+	[LLM] Screenshot_2026.07.10_02.31.46.592.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2654091 name="Андрей Time" (22.3s)
+	[Conversion] -> 002_654_091-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.31.55.692.png
+	[LLM] Screenshot_2026.07.10_02.31.55.692.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6313017 name="MATO_Time" (21.9s)
+	[Conversion] -> 006_313_017-MATO_Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.38.08.143.png
+	[LLM] Screenshot_2026.07.10_02.38.08.143.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3002690 name="CeproTIME" (22.0s)
+	[Conversion] -> 003_002_690-CeproTIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.38.24.909.png
+	[LLM] Screenshot_2026.07.10_02.38.24.909.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8465398 name="omega_time" (21.7s)
+	[Conversion] -> 008_465_398-omega_time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.38.39.064.png
+	[LLM] Screenshot_2026.07.10_02.38.39.064.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9686617 name="Ros-Time" (21.8s)
+	[Conversion] -> 009_686_617-Ros-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.38.52.561.png
+	[LLM] Screenshot_2026.07.10_02.38.52.561.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9658992 name="КотОбормот_TIME" (22.3s)
+	[Conversion] -> 009_658_992-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.39.07.609.png
+	[LLM] Screenshot_2026.07.10_02.39.07.609.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9533740 name="NEMO_TIME" (22.2s)
+	[Conversion] -> 009_533_740-NEMO_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.39.19.759.png
+	[LLM] Screenshot_2026.07.10_02.39.19.759.png (attempt 1/3, timeout 600s)...
+	[LLM] power=207 name="VERS.TIME" (21.8s)
+	[Conversion] -> 000_000_207-VERS.TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.42.29.076.png
+	[LLM] Screenshot_2026.07.10_02.42.29.076.png (attempt 1/3, timeout 600s)...
+	[LLM] power=277 name="БОЙКИЙ" (22.0s)
+	[Conversion] -> 000_000_277-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.45.18.359.png
+	[LLM] Screenshot_2026.07.10_02.45.18.359.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3335195 name="*NedobrY_Time" (23.1s)
+	[Conversion] -> 003_335_195-%252ANedobrY_Time-%2ANedobrY_Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.45.39.376.png
+	[LLM] Screenshot_2026.07.10_02.45.39.376.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7245420 name="ЗлунTIME" (23.6s)
+	[Conversion] -> 007_245_420-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.45.57.392.png
+	[LLM] Screenshot_2026.07.10_02.45.57.392.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5628926 name="Юр ярл TIME" (22.6s)
+	[Conversion] -> 005_628_926-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.46.13.143.png
+	[LLM] Screenshot_2026.07.10_02.46.13.143.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7525117 name="CEP?K tme" (23.1s)
+	[Conversion] -> 007_525_117-CEP%253FK_tme-CEP%3FK_tme.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.47.21.009.png
+	[LLM] Screenshot_2026.07.10_02.47.21.009.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6643848 name="PionerTime" (22.4s)
+	[Conversion] -> 006_643_848-PionerTime.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.47.35.209.png
+	[LLM] Screenshot_2026.07.10_02.47.35.209.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7924721 name="Пантелей Time" (22.6s)
+	[Conversion] -> 007_924_721-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.47.46.459.png
+	[LLM] Screenshot_2026.07.10_02.47.46.459.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9619941 name="LegendaTIMEツ" (22.6s)
+	[Conversion] -> 009_619_941-LegendaTIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.48.00.926.png
+	[LLM] Screenshot_2026.07.10_02.48.00.926.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7546223 name="karp_time" (22.4s)
+	[Conversion] -> 007_546_223-karp_time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.48.14.492.png
+	[LLM] Screenshot_2026.07.10_02.48.14.492.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9225013 name="HuNjeonil" (22.7s)
+	[Conversion] -> 009_225_013-HuNjeonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.48.52.442.png
+	[LLM] Screenshot_2026.07.10_02.48.52.442.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4834811 name="Liypp Time" (22.8s)
+	[Conversion] -> 004_834_811-Liypp_Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.49.04.343.png
+	[LLM] Screenshot_2026.07.10_02.49.04.343.png (attempt 1/3, timeout 600s)...
+	[LLM] power=221 name="SAILOR_TIME" (22.6s)
+	[Conversion] -> 000_000_221-SAILOR_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.50.27.525.png
+	[LLM] Screenshot_2026.07.10_02.50.27.525.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1530834 name="_Alfa@TIME^_^" (22.7s)
+	[Conversion] -> 001_530_834-Alfa_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.50.39.759.png
+	[LLM] Screenshot_2026.07.10_02.50.39.759.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5478405 name="Wolf_TIME" (22.5s)
+	[Conversion] -> 005_478_405-Wolf_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.50.52.576.png
+	[LLM] Screenshot_2026.07.10_02.50.52.576.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4026414 name="InTime" (22.8s)
+	[Conversion] -> 004_026_414-InTime.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.51.05.559.png
+	[LLM] Screenshot_2026.07.10_02.51.05.559.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8040894 name="DOC*Time*" (22.5s)
+	[Conversion] -> 008_040_894-DOC%252ATime%252A-DOC%2ATime%2A.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.51.19.692.png
+	[LLM] Screenshot_2026.07.10_02.51.19.692.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6211337 name="нЕнаСЫТНЫЙTIME" (23.6s)
+	[Conversion] -> 006_211_337-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.51.32.392.png
+	[LLM] Screenshot_2026.07.10_02.51.32.392.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6711635 name="КонкистадорTIME" (23.4s)
+	[Conversion] -> 006_711_635-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.51.43.159.png
+	[LLM] Screenshot_2026.07.10_02.51.43.159.png (attempt 1/3, timeout 600s)...
+	[LLM] power=231 name="ФантаŽёрTime" (22.8s)
+	[Conversion] -> 000_000_231-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.51.56.442.png
+	[LLM] Screenshot_2026.07.10_02.51.56.442.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5368912 name="HNK52TIME" (23.3s)
+	[Conversion] -> 005_368_912-HNK52TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.52.09.692.png
+	[LLM] Screenshot_2026.07.10_02.52.09.692.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8592256 name="ЛЕСОВИК:TIME" (23.4s)
+	[Conversion] -> 008_592_256-%253ATIME-%3ATIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.52.28.509.png
+	[LLM] Screenshot_2026.07.10_02.52.28.509.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3496338 name="отец time" (23.1s)
+	[Conversion] -> 003_496_338-time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.52.38.892.png
+	[LLM] Screenshot_2026.07.10_02.52.38.892.png (attempt 1/3, timeout 600s)...
+	[LLM] power=217 name="Марсель Time" (23.0s)
+	[Conversion] -> 000_000_217-Time.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.53.00.292.png
+	[LLM] Screenshot_2026.07.10_02.53.00.292.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10078643 name="Маугли_TIME" (23.4s)
+	[Conversion] -> 010_078_643-TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.53.10.376.png
+	[LLM] Screenshot_2026.07.10_02.53.10.376.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4561971 name="lucky TIME" (22.9s)
+	[Conversion] -> 004_561_971-lucky_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.53.20.592.png
+	[LLM] Screenshot_2026.07.10_02.53.20.592.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3981629 name="ekx TIME" (23.0s)
+	[Conversion] -> 003_981_629-ekx_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.53.31.476.png
+	[LLM] Screenshot_2026.07.10_02.53.31.476.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3545662 name="Player77_TIME" (22.9s)
+	[Conversion] -> 003_545_662-Player77_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.07.10_02.53.41.392.png
+	[LLM] Screenshot_2026.07.10_02.53.41.392.png (attempt 1/3, timeout 600s)...
+	[LLM] power=249 name="zom61_TIME" (22.5s)
+	[Conversion] -> 000_000_249-zom61_TIME.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 49 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 21.6s / 22.5s / 23.6s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
