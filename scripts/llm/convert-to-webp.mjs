@@ -3,7 +3,7 @@
  *
  * Usage:
  *   node scripts/llm/convert-to-webp.mjs
- *   node scripts/llm/convert-to-webp.mjs --map scripts/fileMap.json
+ *   node scripts/llm/convert-to-webp.mjs --map data/clan_clash/fileMap.json
  *   node scripts/llm/convert-to-webp.mjs --dry-run
  */
 import fs from "fs/promises";

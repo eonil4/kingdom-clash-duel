@@ -7,7 +7,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const WORKSPACE_ROOT = path.join(__dirname, "..");
-export const DEFAULT_FILE_MAP_PATH = path.join(__dirname, "fileMap.json");
+export const DEFAULT_FILE_MAP_PATH = path.join(
+  WORKSPACE_ROOT,
+  "data",
+  "clan_clash",
+  "fileMap.json",
+);
 
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|bmp|tiff?)$/i;
 

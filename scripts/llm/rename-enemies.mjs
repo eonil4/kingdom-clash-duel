@@ -6,14 +6,15 @@ import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   collectEnemyEntriesFromMap,
+  DEFAULT_FILE_MAP_PATH,
   isFileEntryNode,
   loadConfiguredFoldersFromRoot,
+  WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const WORKSPACE_ROOT = path.join(__dirname, "..");
 const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".png",
   ".jpg",
@@ -25,7 +26,7 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".gif",
 ]);
 
-const DEFAULT_MAP_PATH = path.join(__dirname, "..", "fileMap.json");
+const DEFAULT_MAP_PATH = DEFAULT_FILE_MAP_PATH;
 const OCR_SCRIPT_PATH = path.join(__dirname, "..", "ocr", "ocr-enemy.mjs");
 
 function parseArgs(argv) {

@@ -1,6 +1,6 @@
 # Arena fight practice
 
-Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into `scripts/fileMap.json` and WebP assets.
+Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into `data/clan_clash/fileMap.json` and WebP assets.
 
 ## Prerequisites
 
@@ -25,13 +25,13 @@ Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first in
 
 ## Enemy OCR and asset scripts
 
-Scripts read **`scripts/fileMap.json`**, discover directories under that tree that exist on disk and contain images, then OCR screenshots (top-right opponent name + power). When the source file is named **`XXX_XXX_XXX-<slug>.png`** (nine-digit power in three groups), that power is taken from the filename and OCR power is only used as a fallback or mismatch warning. If **`slug`** contains **`%HH`** percent escapes (same scheme as canonical filenames), that slug is decoded and used as the **Latin label** and canonical **`.webp`** name; OCR still supplies Cyrillic **`name`** when it finds Cyrillic text. Outputs are written back into `fileMap.json` under nested keys: **`<folder>/<originalBasename>/<canonical>.webp`**.
+Scripts read **`data/clan_clash/fileMap.json`**, discover directories under that tree that exist on disk and contain images, then OCR screenshots (top-right opponent name + power). When the source file is named **`XXX_XXX_XXX-<slug>.png`** (nine-digit power in three groups), that power is taken from the filename and OCR power is only used as a fallback or mismatch warning. If **`slug`** contains **`%HH`** percent escapes (same scheme as canonical filenames), that slug is decoded and used as the **Latin label** and canonical **`.webp`** name; OCR still supplies Cyrillic **`name`** when it finds Cyrillic text. Outputs are written back into `fileMap.json` under nested keys: **`<folder>/<originalBasename>/<canonical>.webp`**.
 
 Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in the canonical basename (for example `\` → `%5C`).
 
 | Command | Description |
 |--------|-------------|
-| `pnpm ocr:enemy` | Main pipeline: OCR images → update `scripts/fileMap.json` |
+| `pnpm ocr:enemy` | Main pipeline: OCR images → update `data/clan_clash/fileMap.json` |
 | `pnpm ocr:enemies` | Same as `ocr:enemy` |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
@@ -103,9 +103,10 @@ On disk, sources stay in **`data/enemies/2026-05-08/test/`** next to generated *
 
 ## Project layout (high level)
 
-- `scripts/` — Enemy OCR, LLM convert, `fileMap.json`, WebP helpers
+- `scripts/` — Enemy OCR, LLM convert, WebP helpers
 - `config/` — LLM settings (`llm.json`)
 - `tests/unit/` — Vitest unit tests
+- `data/clan_clash/` — Clan clash images + `fileMap.json`
 - `data/enemies/` — Enemy images (by date / folder)
 
 ## License
