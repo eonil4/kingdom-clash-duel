@@ -1,0 +1,522 @@
+{
+    "mwLocation_01_01": {
+        "key": "mwLocation_01_01",
+        "level": 1,
+        "battleDurationInSec": 240,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_01",
+        "firstClearSoftAmount": 2000,
+        "starConditions": [
+            "Finish240",
+            "CaptureAll",
+            "Finish200"
+        ]
+    },
+    "mwLocation_01_02": {
+        "key": "mwLocation_01_02",
+        "level": 2,
+        "battleDurationInSec": 240,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_02",
+        "firstClearSoftAmount": 2050,
+        "starConditions": [
+            "Finish240",
+            "CaptureAll",
+            "TowerCapture_2_1"
+        ]
+    },
+    "mwLocation_01_03": {
+        "key": "mwLocation_01_03",
+        "level": 3,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_03",
+        "firstClearSoftAmount": 2100,
+        "starConditions": [
+            "Finish600",
+            "Finish240",
+            "TowerCapture_2_2"
+        ]
+    },
+    "mwLocation_01_04": {
+        "key": "mwLocation_01_04",
+        "level": 4,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_04",
+        "firstClearSoftAmount": 2150,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_2_3",
+            "Finish220"
+        ]
+    },
+    "mwLocation_01_05": {
+        "key": "mwLocation_01_05",
+        "level": 5,
+        "battleDurationInSec": 240,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_05",
+        "firstClearSoftAmount": 2200,
+        "starConditions": [
+            "Finish240",
+            "Finish180",
+            "TowerCapture_3_5"
+        ]
+    },
+    "mwLocation_01_06": {
+        "key": "mwLocation_01_06",
+        "level": 6,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_06",
+        "firstClearSoftAmount": 2250,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish300"
+        ]
+    },
+    "mwLocation_01_07": {
+        "key": "mwLocation_01_07",
+        "level": 7,
+        "battleDurationInSec": 300,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_07",
+        "firstClearSoftAmount": 2300,
+        "starConditions": [
+            "Finish300",
+            "Finish200",
+            "CaptureAll"
+        ]
+    },
+    "mwLocation_01_08": {
+        "key": "mwLocation_01_08",
+        "level": 8,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_08",
+        "firstClearSoftAmount": 2350,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish200"
+        ]
+    },
+    "mwLocation_01_09": {
+        "key": "mwLocation_01_09",
+        "level": 9,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_09",
+        "firstClearSoftAmount": 2400,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "TowerCapture_3_5"
+        ]
+    },
+    "mwLocation_01_10": {
+        "key": "mwLocation_01_10",
+        "level": 10,
+        "battleDurationInSec": 480,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_10",
+        "firstClearSoftAmount": 2450,
+        "starConditions": [
+            "Finish480",
+            "Finish240",
+            "NoEnemyCapture_5"
+        ]
+    },
+    "mwLocation_01_11": {
+        "key": "mwLocation_01_11",
+        "level": 11,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_11",
+        "firstClearSoftAmount": 2500,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish180"
+        ]
+    },
+    "mwLocation_01_12": {
+        "key": "mwLocation_01_12",
+        "level": 12,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_12",
+        "firstClearSoftAmount": 2550,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish200"
+        ]
+    },
+    "mwLocation_01_13": {
+        "key": "mwLocation_01_13",
+        "level": 13,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_13",
+        "firstClearSoftAmount": 2600,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "TowerCapture_3_5"
+        ]
+    },
+    "mwLocation_01_14": {
+        "key": "mwLocation_01_14",
+        "level": 14,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_14",
+        "firstClearSoftAmount": 2650,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish350"
+        ]
+    },
+    "mwLocation_01_15": {
+        "key": "mwLocation_01_15",
+        "level": 15,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_15",
+        "firstClearSoftAmount": 2700,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish180"
+        ]
+    },
+    "mwLocation_01_16": {
+        "key": "mwLocation_01_16",
+        "level": 16,
+        "battleDurationInSec": 480,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_16",
+        "firstClearSoftAmount": 2750,
+        "starConditions": [
+            "Finish480",
+            "CaptureAll",
+            "NoEnemyCapture_5"
+        ]
+    },
+    "mwLocation_01_17": {
+        "key": "mwLocation_01_17",
+        "level": 17,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_17",
+        "firstClearSoftAmount": 2800,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "TowerCapture_5_5"
+        ]
+    },
+    "mwLocation_01_18": {
+        "key": "mwLocation_01_18",
+        "level": 18,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_18",
+        "firstClearSoftAmount": 2850,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_3",
+            "Finish270"
+        ]
+    },
+    "mwLocation_01_19": {
+        "key": "mwLocation_01_19",
+        "level": 19,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_19",
+        "firstClearSoftAmount": 2900,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish200"
+        ]
+    },
+    "mwLocation_01_20": {
+        "key": "mwLocation_01_20",
+        "level": 20,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_1",
+        "roadPrefab": "mwLocation_01_20",
+        "firstClearSoftAmount": 2950,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish240"
+        ]
+    },
+    "mwLocation_02_01": {
+        "key": "mwLocation_02_01",
+        "level": 1,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_01",
+        "firstClearSoftAmount": 3000,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_3",
+            "Finish200"
+        ]
+    },
+    "mwLocation_02_02": {
+        "key": "mwLocation_02_02",
+        "level": 2,
+        "battleDurationInSec": 480,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_02",
+        "firstClearSoftAmount": 3050,
+        "starConditions": [
+            "Finish350",
+            "CaptureAll",
+            "TowerCapture_3_3"
+        ]
+    },
+    "mwLocation_02_03": {
+        "key": "mwLocation_02_03",
+        "level": 3,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_03",
+        "firstClearSoftAmount": 3100,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish220"
+        ]
+    },
+    "mwLocation_02_04": {
+        "key": "mwLocation_02_04",
+        "level": 4,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_04",
+        "firstClearSoftAmount": 3150,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish300"
+        ]
+    },
+    "mwLocation_02_05": {
+        "key": "mwLocation_02_05",
+        "level": 5,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_05",
+        "firstClearSoftAmount": 3200,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_3",
+            "Finish240"
+        ]
+    },
+    "mwLocation_02_06": {
+        "key": "mwLocation_02_06",
+        "level": 6,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_06",
+        "firstClearSoftAmount": 3250,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_5",
+            "Finish200"
+        ]
+    },
+    "mwLocation_02_07": {
+        "key": "mwLocation_02_07",
+        "level": 7,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_07",
+        "firstClearSoftAmount": 3300,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish200"
+        ]
+    },
+    "mwLocation_02_08": {
+        "key": "mwLocation_02_08",
+        "level": 8,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_08",
+        "firstClearSoftAmount": 3350,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_3",
+            "TowerCapture_3_5"
+        ]
+    },
+    "mwLocation_02_09": {
+        "key": "mwLocation_02_09",
+        "level": 9,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_09",
+        "firstClearSoftAmount": 3400,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_3",
+            "Finish180"
+        ]
+    },
+    "mwLocation_02_10": {
+        "key": "mwLocation_02_10",
+        "level": 10,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_10",
+        "firstClearSoftAmount": 3450,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish180"
+        ]
+    },
+    "mwLocation_02_11": {
+        "key": "mwLocation_02_11",
+        "level": 11,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_11",
+        "firstClearSoftAmount": 3500,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "Finish180"
+        ]
+    },
+    "mwLocation_02_12": {
+        "key": "mwLocation_02_12",
+        "level": 12,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_12",
+        "firstClearSoftAmount": 3550,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish300"
+        ]
+    },
+    "mwLocation_02_13": {
+        "key": "mwLocation_02_13",
+        "level": 13,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_13",
+        "firstClearSoftAmount": 3600,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish240"
+        ]
+    },
+    "mwLocation_02_14": {
+        "key": "mwLocation_02_14",
+        "level": 14,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_14",
+        "firstClearSoftAmount": 3650,
+        "starConditions": [
+            "Finish600",
+            "NoEnemyCapture_5",
+            "Finish220"
+        ]
+    },
+    "mwLocation_02_15": {
+        "key": "mwLocation_02_15",
+        "level": 15,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_15",
+        "firstClearSoftAmount": 3700,
+        "starConditions": [
+            "Finish600",
+            "CaptureAll",
+            "TowerCapture_5_5"
+        ]
+    },
+    "mwLocation_02_16": {
+        "key": "mwLocation_02_16",
+        "level": 16,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_16",
+        "firstClearSoftAmount": 3750,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish200"
+        ]
+    },
+    "mwLocation_02_17": {
+        "key": "mwLocation_02_17",
+        "level": 17,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_17",
+        "firstClearSoftAmount": 3800,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_3_5",
+            "Finish220"
+        ]
+    },
+    "mwLocation_02_18": {
+        "key": "mwLocation_02_18",
+        "level": 18,
+        "battleDurationInSec": 600,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_18",
+        "firstClearSoftAmount": 3850,
+        "starConditions": [
+            "Finish600",
+            "TowerCapture_5_5",
+            "Finish200"
+        ]
+    },
+    "mwLocation_02_19": {
+        "key": "mwLocation_02_19",
+        "level": 19,
+        "battleDurationInSec": 480,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_19",
+        "firstClearSoftAmount": 3900,
+        "starConditions": [
+            "Finish480",
+            "TowerCapture_5_5",
+            "NoEnemyCapture_3"
+        ]
+    },
+    "mwLocation_02_20": {
+        "key": "mwLocation_02_20",
+        "level": 20,
+        "battleDurationInSec": 480,
+        "chapterId": "mw_chapter_2",
+        "roadPrefab": "mwLocation_02_20",
+        "firstClearSoftAmount": 3950,
+        "starConditions": [
+            "Finish480",
+            "CaptureAll",
+            "TowerCapture_5_5"
+        ]
+    }
+}

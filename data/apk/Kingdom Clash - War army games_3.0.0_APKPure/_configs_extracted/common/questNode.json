@@ -1,0 +1,210 @@
+{
+    "daily1": {
+        "key": "daily1",
+        "questSetId": "SetDaily1"
+    },
+    "daily2": {
+        "key": "daily2",
+        "questSetId": "SetDaily2"
+    },
+    "special1": {
+        "key": "special1",
+        "questSetId": "SetSpecial1"
+    },
+    "special2": {
+        "key": "special2",
+        "questSetId": "SetSpecial2"
+    },
+    "daily3": {
+        "key": "daily3",
+        "questSetId": "SetDaily3"
+    },
+    "daily4": {
+        "key": "daily4",
+        "questSetId": "SetDaily4"
+    },
+    "daily5": {
+        "key": "daily5",
+        "questSetId": "SetDaily5"
+    },
+    "daily6": {
+        "key": "daily6",
+        "questSetId": "SetDaily6"
+    },
+    "daily7": {
+        "key": "daily7",
+        "questSetId": "SetDaily7"
+    },
+    "daily8": {
+        "key": "daily8",
+        "questSetId": "SetDaily8"
+    },
+    "daily9": {
+        "key": "daily9",
+        "questSetId": "SetDaily9"
+    },
+    "daily10": {
+        "key": "daily10",
+        "questSetId": "SetDaily10"
+    },
+    "daily11": {
+        "key": "daily11",
+        "questSetId": "SetDaily11"
+    },
+    "daily12": {
+        "key": "daily12",
+        "questSetId": "SetDaily12"
+    },
+    "daily13": {
+        "key": "daily13",
+        "questSetId": "SetDaily13"
+    },
+    "daily14": {
+        "key": "daily14",
+        "questSetId": "SetDaily14"
+    },
+    "daily15": {
+        "key": "daily15",
+        "questSetId": "SetDaily15"
+    },
+    "daily16": {
+        "key": "daily16",
+        "questSetId": "SetDaily16"
+    },
+    "daily17": {
+        "key": "daily17",
+        "questSetId": "SetDaily17"
+    },
+    "daily18": {
+        "key": "daily18",
+        "questSetId": "SetDaily18"
+    },
+    "daily19": {
+        "key": "daily19",
+        "questSetId": "SetDaily19"
+    },
+    "daily20": {
+        "key": "daily20",
+        "questSetId": "SetDaily20"
+    },
+    "daily21": {
+        "key": "daily21",
+        "questSetId": "SetDaily21"
+    },
+    "daily22": {
+        "key": "daily22",
+        "questSetId": "SetDaily22"
+    },
+    "daily23": {
+        "key": "daily23",
+        "questSetId": "SetDaily23"
+    },
+    "daily24": {
+        "key": "daily24",
+        "questSetId": "SetDaily24"
+    },
+    "daily25": {
+        "key": "daily25",
+        "questSetId": "SetDaily25"
+    },
+    "daily26": {
+        "key": "daily26",
+        "questSetId": "SetDaily26"
+    },
+    "daily27": {
+        "key": "daily27",
+        "questSetId": "SetDaily27"
+    },
+    "daily28": {
+        "key": "daily28",
+        "questSetId": "SetDaily28"
+    },
+    "daily29": {
+        "key": "daily29",
+        "questSetId": "SetDaily29"
+    },
+    "daily30": {
+        "key": "daily30",
+        "questSetId": "SetDaily30"
+    },
+    "daily31": {
+        "key": "daily31",
+        "questSetId": "SetDaily31"
+    },
+    "special3": {
+        "key": "special3",
+        "questSetId": "SetSpecial3"
+    },
+    "special4": {
+        "key": "special4",
+        "questSetId": "SetSpecial4"
+    },
+    "special5": {
+        "key": "special5",
+        "questSetId": "SetSpecial5"
+    },
+    "special6": {
+        "key": "special6",
+        "questSetId": "SetSpecial6"
+    },
+    "special7": {
+        "key": "special7",
+        "questSetId": "SetSpecial7"
+    },
+    "special8": {
+        "key": "special8",
+        "questSetId": "SetSpecial8"
+    },
+    "permanent_accurateMerida": {
+        "key": "permanent_accurateMerida",
+        "questSetId": "SetPermanent_accurateMerida"
+    },
+    "permanent_baronBenua": {
+        "key": "permanent_baronBenua",
+        "questSetId": "SetPermanent_baronBenua"
+    },
+    "permanent_clericHero": {
+        "key": "permanent_clericHero",
+        "questSetId": "SetPermanent_clericHero"
+    },
+    "permanent_darkKnight": {
+        "key": "permanent_darkKnight",
+        "questSetId": "SetPermanent_darkKnight"
+    },
+    "permanent_undeadPirate": {
+        "key": "permanent_undeadPirate",
+        "questSetId": "SetPermanent_undeadPirate"
+    },
+    "dailyQuest": {
+        "key": "dailyQuest",
+        "questSetId": "SetDailyQuest"
+    },
+    "permanent_druid": {
+        "key": "permanent_druid",
+        "questSetId": "SetPermanent_druid"
+    },
+    "permanent_debafferOnMaunt": {
+        "key": "permanent_debafferOnMaunt",
+        "questSetId": "SetPermanent_debafferOnMaunt"
+    },
+    "casinoQuest": {
+        "key": "casinoQuest",
+        "questSetId": "SetPermanent_Casino"
+    },
+    "casinoGearQuest": {
+        "key": "casinoGearQuest",
+        "questSetId": "SetPermanent_Casino_Gear"
+    },
+    "permanent_bardHero": {
+        "key": "permanent_bardHero",
+        "questSetId": "SetPermanent_bardHero"
+    },
+    "towerAxeThrowersQuest": {
+        "key": "towerAxeThrowersQuest",
+        "questSetId": "SetDaily_event_axeThrowers"
+    },
+    "permanent_fireMage": {
+        "key": "permanent_fireMage",
+        "questSetId": "SetPermanent_fireMage"
+    }
+}

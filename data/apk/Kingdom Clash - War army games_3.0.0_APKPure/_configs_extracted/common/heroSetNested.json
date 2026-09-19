@@ -1,0 +1,137 @@
+{
+    "1": {
+        "key": "1",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "charmer"
+    },
+    "2": {
+        "key": "2",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "forestQueen"
+    },
+    "3": {
+        "key": "3",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "boneDragon"
+    },
+    "4": {
+        "key": "4",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "dragonRider"
+    },
+    "5": {
+        "key": "5",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "accurateMerida"
+    },
+    "6": {
+        "key": "6",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "darkKnight"
+    },
+    "7": {
+        "key": "7",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "clericHero"
+    },
+    "8": {
+        "key": "8",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "ringleaderHero"
+    },
+    "9": {
+        "key": "9",
+        "setId": "legendaryShopHeroSet",
+        "heroId": "nun"
+    },
+    "10": {
+        "key": "10",
+        "setId": "iceAndFireSet",
+        "heroId": "iceMage"
+    },
+    "11": {
+        "key": "11",
+        "setId": "iceAndFireSet",
+        "heroId": "fireMage"
+    },
+    "12": {
+        "key": "12",
+        "setId": "humanGeneralsSet",
+        "heroId": "general"
+    },
+    "13": {
+        "key": "13",
+        "setId": "humanGeneralsSet",
+        "heroId": "swordmasterHero"
+    },
+    "14": {
+        "key": "14",
+        "setId": "humanGeneralsSet",
+        "heroId": "accurateMerida"
+    },
+    "15": {
+        "key": "15",
+        "setId": "elementalMagesSet",
+        "heroId": "airMage"
+    },
+    "16": {
+        "key": "16",
+        "setId": "elementalMagesSet",
+        "heroId": "waterMage"
+    },
+    "17": {
+        "key": "17",
+        "setId": "elementalMagesSet",
+        "heroId": "lightningElemental"
+    },
+    "18": {
+        "key": "18",
+        "setId": "skeletonLordsSet",
+        "heroId": "darknessMage"
+    },
+    "19": {
+        "key": "19",
+        "setId": "skeletonLordsSet",
+        "heroId": "darkKnight"
+    },
+    "20": {
+        "key": "20",
+        "setId": "skeletonLordsSet",
+        "heroId": "undeadWarrior"
+    },
+    "21": {
+        "key": "21",
+        "setId": "BalladHeroesSet",
+        "heroId": "bardHero"
+    },
+    "22": {
+        "key": "22",
+        "setId": "BalladHeroesSet",
+        "heroId": "baronBenua"
+    },
+    "23": {
+        "key": "23",
+        "setId": "BalladHeroesSet",
+        "heroId": "sandMage"
+    },
+    "24": {
+        "key": "24",
+        "setId": "BalladHeroesSet",
+        "heroId": "drunkTank"
+    },
+    "25": {
+        "key": "25",
+        "setId": "WarriorsOfLightSet",
+        "heroId": "lordInquisitor"
+    },
+    "26": {
+        "key": "26",
+        "setId": "WarriorsOfLightSet",
+        "heroId": "nun"
+    },
+    "27": {
+        "key": "27",
+        "setId": "WarriorsOfLightSet",
+        "heroId": "clericHero"
+    }
+}

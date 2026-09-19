@@ -1,0 +1,8 @@
+{
+    "TalentSphereConversion": {
+        "key": "TalentSphereConversion",
+        "currencyId": "TalentSphere",
+        "targetCurrencyId": "Gem",
+        "ratio": 50
+    }
+}

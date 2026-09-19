@@ -1,0 +1,296 @@
+{
+    "Season1": {
+        "key": "Season1",
+        "seasonId": "Season1",
+        "number": 1,
+        "startAt": 1692576001,
+        "endAt": 1695254400
+    },
+    "Season2": {
+        "key": "Season2",
+        "seasonId": "Season1",
+        "number": 2,
+        "startAt": 1695254401,
+        "endAt": 1697846400
+    },
+    "Season3": {
+        "key": "Season3",
+        "seasonId": "Season1",
+        "number": 3,
+        "startAt": 1697846401,
+        "endAt": 1700524800
+    },
+    "Season4": {
+        "key": "Season4",
+        "seasonId": "Season1",
+        "number": 4,
+        "startAt": 1700524801,
+        "endAt": 1703116800
+    },
+    "Season5": {
+        "key": "Season5",
+        "seasonId": "Season1",
+        "number": 5,
+        "startAt": 1703116801,
+        "endAt": 1705795200
+    },
+    "Season6": {
+        "key": "Season6",
+        "seasonId": "Season1",
+        "number": 6,
+        "startAt": 1705795201,
+        "endAt": 1708473600
+    },
+    "Season7": {
+        "key": "Season7",
+        "seasonId": "Season1",
+        "number": 7,
+        "startAt": 1708473601,
+        "endAt": 1710979200
+    },
+    "Season8": {
+        "key": "Season8",
+        "seasonId": "Season1",
+        "number": 8,
+        "startAt": 1710979200,
+        "endAt": 1710979200
+    },
+    "Season9": {
+        "key": "Season9",
+        "seasonId": "Season1",
+        "number": 9,
+        "startAt": 1710979201,
+        "endAt": 1713657600
+    },
+    "Season10": {
+        "key": "Season10",
+        "seasonId": "Season1",
+        "number": 10,
+        "startAt": 1713657601,
+        "endAt": 1716249600
+    },
+    "Season11": {
+        "key": "Season11",
+        "seasonId": "Season1",
+        "number": 11,
+        "startAt": 1716249601,
+        "endAt": 1718928000
+    },
+    "Season12": {
+        "key": "Season12",
+        "seasonId": "Season1",
+        "number": 12,
+        "startAt": 1718928001,
+        "endAt": 1721520000
+    },
+    "Season13": {
+        "key": "Season13",
+        "seasonId": "Season1",
+        "number": 13,
+        "startAt": 1721520001,
+        "endAt": 1724198400
+    },
+    "Season14": {
+        "key": "Season14",
+        "seasonId": "Season1",
+        "number": 14,
+        "startAt": 1724198401,
+        "endAt": 1726876800
+    },
+    "Season15": {
+        "key": "Season15",
+        "seasonId": "Season1",
+        "number": 15,
+        "startAt": 1726876801,
+        "endAt": 1729468800
+    },
+    "Season16": {
+        "key": "Season16",
+        "seasonId": "Season1",
+        "number": 16,
+        "startAt": 1729468801,
+        "endAt": 1732147200
+    },
+    "Season17": {
+        "key": "Season17",
+        "seasonId": "Season1",
+        "number": 17,
+        "startAt": 1732147201,
+        "endAt": 1734739200
+    },
+    "Season18": {
+        "key": "Season18",
+        "seasonId": "Season1",
+        "number": 18,
+        "startAt": 1734739201,
+        "endAt": 1737417600
+    },
+    "Season19": {
+        "key": "Season19",
+        "seasonId": "Season1",
+        "number": 19,
+        "startAt": 1737417601,
+        "endAt": 1740096000
+    },
+    "Season20": {
+        "key": "Season20",
+        "seasonId": "Season1",
+        "number": 20,
+        "startAt": 1740096001,
+        "endAt": 1742515200
+    },
+    "Season21": {
+        "key": "Season21",
+        "seasonId": "Season1",
+        "number": 21,
+        "startAt": 1742515201,
+        "endAt": 1745193600
+    },
+    "Season22": {
+        "key": "Season22",
+        "seasonId": "Season1",
+        "number": 22,
+        "startAt": 1745193601,
+        "endAt": 1747785600
+    },
+    "Season23": {
+        "key": "Season23",
+        "seasonId": "Season1",
+        "number": 23,
+        "startAt": 1747785601,
+        "endAt": 1750464000
+    },
+    "Season24": {
+        "key": "Season24",
+        "seasonId": "Season1",
+        "number": 24,
+        "startAt": 1750464001,
+        "endAt": 1753056000
+    },
+    "Season25": {
+        "key": "Season25",
+        "seasonId": "Season1",
+        "number": 25,
+        "startAt": 1753056001,
+        "endAt": 1755734400
+    },
+    "Season26": {
+        "key": "Season26",
+        "seasonId": "Season1",
+        "number": 26,
+        "startAt": 1755734401,
+        "endAt": 1758412800
+    },
+    "Season27": {
+        "key": "Season27",
+        "seasonId": "Season1",
+        "number": 27,
+        "startAt": 1758412801,
+        "endAt": 1761004800
+    },
+    "Season28": {
+        "key": "Season28",
+        "seasonId": "Season1",
+        "number": 28,
+        "startAt": 1761004801,
+        "endAt": 1763683200
+    },
+    "Season29": {
+        "key": "Season29",
+        "seasonId": "Season1",
+        "number": 29,
+        "startAt": 1763683201,
+        "endAt": 1766275200
+    },
+    "Season30": {
+        "key": "Season30",
+        "seasonId": "Season1",
+        "number": 30,
+        "startAt": 1766275201,
+        "endAt": 1768953600
+    },
+    "Season31": {
+        "key": "Season31",
+        "seasonId": "Season1",
+        "number": 31,
+        "startAt": 1768953601,
+        "endAt": 1771632000
+    },
+    "Season32": {
+        "key": "Season32",
+        "seasonId": "Season1",
+        "number": 32,
+        "startAt": 1771632001,
+        "endAt": 1774051200
+    },
+    "Season33": {
+        "key": "Season33",
+        "seasonId": "Season1",
+        "number": 33,
+        "startAt": 1774051201,
+        "endAt": 1776729600
+    },
+    "Season34": {
+        "key": "Season34",
+        "seasonId": "Season1",
+        "number": 34,
+        "startAt": 1776729601,
+        "endAt": 1779321600
+    },
+    "Season35": {
+        "key": "Season35",
+        "seasonId": "Season1",
+        "number": 35,
+        "startAt": 1779321601,
+        "endAt": 1782000000
+    },
+    "Season36": {
+        "key": "Season36",
+        "seasonId": "Season1",
+        "number": 36,
+        "startAt": 1782000001,
+        "endAt": 1784592000
+    },
+    "Season37": {
+        "key": "Season37",
+        "seasonId": "Season1",
+        "number": 37,
+        "startAt": 1784592001,
+        "endAt": 1787270400
+    },
+    "Season38": {
+        "key": "Season38",
+        "seasonId": "Season1",
+        "number": 38,
+        "startAt": 1787270401,
+        "endAt": 1789948800
+    },
+    "Season39": {
+        "key": "Season39",
+        "seasonId": "Season1",
+        "number": 39,
+        "startAt": 1789948801,
+        "endAt": 1792540800
+    },
+    "Season40": {
+        "key": "Season40",
+        "seasonId": "Season1",
+        "number": 40,
+        "startAt": 1792540801,
+        "endAt": 1795219200
+    },
+    "Season41": {
+        "key": "Season41",
+        "seasonId": "Season1",
+        "number": 41,
+        "startAt": 1795219201,
+        "endAt": 1797811200
+    },
+    "Season42": {
+        "key": "Season42",
+        "seasonId": "Season1",
+        "number": 42,
+        "startAt": 1797811201,
+        "endAt": 1800489600
+    }
+}

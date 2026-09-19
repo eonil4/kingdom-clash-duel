@@ -1,0 +1,25 @@
+{
+    "offerDaily1": {
+        "key": "offerDaily1",
+        "title": "caption_daily_offer",
+        "description": "description_daily_offer",
+        "profitBadgeAmount": 1500,
+        "goldAmount": 300000,
+        "gemAmount": 500,
+        "badgesAmount": 30,
+        "troopChestEpicId": "offerDailyChestEpic",
+        "troopChestEpicCount": 8,
+        "troopChestLegendaryId": "offerDailyChestLegendary",
+        "troopChestLegendaryCount": 8,
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerDaily1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    }
+}

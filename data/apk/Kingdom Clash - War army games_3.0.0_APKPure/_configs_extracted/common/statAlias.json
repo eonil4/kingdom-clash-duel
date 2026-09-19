@@ -1,0 +1,29 @@
+{
+    "controlStats": [
+        "aiDisabled",
+        "fear",
+        "isHexed",
+        "canNotMove"
+    ],
+    "aiDisabled": "aiDisabled",
+    "canNotMove": "canNotMove",
+    "canNotAttack": "canNotAttack",
+    "canNotSpecialAttack": "canNotSpecialAttack",
+    "unTargetable": "unTargetable",
+    "invulnerable": "invulnerable",
+    "fear": "fear",
+    "isHero": "isHero",
+    "isBoss": "isBoss",
+    "summonDarknessOnDeath": "summonDarknessOnDeath",
+    "chargeDarknessOnDeath": "chargeDarknessOnDeath",
+    "multiShotDebuffUnTargetable": "multiShotDebuffUnTargetable",
+    "isHexed": "isHexed",
+    "controlImmune": "controlImmune",
+    "ignoreArmyCount": "ignoreArmyCount",
+    "darknessInvulnerable": "darknessInvulnerable",
+    "negativeDebuff": "negativeDebuff",
+    "fatMode": "fatMode",
+    "noDamage": "noDamage",
+    "noDamageDot": "noDamageDot",
+    "oneShot": "oneShot"
+}

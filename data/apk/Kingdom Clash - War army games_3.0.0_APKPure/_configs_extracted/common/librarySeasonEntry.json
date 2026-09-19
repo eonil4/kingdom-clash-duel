@@ -1,0 +1,2252 @@
+{
+    "Season1_floor1": {
+        "key": "Season1_floor1",
+        "seasonId": "Season1",
+        "floorLevel": 1,
+        "rating": 10,
+        "levelId": "LibraryTreasure_1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor2": {
+        "key": "Season1_floor2",
+        "seasonId": "Season1",
+        "floorLevel": 2,
+        "rating": 10,
+        "levelId": "LibraryBattle_1",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor3": {
+        "key": "Season1_floor3",
+        "seasonId": "Season1",
+        "floorLevel": 3,
+        "rating": 10,
+        "levelId": "LibraryBattle_2",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor4": {
+        "key": "Season1_floor4",
+        "seasonId": "Season1",
+        "floorLevel": 4,
+        "rating": 11,
+        "levelId": "LibraryBattle_3",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor5": {
+        "key": "Season1_floor5",
+        "seasonId": "Season1",
+        "floorLevel": 5,
+        "rating": 11,
+        "levelId": "LibraryBattle_4",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor6": {
+        "key": "Season1_floor6",
+        "seasonId": "Season1",
+        "floorLevel": 6,
+        "rating": 12,
+        "levelId": "LibraryBattle_5",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor7": {
+        "key": "Season1_floor7",
+        "seasonId": "Season1",
+        "floorLevel": 7,
+        "rating": 12,
+        "levelId": "LibraryBattle_6",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor8": {
+        "key": "Season1_floor8",
+        "seasonId": "Season1",
+        "floorLevel": 8,
+        "rating": 13,
+        "levelId": "LibraryBattle_7",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor9": {
+        "key": "Season1_floor9",
+        "seasonId": "Season1",
+        "floorLevel": 9,
+        "rating": 13,
+        "levelId": "LibraryTreasure_2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "bag_coin"
+    },
+    "Season1_floor10": {
+        "key": "Season1_floor10",
+        "seasonId": "Season1",
+        "floorLevel": 10,
+        "rating": 14,
+        "levelId": "LibraryBattle_8",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor11": {
+        "key": "Season1_floor11",
+        "seasonId": "Season1",
+        "floorLevel": 11,
+        "rating": 14,
+        "levelId": "LibraryBattle_9",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor12": {
+        "key": "Season1_floor12",
+        "seasonId": "Season1",
+        "floorLevel": 12,
+        "rating": 15,
+        "levelId": "LibraryBattle_10",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor14": {
+        "key": "Season1_floor14",
+        "seasonId": "Season1",
+        "floorLevel": 14,
+        "rating": 16,
+        "levelId": "LibraryBattle_11",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor15": {
+        "key": "Season1_floor15",
+        "seasonId": "Season1",
+        "floorLevel": 15,
+        "rating": 16,
+        "levelId": "LibraryBattle_12",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor16": {
+        "key": "Season1_floor16",
+        "seasonId": "Season1",
+        "floorLevel": 16,
+        "rating": 17,
+        "levelId": "LibraryBattle_13",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor17": {
+        "key": "Season1_floor17",
+        "seasonId": "Season1",
+        "floorLevel": 17,
+        "rating": 17,
+        "levelId": "LibraryBattle_14",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor18": {
+        "key": "Season1_floor18",
+        "seasonId": "Season1",
+        "floorLevel": 18,
+        "rating": 18,
+        "levelId": "LibraryBattle_15",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor19": {
+        "key": "Season1_floor19",
+        "seasonId": "Season1",
+        "floorLevel": 19,
+        "rating": 18,
+        "levelId": "LibraryBattle_16",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor20": {
+        "key": "Season1_floor20",
+        "seasonId": "Season1",
+        "floorLevel": 20,
+        "rating": 19,
+        "levelId": "LibraryBattle_17",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor21": {
+        "key": "Season1_floor21",
+        "seasonId": "Season1",
+        "floorLevel": 21,
+        "rating": 19,
+        "levelId": "LibraryTreasure_3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_chest_small"
+    },
+    "Season1_floor22": {
+        "key": "Season1_floor22",
+        "seasonId": "Season1",
+        "floorLevel": 22,
+        "rating": 20,
+        "levelId": "LibraryBattle_18",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor23": {
+        "key": "Season1_floor23",
+        "seasonId": "Season1",
+        "floorLevel": 23,
+        "rating": 20,
+        "levelId": "LibraryBattle_19",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor24": {
+        "key": "Season1_floor24",
+        "seasonId": "Season1",
+        "floorLevel": 24,
+        "rating": 21,
+        "levelId": "LibraryBattle_20",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor25": {
+        "key": "Season1_floor25",
+        "seasonId": "Season1",
+        "floorLevel": 25,
+        "rating": 21,
+        "levelId": "LibraryTreasure_6",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor26": {
+        "key": "Season1_floor26",
+        "seasonId": "Season1",
+        "floorLevel": 26,
+        "rating": 22,
+        "levelId": "LibraryBattle_21",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor27": {
+        "key": "Season1_floor27",
+        "seasonId": "Season1",
+        "floorLevel": 27,
+        "rating": 22,
+        "levelId": "LibraryBattle_22",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor28": {
+        "key": "Season1_floor28",
+        "seasonId": "Season1",
+        "floorLevel": 28,
+        "rating": 23,
+        "levelId": "LibraryBattle_23",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor29": {
+        "key": "Season1_floor29",
+        "seasonId": "Season1",
+        "floorLevel": 29,
+        "rating": 23,
+        "levelId": "LibraryBattle_24",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor30": {
+        "key": "Season1_floor30",
+        "seasonId": "Season1",
+        "floorLevel": 30,
+        "rating": 24,
+        "levelId": "LibraryBattle_25",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor31": {
+        "key": "Season1_floor31",
+        "seasonId": "Season1",
+        "floorLevel": 31,
+        "rating": 24,
+        "levelId": "LibraryBattle_26",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor32": {
+        "key": "Season1_floor32",
+        "seasonId": "Season1",
+        "floorLevel": 32,
+        "rating": 25,
+        "levelId": "LibraryBattle_27",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor33": {
+        "key": "Season1_floor33",
+        "seasonId": "Season1",
+        "floorLevel": 33,
+        "rating": 25,
+        "levelId": "LibraryTreasure_4",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor34": {
+        "key": "Season1_floor34",
+        "seasonId": "Season1",
+        "floorLevel": 34,
+        "rating": 26,
+        "levelId": "LibraryBattle_28",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor35": {
+        "key": "Season1_floor35",
+        "seasonId": "Season1",
+        "floorLevel": 35,
+        "rating": 26,
+        "levelId": "LibraryBattle_29",
+        "unlockPrice": 2,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor36": {
+        "key": "Season1_floor36",
+        "seasonId": "Season1",
+        "floorLevel": 36,
+        "rating": 27,
+        "levelId": "LibraryBattle_30",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor37": {
+        "key": "Season1_floor37",
+        "seasonId": "Season1",
+        "floorLevel": 37,
+        "rating": 27,
+        "levelId": "LibraryTreasure_6",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor38": {
+        "key": "Season1_floor38",
+        "seasonId": "Season1",
+        "floorLevel": 38,
+        "rating": 28,
+        "levelId": "LibraryBattle_31",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor39": {
+        "key": "Season1_floor39",
+        "seasonId": "Season1",
+        "floorLevel": 39,
+        "rating": 28,
+        "levelId": "LibraryBattle_32",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor40": {
+        "key": "Season1_floor40",
+        "seasonId": "Season1",
+        "floorLevel": 40,
+        "rating": 29,
+        "levelId": "LibraryBattle_33",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor41": {
+        "key": "Season1_floor41",
+        "seasonId": "Season1",
+        "floorLevel": 41,
+        "rating": 29,
+        "levelId": "LibraryBattle_34",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor42": {
+        "key": "Season1_floor42",
+        "seasonId": "Season1",
+        "floorLevel": 42,
+        "rating": 30,
+        "levelId": "LibraryBattle_35",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor43": {
+        "key": "Season1_floor43",
+        "seasonId": "Season1",
+        "floorLevel": 43,
+        "rating": 30,
+        "levelId": "LibraryBattle_36",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor44": {
+        "key": "Season1_floor44",
+        "seasonId": "Season1",
+        "floorLevel": 44,
+        "rating": 31,
+        "levelId": "LibraryBattle_37",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor45": {
+        "key": "Season1_floor45",
+        "seasonId": "Season1",
+        "floorLevel": 45,
+        "rating": 31,
+        "levelId": "LibraryTreasure_5",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_chest_small"
+    },
+    "Season1_floor46": {
+        "key": "Season1_floor46",
+        "seasonId": "Season1",
+        "floorLevel": 46,
+        "rating": 32,
+        "levelId": "LibraryBattle_38",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor47": {
+        "key": "Season1_floor47",
+        "seasonId": "Season1",
+        "floorLevel": 47,
+        "rating": 32,
+        "levelId": "LibraryBattle_39",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor48": {
+        "key": "Season1_floor48",
+        "seasonId": "Season1",
+        "floorLevel": 48,
+        "rating": 33,
+        "levelId": "LibraryBattle_40",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor49": {
+        "key": "Season1_floor49",
+        "seasonId": "Season1",
+        "floorLevel": 49,
+        "rating": 33,
+        "levelId": "LibraryTreasure_9",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor50": {
+        "key": "Season1_floor50",
+        "seasonId": "Season1",
+        "floorLevel": 50,
+        "rating": 34,
+        "levelId": "LibraryBattle_41",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor51": {
+        "key": "Season1_floor51",
+        "seasonId": "Season1",
+        "floorLevel": 51,
+        "rating": 34,
+        "levelId": "LibraryBattle_42",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor52": {
+        "key": "Season1_floor52",
+        "seasonId": "Season1",
+        "floorLevel": 52,
+        "rating": 35,
+        "levelId": "LibraryBattle_43",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor53": {
+        "key": "Season1_floor53",
+        "seasonId": "Season1",
+        "floorLevel": 53,
+        "rating": 35,
+        "levelId": "LibraryBattle_44",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor54": {
+        "key": "Season1_floor54",
+        "seasonId": "Season1",
+        "floorLevel": 54,
+        "rating": 36,
+        "levelId": "LibraryBattle_45",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor55": {
+        "key": "Season1_floor55",
+        "seasonId": "Season1",
+        "floorLevel": 55,
+        "rating": 36,
+        "levelId": "LibraryBattle_46",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor56": {
+        "key": "Season1_floor56",
+        "seasonId": "Season1",
+        "floorLevel": 56,
+        "rating": 37,
+        "levelId": "LibraryBattle_47",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor57": {
+        "key": "Season1_floor57",
+        "seasonId": "Season1",
+        "floorLevel": 57,
+        "rating": 37,
+        "levelId": "LibraryTreasure_7",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor58": {
+        "key": "Season1_floor58",
+        "seasonId": "Season1",
+        "floorLevel": 58,
+        "rating": 38,
+        "levelId": "LibraryBattle_48",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor59": {
+        "key": "Season1_floor59",
+        "seasonId": "Season1",
+        "floorLevel": 59,
+        "rating": 38,
+        "levelId": "LibraryBattle_49",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor60": {
+        "key": "Season1_floor60",
+        "seasonId": "Season1",
+        "floorLevel": 60,
+        "rating": 39,
+        "levelId": "LibraryBattle_50",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor61": {
+        "key": "Season1_floor61",
+        "seasonId": "Season1",
+        "floorLevel": 61,
+        "rating": 39,
+        "levelId": "LibraryTreasure_8",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor62": {
+        "key": "Season1_floor62",
+        "seasonId": "Season1",
+        "floorLevel": 62,
+        "rating": 40,
+        "levelId": "LibraryBattle_51",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor63": {
+        "key": "Season1_floor63",
+        "seasonId": "Season1",
+        "floorLevel": 63,
+        "rating": 40,
+        "levelId": "LibraryBattle_52",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor64": {
+        "key": "Season1_floor64",
+        "seasonId": "Season1",
+        "floorLevel": 64,
+        "rating": 41,
+        "levelId": "LibraryBattle_53",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor65": {
+        "key": "Season1_floor65",
+        "seasonId": "Season1",
+        "floorLevel": 65,
+        "rating": 41,
+        "levelId": "LibraryBattle_54",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor66": {
+        "key": "Season1_floor66",
+        "seasonId": "Season1",
+        "floorLevel": 66,
+        "rating": 42,
+        "levelId": "LibraryBattle_55",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor67": {
+        "key": "Season1_floor67",
+        "seasonId": "Season1",
+        "floorLevel": 67,
+        "rating": 42,
+        "levelId": "LibraryBattle_56",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor68": {
+        "key": "Season1_floor68",
+        "seasonId": "Season1",
+        "floorLevel": 68,
+        "rating": 43,
+        "levelId": "LibraryBattle_57",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor69": {
+        "key": "Season1_floor69",
+        "seasonId": "Season1",
+        "floorLevel": 69,
+        "rating": 43,
+        "levelId": "LibraryTreasure_3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_chest_small"
+    },
+    "Season1_floor70": {
+        "key": "Season1_floor70",
+        "seasonId": "Season1",
+        "floorLevel": 70,
+        "rating": 44,
+        "levelId": "LibraryBattle_58",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor71": {
+        "key": "Season1_floor71",
+        "seasonId": "Season1",
+        "floorLevel": 71,
+        "rating": 44,
+        "levelId": "LibraryBattle_59",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor72": {
+        "key": "Season1_floor72",
+        "seasonId": "Season1",
+        "floorLevel": 72,
+        "rating": 45,
+        "levelId": "LibraryBattle_60",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor73": {
+        "key": "Season1_floor73",
+        "seasonId": "Season1",
+        "floorLevel": 73,
+        "rating": 45,
+        "levelId": "LibraryTreasure_9",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor74": {
+        "key": "Season1_floor74",
+        "seasonId": "Season1",
+        "floorLevel": 74,
+        "rating": 46,
+        "levelId": "LibraryBattle_61",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor75": {
+        "key": "Season1_floor75",
+        "seasonId": "Season1",
+        "floorLevel": 75,
+        "rating": 46,
+        "levelId": "LibraryBattle_62",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor76": {
+        "key": "Season1_floor76",
+        "seasonId": "Season1",
+        "floorLevel": 76,
+        "rating": 47,
+        "levelId": "LibraryBattle_63",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor77": {
+        "key": "Season1_floor77",
+        "seasonId": "Season1",
+        "floorLevel": 77,
+        "rating": 47,
+        "levelId": "LibraryBattle_64",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor78": {
+        "key": "Season1_floor78",
+        "seasonId": "Season1",
+        "floorLevel": 78,
+        "rating": 48,
+        "levelId": "LibraryBattle_65",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor79": {
+        "key": "Season1_floor79",
+        "seasonId": "Season1",
+        "floorLevel": 79,
+        "rating": 48,
+        "levelId": "LibraryBattle_66",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor80": {
+        "key": "Season1_floor80",
+        "seasonId": "Season1",
+        "floorLevel": 80,
+        "rating": 49,
+        "levelId": "LibraryBattle_67",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor81": {
+        "key": "Season1_floor81",
+        "seasonId": "Season1",
+        "floorLevel": 81,
+        "rating": 49,
+        "levelId": "LibraryTreasure_10",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor82": {
+        "key": "Season1_floor82",
+        "seasonId": "Season1",
+        "floorLevel": 82,
+        "rating": 50,
+        "levelId": "LibraryBattle_68",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor83": {
+        "key": "Season1_floor83",
+        "seasonId": "Season1",
+        "floorLevel": 83,
+        "rating": 50,
+        "levelId": "LibraryBattle_69",
+        "unlockPrice": 3,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor84": {
+        "key": "Season1_floor84",
+        "seasonId": "Season1",
+        "floorLevel": 84,
+        "rating": 51,
+        "levelId": "LibraryBattle_70",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor85": {
+        "key": "Season1_floor85",
+        "seasonId": "Season1",
+        "floorLevel": 85,
+        "rating": 51,
+        "levelId": "LibraryTreasure_11",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor86": {
+        "key": "Season1_floor86",
+        "seasonId": "Season1",
+        "floorLevel": 86,
+        "rating": 52,
+        "levelId": "LibraryBattle_71",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor87": {
+        "key": "Season1_floor87",
+        "seasonId": "Season1",
+        "floorLevel": 87,
+        "rating": 52,
+        "levelId": "LibraryBattle_72",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor88": {
+        "key": "Season1_floor88",
+        "seasonId": "Season1",
+        "floorLevel": 88,
+        "rating": 53,
+        "levelId": "LibraryBattle_73",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor89": {
+        "key": "Season1_floor89",
+        "seasonId": "Season1",
+        "floorLevel": 89,
+        "rating": 53,
+        "levelId": "LibraryBattle_74",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor90": {
+        "key": "Season1_floor90",
+        "seasonId": "Season1",
+        "floorLevel": 90,
+        "rating": 54,
+        "levelId": "LibraryBattle_75",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor91": {
+        "key": "Season1_floor91",
+        "seasonId": "Season1",
+        "floorLevel": 91,
+        "rating": 54,
+        "levelId": "LibraryBattle_76",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor92": {
+        "key": "Season1_floor92",
+        "seasonId": "Season1",
+        "floorLevel": 92,
+        "rating": 55,
+        "levelId": "LibraryBattle_77",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor93": {
+        "key": "Season1_floor93",
+        "seasonId": "Season1",
+        "floorLevel": 93,
+        "rating": 55,
+        "levelId": "LibraryTreasure_5",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_chest_small"
+    },
+    "Season1_floor94": {
+        "key": "Season1_floor94",
+        "seasonId": "Season1",
+        "floorLevel": 94,
+        "rating": 56,
+        "levelId": "LibraryBattle_78",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor95": {
+        "key": "Season1_floor95",
+        "seasonId": "Season1",
+        "floorLevel": 95,
+        "rating": 56,
+        "levelId": "LibraryBattle_79",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor96": {
+        "key": "Season1_floor96",
+        "seasonId": "Season1",
+        "floorLevel": 96,
+        "rating": 57,
+        "levelId": "LibraryBattle_80",
+        "unlockPrice": 9,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor97": {
+        "key": "Season1_floor97",
+        "seasonId": "Season1",
+        "floorLevel": 97,
+        "rating": 57,
+        "levelId": "LibraryTreasure_13",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor98": {
+        "key": "Season1_floor98",
+        "seasonId": "Season1",
+        "floorLevel": 98,
+        "rating": 58,
+        "levelId": "LibraryBattle_81",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor99": {
+        "key": "Season1_floor99",
+        "seasonId": "Season1",
+        "floorLevel": 99,
+        "rating": 58,
+        "levelId": "LibraryBattle_82",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor100": {
+        "key": "Season1_floor100",
+        "seasonId": "Season1",
+        "floorLevel": 100,
+        "rating": 59,
+        "levelId": "LibraryBattle_83",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor101": {
+        "key": "Season1_floor101",
+        "seasonId": "Season1",
+        "floorLevel": 101,
+        "rating": 59,
+        "levelId": "LibraryBattle_84",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor102": {
+        "key": "Season1_floor102",
+        "seasonId": "Season1",
+        "floorLevel": 102,
+        "rating": 60,
+        "levelId": "LibraryBattle_85",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor103": {
+        "key": "Season1_floor103",
+        "seasonId": "Season1",
+        "floorLevel": 103,
+        "rating": 60,
+        "levelId": "LibraryBattle_86",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor104": {
+        "key": "Season1_floor104",
+        "seasonId": "Season1",
+        "floorLevel": 104,
+        "rating": 61,
+        "levelId": "LibraryBattle_87",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor105": {
+        "key": "Season1_floor105",
+        "seasonId": "Season1",
+        "floorLevel": 105,
+        "rating": 61,
+        "levelId": "LibraryTreasure_14",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor106": {
+        "key": "Season1_floor106",
+        "seasonId": "Season1",
+        "floorLevel": 106,
+        "rating": 62,
+        "levelId": "LibraryBattle_88",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor107": {
+        "key": "Season1_floor107",
+        "seasonId": "Season1",
+        "floorLevel": 107,
+        "rating": 62,
+        "levelId": "LibraryBattle_89",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor108": {
+        "key": "Season1_floor108",
+        "seasonId": "Season1",
+        "floorLevel": 108,
+        "rating": 63,
+        "levelId": "LibraryBattle_90",
+        "unlockPrice": 9,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor109": {
+        "key": "Season1_floor109",
+        "seasonId": "Season1",
+        "floorLevel": 109,
+        "rating": 63,
+        "levelId": "LibraryTreasure_15",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor110": {
+        "key": "Season1_floor110",
+        "seasonId": "Season1",
+        "floorLevel": 110,
+        "rating": 64,
+        "levelId": "LibraryBattle_91",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor111": {
+        "key": "Season1_floor111",
+        "seasonId": "Season1",
+        "floorLevel": 111,
+        "rating": 64,
+        "levelId": "LibraryBattle_92",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor112": {
+        "key": "Season1_floor112",
+        "seasonId": "Season1",
+        "floorLevel": 112,
+        "rating": 65,
+        "levelId": "LibraryBattle_93",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor113": {
+        "key": "Season1_floor113",
+        "seasonId": "Season1",
+        "floorLevel": 113,
+        "rating": 65,
+        "levelId": "LibraryBattle_94",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor114": {
+        "key": "Season1_floor114",
+        "seasonId": "Season1",
+        "floorLevel": 114,
+        "rating": 66,
+        "levelId": "LibraryBattle_95",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor115": {
+        "key": "Season1_floor115",
+        "seasonId": "Season1",
+        "floorLevel": 115,
+        "rating": 66,
+        "levelId": "LibraryBattle_96",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor116": {
+        "key": "Season1_floor116",
+        "seasonId": "Season1",
+        "floorLevel": 116,
+        "rating": 67,
+        "levelId": "LibraryBattle_97",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor117": {
+        "key": "Season1_floor117",
+        "seasonId": "Season1",
+        "floorLevel": 117,
+        "rating": 67,
+        "levelId": "LibraryTreasure_16",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "epic_chest_small"
+    },
+    "Season1_floor118": {
+        "key": "Season1_floor118",
+        "seasonId": "Season1",
+        "floorLevel": 118,
+        "rating": 68,
+        "levelId": "LibraryBattle_98",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor119": {
+        "key": "Season1_floor119",
+        "seasonId": "Season1",
+        "floorLevel": 119,
+        "rating": 68,
+        "levelId": "LibraryBattle_99",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor120": {
+        "key": "Season1_floor120",
+        "seasonId": "Season1",
+        "floorLevel": 120,
+        "rating": 69,
+        "levelId": "LibraryBattle_100",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor121": {
+        "key": "Season1_floor121",
+        "seasonId": "Season1",
+        "floorLevel": 121,
+        "rating": 69,
+        "levelId": "LibraryTreasure_17",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor122": {
+        "key": "Season1_floor122",
+        "seasonId": "Season1",
+        "floorLevel": 122,
+        "rating": 70,
+        "levelId": "LibraryBattle_101",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor123": {
+        "key": "Season1_floor123",
+        "seasonId": "Season1",
+        "floorLevel": 123,
+        "rating": 70,
+        "levelId": "LibraryBattle_102",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor124": {
+        "key": "Season1_floor124",
+        "seasonId": "Season1",
+        "floorLevel": 124,
+        "rating": 71,
+        "levelId": "LibraryBattle_103",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor125": {
+        "key": "Season1_floor125",
+        "seasonId": "Season1",
+        "floorLevel": 125,
+        "rating": 71,
+        "levelId": "LibraryBattle_104",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor126": {
+        "key": "Season1_floor126",
+        "seasonId": "Season1",
+        "floorLevel": 126,
+        "rating": 72,
+        "levelId": "LibraryBattle_105",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor127": {
+        "key": "Season1_floor127",
+        "seasonId": "Season1",
+        "floorLevel": 127,
+        "rating": 72,
+        "levelId": "LibraryBattle_106",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor128": {
+        "key": "Season1_floor128",
+        "seasonId": "Season1",
+        "floorLevel": 128,
+        "rating": 73,
+        "levelId": "LibraryBattle_107",
+        "unlockPrice": 7,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor129": {
+        "key": "Season1_floor129",
+        "seasonId": "Season1",
+        "floorLevel": 129,
+        "rating": 73,
+        "levelId": "LibraryTreasure_18",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor130": {
+        "key": "Season1_floor130",
+        "seasonId": "Season1",
+        "floorLevel": 130,
+        "rating": 74,
+        "levelId": "LibraryBattle_108",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor131": {
+        "key": "Season1_floor131",
+        "seasonId": "Season1",
+        "floorLevel": 131,
+        "rating": 74,
+        "levelId": "LibraryBattle_109",
+        "unlockPrice": 4,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor132": {
+        "key": "Season1_floor132",
+        "seasonId": "Season1",
+        "floorLevel": 132,
+        "rating": 75,
+        "levelId": "LibraryBattle_110",
+        "unlockPrice": 9,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor133": {
+        "key": "Season1_floor133",
+        "seasonId": "Season1",
+        "floorLevel": 133,
+        "rating": 75,
+        "levelId": "LibraryTreasure_19",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor134": {
+        "key": "Season1_floor134",
+        "seasonId": "Season1",
+        "floorLevel": 134,
+        "rating": 76,
+        "levelId": "LibraryBattle_111",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor135": {
+        "key": "Season1_floor135",
+        "seasonId": "Season1",
+        "floorLevel": 135,
+        "rating": 76,
+        "levelId": "LibraryBattle_112",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor136": {
+        "key": "Season1_floor136",
+        "seasonId": "Season1",
+        "floorLevel": 136,
+        "rating": 77,
+        "levelId": "LibraryBattle_113",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor137": {
+        "key": "Season1_floor137",
+        "seasonId": "Season1",
+        "floorLevel": 137,
+        "rating": 77,
+        "levelId": "LibraryBattle_114",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor138": {
+        "key": "Season1_floor138",
+        "seasonId": "Season1",
+        "floorLevel": 138,
+        "rating": 78,
+        "levelId": "LibraryBattle_115",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor139": {
+        "key": "Season1_floor139",
+        "seasonId": "Season1",
+        "floorLevel": 139,
+        "rating": 78,
+        "levelId": "LibraryBattle_116",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor140": {
+        "key": "Season1_floor140",
+        "seasonId": "Season1",
+        "floorLevel": 140,
+        "rating": 79,
+        "levelId": "LibraryBattle_117",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor141": {
+        "key": "Season1_floor141",
+        "seasonId": "Season1",
+        "floorLevel": 141,
+        "rating": 79,
+        "levelId": "LibraryTreasure_20",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "epic_chest_small"
+    },
+    "Season1_floor142": {
+        "key": "Season1_floor142",
+        "seasonId": "Season1",
+        "floorLevel": 142,
+        "rating": 80,
+        "levelId": "LibraryBattle_118",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor143": {
+        "key": "Season1_floor143",
+        "seasonId": "Season1",
+        "floorLevel": 143,
+        "rating": 80,
+        "levelId": "LibraryBattle_119",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor144": {
+        "key": "Season1_floor144",
+        "seasonId": "Season1",
+        "floorLevel": 144,
+        "rating": 81,
+        "levelId": "LibraryBattle_120",
+        "unlockPrice": 15,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor145": {
+        "key": "Season1_floor145",
+        "seasonId": "Season1",
+        "floorLevel": 145,
+        "rating": 81,
+        "levelId": "LibraryTreasure_8",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor146": {
+        "key": "Season1_floor146",
+        "seasonId": "Season1",
+        "floorLevel": 146,
+        "rating": 82,
+        "levelId": "LibraryBattle_121",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor147": {
+        "key": "Season1_floor147",
+        "seasonId": "Season1",
+        "floorLevel": 147,
+        "rating": 82,
+        "levelId": "LibraryBattle_122",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor148": {
+        "key": "Season1_floor148",
+        "seasonId": "Season1",
+        "floorLevel": 148,
+        "rating": 83,
+        "levelId": "LibraryBattle_123",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor149": {
+        "key": "Season1_floor149",
+        "seasonId": "Season1",
+        "floorLevel": 149,
+        "rating": 83,
+        "levelId": "LibraryBattle_124",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor150": {
+        "key": "Season1_floor150",
+        "seasonId": "Season1",
+        "floorLevel": 150,
+        "rating": 84,
+        "levelId": "LibraryBattle_125",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor151": {
+        "key": "Season1_floor151",
+        "seasonId": "Season1",
+        "floorLevel": 151,
+        "rating": 84,
+        "levelId": "LibraryBattle_126",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor152": {
+        "key": "Season1_floor152",
+        "seasonId": "Season1",
+        "floorLevel": 152,
+        "rating": 85,
+        "levelId": "LibraryBattle_127",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor153": {
+        "key": "Season1_floor153",
+        "seasonId": "Season1",
+        "floorLevel": 153,
+        "rating": 85,
+        "levelId": "LibraryTreasure_21",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor154": {
+        "key": "Season1_floor154",
+        "seasonId": "Season1",
+        "floorLevel": 154,
+        "rating": 86,
+        "levelId": "LibraryBattle_128",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor155": {
+        "key": "Season1_floor155",
+        "seasonId": "Season1",
+        "floorLevel": 155,
+        "rating": 86,
+        "levelId": "LibraryBattle_129",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor156": {
+        "key": "Season1_floor156",
+        "seasonId": "Season1",
+        "floorLevel": 156,
+        "rating": 87,
+        "levelId": "LibraryBattle_130",
+        "unlockPrice": 15,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor157": {
+        "key": "Season1_floor157",
+        "seasonId": "Season1",
+        "floorLevel": 157,
+        "rating": 87,
+        "levelId": "LibraryTreasure_22",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor158": {
+        "key": "Season1_floor158",
+        "seasonId": "Season1",
+        "floorLevel": 158,
+        "rating": 88,
+        "levelId": "LibraryBattle_131",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor159": {
+        "key": "Season1_floor159",
+        "seasonId": "Season1",
+        "floorLevel": 159,
+        "rating": 88,
+        "levelId": "LibraryBattle_132",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor160": {
+        "key": "Season1_floor160",
+        "seasonId": "Season1",
+        "floorLevel": 160,
+        "rating": 89,
+        "levelId": "LibraryBattle_133",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor161": {
+        "key": "Season1_floor161",
+        "seasonId": "Season1",
+        "floorLevel": 161,
+        "rating": 89,
+        "levelId": "LibraryBattle_134",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor162": {
+        "key": "Season1_floor162",
+        "seasonId": "Season1",
+        "floorLevel": 162,
+        "rating": 90,
+        "levelId": "LibraryBattle_135",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor163": {
+        "key": "Season1_floor163",
+        "seasonId": "Season1",
+        "floorLevel": 163,
+        "rating": 90,
+        "levelId": "LibraryBattle_136",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor164": {
+        "key": "Season1_floor164",
+        "seasonId": "Season1",
+        "floorLevel": 164,
+        "rating": 91,
+        "levelId": "LibraryBattle_137",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor165": {
+        "key": "Season1_floor165",
+        "seasonId": "Season1",
+        "floorLevel": 165,
+        "rating": 91,
+        "levelId": "LibraryTreasure_16",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "epic_chest_small"
+    },
+    "Season1_floor166": {
+        "key": "Season1_floor166",
+        "seasonId": "Season1",
+        "floorLevel": 166,
+        "rating": 92,
+        "levelId": "LibraryBattle_138",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor167": {
+        "key": "Season1_floor167",
+        "seasonId": "Season1",
+        "floorLevel": 167,
+        "rating": 92,
+        "levelId": "LibraryBattle_139",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor168": {
+        "key": "Season1_floor168",
+        "seasonId": "Season1",
+        "floorLevel": 168,
+        "rating": 93,
+        "levelId": "LibraryBattle_140",
+        "unlockPrice": 15,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor169": {
+        "key": "Season1_floor169",
+        "seasonId": "Season1",
+        "floorLevel": 169,
+        "rating": 93,
+        "levelId": "LibraryTreasure_23",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "Season1_floor170": {
+        "key": "Season1_floor170",
+        "seasonId": "Season1",
+        "floorLevel": 170,
+        "rating": 94,
+        "levelId": "LibraryBattle_141",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor171": {
+        "key": "Season1_floor171",
+        "seasonId": "Season1",
+        "floorLevel": 171,
+        "rating": 94,
+        "levelId": "LibraryBattle_142",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor172": {
+        "key": "Season1_floor172",
+        "seasonId": "Season1",
+        "floorLevel": 172,
+        "rating": 95,
+        "levelId": "LibraryBattle_143",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor173": {
+        "key": "Season1_floor173",
+        "seasonId": "Season1",
+        "floorLevel": 173,
+        "rating": 95,
+        "levelId": "LibraryBattle_144",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor174": {
+        "key": "Season1_floor174",
+        "seasonId": "Season1",
+        "floorLevel": 174,
+        "rating": 96,
+        "levelId": "LibraryBattle_145",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor175": {
+        "key": "Season1_floor175",
+        "seasonId": "Season1",
+        "floorLevel": 175,
+        "rating": 96,
+        "levelId": "LibraryBattle_146",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor176": {
+        "key": "Season1_floor176",
+        "seasonId": "Season1",
+        "floorLevel": 176,
+        "rating": 97,
+        "levelId": "LibraryBattle_147",
+        "unlockPrice": 10,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor177": {
+        "key": "Season1_floor177",
+        "seasonId": "Season1",
+        "floorLevel": 177,
+        "rating": 97,
+        "levelId": "LibraryTreasure_24",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem"
+    },
+    "Season1_floor178": {
+        "key": "Season1_floor178",
+        "seasonId": "Season1",
+        "floorLevel": 178,
+        "rating": 98,
+        "levelId": "LibraryBattle_148",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor179": {
+        "key": "Season1_floor179",
+        "seasonId": "Season1",
+        "floorLevel": 179,
+        "rating": 98,
+        "levelId": "LibraryBattle_149",
+        "unlockPrice": 5,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor180": {
+        "key": "Season1_floor180",
+        "seasonId": "Season1",
+        "floorLevel": 180,
+        "rating": 99,
+        "levelId": "LibraryBattle_150",
+        "unlockPrice": 20,
+        "unlockCurrency": "LibraryKey",
+        "shortcutIcon": null
+    },
+    "Season1_floor181": {
+        "key": "Season1_floor181",
+        "seasonId": "Season1",
+        "floorLevel": 181,
+        "rating": 100,
+        "levelId": "LibraryTreasure_25",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "gold_gem_book"
+    },
+    "Season1_floor13": {
+        "key": "Season1_floor13",
+        "seasonId": "Season1",
+        "floorLevel": 13,
+        "rating": 15,
+        "levelId": "LibraryTreasure_1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": "icon_talent_book"
+    },
+    "SeasonAxeThrowers_day1_floor1": {
+        "key": "SeasonAxeThrowers_day1_floor1",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 1,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor2": {
+        "key": "SeasonAxeThrowers_day1_floor2",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 2,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor3": {
+        "key": "SeasonAxeThrowers_day1_floor3",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 3,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor4": {
+        "key": "SeasonAxeThrowers_day1_floor4",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 4,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor5": {
+        "key": "SeasonAxeThrowers_day1_floor5",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 5,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor6": {
+        "key": "SeasonAxeThrowers_day1_floor6",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 6,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor7": {
+        "key": "SeasonAxeThrowers_day1_floor7",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 7,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor8": {
+        "key": "SeasonAxeThrowers_day1_floor8",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 8,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_4",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor9": {
+        "key": "SeasonAxeThrowers_day1_floor9",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 9,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure4",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor10": {
+        "key": "SeasonAxeThrowers_day1_floor10",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 10,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_5",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day1_floor11": {
+        "key": "SeasonAxeThrowers_day1_floor11",
+        "seasonId": "SeasonAxeThrowers_Day1",
+        "floorLevel": 11,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Final_Treasure",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor1": {
+        "key": "SeasonAxeThrowers_day2_floor1",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 1,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor2": {
+        "key": "SeasonAxeThrowers_day2_floor2",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 2,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_6",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor3": {
+        "key": "SeasonAxeThrowers_day2_floor3",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 3,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day2_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor4": {
+        "key": "SeasonAxeThrowers_day2_floor4",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 4,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_7",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor5": {
+        "key": "SeasonAxeThrowers_day2_floor5",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 5,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day2_Treasure2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor6": {
+        "key": "SeasonAxeThrowers_day2_floor6",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 6,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_8",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor7": {
+        "key": "SeasonAxeThrowers_day2_floor7",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 7,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor8": {
+        "key": "SeasonAxeThrowers_day2_floor8",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 8,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_9",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor9": {
+        "key": "SeasonAxeThrowers_day2_floor9",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 9,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day2_Treasure3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor10": {
+        "key": "SeasonAxeThrowers_day2_floor10",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 10,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_10",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day2_floor11": {
+        "key": "SeasonAxeThrowers_day2_floor11",
+        "seasonId": "SeasonAxeThrowers_Day2",
+        "floorLevel": 11,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Final_Treasure",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor1": {
+        "key": "SeasonAxeThrowers_day3_floor1",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 1,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor2": {
+        "key": "SeasonAxeThrowers_day3_floor2",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 2,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_11",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor3": {
+        "key": "SeasonAxeThrowers_day3_floor3",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 3,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day3_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor4": {
+        "key": "SeasonAxeThrowers_day3_floor4",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 4,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_12",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor5": {
+        "key": "SeasonAxeThrowers_day3_floor5",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 5,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day3_Treasure2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor6": {
+        "key": "SeasonAxeThrowers_day3_floor6",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 6,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_13",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor7": {
+        "key": "SeasonAxeThrowers_day3_floor7",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 7,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor8": {
+        "key": "SeasonAxeThrowers_day3_floor8",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 8,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_14",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor9": {
+        "key": "SeasonAxeThrowers_day3_floor9",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 9,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day3_Treasure3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor10": {
+        "key": "SeasonAxeThrowers_day3_floor10",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 10,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_15",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day3_floor11": {
+        "key": "SeasonAxeThrowers_day3_floor11",
+        "seasonId": "SeasonAxeThrowers_Day3",
+        "floorLevel": 11,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Final_Treasure",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor1": {
+        "key": "SeasonAxeThrowers_day4_floor1",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 1,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor2": {
+        "key": "SeasonAxeThrowers_day4_floor2",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 2,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_16",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor3": {
+        "key": "SeasonAxeThrowers_day4_floor3",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 3,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day4_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor4": {
+        "key": "SeasonAxeThrowers_day4_floor4",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 4,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_17",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor5": {
+        "key": "SeasonAxeThrowers_day4_floor5",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 5,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day4_Treasure2",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor6": {
+        "key": "SeasonAxeThrowers_day4_floor6",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 6,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_18",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor7": {
+        "key": "SeasonAxeThrowers_day4_floor7",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 7,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day1_Treasure1",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor8": {
+        "key": "SeasonAxeThrowers_day4_floor8",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 8,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_19",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor9": {
+        "key": "SeasonAxeThrowers_day4_floor9",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 9,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Day4_Treasure3",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor10": {
+        "key": "SeasonAxeThrowers_day4_floor10",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 10,
+        "rating": 0,
+        "levelId": "libraryAxeThrowersBattle_20",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    },
+    "SeasonAxeThrowers_day4_floor11": {
+        "key": "SeasonAxeThrowers_day4_floor11",
+        "seasonId": "SeasonAxeThrowers_Day4",
+        "floorLevel": 11,
+        "rating": 0,
+        "levelId": "LibraryAxeThrowers_Final_Treasure",
+        "unlockPrice": 0,
+        "unlockCurrency": null,
+        "shortcutIcon": null
+    }
+}

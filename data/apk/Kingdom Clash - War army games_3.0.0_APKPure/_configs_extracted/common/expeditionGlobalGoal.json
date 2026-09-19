@@ -1,0 +1,18 @@
+{
+    "global_goal_ultrashort": {
+        "key": "global_goal_ultrashort",
+        "description": "caption_expedition_requirements_ultrashort"
+    },
+    "global_goal_short": {
+        "key": "global_goal_short",
+        "description": "caption_expedition_requirements_short"
+    },
+    "global_goal_medium": {
+        "key": "global_goal_medium",
+        "description": "caption_expedition_requirements_medium"
+    },
+    "global_goal_long": {
+        "key": "global_goal_long",
+        "description": "caption_expedition_requirements_long"
+    }
+}

@@ -1,0 +1,429 @@
+{
+    "InitialPass": {
+        "key": "InitialPass",
+        "battlepassLinkId": "InitialPass",
+        "number": 1,
+        "startAt": 1636309800,
+        "endAt": 1641061800
+    },
+    "SecondSeason": {
+        "key": "SecondSeason",
+        "battlepassLinkId": "SecondSeason",
+        "number": 2,
+        "startAt": 1641061801,
+        "endAt": 1643653800
+    },
+    "ThirdSeason": {
+        "key": "ThirdSeason",
+        "battlepassLinkId": "ThirdSeason",
+        "number": 3,
+        "startAt": 1643653801,
+        "endAt": 1646073000
+    },
+    "FourthSeason": {
+        "key": "FourthSeason",
+        "battlepassLinkId": "FourthSeason",
+        "number": 4,
+        "startAt": 1646073001,
+        "endAt": 1648751400
+    },
+    "FifthSeason": {
+        "key": "FifthSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 5,
+        "startAt": 1648751401,
+        "endAt": 1651343400
+    },
+    "SixthSeason": {
+        "key": "SixthSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 6,
+        "startAt": 1651343401,
+        "endAt": 1654021800
+    },
+    "SeventhSeason": {
+        "key": "SeventhSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 7,
+        "startAt": 1654021801,
+        "endAt": 1656613800
+    },
+    "EighthSeason": {
+        "key": "EighthSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 8,
+        "startAt": 1656613801,
+        "endAt": 1659292200
+    },
+    "NinthSeason": {
+        "key": "NinthSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 9,
+        "startAt": 1659292201,
+        "endAt": 1661970600
+    },
+    "TenthSeason": {
+        "key": "TenthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 10,
+        "startAt": 1661970601,
+        "endAt": 1664562600
+    },
+    "EleventhSeason": {
+        "key": "EleventhSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 11,
+        "startAt": 1664562601,
+        "endAt": 1667241000
+    },
+    "TwelfthSeason": {
+        "key": "TwelfthSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 12,
+        "startAt": 1667241001,
+        "endAt": 1669833000
+    },
+    "ThirteenthSeason": {
+        "key": "ThirteenthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 13,
+        "startAt": 1669833001,
+        "endAt": 1672511400
+    },
+    "FourteenthSeason": {
+        "key": "FourteenthSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 14,
+        "startAt": 1672511401,
+        "endAt": 1675189800
+    },
+    "FifteenthSeason": {
+        "key": "FifteenthSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 15,
+        "startAt": 1675189801,
+        "endAt": 1677868200
+    },
+    "SixteenthSeason": {
+        "key": "SixteenthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 16,
+        "startAt": 1677868201,
+        "endAt": 1680546600
+    },
+    "SeventeenthSeason": {
+        "key": "SeventeenthSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 17,
+        "startAt": 1680546601,
+        "endAt": 1683225000
+    },
+    "EighteenthSeason": {
+        "key": "EighteenthSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 18,
+        "startAt": 1683225001,
+        "endAt": 1685903400
+    },
+    "NineteenthSeason": {
+        "key": "NineteenthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 19,
+        "startAt": 1685903401,
+        "endAt": 1688581800
+    },
+    "TwentiethSeason": {
+        "key": "TwentiethSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 20,
+        "startAt": 1688581801,
+        "endAt": 1690828200
+    },
+    "TwentyFirstSeason": {
+        "key": "TwentyFirstSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 21,
+        "startAt": 1690828201,
+        "endAt": 1693506600
+    },
+    "TwentySecondSeason": {
+        "key": "TwentySecondSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 22,
+        "startAt": 1693506601,
+        "endAt": 1696098600
+    },
+    "TwentyThirdSeason": {
+        "key": "TwentyThirdSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 23,
+        "startAt": 1696098601,
+        "endAt": 1698777000
+    },
+    "TwentyFourthSeason": {
+        "key": "TwentyFourthSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 24,
+        "startAt": 1698777001,
+        "endAt": 1701369000
+    },
+    "TwentyFifthSeason": {
+        "key": "TwentyFifthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 25,
+        "startAt": 1701369001,
+        "endAt": 1704047400
+    },
+    "TwentySixthSeason": {
+        "key": "TwentySixthSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 26,
+        "startAt": 1704047401,
+        "endAt": 1706725800
+    },
+    "TwentySeventhSeason": {
+        "key": "TwentySeventhSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 27,
+        "startAt": 1706725801,
+        "endAt": 1709231400
+    },
+    "TwentyEighthSeason": {
+        "key": "TwentyEighthSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 28,
+        "startAt": 1709231401,
+        "endAt": 1711909800
+    },
+    "TwentyNinthSeason": {
+        "key": "TwentyNinthSeason",
+        "battlepassLinkId": "EighthSeason",
+        "number": 29,
+        "startAt": 1711909801,
+        "endAt": 1714501800
+    },
+    "ThirtiethSeason": {
+        "key": "ThirtiethSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 30,
+        "startAt": 1714501801,
+        "endAt": 1717200000
+    },
+    "ThirtyFirstSeason": {
+        "key": "ThirtyFirstSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 31,
+        "startAt": 1717200001,
+        "endAt": 1719792000
+    },
+    "ThirtySecondSeason": {
+        "key": "ThirtySecondSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 32,
+        "startAt": 1719792001,
+        "endAt": 1722470400
+    },
+    "ThirtyThirdSeason": {
+        "key": "ThirtyThirdSeason",
+        "battlepassLinkId": "NinthSeason",
+        "number": 33,
+        "startAt": 1722470401,
+        "endAt": 1725148800
+    },
+    "ThirtyFourthSeason": {
+        "key": "ThirtyFourthSeason",
+        "battlepassLinkId": "TenthSeason_Gasket",
+        "number": 34,
+        "startAt": 1725148801,
+        "endAt": 1727740800
+    },
+    "ThirtyFifthSeason": {
+        "key": "ThirtyFifthSeason",
+        "battlepassLinkId": "EleventhSeason",
+        "number": 35,
+        "startAt": 1727740801,
+        "endAt": 1730419200
+    },
+    "ThirtySixthSeason": {
+        "key": "ThirtySixthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 36,
+        "startAt": 1730419201,
+        "endAt": 1733011200
+    },
+    "ThirtySeventhSeason": {
+        "key": "ThirtySeventhSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 37,
+        "startAt": 1733011201,
+        "endAt": 1735689600
+    },
+    "ThirtyEighthSeason": {
+        "key": "ThirtyEighthSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 38,
+        "startAt": 1735689601,
+        "endAt": 1738368000
+    },
+    "ThirtyNinthSeason": {
+        "key": "ThirtyNinthSeason",
+        "battlepassLinkId": "TenthSeason",
+        "number": 39,
+        "startAt": 1738368001,
+        "endAt": 1740787200
+    },
+    "FortiethSeason": {
+        "key": "FortiethSeason",
+        "battlepassLinkId": "EleventhSeason",
+        "number": 40,
+        "startAt": 1740787201,
+        "endAt": 1743465600
+    },
+    "FortyFirstSeason": {
+        "key": "FortyFirstSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 41,
+        "startAt": 1743465601,
+        "endAt": 1746057600
+    },
+    "FortySecondSeason": {
+        "key": "FortySecondSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 42,
+        "startAt": 1746057601,
+        "endAt": 1748736000
+    },
+    "FortyThirdSeason": {
+        "key": "FortyThirdSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 43,
+        "startAt": 1748736001,
+        "endAt": 1751328000
+    },
+    "FortyFourthSeason": {
+        "key": "FortyFourthSeason",
+        "battlepassLinkId": "TenthSeason",
+        "number": 44,
+        "startAt": 1751328001,
+        "endAt": 1754006400
+    },
+    "FortyFifthSeason": {
+        "key": "FortyFifthSeason",
+        "battlepassLinkId": "EleventhSeason",
+        "number": 45,
+        "startAt": 1754006401,
+        "endAt": 1756684800
+    },
+    "FortySixthSeason": {
+        "key": "FortySixthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 46,
+        "startAt": 1756684801,
+        "endAt": 1759276800
+    },
+    "FortySeventhSeason": {
+        "key": "FortySeventhSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 47,
+        "startAt": 1759276801,
+        "endAt": 1761955200
+    },
+    "FortyEighthSeason": {
+        "key": "FortyEighthSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 48,
+        "startAt": 1761955201,
+        "endAt": 1764547200
+    },
+    "FortyNinthSeason": {
+        "key": "FortyNinthSeason",
+        "battlepassLinkId": "TwelveSeason",
+        "number": 49,
+        "startAt": 1764547201,
+        "endAt": 1767225600
+    },
+    "FiftiethSeason": {
+        "key": "FiftiethSeason",
+        "battlepassLinkId": "ThirteenSeason",
+        "number": 50,
+        "startAt": 1767225601,
+        "endAt": 1769904000
+    },
+    "FiftyFirstSeason": {
+        "key": "FiftyFirstSeason",
+        "battlepassLinkId": "TenthSeason",
+        "number": 51,
+        "startAt": 1769904001,
+        "endAt": 1772323200
+    },
+    "FiftySecondSeason": {
+        "key": "FiftySecondSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 52,
+        "startAt": 1772323201,
+        "endAt": 1775001600
+    },
+    "FiftyThirdSeason": {
+        "key": "FiftyThirdSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 53,
+        "startAt": 1775001601,
+        "endAt": 1777593600
+    },
+    "FiftyFourthSeason": {
+        "key": "FiftyFourthSeason",
+        "battlepassLinkId": "EleventhSeason",
+        "number": 54,
+        "startAt": 1777593601,
+        "endAt": 1780272000
+    },
+    "FiftyFifthSeason": {
+        "key": "FiftyFifthSeason",
+        "battlepassLinkId": "TwelveSeason",
+        "number": 55,
+        "startAt": 1780272001,
+        "endAt": 1782864000
+    },
+    "FiftySixthSeason": {
+        "key": "FiftySixthSeason",
+        "battlepassLinkId": "SixthSeason",
+        "number": 56,
+        "startAt": 1782864001,
+        "endAt": 1785542400
+    },
+    "FiftySeventhSeason": {
+        "key": "FiftySeventhSeason",
+        "battlepassLinkId": "ThirteenSeason",
+        "number": 57,
+        "startAt": 1785542401,
+        "endAt": 1788220800
+    },
+    "FiftyEighthSeason": {
+        "key": "FiftyEighthSeason",
+        "battlepassLinkId": "TenthSeason",
+        "number": 58,
+        "startAt": 1788220801,
+        "endAt": 1790812800
+    },
+    "FiftyNinthSeason": {
+        "key": "FiftyNinthSeason",
+        "battlepassLinkId": "SeventhSeason",
+        "number": 59,
+        "startAt": 1790812801,
+        "endAt": 1793491200
+    },
+    "SixtiethSeason": {
+        "key": "SixtiethSeason",
+        "battlepassLinkId": "FifthSeason",
+        "number": 60,
+        "startAt": 1793491201,
+        "endAt": 1796083200
+    },
+    "SixtyFirstSeason": {
+        "key": "SixtyFirstSeason",
+        "battlepassLinkId": "EleventhSeason",
+        "number": 61,
+        "startAt": 1796083201,
+        "endAt": 1798761600
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "goldAccurateMerida": {
+        "key": "goldAccurateMerida",
+        "title_Localized": "Hero_Gold_Merida_Title",
+        "heroSkinId": "accurateMeridaGoldSkin",
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 4000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "silverAccurateMerida": {
+        "key": "silverAccurateMerida",
+        "title_Localized": "Hero_Silver_Merida_Title",
+        "heroSkinId": "accurateMeridaSilverSkin",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "silver_merida",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    }
+}

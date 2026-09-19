@@ -1,0 +1,112 @@
+{
+    "woodChest": {
+        "key": "woodChest",
+        "iconId": "woodChest",
+        "smallIconId": "woodChestSmall"
+    },
+    "goldChest": {
+        "key": "goldChest",
+        "iconId": "goldChest",
+        "smallIconId": "goldChestSmall"
+    },
+    "epicChest": {
+        "key": "epicChest",
+        "iconId": "epicChest",
+        "smallIconId": "epicChestSmall"
+    },
+    "rewardGold": {
+        "key": "rewardGold",
+        "iconId": "bag_coin",
+        "smallIconId": "bag_coin"
+    },
+    "rewardGem": {
+        "key": "rewardGem",
+        "iconId": "bag_gem",
+        "smallIconId": "bag_gem"
+    },
+    "rewardRouletteSpin": {
+        "key": "rewardRouletteSpin",
+        "iconId": "roulette_spin",
+        "smallIconId": "roulette_spin"
+    },
+    "rewardBadgesX2": {
+        "key": "rewardBadgesX2",
+        "iconId": "badgesX2",
+        "smallIconId": "badgesX2"
+    },
+    "rewardGemHh": {
+        "key": "rewardGemHh",
+        "iconId": "gem",
+        "smallIconId": "gem"
+    },
+    "rewardTalentSphere": {
+        "key": "rewardTalentSphere",
+        "iconId": "icon_talent_book",
+        "smallIconId": "icon_talent_book"
+    },
+    "endlessChest": {
+        "key": "endlessChest",
+        "iconId": "battlepass_arena_endless_chest",
+        "smallIconId": "battlepass_arena_endless_chest"
+    },
+    "rewardGoldRace": {
+        "key": "rewardGoldRace",
+        "iconId": "small_coin",
+        "smallIconId": "small_coin"
+    },
+    "rewardGemRace": {
+        "key": "rewardGemRace",
+        "iconId": "gem",
+        "smallIconId": "gem"
+    },
+    "rewardGemClanShop": {
+        "key": "rewardGemClanShop",
+        "iconId": "small_gem",
+        "smallIconId": "small_gem"
+    },
+    "rewardGoldClanShop": {
+        "key": "rewardGoldClanShop",
+        "iconId": "small_coin",
+        "smallIconId": "small_coin"
+    },
+    "booster_daily": {
+        "key": "booster_daily",
+        "iconId": "booster_daily",
+        "smallIconId": "booster_daily"
+    },
+    "booster_wisdom": {
+        "key": "booster_wisdom",
+        "iconId": "booster_wisdom",
+        "smallIconId": "booster_wisdom"
+    },
+    "rewardCasinoTicket": {
+        "key": "rewardCasinoTicket",
+        "iconId": "casinoRoulette_ticket",
+        "smallIconId": "casinoRoulette_ticket"
+    },
+    "rewardCasinoGem": {
+        "key": "rewardCasinoGem",
+        "iconId": "gem",
+        "smallIconId": "gem"
+    },
+    "rewardCasinoGold": {
+        "key": "rewardCasinoGold",
+        "iconId": "gold",
+        "smallIconId": "gold"
+    },
+    "elevateChest": {
+        "key": "elevateChest",
+        "iconId": "elevateChest",
+        "smallIconId": "elevateChest"
+    },
+    "demonChest": {
+        "key": "demonChest",
+        "iconId": "demonChest",
+        "smallIconId": "demonChest"
+    },
+    "rewardCasinoKingTicket": {
+        "key": "rewardCasinoKingTicket",
+        "iconId": "casinoKingRoulette_ticket",
+        "smallIconId": "casinoKingRoulette_ticket"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "oneWeaponChest": {
+        "key": "oneWeaponChest"
+    },
+    "oneArmorChest": {
+        "key": "oneArmorChest"
+    },
+    "twoWeaponChest": {
+        "key": "twoWeaponChest"
+    },
+    "twoArmorChest": {
+        "key": "twoArmorChest"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "firstHeroChestReward": {
+        "key": "firstHeroChestReward"
+    },
+    "allHeroChestReward": {
+        "key": "allHeroChestReward"
+    },
+    "allHeroTwoChestReward": {
+        "key": "allHeroTwoChestReward"
+    },
+    "allHeroThreeChestReward": {
+        "key": "allHeroThreeChestReward"
+    },
+    "allHeroFourChestReward": {
+        "key": "allHeroFourChestReward"
+    },
+    "epicLegChestReward": {
+        "key": "epicLegChestReward"
+    },
+    "rareEpicChestReward": {
+        "key": "rareEpicChestReward"
+    },
+    "secondHeroChestReward": {
+        "key": "secondHeroChestReward"
+    },
+    "thirdHeroChestReward": {
+        "key": "thirdHeroChestReward"
+    },
+    "epicHeroClanShopReward": {
+        "key": "epicHeroClanShopReward"
+    },
+    "legHeroClanShopReward": {
+        "key": "legHeroClanShopReward"
+    },
+    "mythHeroElevateChest": {
+        "key": "mythHeroElevateChest"
+    },
+    "mythHeroDemonChest": {
+        "key": "mythHeroDemonChest"
+    }
+}

@@ -1,0 +1,1192 @@
+{
+    "offer_dragonRider": {
+        "key": "offer_dragonRider",
+        "title_Localized": null,
+        "heroId": "dragonRider",
+        "count": 1,
+        "iconId": "icon_offer_dragon",
+        "analyticsCategory": null,
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_1": {
+        "key": "offerHero_1",
+        "title_Localized": "Hero_DarkKnight_Name",
+        "heroId": "darkKnight",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 400,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_2": {
+        "key": "offerHero_2",
+        "title_Localized": "Hero_ClericHero_Name",
+        "heroId": "clericHero",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 400,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_3": {
+        "key": "offerHero_3",
+        "title_Localized": "Hero_Merida_Name",
+        "heroId": "accurateMerida",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 400,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_4": {
+        "key": "offerHero_4",
+        "title_Localized": "Hero_General_Name",
+        "heroId": "general",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 250,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_5": {
+        "key": "offerHero_5",
+        "title_Localized": "Hero_SwordmasterFulgrim_Name",
+        "heroId": "swordmasterHero",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 250,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerHero_6": {
+        "key": "offerHero_6",
+        "title_Localized": "Hero_BaronBenua_Name",
+        "heroId": "baronBenua",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "HuntMedal",
+        "priceCurrencyAmount": 250,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_darknessMage": {
+        "key": "clan_offerHero_leg_darknessMage",
+        "title_Localized": "Hero_DarknessMage_Name",
+        "heroId": "darknessMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_lordInquisitor": {
+        "key": "clan_offerHero_leg_lordInquisitor",
+        "title_Localized": "Hero_LordInquisitor_Name",
+        "heroId": "lordInquisitor",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_undeadPestilence": {
+        "key": "clan_offerHero_leg_undeadPestilence",
+        "title_Localized": "Hero_UndeadPestilence_Name",
+        "heroId": "undeadPestilence",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_sandMage": {
+        "key": "clan_offerHero_leg_sandMage",
+        "title_Localized": "Hero_SandMage_Name",
+        "heroId": "sandMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_forestQueen": {
+        "key": "clan_offerHero_leg_forestQueen",
+        "title_Localized": "Hero_ForestQueen_Name",
+        "heroId": "forestQueen",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_fireMage": {
+        "key": "clan_offerHero_leg_fireMage",
+        "title_Localized": "Hero_FireMage_Name",
+        "heroId": "fireMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offerHero_leg_undeadPirate": {
+        "key": "clan_offerHero_leg_undeadPirate",
+        "title_Localized": "Hero_UndeadPirate_Name",
+        "heroId": "undeadPirate",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "arena_store",
+        "criteriaId": "clanRank_9",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade3",
+        "priceCurrencyAmount": 31000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBoneDragon_hero_1": {
+        "key": "chainofferBoneDragon_hero_1",
+        "title_Localized": "Hero_BoneDragon_Name",
+        "heroId": "boneDragon",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBoneDragon_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBoneDragon_hero_2": {
+        "key": "chainofferBoneDragon_hero_2",
+        "title_Localized": "Hero_BoneDragon_Name",
+        "heroId": "boneDragon",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBoneDragon_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBoneDragon_hero_3": {
+        "key": "chainofferBoneDragon_hero_3",
+        "title_Localized": "Hero_BoneDragon_Name",
+        "heroId": "boneDragon",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBoneDragon_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBoneDragon_hero_4": {
+        "key": "chainofferBoneDragon_hero_4",
+        "title_Localized": "Hero_BoneDragon_Name",
+        "heroId": "boneDragon",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBoneDragon_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferForestQueen_hero_1": {
+        "key": "chainofferForestQueen_hero_1",
+        "title_Localized": "Hero_ForestQueen_Name",
+        "heroId": "forestQueen",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferForestQueen_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferForestQueen_hero_2": {
+        "key": "chainofferForestQueen_hero_2",
+        "title_Localized": "Hero_ForestQueen_Name",
+        "heroId": "forestQueen",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferForestQueen_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferForestQueen_hero_3": {
+        "key": "chainofferForestQueen_hero_3",
+        "title_Localized": "Hero_ForestQueen_Name",
+        "heroId": "forestQueen",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferForestQueen_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferForestQueen_hero_4": {
+        "key": "chainofferForestQueen_hero_4",
+        "title_Localized": "Hero_ForestQueen_Name",
+        "heroId": "forestQueen",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferForestQueen_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferIceMage_hero_1": {
+        "key": "chainofferIceMage_hero_1",
+        "title_Localized": "Hero_IceMage_Name",
+        "heroId": "iceMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferIceMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferIceMage_hero_2": {
+        "key": "chainofferIceMage_hero_2",
+        "title_Localized": "Hero_IceMage_Name",
+        "heroId": "iceMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferIceMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferIceMage_hero_3": {
+        "key": "chainofferIceMage_hero_3",
+        "title_Localized": "Hero_IceMage_Name",
+        "heroId": "iceMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferIceMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferIceMage_hero_4": {
+        "key": "chainofferIceMage_hero_4",
+        "title_Localized": "Hero_IceMage_Name",
+        "heroId": "iceMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferIceMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferCharmer_hero_1": {
+        "key": "chainofferCharmer_hero_1",
+        "title_Localized": "Hero_Charmer_Name",
+        "heroId": "charmer",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferCharmer_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferCharmer_hero_2": {
+        "key": "chainofferCharmer_hero_2",
+        "title_Localized": "Hero_Charmer_Name",
+        "heroId": "charmer",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferCharmer_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferCharmer_hero_3": {
+        "key": "chainofferCharmer_hero_3",
+        "title_Localized": "Hero_Charmer_Name",
+        "heroId": "charmer",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferCharmer_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferCharmer_hero_4": {
+        "key": "chainofferCharmer_hero_4",
+        "title_Localized": "Hero_Charmer_Name",
+        "heroId": "charmer",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferCharmer_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferAirMage_hero_1": {
+        "key": "chainofferAirMage_hero_1",
+        "title_Localized": "Hero_AirMage_Name",
+        "heroId": "airMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferAirMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferAirMage_hero_2": {
+        "key": "chainofferAirMage_hero_2",
+        "title_Localized": "Hero_AirMage_Name",
+        "heroId": "airMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferAirMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferAirMage_hero_3": {
+        "key": "chainofferAirMage_hero_3",
+        "title_Localized": "Hero_AirMage_Name",
+        "heroId": "airMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferAirMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferAirMage_hero_4": {
+        "key": "chainofferAirMage_hero_4",
+        "title_Localized": "Hero_AirMage_Name",
+        "heroId": "airMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferAirMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDarknessMage_hero_1": {
+        "key": "chainofferDarknessMage_hero_1",
+        "title_Localized": "Hero_DarknessMage_Name",
+        "heroId": "darknessMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDarknessMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDarknessMage_hero_2": {
+        "key": "chainofferDarknessMage_hero_2",
+        "title_Localized": "Hero_DarknessMage_Name",
+        "heroId": "darknessMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDarknessMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDarknessMage_hero_3": {
+        "key": "chainofferDarknessMage_hero_3",
+        "title_Localized": "Hero_DarknessMage_Name",
+        "heroId": "darknessMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDarknessMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDarknessMage_hero_4": {
+        "key": "chainofferDarknessMage_hero_4",
+        "title_Localized": "Hero_DarknessMage_Name",
+        "heroId": "darknessMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDarknessMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferFireMage_hero_1": {
+        "key": "chainofferFireMage_hero_1",
+        "title_Localized": "Hero_FireMage_Name",
+        "heroId": "fireMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferFireMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferFireMage_hero_2": {
+        "key": "chainofferFireMage_hero_2",
+        "title_Localized": "Hero_FireMage_Name",
+        "heroId": "fireMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferFireMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferFireMage_hero_3": {
+        "key": "chainofferFireMage_hero_3",
+        "title_Localized": "Hero_FireMage_Name",
+        "heroId": "fireMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferFireMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferFireMage_hero_4": {
+        "key": "chainofferFireMage_hero_4",
+        "title_Localized": "Hero_FireMage_Name",
+        "heroId": "fireMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferFireMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferSandMage_hero_1": {
+        "key": "chainofferSandMage_hero_1",
+        "title_Localized": "Hero_SandMage_Name",
+        "heroId": "sandMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferSandMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferSandMage_hero_2": {
+        "key": "chainofferSandMage_hero_2",
+        "title_Localized": "Hero_SandMage_Name",
+        "heroId": "sandMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferSandMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferSandMage_hero_3": {
+        "key": "chainofferSandMage_hero_3",
+        "title_Localized": "Hero_SandMage_Name",
+        "heroId": "sandMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferSandMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferSandMage_hero_4": {
+        "key": "chainofferSandMage_hero_4",
+        "title_Localized": "Hero_SandMage_Name",
+        "heroId": "sandMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferSandMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPirate_hero_1": {
+        "key": "chainofferUndeadPirate_hero_1",
+        "title_Localized": "Hero_UndeadPirate_Name",
+        "heroId": "undeadPirate",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPirate_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPirate_hero_2": {
+        "key": "chainofferUndeadPirate_hero_2",
+        "title_Localized": "Hero_UndeadPirate_Name",
+        "heroId": "undeadPirate",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPirate_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPirate_hero_3": {
+        "key": "chainofferUndeadPirate_hero_3",
+        "title_Localized": "Hero_UndeadPirate_Name",
+        "heroId": "undeadPirate",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPirate_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPirate_hero_4": {
+        "key": "chainofferUndeadPirate_hero_4",
+        "title_Localized": "Hero_UndeadPirate_Name",
+        "heroId": "undeadPirate",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPirate_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferWaterMage_hero_1": {
+        "key": "chainofferWaterMage_hero_1",
+        "title_Localized": "Hero_WaterMage_Name",
+        "heroId": "waterMage",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferWaterMage_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferWaterMage_hero_2": {
+        "key": "chainofferWaterMage_hero_2",
+        "title_Localized": "Hero_WaterMage_Name",
+        "heroId": "waterMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferWaterMage_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferWaterMage_hero_3": {
+        "key": "chainofferWaterMage_hero_3",
+        "title_Localized": "Hero_WaterMage_Name",
+        "heroId": "waterMage",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferWaterMage_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferWaterMage_hero_4": {
+        "key": "chainofferWaterMage_hero_4",
+        "title_Localized": "Hero_WaterMage_Name",
+        "heroId": "waterMage",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferWaterMage_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferLordInquisitor_hero_1": {
+        "key": "chainofferLordInquisitor_hero_1",
+        "title_Localized": "Hero_LordInquisitor_Name",
+        "heroId": "lordInquisitor",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferLordInquisitor_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferLordInquisitor_hero_2": {
+        "key": "chainofferLordInquisitor_hero_2",
+        "title_Localized": "Hero_LordInquisitor_Name",
+        "heroId": "lordInquisitor",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferLordInquisitor_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferLordInquisitor_hero_3": {
+        "key": "chainofferLordInquisitor_hero_3",
+        "title_Localized": "Hero_LordInquisitor_Name",
+        "heroId": "lordInquisitor",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferLordInquisitor_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferLordInquisitor_hero_4": {
+        "key": "chainofferLordInquisitor_hero_4",
+        "title_Localized": "Hero_LordInquisitor_Name",
+        "heroId": "lordInquisitor",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferLordInquisitor_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPestilence_hero_1": {
+        "key": "chainofferUndeadPestilence_hero_1",
+        "title_Localized": "Hero_UndeadPestilence_Name",
+        "heroId": "undeadPestilence",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPestilence_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPestilence_hero_2": {
+        "key": "chainofferUndeadPestilence_hero_2",
+        "title_Localized": "Hero_UndeadPestilence_Name",
+        "heroId": "undeadPestilence",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPestilence_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPestilence_hero_3": {
+        "key": "chainofferUndeadPestilence_hero_3",
+        "title_Localized": "Hero_UndeadPestilence_Name",
+        "heroId": "undeadPestilence",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPestilence_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPestilence_hero_4": {
+        "key": "chainofferUndeadPestilence_hero_4",
+        "title_Localized": "Hero_UndeadPestilence_Name",
+        "heroId": "undeadPestilence",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPestilence_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBardHero_hero_1": {
+        "key": "chainofferBardHero_hero_1",
+        "title_Localized": "Hero_BardHero_Name",
+        "heroId": "bardHero",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBardHero_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBardHero_hero_2": {
+        "key": "chainofferBardHero_hero_2",
+        "title_Localized": "Hero_BardHero_Name",
+        "heroId": "bardHero",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBardHero_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBardHero_hero_3": {
+        "key": "chainofferBardHero_hero_3",
+        "title_Localized": "Hero_BardHero_Name",
+        "heroId": "bardHero",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBardHero_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBardHero_hero_4": {
+        "key": "chainofferBardHero_hero_4",
+        "title_Localized": "Hero_BardHero_Name",
+        "heroId": "bardHero",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBardHero_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDragonRider_hero_1": {
+        "key": "chainofferDragonRider_hero_1",
+        "title_Localized": "Hero_DragonRider_Name",
+        "heroId": "dragonRider",
+        "count": 1,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDragonRider_criteria_02",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDragonRider_hero_2": {
+        "key": "chainofferDragonRider_hero_2",
+        "title_Localized": "Hero_DragonRider_Name",
+        "heroId": "dragonRider",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDragonRider_criteria_04",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDragonRider_hero_3": {
+        "key": "chainofferDragonRider_hero_3",
+        "title_Localized": "Hero_DragonRider_Name",
+        "heroId": "dragonRider",
+        "count": 3,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDragonRider_criteria_06",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDragonRider_hero_4": {
+        "key": "chainofferDragonRider_hero_4",
+        "title_Localized": "Hero_DragonRider_Name",
+        "heroId": "dragonRider",
+        "count": 5,
+        "iconId": null,
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDragonRider_criteria_08",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "redirectReflectWeapon": {
+        "key": "redirectReflectWeapon",
+        "description": "description_redirect_casino_weapon",
+        "descriptionNoCasino": "description_redirect_no_casino_weapon",
+        "casinoId": "casinoRoulette_reflectWeapon"
+    },
+    "redirectReflectArmor": {
+        "key": "redirectReflectArmor",
+        "description": "description_redirect_casino_armor",
+        "descriptionNoCasino": "description_redirect_no_casino_armor",
+        "casinoId": "casinoRoulette_reflectArmor"
+    },
+    "redirectAoeWeapon": {
+        "key": "redirectAoeWeapon",
+        "description": "description_redirect_casino_weapon",
+        "descriptionNoCasino": "description_redirect_no_casino_weapon",
+        "casinoId": "casinoRoulette_aoeWeapon"
+    },
+    "redirectAoeArmor": {
+        "key": "redirectAoeArmor",
+        "description": "description_redirect_casino_armor",
+        "descriptionNoCasino": "description_redirect_no_casino_armor",
+        "casinoId": "casinoRoulette_aoeArmor"
+    },
+    "redirectReflectWeapon_new": {
+        "key": "redirectReflectWeapon_new",
+        "description": "description_redirect_casino_weapon",
+        "descriptionNoCasino": "description_redirect_no_casino_weapon",
+        "casinoId": "casinoRoulette_reflectWeapon_new"
+    },
+    "redirectAoeWeapon_new": {
+        "key": "redirectAoeWeapon_new",
+        "description": "description_redirect_casino_weapon",
+        "descriptionNoCasino": "description_redirect_no_casino_weapon",
+        "casinoId": "casinoRoulette_reflectWeapon_new"
+    },
+    "redirectReflectArmor_new": {
+        "key": "redirectReflectArmor_new",
+        "description": "description_redirect_casino_armor",
+        "descriptionNoCasino": "description_redirect_no_casino_armor",
+        "casinoId": "casinoRoulette_reflectArmor_new"
+    },
+    "redirectAoeArmor_new": {
+        "key": "redirectAoeArmor_new",
+        "description": "description_redirect_casino_armor",
+        "descriptionNoCasino": "description_redirect_no_casino_armor",
+        "casinoId": "casinoRoulette_reflectArmor_new"
+    }
+}

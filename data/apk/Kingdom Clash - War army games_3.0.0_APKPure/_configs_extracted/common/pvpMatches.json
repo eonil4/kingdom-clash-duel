@@ -1,0 +1,79 @@
+{
+    "1": {
+        "key": "1",
+        "matchNumber": 1,
+        "minPower": 2700,
+        "maxPower": 3500,
+        "minPoints": 950,
+        "maxPoints": 1050,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 1,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "2": {
+        "key": "2",
+        "matchNumber": 3,
+        "minPower": 3100,
+        "maxPower": 4000,
+        "minPoints": 1000,
+        "maxPoints": 1100,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 1,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "3": {
+        "key": "3",
+        "matchNumber": 7,
+        "minPower": 3600,
+        "maxPower": 4300,
+        "minPoints": 1000,
+        "maxPoints": 1150,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 2,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "4": {
+        "key": "4",
+        "matchNumber": 15,
+        "minPower": 4000,
+        "maxPower": 5700,
+        "minPoints": 1000,
+        "maxPoints": 1200,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 2,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "5": {
+        "key": "5",
+        "matchNumber": 25,
+        "minPower": 4900,
+        "maxPower": 9000,
+        "minPoints": 1000,
+        "maxPoints": 1250,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 2,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "6": {
+        "key": "6",
+        "matchNumber": 50,
+        "minPower": 7000,
+        "maxPower": 19000,
+        "minPoints": 1000,
+        "maxPoints": 1300,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 2,
+        "formationSetId": "pvpFormationSet_1"
+    },
+    "7": {
+        "key": "7",
+        "matchNumber": 100,
+        "minPower": 13000,
+        "maxPower": 25000,
+        "minPoints": 1000,
+        "maxPoints": 1300,
+        "minHeroLevel": 1,
+        "maxHeroLevel": 3,
+        "formationSetId": "pvpFormationSet_1"
+    }
+}

@@ -1,0 +1,1250 @@
+{
+    "squad_hunter_4_1": {
+        "key": "squad_hunter_4_1",
+        "localizationKey": "caption_reward_hunter_4",
+        "troopsId": "hunter",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_hunter_1_1": {
+        "key": "squad_hunter_1_1",
+        "localizationKey": "caption_reward_hunter_1",
+        "troopsId": "hunter",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_alchemist_1_1": {
+        "key": "squad_alchemist_1_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_1": {
+        "key": "squad_flyingMonster_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_1": {
+        "key": "squad_stoneGolem_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_1": {
+        "key": "squad_pyrotechnician_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_1": {
+        "key": "squad_stormSpearman_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "gloryRoad_squad_spiderBlast_1_1": {
+        "key": "gloryRoad_squad_spiderBlast_1_1",
+        "localizationKey": "",
+        "troopsId": "spiderBlast",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_spiderBlast_squad"
+    },
+    "gloryRoad_squad_damnCatapult_1_1": {
+        "key": "gloryRoad_squad_damnCatapult_1_1",
+        "localizationKey": "",
+        "troopsId": "damnCatapult",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_damnCatapult_squad"
+    },
+    "gloryRoad_squad_gravedigger_1_1": {
+        "key": "gloryRoad_squad_gravedigger_1_1",
+        "localizationKey": "",
+        "troopsId": "gravedigger",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_gravedigger_squad"
+    },
+    "gloryRoad_squad_monk_1_1": {
+        "key": "gloryRoad_squad_monk_1_1",
+        "localizationKey": "",
+        "troopsId": "monk",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_monk_squad"
+    },
+    "gloryRoad_squad_shaman_1_1": {
+        "key": "gloryRoad_squad_shaman_1_1",
+        "localizationKey": "",
+        "troopsId": "shaman",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_shaman_squad"
+    },
+    "gloryRoad_squad_undeadHeadless_1_1": {
+        "key": "gloryRoad_squad_undeadHeadless_1_1",
+        "localizationKey": "",
+        "troopsId": "undeadHeadless",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_undeadHeadless_squad"
+    },
+    "gloryRoad_squad_flyingMonster_1_1": {
+        "key": "gloryRoad_squad_flyingMonster_1_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_flyingMonster_squad"
+    },
+    "gloryRoad_squad_necromancer_1_1": {
+        "key": "gloryRoad_squad_necromancer_1_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_necromancer_squad"
+    },
+    "gloryRoad_squad_mountainsChampion_1_1": {
+        "key": "gloryRoad_squad_mountainsChampion_1_1",
+        "localizationKey": "",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_mountainsChampion_squad"
+    },
+    "squad_assasin_4_1": {
+        "key": "squad_assasin_4_1",
+        "localizationKey": "",
+        "troopsId": "assasin",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_butcher_4_1": {
+        "key": "squad_butcher_4_1",
+        "localizationKey": "",
+        "troopsId": "butcher",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_undeadMage_4_1": {
+        "key": "squad_undeadMage_4_1",
+        "localizationKey": "",
+        "troopsId": "undeadMage",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_alchemist_4_1": {
+        "key": "squad_alchemist_4_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_paladin_4_1": {
+        "key": "squad_paladin_4_1",
+        "localizationKey": "caption_reward_paladin_4",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_lancer_4_1": {
+        "key": "squad_lancer_4_1",
+        "localizationKey": "",
+        "troopsId": "lancer",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_golemInfantry_1_1": {
+        "key": "squad_golemInfantry_1_1",
+        "localizationKey": "",
+        "troopsId": "golemInfantry",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_imp_1_1": {
+        "key": "squad_imp_1_1",
+        "localizationKey": "",
+        "troopsId": "imp",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_paladin_1_1": {
+        "key": "squad_paladin_1_1",
+        "localizationKey": "caption_reward_paladin_1",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_undeadMage_1_1": {
+        "key": "squad_undeadMage_1_1",
+        "localizationKey": "",
+        "troopsId": "undeadMage",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_spiderBlast_1_1": {
+        "key": "squad_spiderBlast_1_1",
+        "localizationKey": "",
+        "troopsId": "spiderBlast",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_mageStudent_1_1": {
+        "key": "squad_mageStudent_1_1",
+        "localizationKey": "",
+        "troopsId": "mageStudent",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_damnCatapult_1_1": {
+        "key": "squad_damnCatapult_1_1",
+        "localizationKey": "",
+        "troopsId": "damnCatapult",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_gravedigger_1_1": {
+        "key": "squad_gravedigger_1_1",
+        "localizationKey": "",
+        "troopsId": "gravedigger",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_monk_1_1": {
+        "key": "squad_monk_1_1",
+        "localizationKey": "caption_reward_monk_1",
+        "troopsId": "monk",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_magicArcher_1_1": {
+        "key": "squad_magicArcher_1_1",
+        "localizationKey": "",
+        "troopsId": "magicArcher",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_shaman_1_1": {
+        "key": "squad_shaman_1_1",
+        "localizationKey": "",
+        "troopsId": "shaman",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_undeadHeadless_1_1": {
+        "key": "squad_undeadHeadless_1_1",
+        "localizationKey": "caption_reward_undeadHeadless_1",
+        "troopsId": "undeadHeadless",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_1_1": {
+        "key": "squad_flyingMonster_1_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_1_1": {
+        "key": "squad_stoneGolem_1_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_necromancer_1_1": {
+        "key": "squad_necromancer_1_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_1_1": {
+        "key": "squad_stormSpearman_1_1",
+        "localizationKey": "caption_reward_stormSpearman_1",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_vulkanGolem_1_1": {
+        "key": "squad_vulkanGolem_1_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_skeletonWarrior_1_1": {
+        "key": "squad_skeletonWarrior_1_1",
+        "localizationKey": "caption_reward_skeletonWarrior_1",
+        "troopsId": "skeletonWarrior",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_mountainsChampion_1_1": {
+        "key": "squad_mountainsChampion_1_1",
+        "localizationKey": "caption_reward_mountainsChampion_1_1",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_1_1": {
+        "key": "squad_eliteWarrior_1_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_windElemental_1_1": {
+        "key": "squad_windElemental_1_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stunToad_1_1": {
+        "key": "squad_stunToad_1_1",
+        "localizationKey": "caption_reward_stunToad_1",
+        "troopsId": "stunToad",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_stunToad_4_1": {
+        "key": "squad_stunToad_4_1",
+        "localizationKey": "caption_reward_stunToad_4",
+        "troopsId": "stunToad",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_phoenix_1_1": {
+        "key": "squad_phoenix_1_1",
+        "localizationKey": "caption_reward_phoenix_1",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_phoenix_4_1": {
+        "key": "squad_phoenix_4_1",
+        "localizationKey": "caption_reward_phoenix_4",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_undeadInfantry_2_1": {
+        "key": "squad_undeadInfantry_2_1",
+        "localizationKey": "",
+        "troopsId": "undeadInfantry",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_spiderBlast_2_1": {
+        "key": "squad_spiderBlast_2_1",
+        "localizationKey": "",
+        "troopsId": "spiderBlast",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_lancer_2_1": {
+        "key": "squad_lancer_2_1",
+        "localizationKey": "",
+        "troopsId": "lancer",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_spiderBlast_3_1": {
+        "key": "squad_spiderBlast_3_1",
+        "localizationKey": "",
+        "troopsId": "spiderBlast",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_butcher_3_1": {
+        "key": "squad_butcher_3_1",
+        "localizationKey": "",
+        "troopsId": "butcher",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_2_1": {
+        "key": "squad_eliteWarrior_2_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_gravedigger_4_1": {
+        "key": "squad_gravedigger_4_1",
+        "localizationKey": "",
+        "troopsId": "gravedigger",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_undeadMage_3_1": {
+        "key": "squad_undeadMage_3_1",
+        "localizationKey": "",
+        "troopsId": "undeadMage",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_2_1": {
+        "key": "squad_flyingMonster_2_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_golemInfantry_2_1": {
+        "key": "squad_golemInfantry_2_1",
+        "localizationKey": "",
+        "troopsId": "golemInfantry",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_bomber_2_1": {
+        "key": "squad_bomber_2_1",
+        "localizationKey": "",
+        "troopsId": "bomber",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_paladin_2_1": {
+        "key": "squad_paladin_2_1",
+        "localizationKey": "",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_2_1": {
+        "key": "squad_stoneGolem_2_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_catapult_2_1": {
+        "key": "squad_catapult_2_1",
+        "localizationKey": "",
+        "troopsId": "catapult",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_butcher_2_1": {
+        "key": "squad_butcher_2_1",
+        "localizationKey": "",
+        "troopsId": "butcher",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_magicArcher_2_1": {
+        "key": "squad_magicArcher_2_1",
+        "localizationKey": "",
+        "troopsId": "magicArcher",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_ironGuards_3_1": {
+        "key": "squad_ironGuards_3_1",
+        "localizationKey": "",
+        "troopsId": "ironGuards",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_2_1": {
+        "key": "squad_pyrotechnician_2_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_mountainsChampion_2_1": {
+        "key": "squad_mountainsChampion_2_1",
+        "localizationKey": "",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_alchemist_2_1": {
+        "key": "squad_alchemist_2_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_necromancer_3_1": {
+        "key": "squad_necromancer_3_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_vulkanGolem_3_1": {
+        "key": "squad_vulkanGolem_3_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_alchemist_3_1": {
+        "key": "squad_alchemist_3_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_magicArcher_4_1": {
+        "key": "squad_magicArcher_4_1",
+        "localizationKey": "",
+        "troopsId": "magicArcher",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_4_1": {
+        "key": "squad_eliteWarrior_4_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_3_1": {
+        "key": "squad_flyingMonster_3_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_6_1": {
+        "key": "squad_stormSpearman_6_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_6_1": {
+        "key": "squad_pyrotechnician_6_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_3_1": {
+        "key": "squad_stoneGolem_3_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_necromancer_6_1": {
+        "key": "squad_necromancer_6_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_6_1": {
+        "key": "squad_eliteWarrior_6_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_mountainsChampion_3_1": {
+        "key": "squad_mountainsChampion_3_1",
+        "localizationKey": "",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_4_1": {
+        "key": "squad_pyrotechnician_4_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_skeletonWarrior_3_1": {
+        "key": "squad_skeletonWarrior_3_1",
+        "localizationKey": "",
+        "troopsId": "skeletonWarrior",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_windElemental_3_1": {
+        "key": "squad_windElemental_3_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_necromancer_4_1": {
+        "key": "squad_necromancer_4_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_monk_3_1": {
+        "key": "squad_monk_3_1",
+        "localizationKey": "",
+        "troopsId": "monk",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_windElemental_6_1": {
+        "key": "squad_windElemental_6_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_vulkanGolem_4_1": {
+        "key": "squad_vulkanGolem_4_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_lancer_6_1": {
+        "key": "squad_lancer_6_1",
+        "localizationKey": "",
+        "troopsId": "lancer",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_windElemental_4_1": {
+        "key": "squad_windElemental_4_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_3_1": {
+        "key": "squad_stormSpearman_3_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_paladin_6_1": {
+        "key": "squad_paladin_6_1",
+        "localizationKey": "",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_assasin_2_1": {
+        "key": "squad_assasin_2_1",
+        "localizationKey": "",
+        "troopsId": "assasin",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_assasin_3_1": {
+        "key": "squad_assasin_3_1",
+        "localizationKey": "",
+        "troopsId": "assasin",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "gloryRoad_squad_paladin_1_1": {
+        "key": "gloryRoad_squad_paladin_1_1",
+        "localizationKey": "",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_paladin_squad"
+    },
+    "gloryRoad_squad_undeadMage_1_1": {
+        "key": "gloryRoad_squad_undeadMage_1_1",
+        "localizationKey": "",
+        "troopsId": "undeadMage",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_undeadMage_squad"
+    },
+    "gloryRoad_squad_mageStudent_1_1": {
+        "key": "gloryRoad_squad_mageStudent_1_1",
+        "localizationKey": "",
+        "troopsId": "mageStudent",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_mageStudent_squad"
+    },
+    "gloryRoad_squad_magicArcher_1_1": {
+        "key": "gloryRoad_squad_magicArcher_1_1",
+        "localizationKey": "",
+        "troopsId": "magicArcher",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_magicArcher_squad"
+    },
+    "gloryRoad_squad_stoneGolem_1_1": {
+        "key": "gloryRoad_squad_stoneGolem_1_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_stoneGolem_squad"
+    },
+    "gloryRoad_squad_stormSpearman_1_1": {
+        "key": "gloryRoad_squad_stormSpearman_1_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_stormSpearman_squad"
+    },
+    "gloryRoad_squad_vulkanGolem_1_1": {
+        "key": "gloryRoad_squad_vulkanGolem_1_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_vulkanGolem_squad"
+    },
+    "gloryRoad_squad_skeletonWarrior_1_1": {
+        "key": "gloryRoad_squad_skeletonWarrior_1_1",
+        "localizationKey": "",
+        "troopsId": "skeletonWarrior",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_skeletonWarrior_squad"
+    },
+    "gloryRoad_squad_eliteWarrior_1_1": {
+        "key": "gloryRoad_squad_eliteWarrior_1_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_eliteWarrior_squad"
+    },
+    "gloryRoad_squad_windElemental_1_1": {
+        "key": "gloryRoad_squad_windElemental_1_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": "oneTimeOffer_windElemental_squad"
+    },
+    "squad_skeletonWarrior_4_1": {
+        "key": "squad_skeletonWarrior_4_1",
+        "localizationKey": "caption_reward_skeletonWarrior_4",
+        "troopsId": "skeletonWarrior",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_4_1": {
+        "key": "squad_stormSpearman_4_1",
+        "localizationKey": "caption_reward_stormSpearman_4",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_monk_4_1": {
+        "key": "squad_monk_4_1",
+        "localizationKey": "caption_reward_monk_4",
+        "troopsId": "monk",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_undeadHeadless_4_1": {
+        "key": "squad_undeadHeadless_4_1",
+        "localizationKey": "caption_reward_undeadHeadless_4",
+        "troopsId": "undeadHeadless",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_undeadMage_10_1": {
+        "key": "squad_undeadMage_10_1",
+        "localizationKey": "",
+        "troopsId": "undeadMage",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_magicArcher_10_1": {
+        "key": "squad_magicArcher_10_1",
+        "localizationKey": "",
+        "troopsId": "magicArcher",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_10_1": {
+        "key": "squad_eliteWarrior_10_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_8_1": {
+        "key": "squad_flyingMonster_8_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_flyingMonster_5_1": {
+        "key": "squad_flyingMonster_5_1",
+        "localizationKey": "",
+        "troopsId": "flyingMonster",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_15_1": {
+        "key": "squad_stormSpearman_15_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_15_1": {
+        "key": "squad_pyrotechnician_15_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_alchemist_10_1": {
+        "key": "squad_alchemist_10_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_8_1": {
+        "key": "squad_stoneGolem_8_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_stoneGolem_5_1": {
+        "key": "squad_stoneGolem_5_1",
+        "localizationKey": "",
+        "troopsId": "stoneGolem",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_necromancer_15_1": {
+        "key": "squad_necromancer_15_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_paladin_10_1": {
+        "key": "squad_paladin_10_1",
+        "localizationKey": "",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_mountainsChampion_8_1": {
+        "key": "squad_mountainsChampion_8_1",
+        "localizationKey": "",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_mountainsChampion_5_1": {
+        "key": "squad_mountainsChampion_5_1",
+        "localizationKey": "",
+        "troopsId": "mountainsChampion",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_eliteWarrior_15_1": {
+        "key": "squad_eliteWarrior_15_1",
+        "localizationKey": "",
+        "troopsId": "eliteWarrior",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_pyrotechnician_8_1": {
+        "key": "squad_pyrotechnician_8_1",
+        "localizationKey": "",
+        "troopsId": "pyrotechnician",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_lancer_8_1": {
+        "key": "squad_lancer_8_1",
+        "localizationKey": "",
+        "troopsId": "lancer",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_windElemental_5_1": {
+        "key": "squad_windElemental_5_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_necromancer_8_1": {
+        "key": "squad_necromancer_8_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_alchemist_5_1": {
+        "key": "squad_alchemist_5_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_monk_5_1": {
+        "key": "squad_monk_5_1",
+        "localizationKey": "",
+        "troopsId": "monk",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_windElemental_15_1": {
+        "key": "squad_windElemental_15_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_vulkanGolem_8_1": {
+        "key": "squad_vulkanGolem_8_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_lancer_15_1": {
+        "key": "squad_lancer_15_1",
+        "localizationKey": "",
+        "troopsId": "lancer",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_windElemental_8_1": {
+        "key": "squad_windElemental_8_1",
+        "localizationKey": "",
+        "troopsId": "windElemental",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_stormSpearman_5_1": {
+        "key": "squad_stormSpearman_5_1",
+        "localizationKey": "",
+        "troopsId": "stormSpearman",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_paladin_15_1": {
+        "key": "squad_paladin_15_1",
+        "localizationKey": "",
+        "troopsId": "paladin",
+        "stars": 1,
+        "count": 15,
+        "giveOfferId": null
+    },
+    "squad_alchemist_8_1": {
+        "key": "squad_alchemist_8_1",
+        "localizationKey": "",
+        "troopsId": "alchemist",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_vulkanGolem_5_1": {
+        "key": "squad_vulkanGolem_5_1",
+        "localizationKey": "",
+        "troopsId": "vulkanGolem",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_necromancer_5_1": {
+        "key": "squad_necromancer_5_1",
+        "localizationKey": "",
+        "troopsId": "necromancer",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_skeletonWarrior_5_1": {
+        "key": "squad_skeletonWarrior_5_1",
+        "localizationKey": "",
+        "troopsId": "skeletonWarrior",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_phoenix_6_1": {
+        "key": "squad_phoenix_6_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_phoenix_8_1": {
+        "key": "squad_phoenix_8_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 8,
+        "giveOfferId": null
+    },
+    "squad_phoenix_12_1": {
+        "key": "squad_phoenix_12_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 12,
+        "giveOfferId": null
+    },
+    "squad_phoenix_10_1": {
+        "key": "squad_phoenix_10_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 10,
+        "giveOfferId": null
+    },
+    "squad_phoenix_2_1": {
+        "key": "squad_phoenix_2_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_phoenix_5_1": {
+        "key": "squad_phoenix_5_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 5,
+        "giveOfferId": null
+    },
+    "squad_phoenix_3_1": {
+        "key": "squad_phoenix_3_1",
+        "localizationKey": "",
+        "troopsId": "phoenix",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_axeThrowers_1_1": {
+        "key": "squad_axeThrowers_1_1",
+        "localizationKey": "",
+        "troopsId": "axeThrowers",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_axeThrowers_2_1": {
+        "key": "squad_axeThrowers_2_1",
+        "localizationKey": "",
+        "troopsId": "axeThrowers",
+        "stars": 1,
+        "count": 2,
+        "giveOfferId": null
+    },
+    "squad_axeThrowers_3_1": {
+        "key": "squad_axeThrowers_3_1",
+        "localizationKey": "",
+        "troopsId": "axeThrowers",
+        "stars": 1,
+        "count": 3,
+        "giveOfferId": null
+    },
+    "squad_axeThrowers_4_1": {
+        "key": "squad_axeThrowers_4_1",
+        "localizationKey": "",
+        "troopsId": "axeThrowers",
+        "stars": 1,
+        "count": 4,
+        "giveOfferId": null
+    },
+    "squad_axeThrowers_6_1": {
+        "key": "squad_axeThrowers_6_1",
+        "localizationKey": "",
+        "troopsId": "axeThrowers",
+        "stars": 1,
+        "count": 6,
+        "giveOfferId": null
+    },
+    "squad_ironGuards_1_1": {
+        "key": "squad_ironGuards_1_1",
+        "localizationKey": "",
+        "troopsId": "ironGuards",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_bomber_1_1": {
+        "key": "squad_bomber_1_1",
+        "localizationKey": "caption_reward_bomber_1_1",
+        "troopsId": "bomber",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_butcher_1_1": {
+        "key": "squad_butcher_1_1",
+        "localizationKey": "",
+        "troopsId": "butcher",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_assasin_1_1": {
+        "key": "squad_assasin_1_1",
+        "localizationKey": "caption_reward_assasin_1_1",
+        "troopsId": "assasin",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_catapult_1_1": {
+        "key": "squad_catapult_1_1",
+        "localizationKey": "",
+        "troopsId": "catapult",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_undeadInfantry_1_1": {
+        "key": "squad_undeadInfantry_1_1",
+        "localizationKey": "",
+        "troopsId": "undeadInfantry",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    },
+    "squad_undeadJavelin_1_1": {
+        "key": "squad_undeadJavelin_1_1",
+        "localizationKey": "",
+        "troopsId": "undeadJavelin",
+        "stars": 1,
+        "count": 1,
+        "giveOfferId": null
+    }
+}

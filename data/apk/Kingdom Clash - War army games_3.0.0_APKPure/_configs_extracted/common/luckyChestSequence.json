@@ -1,0 +1,86 @@
+{
+    "1": {
+        "key": "1",
+        "openNumber": 0,
+        "luckyPointsPrice": 15,
+        "troopChestId": "firstLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1"
+    },
+    "2": {
+        "key": "2",
+        "openNumber": 1,
+        "luckyPointsPrice": 15,
+        "troopChestId": "firstLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1"
+    },
+    "3": {
+        "key": "3",
+        "openNumber": 2,
+        "luckyPointsPrice": 20,
+        "troopChestId": "secondLuckyOpen",
+        "luckyModifierId": "lucky_modifier_10"
+    },
+    "4": {
+        "key": "4",
+        "openNumber": 3,
+        "luckyPointsPrice": 40,
+        "troopChestId": "thirdLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_5"
+    },
+    "5": {
+        "key": "5",
+        "openNumber": 4,
+        "luckyPointsPrice": 60,
+        "troopChestId": "lowLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_5"
+    },
+    "6": {
+        "key": "6",
+        "openNumber": 5,
+        "luckyPointsPrice": 80,
+        "troopChestId": "lowLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "7": {
+        "key": "7",
+        "openNumber": 6,
+        "luckyPointsPrice": 100,
+        "troopChestId": "lowLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "8": {
+        "key": "8",
+        "openNumber": 7,
+        "luckyPointsPrice": 120,
+        "troopChestId": "middleLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "9": {
+        "key": "9",
+        "openNumber": 8,
+        "luckyPointsPrice": 140,
+        "troopChestId": "middleLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "10": {
+        "key": "10",
+        "openNumber": 9,
+        "luckyPointsPrice": 160,
+        "troopChestId": "middleLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "11": {
+        "key": "11",
+        "openNumber": 10,
+        "luckyPointsPrice": 180,
+        "troopChestId": "highLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    },
+    "12": {
+        "key": "12",
+        "openNumber": 11,
+        "luckyPointsPrice": 200,
+        "troopChestId": "highLuckyOpen",
+        "luckyModifierId": "lucky_modifier_1_10"
+    }
+}

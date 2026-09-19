@@ -1,0 +1,37 @@
+{
+    "clan_flag_pattern_default": {
+        "key": "clan_flag_pattern_default",
+        "serverId": 1,
+        "spriteUi": "flag_pattern_01",
+        "patternBig": "UIClanFlag_Big_Pattern_01",
+        "patternSmall": "UIClanFlag_Small_Pattern_01"
+    },
+    "clan_flag_pattern_ver_split": {
+        "key": "clan_flag_pattern_ver_split",
+        "serverId": 2,
+        "spriteUi": "flag_pattern_02",
+        "patternBig": "UIClanFlag_Big_Pattern_02",
+        "patternSmall": "UIClanFlag_Small_Pattern_02"
+    },
+    "clan_flag_pattern_corner_up": {
+        "key": "clan_flag_pattern_corner_up",
+        "serverId": 3,
+        "spriteUi": "flag_pattern_03",
+        "patternBig": "UIClanFlag_Big_Pattern_03",
+        "patternSmall": "UIClanFlag_Small_Pattern_03"
+    },
+    "clan_flag_pattern_corner_down": {
+        "key": "clan_flag_pattern_corner_down",
+        "serverId": 4,
+        "spriteUi": "flag_pattern_04",
+        "patternBig": "UIClanFlag_Big_Pattern_04",
+        "patternSmall": "UIClanFlag_Small_Pattern_04"
+    },
+    "clan_flag_pattern_chess": {
+        "key": "clan_flag_pattern_chess",
+        "serverId": 5,
+        "spriteUi": "flag_pattern_05",
+        "patternBig": "UIClanFlag_Big_Pattern_05",
+        "patternSmall": "UIClanFlag_Small_Pattern_05"
+    }
+}

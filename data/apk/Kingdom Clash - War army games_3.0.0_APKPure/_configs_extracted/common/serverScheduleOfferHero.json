@@ -1,0 +1,72 @@
+{
+    "offerDragonRider": {
+        "key": "offerDragonRider",
+        "offerX1": "lobbyDragonOfferX1",
+        "offerX12": "lobbyDragonOfferX12"
+    },
+    "offerBoneDragon": {
+        "key": "offerBoneDragon",
+        "offerX1": "lobbyBoneDragonOfferX1",
+        "offerX12": "lobbyBoneDragonOfferX12"
+    },
+    "offerCharmer": {
+        "key": "offerCharmer",
+        "offerX1": "lobbyCharmerOfferX1",
+        "offerX12": "lobbyCharmerOfferX12"
+    },
+    "offerAirMage": {
+        "key": "offerAirMage",
+        "offerX1": "lobbyAirMageOfferX1",
+        "offerX12": "lobbyAirMageOfferX12"
+    },
+    "offerDarknessMage": {
+        "key": "offerDarknessMage",
+        "offerX1": "lobbyDarknessMageOfferX1",
+        "offerX12": "lobbyDarknessMageOfferX12"
+    },
+    "offerIceMage": {
+        "key": "offerIceMage",
+        "offerX1": "lobbyIceMageOfferX1",
+        "offerX12": "lobbyIceMageOfferX12"
+    },
+    "offerFireMage": {
+        "key": "offerFireMage",
+        "offerX1": "lobbyFireMageOfferX1",
+        "offerX12": "lobbyFireMageOfferX12"
+    },
+    "offerSandMage": {
+        "key": "offerSandMage",
+        "offerX1": "lobbySandMageOfferX1",
+        "offerX12": "lobbySandMageOfferX12"
+    },
+    "offerForestQueen": {
+        "key": "offerForestQueen",
+        "offerX1": "lobbyForestQueenOfferX1",
+        "offerX12": "lobbyForestQueenOfferX12"
+    },
+    "offerUndeadPirate": {
+        "key": "offerUndeadPirate",
+        "offerX1": "lobbyUndeadPirateOfferX1",
+        "offerX12": "lobbyUndeadPirateOfferX12"
+    },
+    "offerWaterMage": {
+        "key": "offerWaterMage",
+        "offerX1": "lobbyWaterMageOfferX1",
+        "offerX12": "lobbyWaterMageOfferX12"
+    },
+    "offerLordInquisitor": {
+        "key": "offerLordInquisitor",
+        "offerX1": "lobbyLordInquisitorOfferX1",
+        "offerX12": "lobbyLordInquisitorOfferX12"
+    },
+    "offerUndeadPestilence": {
+        "key": "offerUndeadPestilence",
+        "offerX1": "lobbyUndeadPestilenceOfferX1",
+        "offerX12": "lobbyUndeadPestilenceOfferX12"
+    },
+    "offerBardHero": {
+        "key": "offerBardHero",
+        "offerX1": "lobbyBardHeroOfferX1",
+        "offerX12": "lobbyBardHeroOfferX12"
+    }
+}

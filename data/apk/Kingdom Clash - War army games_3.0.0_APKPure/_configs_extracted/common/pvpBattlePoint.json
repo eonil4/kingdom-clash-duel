@@ -1,0 +1,62 @@
+{
+    "range1500": {
+        "key": "range1500",
+        "maxPoints": 1500,
+        "attackWinPoints": 25,
+        "attackWinFactor": 400,
+        "attackLosePoints": 15,
+        "attackLoseFactor": 400,
+        "defenceWinPoints": 25,
+        "defenceWinFactor": 400,
+        "defenceLosePoints": 10,
+        "defenceLoseFactor": 400
+    },
+    "range1850": {
+        "key": "range1850",
+        "maxPoints": 1850,
+        "attackWinPoints": 25,
+        "attackWinFactor": 400,
+        "attackLosePoints": 15,
+        "attackLoseFactor": 400,
+        "defenceWinPoints": 25,
+        "defenceWinFactor": 400,
+        "defenceLosePoints": 10,
+        "defenceLoseFactor": 400
+    },
+    "range2250": {
+        "key": "range2250",
+        "maxPoints": 2250,
+        "attackWinPoints": 25,
+        "attackWinFactor": 400,
+        "attackLosePoints": 15,
+        "attackLoseFactor": 400,
+        "defenceWinPoints": 25,
+        "defenceWinFactor": 400,
+        "defenceLosePoints": 10,
+        "defenceLoseFactor": 400
+    },
+    "range4000": {
+        "key": "range4000",
+        "maxPoints": 4000,
+        "attackWinPoints": 25,
+        "attackWinFactor": 400,
+        "attackLosePoints": 15,
+        "attackLoseFactor": 400,
+        "defenceWinPoints": 25,
+        "defenceWinFactor": 400,
+        "defenceLosePoints": 10,
+        "defenceLoseFactor": 400
+    },
+    "range10000": {
+        "key": "range10000",
+        "maxPoints": 10000,
+        "attackWinPoints": 25,
+        "attackWinFactor": 400,
+        "attackLosePoints": 15,
+        "attackLoseFactor": 400,
+        "defenceWinPoints": 25,
+        "defenceWinFactor": 400,
+        "defenceLosePoints": 10,
+        "defenceLoseFactor": 400
+    }
+}

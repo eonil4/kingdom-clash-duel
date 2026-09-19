@@ -1,0 +1,107 @@
+{
+    "clan_offer_coins": {
+        "key": "clan_offer_coins",
+        "offer": "clan_offer_gold",
+        "order": 0,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "clan_offer_gems": {
+        "key": "clan_offer_gems",
+        "offer": "clan_offer_gem",
+        "order": 3,
+        "headerStyle": "clean",
+        "contentStyle": "clean"
+    },
+    "clan_offer_toad": {
+        "key": "clan_offer_toad",
+        "offer": "clan_offerTroop_stunToad",
+        "order": 6,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_epicTroopGacha": {
+        "key": "clan_offer_epicTroopGacha",
+        "offer": "clan_chestOffer_EpicTroop",
+        "order": 1,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legTroopGacha": {
+        "key": "clan_offer_legTroopGacha",
+        "offer": "clan_chestOffer_LegTroop",
+        "order": 4,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_phoenix": {
+        "key": "clan_offer_phoenix",
+        "offer": "clan_offerTroop_phoenix",
+        "order": 7,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_epicHeroGacha": {
+        "key": "clan_offer_epicHeroGacha",
+        "offer": "clan_chestOffer_EpicHero",
+        "order": 2,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHeroGacha": {
+        "key": "clan_offer_legHeroGacha",
+        "offer": "clan_chestOffer_LegHero",
+        "order": 5,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_1": {
+        "key": "clan_offer_legHero_1",
+        "offer": "clan_offerHero_leg_lordInquisitor",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_2": {
+        "key": "clan_offer_legHero_2",
+        "offer": "clan_offerHero_leg_undeadPestilence",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_3": {
+        "key": "clan_offer_legHero_3",
+        "offer": "clan_offerHero_leg_sandMage",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_4": {
+        "key": "clan_offer_legHero_4",
+        "offer": "clan_offerHero_leg_forestQueen",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_5": {
+        "key": "clan_offer_legHero_5",
+        "offer": "clan_offerHero_leg_fireMage",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_6": {
+        "key": "clan_offer_legHero_6",
+        "offer": "clan_offerHero_leg_darknessMage",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    },
+    "clan_offer_legHero_7": {
+        "key": "clan_offer_legHero_7",
+        "offer": "clan_offerHero_leg_undeadPirate",
+        "order": 8,
+        "headerStyle": "cleanText",
+        "contentStyle": "cleanText"
+    }
+}

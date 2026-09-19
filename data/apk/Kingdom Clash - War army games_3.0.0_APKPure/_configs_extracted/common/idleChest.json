@@ -1,0 +1,290 @@
+{
+    "1": {
+        "key": "1",
+        "campaignLevel": 1,
+        "softMax": 1800,
+        "softHour": 300,
+        "hardMax": 0,
+        "hardHour": 0
+    },
+    "2": {
+        "key": "2",
+        "campaignLevel": 11,
+        "softMax": 3000,
+        "softHour": 500,
+        "hardMax": 0,
+        "hardHour": 0
+    },
+    "3": {
+        "key": "3",
+        "campaignLevel": 21,
+        "softMax": 6000,
+        "softHour": 1000,
+        "hardMax": 0,
+        "hardHour": 0
+    },
+    "4": {
+        "key": "4",
+        "campaignLevel": 41,
+        "softMax": 9000,
+        "softHour": 1500,
+        "hardMax": 30,
+        "hardHour": 5
+    },
+    "5": {
+        "key": "5",
+        "campaignLevel": 61,
+        "softMax": 9450,
+        "softHour": 1575,
+        "hardMax": 36,
+        "hardHour": 6
+    },
+    "6": {
+        "key": "6",
+        "campaignLevel": 81,
+        "softMax": 10050,
+        "softHour": 1675,
+        "hardMax": 42,
+        "hardHour": 7
+    },
+    "7": {
+        "key": "7",
+        "campaignLevel": 101,
+        "softMax": 10650,
+        "softHour": 1775,
+        "hardMax": 48,
+        "hardHour": 8
+    },
+    "8": {
+        "key": "8",
+        "campaignLevel": 121,
+        "softMax": 11250,
+        "softHour": 1875,
+        "hardMax": 54,
+        "hardHour": 9
+    },
+    "9": {
+        "key": "9",
+        "campaignLevel": 141,
+        "softMax": 11850,
+        "softHour": 1975,
+        "hardMax": 60,
+        "hardHour": 10
+    },
+    "10": {
+        "key": "10",
+        "campaignLevel": 161,
+        "softMax": 12450,
+        "softHour": 2075,
+        "hardMax": 66,
+        "hardHour": 11
+    },
+    "11": {
+        "key": "11",
+        "campaignLevel": 181,
+        "softMax": 13200,
+        "softHour": 2200,
+        "hardMax": 72,
+        "hardHour": 12
+    },
+    "12": {
+        "key": "12",
+        "campaignLevel": 201,
+        "softMax": 13950,
+        "softHour": 2325,
+        "hardMax": 78,
+        "hardHour": 13
+    },
+    "13": {
+        "key": "13",
+        "campaignLevel": 251,
+        "softMax": 14700,
+        "softHour": 2450,
+        "hardMax": 84,
+        "hardHour": 14
+    },
+    "14": {
+        "key": "14",
+        "campaignLevel": 301,
+        "softMax": 15450,
+        "softHour": 2575,
+        "hardMax": 90,
+        "hardHour": 15
+    },
+    "15": {
+        "key": "15",
+        "campaignLevel": 351,
+        "softMax": 16200,
+        "softHour": 2700,
+        "hardMax": 96,
+        "hardHour": 16
+    },
+    "16": {
+        "key": "16",
+        "campaignLevel": 401,
+        "softMax": 17100,
+        "softHour": 2850,
+        "hardMax": 102,
+        "hardHour": 17
+    },
+    "17": {
+        "key": "17",
+        "campaignLevel": 451,
+        "softMax": 18000,
+        "softHour": 3000,
+        "hardMax": 102,
+        "hardHour": 17
+    },
+    "18": {
+        "key": "18",
+        "campaignLevel": 501,
+        "softMax": 18900,
+        "softHour": 3150,
+        "hardMax": 108,
+        "hardHour": 18
+    },
+    "19": {
+        "key": "19",
+        "campaignLevel": 551,
+        "softMax": 19800,
+        "softHour": 3300,
+        "hardMax": 108,
+        "hardHour": 18
+    },
+    "20": {
+        "key": "20",
+        "campaignLevel": 601,
+        "softMax": 20700,
+        "softHour": 3450,
+        "hardMax": 114,
+        "hardHour": 19
+    },
+    "21": {
+        "key": "21",
+        "campaignLevel": 651,
+        "softMax": 21750,
+        "softHour": 3625,
+        "hardMax": 114,
+        "hardHour": 19
+    },
+    "22": {
+        "key": "22",
+        "campaignLevel": 701,
+        "softMax": 22800,
+        "softHour": 3800,
+        "hardMax": 120,
+        "hardHour": 20
+    },
+    "23": {
+        "key": "23",
+        "campaignLevel": 801,
+        "softMax": 23850,
+        "softHour": 3975,
+        "hardMax": 120,
+        "hardHour": 20
+    },
+    "24": {
+        "key": "24",
+        "campaignLevel": 901,
+        "softMax": 24900,
+        "softHour": 4150,
+        "hardMax": 126,
+        "hardHour": 21
+    },
+    "25": {
+        "key": "25",
+        "campaignLevel": 1001,
+        "softMax": 25950,
+        "softHour": 4325,
+        "hardMax": 126,
+        "hardHour": 21
+    },
+    "26": {
+        "key": "26",
+        "campaignLevel": 1501,
+        "softMax": 27150,
+        "softHour": 4525,
+        "hardMax": 132,
+        "hardHour": 22
+    },
+    "27": {
+        "key": "27",
+        "campaignLevel": 2001,
+        "softMax": 28350,
+        "softHour": 4725,
+        "hardMax": 132,
+        "hardHour": 22
+    },
+    "28": {
+        "key": "28",
+        "campaignLevel": 2501,
+        "softMax": 29550,
+        "softHour": 4925,
+        "hardMax": 138,
+        "hardHour": 23
+    },
+    "29": {
+        "key": "29",
+        "campaignLevel": 3001,
+        "softMax": 30750,
+        "softHour": 5125,
+        "hardMax": 138,
+        "hardHour": 23
+    },
+    "30": {
+        "key": "30",
+        "campaignLevel": 4001,
+        "softMax": 31950,
+        "softHour": 5325,
+        "hardMax": 144,
+        "hardHour": 24
+    },
+    "31": {
+        "key": "31",
+        "campaignLevel": 5001,
+        "softMax": 33450,
+        "softHour": 5575,
+        "hardMax": 144,
+        "hardHour": 24
+    },
+    "32": {
+        "key": "32",
+        "campaignLevel": 6001,
+        "softMax": 34950,
+        "softHour": 5825,
+        "hardMax": 150,
+        "hardHour": 25
+    },
+    "33": {
+        "key": "33",
+        "campaignLevel": 7001,
+        "softMax": 36450,
+        "softHour": 6075,
+        "hardMax": 150,
+        "hardHour": 25
+    },
+    "34": {
+        "key": "34",
+        "campaignLevel": 8001,
+        "softMax": 37950,
+        "softHour": 6325,
+        "hardMax": 156,
+        "hardHour": 26
+    },
+    "35": {
+        "key": "35",
+        "campaignLevel": 9001,
+        "softMax": 39450,
+        "softHour": 6575,
+        "hardMax": 156,
+        "hardHour": 26
+    },
+    "36": {
+        "key": "36",
+        "campaignLevel": 10001,
+        "softMax": 40950,
+        "softHour": 6825,
+        "hardMax": 162,
+        "hardHour": 27
+    }
+}

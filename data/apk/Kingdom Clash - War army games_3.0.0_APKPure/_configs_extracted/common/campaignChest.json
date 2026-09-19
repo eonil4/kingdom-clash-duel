@@ -1,0 +1,10 @@
+{
+    "troopsChest": {
+        "key": "troopsChest",
+        "currencyInWalletId": "TroopsChest"
+    },
+    "heroChest": {
+        "key": "heroChest",
+        "currencyInWalletId": "HeroChest"
+    }
+}

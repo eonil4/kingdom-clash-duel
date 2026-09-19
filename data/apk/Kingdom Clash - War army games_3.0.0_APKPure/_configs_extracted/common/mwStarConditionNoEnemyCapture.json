@@ -1,0 +1,12 @@
+{
+    "NoEnemyCapture_3": {
+        "key": "NoEnemyCapture_3",
+        "description": "mwNoEnemyCapture_3",
+        "enemyCaptureLimit": 3
+    },
+    "NoEnemyCapture_5": {
+        "key": "NoEnemyCapture_5",
+        "description": "mwNoEnemyCapture_5",
+        "enemyCaptureLimit": 5
+    }
+}

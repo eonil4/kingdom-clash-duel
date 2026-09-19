@@ -1,0 +1,781 @@
+{
+    "offer_gem_1": {
+        "key": "offer_gem_1",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 160,
+        "extraAmount": 0,
+        "iconId": "small_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_gem_2": {
+        "key": "offer_gem_2",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 1000,
+        "extraAmount": 200,
+        "iconId": "big_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_gem_3": {
+        "key": "offer_gem_3",
+        "order": 3,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 2400,
+        "extraAmount": 800,
+        "iconId": "bag_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gem_4": {
+        "key": "offer_gem_4",
+        "order": 4,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 5000,
+        "extraAmount": 1800,
+        "iconId": "barrel_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_4",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gem_5": {
+        "key": "offer_gem_5",
+        "order": 5,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 13000,
+        "extraAmount": 4800,
+        "iconId": "chest_gem_wood",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_5",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gem_6": {
+        "key": "offer_gem_6",
+        "order": 6,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 28000,
+        "extraAmount": 12000,
+        "iconId": "chest_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gem_6",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gold_1": {
+        "key": "offer_gold_1",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "Gold",
+        "currencyAmount": 100000,
+        "extraAmount": 0,
+        "iconId": "big_coin",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gold_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gold_2": {
+        "key": "offer_gold_2",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "Gold",
+        "currencyAmount": 500000,
+        "extraAmount": 140000,
+        "iconId": "barrel_coin",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gold_2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_gold_3": {
+        "key": "offer_gold_3",
+        "order": 3,
+        "title_Localized": "",
+        "currencyId": "Gold",
+        "currencyAmount": 1500000,
+        "extraAmount": 660000,
+        "iconId": "chest_coin",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offer_gold_3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "roulette_roll_once_gems": {
+        "key": "roulette_roll_once_gems",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 1,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 120,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "roulette_roll_10_times_gems": {
+        "key": "roulette_roll_10_times_gems",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 10,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 1000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "roulette_roll_once_horseshoe": {
+        "key": "roulette_roll_once_horseshoe",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 1,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "RouletteRoll",
+        "priceCurrencyAmount": 1,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "roulette_roll_10_times_horseshoe": {
+        "key": "roulette_roll_10_times_horseshoe",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 10,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "RouletteRoll",
+        "priceCurrencyAmount": 10,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "daily_gift_gold": {
+        "key": "daily_gift_gold",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "Gold",
+        "currencyAmount": 15000,
+        "extraAmount": 0,
+        "iconId": "big_coin",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "daily_gift_gem": {
+        "key": "daily_gift_gem",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "Gem",
+        "currencyAmount": 50,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "daily_gift_horsehoe": {
+        "key": "daily_gift_horsehoe",
+        "order": 1,
+        "title_Localized": "caption_reward_roulette_spin",
+        "currencyId": "RouletteRoll",
+        "currencyAmount": 1,
+        "extraAmount": 0,
+        "iconId": "roulette_spin",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "daily_gift_badgesX2": {
+        "key": "daily_gift_badgesX2",
+        "order": 1,
+        "title_Localized": "caption_reward_badgesX2",
+        "currencyId": "BadgesX2",
+        "currencyAmount": 10,
+        "extraAmount": 0,
+        "iconId": "badgesX2",
+        "analyticsCategory": "bank_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offer_gold": {
+        "key": "clan_offer_gold",
+        "order": 1,
+        "title_Localized": "caption_bank_small_coin",
+        "currencyId": "Gold",
+        "currencyAmount": 20000,
+        "extraAmount": 0,
+        "iconId": "small_coin",
+        "analyticsCategory": "inapp",
+        "criteriaId": "clanShopGold",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade1",
+        "priceCurrencyAmount": 800,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "clan_offer_gem": {
+        "key": "clan_offer_gem",
+        "order": 2,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 150,
+        "extraAmount": 0,
+        "iconId": "small_gem",
+        "analyticsCategory": "inapp",
+        "criteriaId": "clanRank_5",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "ClanCoinGrade2",
+        "priceCurrencyAmount": 2000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_gold_4": {
+        "key": "offer_gold_4",
+        "order": 4,
+        "title_Localized": "caption_bank_small_coin",
+        "currencyId": "Gold",
+        "currencyAmount": 5000,
+        "extraAmount": 0,
+        "iconId": "small_coin",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 100,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_gold_5": {
+        "key": "offer_gold_5",
+        "order": 5,
+        "title_Localized": "caption_bank_bag_coin",
+        "currencyId": "Gold",
+        "currencyAmount": 60000,
+        "extraAmount": 10000,
+        "iconId": "bag_coin",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 1000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_gold_6": {
+        "key": "offer_gold_6",
+        "order": 6,
+        "title_Localized": "caption_bank_chest_coin_wood",
+        "currencyId": "Gold",
+        "currencyAmount": 750000,
+        "extraAmount": 250000,
+        "iconId": "chest_coin_wood",
+        "analyticsCategory": "bank_hard",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 10000,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinoRoulette_roll_once_ticket": {
+        "key": "casinoRoulette_roll_once_ticket",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 1,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "CasinoTicket",
+        "priceCurrencyAmount": 1,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinoRoulette_roll_10_times_ticket": {
+        "key": "casinoRoulette_roll_10_times_ticket",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 10,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "CasinoTicket",
+        "priceCurrencyAmount": 10,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinoKingRoulette_roll_once_ticket": {
+        "key": "casinoKingRoulette_roll_once_ticket",
+        "order": 1,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 1,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "CasinoKingTicket",
+        "priceCurrencyAmount": 1,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinoKingRoulette_roll_10_times_ticket": {
+        "key": "casinoKingRoulette_roll_10_times_ticket",
+        "order": 2,
+        "title_Localized": "",
+        "currencyId": "RouletteSpinVirtual",
+        "currencyAmount": 10,
+        "extraAmount": 0,
+        "iconId": null,
+        "analyticsCategory": "roulette",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "CasinoKingTicket",
+        "priceCurrencyAmount": 10,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerGearShard_free": {
+        "key": "offerGearShard_free",
+        "order": 0,
+        "title_Localized": "",
+        "currencyId": "gearShards",
+        "currencyAmount": 12,
+        "extraAmount": 0,
+        "iconId": "icon_gearShard",
+        "analyticsCategory": "expedition_gear_free",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBoneDragon_free_1": {
+        "key": "chainofferBoneDragon_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBoneDragon_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferForestQueen_free_1": {
+        "key": "chainofferForestQueen_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferForestQueen_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferIceMage_free_1": {
+        "key": "chainofferIceMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferIceMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferCharmer_free_1": {
+        "key": "chainofferCharmer_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferCharmer_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferAirMage_free_1": {
+        "key": "chainofferAirMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferAirMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDarknessMage_free_1": {
+        "key": "chainofferDarknessMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDarknessMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferFireMage_free_1": {
+        "key": "chainofferFireMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferFireMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferSandMage_free_1": {
+        "key": "chainofferSandMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferSandMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPirate_free_1": {
+        "key": "chainofferUndeadPirate_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPirate_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferWaterMage_free_1": {
+        "key": "chainofferWaterMage_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferWaterMage_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferLordInquisitor_free_1": {
+        "key": "chainofferLordInquisitor_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferLordInquisitor_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferUndeadPestilence_free_1": {
+        "key": "chainofferUndeadPestilence_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferUndeadPestilence_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferBardHero_free_1": {
+        "key": "chainofferBardHero_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferBardHero_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "chainofferDragonRider_free_1": {
+        "key": "chainofferDragonRider_free_1",
+        "order": 0,
+        "title_Localized": "caption_bank_small_gems",
+        "currencyId": "Gem",
+        "currencyAmount": 30,
+        "extraAmount": 0,
+        "iconId": "big_gem",
+        "analyticsCategory": "chain_offer",
+        "criteriaId": "chainofferDragonRider_criteria_00",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

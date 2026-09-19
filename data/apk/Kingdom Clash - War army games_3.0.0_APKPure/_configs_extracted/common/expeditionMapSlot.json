@@ -1,0 +1,92 @@
+{
+    "human_fort": {
+        "key": "human_fort",
+        "coordX": 314,
+        "coordY": 345,
+        "headerArt": "faction_map_art_humans_04"
+    },
+    "human_port": {
+        "key": "human_port",
+        "coordX": -175,
+        "coordY": 543,
+        "headerArt": "faction_map_art_humans_01"
+    },
+    "human_fish": {
+        "key": "human_fish",
+        "coordX": 314,
+        "coordY": 543,
+        "headerArt": "faction_map_art_humans_03"
+    },
+    "humanFaction": {
+        "key": "humanFaction",
+        "coordX": 90,
+        "coordY": 500,
+        "headerArt": "faction_map_art_humans"
+    },
+    "human_village": {
+        "key": "human_village",
+        "coordX": -221,
+        "coordY": 345,
+        "headerArt": "faction_map_art_humans_02"
+    },
+    "undead_cave": {
+        "key": "undead_cave",
+        "coordX": -256,
+        "coordY": 37,
+        "headerArt": "faction_map_art_undead_01"
+    },
+    "undead_vampire": {
+        "key": "undead_vampire",
+        "coordX": -330,
+        "coordY": -172,
+        "headerArt": "faction_map_art_undead_02"
+    },
+    "undead_obelisk": {
+        "key": "undead_obelisk",
+        "coordX": -328,
+        "coordY": -408,
+        "headerArt": "faction_map_art_undead_03"
+    },
+    "undead_church": {
+        "key": "undead_church",
+        "coordX": -116,
+        "coordY": -528,
+        "headerArt": "faction_map_art_undead_04"
+    },
+    "mage_mountain": {
+        "key": "mage_mountain",
+        "coordX": 41,
+        "coordY": 12,
+        "headerArt": "faction_map_art_mages_01"
+    },
+    "mage_lake": {
+        "key": "mage_lake",
+        "coordX": 138,
+        "coordY": -246,
+        "headerArt": "faction_map_art_mages_02"
+    },
+    "mage_tree": {
+        "key": "mage_tree",
+        "coordX": 325,
+        "coordY": -366,
+        "headerArt": "faction_map_art_mages_04"
+    },
+    "mage_forest": {
+        "key": "mage_forest",
+        "coordX": 308,
+        "coordY": -154,
+        "headerArt": "faction_map_art_mages_03"
+    },
+    "undeadFaction": {
+        "key": "undeadFaction",
+        "coordX": -100,
+        "coordY": -283,
+        "headerArt": "faction_map_art_undead"
+    },
+    "magesFaction": {
+        "key": "magesFaction",
+        "coordX": 249,
+        "coordY": 94,
+        "headerArt": "faction_map_art_mages"
+    }
+}

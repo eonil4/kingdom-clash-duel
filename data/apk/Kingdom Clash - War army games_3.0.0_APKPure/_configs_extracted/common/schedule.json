@@ -1,0 +1,110 @@
+{
+    "dailyGiftReward": {
+        "key": "dailyGiftReward",
+        "isLooped": true,
+        "fallbackMaxIterations": 10,
+        "fallbackDuration": 86400
+    },
+    "goldSkin": {
+        "key": "goldSkin",
+        "isLooped": true,
+        "fallbackMaxIterations": 10,
+        "fallbackDuration": 86400
+    },
+    "pvpTroop": {
+        "key": "pvpTroop",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "pvpHero": {
+        "key": "pvpHero",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "pvpChest": {
+        "key": "pvpChest",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "silverSkin": {
+        "key": "silverSkin",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerDaily": {
+        "key": "offerDaily",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerLobbyTroops": {
+        "key": "offerLobbyTroops",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerLobbyGift": {
+        "key": "offerLobbyGift",
+        "isLooped": false,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerClan": {
+        "key": "offerClan",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerGemSale": {
+        "key": "offerGemSale",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerGoldSale": {
+        "key": "offerGoldSale",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerCasino": {
+        "key": "offerCasino",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerCasinoReflectArmor": {
+        "key": "offerCasinoReflectArmor",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerCasinoAoeArmor": {
+        "key": "offerCasinoAoeArmor",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerCasinoAoeWeapon": {
+        "key": "offerCasinoAoeWeapon",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerCasinoReflectWeapon": {
+        "key": "offerCasinoReflectWeapon",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    },
+    "offerTowerAxeThrowersShop": {
+        "key": "offerTowerAxeThrowersShop",
+        "isLooped": true,
+        "fallbackMaxIterations": 2,
+        "fallbackDuration": 86400
+    }
+}

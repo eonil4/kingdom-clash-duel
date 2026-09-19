@@ -1,0 +1,542 @@
+{
+    "offer_BattlePass": {
+        "key": "offer_BattlePass",
+        "order": 0,
+        "rewardId": "offer_BattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "sku_BattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_BattlePassAndLevels": {
+        "key": "offer_BattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_BattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "sku_BattlePassAndLevels",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_ArenaBattlePass": {
+        "key": "offer_ArenaBattlePass",
+        "order": 0,
+        "rewardId": "offer_ArenaBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "ArenaBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_ArenaBattlePassAndLevels": {
+        "key": "offer_ArenaBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_ArenaBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "ArenaBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_AdvancedBattlePass": {
+        "key": "offer_AdvancedBattlePass",
+        "order": 0,
+        "rewardId": "offer_AdvancedBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "sku_AdvancedBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_AdvancedBattlePassAndLevels": {
+        "key": "offer_AdvancedBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_AdvancedBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "sku_AdvancedBattlePassAndLevels",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_AdvancedArenaBattlePass": {
+        "key": "offer_AdvancedArenaBattlePass",
+        "order": 0,
+        "rewardId": "offer_AdvancedArenaBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedArenaBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_AdvancedArenaBattlePassAndLevels": {
+        "key": "offer_AdvancedArenaBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_AdvancedArenaBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedArenaBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_CasinoBattlePass": {
+        "key": "offer_CasinoBattlePass",
+        "order": 0,
+        "rewardId": "offer_CasinoBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_CasinoBattlePassAndLevels": {
+        "key": "offer_CasinoBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_CasinoBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_AdvancedCasinoBattlePass": {
+        "key": "offer_AdvancedCasinoBattlePass",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedCasinoBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_AdvancedCasinoBattlePassAndLevels": {
+        "key": "offer_AdvancedCasinoBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedCasinoBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_CasinoKingBattlePass": {
+        "key": "offer_CasinoKingBattlePass",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoKingBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_CasinoKingBattlePassAndLevels": {
+        "key": "offer_CasinoKingBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "CasinoKingBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offer_AdvancedCasinoKingBattlePass": {
+        "key": "offer_AdvancedCasinoKingBattlePass",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedCasinoKingBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_AdvancedCasinoKingBattlePassAndLevels": {
+        "key": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedCasinoKingBattlePassPremium",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepasspremium_reflectarmor": {
+        "key": "advancedcasinobattlepasspremium_reflectarmor",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepasspremium_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepass_reflectarmor": {
+        "key": "advancedcasinobattlepass_reflectarmor",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepass_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepasspremium_reflectarmor": {
+        "key": "casinobattlepasspremium_reflectarmor",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepasspremium_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepass_reflectarmor": {
+        "key": "casinobattlepass_reflectarmor",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepass_reflectarmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepasspremium_aoearmor": {
+        "key": "advancedcasinobattlepasspremium_aoearmor",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepasspremium_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepass_aoearmor": {
+        "key": "advancedcasinobattlepass_aoearmor",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepass_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepasspremium_aoearmor": {
+        "key": "casinobattlepasspremium_aoearmor",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepasspremium_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepass_aoearmor": {
+        "key": "casinobattlepass_aoearmor",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepass_aoearmor",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepasspremium_aoeweapon": {
+        "key": "advancedcasinobattlepasspremium_aoeweapon",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepasspremium_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepass_aoeweapon": {
+        "key": "advancedcasinobattlepass_aoeweapon",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepass_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepasspremium_aoeweapon": {
+        "key": "casinobattlepasspremium_aoeweapon",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepasspremium_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepass_aoeweapon": {
+        "key": "casinobattlepass_aoeweapon",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepass_aoeweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepasspremium_reflectweapon": {
+        "key": "advancedcasinobattlepasspremium_reflectweapon",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepasspremium_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "advancedcasinobattlepass_reflectweapon": {
+        "key": "advancedcasinobattlepass_reflectweapon",
+        "order": 0,
+        "rewardId": "offer_AdvancedCasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "advancedcasinobattlepass_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepasspremium_reflectweapon": {
+        "key": "casinobattlepasspremium_reflectweapon",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepasspremium_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "casinobattlepass_reflectweapon": {
+        "key": "casinobattlepass_reflectweapon",
+        "order": 0,
+        "rewardId": "offer_CasinoKingBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "casinobattlepass_reflectweapon",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_TowerAxeThrowersBattlePass": {
+        "key": "offer_TowerAxeThrowersBattlePass",
+        "order": 0,
+        "rewardId": "offer_TowerAxeThrowersBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "SquadEventBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_advancedTowerAxeThrowersBattlePass": {
+        "key": "offer_advancedTowerAxeThrowersBattlePass",
+        "order": 0,
+        "rewardId": "offer_AdvancedTowerAxeThrowersBattlePass",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedSquadEventBattlePass",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_advancedTowerAxeThrowersBattlePassAndLevels": {
+        "key": "offer_advancedTowerAxeThrowersBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_AdvancedTowerAxeThrowersBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "AdvancedSquadEventBattlePassAndLevels",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offer_TowerAxeThrowersBattlePassAndLevels": {
+        "key": "offer_TowerAxeThrowersBattlePassAndLevels",
+        "order": 0,
+        "rewardId": "offer_TowerAxeThrowersBattlePassAndLevels",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "SquadEventBattlePassAndLevels",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

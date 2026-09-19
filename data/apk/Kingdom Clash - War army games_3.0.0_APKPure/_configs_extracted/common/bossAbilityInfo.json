@@ -1,0 +1,594 @@
+{
+    "bossDragon1bossDragon_defaultAoe": {
+        "key": "bossDragon1bossDragon_defaultAoe",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragon1bossDragon_piercingFire": {
+        "key": "bossDragon1bossDragon_piercingFire",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_piercingFire",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon1bossDragon_levelUp": {
+        "key": "bossDragon1bossDragon_levelUp",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragon1bossDragon_pull": {
+        "key": "bossDragon1bossDragon_pull",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_pull",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon1bossDragon_earthShakeAoe": {
+        "key": "bossDragon1bossDragon_earthShakeAoe",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_earthShakeAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon1bossDragon_passive_melee": {
+        "key": "bossDragon1bossDragon_passive_melee",
+        "bossId": "bossDragon1",
+        "abilityInfoId": "bossDragon_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossDragon2bossDragon_defaultAoe": {
+        "key": "bossDragon2bossDragon_defaultAoe",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragon2bossDragon_piercingFire": {
+        "key": "bossDragon2bossDragon_piercingFire",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_piercingFire",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon2bossDragon_levelUp": {
+        "key": "bossDragon2bossDragon_levelUp",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragon2bossDragon_pull": {
+        "key": "bossDragon2bossDragon_pull",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_pull",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon2bossDragon_earthShakeAoe": {
+        "key": "bossDragon2bossDragon_earthShakeAoe",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_earthShakeAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragon2bossDragon_passive_range": {
+        "key": "bossDragon2bossDragon_passive_range",
+        "bossId": "bossDragon2",
+        "abilityInfoId": "bossDragon_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueen1bossSpiderQueen_defaultAoe": {
+        "key": "bossSpiderQueen1bossSpiderQueen_defaultAoe",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueen1bossSpiderQueen_summon_spiderMelee": {
+        "key": "bossSpiderQueen1bossSpiderQueen_summon_spiderMelee",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderMelee",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen1bossSpiderQueen_levelUp": {
+        "key": "bossSpiderQueen1bossSpiderQueen_levelUp",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueen1bossSpiderQueen_poisonPuddles": {
+        "key": "bossSpiderQueen1bossSpiderQueen_poisonPuddles",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_poisonPuddles",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen1bossSpiderQueen_summon_spiderBang": {
+        "key": "bossSpiderQueen1bossSpiderQueen_summon_spiderBang",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderBang",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen1bossSpiderQueen_passive_melee": {
+        "key": "bossSpiderQueen1bossSpiderQueen_passive_melee",
+        "bossId": "bossSpiderQueen1",
+        "abilityInfoId": "bossSpiderQueen_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueen2bossSpiderQueen_defaultAoe": {
+        "key": "bossSpiderQueen2bossSpiderQueen_defaultAoe",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueen2bossSpiderQueen_summon_spiderMelee": {
+        "key": "bossSpiderQueen2bossSpiderQueen_summon_spiderMelee",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderMelee",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen2bossSpiderQueen_levelUp": {
+        "key": "bossSpiderQueen2bossSpiderQueen_levelUp",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueen2bossSpiderQueen_poisonPuddles": {
+        "key": "bossSpiderQueen2bossSpiderQueen_poisonPuddles",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_poisonPuddles",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen2bossSpiderQueen_summon_spiderBang": {
+        "key": "bossSpiderQueen2bossSpiderQueen_summon_spiderBang",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderBang",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueen2bossSpiderQueen_passive_range": {
+        "key": "bossSpiderQueen2bossSpiderQueen_passive_range",
+        "bossId": "bossSpiderQueen2",
+        "abilityInfoId": "bossSpiderQueen_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossKraken1bossKraken_defaultAoe": {
+        "key": "bossKraken1bossKraken_defaultAoe",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKraken1bossKraken_tentacle": {
+        "key": "bossKraken1bossKraken_tentacle",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_tentacle",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken1bossKraken_levelUp": {
+        "key": "bossKraken1bossKraken_levelUp",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKraken2bossKraken_defaultAoe": {
+        "key": "bossKraken2bossKraken_defaultAoe",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKraken2bossKraken_tentacle": {
+        "key": "bossKraken2bossKraken_tentacle",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_tentacle",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken2bossKraken_levelUp": {
+        "key": "bossKraken2bossKraken_levelUp",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_levelUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKraken1bossKraken_tentacleThrow": {
+        "key": "bossKraken1bossKraken_tentacleThrow",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_tentacleThrow",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken2bossKraken_tentacleThrow": {
+        "key": "bossKraken2bossKraken_tentacleThrow",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_tentacleThrow",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken1bossKraken_tentacleStrikesAoe": {
+        "key": "bossKraken1bossKraken_tentacleStrikesAoe",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_tentacleStrikesAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken2bossKraken_tentacleStrikesAoe": {
+        "key": "bossKraken2bossKraken_tentacleStrikesAoe",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_tentacleStrikesAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKraken1bossKraken_ability_passive_melee": {
+        "key": "bossKraken1bossKraken_ability_passive_melee",
+        "bossId": "bossKraken1",
+        "abilityInfoId": "bossKraken_ability_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossKraken2bossKraken_ability_passive_range": {
+        "key": "bossKraken2bossKraken_ability_passive_range",
+        "bossId": "bossKraken2",
+        "abilityInfoId": "bossKraken_ability_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossKrakenNew1bossKraken_defaultAoe": {
+        "key": "bossKrakenNew1bossKraken_defaultAoe",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKraken_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKrakenNew1bossKraken_tentacleStrikesAoe": {
+        "key": "bossKrakenNew1bossKraken_tentacleStrikesAoe",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKraken_tentacleStrikesAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew1bossKraken_tentacle": {
+        "key": "bossKrakenNew1bossKraken_tentacle",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKraken_tentacle",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew1bossKraken_tentacleThrow": {
+        "key": "bossKrakenNew1bossKraken_tentacleThrow",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKraken_tentacleThrow",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew1bossKrakenNew1_DmgLvlUp": {
+        "key": "bossKrakenNew1bossKrakenNew1_DmgLvlUp",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKrakenNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKrakenNew1bossKraken_ability_passive_melee": {
+        "key": "bossKrakenNew1bossKraken_ability_passive_melee",
+        "bossId": "bossKrakenNew1",
+        "abilityInfoId": "bossKraken_ability_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossKrakenNew2bossKraken_defaultAoe": {
+        "key": "bossKrakenNew2bossKraken_defaultAoe",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKraken_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKrakenNew2bossKraken_tentacleStrikesAoe": {
+        "key": "bossKrakenNew2bossKraken_tentacleStrikesAoe",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKraken_tentacleStrikesAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew2bossKraken_tentacle": {
+        "key": "bossKrakenNew2bossKraken_tentacle",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKraken_tentacle",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew2bossKraken_tentacleThrow": {
+        "key": "bossKrakenNew2bossKraken_tentacleThrow",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKraken_tentacleThrow",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossKrakenNew2bossKrakenNew2_DmgLvlUp": {
+        "key": "bossKrakenNew2bossKrakenNew2_DmgLvlUp",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKrakenNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossKrakenNew2bossKraken_ability_passive_range": {
+        "key": "bossKrakenNew2bossKraken_ability_passive_range",
+        "bossId": "bossKrakenNew2",
+        "abilityInfoId": "bossKraken_ability_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossDragonNew1bossDragon_defaultAoe": {
+        "key": "bossDragonNew1bossDragon_defaultAoe",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragon_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragonNew1bossDragon_piercingFire": {
+        "key": "bossDragonNew1bossDragon_piercingFire",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragon_piercingFire",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew1bossDragonNew1_DmgLvlUp": {
+        "key": "bossDragonNew1bossDragonNew1_DmgLvlUp",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragonNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragonNew1bossDragon_pull": {
+        "key": "bossDragonNew1bossDragon_pull",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragon_pull",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew1bossDragon_earthShakeAoe": {
+        "key": "bossDragonNew1bossDragon_earthShakeAoe",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragon_earthShakeAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew1bossDragon_passive_melee": {
+        "key": "bossDragonNew1bossDragon_passive_melee",
+        "bossId": "bossDragonNew1",
+        "abilityInfoId": "bossDragon_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossDragonNew2bossDragon_defaultAoe": {
+        "key": "bossDragonNew2bossDragon_defaultAoe",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragon_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragonNew2bossDragon_piercingFire": {
+        "key": "bossDragonNew2bossDragon_piercingFire",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragon_piercingFire",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew2bossDragonNew2_DmgLvlUp": {
+        "key": "bossDragonNew2bossDragonNew2_DmgLvlUp",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragonNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossDragonNew2bossDragon_pull": {
+        "key": "bossDragonNew2bossDragon_pull",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragon_pull",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew2bossDragon_earthShakeAoe": {
+        "key": "bossDragonNew2bossDragon_earthShakeAoe",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragon_earthShakeAoe",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossDragonNew2bossDragon_passive_range": {
+        "key": "bossDragonNew2bossDragon_passive_range",
+        "bossId": "bossDragonNew2",
+        "abilityInfoId": "bossDragon_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueenNew1bossSpiderQueen_defaultAoe": {
+        "key": "bossSpiderQueenNew1bossSpiderQueen_defaultAoe",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueen_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueenNew1bossSpiderQueen_summon_spiderMelee": {
+        "key": "bossSpiderQueenNew1bossSpiderQueen_summon_spiderMelee",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderMelee",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew1bossSpiderQueenNew1_DmgLvlUp": {
+        "key": "bossSpiderQueenNew1bossSpiderQueenNew1_DmgLvlUp",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueenNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueenNew1bossSpiderQueen_poisonPuddles": {
+        "key": "bossSpiderQueenNew1bossSpiderQueen_poisonPuddles",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueen_poisonPuddles",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew1bossSpiderQueen_summon_spiderBang": {
+        "key": "bossSpiderQueenNew1bossSpiderQueen_summon_spiderBang",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderBang",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew1bossSpiderQueen_passive_melee": {
+        "key": "bossSpiderQueenNew1bossSpiderQueen_passive_melee",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "bossSpiderQueen_passive_melee",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueenNew2bossSpiderQueen_defaultAoe": {
+        "key": "bossSpiderQueenNew2bossSpiderQueen_defaultAoe",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueen_defaultAoe",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueenNew2bossSpiderQueen_summon_spiderMelee": {
+        "key": "bossSpiderQueenNew2bossSpiderQueen_summon_spiderMelee",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderMelee",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew2bossSpiderQueenNew2_DmgLvlUp": {
+        "key": "bossSpiderQueenNew2bossSpiderQueenNew2_DmgLvlUp",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueenNew_DmgLvlUp",
+        "showInBattleUi": false,
+        "showInLobbyUi": false,
+        "isActive": false
+    },
+    "bossSpiderQueenNew2bossSpiderQueen_poisonPuddles": {
+        "key": "bossSpiderQueenNew2bossSpiderQueen_poisonPuddles",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueen_poisonPuddles",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew2bossSpiderQueen_summon_spiderBang": {
+        "key": "bossSpiderQueenNew2bossSpiderQueen_summon_spiderBang",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueen_summon_spiderBang",
+        "showInBattleUi": true,
+        "showInLobbyUi": true,
+        "isActive": true
+    },
+    "bossSpiderQueenNew2bossSpiderQueen_passive_range": {
+        "key": "bossSpiderQueenNew2bossSpiderQueen_passive_range",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "bossSpiderQueen_passive_range",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueenNew1reflect_aura_boss": {
+        "key": "bossSpiderQueenNew1reflect_aura_boss",
+        "bossId": "bossSpiderQueenNew1",
+        "abilityInfoId": "reflect_aura_boss",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    },
+    "bossSpiderQueenNew2reflect_aura_boss": {
+        "key": "bossSpiderQueenNew2reflect_aura_boss",
+        "bossId": "bossSpiderQueenNew2",
+        "abilityInfoId": "reflect_aura_boss",
+        "showInBattleUi": false,
+        "showInLobbyUi": true,
+        "isActive": false
+    }
+}

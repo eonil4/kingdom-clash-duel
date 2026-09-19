@@ -1,0 +1,284 @@
+{
+    "cleric_IsNotMax": {
+        "key": "cleric_IsNotMax",
+        "title": "Не максимальный Cleric",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "clericHero",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "merida_IsNotMax": {
+        "key": "merida_IsNotMax",
+        "title": "Не максимальная Merida",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "accurateMerida",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "isMidasNotBought": {
+        "key": "isMidasNotBought",
+        "title": "Ни разу не куплен Мидас",
+        "command": {
+            "eq": {
+                "a": {
+                    "counterGetOrZero": {
+                        "counterId": "hand_of_midas",
+                        "context": "user"
+                    }
+                },
+                "b": {
+                    "integer": {
+                        "value": 0,
+                        "context": "global"
+                    }
+                },
+                "context": "compare"
+            }
+        }
+    },
+    "isVipNotBought": {
+        "key": "isVipNotBought",
+        "title": "Ни разу не куплен ViP",
+        "command": {
+            "eq": {
+                "a": {
+                    "counterGetOrZero": {
+                        "counterId": "vip_subscription",
+                        "context": "user"
+                    }
+                },
+                "b": {
+                    "integer": {
+                        "value": 0,
+                        "context": "global"
+                    }
+                },
+                "context": "compare"
+            }
+        }
+    },
+    "isRouletteNoLock": {
+        "key": "isRouletteNoLock",
+        "title": "Рулетка не заблокирована",
+        "command": {
+            "and": {
+                "items": [
+                    {
+                        "rouletteIsActive": {
+                            "context": "user"
+                        }
+                    }
+                ],
+                "context": "global"
+            }
+        }
+    },
+    "goldMerida_IsNotBought": {
+        "key": "goldMerida_IsNotBought",
+        "title": "Не куплен золотой скин Мериды",
+        "command": {
+            "not": {
+                "command": {
+                    "heroSkinIsAcquired": {
+                        "heroSkinId": "accurateMeridaGoldSkin",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "boneDragon_IsNotMax": {
+        "key": "boneDragon_IsNotMax",
+        "title": "Не максимальный BoneDragon",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "boneDragon",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "forestQueen_IsNotMax": {
+        "key": "forestQueen_IsNotMax",
+        "title": "Не максимальная ForestQueen",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "forestQueen",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "isPlayerNoPayer": {
+        "key": "isPlayerNoPayer",
+        "title": "Игрок не платил",
+        "command": {
+            "not": {
+                "command": {
+                    "isPayer": {
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "dragonRider_IsNotMax": {
+        "key": "dragonRider_IsNotMax",
+        "title": "Не максимальный DragonRider",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "dragonRider",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "charmer_IsNotMax": {
+        "key": "charmer_IsNotMax",
+        "title": "Не максимальная Charmer",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "charmer",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "airMage_IsNotMax": {
+        "key": "airMage_IsNotMax",
+        "title": "Не максимальный AirMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "airMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "darknessMage_IsNotMax": {
+        "key": "darknessMage_IsNotMax",
+        "title": "Не максимальная DarrknessMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "darknessMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "iceMage_IsNotMax": {
+        "key": "iceMage_IsNotMax",
+        "title": "Не максимальный iceMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "iceMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "fireMage_IsNotMax": {
+        "key": "fireMage_IsNotMax",
+        "title": "Не максимальная FireMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "fireMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "sandMage_IsNotMax": {
+        "key": "sandMage_IsNotMax",
+        "title": "Не максимальный SandMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "sandMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "undeadPirate_IsNotMax": {
+        "key": "undeadPirate_IsNotMax",
+        "title": "Не максимальный UndeadPirate",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "undeadPirate",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    },
+    "waterMage_IsNotMax": {
+        "key": "waterMage_IsNotMax",
+        "title": "Не максимальная WaterMage",
+        "command": {
+            "not": {
+                "command": {
+                    "heroIsMaxOrEnoughShards": {
+                        "heroId": "waterMage",
+                        "context": "user"
+                    }
+                },
+                "context": "global"
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "hh_roullete_1": {
+        "key": "hh_roullete_1",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "counterId": "headhunt_hard",
+        "minCounter": -1,
+        "maxCounter": 999999999
+    }
+}

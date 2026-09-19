@@ -1,0 +1,30 @@
+{
+    "casinoPhoenix": {
+        "key": "casinoPhoenix",
+        "battlepassLinkId": "CasinoSeason_Phoenix",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "featuredUnitId": "phoenix",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint_format"
+    },
+    "casinoPhoenix_2": {
+        "key": "casinoPhoenix_2",
+        "battlepassLinkId": "CasinoSeason_Phoenix_2",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "featuredUnitId": "phoenix",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint_format"
+    },
+    "casinoWeapon": {
+        "key": "casinoWeapon",
+        "battlepassLinkId": "CasinoSeason_Weapon",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "featuredUnitId": "phoenix",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint_format"
+    },
+    "casinoArmor": {
+        "key": "casinoArmor",
+        "battlepassLinkId": "CasinoSeason_Armor",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "featuredUnitId": "phoenix",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint_format"
+    }
+}

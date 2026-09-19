@@ -1,0 +1,89 @@
+{
+    "offerLobbyTroops1": {
+        "key": "offerLobbyTroops1",
+        "entries": [
+            {
+                "troopChestId": "offerTroopChestEpic",
+                "chestAmount": 3
+            },
+            {
+                "troopChestId": "offerTroopChestLegendary",
+                "chestAmount": 2
+            }
+        ],
+        "buyLimit": 3,
+        "doubleOfferAvailable": true,
+        "selectionPrefab": "offerTroopsUIDaily",
+        "flagStyle": "Blue",
+        "offerName": "caption_offer_lobby_troops_1",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerLobbyTroops1_1",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "gachaPrefab": "offerTroopsGachaDaily",
+        "isPromoFlag": true
+    },
+    "offerLobbyTroops2": {
+        "key": "offerLobbyTroops2",
+        "entries": [
+            {
+                "troopChestId": "offerTroopChestEpic",
+                "chestAmount": 6
+            },
+            {
+                "troopChestId": "offerTroopChestLegendary",
+                "chestAmount": 4
+            }
+        ],
+        "buyLimit": 3,
+        "doubleOfferAvailable": true,
+        "selectionPrefab": "offerTroopsUIWisdom",
+        "flagStyle": "Blue",
+        "offerName": "caption_offer_lobby_troops_2",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerLobbyTroops2",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "gachaPrefab": "offerTroopsGachaWisdom",
+        "isPromoFlag": true
+    },
+    "offerLobbyTroops3": {
+        "key": "offerLobbyTroops3",
+        "entries": [
+            {
+                "troopChestId": "offerTroopChestEpic",
+                "chestAmount": 12
+            },
+            {
+                "troopChestId": "offerTroopChestLegendary",
+                "chestAmount": 8
+            }
+        ],
+        "buyLimit": 3,
+        "doubleOfferAvailable": true,
+        "selectionPrefab": "offerTroopsUIRoyal",
+        "flagStyle": "Rose",
+        "offerName": "caption_offer_lobby_troops_3",
+        "analyticsCategory": "limited_inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerLobbyTroops3",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "gachaPrefab": "offerTroopsGachaRoyal",
+        "isPromoFlag": true
+    }
+}

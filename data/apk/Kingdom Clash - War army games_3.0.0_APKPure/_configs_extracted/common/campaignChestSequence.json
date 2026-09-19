@@ -1,0 +1,162 @@
+{
+    "wood1": {
+        "key": "wood1",
+        "openNumber": 0,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 0,
+        "rewardChestId": "archerChest"
+    },
+    "wood2": {
+        "key": "wood2",
+        "openNumber": 1,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 60,
+        "rewardChestId": "commonChest"
+    },
+    "wood3": {
+        "key": "wood3",
+        "openNumber": 2,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 300,
+        "rewardChestId": "comRareChest"
+    },
+    "wood4": {
+        "key": "wood4",
+        "openNumber": 3,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 900,
+        "rewardChestId": "woodenChest"
+    },
+    "wood5": {
+        "key": "wood5",
+        "openNumber": 4,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 1800,
+        "rewardChestId": "woodenChest"
+    },
+    "wood6": {
+        "key": "wood6",
+        "openNumber": 5,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 3600,
+        "rewardChestId": "woodenChest"
+    },
+    "wood7": {
+        "key": "wood7",
+        "openNumber": 6,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 7200,
+        "rewardChestId": "woodenChest"
+    },
+    "wood8": {
+        "key": "wood8",
+        "openNumber": 7,
+        "campaignChestId": "troopsChest",
+        "currencyId": "Gold",
+        "currencyAmount": 100,
+        "timeChunkSec": 72,
+        "openDuration": 10800,
+        "rewardChestId": "woodenChest"
+    },
+    "hero1": {
+        "key": "hero1",
+        "openNumber": 0,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 0,
+        "rewardChestId": "firstHeroChestReward"
+    },
+    "hero2": {
+        "key": "hero2",
+        "openNumber": 1,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 600,
+        "rewardChestId": "secondHeroChestReward"
+    },
+    "hero3": {
+        "key": "hero3",
+        "openNumber": 2,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 1200,
+        "rewardChestId": "thirdHeroChestReward"
+    },
+    "hero4": {
+        "key": "hero4",
+        "openNumber": 3,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 2400,
+        "rewardChestId": "goldChest"
+    },
+    "hero5": {
+        "key": "hero5",
+        "openNumber": 4,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 4800,
+        "rewardChestId": "goldChest"
+    },
+    "hero6": {
+        "key": "hero6",
+        "openNumber": 5,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 9600,
+        "rewardChestId": "goldChest"
+    },
+    "hero7": {
+        "key": "hero7",
+        "openNumber": 6,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 19200,
+        "rewardChestId": "goldChest"
+    },
+    "hero8": {
+        "key": "hero8",
+        "openNumber": 7,
+        "campaignChestId": "heroChest",
+        "currencyId": "Gem",
+        "currencyAmount": 2,
+        "timeChunkSec": 72,
+        "openDuration": 28800,
+        "rewardChestId": "goldChest"
+    }
+}

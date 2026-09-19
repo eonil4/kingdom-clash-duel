@@ -1,0 +1,10 @@
+{
+    "placementOfferHero_gift": {
+        "key": "placementOfferHero_gift",
+        "offer": "offerIceMage_gift",
+        "icon": "icon_first_gift",
+        "prefabIcon": null,
+        "title": "caption_title_gift_first_purchase",
+        "hint": "caption_description_gift_first_purchase_new"
+    }
+}

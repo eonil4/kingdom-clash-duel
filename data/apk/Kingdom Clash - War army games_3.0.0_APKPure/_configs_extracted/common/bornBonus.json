@@ -1,0 +1,38 @@
+{
+    "1": {
+        "key": "1",
+        "order": 1,
+        "bonusId": "bornBonus",
+        "bonusNamedReward": null
+    },
+    "2": {
+        "key": "2",
+        "order": 2,
+        "bonusId": "bornBonus_070",
+        "bonusNamedReward": "r_070"
+    },
+    "3": {
+        "key": "3",
+        "order": 3,
+        "bonusId": "bornBonus_0110",
+        "bonusNamedReward": "r_0110"
+    },
+    "4": {
+        "key": "4",
+        "order": 4,
+        "bonusId": "bornBonus_0140",
+        "bonusNamedReward": "r_0140"
+    },
+    "5": {
+        "key": "5",
+        "order": 5,
+        "bonusId": "bornBonus_0210",
+        "bonusNamedReward": "r_0210"
+    },
+    "6": {
+        "key": "6",
+        "order": 6,
+        "bonusId": "bornBonus_0230",
+        "bonusNamedReward": "r_0230"
+    }
+}

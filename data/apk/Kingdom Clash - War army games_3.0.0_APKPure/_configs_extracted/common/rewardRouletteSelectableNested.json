@@ -1,0 +1,170 @@
+{
+    "1": {
+        "key": "1",
+        "rewardSelectableId": "selection_reflectWeapon_0",
+        "rewardId": "casinoReflectWeapon_30",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 0
+    },
+    "2": {
+        "key": "2",
+        "rewardSelectableId": "selection_reflectWeapon_0",
+        "rewardId": "casinoAoeWeapon_30",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 1
+    },
+    "3": {
+        "key": "3",
+        "rewardSelectableId": "selection_reflectWeapon_1",
+        "rewardId": "casinoReflectWeapon_1",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 0
+    },
+    "4": {
+        "key": "4",
+        "rewardSelectableId": "selection_reflectWeapon_1",
+        "rewardId": "casinoAoeWeapon_1",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 1
+    },
+    "5": {
+        "key": "5",
+        "rewardSelectableId": "selection_reflectWeapon_2",
+        "rewardId": "casinoReflectWeapon_2",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 0
+    },
+    "6": {
+        "key": "6",
+        "rewardSelectableId": "selection_reflectWeapon_2",
+        "rewardId": "casinoAoeWeapon_2",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 1
+    },
+    "7": {
+        "key": "7",
+        "rewardSelectableId": "selection_reflectArmor_0",
+        "rewardId": "casinoReflectArmor_30",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 0
+    },
+    "8": {
+        "key": "8",
+        "rewardSelectableId": "selection_reflectArmor_0",
+        "rewardId": "casinoAoeArmor_30",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 1
+    },
+    "10": {
+        "key": "10",
+        "rewardSelectableId": "selection_reflectArmor_1",
+        "rewardId": "casinoAoeArmor_1",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 1
+    },
+    "11": {
+        "key": "11",
+        "rewardSelectableId": "selection_reflectArmor_2",
+        "rewardId": "casinoReflectArmor_2",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 0
+    },
+    "12": {
+        "key": "12",
+        "rewardSelectableId": "selection_reflectArmor_2",
+        "rewardId": "casinoAoeArmor_2",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 1
+    },
+    "9": {
+        "key": "9",
+        "rewardSelectableId": "selection_reflectArmor_1",
+        "rewardId": "casinoReflectArmor_1",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 0
+    },
+    "13": {
+        "key": "13",
+        "rewardSelectableId": "selection_aoeWeapon_0",
+        "rewardId": "casinoReflectWeapon_30",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 1
+    },
+    "14": {
+        "key": "14",
+        "rewardSelectableId": "selection_aoeWeapon_0",
+        "rewardId": "casinoAoeWeapon_30",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 0
+    },
+    "15": {
+        "key": "15",
+        "rewardSelectableId": "selection_aoeWeapon_1",
+        "rewardId": "casinoReflectWeapon_1",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 1
+    },
+    "16": {
+        "key": "16",
+        "rewardSelectableId": "selection_aoeWeapon_1",
+        "rewardId": "casinoAoeWeapon_1",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 0
+    },
+    "17": {
+        "key": "17",
+        "rewardSelectableId": "selection_aoeWeapon_2",
+        "rewardId": "casinoReflectWeapon_2",
+        "selectionKey": "selection_index_reflect_weapon",
+        "order": 1
+    },
+    "18": {
+        "key": "18",
+        "rewardSelectableId": "selection_aoeWeapon_2",
+        "rewardId": "casinoAoeWeapon_2",
+        "selectionKey": "selection_index_aoe_weapon",
+        "order": 0
+    },
+    "19": {
+        "key": "19",
+        "rewardSelectableId": "selection_aoeArmor_0",
+        "rewardId": "casinoReflectArmor_30",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 1
+    },
+    "20": {
+        "key": "20",
+        "rewardSelectableId": "selection_aoeArmor_0",
+        "rewardId": "casinoAoeArmor_30",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 0
+    },
+    "21": {
+        "key": "21",
+        "rewardSelectableId": "selection_aoeArmor_1",
+        "rewardId": "casinoReflectArmor_1",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 1
+    },
+    "22": {
+        "key": "22",
+        "rewardSelectableId": "selection_aoeArmor_1",
+        "rewardId": "casinoAoeArmor_1",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 0
+    },
+    "23": {
+        "key": "23",
+        "rewardSelectableId": "selection_aoeArmor_2",
+        "rewardId": "casinoReflectArmor_2",
+        "selectionKey": "selection_index_reflect_armor",
+        "order": 1
+    },
+    "24": {
+        "key": "24",
+        "rewardSelectableId": "selection_aoeArmor_2",
+        "rewardId": "casinoAoeArmor_2",
+        "selectionKey": "selection_index_aoe_armor",
+        "order": 0
+    }
+}

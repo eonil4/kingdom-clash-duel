@@ -1,0 +1,282 @@
+{
+    "offerCampaignLevel01": {
+        "key": "offerCampaignLevel01",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel01",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel02": {
+        "key": "offerCampaignLevel02",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel02",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel03": {
+        "key": "offerCampaignLevel03",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel03",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel04": {
+        "key": "offerCampaignLevel04",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel04",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel05": {
+        "key": "offerCampaignLevel05",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel05",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel06": {
+        "key": "offerCampaignLevel06",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel06",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel07": {
+        "key": "offerCampaignLevel07",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel07",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel08": {
+        "key": "offerCampaignLevel08",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel08",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel09": {
+        "key": "offerCampaignLevel09",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel09",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel10": {
+        "key": "offerCampaignLevel10",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel10",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel11": {
+        "key": "offerCampaignLevel11",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel11",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel12": {
+        "key": "offerCampaignLevel12",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel12",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel13": {
+        "key": "offerCampaignLevel13",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel13",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel14": {
+        "key": "offerCampaignLevel14",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel14",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel15": {
+        "key": "offerCampaignLevel15",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel15",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel16": {
+        "key": "offerCampaignLevel16",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel16",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel17": {
+        "key": "offerCampaignLevel17",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel17",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel18": {
+        "key": "offerCampaignLevel18",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel18",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel19": {
+        "key": "offerCampaignLevel19",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel19",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    },
+    "offerCampaignLevel20": {
+        "key": "offerCampaignLevel20",
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20",
+        "analyticsCategory": "inapp",
+        "criteriaId": null,
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": "offerCampaignLevel20",
+        "priceCurrencyId": null,
+        "priceCurrencyAmount": 0,
+        "purchaseCounterId": null,
+        "isPromoFlag": true
+    }
+}

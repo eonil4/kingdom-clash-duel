@@ -1,0 +1,90 @@
+{
+    "task_ultrashort": {
+        "key": "task_ultrashort",
+        "isDisabled": false,
+        "durationSec": 10,
+        "rewardGold": 3000,
+        "rewardGearShard": 25,
+        "globalGoalId": "global_goal_ultrashort",
+        "durationRarity": {
+            "epic": {
+                "durationSec": 8,
+                "hintLocalized": "expedition_faster_20"
+            },
+            "legendary": {
+                "durationSec": 7,
+                "hintLocalized": "expedition_faster_30"
+            },
+            "mythic": {
+                "durationSec": 5,
+                "hintLocalized": "expedition_faster_50"
+            }
+        }
+    },
+    "task_short": {
+        "key": "task_short",
+        "isDisabled": false,
+        "durationSec": 7200,
+        "rewardGold": 9000,
+        "rewardGearShard": 45,
+        "globalGoalId": "global_goal_short",
+        "durationRarity": {
+            "epic": {
+                "durationSec": 5400,
+                "hintLocalized": "expedition_faster_20"
+            },
+            "legendary": {
+                "durationSec": 4500,
+                "hintLocalized": "expedition_faster_30"
+            },
+            "mythic": {
+                "durationSec": 3600,
+                "hintLocalized": "expedition_faster_50"
+            }
+        }
+    },
+    "task_medium": {
+        "key": "task_medium",
+        "isDisabled": false,
+        "durationSec": 21600,
+        "rewardGold": 15000,
+        "rewardGearShard": 75,
+        "globalGoalId": "global_goal_medium",
+        "durationRarity": {
+            "epic": {
+                "durationSec": 16200,
+                "hintLocalized": "expedition_faster_20"
+            },
+            "legendary": {
+                "durationSec": 13500,
+                "hintLocalized": "expedition_faster_30"
+            },
+            "mythic": {
+                "durationSec": 10800,
+                "hintLocalized": "expedition_faster_50"
+            }
+        }
+    },
+    "task_long": {
+        "key": "task_long",
+        "isDisabled": false,
+        "durationSec": 43200,
+        "rewardGold": 22500,
+        "rewardGearShard": 110,
+        "globalGoalId": "global_goal_long",
+        "durationRarity": {
+            "epic": {
+                "durationSec": 32400,
+                "hintLocalized": "expedition_faster_20"
+            },
+            "legendary": {
+                "durationSec": 27000,
+                "hintLocalized": "expedition_faster_30"
+            },
+            "mythic": {
+                "durationSec": 21600,
+                "hintLocalized": "expedition_faster_50"
+            }
+        }
+    }
+}

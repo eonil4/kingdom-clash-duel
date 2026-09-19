@@ -1,0 +1,1978 @@
+{
+    "IceMageCriteria": {
+        "criterias": [
+            {
+                "questCriteriaInAppPurchasePromo": {}
+            }
+        ],
+        "key": "IceMageCriteria"
+    },
+    "clanRank_1_limit_2": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 2
+                }
+            }
+        ],
+        "key": "clanRank_1_limit_2"
+    },
+    "boughtOncePurchaseCriteria": {
+        "criterias": [
+            {
+                "offerCriteriaBoughtOnce": {}
+            }
+        ],
+        "key": "boughtOncePurchaseCriteria"
+    },
+    "clanRank_1": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "clanRank_1"
+    },
+    "clanRank_5": {
+        "criterias": [
+            {
+                "clanCriteriaRequiredRank": {
+                    "level": 5
+                }
+            },
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "clanRank_5"
+    },
+    "clanRank_9": {
+        "criterias": [
+            {
+                "clanCriteriaRequiredRank": {
+                    "level": 9
+                }
+            },
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "clanRank_9"
+    },
+    "clanShopGold": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 0
+                }
+            }
+        ],
+        "key": "clanShopGold"
+    },
+    "casinoShop_limit_2": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 2
+                }
+            }
+        ],
+        "key": "casinoShop_limit_2"
+    },
+    "casinoShop_unlimited": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 0
+                }
+            }
+        ],
+        "key": "casinoShop_unlimited"
+    },
+    "casinoShop_limit_1": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "casinoShop_limit_1"
+    },
+    "pvpShop_limit_1": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "pvpShop_limit_1"
+    },
+    "expeditionUnlimitedShop": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 0
+                }
+            }
+        ],
+        "key": "expeditionUnlimitedShop"
+    },
+    "towerShop_limit_2": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 2
+                }
+            }
+        ],
+        "key": "towerShop_limit_2"
+    },
+    "towerShop_unlimited": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 0
+                }
+            }
+        ],
+        "key": "towerShop_unlimited"
+    },
+    "towerShop_limit_1": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "towerShop_limit_1"
+    },
+    "chainofferBoneDragon_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_00"
+    },
+    "chainofferBoneDragon_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_free_1"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_01"
+    },
+    "chainofferBoneDragon_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_02"
+    },
+    "chainofferBoneDragon_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_03"
+    },
+    "chainofferBoneDragon_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_04"
+    },
+    "chainofferBoneDragon_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_05"
+    },
+    "chainofferBoneDragon_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_06"
+    },
+    "chainofferBoneDragon_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_07"
+    },
+    "chainofferBoneDragon_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBoneDragon_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferBoneDragon_criteria_08"
+    },
+    "chainofferForestQueen_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_00"
+    },
+    "chainofferForestQueen_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_free_1"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_01"
+    },
+    "chainofferForestQueen_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_02"
+    },
+    "chainofferForestQueen_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_03"
+    },
+    "chainofferForestQueen_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_04"
+    },
+    "chainofferForestQueen_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_05"
+    },
+    "chainofferForestQueen_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_06"
+    },
+    "chainofferForestQueen_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_07"
+    },
+    "chainofferForestQueen_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferForestQueen_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferForestQueen_criteria_08"
+    },
+    "chainofferIceMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_00"
+    },
+    "chainofferIceMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_01"
+    },
+    "chainofferIceMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_02"
+    },
+    "chainofferIceMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_03"
+    },
+    "chainofferIceMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_04"
+    },
+    "chainofferIceMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_05"
+    },
+    "chainofferIceMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_06"
+    },
+    "chainofferIceMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_07"
+    },
+    "chainofferIceMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferIceMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferIceMage_criteria_08"
+    },
+    "chainofferCharmer_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_00"
+    },
+    "chainofferCharmer_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_free_1"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_01"
+    },
+    "chainofferCharmer_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_02"
+    },
+    "chainofferCharmer_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_03"
+    },
+    "chainofferCharmer_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_04"
+    },
+    "chainofferCharmer_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_05"
+    },
+    "chainofferCharmer_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_06"
+    },
+    "chainofferCharmer_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_07"
+    },
+    "chainofferCharmer_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferCharmer_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferCharmer_criteria_08"
+    },
+    "chainofferAirMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_00"
+    },
+    "chainofferAirMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_01"
+    },
+    "chainofferAirMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_02"
+    },
+    "chainofferAirMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_03"
+    },
+    "chainofferAirMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_04"
+    },
+    "chainofferAirMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_05"
+    },
+    "chainofferAirMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_06"
+    },
+    "chainofferAirMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_07"
+    },
+    "chainofferAirMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferAirMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferAirMage_criteria_08"
+    },
+    "chainofferDarknessMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_00"
+    },
+    "chainofferDarknessMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_01"
+    },
+    "chainofferDarknessMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_02"
+    },
+    "chainofferDarknessMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_03"
+    },
+    "chainofferDarknessMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_04"
+    },
+    "chainofferDarknessMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_05"
+    },
+    "chainofferDarknessMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_06"
+    },
+    "chainofferDarknessMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_07"
+    },
+    "chainofferDarknessMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDarknessMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferDarknessMage_criteria_08"
+    },
+    "chainofferFireMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_00"
+    },
+    "chainofferFireMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_01"
+    },
+    "chainofferFireMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_02"
+    },
+    "chainofferFireMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_03"
+    },
+    "chainofferFireMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_04"
+    },
+    "chainofferFireMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_05"
+    },
+    "chainofferFireMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_06"
+    },
+    "chainofferFireMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_07"
+    },
+    "chainofferFireMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferFireMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferFireMage_criteria_08"
+    },
+    "chainofferSandMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_00"
+    },
+    "chainofferSandMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_01"
+    },
+    "chainofferSandMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_02"
+    },
+    "chainofferSandMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_03"
+    },
+    "chainofferSandMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_04"
+    },
+    "chainofferSandMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_05"
+    },
+    "chainofferSandMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_06"
+    },
+    "chainofferSandMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_07"
+    },
+    "chainofferSandMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferSandMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferSandMage_criteria_08"
+    },
+    "chainofferUndeadPirate_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_00"
+    },
+    "chainofferUndeadPirate_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_free_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_01"
+    },
+    "chainofferUndeadPirate_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_02"
+    },
+    "chainofferUndeadPirate_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_03"
+    },
+    "chainofferUndeadPirate_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_04"
+    },
+    "chainofferUndeadPirate_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_05"
+    },
+    "chainofferUndeadPirate_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_06"
+    },
+    "chainofferUndeadPirate_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_07"
+    },
+    "chainofferUndeadPirate_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPirate_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPirate_criteria_08"
+    },
+    "chainofferWaterMage_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_00"
+    },
+    "chainofferWaterMage_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_free_1"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_01"
+    },
+    "chainofferWaterMage_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_02"
+    },
+    "chainofferWaterMage_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_03"
+    },
+    "chainofferWaterMage_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_04"
+    },
+    "chainofferWaterMage_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_05"
+    },
+    "chainofferWaterMage_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_06"
+    },
+    "chainofferWaterMage_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_07"
+    },
+    "chainofferWaterMage_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferWaterMage_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferWaterMage_criteria_08"
+    },
+    "chainofferLordInquisitor_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_00"
+    },
+    "chainofferLordInquisitor_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_free_1"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_01"
+    },
+    "chainofferLordInquisitor_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_02"
+    },
+    "chainofferLordInquisitor_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_03"
+    },
+    "chainofferLordInquisitor_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_04"
+    },
+    "chainofferLordInquisitor_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_05"
+    },
+    "chainofferLordInquisitor_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_06"
+    },
+    "chainofferLordInquisitor_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_07"
+    },
+    "chainofferLordInquisitor_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferLordInquisitor_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferLordInquisitor_criteria_08"
+    },
+    "chainofferUndeadPestilence_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_00"
+    },
+    "chainofferUndeadPestilence_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_free_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_01"
+    },
+    "chainofferUndeadPestilence_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_02"
+    },
+    "chainofferUndeadPestilence_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_03"
+    },
+    "chainofferUndeadPestilence_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_04"
+    },
+    "chainofferUndeadPestilence_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_05"
+    },
+    "chainofferUndeadPestilence_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_06"
+    },
+    "chainofferUndeadPestilence_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_07"
+    },
+    "chainofferUndeadPestilence_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferUndeadPestilence_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferUndeadPestilence_criteria_08"
+    },
+    "chainofferBardHero_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_00"
+    },
+    "chainofferBardHero_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_free_1"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_01"
+    },
+    "chainofferBardHero_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_02"
+    },
+    "chainofferBardHero_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_03"
+    },
+    "chainofferBardHero_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_04"
+    },
+    "chainofferBardHero_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_05"
+    },
+    "chainofferBardHero_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_06"
+    },
+    "chainofferBardHero_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_07"
+    },
+    "chainofferBardHero_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferBardHero_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferBardHero_criteria_08"
+    },
+    "chainofferDragonRider_criteria_00": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_00"
+    },
+    "chainofferDragonRider_criteria_01": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_free_1"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_01"
+    },
+    "chainofferDragonRider_criteria_02": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_pairCurrency_1"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_02"
+    },
+    "chainofferDragonRider_criteria_03": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_hero_1"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_03"
+    },
+    "chainofferDragonRider_criteria_04": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_pairCurrency_2"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_04"
+    },
+    "chainofferDragonRider_criteria_05": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_hero_2"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_05"
+    },
+    "chainofferDragonRider_criteria_06": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_pairCurrency_3"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_06"
+    },
+    "chainofferDragonRider_criteria_07": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_hero_3"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_07"
+    },
+    "chainofferDragonRider_criteria_08": {
+        "criterias": [
+            {
+                "offerCriteriaLimitedPurchase": {
+                    "limit": 1
+                }
+            },
+            {
+                "offerCriteriaPurchase": {
+                    "offerId": "chainofferDragonRider_pairCurrency_4"
+                }
+            }
+        ],
+        "key": "chainofferDragonRider_criteria_08"
+    }
+}

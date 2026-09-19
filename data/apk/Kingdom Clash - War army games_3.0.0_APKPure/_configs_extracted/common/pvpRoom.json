@@ -1,0 +1,328 @@
+{
+    "bronzeRoom": {
+        "key": "bronzeRoom",
+        "title_Localized": "bronzeRoomTitle",
+        "minPoints": 900,
+        "maxPoints": 1649,
+        "totalCount": 250,
+        "generationRules": [
+            {
+                "weight": 5,
+                "minPoints": 900,
+                "maxPoints": 950,
+                "minPower": 3000,
+                "maxPower": 3500,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 7,
+                "minPoints": 950,
+                "maxPoints": 1000,
+                "minPower": 3500,
+                "maxPower": 4000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 7,
+                "minPoints": 1000,
+                "maxPoints": 1050,
+                "minPower": 4000,
+                "maxPower": 4500,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 8,
+                "minPoints": 1050,
+                "maxPoints": 1100,
+                "minPower": 4500,
+                "maxPower": 5000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 8,
+                "minPoints": 1100,
+                "maxPoints": 1150,
+                "minPower": 5000,
+                "maxPower": 5500,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 12,
+                "minPoints": 1150,
+                "maxPoints": 1199,
+                "minPower": 5500,
+                "maxPower": 6000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague1"
+            },
+            {
+                "weight": 17,
+                "minPoints": 1200,
+                "maxPoints": 1250,
+                "minPower": 6000,
+                "maxPower": 7000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 18,
+                "minPoints": 1250,
+                "maxPoints": 1300,
+                "minPower": 7000,
+                "maxPower": 8000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 17,
+                "minPoints": 1300,
+                "maxPoints": 1350,
+                "minPower": 8000,
+                "maxPower": 12000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 21,
+                "minPoints": 1350,
+                "maxPoints": 1400,
+                "minPower": 12000,
+                "maxPower": 15000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 21,
+                "minPoints": 1400,
+                "maxPoints": 1450,
+                "minPower": 15000,
+                "maxPower": 19000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 21,
+                "minPoints": 1450,
+                "maxPoints": 1499,
+                "minPower": 19000,
+                "maxPower": 25000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague3"
+            },
+            {
+                "weight": 25,
+                "minPoints": 1500,
+                "maxPoints": 1550,
+                "minPower": 25000,
+                "maxPower": 32000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague3"
+            },
+            {
+                "weight": 25,
+                "minPoints": 1550,
+                "maxPoints": 1600,
+                "minPower": 32000,
+                "maxPower": 41000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague3"
+            },
+            {
+                "weight": 38,
+                "minPoints": 1600,
+                "maxPoints": 1649,
+                "minPower": 41000,
+                "maxPower": 54000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague3"
+            }
+        ],
+        "settleRules": [
+            {
+                "weight": 10,
+                "minPoints": 950,
+                "maxPoints": 1299,
+                "minPower": 3500,
+                "maxPower": 8000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 10,
+                "minPoints": 1300,
+                "maxPoints": 1499,
+                "minPower": 8000,
+                "maxPower": 25000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague2"
+            },
+            {
+                "weight": 10,
+                "minPoints": 1500,
+                "maxPoints": 1649,
+                "minPower": 32000,
+                "maxPower": 54000,
+                "powerDivider": 60,
+                "avatarSetId": "bronzeLeague3"
+            }
+        ],
+        "simulationTiming": {
+            "playersPerCycleMin": 10,
+            "playersPerCycleMax": 20,
+            "cycleDuration": 120,
+            "maxCycles": 20
+        },
+        "simulationRules": [
+            {
+                "filterPointsMin": 900,
+                "filterPointsMax": 1299,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            },
+            {
+                "filterPointsMin": 1300,
+                "filterPointsMax": 1499,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            },
+            {
+                "filterPointsMin": 1500,
+                "filterPointsMax": 1649,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            }
+        ]
+    },
+    "silverRoom": {
+        "key": "silverRoom",
+        "title_Localized": "silverRoomTitle",
+        "minPoints": 1650,
+        "maxPoints": 1999,
+        "totalCount": 250,
+        "generationRules": [
+            {
+                "weight": 50,
+                "minPoints": 1650,
+                "maxPoints": 1700,
+                "minPower": 54000,
+                "maxPower": 59000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague1"
+            },
+            {
+                "weight": 34,
+                "minPoints": 1700,
+                "maxPoints": 1749,
+                "minPower": 59000,
+                "maxPower": 65000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague1"
+            },
+            {
+                "weight": 50,
+                "minPoints": 1750,
+                "maxPoints": 1800,
+                "minPower": 65000,
+                "maxPower": 72000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague2"
+            },
+            {
+                "weight": 36,
+                "minPoints": 1800,
+                "maxPoints": 1849,
+                "minPower": 72000,
+                "maxPower": 81000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague2"
+            },
+            {
+                "weight": 42,
+                "minPoints": 1850,
+                "maxPoints": 1900,
+                "minPower": 81000,
+                "maxPower": 90000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague2"
+            },
+            {
+                "weight": 25,
+                "minPoints": 1900,
+                "maxPoints": 1950,
+                "minPower": 90000,
+                "maxPower": 101000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague3"
+            },
+            {
+                "weight": 13,
+                "minPoints": 1950,
+                "maxPoints": 1999,
+                "minPower": 101000,
+                "maxPower": 120000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague3"
+            }
+        ],
+        "settleRules": [
+            {
+                "weight": 10,
+                "minPoints": 1650,
+                "maxPoints": 1749,
+                "minPower": 54000,
+                "maxPower": 65000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague1"
+            },
+            {
+                "weight": 10,
+                "minPoints": 1750,
+                "maxPoints": 1849,
+                "minPower": 65000,
+                "maxPower": 81000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague2"
+            },
+            {
+                "weight": 10,
+                "minPoints": 1850,
+                "maxPoints": 1999,
+                "minPower": 81000,
+                "maxPower": 120000,
+                "powerDivider": 60,
+                "avatarSetId": "silverLeague3"
+            }
+        ],
+        "simulationTiming": {
+            "playersPerCycleMin": 10,
+            "playersPerCycleMax": 15,
+            "cycleDuration": 120,
+            "maxCycles": 20
+        },
+        "simulationRules": [
+            {
+                "filterPointsMin": 1650,
+                "filterPointsMax": 1749,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            },
+            {
+                "filterPointsMin": 1750,
+                "filterPointsMax": 1849,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            },
+            {
+                "filterPointsMin": 1850,
+                "filterPointsMax": 1999,
+                "pointsChangeMin": 10,
+                "pointsChangeMax": 40
+            }
+        ]
+    }
+}

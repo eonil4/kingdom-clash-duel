@@ -1,0 +1,1364 @@
+{
+    "sku_BattlePass": {
+        "key": "sku_BattlePass",
+        "android": "com.kingom.clash.sku_battlepass",
+        "ios": "com.kingom.clash.sku_battlepass",
+        "umoney": "com.kingom.clash.sku_battlepass"
+    },
+    "sku_BattlePassAndLevels": {
+        "key": "sku_BattlePassAndLevels",
+        "android": "com.kingom.clash.sku_battlepassandlevels",
+        "ios": "com.kingom.clash.sku_battlepassandlevels",
+        "umoney": "com.kingom.clash.sku_battlepassandlevels"
+    },
+    "offer_gem_1": {
+        "key": "offer_gem_1",
+        "android": "com.kingom.clash.offer_gem_1",
+        "ios": "com.kingom.clash.offer_gem_1",
+        "umoney": "com.kingom.clash.offer_gem_1"
+    },
+    "offer_gem_2": {
+        "key": "offer_gem_2",
+        "android": "com.kingom.clash.offer_gem_2",
+        "ios": "com.kingom.clash.offer_gem_2",
+        "umoney": "com.kingom.clash.offer_gem_2"
+    },
+    "offer_gem_3": {
+        "key": "offer_gem_3",
+        "android": "com.kingom.clash.offer_gem_3",
+        "ios": "com.kingom.clash.offer_gem_3",
+        "umoney": "com.kingom.clash.offer_gem_3"
+    },
+    "offer_gem_4": {
+        "key": "offer_gem_4",
+        "android": "com.kingom.clash.offer_gem_4",
+        "ios": "com.kingom.clash.offer_gem_4",
+        "umoney": "com.kingom.clash.offer_gem_4"
+    },
+    "offer_gem_5": {
+        "key": "offer_gem_5",
+        "android": "com.kingom.clash.offer_gem_5",
+        "ios": "com.kingom.clash.offer_gem_5",
+        "umoney": "com.kingom.clash.offer_gem_5"
+    },
+    "offer_gem_6": {
+        "key": "offer_gem_6",
+        "android": "com.kingom.clash.offer_gem_6",
+        "ios": "com.kingom.clash.offer_gem_6",
+        "umoney": "com.kingom.clash.offer_gem_6"
+    },
+    "offer_gold_1": {
+        "key": "offer_gold_1",
+        "android": "com.kingom.clash.offer_gold_1",
+        "ios": "com.kingom.clash.offer_gold_1",
+        "umoney": "com.kingom.clash.offer_gold_1"
+    },
+    "offer_gold_2": {
+        "key": "offer_gold_2",
+        "android": "com.kingom.clash.offer_gold_2",
+        "ios": "com.kingom.clash.offer_gold_2",
+        "umoney": "com.kingom.clash.offer_gold_2"
+    },
+    "offer_gold_3": {
+        "key": "offer_gold_3",
+        "android": "com.kingom.clash.offer_gold_3",
+        "ios": "com.kingom.clash.offer_gold_3",
+        "umoney": "com.kingom.clash.offer_gold_3"
+    },
+    "offer_vip_1": {
+        "key": "offer_vip_1",
+        "android": "com.kingom.clash.offer_vip_1",
+        "ios": "com.kingom.clash.offer_vip_1",
+        "umoney": "com.kingom.clash.offer_vip_1"
+    },
+    "offer_vip_2": {
+        "key": "offer_vip_2",
+        "android": "com.kingom.clash.offer_vip_2",
+        "ios": "com.kingom.clash.offer_vip_2",
+        "umoney": "com.kingom.clash.offer_vip_2"
+    },
+    "offer_vip_3": {
+        "key": "offer_vip_3",
+        "android": "com.kingom.clash.offer_vip_3",
+        "ios": "com.kingom.clash.offer_vip_3",
+        "umoney": "com.kingom.clash.offer_vip_3"
+    },
+    "offer_midas_1": {
+        "key": "offer_midas_1",
+        "android": "com.kingom.clash.offer_midas_1",
+        "ios": "com.kingom.clash.offer_midas_1",
+        "umoney": "com.kingom.clash.offer_midas_1"
+    },
+    "offer_midas_2": {
+        "key": "offer_midas_2",
+        "android": "com.kingom.clash.offer_midas_2",
+        "ios": "com.kingom.clash.offer_midas_2",
+        "umoney": "com.kingom.clash.offer_midas_2"
+    },
+    "offer_midas_3": {
+        "key": "offer_midas_3",
+        "android": "com.kingom.clash.offer_midas_3",
+        "ios": "com.kingom.clash.offer_midas_3",
+        "umoney": "com.kingom.clash.offer_midas_3"
+    },
+    "offer_beginnerBundle": {
+        "key": "offer_beginnerBundle",
+        "android": "com.kingom.clash.offer_beginnerbundle",
+        "ios": "com.kingom.clash.offer_beginnerbundle",
+        "umoney": "com.kingom.clash.offer_beginnerbundle"
+    },
+    "offer_dragonRiderX1": {
+        "key": "offer_dragonRiderX1",
+        "android": "com.kingom.clash.offer_dragonriderx1",
+        "ios": "com.kingom.clash.offer_dragonriderx1",
+        "umoney": "com.kingom.clash.offer_dragonriderx1"
+    },
+    "offer_clericX1": {
+        "key": "offer_clericX1",
+        "android": "com.kingom.clash.offer_clericx1",
+        "ios": "com.kingom.clash.offer_clericx1",
+        "umoney": "com.kingom.clash.offer_clericx1"
+    },
+    "offer_meridaX1": {
+        "key": "offer_meridaX1",
+        "android": "com.kingom.clash.offer_meridax1",
+        "ios": "com.kingom.clash.offer_meridax1",
+        "umoney": "com.kingom.clash.offer_meridax1"
+    },
+    "offer_dragonRiderX12": {
+        "key": "offer_dragonRiderX12",
+        "android": "com.kingom.clash.offer_dragonriderx12",
+        "ios": "com.kingom.clash.offer_dragonriderx12",
+        "umoney": "com.kingom.clash.offer_dragonriderx12"
+    },
+    "offer_clericX12": {
+        "key": "offer_clericX12",
+        "android": "com.kingom.clash.offer_clericx12",
+        "ios": "com.kingom.clash.offer_clericx12",
+        "umoney": "com.kingom.clash.offer_clericx12"
+    },
+    "offer_meridaX12": {
+        "key": "offer_meridaX12",
+        "android": "com.kingom.clash.offer_meridax12",
+        "ios": "com.kingom.clash.offer_meridax12",
+        "umoney": "com.kingom.clash.offer_meridax12"
+    },
+    "silver_merida": {
+        "key": "silver_merida",
+        "android": "com.kingom.clash.silver_merida",
+        "ios": "com.kingom.clash.silver_merida",
+        "umoney": "com.kingom.clash.silver_merida"
+    },
+    "offerDaily1": {
+        "key": "offerDaily1",
+        "android": "com.kingom.clash.offerdaily1",
+        "ios": "com.kingom.clash.offerdaily1",
+        "umoney": "com.kingom.clash.offerdaily1"
+    },
+    "daily_offer_gem_1": {
+        "key": "daily_offer_gem_1",
+        "android": "com.kingom.clash.daily_offer_gem_1",
+        "ios": "com.kingom.clash.daily_offer_gem_1",
+        "umoney": "com.kingom.clash.daily_offer_gem_1"
+    },
+    "daily_offer_gem_2": {
+        "key": "daily_offer_gem_2",
+        "android": "com.kingom.clash.daily_offer_gem_2",
+        "ios": "com.kingom.clash.daily_offer_gem_2",
+        "umoney": "com.kingom.clash.daily_offer_gem_2"
+    },
+    "offer_boneDragonX1": {
+        "key": "offer_boneDragonX1",
+        "android": "com.kingom.clash.offer_bonedragonx1",
+        "ios": "com.kingom.clash.offer_bonedragonx1",
+        "umoney": "com.kingom.clash.offer_bonedragonx1"
+    },
+    "offer_boneDragonX12": {
+        "key": "offer_boneDragonX12",
+        "android": "com.kingom.clash.offer_bonedragonx12",
+        "ios": "com.kingom.clash.offer_bonedragonx12",
+        "umoney": "com.kingom.clash.offer_bonedragonx12"
+    },
+    "offer_forestQueenX1": {
+        "key": "offer_forestQueenX1",
+        "android": "com.kingom.clash.offer_forestqueenx1",
+        "ios": "com.kingom.clash.offer_forestqueenx1",
+        "umoney": "com.kingom.clash.offer_forestqueenx1"
+    },
+    "offer_forestQueenX12": {
+        "key": "offer_forestQueenX12",
+        "android": "com.kingom.clash.offer_forestqueenx12",
+        "ios": "com.kingom.clash.offer_forestqueenx12",
+        "umoney": "com.kingom.clash.offer_forestqueenx12"
+    },
+    "offerSelectableHeroX1": {
+        "key": "offerSelectableHeroX1",
+        "android": "com.kingom.clash.offerselectableherox1",
+        "ios": "com.kingom.clash.offerselectableherox1",
+        "umoney": "com.kingom.clash.offerselectableherox1"
+    },
+    "offerSelectableHeroX3": {
+        "key": "offerSelectableHeroX3",
+        "android": "com.kingom.clash.offerselectableherox3",
+        "ios": "com.kingom.clash.offerselectableherox3",
+        "umoney": "com.kingom.clash.offerselectableherox3"
+    },
+    "offerLobbyTroops1": {
+        "key": "offerLobbyTroops1",
+        "android": "com.kingom.clash.offerlobbytroops1",
+        "ios": "com.kingom.clash.offerlobbytroops1",
+        "umoney": "com.kingom.clash.offerlobbytroops1"
+    },
+    "offerLobbyTroops2": {
+        "key": "offerLobbyTroops2",
+        "android": "com.kingom.clash.offerlobbytroops2",
+        "ios": "com.kingom.clash.offerlobbytroops2",
+        "umoney": "com.kingom.clash.offerlobbytroops2"
+    },
+    "offerLobbyTroops3": {
+        "key": "offerLobbyTroops3",
+        "android": "com.kingom.clash.offerlobbytroops3",
+        "ios": "com.kingom.clash.offerlobbytroops3",
+        "umoney": "com.kingom.clash.offerlobbytroops3"
+    },
+    "offerLobbyTroops1_1": {
+        "key": "offerLobbyTroops1_1",
+        "android": "com.kingom.clash.offerlobbytroops1_1",
+        "ios": "com.kingom.clash.offerlobbytroops1_1",
+        "umoney": "com.kingom.clash.offerlobbytroops1_1"
+    },
+    "offerCampaignLevel01": {
+        "key": "offerCampaignLevel01",
+        "android": "com.kingdom.clash.offercampaignlevel01",
+        "ios": "com.kingdom.clash.offercampaignlevel01",
+        "umoney": "com.kingdom.clash.offercampaignlevel01"
+    },
+    "offerCampaignLevel02": {
+        "key": "offerCampaignLevel02",
+        "android": "com.kingdom.clash.offercampaignlevel02",
+        "ios": "com.kingdom.clash.offercampaignlevel02",
+        "umoney": "com.kingdom.clash.offercampaignlevel02"
+    },
+    "offerCampaignLevel03": {
+        "key": "offerCampaignLevel03",
+        "android": "com.kingdom.clash.offercampaignlevel03",
+        "ios": "com.kingdom.clash.offercampaignlevel03",
+        "umoney": "com.kingdom.clash.offercampaignlevel03"
+    },
+    "offerCampaignLevel04": {
+        "key": "offerCampaignLevel04",
+        "android": "com.kingdom.clash.offercampaignlevel04",
+        "ios": "com.kingdom.clash.offercampaignlevel04",
+        "umoney": "com.kingdom.clash.offercampaignlevel04"
+    },
+    "offerCampaignLevel05": {
+        "key": "offerCampaignLevel05",
+        "android": "com.kingdom.clash.offercampaignlevel05",
+        "ios": "com.kingdom.clash.offercampaignlevel05",
+        "umoney": "com.kingdom.clash.offercampaignlevel05"
+    },
+    "offerCampaignLevel06": {
+        "key": "offerCampaignLevel06",
+        "android": "com.kingdom.clash.offercampaignlevel06",
+        "ios": "com.kingdom.clash.offercampaignlevel06",
+        "umoney": "com.kingdom.clash.offercampaignlevel06"
+    },
+    "offerCampaignLevel07": {
+        "key": "offerCampaignLevel07",
+        "android": "com.kingdom.clash.offercampaignlevel07",
+        "ios": "com.kingdom.clash.offercampaignlevel07",
+        "umoney": "com.kingdom.clash.offercampaignlevel07"
+    },
+    "offerCampaignLevel08": {
+        "key": "offerCampaignLevel08",
+        "android": "com.kingdom.clash.offercampaignlevel08",
+        "ios": "com.kingdom.clash.offercampaignlevel08",
+        "umoney": "com.kingdom.clash.offercampaignlevel08"
+    },
+    "offerCampaignLevel09": {
+        "key": "offerCampaignLevel09",
+        "android": "com.kingdom.clash.offercampaignlevel09",
+        "ios": "com.kingdom.clash.offercampaignlevel09",
+        "umoney": "com.kingdom.clash.offercampaignlevel09"
+    },
+    "offerCampaignLevel10": {
+        "key": "offerCampaignLevel10",
+        "android": "com.kingdom.clash.offercampaignlevel10",
+        "ios": "com.kingdom.clash.offercampaignlevel10",
+        "umoney": "com.kingdom.clash.offercampaignlevel10"
+    },
+    "offerCampaignLevel11": {
+        "key": "offerCampaignLevel11",
+        "android": "com.kingdom.clash.offercampaignlevel11",
+        "ios": "com.kingdom.clash.offercampaignlevel11",
+        "umoney": "com.kingdom.clash.offercampaignlevel11"
+    },
+    "offerCampaignLevel12": {
+        "key": "offerCampaignLevel12",
+        "android": "com.kingdom.clash.offercampaignlevel12",
+        "ios": "com.kingdom.clash.offercampaignlevel12",
+        "umoney": "com.kingdom.clash.offercampaignlevel12"
+    },
+    "offerCampaignLevel13": {
+        "key": "offerCampaignLevel13",
+        "android": "com.kingdom.clash.offercampaignlevel13",
+        "ios": "com.kingdom.clash.offercampaignlevel13",
+        "umoney": "com.kingdom.clash.offercampaignlevel13"
+    },
+    "offerCampaignLevel14": {
+        "key": "offerCampaignLevel14",
+        "android": "com.kingdom.clash.offercampaignlevel14",
+        "ios": "com.kingdom.clash.offercampaignlevel14",
+        "umoney": "com.kingdom.clash.offercampaignlevel14"
+    },
+    "offerCampaignLevel15": {
+        "key": "offerCampaignLevel15",
+        "android": "com.kingdom.clash.offercampaignlevel15",
+        "ios": "com.kingdom.clash.offercampaignlevel15",
+        "umoney": "com.kingdom.clash.offercampaignlevel15"
+    },
+    "offerCampaignLevel16": {
+        "key": "offerCampaignLevel16",
+        "android": "com.kingdom.clash.offercampaignlevel16",
+        "ios": "com.kingdom.clash.offercampaignlevel16",
+        "umoney": "com.kingdom.clash.offercampaignlevel16"
+    },
+    "offerCampaignLevel17": {
+        "key": "offerCampaignLevel17",
+        "android": "com.kingdom.clash.offercampaignlevel17",
+        "ios": "com.kingdom.clash.offercampaignlevel17",
+        "umoney": "com.kingdom.clash.offercampaignlevel17"
+    },
+    "offerCampaignLevel18": {
+        "key": "offerCampaignLevel18",
+        "android": "com.kingdom.clash.offercampaignlevel18",
+        "ios": "com.kingdom.clash.offercampaignlevel18",
+        "umoney": "com.kingdom.clash.offercampaignlevel18"
+    },
+    "offerCampaignLevel19": {
+        "key": "offerCampaignLevel19",
+        "android": "com.kingdom.clash.offercampaignlevel19",
+        "ios": "com.kingdom.clash.offercampaignlevel19",
+        "umoney": "com.kingdom.clash.offercampaignlevel19"
+    },
+    "offerCampaignLevel20": {
+        "key": "offerCampaignLevel20",
+        "android": "com.kingdom.clash.offercampaignlevel20",
+        "ios": "com.kingdom.clash.offercampaignlevel20",
+        "umoney": "com.kingdom.clash.offercampaignlevel20"
+    },
+    "oneTimeOffer_paladin": {
+        "key": "oneTimeOffer_paladin",
+        "android": "com.kingdom.clash.onetimeoffer_paladin_1",
+        "ios": "com.kingdom.clash.onetimeoffer_paladin_1",
+        "umoney": "com.kingdom.clash.onetimeoffer_paladin_1"
+    },
+    "oneTimeOffer_undeadMage": {
+        "key": "oneTimeOffer_undeadMage",
+        "android": "com.kingdom.clash.onetimeoffer_undeadmage",
+        "ios": "com.kingdom.clash.onetimeoffer_undeadmage",
+        "umoney": "com.kingdom.clash.onetimeoffer_undeadmage"
+    },
+    "oneTimeOffer_spiderBlast": {
+        "key": "oneTimeOffer_spiderBlast",
+        "android": "com.kingdom.clash.onetimeoffer_spiderblast",
+        "ios": "com.kingdom.clash.onetimeoffer_spiderblast",
+        "umoney": "com.kingdom.clash.onetimeoffer_spiderblast"
+    },
+    "oneTimeOffer_mageStudent": {
+        "key": "oneTimeOffer_mageStudent",
+        "android": "com.kingdom.clash.onetimeoffer_magestudent",
+        "ios": "com.kingdom.clash.onetimeoffer_magestudent",
+        "umoney": "com.kingdom.clash.onetimeoffer_magestudent"
+    },
+    "oneTimeOffer_damnCatapult": {
+        "key": "oneTimeOffer_damnCatapult",
+        "android": "com.kingdom.clash.onetimeoffer_damncatapult",
+        "ios": "com.kingdom.clash.onetimeoffer_damncatapult",
+        "umoney": "com.kingdom.clash.onetimeoffer_damncatapult"
+    },
+    "oneTimeOffer_gravedigger": {
+        "key": "oneTimeOffer_gravedigger",
+        "android": "com.kingdom.clash.onetimeoffer_gravedigger",
+        "ios": "com.kingdom.clash.onetimeoffer_gravedigger",
+        "umoney": "com.kingdom.clash.onetimeoffer_gravedigger"
+    },
+    "oneTimeOffer_monk": {
+        "key": "oneTimeOffer_monk",
+        "android": "com.kingdom.clash.onetimeoffer_monk",
+        "ios": "com.kingdom.clash.onetimeoffer_monk",
+        "umoney": "com.kingdom.clash.onetimeoffer_monk"
+    },
+    "oneTimeOffer_magicArcher": {
+        "key": "oneTimeOffer_magicArcher",
+        "android": "com.kingdom.clash.onetimeoffer_magicarcher",
+        "ios": "com.kingdom.clash.onetimeoffer_magicarcher",
+        "umoney": "com.kingdom.clash.onetimeoffer_magicarcher"
+    },
+    "oneTimeOffer_shaman": {
+        "key": "oneTimeOffer_shaman",
+        "android": "com.kingdom.clash.onetimeoffer_shaman",
+        "ios": "com.kingdom.clash.onetimeoffer_shaman",
+        "umoney": "com.kingdom.clash.onetimeoffer_shaman"
+    },
+    "oneTimeOffer_undeadHeadless": {
+        "key": "oneTimeOffer_undeadHeadless",
+        "android": "com.kingdom.clash.onetimeoffer_undeadheadless",
+        "ios": "com.kingdom.clash.onetimeoffer_undeadheadless",
+        "umoney": "com.kingdom.clash.onetimeoffer_undeadheadless"
+    },
+    "oneTimeOffer_flyingMonster": {
+        "key": "oneTimeOffer_flyingMonster",
+        "android": "com.kingdom.clash.onetimeoffer_flyingmonster",
+        "ios": "com.kingdom.clash.onetimeoffer_flyingmonster",
+        "umoney": "com.kingdom.clash.onetimeoffer_flyingmonster"
+    },
+    "oneTimeOffer_stoneGolem": {
+        "key": "oneTimeOffer_stoneGolem",
+        "android": "com.kingdom.clash.onetimeoffer_stonegolem",
+        "ios": "com.kingdom.clash.onetimeoffer_stonegolem",
+        "umoney": "com.kingdom.clash.onetimeoffer_stonegolem"
+    },
+    "oneTimeOffer_necromancer": {
+        "key": "oneTimeOffer_necromancer",
+        "android": "com.kingdom.clash.onetimeoffer_necromancer",
+        "ios": "com.kingdom.clash.onetimeoffer_necromancer",
+        "umoney": "com.kingdom.clash.onetimeoffer_necromancer"
+    },
+    "oneTimeOffer_stormSpearman": {
+        "key": "oneTimeOffer_stormSpearman",
+        "android": "com.kingdom.clash.onetimeoffer_stormspearman",
+        "ios": "com.kingdom.clash.onetimeoffer_stormspearman",
+        "umoney": "com.kingdom.clash.onetimeoffer_stormspearman"
+    },
+    "oneTimeOffer_vulkanGolem": {
+        "key": "oneTimeOffer_vulkanGolem",
+        "android": "com.kingdom.clash.onetimeoffer_vulkangolem",
+        "ios": "com.kingdom.clash.onetimeoffer_vulkangolem",
+        "umoney": "com.kingdom.clash.onetimeoffer_vulkangolem"
+    },
+    "oneTimeOffer_skeletonWarrior": {
+        "key": "oneTimeOffer_skeletonWarrior",
+        "android": "com.kingdom.clash.onetimeoffer_skeletonwarrior",
+        "ios": "com.kingdom.clash.onetimeoffer_skeletonwarrior",
+        "umoney": "com.kingdom.clash.onetimeoffer_skeletonwarrior"
+    },
+    "oneTimeOffer_mountainsChampion": {
+        "key": "oneTimeOffer_mountainsChampion",
+        "android": "com.kingdom.clash.onetimeoffer_mountainschampion",
+        "ios": "com.kingdom.clash.onetimeoffer_mountainschampion",
+        "umoney": "com.kingdom.clash.onetimeoffer_mountainschampion"
+    },
+    "oneTimeOffer_eliteWarrior": {
+        "key": "oneTimeOffer_eliteWarrior",
+        "android": "com.kingdom.clash.onetimeoffer_elitewarrior",
+        "ios": "com.kingdom.clash.onetimeoffer_elitewarrior",
+        "umoney": "com.kingdom.clash.onetimeoffer_elitewarrior"
+    },
+    "oneTimeOffer_windElemental": {
+        "key": "oneTimeOffer_windElemental",
+        "android": "com.kingdom.clash.onetimeoffer_windelemental",
+        "ios": "com.kingdom.clash.onetimeoffer_windelemental",
+        "umoney": "com.kingdom.clash.onetimeoffer_windelemental"
+    },
+    "oneTimeOffer_paladin_fake": {
+        "key": "oneTimeOffer_paladin_fake",
+        "android": "com.kingdom.clash.onetimeoffer_paladin_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_paladin_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_paladin_fake"
+    },
+    "oneTimeOffer_undeadMage_fake": {
+        "key": "oneTimeOffer_undeadMage_fake",
+        "android": "com.kingdom.clash.onetimeoffer_undeadmage_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_undeadmage_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_undeadmage_fake"
+    },
+    "oneTimeOffer_spiderBlast_fake": {
+        "key": "oneTimeOffer_spiderBlast_fake",
+        "android": "com.kingdom.clash.onetimeoffer_spiderblast_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_spiderblast_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_spiderblast_fake"
+    },
+    "oneTimeOffer_mageStudent_fake": {
+        "key": "oneTimeOffer_mageStudent_fake",
+        "android": "com.kingdom.clash.onetimeoffer_magestudent_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_magestudent_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_magestudent_fake"
+    },
+    "oneTimeOffer_damnCatapult_fake": {
+        "key": "oneTimeOffer_damnCatapult_fake",
+        "android": "com.kingdom.clash.onetimeoffer_damncatapult_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_damncatapult_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_damncatapult_fake"
+    },
+    "oneTimeOffer_gravedigger_fake": {
+        "key": "oneTimeOffer_gravedigger_fake",
+        "android": "com.kingdom.clash.onetimeoffer_gravedigger_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_gravedigger_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_gravedigger_fake"
+    },
+    "oneTimeOffer_monk_fake": {
+        "key": "oneTimeOffer_monk_fake",
+        "android": "com.kingdom.clash.onetimeoffer_monk_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_monk_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_monk_fake"
+    },
+    "oneTimeOffer_magicArcher_fake": {
+        "key": "oneTimeOffer_magicArcher_fake",
+        "android": "com.kingdom.clash.onetimeoffer_magicarcher_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_magicarcher_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_magicarcher_fake"
+    },
+    "oneTimeOffer_shaman_fake": {
+        "key": "oneTimeOffer_shaman_fake",
+        "android": "com.kingdom.clash.onetimeoffer_shaman_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_shaman_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_shaman_fake"
+    },
+    "oneTimeOffer_undeadHeadless_fake": {
+        "key": "oneTimeOffer_undeadHeadless_fake",
+        "android": "com.kingdom.clash.onetimeoffer_undeadheadless_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_undeadheadless_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_undeadheadless_fake"
+    },
+    "oneTimeOffer_flyingMonster_fake": {
+        "key": "oneTimeOffer_flyingMonster_fake",
+        "android": "com.kingdom.clash.onetimeoffer_flyingmonster_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_flyingmonster_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_flyingmonster_fake"
+    },
+    "oneTimeOffer_stoneGolem_fake": {
+        "key": "oneTimeOffer_stoneGolem_fake",
+        "android": "com.kingdom.clash.onetimeoffer_stonegolem_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_stonegolem_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_stonegolem_fake"
+    },
+    "oneTimeOffer_necromancer_fake": {
+        "key": "oneTimeOffer_necromancer_fake",
+        "android": "com.kingdom.clash.onetimeoffer_necromancer_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_necromancer_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_necromancer_fake"
+    },
+    "oneTimeOffer_stormSpearman_fake": {
+        "key": "oneTimeOffer_stormSpearman_fake",
+        "android": "com.kingdom.clash.onetimeoffer_stormspearman_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_stormspearman_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_stormspearman_fake"
+    },
+    "oneTimeOffer_vulkanGolem_fake": {
+        "key": "oneTimeOffer_vulkanGolem_fake",
+        "android": "com.kingdom.clash.onetimeoffer_vulkangolem_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_vulkangolem_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_vulkangolem_fake"
+    },
+    "oneTimeOffer_skeletonWarrior_fake": {
+        "key": "oneTimeOffer_skeletonWarrior_fake",
+        "android": "com.kingdom.clash.onetimeoffer_skeletonwarrior_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_skeletonwarrior_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_skeletonwarrior_fake"
+    },
+    "oneTimeOffer_mountainsChampion_fake": {
+        "key": "oneTimeOffer_mountainsChampion_fake",
+        "android": "com.kingdom.clash.onetimeoffer_mountainschampion_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_mountainschampion_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_mountainschampion_fake"
+    },
+    "oneTimeOffer_eliteWarrior_fake": {
+        "key": "oneTimeOffer_eliteWarrior_fake",
+        "android": "com.kingdom.clash.onetimeoffer_elitewarrior_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_elitewarrior_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_elitewarrior_fake"
+    },
+    "oneTimeOffer_windElemental_fake": {
+        "key": "oneTimeOffer_windElemental_fake",
+        "android": "com.kingdom.clash.onetimeoffer_windelemental_fake",
+        "ios": "com.kingdom.clash.onetimeoffer_windelemental_fake",
+        "umoney": "com.kingdom.clash.onetimeoffer_windelemental_fake"
+    },
+    "BattlePassUnlockLevel_1": {
+        "key": "BattlePassUnlockLevel_1",
+        "android": "com.kingdom.clash.battlepass_unlocklevel_1",
+        "ios": "com.kingdom.clash.battlepass_unlocklevel_1",
+        "umoney": "com.kingdom.clash.battlepass_unlocklevel_1"
+    },
+    "BattlePassUnlockLevel_5": {
+        "key": "BattlePassUnlockLevel_5",
+        "android": "com.kingdom.clash.battlepass_unlocklevel_5",
+        "ios": "com.kingdom.clash.battlepass_unlocklevel_5",
+        "umoney": "com.kingdom.clash.battlepass_unlocklevel_5"
+    },
+    "BattlePassUnlockLevel_10": {
+        "key": "BattlePassUnlockLevel_10",
+        "android": "com.kingdom.clash.battlepass_unlocklevel_10",
+        "ios": "com.kingdom.clash.battlepass_unlocklevel_10",
+        "umoney": "com.kingdom.clash.battlepass_unlocklevel_10"
+    },
+    "ArenaBattlePassUnlockLevel_1": {
+        "key": "ArenaBattlePassUnlockLevel_1",
+        "android": "com.kingdom.clash.arenabattlepass_unlocklevel_1",
+        "ios": "com.kingdom.clash.arenabattlepass_unlocklevel_1",
+        "umoney": "com.kingdom.clash.arenabattlepass_unlocklevel_1"
+    },
+    "ArenaBattlePassUnlockLevel_5": {
+        "key": "ArenaBattlePassUnlockLevel_5",
+        "android": "com.kingdom.clash.arenabattlepass_unlocklevel_5",
+        "ios": "com.kingdom.clash.arenabattlepass_unlocklevel_5",
+        "umoney": "com.kingdom.clash.arenabattlepass_unlocklevel_5"
+    },
+    "ArenaBattlePassUnlockLevel_10": {
+        "key": "ArenaBattlePassUnlockLevel_10",
+        "android": "com.kingdom.clash.arenabattlepass_unlocklevel_10",
+        "ios": "com.kingdom.clash.arenabattlepass_unlocklevel_10",
+        "umoney": "com.kingdom.clash.arenabattlepass_unlocklevel_10"
+    },
+    "ArenaBattlePass": {
+        "key": "ArenaBattlePass",
+        "android": "com.kingdom.clash.arenabattlepass",
+        "ios": "com.kingdom.clash.arenabattlepass",
+        "umoney": "com.kingdom.clash.arenabattlepass"
+    },
+    "ArenaBattlePassPremium": {
+        "key": "ArenaBattlePassPremium",
+        "android": "com.kingdom.clash.arenabattlepass_premium",
+        "ios": "com.kingdom.clash.arenabattlepass_premium",
+        "umoney": "com.kingdom.clash.arenabattlepass_premium"
+    },
+    "offer_charmerX1": {
+        "key": "offer_charmerX1",
+        "android": "com.kingom.clash.offer_charmerx1",
+        "ios": "com.kingom.clash.offer_charmerx1",
+        "umoney": "com.kingom.clash.offer_charmerx1"
+    },
+    "offer_charmerX12": {
+        "key": "offer_charmerX12",
+        "android": "com.kingom.clash.offer_charmerx12",
+        "ios": "com.kingom.clash.offer_charmerx12",
+        "umoney": "com.kingom.clash.offer_charmerx12"
+    },
+    "offer_airMageX1": {
+        "key": "offer_airMageX1",
+        "android": "com.kingom.clash.offer_airmagex1",
+        "ios": "com.kingom.clash.offer_airmagex1",
+        "umoney": "com.kingom.clash.offer_airmagex1"
+    },
+    "offer_airMageX12": {
+        "key": "offer_airMageX12",
+        "android": "com.kingom.clash.offer_airmagex12",
+        "ios": "com.kingom.clash.offer_airmagex12",
+        "umoney": "com.kingom.clash.offer_airmagex12"
+    },
+    "offer_darknessMageX1": {
+        "key": "offer_darknessMageX1",
+        "android": "com.kingom.clash.offer_darknessmagex1",
+        "ios": "com.kingom.clash.offer_darknessmagex1",
+        "umoney": "com.kingom.clash.offer_darknessmagex1"
+    },
+    "offer_darknessMageX12": {
+        "key": "offer_darknessMageX12",
+        "android": "com.kingom.clash.offer_darknessmagex12",
+        "ios": "com.kingom.clash.offer_darknessmagex12",
+        "umoney": "com.kingom.clash.offer_darknessmagex12"
+    },
+    "offer_iceMageX1": {
+        "key": "offer_iceMageX1",
+        "android": "com.kingom.clash.offer_icemagex1",
+        "ios": "com.kingom.clash.offer_icemagex1",
+        "umoney": "com.kingom.clash.offer_icemagex1"
+    },
+    "offer_iceMageX12": {
+        "key": "offer_iceMageX12",
+        "android": "com.kingom.clash.offer_icemagex12",
+        "ios": "com.kingom.clash.offer_icemagex12",
+        "umoney": "com.kingom.clash.offer_icemagex12"
+    },
+    "offer_fireMageX1": {
+        "key": "offer_fireMageX1",
+        "android": "com.kingom.clash.offer_firemagex1",
+        "ios": "com.kingom.clash.offer_firemagex1",
+        "umoney": "com.kingom.clash.offer_firemagex1"
+    },
+    "offer_fireMageX12": {
+        "key": "offer_fireMageX12",
+        "android": "com.kingom.clash.offer_firemagex12",
+        "ios": "com.kingom.clash.offer_firemagex12",
+        "umoney": "com.kingom.clash.offer_firemagex12"
+    },
+    "offer_sandMageX1": {
+        "key": "offer_sandMageX1",
+        "android": "com.kingom.clash.offer_sandmagex1",
+        "ios": "com.kingom.clash.offer_sandmagex1",
+        "umoney": "com.kingom.clash.offer_sandmagex1"
+    },
+    "offer_sandMageX12": {
+        "key": "offer_sandMageX12",
+        "android": "com.kingom.clash.offer_sandmagex12",
+        "ios": "com.kingom.clash.offer_sandmagex12",
+        "umoney": "com.kingom.clash.offer_sandmagex12"
+    },
+    "offer_undeadPirateX1": {
+        "key": "offer_undeadPirateX1",
+        "android": "com.kingom.clash.offer_undeadpiratex1",
+        "ios": "com.kingom.clash.offer_undeadpiratex1",
+        "umoney": "com.kingom.clash.offer_undeadpiratex1"
+    },
+    "offer_undeadPirateX12": {
+        "key": "offer_undeadPirateX12",
+        "android": "com.kingom.clash.offer_undeadpiratex12",
+        "ios": "com.kingom.clash.offer_undeadpiratex12",
+        "umoney": "com.kingom.clash.offer_undeadpiratex12"
+    },
+    "offer_waterMageX1": {
+        "key": "offer_waterMageX1",
+        "android": "com.kingom.clash.offer_watermagex1",
+        "ios": "com.kingom.clash.offer_watermagex1",
+        "umoney": "com.kingom.clash.offer_watermagex1"
+    },
+    "offer_waterMageX12": {
+        "key": "offer_waterMageX12",
+        "android": "com.kingom.clash.offer_watermagex12",
+        "ios": "com.kingom.clash.offer_watermagex12",
+        "umoney": "com.kingom.clash.offer_watermagex12"
+    },
+    "sku_AdvancedBattlePass": {
+        "key": "sku_AdvancedBattlePass",
+        "android": "com.kingom.clash.sku_advancedbattlepass",
+        "ios": "com.kingom.clash.sku_advancedbattlepass",
+        "umoney": "com.kingom.clash.sku_advancedbattlepass"
+    },
+    "sku_AdvancedBattlePassAndLevels": {
+        "key": "sku_AdvancedBattlePassAndLevels",
+        "android": "com.kingom.clash.sku_advancedbattlepassandlevels",
+        "ios": "com.kingom.clash.sku_advancedbattlepassandlevels",
+        "umoney": "com.kingom.clash.sku_advancedbattlepassandlevels"
+    },
+    "AdvancedArenaBattlePass": {
+        "key": "AdvancedArenaBattlePass",
+        "android": "com.kingom.clash.advancedarenabattlepass",
+        "ios": "com.kingom.clash.advancedarenabattlepass",
+        "umoney": "com.kingom.clash.advancedarenabattlepass"
+    },
+    "AdvancedArenaBattlePassPremium": {
+        "key": "AdvancedArenaBattlePassPremium",
+        "android": "com.kingom.clash.advancedarenabattlepasspremium",
+        "ios": "com.kingom.clash.advancedarenabattlepasspremium",
+        "umoney": "com.kingom.clash.advancedarenabattlepasspremium"
+    },
+    "offer_lordInquisitorX1": {
+        "key": "offer_lordInquisitorX1",
+        "android": "com.kingom.clash.offer_lordinquisitorx1",
+        "ios": "com.kingom.clash.offer_lordinquisitorx1",
+        "umoney": "com.kingom.clash.offer_lordinquisitorx1"
+    },
+    "offer_lordInquisitorX12": {
+        "key": "offer_lordInquisitorX12",
+        "android": "com.kingom.clash.offer_lordinquisitorx12",
+        "ios": "com.kingom.clash.offer_lordinquisitorx12",
+        "umoney": "com.kingom.clash.offer_lordinquisitorx12"
+    },
+    "offer_undeadPestilenceX1": {
+        "key": "offer_undeadPestilenceX1",
+        "android": "com.kingom.clash.offer_undeadpestilencex1",
+        "ios": "com.kingom.clash.offer_undeadpestilencex1",
+        "umoney": "com.kingom.clash.offer_undeadpestilencex1"
+    },
+    "offer_undeadPestilenceX12": {
+        "key": "offer_undeadPestilenceX12",
+        "android": "com.kingom.clash.offer_undeadpestilencex12",
+        "ios": "com.kingom.clash.offer_undeadpestilencex12",
+        "umoney": "com.kingom.clash.offer_undeadpestilencex12"
+    },
+    "daily_offer_gold_1": {
+        "key": "daily_offer_gold_1",
+        "android": "com.kingom.clash.daily_offer_gold_1",
+        "ios": "com.kingom.clash.daily_offer_gold_1",
+        "umoney": "com.kingom.clash.daily_offer_gold_1"
+    },
+    "daily_offer_gold_2": {
+        "key": "daily_offer_gold_2",
+        "android": "com.kingom.clash.daily_offer_gold_2",
+        "ios": "com.kingom.clash.daily_offer_gold_2",
+        "umoney": "com.kingom.clash.daily_offer_gold_2"
+    },
+    "casinoOffer_advanced_1": {
+        "key": "casinoOffer_advanced_1",
+        "android": "com.kingom.clash.casinooffer_advanced_1",
+        "ios": "com.kingom.clash.casinooffer_advanced_1",
+        "umoney": "com.kingom.clash.casinooffer_advanced_1"
+    },
+    "casinoOffer_advanced_2": {
+        "key": "casinoOffer_advanced_2",
+        "android": "com.kingom.clash.casinooffer_advanced_2",
+        "ios": "com.kingom.clash.casinooffer_advanced_2",
+        "umoney": "com.kingom.clash.casinooffer_advanced_2"
+    },
+    "casinoOffer_ultimate_1": {
+        "key": "casinoOffer_ultimate_1",
+        "android": "com.kingom.clash.casinooffer_ultimate_1",
+        "ios": "com.kingom.clash.casinooffer_ultimate_1",
+        "umoney": "com.kingom.clash.casinooffer_ultimate_1"
+    },
+    "casinoOffer_ultimate_2": {
+        "key": "casinoOffer_ultimate_2",
+        "android": "com.kingom.clash.casinooffer_ultimate_2",
+        "ios": "com.kingom.clash.casinooffer_ultimate_2",
+        "umoney": "com.kingom.clash.casinooffer_ultimate_2"
+    },
+    "casinoOffer_absolute_1": {
+        "key": "casinoOffer_absolute_1",
+        "android": "com.kingom.clash.casinooffer_absolute_1",
+        "ios": "com.kingom.clash.casinooffer_absolute_1",
+        "umoney": "com.kingom.clash.casinooffer_absolute_1"
+    },
+    "casinoOffer_absolute_2": {
+        "key": "casinoOffer_absolute_2",
+        "android": "com.kingom.clash.casinooffer_absolute_2",
+        "ios": "com.kingom.clash.casinooffer_absolute_2",
+        "umoney": "com.kingom.clash.casinooffer_absolute_2"
+    },
+    "CasinoBattlePass": {
+        "key": "CasinoBattlePass",
+        "android": "com.kingom.clash.casinobattlepass",
+        "ios": "com.kingom.clash.casinobattlepass",
+        "umoney": "com.kingom.clash.casinobattlepass"
+    },
+    "CasinoBattlePassPremium": {
+        "key": "CasinoBattlePassPremium",
+        "android": "com.kingom.clash.casinobattlepasspremium",
+        "ios": "com.kingom.clash.casinobattlepasspremium",
+        "umoney": "com.kingom.clash.casinobattlepasspremium"
+    },
+    "AdvancedCasinoBattlePass": {
+        "key": "AdvancedCasinoBattlePass",
+        "android": "com.kingom.clash.advancedcasinobattlepass",
+        "ios": "com.kingom.clash.advancedcasinobattlepass",
+        "umoney": "com.kingom.clash.advancedcasinobattlepass"
+    },
+    "AdvancedCasinoBattlePassPremium": {
+        "key": "AdvancedCasinoBattlePassPremium",
+        "android": "com.kingom.clash.advancedcasinobattlepasspremium",
+        "ios": "com.kingom.clash.advancedcasinobattlepasspremium",
+        "umoney": "com.kingom.clash.advancedcasinobattlepasspremium"
+    },
+    "CasinoBattlePassUnlockLevel_1": {
+        "key": "CasinoBattlePassUnlockLevel_1",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_1",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_1",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_1"
+    },
+    "CasinoBattlePassUnlockLevel_5": {
+        "key": "CasinoBattlePassUnlockLevel_5",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_5",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_5",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_5"
+    },
+    "CasinoBattlePassUnlockLevel_10": {
+        "key": "CasinoBattlePassUnlockLevel_10",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_10",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_10",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_10"
+    },
+    "offer_bardHeroX1": {
+        "key": "offer_bardHeroX1",
+        "android": "com.kingom.clash.offer_bardherox1",
+        "ios": "com.kingom.clash.offer_bardherox1",
+        "umoney": "com.kingom.clash.offer_bardherox1"
+    },
+    "offer_bardHeroX12": {
+        "key": "offer_bardHeroX12",
+        "android": "com.kingom.clash.offer_bardherox12",
+        "ios": "com.kingom.clash.offer_bardherox12",
+        "umoney": "com.kingom.clash.offer_bardherox12"
+    },
+    "casinobattlepassunlocklevel_10_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_10_reflectarmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectarmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectarmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectarmor"
+    },
+    "casinobattlepassunlocklevel_5_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_5_reflectarmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectarmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectarmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectarmor"
+    },
+    "casinobattlepassunlocklevel_1_reflectarmor": {
+        "key": "casinobattlepassunlocklevel_1_reflectarmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectarmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectarmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectarmor"
+    },
+    "advancedcasinobattlepasspremium_reflectarmor": {
+        "key": "advancedcasinobattlepasspremium_reflectarmor",
+        "android": "com.kingom.clash.advancedcasinobattlepasspremium_reflectarmor",
+        "ios": "com.kingom.clash.advancedcasinobattlepasspremium_reflectarmor",
+        "umoney": "com.kingom.clash.advancedcasinobattlepasspremium_reflectarmor"
+    },
+    "advancedcasinobattlepass_reflectarmor": {
+        "key": "advancedcasinobattlepass_reflectarmor",
+        "android": "com.kingom.clash.advancedcasinobattlepass_reflectarmor",
+        "ios": "com.kingom.clash.advancedcasinobattlepass_reflectarmor",
+        "umoney": "com.kingom.clash.advancedcasinobattlepass_reflectarmor"
+    },
+    "casinobattlepasspremium_reflectarmor": {
+        "key": "casinobattlepasspremium_reflectarmor",
+        "android": "com.kingom.clash.casinobattlepasspremium_reflectarmor",
+        "ios": "com.kingom.clash.casinobattlepasspremium_reflectarmor",
+        "umoney": "com.kingom.clash.casinobattlepasspremium_reflectarmor"
+    },
+    "casinobattlepass_reflectarmor": {
+        "key": "casinobattlepass_reflectarmor",
+        "android": "com.kingom.clash.casinobattlepass_reflectarmor",
+        "ios": "com.kingom.clash.casinobattlepass_reflectarmor",
+        "umoney": "com.kingom.clash.casinobattlepass_reflectarmor"
+    },
+    "casinooffer_reflectarmor_absolute_2": {
+        "key": "casinooffer_reflectarmor_absolute_2",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_absolute_2",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_absolute_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_absolute_2"
+    },
+    "casinooffer_reflectarmor_absolute_1": {
+        "key": "casinooffer_reflectarmor_absolute_1",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_absolute_1",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_absolute_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_absolute_1"
+    },
+    "casinooffer_reflectarmor_ultimate_2": {
+        "key": "casinooffer_reflectarmor_ultimate_2",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_ultimate_2",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_ultimate_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_ultimate_2"
+    },
+    "casinooffer_reflectarmor_ultimate_1": {
+        "key": "casinooffer_reflectarmor_ultimate_1",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_ultimate_1",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_ultimate_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_ultimate_1"
+    },
+    "casinooffer_reflectarmor_advanced_2": {
+        "key": "casinooffer_reflectarmor_advanced_2",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_advanced_2",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_advanced_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_advanced_2"
+    },
+    "casinooffer_reflectarmor_advanced_1": {
+        "key": "casinooffer_reflectarmor_advanced_1",
+        "android": "com.kingom.clash.casinooffer_reflectarmor_advanced_1",
+        "ios": "com.kingom.clash.casinooffer_reflectarmor_advanced_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectarmor_advanced_1"
+    },
+    "casinobattlepassunlocklevel_10_aoearmor": {
+        "key": "casinobattlepassunlocklevel_10_aoearmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_10_aoearmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_10_aoearmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_10_aoearmor"
+    },
+    "casinobattlepassunlocklevel_5_aoearmor": {
+        "key": "casinobattlepassunlocklevel_5_aoearmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_5_aoearmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_5_aoearmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_5_aoearmor"
+    },
+    "casinobattlepassunlocklevel_1_aoearmor": {
+        "key": "casinobattlepassunlocklevel_1_aoearmor",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_1_aoearmor",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_1_aoearmor",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_1_aoearmor"
+    },
+    "advancedcasinobattlepasspremium_aoearmor": {
+        "key": "advancedcasinobattlepasspremium_aoearmor",
+        "android": "com.kingom.clash.advancedcasinobattlepasspremium_aoearmor",
+        "ios": "com.kingom.clash.advancedcasinobattlepasspremium_aoearmor",
+        "umoney": "com.kingom.clash.advancedcasinobattlepasspremium_aoearmor"
+    },
+    "advancedcasinobattlepass_aoearmor": {
+        "key": "advancedcasinobattlepass_aoearmor",
+        "android": "com.kingom.clash.advancedcasinobattlepass_aoearmor",
+        "ios": "com.kingom.clash.advancedcasinobattlepass_aoearmor",
+        "umoney": "com.kingom.clash.advancedcasinobattlepass_aoearmor"
+    },
+    "casinobattlepasspremium_aoearmor": {
+        "key": "casinobattlepasspremium_aoearmor",
+        "android": "com.kingom.clash.casinobattlepasspremium_aoearmor",
+        "ios": "com.kingom.clash.casinobattlepasspremium_aoearmor",
+        "umoney": "com.kingom.clash.casinobattlepasspremium_aoearmor"
+    },
+    "casinobattlepass_aoearmor": {
+        "key": "casinobattlepass_aoearmor",
+        "android": "com.kingom.clash.casinobattlepass_aoearmor",
+        "ios": "com.kingom.clash.casinobattlepass_aoearmor",
+        "umoney": "com.kingom.clash.casinobattlepass_aoearmor"
+    },
+    "casinooffer_aoearmor_absolute_2": {
+        "key": "casinooffer_aoearmor_absolute_2",
+        "android": "com.kingom.clash.casinooffer_aoearmor_absolute_2",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_absolute_2",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_absolute_2"
+    },
+    "casinooffer_aoearmor_absolute_1": {
+        "key": "casinooffer_aoearmor_absolute_1",
+        "android": "com.kingom.clash.casinooffer_aoearmor_absolute_1",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_absolute_1",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_absolute_1"
+    },
+    "casinooffer_aoearmor_ultimate_2": {
+        "key": "casinooffer_aoearmor_ultimate_2",
+        "android": "com.kingom.clash.casinooffer_aoearmor_ultimate_2",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_ultimate_2",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_ultimate_2"
+    },
+    "casinooffer_aoearmor_ultimate_1": {
+        "key": "casinooffer_aoearmor_ultimate_1",
+        "android": "com.kingom.clash.casinooffer_aoearmor_ultimate_1",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_ultimate_1",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_ultimate_1"
+    },
+    "casinooffer_aoearmor_advanced_2": {
+        "key": "casinooffer_aoearmor_advanced_2",
+        "android": "com.kingom.clash.casinooffer_aoearmor_advanced_2",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_advanced_2",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_advanced_2"
+    },
+    "casinooffer_aoearmor_advanced_1": {
+        "key": "casinooffer_aoearmor_advanced_1",
+        "android": "com.kingom.clash.casinooffer_aoearmor_advanced_1",
+        "ios": "com.kingom.clash.casinooffer_aoearmor_advanced_1",
+        "umoney": "com.kingom.clash.casinooffer_aoearmor_advanced_1"
+    },
+    "casinobattlepassunlocklevel_10_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_10_aoeweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_10_aoeweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_10_aoeweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_10_aoeweapon"
+    },
+    "casinobattlepassunlocklevel_5_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_5_aoeweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_5_aoeweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_5_aoeweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_5_aoeweapon"
+    },
+    "casinobattlepassunlocklevel_1_aoeweapon": {
+        "key": "casinobattlepassunlocklevel_1_aoeweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_1_aoeweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_1_aoeweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_1_aoeweapon"
+    },
+    "advancedcasinobattlepasspremium_aoeweapon": {
+        "key": "advancedcasinobattlepasspremium_aoeweapon",
+        "android": "com.kingom.clash.advancedcasinobattlepasspremium_aoeweapon",
+        "ios": "com.kingom.clash.advancedcasinobattlepasspremium_aoeweapon",
+        "umoney": "com.kingom.clash.advancedcasinobattlepasspremium_aoeweapon"
+    },
+    "advancedcasinobattlepass_aoeweapon": {
+        "key": "advancedcasinobattlepass_aoeweapon",
+        "android": "com.kingom.clash.advancedcasinobattlepass_aoeweapon",
+        "ios": "com.kingom.clash.advancedcasinobattlepass_aoeweapon",
+        "umoney": "com.kingom.clash.advancedcasinobattlepass_aoeweapon"
+    },
+    "casinobattlepasspremium_aoeweapon": {
+        "key": "casinobattlepasspremium_aoeweapon",
+        "android": "com.kingom.clash.casinobattlepasspremium_aoeweapon",
+        "ios": "com.kingom.clash.casinobattlepasspremium_aoeweapon",
+        "umoney": "com.kingom.clash.casinobattlepasspremium_aoeweapon"
+    },
+    "casinobattlepass_aoeweapon": {
+        "key": "casinobattlepass_aoeweapon",
+        "android": "com.kingom.clash.casinobattlepass_aoeweapon",
+        "ios": "com.kingom.clash.casinobattlepass_aoeweapon",
+        "umoney": "com.kingom.clash.casinobattlepass_aoeweapon"
+    },
+    "casinooffer_aoeweapon_absolute_2": {
+        "key": "casinooffer_aoeweapon_absolute_2",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_absolute_2",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_absolute_2",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_absolute_2"
+    },
+    "casinooffer_aoeweapon_absolute_1": {
+        "key": "casinooffer_aoeweapon_absolute_1",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_absolute_1",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_absolute_1",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_absolute_1"
+    },
+    "casinooffer_aoeweapon_ultimate_2": {
+        "key": "casinooffer_aoeweapon_ultimate_2",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_ultimate_2",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_ultimate_2",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_ultimate_2"
+    },
+    "casinooffer_aoeweapon_ultimate_1": {
+        "key": "casinooffer_aoeweapon_ultimate_1",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_ultimate_1",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_ultimate_1",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_ultimate_1"
+    },
+    "casinooffer_aoeweapon_advanced_2": {
+        "key": "casinooffer_aoeweapon_advanced_2",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_advanced_2",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_advanced_2",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_advanced_2"
+    },
+    "casinooffer_aoeweapon_advanced_1": {
+        "key": "casinooffer_aoeweapon_advanced_1",
+        "android": "com.kingom.clash.casinooffer_aoeweapon_advanced_1",
+        "ios": "com.kingom.clash.casinooffer_aoeweapon_advanced_1",
+        "umoney": "com.kingom.clash.casinooffer_aoeweapon_advanced_1"
+    },
+    "casinobattlepassunlocklevel_10_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_10_reflectweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_10_reflectweapon"
+    },
+    "casinobattlepassunlocklevel_5_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_5_reflectweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_5_reflectweapon"
+    },
+    "casinobattlepassunlocklevel_1_reflectweapon": {
+        "key": "casinobattlepassunlocklevel_1_reflectweapon",
+        "android": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectweapon",
+        "ios": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectweapon",
+        "umoney": "com.kingom.clash.casinobattlepassunlocklevel_1_reflectweapon"
+    },
+    "advancedcasinobattlepasspremium_reflectweapon": {
+        "key": "advancedcasinobattlepasspremium_reflectweapon",
+        "android": "com.kingom.clash.advancedcasinobattlepasspremium_reflectweapon",
+        "ios": "com.kingom.clash.advancedcasinobattlepasspremium_reflectweapon",
+        "umoney": "com.kingom.clash.advancedcasinobattlepasspremium_reflectweapon"
+    },
+    "advancedcasinobattlepass_reflectweapon": {
+        "key": "advancedcasinobattlepass_reflectweapon",
+        "android": "com.kingom.clash.advancedcasinobattlepass_reflectweapon",
+        "ios": "com.kingom.clash.advancedcasinobattlepass_reflectweapon",
+        "umoney": "com.kingom.clash.advancedcasinobattlepass_reflectweapon"
+    },
+    "casinobattlepasspremium_reflectweapon": {
+        "key": "casinobattlepasspremium_reflectweapon",
+        "android": "com.kingom.clash.casinobattlepasspremium_reflectweapon",
+        "ios": "com.kingom.clash.casinobattlepasspremium_reflectweapon",
+        "umoney": "com.kingom.clash.casinobattlepasspremium_reflectweapon"
+    },
+    "casinobattlepass_reflectweapon": {
+        "key": "casinobattlepass_reflectweapon",
+        "android": "com.kingom.clash.casinobattlepass_reflectweapon",
+        "ios": "com.kingom.clash.casinobattlepass_reflectweapon",
+        "umoney": "com.kingom.clash.casinobattlepass_reflectweapon"
+    },
+    "casinooffer_reflectweapon_absolute_2": {
+        "key": "casinooffer_reflectweapon_absolute_2",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_absolute_2",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_absolute_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_absolute_2"
+    },
+    "casinooffer_reflectweapon_absolute_1": {
+        "key": "casinooffer_reflectweapon_absolute_1",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_absolute_1",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_absolute_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_absolute_1"
+    },
+    "casinooffer_reflectweapon_ultimate_2": {
+        "key": "casinooffer_reflectweapon_ultimate_2",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_ultimate_2",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_ultimate_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_ultimate_2"
+    },
+    "casinooffer_reflectweapon_ultimate_1": {
+        "key": "casinooffer_reflectweapon_ultimate_1",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_ultimate_1",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_ultimate_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_ultimate_1"
+    },
+    "casinooffer_reflectweapon_advanced_2": {
+        "key": "casinooffer_reflectweapon_advanced_2",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_advanced_2",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_advanced_2",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_advanced_2"
+    },
+    "casinooffer_reflectweapon_advanced_1": {
+        "key": "casinooffer_reflectweapon_advanced_1",
+        "android": "com.kingom.clash.casinooffer_reflectweapon_advanced_1",
+        "ios": "com.kingom.clash.casinooffer_reflectweapon_advanced_1",
+        "umoney": "com.kingom.clash.casinooffer_reflectweapon_advanced_1"
+    },
+    "casinoKingOffer_advanced_1": {
+        "key": "casinoKingOffer_advanced_1",
+        "android": "com.kingom.clash.casinokingoffer_advanced_1",
+        "ios": "com.kingom.clash.casinokingoffer_advanced_1",
+        "umoney": "com.kingom.clash.casinokingoffer_advanced_1"
+    },
+    "casinoKingOffer_advanced_2": {
+        "key": "casinoKingOffer_advanced_2",
+        "android": "com.kingom.clash.casinokingoffer_advanced_2",
+        "ios": "com.kingom.clash.casinokingoffer_advanced_2",
+        "umoney": "com.kingom.clash.casinokingoffer_advanced_2"
+    },
+    "casinoKingOffer_ultimate_1": {
+        "key": "casinoKingOffer_ultimate_1",
+        "android": "com.kingom.clash.casinokingoffer_ultimate_1",
+        "ios": "com.kingom.clash.casinokingoffer_ultimate_1",
+        "umoney": "com.kingom.clash.casinokingoffer_ultimate_1"
+    },
+    "casinoKingOffer_ultimate_2": {
+        "key": "casinoKingOffer_ultimate_2",
+        "android": "com.kingom.clash.casinokingoffer_ultimate_2",
+        "ios": "com.kingom.clash.casinokingoffer_ultimate_2",
+        "umoney": "com.kingom.clash.casinokingoffer_ultimate_2"
+    },
+    "casinoKingOffer_absolute_1": {
+        "key": "casinoKingOffer_absolute_1",
+        "android": "com.kingom.clash.casinokingoffer_absolute_1",
+        "ios": "com.kingom.clash.casinokingoffer_absolute_1",
+        "umoney": "com.kingom.clash.casinokingoffer_absolute_1"
+    },
+    "casinoKingOffer_absolute_2": {
+        "key": "casinoKingOffer_absolute_2",
+        "android": "com.kingom.clash.casinokingoffer_absolute_2",
+        "ios": "com.kingom.clash.casinokingoffer_absolute_2",
+        "umoney": "com.kingom.clash.casinokingoffer_absolute_2"
+    },
+    "CasinoKingBattlePass": {
+        "key": "CasinoKingBattlePass",
+        "android": "com.kingom.clash.casinokingbattlepass",
+        "ios": "com.kingom.clash.casinokingbattlepass",
+        "umoney": "com.kingom.clash.casinokingbattlepass"
+    },
+    "CasinoKingBattlePassPremium": {
+        "key": "CasinoKingBattlePassPremium",
+        "android": "com.kingom.clash.casinokingbattlepasspremium",
+        "ios": "com.kingom.clash.casinokingbattlepasspremium",
+        "umoney": "com.kingom.clash.casinokingbattlepasspremium"
+    },
+    "AdvancedCasinoKingBattlePass": {
+        "key": "AdvancedCasinoKingBattlePass",
+        "android": "com.kingom.clash.advancedcasinokingbattlepass",
+        "ios": "com.kingom.clash.advancedcasinokingbattlepass",
+        "umoney": "com.kingom.clash.advancedcasinokingbattlepass"
+    },
+    "AdvancedCasinoKingBattlePassPremium": {
+        "key": "AdvancedCasinoKingBattlePassPremium",
+        "android": "com.kingom.clash.advancedcasinokingbattlepasspremium",
+        "ios": "com.kingom.clash.advancedcasinokingbattlepasspremium",
+        "umoney": "com.kingom.clash.advancedcasinokingbattlepasspremium"
+    },
+    "CasinoKingBattlePassUnlockLevel_1": {
+        "key": "CasinoKingBattlePassUnlockLevel_1",
+        "android": "com.kingom.clash.casinokingbattlepassunlocklevel_1",
+        "ios": "com.kingom.clash.casinokingbattlepassunlocklevel_1",
+        "umoney": "com.kingom.clash.casinokingbattlepassunlocklevel_1"
+    },
+    "CasinoKingBattlePassUnlockLevel_5": {
+        "key": "CasinoKingBattlePassUnlockLevel_5",
+        "android": "com.kingom.clash.casinokingbattlepassunlocklevel_5",
+        "ios": "com.kingom.clash.casinokingbattlepassunlocklevel_5",
+        "umoney": "com.kingom.clash.casinokingbattlepassunlocklevel_5"
+    },
+    "CasinoKingBattlePassUnlockLevel_10": {
+        "key": "CasinoKingBattlePassUnlockLevel_10",
+        "android": "com.kingom.clash.casinokingbattlepassunlocklevel_10",
+        "ios": "com.kingom.clash.casinokingbattlepassunlocklevel_10",
+        "umoney": "com.kingom.clash.casinokingbattlepassunlocklevel_10"
+    },
+    "SquadEventBattlePassUnlockLevel_1": {
+        "key": "SquadEventBattlePassUnlockLevel_1",
+        "android": "com.kingom.clash.towerbattlepassunlocklevel_1",
+        "ios": "com.kingom.clash.towerbattlepassunlocklevel_1",
+        "umoney": "com.kingom.clash.towerbattlepassunlocklevel_1"
+    },
+    "SquadEventBattlePassUnlockLevel_5": {
+        "key": "SquadEventBattlePassUnlockLevel_5",
+        "android": "com.kingom.clash.towerbattlepassunlocklevel_5",
+        "ios": "com.kingom.clash.towerbattlepassunlocklevel_5",
+        "umoney": "com.kingom.clash.towerbattlepassunlocklevel_5"
+    },
+    "SquadEventBattlePassUnlockLevel_10": {
+        "key": "SquadEventBattlePassUnlockLevel_10",
+        "android": "com.kingom.clash.towerbattlepassunlocklevel_10",
+        "ios": "com.kingom.clash.towerbattlepassunlocklevel_10",
+        "umoney": "com.kingom.clash.towerbattlepassunlocklevel_10"
+    },
+    "SquadEventBattlePass": {
+        "key": "SquadEventBattlePass",
+        "android": "com.kingom.clash.towerbattlepass",
+        "ios": "com.kingom.clash.towerbattlepass",
+        "umoney": "com.kingom.clash.towerbattlepass"
+    },
+    "SquadEventBattlePassAndLevels": {
+        "key": "SquadEventBattlePassAndLevels",
+        "android": "com.kingom.clash.towerbattlepasspremium",
+        "ios": "com.kingom.clash.towerbattlepasspremium",
+        "umoney": "com.kingom.clash.towerbattlepasspremium"
+    },
+    "AdvancedSquadEventBattlePass": {
+        "key": "AdvancedSquadEventBattlePass",
+        "android": "com.kingom.clash.advancedtowerbattlepass",
+        "ios": "com.kingom.clash.advancedtowerbattlepass",
+        "umoney": "com.kingom.clash.advancedtowerbattlepass"
+    },
+    "AdvancedSquadEventBattlePassAndLevels": {
+        "key": "AdvancedSquadEventBattlePassAndLevels",
+        "android": "com.kingom.clash.advancedtowerbattlepasspremium",
+        "ios": "com.kingom.clash.advancedtowerbattlepasspremium",
+        "umoney": "com.kingom.clash.advancedtowerbattlepasspremium"
+    },
+    "toweroffer_advanced_1": {
+        "key": "toweroffer_advanced_1",
+        "android": "com.kingom.clash.toweroffer_advanced_1",
+        "ios": "com.kingom.clash.toweroffer_advanced_1",
+        "umoney": "com.kingom.clash.toweroffer_advanced_1"
+    },
+    "toweroffer_advanced_2": {
+        "key": "toweroffer_advanced_2",
+        "android": "com.kingom.clash.toweroffer_advanced_2",
+        "ios": "com.kingom.clash.toweroffer_advanced_2",
+        "umoney": "com.kingom.clash.toweroffer_advanced_2"
+    },
+    "toweroffer_ultimate_1": {
+        "key": "toweroffer_ultimate_1",
+        "android": "com.kingom.clash.toweroffer_ultimate_1",
+        "ios": "com.kingom.clash.toweroffer_ultimate_1",
+        "umoney": "com.kingom.clash.toweroffer_ultimate_1"
+    },
+    "toweroffer_ultimate_2": {
+        "key": "toweroffer_ultimate_2",
+        "android": "com.kingom.clash.toweroffer_ultimate_2",
+        "ios": "com.kingom.clash.toweroffer_ultimate_2",
+        "umoney": "com.kingom.clash.toweroffer_ultimate_2"
+    },
+    "toweroffer_absolute_1": {
+        "key": "toweroffer_absolute_1",
+        "android": "com.kingom.clash.toweroffer_absolute_1",
+        "ios": "com.kingom.clash.toweroffer_absolute_1",
+        "umoney": "com.kingom.clash.toweroffer_absolute_1"
+    },
+    "toweroffer_absolute_2": {
+        "key": "toweroffer_absolute_2",
+        "android": "com.kingom.clash.toweroffer_absolute_2",
+        "ios": "com.kingom.clash.toweroffer_absolute_2",
+        "umoney": "com.kingom.clash.toweroffer_absolute_2"
+    },
+    "chainoffer_pairCurrency_1": {
+        "key": "chainoffer_pairCurrency_1",
+        "android": "com.kingom.clash.offer_chain_hero_step_2",
+        "ios": "com.kingom.clash.offer_chain_hero_step_2",
+        "umoney": "com.kingom.clash.offer_chain_hero_step_2"
+    },
+    "chainoffer_pairCurrency_2": {
+        "key": "chainoffer_pairCurrency_2",
+        "android": "com.kingom.clash.offer_chain_hero_step_4",
+        "ios": "com.kingom.clash.offer_chain_hero_step_4",
+        "umoney": "com.kingom.clash.offer_chain_hero_step_4"
+    },
+    "chainoffer_pairCurrency_3": {
+        "key": "chainoffer_pairCurrency_3",
+        "android": "com.kingom.clash.offer_chain_hero_step_6",
+        "ios": "com.kingom.clash.offer_chain_hero_step_6",
+        "umoney": "com.kingom.clash.offer_chain_hero_step_6"
+    },
+    "chainoffer_pairCurrency_4": {
+        "key": "chainoffer_pairCurrency_4",
+        "android": "com.kingom.clash.offer_chain_hero_step_8",
+        "ios": "com.kingom.clash.offer_chain_hero_step_8",
+        "umoney": "com.kingom.clash.offer_chain_hero_step_8"
+    }
+}

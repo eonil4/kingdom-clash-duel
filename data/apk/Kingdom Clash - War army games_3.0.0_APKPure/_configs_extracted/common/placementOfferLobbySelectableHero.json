@@ -1,0 +1,9 @@
+{
+    "offerSelectableHero": {
+        "key": "offerSelectableHero",
+        "offer1": "legendaryOfferSelectableHero",
+        "offer2": "legendaryOfferSelectableThreeHero",
+        "icon": null,
+        "prefabIcon": "widgetLobbySelectableHero"
+    }
+}

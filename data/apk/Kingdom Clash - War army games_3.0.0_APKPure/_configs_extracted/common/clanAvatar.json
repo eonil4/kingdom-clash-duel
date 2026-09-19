@@ -1,0 +1,102 @@
+{
+    "clan_icon_1": {
+        "key": "clan_icon_1",
+        "serverAvatarId": 1,
+        "iconId": "clan_icon_1"
+    },
+    "clan_icon_2": {
+        "key": "clan_icon_2",
+        "serverAvatarId": 2,
+        "iconId": "clan_icon_2"
+    },
+    "clan_icon_3": {
+        "key": "clan_icon_3",
+        "serverAvatarId": 3,
+        "iconId": "clan_icon_3"
+    },
+    "clan_icon_4": {
+        "key": "clan_icon_4",
+        "serverAvatarId": 4,
+        "iconId": "clan_icon_4"
+    },
+    "clan_icon_5": {
+        "key": "clan_icon_5",
+        "serverAvatarId": 5,
+        "iconId": "clan_icon_5"
+    },
+    "clan_icon_6": {
+        "key": "clan_icon_6",
+        "serverAvatarId": 6,
+        "iconId": "clan_icon_6"
+    },
+    "clan_icon_7": {
+        "key": "clan_icon_7",
+        "serverAvatarId": 7,
+        "iconId": "clan_icon_7"
+    },
+    "clan_icon_8": {
+        "key": "clan_icon_8",
+        "serverAvatarId": 8,
+        "iconId": "clan_icon_8"
+    },
+    "clan_icon_9": {
+        "key": "clan_icon_9",
+        "serverAvatarId": 9,
+        "iconId": "clan_icon_9"
+    },
+    "clan_icon_10": {
+        "key": "clan_icon_10",
+        "serverAvatarId": 10,
+        "iconId": "clan_icon_10"
+    },
+    "clan_icon_11": {
+        "key": "clan_icon_11",
+        "serverAvatarId": 11,
+        "iconId": "clan_icon_11"
+    },
+    "clan_icon_12": {
+        "key": "clan_icon_12",
+        "serverAvatarId": 12,
+        "iconId": "clan_icon_12"
+    },
+    "clan_icon_13": {
+        "key": "clan_icon_13",
+        "serverAvatarId": 13,
+        "iconId": "clan_icon_13"
+    },
+    "clan_icon_14": {
+        "key": "clan_icon_14",
+        "serverAvatarId": 14,
+        "iconId": "clan_icon_14"
+    },
+    "clan_icon_15": {
+        "key": "clan_icon_15",
+        "serverAvatarId": 15,
+        "iconId": "clan_icon_15"
+    },
+    "clan_icon_16": {
+        "key": "clan_icon_16",
+        "serverAvatarId": 16,
+        "iconId": "clan_icon_16"
+    },
+    "clan_icon_17": {
+        "key": "clan_icon_17",
+        "serverAvatarId": 17,
+        "iconId": "clan_icon_17"
+    },
+    "clan_icon_18": {
+        "key": "clan_icon_18",
+        "serverAvatarId": 18,
+        "iconId": "clan_icon_18"
+    },
+    "clan_icon_19": {
+        "key": "clan_icon_19",
+        "serverAvatarId": 19,
+        "iconId": "clan_icon_19"
+    },
+    "clan_icon_20": {
+        "key": "clan_icon_20",
+        "serverAvatarId": 20,
+        "iconId": "clan_icon_20"
+    }
+}

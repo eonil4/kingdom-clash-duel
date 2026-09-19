@@ -1,0 +1,58 @@
+{
+    "1": {
+        "key": "1",
+        "chestId": "oneWeaponChest",
+        "gearId": "reflectWeapon",
+        "count": 1,
+        "weight": 50
+    },
+    "2": {
+        "key": "2",
+        "chestId": "oneWeaponChest",
+        "gearId": "aoeWeapon",
+        "count": 1,
+        "weight": 50
+    },
+    "3": {
+        "key": "3",
+        "chestId": "oneArmorChest",
+        "gearId": "reflectArmor",
+        "count": 1,
+        "weight": 50
+    },
+    "4": {
+        "key": "4",
+        "chestId": "oneArmorChest",
+        "gearId": "aoeArmor",
+        "count": 1,
+        "weight": 50
+    },
+    "5": {
+        "key": "5",
+        "chestId": "twoWeaponChest",
+        "gearId": "reflectWeapon",
+        "count": 1,
+        "weight": 50
+    },
+    "6": {
+        "key": "6",
+        "chestId": "twoWeaponChest",
+        "gearId": "aoeWeapon",
+        "count": 1,
+        "weight": 50
+    },
+    "7": {
+        "key": "7",
+        "chestId": "twoArmorChest",
+        "gearId": "reflectArmor",
+        "count": 1,
+        "weight": 50
+    },
+    "8": {
+        "key": "8",
+        "chestId": "twoArmorChest",
+        "gearId": "aoeArmor",
+        "count": 1,
+        "weight": 50
+    }
+}

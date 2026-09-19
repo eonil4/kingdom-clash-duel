@@ -1,0 +1,266 @@
+{
+    "1": {
+        "key": "1",
+        "level": 3,
+        "bonusId": "unlockBattlePass",
+        "bonusNamedReward": null
+    },
+    "2": {
+        "key": "2",
+        "level": 4,
+        "bonusId": "unlockOpenNextButton",
+        "bonusNamedReward": null
+    },
+    "3": {
+        "key": "3",
+        "level": 5,
+        "bonusId": "unlockArcher",
+        "bonusNamedReward": null
+    },
+    "4": {
+        "key": "4",
+        "level": 6,
+        "bonusId": "unlockLobbyChest",
+        "bonusNamedReward": null
+    },
+    "5": {
+        "key": "5",
+        "level": 8,
+        "bonusId": "unlockGloryRoad",
+        "bonusNamedReward": null
+    },
+    "6": {
+        "key": "6",
+        "level": 17,
+        "bonusId": "unlockHeadHunt",
+        "bonusNamedReward": null
+    },
+    "7": {
+        "key": "7",
+        "level": 21,
+        "bonusId": "unlockBeginnerBundleDailyGift",
+        "bonusNamedReward": "unlockBeginnerBundleDailyGift"
+    },
+    "8": {
+        "key": "8",
+        "level": 21,
+        "bonusId": "showRateUs",
+        "bonusNamedReward": null
+    },
+    "9": {
+        "key": "9",
+        "level": 25,
+        "bonusId": "unlockSilverSkin",
+        "bonusNamedReward": "unlockSilverSkin"
+    },
+    "10": {
+        "key": "10",
+        "level": 25,
+        "bonusId": "unlockFormations",
+        "bonusNamedReward": "unlockFormations"
+    },
+    "11": {
+        "key": "11",
+        "level": 25,
+        "bonusId": "unlockPromocodes",
+        "bonusNamedReward": "unlockPromocodes"
+    },
+    "12": {
+        "key": "12",
+        "level": 50,
+        "bonusId": "unlockArena",
+        "bonusNamedReward": null
+    },
+    "13": {
+        "key": "13",
+        "level": 35,
+        "bonusId": "unlockBossWidget",
+        "bonusNamedReward": "unlockBossWidget"
+    },
+    "14": {
+        "key": "14",
+        "level": 40,
+        "bonusId": "unlockRoulette",
+        "bonusNamedReward": "unlockRoulette"
+    },
+    "15": {
+        "key": "15",
+        "level": 30,
+        "bonusId": "unlockExpeditions",
+        "bonusNamedReward": "unlockExpeditions"
+    },
+    "16": {
+        "key": "16",
+        "level": 99,
+        "bonusId": "unlockCommunityLobbyButton",
+        "bonusNamedReward": "unlockCommunityLobbyButton"
+    },
+    "17": {
+        "key": "17",
+        "level": 100,
+        "bonusId": "unlockMergeAndRecallButton",
+        "bonusNamedReward": null
+    },
+    "19": {
+        "key": "19",
+        "level": 300,
+        "bonusId": "unlockBossFight",
+        "bonusNamedReward": "unlockBossFight"
+    },
+    "21": {
+        "key": "21",
+        "level": 150,
+        "bonusId": "unlockMushroomWars",
+        "bonusNamedReward": "unlockMushroomWars"
+    },
+    "22": {
+        "key": "22",
+        "level": 500,
+        "bonusId": "unlockTempleFuse",
+        "bonusNamedReward": "unlockTempleFuse"
+    },
+    "23": {
+        "key": "23",
+        "level": 120,
+        "bonusId": "unlockCampaignLocationSkinMagicForest",
+        "bonusNamedReward": "unlockCampaignLocationSkinMagicForest"
+    },
+    "26": {
+        "key": "26",
+        "level": 49,
+        "bonusId": "unlockOfferLobbyGift",
+        "bonusNamedReward": "unlockOfferLobbyGift"
+    },
+    "20": {
+        "key": "20",
+        "level": 150,
+        "bonusId": "unlockOfferLobbyTroops",
+        "bonusNamedReward": "unlockOfferLobbyTroops"
+    },
+    "24": {
+        "key": "24",
+        "level": 250,
+        "bonusId": "unlockClans",
+        "bonusNamedReward": "unlockClans"
+    },
+    "25": {
+        "key": "25",
+        "level": 1,
+        "bonusId": "unlockCampaignLocationSkinDefault",
+        "bonusNamedReward": "unlockCampaignLocationSkinDefault"
+    },
+    "27": {
+        "key": "27",
+        "level": 49,
+        "bonusId": "unlockLoseScreenHints",
+        "bonusNamedReward": "unlockLoseScreenHints"
+    },
+    "28": {
+        "key": "28",
+        "level": 50,
+        "bonusId": "unlockOfferCampaignLevel",
+        "bonusNamedReward": "unlockOfferCampaignLevel"
+    },
+    "29": {
+        "key": "29",
+        "level": 400,
+        "bonusId": "unlockCampaignLocationSkinNecropolis",
+        "bonusNamedReward": "unlockCampaignLocationSkinNecropolis"
+    },
+    "30": {
+        "key": "30",
+        "level": 50,
+        "bonusId": "unlockOfferCampaignLevelNew",
+        "bonusNamedReward": "unlockOfferCampaignLevelNew"
+    },
+    "31": {
+        "key": "31",
+        "level": 300,
+        "bonusId": "unlockLibrary",
+        "bonusNamedReward": "unlockLibrary"
+    },
+    "32": {
+        "key": "32",
+        "level": 1000,
+        "bonusId": "unlockCampaignLocationSkinWheatField",
+        "bonusNamedReward": "unlockCampaignLocationSkinWheatField"
+    },
+    "33": {
+        "key": "33",
+        "level": 2000,
+        "bonusId": "unlockCampaignLocationSkinCoast",
+        "bonusNamedReward": "unlockCampaignLocationSkinCoast"
+    },
+    "34": {
+        "key": "34",
+        "level": 4000,
+        "bonusId": "unlockCampaignLocationSkinTown",
+        "bonusNamedReward": "unlockCampaignLocationSkinTown"
+    },
+    "35": {
+        "key": "35",
+        "level": 250,
+        "bonusId": "unlockRace",
+        "bonusNamedReward": "unlockRace"
+    },
+    "36": {
+        "key": "36",
+        "level": 50,
+        "bonusId": "unlockServerOfferSchedule",
+        "bonusNamedReward": "unlockServerOfferSchedule"
+    },
+    "18": {
+        "key": "18",
+        "level": 49,
+        "bonusId": "unlockOfferDaily1",
+        "bonusNamedReward": "unlockOfferDaily1"
+    },
+    "37": {
+        "key": "37",
+        "level": 101,
+        "bonusId": "unlockOfferDailyGemsSale",
+        "bonusNamedReward": "unlockOfferDailyGemsSale"
+    },
+    "38": {
+        "key": "38",
+        "level": 101,
+        "bonusId": "unlockOfferDailyGoldSale",
+        "bonusNamedReward": "unlockOfferDailyGoldSale"
+    },
+    "39": {
+        "key": "39",
+        "level": 500,
+        "bonusId": "unlockCasinoRoulette",
+        "bonusNamedReward": "unlockCasinoRoulette"
+    },
+    "40": {
+        "key": "40",
+        "level": 50,
+        "bonusId": "unlockKingAndAddGear",
+        "bonusNamedReward": "unlockKing"
+    },
+    "41": {
+        "key": "41",
+        "level": 300,
+        "bonusId": "unlockGearCasino",
+        "bonusNamedReward": "unlockGearCasino"
+    },
+    "42": {
+        "key": "42",
+        "level": 50,
+        "bonusId": "unlockGearShards",
+        "bonusNamedReward": "unlockGearShards"
+    },
+    "43": {
+        "key": "43",
+        "level": 300,
+        "bonusId": "unlockSquadEventTower",
+        "bonusNamedReward": "unlockSquadEventTower"
+    },
+    "44": {
+        "key": "44",
+        "level": 50,
+        "bonusId": "unlockOfferChain",
+        "bonusNamedReward": "unlockOfferChain"
+    }
+}

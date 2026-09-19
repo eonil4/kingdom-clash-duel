@@ -1,0 +1,44 @@
+{
+    "legendaryShopHeroSet": {
+        "key": "legendaryShopHeroSet"
+    },
+    "iceAndFireSet": {
+        "key": "iceAndFireSet"
+    },
+    "humanGeneralsSet": {
+        "key": "humanGeneralsSet"
+    },
+    "elementalMagesSet": {
+        "key": "elementalMagesSet"
+    },
+    "skeletonLordsSet": {
+        "key": "skeletonLordsSet"
+    },
+    "forestDefendersSet": {
+        "key": "forestDefendersSet"
+    },
+    "BalladHeroesSet": {
+        "key": "BalladHeroesSet"
+    },
+    "FortunesChosenSet": {
+        "key": "FortunesChosenSet"
+    },
+    "WarriorsOfLightSet": {
+        "key": "WarriorsOfLightSet"
+    },
+    "SkyLordsSet": {
+        "key": "SkyLordsSet"
+    },
+    "CursedNobleSet": {
+        "key": "CursedNobleSet"
+    },
+    "DarkCovenantSet": {
+        "key": "DarkCovenantSet"
+    },
+    "IndestructibleGiantsSet": {
+        "key": "IndestructibleGiantsSet"
+    },
+    "DeadlyShadowsSet": {
+        "key": "DeadlyShadowsSet"
+    }
+}

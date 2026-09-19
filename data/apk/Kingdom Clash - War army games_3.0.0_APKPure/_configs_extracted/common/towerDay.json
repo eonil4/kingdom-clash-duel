@@ -1,0 +1,26 @@
+{
+    "tower_AxeThrowers_Day1": {
+        "key": "tower_AxeThrowers_Day1",
+        "towerId": "tower_AxeThrowers",
+        "dayNumber": 1,
+        "librarySeasonId": "SeasonAxeThrowers_Day1"
+    },
+    "tower_AxeThrowers_Day2": {
+        "key": "tower_AxeThrowers_Day2",
+        "towerId": "tower_AxeThrowers",
+        "dayNumber": 2,
+        "librarySeasonId": "SeasonAxeThrowers_Day2"
+    },
+    "tower_AxeThrowers_Day3": {
+        "key": "tower_AxeThrowers_Day3",
+        "towerId": "tower_AxeThrowers",
+        "dayNumber": 3,
+        "librarySeasonId": "SeasonAxeThrowers_Day3"
+    },
+    "tower_AxeThrowers_Day4": {
+        "key": "tower_AxeThrowers_Day4",
+        "towerId": "tower_AxeThrowers",
+        "dayNumber": 4,
+        "librarySeasonId": "SeasonAxeThrowers_Day4"
+    }
+}

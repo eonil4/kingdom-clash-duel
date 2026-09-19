@@ -1,0 +1,56 @@
+{
+    "BattlePassArena_StoneGolem": {
+        "key": "BattlePassArena_StoneGolem",
+        "battlepassLinkId": "ArenaSeason_StoneGolem",
+        "featuredUnitId": "stoneGolem",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_MountainsChampion": {
+        "key": "BattlePassArena_MountainsChampion",
+        "battlepassLinkId": "ArenaSeason_MountainsChampion",
+        "featuredUnitId": "mountainsChampion",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_VulkanGolem": {
+        "key": "BattlePassArena_VulkanGolem",
+        "battlepassLinkId": "ArenaSeason_VulkanGolem",
+        "featuredUnitId": "vulkanGolem",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_Nighthunter": {
+        "key": "BattlePassArena_Nighthunter",
+        "battlepassLinkId": "ArenaSeason_Nighthunter",
+        "featuredUnitId": "flyingMonster",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_Necromancer": {
+        "key": "BattlePassArena_Necromancer",
+        "battlepassLinkId": "ArenaSeason_Necromancer",
+        "featuredUnitId": "necromancer",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_Alchemist": {
+        "key": "BattlePassArena_Alchemist",
+        "battlepassLinkId": "ArenaSeason_Alchemist",
+        "featuredUnitId": "alchemist",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_Necromancer_Fix": {
+        "key": "BattlePassArena_Necromancer_Fix",
+        "battlepassLinkId": "ArenaSeason_Necromancer_Fix",
+        "featuredUnitId": "necromancer",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_VulkanGolem_Fix": {
+        "key": "BattlePassArena_VulkanGolem_Fix",
+        "battlepassLinkId": "ArenaSeason_VulkanGolem_Fix",
+        "featuredUnitId": "vulkanGolem",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    },
+    "BattlePassArena_Alchemist_Fix": {
+        "key": "BattlePassArena_Alchemist_Fix",
+        "battlepassLinkId": "ArenaSeason_Alchemist_Fix",
+        "featuredUnitId": "alchemist",
+        "chestHintLocalizationId": "battlepass_arena_chest_hint"
+    }
+}

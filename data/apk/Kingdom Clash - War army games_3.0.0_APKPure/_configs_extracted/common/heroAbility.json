@@ -1,0 +1,2282 @@
+{
+    "ability_general_1": {
+        "key": "ability_general_1",
+        "heroLevelId": "general_1",
+        "abilityId": "general_abilityWhirlwind_1",
+        "defaultAbilityId": "general_1_melee"
+    },
+    "ability_general_2": {
+        "key": "ability_general_2",
+        "heroLevelId": "general_2",
+        "abilityId": "general_abilityWhirlwind_2",
+        "defaultAbilityId": "general_2_melee"
+    },
+    "ability_general_3": {
+        "key": "ability_general_3",
+        "heroLevelId": "general_3",
+        "abilityId": "general_abilityWhirlwind_3",
+        "defaultAbilityId": "general_3_melee"
+    },
+    "ability_general_4": {
+        "key": "ability_general_4",
+        "heroLevelId": "general_4",
+        "abilityId": "general_abilityWhirlwind_4",
+        "defaultAbilityId": "general_4_melee"
+    },
+    "ability_general_5": {
+        "key": "ability_general_5",
+        "heroLevelId": "general_5",
+        "abilityId": "general_abilityWhirlwind_5",
+        "defaultAbilityId": "general_5_melee"
+    },
+    "ability_general_6": {
+        "key": "ability_general_6",
+        "heroLevelId": "general_6",
+        "abilityId": "general_abilityWhirlwind_6",
+        "defaultAbilityId": "general_6_melee"
+    },
+    "ability_general_7": {
+        "key": "ability_general_7",
+        "heroLevelId": "general_7",
+        "abilityId": "general_abilityWhirlwind_7",
+        "defaultAbilityId": "general_7_melee"
+    },
+    "ability_general_8": {
+        "key": "ability_general_8",
+        "heroLevelId": "general_8",
+        "abilityId": "general_abilityWhirlwind_8",
+        "defaultAbilityId": "general_8_melee"
+    },
+    "ability_general_9": {
+        "key": "ability_general_9",
+        "heroLevelId": "general_9",
+        "abilityId": "general_abilityWhirlwind_9",
+        "defaultAbilityId": "general_9_melee"
+    },
+    "ability_general_10": {
+        "key": "ability_general_10",
+        "heroLevelId": "general_10",
+        "abilityId": "general_abilityWhirlwind_10",
+        "defaultAbilityId": "general_10_melee"
+    },
+    "ability_darkKnight_1": {
+        "key": "ability_darkKnight_1",
+        "heroLevelId": "darkKnight_1",
+        "abilityId": "darkKnight_AoEDamage_1",
+        "defaultAbilityId": "darkKnight_1_melee"
+    },
+    "ability_darkKnight_2": {
+        "key": "ability_darkKnight_2",
+        "heroLevelId": "darkKnight_2",
+        "abilityId": "darkKnight_AoEDamage_2",
+        "defaultAbilityId": "darkKnight_2_melee"
+    },
+    "ability_darkKnight_3": {
+        "key": "ability_darkKnight_3",
+        "heroLevelId": "darkKnight_3",
+        "abilityId": "darkKnight_AoEDamage_3",
+        "defaultAbilityId": "darkKnight_3_melee"
+    },
+    "ability_darkKnight_4": {
+        "key": "ability_darkKnight_4",
+        "heroLevelId": "darkKnight_4",
+        "abilityId": "darkKnight_AoEDamage_4",
+        "defaultAbilityId": "darkKnight_4_melee"
+    },
+    "ability_darkKnight_5": {
+        "key": "ability_darkKnight_5",
+        "heroLevelId": "darkKnight_5",
+        "abilityId": "darkKnight_AoEDamage_5",
+        "defaultAbilityId": "darkKnight_5_melee"
+    },
+    "ability_darkKnight_6": {
+        "key": "ability_darkKnight_6",
+        "heroLevelId": "darkKnight_6",
+        "abilityId": "darkKnight_AoEDamage_6",
+        "defaultAbilityId": "darkKnight_6_melee"
+    },
+    "ability_darkKnight_7": {
+        "key": "ability_darkKnight_7",
+        "heroLevelId": "darkKnight_7",
+        "abilityId": "darkKnight_AoEDamage_7",
+        "defaultAbilityId": "darkKnight_7_melee"
+    },
+    "ability_darkKnight_8": {
+        "key": "ability_darkKnight_8",
+        "heroLevelId": "darkKnight_8",
+        "abilityId": "darkKnight_AoEDamage_8",
+        "defaultAbilityId": "darkKnight_8_melee"
+    },
+    "ability_darkKnight_9": {
+        "key": "ability_darkKnight_9",
+        "heroLevelId": "darkKnight_9",
+        "abilityId": "darkKnight_AoEDamage_9",
+        "defaultAbilityId": "darkKnight_9_melee"
+    },
+    "ability_darkKnight_10": {
+        "key": "ability_darkKnight_10",
+        "heroLevelId": "darkKnight_10",
+        "abilityId": "darkKnight_AoEDamage_10",
+        "defaultAbilityId": "darkKnight_10_melee"
+    },
+    "ability_dragonRider_1": {
+        "key": "ability_dragonRider_1",
+        "heroLevelId": "dragonRider_1",
+        "abilityId": "dragonRider_Meteor_1",
+        "defaultAbilityId": "dragonRider_1_range"
+    },
+    "ability_dragonRider_2": {
+        "key": "ability_dragonRider_2",
+        "heroLevelId": "dragonRider_2",
+        "abilityId": "dragonRider_Meteor_2",
+        "defaultAbilityId": "dragonRider_2_range"
+    },
+    "ability_dragonRider_3": {
+        "key": "ability_dragonRider_3",
+        "heroLevelId": "dragonRider_3",
+        "abilityId": "dragonRider_Meteor_3",
+        "defaultAbilityId": "dragonRider_3_range"
+    },
+    "ability_dragonRider_4": {
+        "key": "ability_dragonRider_4",
+        "heroLevelId": "dragonRider_4",
+        "abilityId": "dragonRider_Meteor_4",
+        "defaultAbilityId": "dragonRider_4_range"
+    },
+    "ability_dragonRider_5": {
+        "key": "ability_dragonRider_5",
+        "heroLevelId": "dragonRider_5",
+        "abilityId": "dragonRider_Meteor_5",
+        "defaultAbilityId": "dragonRider_5_range"
+    },
+    "ability_dragonRider_6": {
+        "key": "ability_dragonRider_6",
+        "heroLevelId": "dragonRider_6",
+        "abilityId": "dragonRider_Meteor_6",
+        "defaultAbilityId": "dragonRider_6_range"
+    },
+    "ability_dragonRider_7": {
+        "key": "ability_dragonRider_7",
+        "heroLevelId": "dragonRider_7",
+        "abilityId": "dragonRider_Meteor_7",
+        "defaultAbilityId": "dragonRider_7_range"
+    },
+    "ability_dragonRider_8": {
+        "key": "ability_dragonRider_8",
+        "heroLevelId": "dragonRider_8",
+        "abilityId": "dragonRider_Meteor_8",
+        "defaultAbilityId": "dragonRider_8_range"
+    },
+    "ability_dragonRider_9": {
+        "key": "ability_dragonRider_9",
+        "heroLevelId": "dragonRider_9",
+        "abilityId": "dragonRider_Meteor_9",
+        "defaultAbilityId": "dragonRider_9_range"
+    },
+    "ability_dragonRider_10": {
+        "key": "ability_dragonRider_10",
+        "heroLevelId": "dragonRider_10",
+        "abilityId": "dragonRider_Meteor_10",
+        "defaultAbilityId": "dragonRider_10_range"
+    },
+    "ability_accurateMerida_1": {
+        "key": "ability_accurateMerida_1",
+        "heroLevelId": "accurateMerida_1",
+        "abilityId": "accurateMerida_Powershot_1",
+        "defaultAbilityId": "accurateMerida_1_range"
+    },
+    "ability_accurateMerida_2": {
+        "key": "ability_accurateMerida_2",
+        "heroLevelId": "accurateMerida_2",
+        "abilityId": "accurateMerida_Powershot_2",
+        "defaultAbilityId": "accurateMerida_2_range"
+    },
+    "ability_accurateMerida_3": {
+        "key": "ability_accurateMerida_3",
+        "heroLevelId": "accurateMerida_3",
+        "abilityId": "accurateMerida_Powershot_3",
+        "defaultAbilityId": "accurateMerida_3_range"
+    },
+    "ability_accurateMerida_4": {
+        "key": "ability_accurateMerida_4",
+        "heroLevelId": "accurateMerida_4",
+        "abilityId": "accurateMerida_Powershot_4",
+        "defaultAbilityId": "accurateMerida_4_range"
+    },
+    "ability_accurateMerida_5": {
+        "key": "ability_accurateMerida_5",
+        "heroLevelId": "accurateMerida_5",
+        "abilityId": "accurateMerida_Powershot_5",
+        "defaultAbilityId": "accurateMerida_5_range"
+    },
+    "ability_accurateMerida_6": {
+        "key": "ability_accurateMerida_6",
+        "heroLevelId": "accurateMerida_6",
+        "abilityId": "accurateMerida_Powershot_6",
+        "defaultAbilityId": "accurateMerida_6_range"
+    },
+    "ability_accurateMerida_7": {
+        "key": "ability_accurateMerida_7",
+        "heroLevelId": "accurateMerida_7",
+        "abilityId": "accurateMerida_Powershot_7",
+        "defaultAbilityId": "accurateMerida_7_range"
+    },
+    "ability_accurateMerida_8": {
+        "key": "ability_accurateMerida_8",
+        "heroLevelId": "accurateMerida_8",
+        "abilityId": "accurateMerida_Powershot_8",
+        "defaultAbilityId": "accurateMerida_8_range"
+    },
+    "ability_accurateMerida_9": {
+        "key": "ability_accurateMerida_9",
+        "heroLevelId": "accurateMerida_9",
+        "abilityId": "accurateMerida_Powershot_9",
+        "defaultAbilityId": "accurateMerida_9_range"
+    },
+    "ability_accurateMerida_10": {
+        "key": "ability_accurateMerida_10",
+        "heroLevelId": "accurateMerida_10",
+        "abilityId": "accurateMerida_Powershot_10",
+        "defaultAbilityId": "accurateMerida_10_range"
+    },
+    "ability_baronBenua_1": {
+        "key": "ability_baronBenua_1",
+        "heroLevelId": "baronBenua_1",
+        "abilityId": "baronBenua_goldAbility_1",
+        "defaultAbilityId": "baronBenua_1_melee"
+    },
+    "ability_baronBenua_2": {
+        "key": "ability_baronBenua_2",
+        "heroLevelId": "baronBenua_2",
+        "abilityId": "baronBenua_goldAbility_2",
+        "defaultAbilityId": "baronBenua_2_melee"
+    },
+    "ability_baronBenua_3": {
+        "key": "ability_baronBenua_3",
+        "heroLevelId": "baronBenua_3",
+        "abilityId": "baronBenua_goldAbility_3",
+        "defaultAbilityId": "baronBenua_3_melee"
+    },
+    "ability_baronBenua_4": {
+        "key": "ability_baronBenua_4",
+        "heroLevelId": "baronBenua_4",
+        "abilityId": "baronBenua_goldAbility_4",
+        "defaultAbilityId": "baronBenua_4_melee"
+    },
+    "ability_baronBenua_5": {
+        "key": "ability_baronBenua_5",
+        "heroLevelId": "baronBenua_5",
+        "abilityId": "baronBenua_goldAbility_5",
+        "defaultAbilityId": "baronBenua_5_melee"
+    },
+    "ability_baronBenua_6": {
+        "key": "ability_baronBenua_6",
+        "heroLevelId": "baronBenua_6",
+        "abilityId": "baronBenua_goldAbility_6",
+        "defaultAbilityId": "baronBenua_6_melee"
+    },
+    "ability_baronBenua_7": {
+        "key": "ability_baronBenua_7",
+        "heroLevelId": "baronBenua_7",
+        "abilityId": "baronBenua_goldAbility_7",
+        "defaultAbilityId": "baronBenua_7_melee"
+    },
+    "ability_baronBenua_8": {
+        "key": "ability_baronBenua_8",
+        "heroLevelId": "baronBenua_8",
+        "abilityId": "baronBenua_goldAbility_8",
+        "defaultAbilityId": "baronBenua_8_melee"
+    },
+    "ability_baronBenua_9": {
+        "key": "ability_baronBenua_9",
+        "heroLevelId": "baronBenua_9",
+        "abilityId": "baronBenua_goldAbility_9",
+        "defaultAbilityId": "baronBenua_9_melee"
+    },
+    "ability_baronBenua_10": {
+        "key": "ability_baronBenua_10",
+        "heroLevelId": "baronBenua_10",
+        "abilityId": "baronBenua_goldAbility_10",
+        "defaultAbilityId": "baronBenua_10_melee"
+    },
+    "ability_swordmasterHero_1": {
+        "key": "ability_swordmasterHero_1",
+        "heroLevelId": "swordmasterHero_1",
+        "abilityId": "swordmasterHero_fissure_1",
+        "defaultAbilityId": "swordmasterHero_1_melee"
+    },
+    "ability_swordmasterHero_2": {
+        "key": "ability_swordmasterHero_2",
+        "heroLevelId": "swordmasterHero_2",
+        "abilityId": "swordmasterHero_fissure_2",
+        "defaultAbilityId": "swordmasterHero_2_melee"
+    },
+    "ability_swordmasterHero_3": {
+        "key": "ability_swordmasterHero_3",
+        "heroLevelId": "swordmasterHero_3",
+        "abilityId": "swordmasterHero_fissure_3",
+        "defaultAbilityId": "swordmasterHero_3_melee"
+    },
+    "ability_swordmasterHero_4": {
+        "key": "ability_swordmasterHero_4",
+        "heroLevelId": "swordmasterHero_4",
+        "abilityId": "swordmasterHero_fissure_4",
+        "defaultAbilityId": "swordmasterHero_4_melee"
+    },
+    "ability_swordmasterHero_5": {
+        "key": "ability_swordmasterHero_5",
+        "heroLevelId": "swordmasterHero_5",
+        "abilityId": "swordmasterHero_fissure_5",
+        "defaultAbilityId": "swordmasterHero_5_melee"
+    },
+    "ability_swordmasterHero_6": {
+        "key": "ability_swordmasterHero_6",
+        "heroLevelId": "swordmasterHero_6",
+        "abilityId": "swordmasterHero_fissure_6",
+        "defaultAbilityId": "swordmasterHero_6_melee"
+    },
+    "ability_swordmasterHero_7": {
+        "key": "ability_swordmasterHero_7",
+        "heroLevelId": "swordmasterHero_7",
+        "abilityId": "swordmasterHero_fissure_7",
+        "defaultAbilityId": "swordmasterHero_7_melee"
+    },
+    "ability_swordmasterHero_8": {
+        "key": "ability_swordmasterHero_8",
+        "heroLevelId": "swordmasterHero_8",
+        "abilityId": "swordmasterHero_fissure_8",
+        "defaultAbilityId": "swordmasterHero_8_melee"
+    },
+    "ability_swordmasterHero_9": {
+        "key": "ability_swordmasterHero_9",
+        "heroLevelId": "swordmasterHero_9",
+        "abilityId": "swordmasterHero_fissure_9",
+        "defaultAbilityId": "swordmasterHero_9_melee"
+    },
+    "ability_swordmasterHero_10": {
+        "key": "ability_swordmasterHero_10",
+        "heroLevelId": "swordmasterHero_10",
+        "abilityId": "swordmasterHero_fissure_10",
+        "defaultAbilityId": "swordmasterHero_10_melee"
+    },
+    "ability_clericHero_1": {
+        "key": "ability_clericHero_1",
+        "heroLevelId": "clericHero_1",
+        "abilityId": "clericHero_blessing_1",
+        "defaultAbilityId": "clericHero_1_range"
+    },
+    "ability_clericHero_2": {
+        "key": "ability_clericHero_2",
+        "heroLevelId": "clericHero_2",
+        "abilityId": "clericHero_blessing_2",
+        "defaultAbilityId": "clericHero_2_range"
+    },
+    "ability_clericHero_3": {
+        "key": "ability_clericHero_3",
+        "heroLevelId": "clericHero_3",
+        "abilityId": "clericHero_blessing_3",
+        "defaultAbilityId": "clericHero_3_range"
+    },
+    "ability_clericHero_4": {
+        "key": "ability_clericHero_4",
+        "heroLevelId": "clericHero_4",
+        "abilityId": "clericHero_blessing_4",
+        "defaultAbilityId": "clericHero_4_range"
+    },
+    "ability_clericHero_5": {
+        "key": "ability_clericHero_5",
+        "heroLevelId": "clericHero_5",
+        "abilityId": "clericHero_blessing_5",
+        "defaultAbilityId": "clericHero_5_range"
+    },
+    "ability_clericHero_6": {
+        "key": "ability_clericHero_6",
+        "heroLevelId": "clericHero_6",
+        "abilityId": "clericHero_blessing_6",
+        "defaultAbilityId": "clericHero_6_range"
+    },
+    "ability_clericHero_7": {
+        "key": "ability_clericHero_7",
+        "heroLevelId": "clericHero_7",
+        "abilityId": "clericHero_blessing_7",
+        "defaultAbilityId": "clericHero_7_range"
+    },
+    "ability_clericHero_8": {
+        "key": "ability_clericHero_8",
+        "heroLevelId": "clericHero_8",
+        "abilityId": "clericHero_blessing_8",
+        "defaultAbilityId": "clericHero_8_range"
+    },
+    "ability_clericHero_9": {
+        "key": "ability_clericHero_9",
+        "heroLevelId": "clericHero_9",
+        "abilityId": "clericHero_blessing_9",
+        "defaultAbilityId": "clericHero_9_range"
+    },
+    "ability_clericHero_10": {
+        "key": "ability_clericHero_10",
+        "heroLevelId": "clericHero_10",
+        "abilityId": "clericHero_blessing_10",
+        "defaultAbilityId": "clericHero_10_range"
+    },
+    "ability_ringleaderHero_1": {
+        "key": "ability_ringleaderHero_1",
+        "heroLevelId": "ringleaderHero_1",
+        "abilityId": "ringleaderHero_heavyShake_1",
+        "defaultAbilityId": "ringleaderHero_1_melee"
+    },
+    "ability_ringleaderHero_2": {
+        "key": "ability_ringleaderHero_2",
+        "heroLevelId": "ringleaderHero_2",
+        "abilityId": "ringleaderHero_heavyShake_2",
+        "defaultAbilityId": "ringleaderHero_2_melee"
+    },
+    "ability_ringleaderHero_3": {
+        "key": "ability_ringleaderHero_3",
+        "heroLevelId": "ringleaderHero_3",
+        "abilityId": "ringleaderHero_heavyShake_3",
+        "defaultAbilityId": "ringleaderHero_3_melee"
+    },
+    "ability_ringleaderHero_4": {
+        "key": "ability_ringleaderHero_4",
+        "heroLevelId": "ringleaderHero_4",
+        "abilityId": "ringleaderHero_heavyShake_4",
+        "defaultAbilityId": "ringleaderHero_4_melee"
+    },
+    "ability_ringleaderHero_5": {
+        "key": "ability_ringleaderHero_5",
+        "heroLevelId": "ringleaderHero_5",
+        "abilityId": "ringleaderHero_heavyShake_5",
+        "defaultAbilityId": "ringleaderHero_5_melee"
+    },
+    "ability_ringleaderHero_6": {
+        "key": "ability_ringleaderHero_6",
+        "heroLevelId": "ringleaderHero_6",
+        "abilityId": "ringleaderHero_heavyShake_6",
+        "defaultAbilityId": "ringleaderHero_6_melee"
+    },
+    "ability_ringleaderHero_7": {
+        "key": "ability_ringleaderHero_7",
+        "heroLevelId": "ringleaderHero_7",
+        "abilityId": "ringleaderHero_heavyShake_7",
+        "defaultAbilityId": "ringleaderHero_7_melee"
+    },
+    "ability_ringleaderHero_8": {
+        "key": "ability_ringleaderHero_8",
+        "heroLevelId": "ringleaderHero_8",
+        "abilityId": "ringleaderHero_heavyShake_8",
+        "defaultAbilityId": "ringleaderHero_8_melee"
+    },
+    "ability_ringleaderHero_9": {
+        "key": "ability_ringleaderHero_9",
+        "heroLevelId": "ringleaderHero_9",
+        "abilityId": "ringleaderHero_heavyShake_9",
+        "defaultAbilityId": "ringleaderHero_9_melee"
+    },
+    "ability_ringleaderHero_10": {
+        "key": "ability_ringleaderHero_10",
+        "heroLevelId": "ringleaderHero_10",
+        "abilityId": "ringleaderHero_heavyShake_10",
+        "defaultAbilityId": "ringleaderHero_10_melee"
+    },
+    "ability_nun_1": {
+        "key": "ability_nun_1",
+        "heroLevelId": "nun_1",
+        "abilityId": "nun_retribution_1",
+        "defaultAbilityId": "nun_1_melee"
+    },
+    "ability_nun_2": {
+        "key": "ability_nun_2",
+        "heroLevelId": "nun_2",
+        "abilityId": "nun_retribution_2",
+        "defaultAbilityId": "nun_2_melee"
+    },
+    "ability_nun_3": {
+        "key": "ability_nun_3",
+        "heroLevelId": "nun_3",
+        "abilityId": "nun_retribution_3",
+        "defaultAbilityId": "nun_3_melee"
+    },
+    "ability_nun_4": {
+        "key": "ability_nun_4",
+        "heroLevelId": "nun_4",
+        "abilityId": "nun_retribution_4",
+        "defaultAbilityId": "nun_4_melee"
+    },
+    "ability_nun_5": {
+        "key": "ability_nun_5",
+        "heroLevelId": "nun_5",
+        "abilityId": "nun_retribution_5",
+        "defaultAbilityId": "nun_5_melee"
+    },
+    "ability_nun_6": {
+        "key": "ability_nun_6",
+        "heroLevelId": "nun_6",
+        "abilityId": "nun_retribution_6",
+        "defaultAbilityId": "nun_6_melee"
+    },
+    "ability_nun_7": {
+        "key": "ability_nun_7",
+        "heroLevelId": "nun_7",
+        "abilityId": "nun_retribution_7",
+        "defaultAbilityId": "nun_7_melee"
+    },
+    "ability_nun_8": {
+        "key": "ability_nun_8",
+        "heroLevelId": "nun_8",
+        "abilityId": "nun_retribution_8",
+        "defaultAbilityId": "nun_8_melee"
+    },
+    "ability_nun_9": {
+        "key": "ability_nun_9",
+        "heroLevelId": "nun_9",
+        "abilityId": "nun_retribution_9",
+        "defaultAbilityId": "nun_9_melee"
+    },
+    "ability_nun_10": {
+        "key": "ability_nun_10",
+        "heroLevelId": "nun_10",
+        "abilityId": "nun_retribution_10",
+        "defaultAbilityId": "nun_10_melee"
+    },
+    "ability_forestQueen_1": {
+        "key": "ability_forestQueen_1",
+        "heroLevelId": "forestQueen_1",
+        "abilityId": "forestQueen_roots_1",
+        "defaultAbilityId": "forestQueen_rayPoison_1"
+    },
+    "ability_forestQueen_2": {
+        "key": "ability_forestQueen_2",
+        "heroLevelId": "forestQueen_2",
+        "abilityId": "forestQueen_roots_2",
+        "defaultAbilityId": "forestQueen_rayPoison_2"
+    },
+    "ability_forestQueen_3": {
+        "key": "ability_forestQueen_3",
+        "heroLevelId": "forestQueen_3",
+        "abilityId": "forestQueen_roots_3",
+        "defaultAbilityId": "forestQueen_rayPoison_3"
+    },
+    "ability_forestQueen_4": {
+        "key": "ability_forestQueen_4",
+        "heroLevelId": "forestQueen_4",
+        "abilityId": "forestQueen_roots_4",
+        "defaultAbilityId": "forestQueen_rayPoison_4"
+    },
+    "ability_forestQueen_5": {
+        "key": "ability_forestQueen_5",
+        "heroLevelId": "forestQueen_5",
+        "abilityId": "forestQueen_roots_5",
+        "defaultAbilityId": "forestQueen_rayPoison_5"
+    },
+    "ability_forestQueen_6": {
+        "key": "ability_forestQueen_6",
+        "heroLevelId": "forestQueen_6",
+        "abilityId": "forestQueen_roots_6",
+        "defaultAbilityId": "forestQueen_rayPoison_6"
+    },
+    "ability_forestQueen_7": {
+        "key": "ability_forestQueen_7",
+        "heroLevelId": "forestQueen_7",
+        "abilityId": "forestQueen_roots_7",
+        "defaultAbilityId": "forestQueen_rayPoison_7"
+    },
+    "ability_forestQueen_8": {
+        "key": "ability_forestQueen_8",
+        "heroLevelId": "forestQueen_8",
+        "abilityId": "forestQueen_roots_8",
+        "defaultAbilityId": "forestQueen_rayPoison_8"
+    },
+    "ability_forestQueen_9": {
+        "key": "ability_forestQueen_9",
+        "heroLevelId": "forestQueen_9",
+        "abilityId": "forestQueen_roots_9",
+        "defaultAbilityId": "forestQueen_rayPoison_9"
+    },
+    "ability_forestQueen_10": {
+        "key": "ability_forestQueen_10",
+        "heroLevelId": "forestQueen_10",
+        "abilityId": "forestQueen_roots_10",
+        "defaultAbilityId": "forestQueen_rayPoison_10"
+    },
+    "ability_boneDragon_1": {
+        "key": "ability_boneDragon_1",
+        "heroLevelId": "boneDragon_1",
+        "abilityId": "boneDragon_deathFlight_1",
+        "defaultAbilityId": "boneDragon_1_range"
+    },
+    "ability_boneDragon_2": {
+        "key": "ability_boneDragon_2",
+        "heroLevelId": "boneDragon_2",
+        "abilityId": "boneDragon_deathFlight_2",
+        "defaultAbilityId": "boneDragon_2_range"
+    },
+    "ability_boneDragon_3": {
+        "key": "ability_boneDragon_3",
+        "heroLevelId": "boneDragon_3",
+        "abilityId": "boneDragon_deathFlight_3",
+        "defaultAbilityId": "boneDragon_3_range"
+    },
+    "ability_boneDragon_4": {
+        "key": "ability_boneDragon_4",
+        "heroLevelId": "boneDragon_4",
+        "abilityId": "boneDragon_deathFlight_4",
+        "defaultAbilityId": "boneDragon_4_range"
+    },
+    "ability_boneDragon_5": {
+        "key": "ability_boneDragon_5",
+        "heroLevelId": "boneDragon_5",
+        "abilityId": "boneDragon_deathFlight_5",
+        "defaultAbilityId": "boneDragon_5_range"
+    },
+    "ability_boneDragon_6": {
+        "key": "ability_boneDragon_6",
+        "heroLevelId": "boneDragon_6",
+        "abilityId": "boneDragon_deathFlight_6",
+        "defaultAbilityId": "boneDragon_6_range"
+    },
+    "ability_boneDragon_7": {
+        "key": "ability_boneDragon_7",
+        "heroLevelId": "boneDragon_7",
+        "abilityId": "boneDragon_deathFlight_7",
+        "defaultAbilityId": "boneDragon_7_range"
+    },
+    "ability_boneDragon_8": {
+        "key": "ability_boneDragon_8",
+        "heroLevelId": "boneDragon_8",
+        "abilityId": "boneDragon_deathFlight_8",
+        "defaultAbilityId": "boneDragon_8_range"
+    },
+    "ability_boneDragon_9": {
+        "key": "ability_boneDragon_9",
+        "heroLevelId": "boneDragon_9",
+        "abilityId": "boneDragon_deathFlight_9",
+        "defaultAbilityId": "boneDragon_9_range"
+    },
+    "ability_boneDragon_10": {
+        "key": "ability_boneDragon_10",
+        "heroLevelId": "boneDragon_10",
+        "abilityId": "boneDragon_deathFlight_10",
+        "defaultAbilityId": "boneDragon_10_range"
+    },
+    "ability_undeadWarrior_1": {
+        "key": "ability_undeadWarrior_1",
+        "heroLevelId": "undeadWarrior_1",
+        "abilityId": "undeadWarrior_cursedArmy_1",
+        "defaultAbilityId": "undeadWarrior_1_melee"
+    },
+    "ability_undeadWarrior_2": {
+        "key": "ability_undeadWarrior_2",
+        "heroLevelId": "undeadWarrior_2",
+        "abilityId": "undeadWarrior_cursedArmy_2",
+        "defaultAbilityId": "undeadWarrior_2_melee"
+    },
+    "ability_undeadWarrior_3": {
+        "key": "ability_undeadWarrior_3",
+        "heroLevelId": "undeadWarrior_3",
+        "abilityId": "undeadWarrior_cursedArmy_3",
+        "defaultAbilityId": "undeadWarrior_3_melee"
+    },
+    "ability_undeadWarrior_4": {
+        "key": "ability_undeadWarrior_4",
+        "heroLevelId": "undeadWarrior_4",
+        "abilityId": "undeadWarrior_cursedArmy_4",
+        "defaultAbilityId": "undeadWarrior_4_melee"
+    },
+    "ability_undeadWarrior_5": {
+        "key": "ability_undeadWarrior_5",
+        "heroLevelId": "undeadWarrior_5",
+        "abilityId": "undeadWarrior_cursedArmy_5",
+        "defaultAbilityId": "undeadWarrior_5_melee"
+    },
+    "ability_undeadWarrior_6": {
+        "key": "ability_undeadWarrior_6",
+        "heroLevelId": "undeadWarrior_6",
+        "abilityId": "undeadWarrior_cursedArmy_6",
+        "defaultAbilityId": "undeadWarrior_6_melee"
+    },
+    "ability_undeadWarrior_7": {
+        "key": "ability_undeadWarrior_7",
+        "heroLevelId": "undeadWarrior_7",
+        "abilityId": "undeadWarrior_cursedArmy_7",
+        "defaultAbilityId": "undeadWarrior_7_melee"
+    },
+    "ability_undeadWarrior_8": {
+        "key": "ability_undeadWarrior_8",
+        "heroLevelId": "undeadWarrior_8",
+        "abilityId": "undeadWarrior_cursedArmy_8",
+        "defaultAbilityId": "undeadWarrior_8_melee"
+    },
+    "ability_undeadWarrior_9": {
+        "key": "ability_undeadWarrior_9",
+        "heroLevelId": "undeadWarrior_9",
+        "abilityId": "undeadWarrior_cursedArmy_9",
+        "defaultAbilityId": "undeadWarrior_9_melee"
+    },
+    "ability_undeadWarrior_10": {
+        "key": "ability_undeadWarrior_10",
+        "heroLevelId": "undeadWarrior_10",
+        "abilityId": "undeadWarrior_cursedArmy_10",
+        "defaultAbilityId": "undeadWarrior_10_melee"
+    },
+    "ability_undeadGunner_1": {
+        "key": "ability_undeadGunner_1",
+        "heroLevelId": "undeadGunner_1",
+        "abilityId": "undeadGunner_nightmare_1",
+        "defaultAbilityId": "undeadGunner_1_range"
+    },
+    "ability_undeadGunner_2": {
+        "key": "ability_undeadGunner_2",
+        "heroLevelId": "undeadGunner_2",
+        "abilityId": "undeadGunner_nightmare_2",
+        "defaultAbilityId": "undeadGunner_2_range"
+    },
+    "ability_undeadGunner_3": {
+        "key": "ability_undeadGunner_3",
+        "heroLevelId": "undeadGunner_3",
+        "abilityId": "undeadGunner_nightmare_3",
+        "defaultAbilityId": "undeadGunner_3_range"
+    },
+    "ability_undeadGunner_4": {
+        "key": "ability_undeadGunner_4",
+        "heroLevelId": "undeadGunner_4",
+        "abilityId": "undeadGunner_nightmare_4",
+        "defaultAbilityId": "undeadGunner_4_range"
+    },
+    "ability_undeadGunner_5": {
+        "key": "ability_undeadGunner_5",
+        "heroLevelId": "undeadGunner_5",
+        "abilityId": "undeadGunner_nightmare_5",
+        "defaultAbilityId": "undeadGunner_5_range"
+    },
+    "ability_undeadGunner_6": {
+        "key": "ability_undeadGunner_6",
+        "heroLevelId": "undeadGunner_6",
+        "abilityId": "undeadGunner_nightmare_6",
+        "defaultAbilityId": "undeadGunner_6_range"
+    },
+    "ability_undeadGunner_7": {
+        "key": "ability_undeadGunner_7",
+        "heroLevelId": "undeadGunner_7",
+        "abilityId": "undeadGunner_nightmare_7",
+        "defaultAbilityId": "undeadGunner_7_range"
+    },
+    "ability_undeadGunner_8": {
+        "key": "ability_undeadGunner_8",
+        "heroLevelId": "undeadGunner_8",
+        "abilityId": "undeadGunner_nightmare_8",
+        "defaultAbilityId": "undeadGunner_8_range"
+    },
+    "ability_undeadGunner_9": {
+        "key": "ability_undeadGunner_9",
+        "heroLevelId": "undeadGunner_9",
+        "abilityId": "undeadGunner_nightmare_9",
+        "defaultAbilityId": "undeadGunner_9_range"
+    },
+    "ability_undeadGunner_10": {
+        "key": "ability_undeadGunner_10",
+        "heroLevelId": "undeadGunner_10",
+        "abilityId": "undeadGunner_nightmare_10",
+        "defaultAbilityId": "undeadGunner_10_range"
+    },
+    "ability_iceMage_1": {
+        "key": "ability_iceMage_1",
+        "heroLevelId": "iceMage_1",
+        "abilityId": "iceMage_snowball_1",
+        "defaultAbilityId": "iceMage_rangeStun_1"
+    },
+    "ability_iceMage_2": {
+        "key": "ability_iceMage_2",
+        "heroLevelId": "iceMage_2",
+        "abilityId": "iceMage_snowball_2",
+        "defaultAbilityId": "iceMage_rangeStun_2"
+    },
+    "ability_iceMage_3": {
+        "key": "ability_iceMage_3",
+        "heroLevelId": "iceMage_3",
+        "abilityId": "iceMage_snowball_3",
+        "defaultAbilityId": "iceMage_rangeStun_3"
+    },
+    "ability_iceMage_4": {
+        "key": "ability_iceMage_4",
+        "heroLevelId": "iceMage_4",
+        "abilityId": "iceMage_snowball_4",
+        "defaultAbilityId": "iceMage_rangeStun_4"
+    },
+    "ability_iceMage_5": {
+        "key": "ability_iceMage_5",
+        "heroLevelId": "iceMage_5",
+        "abilityId": "iceMage_snowball_5",
+        "defaultAbilityId": "iceMage_rangeStun_5"
+    },
+    "ability_iceMage_6": {
+        "key": "ability_iceMage_6",
+        "heroLevelId": "iceMage_6",
+        "abilityId": "iceMage_snowball_6",
+        "defaultAbilityId": "iceMage_rangeStun_6"
+    },
+    "ability_iceMage_7": {
+        "key": "ability_iceMage_7",
+        "heroLevelId": "iceMage_7",
+        "abilityId": "iceMage_snowball_7",
+        "defaultAbilityId": "iceMage_rangeStun_7"
+    },
+    "ability_iceMage_8": {
+        "key": "ability_iceMage_8",
+        "heroLevelId": "iceMage_8",
+        "abilityId": "iceMage_snowball_8",
+        "defaultAbilityId": "iceMage_rangeStun_8"
+    },
+    "ability_iceMage_9": {
+        "key": "ability_iceMage_9",
+        "heroLevelId": "iceMage_9",
+        "abilityId": "iceMage_snowball_9",
+        "defaultAbilityId": "iceMage_rangeStun_9"
+    },
+    "ability_iceMage_10": {
+        "key": "ability_iceMage_10",
+        "heroLevelId": "iceMage_10",
+        "abilityId": "iceMage_snowball_10",
+        "defaultAbilityId": "iceMage_rangeStun_10"
+    },
+    "ability_darknessMage_1": {
+        "key": "ability_darknessMage_1",
+        "heroLevelId": "darknessMage_1",
+        "abilityId": "darknessMage_summon_1",
+        "defaultAbilityId": "darknessMage_attack_1"
+    },
+    "ability_darknessMage_2": {
+        "key": "ability_darknessMage_2",
+        "heroLevelId": "darknessMage_2",
+        "abilityId": "darknessMage_summon_2",
+        "defaultAbilityId": "darknessMage_attack_2"
+    },
+    "ability_darknessMage_3": {
+        "key": "ability_darknessMage_3",
+        "heroLevelId": "darknessMage_3",
+        "abilityId": "darknessMage_summon_3",
+        "defaultAbilityId": "darknessMage_attack_3"
+    },
+    "ability_darknessMage_4": {
+        "key": "ability_darknessMage_4",
+        "heroLevelId": "darknessMage_4",
+        "abilityId": "darknessMage_summon_4",
+        "defaultAbilityId": "darknessMage_attack_4"
+    },
+    "ability_darknessMage_5": {
+        "key": "ability_darknessMage_5",
+        "heroLevelId": "darknessMage_5",
+        "abilityId": "darknessMage_summon_5",
+        "defaultAbilityId": "darknessMage_attack_5"
+    },
+    "ability_darknessMage_6": {
+        "key": "ability_darknessMage_6",
+        "heroLevelId": "darknessMage_6",
+        "abilityId": "darknessMage_summon_6",
+        "defaultAbilityId": "darknessMage_attack_6"
+    },
+    "ability_darknessMage_7": {
+        "key": "ability_darknessMage_7",
+        "heroLevelId": "darknessMage_7",
+        "abilityId": "darknessMage_summon_7",
+        "defaultAbilityId": "darknessMage_attack_7"
+    },
+    "ability_darknessMage_8": {
+        "key": "ability_darknessMage_8",
+        "heroLevelId": "darknessMage_8",
+        "abilityId": "darknessMage_summon_8",
+        "defaultAbilityId": "darknessMage_attack_8"
+    },
+    "ability_darknessMage_9": {
+        "key": "ability_darknessMage_9",
+        "heroLevelId": "darknessMage_9",
+        "abilityId": "darknessMage_summon_9",
+        "defaultAbilityId": "darknessMage_attack_9"
+    },
+    "ability_darknessMage_10": {
+        "key": "ability_darknessMage_10",
+        "heroLevelId": "darknessMage_10",
+        "abilityId": "darknessMage_summon_10",
+        "defaultAbilityId": "darknessMage_attack_10"
+    },
+    "ability_airMage_1": {
+        "key": "ability_airMage_1",
+        "heroLevelId": "airMage_1",
+        "abilityId": "airMage_Tornado_1",
+        "defaultAbilityId": "airMage_1_range"
+    },
+    "ability_airMage_2": {
+        "key": "ability_airMage_2",
+        "heroLevelId": "airMage_2",
+        "abilityId": "airMage_Tornado_2",
+        "defaultAbilityId": "airMage_2_range"
+    },
+    "ability_airMage_3": {
+        "key": "ability_airMage_3",
+        "heroLevelId": "airMage_3",
+        "abilityId": "airMage_Tornado_3",
+        "defaultAbilityId": "airMage_3_range"
+    },
+    "ability_airMage_4": {
+        "key": "ability_airMage_4",
+        "heroLevelId": "airMage_4",
+        "abilityId": "airMage_Tornado_4",
+        "defaultAbilityId": "airMage_4_range"
+    },
+    "ability_airMage_5": {
+        "key": "ability_airMage_5",
+        "heroLevelId": "airMage_5",
+        "abilityId": "airMage_Tornado_5",
+        "defaultAbilityId": "airMage_5_range"
+    },
+    "ability_airMage_6": {
+        "key": "ability_airMage_6",
+        "heroLevelId": "airMage_6",
+        "abilityId": "airMage_Tornado_6",
+        "defaultAbilityId": "airMage_6_range"
+    },
+    "ability_airMage_7": {
+        "key": "ability_airMage_7",
+        "heroLevelId": "airMage_7",
+        "abilityId": "airMage_Tornado_7",
+        "defaultAbilityId": "airMage_7_range"
+    },
+    "ability_airMage_8": {
+        "key": "ability_airMage_8",
+        "heroLevelId": "airMage_8",
+        "abilityId": "airMage_Tornado_8",
+        "defaultAbilityId": "airMage_8_range"
+    },
+    "ability_airMage_9": {
+        "key": "ability_airMage_9",
+        "heroLevelId": "airMage_9",
+        "abilityId": "airMage_Tornado_9",
+        "defaultAbilityId": "airMage_9_range"
+    },
+    "ability_airMage_10": {
+        "key": "ability_airMage_10",
+        "heroLevelId": "airMage_10",
+        "abilityId": "airMage_Tornado_10",
+        "defaultAbilityId": "airMage_10_range"
+    },
+    "ability_druid_1": {
+        "key": "ability_druid_1",
+        "heroLevelId": "druid_1",
+        "abilityId": "druid_shapeShift_1",
+        "defaultAbilityId": "druid_bleeding_1"
+    },
+    "ability_druid_2": {
+        "key": "ability_druid_2",
+        "heroLevelId": "druid_2",
+        "abilityId": "druid_shapeShift_2",
+        "defaultAbilityId": "druid_bleeding_2"
+    },
+    "ability_druid_3": {
+        "key": "ability_druid_3",
+        "heroLevelId": "druid_3",
+        "abilityId": "druid_shapeShift_3",
+        "defaultAbilityId": "druid_bleeding_3"
+    },
+    "ability_druid_4": {
+        "key": "ability_druid_4",
+        "heroLevelId": "druid_4",
+        "abilityId": "druid_shapeShift_4",
+        "defaultAbilityId": "druid_bleeding_4"
+    },
+    "ability_druid_5": {
+        "key": "ability_druid_5",
+        "heroLevelId": "druid_5",
+        "abilityId": "druid_shapeShift_5",
+        "defaultAbilityId": "druid_bleeding_5"
+    },
+    "ability_druid_6": {
+        "key": "ability_druid_6",
+        "heroLevelId": "druid_6",
+        "abilityId": "druid_shapeShift_6",
+        "defaultAbilityId": "druid_bleeding_6"
+    },
+    "ability_druid_7": {
+        "key": "ability_druid_7",
+        "heroLevelId": "druid_7",
+        "abilityId": "druid_shapeShift_7",
+        "defaultAbilityId": "druid_bleeding_7"
+    },
+    "ability_druid_8": {
+        "key": "ability_druid_8",
+        "heroLevelId": "druid_8",
+        "abilityId": "druid_shapeShift_8",
+        "defaultAbilityId": "druid_bleeding_8"
+    },
+    "ability_druid_9": {
+        "key": "ability_druid_9",
+        "heroLevelId": "druid_9",
+        "abilityId": "druid_shapeShift_9",
+        "defaultAbilityId": "druid_bleeding_9"
+    },
+    "ability_druid_10": {
+        "key": "ability_druid_10",
+        "heroLevelId": "druid_10",
+        "abilityId": "druid_shapeShift_10",
+        "defaultAbilityId": "druid_bleeding_10"
+    },
+    "ability_lightningElemental_1": {
+        "key": "ability_lightningElemental_1",
+        "heroLevelId": "lightningElemental_1",
+        "abilityId": "lightningElemental_stormCloud_1",
+        "defaultAbilityId": "lightningElemental_1_range"
+    },
+    "ability_lightningElemental_2": {
+        "key": "ability_lightningElemental_2",
+        "heroLevelId": "lightningElemental_2",
+        "abilityId": "lightningElemental_stormCloud_2",
+        "defaultAbilityId": "lightningElemental_2_range"
+    },
+    "ability_lightningElemental_3": {
+        "key": "ability_lightningElemental_3",
+        "heroLevelId": "lightningElemental_3",
+        "abilityId": "lightningElemental_stormCloud_3",
+        "defaultAbilityId": "lightningElemental_3_range"
+    },
+    "ability_lightningElemental_4": {
+        "key": "ability_lightningElemental_4",
+        "heroLevelId": "lightningElemental_4",
+        "abilityId": "lightningElemental_stormCloud_4",
+        "defaultAbilityId": "lightningElemental_4_range"
+    },
+    "ability_lightningElemental_5": {
+        "key": "ability_lightningElemental_5",
+        "heroLevelId": "lightningElemental_5",
+        "abilityId": "lightningElemental_stormCloud_5",
+        "defaultAbilityId": "lightningElemental_5_range"
+    },
+    "ability_lightningElemental_6": {
+        "key": "ability_lightningElemental_6",
+        "heroLevelId": "lightningElemental_6",
+        "abilityId": "lightningElemental_stormCloud_6",
+        "defaultAbilityId": "lightningElemental_6_range"
+    },
+    "ability_lightningElemental_7": {
+        "key": "ability_lightningElemental_7",
+        "heroLevelId": "lightningElemental_7",
+        "abilityId": "lightningElemental_stormCloud_7",
+        "defaultAbilityId": "lightningElemental_7_range"
+    },
+    "ability_lightningElemental_8": {
+        "key": "ability_lightningElemental_8",
+        "heroLevelId": "lightningElemental_8",
+        "abilityId": "lightningElemental_stormCloud_8",
+        "defaultAbilityId": "lightningElemental_8_range"
+    },
+    "ability_lightningElemental_9": {
+        "key": "ability_lightningElemental_9",
+        "heroLevelId": "lightningElemental_9",
+        "abilityId": "lightningElemental_stormCloud_9",
+        "defaultAbilityId": "lightningElemental_9_range"
+    },
+    "ability_lightningElemental_10": {
+        "key": "ability_lightningElemental_10",
+        "heroLevelId": "lightningElemental_10",
+        "abilityId": "lightningElemental_stormCloud_10",
+        "defaultAbilityId": "lightningElemental_10_range"
+    },
+    "ability_waterMage_1": {
+        "key": "ability_waterMage_1",
+        "heroLevelId": "waterMage_1",
+        "abilityId": "waterMage_waterPuddles_1",
+        "defaultAbilityId": "waterMage_1_range"
+    },
+    "ability_waterMage_2": {
+        "key": "ability_waterMage_2",
+        "heroLevelId": "waterMage_2",
+        "abilityId": "waterMage_waterPuddles_2",
+        "defaultAbilityId": "waterMage_2_range"
+    },
+    "ability_waterMage_3": {
+        "key": "ability_waterMage_3",
+        "heroLevelId": "waterMage_3",
+        "abilityId": "waterMage_waterPuddles_3",
+        "defaultAbilityId": "waterMage_3_range"
+    },
+    "ability_waterMage_4": {
+        "key": "ability_waterMage_4",
+        "heroLevelId": "waterMage_4",
+        "abilityId": "waterMage_waterPuddles_4",
+        "defaultAbilityId": "waterMage_4_range"
+    },
+    "ability_waterMage_5": {
+        "key": "ability_waterMage_5",
+        "heroLevelId": "waterMage_5",
+        "abilityId": "waterMage_waterPuddles_5",
+        "defaultAbilityId": "waterMage_5_range"
+    },
+    "ability_waterMage_6": {
+        "key": "ability_waterMage_6",
+        "heroLevelId": "waterMage_6",
+        "abilityId": "waterMage_waterPuddles_6",
+        "defaultAbilityId": "waterMage_6_range"
+    },
+    "ability_waterMage_7": {
+        "key": "ability_waterMage_7",
+        "heroLevelId": "waterMage_7",
+        "abilityId": "waterMage_waterPuddles_7",
+        "defaultAbilityId": "waterMage_7_range"
+    },
+    "ability_waterMage_8": {
+        "key": "ability_waterMage_8",
+        "heroLevelId": "waterMage_8",
+        "abilityId": "waterMage_waterPuddles_8",
+        "defaultAbilityId": "waterMage_8_range"
+    },
+    "ability_waterMage_9": {
+        "key": "ability_waterMage_9",
+        "heroLevelId": "waterMage_9",
+        "abilityId": "waterMage_waterPuddles_9",
+        "defaultAbilityId": "waterMage_9_range"
+    },
+    "ability_waterMage_10": {
+        "key": "ability_waterMage_10",
+        "heroLevelId": "waterMage_10",
+        "abilityId": "waterMage_waterPuddles_10",
+        "defaultAbilityId": "waterMage_10_range"
+    },
+    "ability_undeadPirate_1undeadPirate_piercingShip_1": {
+        "key": "ability_undeadPirate_1undeadPirate_piercingShip_1",
+        "heroLevelId": "undeadPirate_1",
+        "abilityId": "undeadPirate_piercingShip_1",
+        "defaultAbilityId": "undeadPirate_1_melee"
+    },
+    "ability_undeadPirate_2undeadPirate_piercingShip_2": {
+        "key": "ability_undeadPirate_2undeadPirate_piercingShip_2",
+        "heroLevelId": "undeadPirate_2",
+        "abilityId": "undeadPirate_piercingShip_2",
+        "defaultAbilityId": "undeadPirate_2_melee"
+    },
+    "ability_undeadPirate_3undeadPirate_piercingShip_3": {
+        "key": "ability_undeadPirate_3undeadPirate_piercingShip_3",
+        "heroLevelId": "undeadPirate_3",
+        "abilityId": "undeadPirate_piercingShip_3",
+        "defaultAbilityId": "undeadPirate_3_melee"
+    },
+    "ability_undeadPirate_4undeadPirate_piercingShip_4": {
+        "key": "ability_undeadPirate_4undeadPirate_piercingShip_4",
+        "heroLevelId": "undeadPirate_4",
+        "abilityId": "undeadPirate_piercingShip_4",
+        "defaultAbilityId": "undeadPirate_4_melee"
+    },
+    "ability_undeadPirate_5undeadPirate_piercingShip_5": {
+        "key": "ability_undeadPirate_5undeadPirate_piercingShip_5",
+        "heroLevelId": "undeadPirate_5",
+        "abilityId": "undeadPirate_piercingShip_5",
+        "defaultAbilityId": "undeadPirate_5_melee"
+    },
+    "ability_undeadPirate_6undeadPirate_piercingShip_6": {
+        "key": "ability_undeadPirate_6undeadPirate_piercingShip_6",
+        "heroLevelId": "undeadPirate_6",
+        "abilityId": "undeadPirate_piercingShip_6",
+        "defaultAbilityId": "undeadPirate_6_melee"
+    },
+    "ability_undeadPirate_7undeadPirate_piercingShip_7": {
+        "key": "ability_undeadPirate_7undeadPirate_piercingShip_7",
+        "heroLevelId": "undeadPirate_7",
+        "abilityId": "undeadPirate_piercingShip_7",
+        "defaultAbilityId": "undeadPirate_7_melee"
+    },
+    "ability_undeadPirate_8undeadPirate_piercingShip_8": {
+        "key": "ability_undeadPirate_8undeadPirate_piercingShip_8",
+        "heroLevelId": "undeadPirate_8",
+        "abilityId": "undeadPirate_piercingShip_8",
+        "defaultAbilityId": "undeadPirate_8_melee"
+    },
+    "ability_undeadPirate_9undeadPirate_piercingShip_9": {
+        "key": "ability_undeadPirate_9undeadPirate_piercingShip_9",
+        "heroLevelId": "undeadPirate_9",
+        "abilityId": "undeadPirate_piercingShip_9",
+        "defaultAbilityId": "undeadPirate_9_melee"
+    },
+    "ability_undeadPirate_10undeadPirate_piercingShip_10": {
+        "key": "ability_undeadPirate_10undeadPirate_piercingShip_10",
+        "heroLevelId": "undeadPirate_10",
+        "abilityId": "undeadPirate_piercingShip_10",
+        "defaultAbilityId": "undeadPirate_10_melee"
+    },
+    "ability_sandMage_1sandMage_sleep_1": {
+        "key": "ability_sandMage_1sandMage_sleep_1",
+        "heroLevelId": "sandMage_1",
+        "abilityId": "sandMage_sleep_1",
+        "defaultAbilityId": "sandMage_1_range"
+    },
+    "ability_sandMage_2sandMage_sleep_2": {
+        "key": "ability_sandMage_2sandMage_sleep_2",
+        "heroLevelId": "sandMage_2",
+        "abilityId": "sandMage_sleep_2",
+        "defaultAbilityId": "sandMage_2_range"
+    },
+    "ability_sandMage_3sandMage_sleep_3": {
+        "key": "ability_sandMage_3sandMage_sleep_3",
+        "heroLevelId": "sandMage_3",
+        "abilityId": "sandMage_sleep_3",
+        "defaultAbilityId": "sandMage_3_range"
+    },
+    "ability_sandMage_4sandMage_sleep_4": {
+        "key": "ability_sandMage_4sandMage_sleep_4",
+        "heroLevelId": "sandMage_4",
+        "abilityId": "sandMage_sleep_4",
+        "defaultAbilityId": "sandMage_4_range"
+    },
+    "ability_sandMage_5sandMage_sleep_5": {
+        "key": "ability_sandMage_5sandMage_sleep_5",
+        "heroLevelId": "sandMage_5",
+        "abilityId": "sandMage_sleep_5",
+        "defaultAbilityId": "sandMage_5_range"
+    },
+    "ability_sandMage_6sandMage_sleep_6": {
+        "key": "ability_sandMage_6sandMage_sleep_6",
+        "heroLevelId": "sandMage_6",
+        "abilityId": "sandMage_sleep_6",
+        "defaultAbilityId": "sandMage_6_range"
+    },
+    "ability_sandMage_7sandMage_sleep_7": {
+        "key": "ability_sandMage_7sandMage_sleep_7",
+        "heroLevelId": "sandMage_7",
+        "abilityId": "sandMage_sleep_7",
+        "defaultAbilityId": "sandMage_7_range"
+    },
+    "ability_sandMage_8sandMage_sleep_8": {
+        "key": "ability_sandMage_8sandMage_sleep_8",
+        "heroLevelId": "sandMage_8",
+        "abilityId": "sandMage_sleep_8",
+        "defaultAbilityId": "sandMage_8_range"
+    },
+    "ability_sandMage_9sandMage_sleep_9": {
+        "key": "ability_sandMage_9sandMage_sleep_9",
+        "heroLevelId": "sandMage_9",
+        "abilityId": "sandMage_sleep_9",
+        "defaultAbilityId": "sandMage_9_range"
+    },
+    "ability_sandMage_10sandMage_sleep_10": {
+        "key": "ability_sandMage_10sandMage_sleep_10",
+        "heroLevelId": "sandMage_10",
+        "abilityId": "sandMage_sleep_10",
+        "defaultAbilityId": "sandMage_10_range"
+    },
+    "ability_cursedGiant_1cursedGiant_pullClaws_1": {
+        "key": "ability_cursedGiant_1cursedGiant_pullClaws_1",
+        "heroLevelId": "cursedGiant_1",
+        "abilityId": "cursedGiant_pullClaws_1",
+        "defaultAbilityId": "cursedGiant_1_melee"
+    },
+    "ability_cursedGiant_2cursedGiant_pullClaws_2": {
+        "key": "ability_cursedGiant_2cursedGiant_pullClaws_2",
+        "heroLevelId": "cursedGiant_2",
+        "abilityId": "cursedGiant_pullClaws_2",
+        "defaultAbilityId": "cursedGiant_2_melee"
+    },
+    "ability_cursedGiant_3cursedGiant_pullClaws_3": {
+        "key": "ability_cursedGiant_3cursedGiant_pullClaws_3",
+        "heroLevelId": "cursedGiant_3",
+        "abilityId": "cursedGiant_pullClaws_3",
+        "defaultAbilityId": "cursedGiant_3_melee"
+    },
+    "ability_cursedGiant_4cursedGiant_pullClaws_4": {
+        "key": "ability_cursedGiant_4cursedGiant_pullClaws_4",
+        "heroLevelId": "cursedGiant_4",
+        "abilityId": "cursedGiant_pullClaws_4",
+        "defaultAbilityId": "cursedGiant_4_melee"
+    },
+    "ability_cursedGiant_5cursedGiant_pullClaws_5": {
+        "key": "ability_cursedGiant_5cursedGiant_pullClaws_5",
+        "heroLevelId": "cursedGiant_5",
+        "abilityId": "cursedGiant_pullClaws_5",
+        "defaultAbilityId": "cursedGiant_5_melee"
+    },
+    "ability_cursedGiant_6cursedGiant_pullClaws_6": {
+        "key": "ability_cursedGiant_6cursedGiant_pullClaws_6",
+        "heroLevelId": "cursedGiant_6",
+        "abilityId": "cursedGiant_pullClaws_6",
+        "defaultAbilityId": "cursedGiant_6_melee"
+    },
+    "ability_cursedGiant_7cursedGiant_pullClaws_7": {
+        "key": "ability_cursedGiant_7cursedGiant_pullClaws_7",
+        "heroLevelId": "cursedGiant_7",
+        "abilityId": "cursedGiant_pullClaws_7",
+        "defaultAbilityId": "cursedGiant_7_melee"
+    },
+    "ability_cursedGiant_8cursedGiant_pullClaws_8": {
+        "key": "ability_cursedGiant_8cursedGiant_pullClaws_8",
+        "heroLevelId": "cursedGiant_8",
+        "abilityId": "cursedGiant_pullClaws_8",
+        "defaultAbilityId": "cursedGiant_8_melee"
+    },
+    "ability_cursedGiant_9cursedGiant_pullClaws_9": {
+        "key": "ability_cursedGiant_9cursedGiant_pullClaws_9",
+        "heroLevelId": "cursedGiant_9",
+        "abilityId": "cursedGiant_pullClaws_9",
+        "defaultAbilityId": "cursedGiant_9_melee"
+    },
+    "ability_cursedGiant_10cursedGiant_pullClaws_10": {
+        "key": "ability_cursedGiant_10cursedGiant_pullClaws_10",
+        "heroLevelId": "cursedGiant_10",
+        "abilityId": "cursedGiant_pullClaws_10",
+        "defaultAbilityId": "cursedGiant_10_melee"
+    },
+    "ability_doubleShield_1doubleShield_shieldDash_1": {
+        "key": "ability_doubleShield_1doubleShield_shieldDash_1",
+        "heroLevelId": "doubleShield_1",
+        "abilityId": "doubleShield_shieldDash_1",
+        "defaultAbilityId": "doubleShield_1_melee"
+    },
+    "ability_doubleShield_2doubleShield_shieldDash_2": {
+        "key": "ability_doubleShield_2doubleShield_shieldDash_2",
+        "heroLevelId": "doubleShield_2",
+        "abilityId": "doubleShield_shieldDash_2",
+        "defaultAbilityId": "doubleShield_2_melee"
+    },
+    "ability_doubleShield_3doubleShield_shieldDash_3": {
+        "key": "ability_doubleShield_3doubleShield_shieldDash_3",
+        "heroLevelId": "doubleShield_3",
+        "abilityId": "doubleShield_shieldDash_3",
+        "defaultAbilityId": "doubleShield_3_melee"
+    },
+    "ability_doubleShield_4doubleShield_shieldDash_4": {
+        "key": "ability_doubleShield_4doubleShield_shieldDash_4",
+        "heroLevelId": "doubleShield_4",
+        "abilityId": "doubleShield_shieldDash_4",
+        "defaultAbilityId": "doubleShield_4_melee"
+    },
+    "ability_doubleShield_5doubleShield_shieldDash_5": {
+        "key": "ability_doubleShield_5doubleShield_shieldDash_5",
+        "heroLevelId": "doubleShield_5",
+        "abilityId": "doubleShield_shieldDash_5",
+        "defaultAbilityId": "doubleShield_5_melee"
+    },
+    "ability_doubleShield_6doubleShield_shieldDash_6": {
+        "key": "ability_doubleShield_6doubleShield_shieldDash_6",
+        "heroLevelId": "doubleShield_6",
+        "abilityId": "doubleShield_shieldDash_6",
+        "defaultAbilityId": "doubleShield_6_melee"
+    },
+    "ability_doubleShield_7doubleShield_shieldDash_7": {
+        "key": "ability_doubleShield_7doubleShield_shieldDash_7",
+        "heroLevelId": "doubleShield_7",
+        "abilityId": "doubleShield_shieldDash_7",
+        "defaultAbilityId": "doubleShield_7_melee"
+    },
+    "ability_doubleShield_8doubleShield_shieldDash_8": {
+        "key": "ability_doubleShield_8doubleShield_shieldDash_8",
+        "heroLevelId": "doubleShield_8",
+        "abilityId": "doubleShield_shieldDash_8",
+        "defaultAbilityId": "doubleShield_8_melee"
+    },
+    "ability_doubleShield_9doubleShield_shieldDash_9": {
+        "key": "ability_doubleShield_9doubleShield_shieldDash_9",
+        "heroLevelId": "doubleShield_9",
+        "abilityId": "doubleShield_shieldDash_9",
+        "defaultAbilityId": "doubleShield_9_melee"
+    },
+    "ability_doubleShield_10doubleShield_shieldDash_10": {
+        "key": "ability_doubleShield_10doubleShield_shieldDash_10",
+        "heroLevelId": "doubleShield_10",
+        "abilityId": "doubleShield_shieldDash_10",
+        "defaultAbilityId": "doubleShield_10_melee"
+    },
+    "ability_debafferOnMaunt_1debafferOnMaunt_poisonDebuffPuddles_1": {
+        "key": "ability_debafferOnMaunt_1debafferOnMaunt_poisonDebuffPuddles_1",
+        "heroLevelId": "debafferOnMaunt_1",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_1",
+        "defaultAbilityId": "debafferOnMaunt_1_range"
+    },
+    "ability_debafferOnMaunt_2debafferOnMaunt_poisonDebuffPuddles_2": {
+        "key": "ability_debafferOnMaunt_2debafferOnMaunt_poisonDebuffPuddles_2",
+        "heroLevelId": "debafferOnMaunt_2",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_2",
+        "defaultAbilityId": "debafferOnMaunt_2_range"
+    },
+    "ability_debafferOnMaunt_3debafferOnMaunt_poisonDebuffPuddles_3": {
+        "key": "ability_debafferOnMaunt_3debafferOnMaunt_poisonDebuffPuddles_3",
+        "heroLevelId": "debafferOnMaunt_3",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_3",
+        "defaultAbilityId": "debafferOnMaunt_3_range"
+    },
+    "ability_debafferOnMaunt_4debafferOnMaunt_poisonDebuffPuddles_4": {
+        "key": "ability_debafferOnMaunt_4debafferOnMaunt_poisonDebuffPuddles_4",
+        "heroLevelId": "debafferOnMaunt_4",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_4",
+        "defaultAbilityId": "debafferOnMaunt_4_range"
+    },
+    "ability_debafferOnMaunt_5debafferOnMaunt_poisonDebuffPuddles_5": {
+        "key": "ability_debafferOnMaunt_5debafferOnMaunt_poisonDebuffPuddles_5",
+        "heroLevelId": "debafferOnMaunt_5",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_5",
+        "defaultAbilityId": "debafferOnMaunt_5_range"
+    },
+    "ability_debafferOnMaunt_6debafferOnMaunt_poisonDebuffPuddles_6": {
+        "key": "ability_debafferOnMaunt_6debafferOnMaunt_poisonDebuffPuddles_6",
+        "heroLevelId": "debafferOnMaunt_6",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_6",
+        "defaultAbilityId": "debafferOnMaunt_6_range"
+    },
+    "ability_debafferOnMaunt_7debafferOnMaunt_poisonDebuffPuddles_7": {
+        "key": "ability_debafferOnMaunt_7debafferOnMaunt_poisonDebuffPuddles_7",
+        "heroLevelId": "debafferOnMaunt_7",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_7",
+        "defaultAbilityId": "debafferOnMaunt_7_range"
+    },
+    "ability_debafferOnMaunt_8debafferOnMaunt_poisonDebuffPuddles_8": {
+        "key": "ability_debafferOnMaunt_8debafferOnMaunt_poisonDebuffPuddles_8",
+        "heroLevelId": "debafferOnMaunt_8",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_8",
+        "defaultAbilityId": "debafferOnMaunt_8_range"
+    },
+    "ability_debafferOnMaunt_9debafferOnMaunt_poisonDebuffPuddles_9": {
+        "key": "ability_debafferOnMaunt_9debafferOnMaunt_poisonDebuffPuddles_9",
+        "heroLevelId": "debafferOnMaunt_9",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_9",
+        "defaultAbilityId": "debafferOnMaunt_9_range"
+    },
+    "ability_debafferOnMaunt_10debafferOnMaunt_poisonDebuffPuddles_10": {
+        "key": "ability_debafferOnMaunt_10debafferOnMaunt_poisonDebuffPuddles_10",
+        "heroLevelId": "debafferOnMaunt_10",
+        "abilityId": "debafferOnMaunt_poisonDebuffPuddles_10",
+        "defaultAbilityId": "debafferOnMaunt_10_range"
+    },
+    "ability_undeadPestilence_1": {
+        "key": "ability_undeadPestilence_1",
+        "heroLevelId": "undeadPestilence_1",
+        "abilityId": "undeadPestilence_undeadRat_1",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_1"
+    },
+    "ability_undeadPestilence_2": {
+        "key": "ability_undeadPestilence_2",
+        "heroLevelId": "undeadPestilence_2",
+        "abilityId": "undeadPestilence_undeadRat_2",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_2"
+    },
+    "ability_undeadPestilence_3": {
+        "key": "ability_undeadPestilence_3",
+        "heroLevelId": "undeadPestilence_3",
+        "abilityId": "undeadPestilence_undeadRat_3",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_3"
+    },
+    "ability_undeadPestilence_4": {
+        "key": "ability_undeadPestilence_4",
+        "heroLevelId": "undeadPestilence_4",
+        "abilityId": "undeadPestilence_undeadRat_4",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_4"
+    },
+    "ability_undeadPestilence_5": {
+        "key": "ability_undeadPestilence_5",
+        "heroLevelId": "undeadPestilence_5",
+        "abilityId": "undeadPestilence_undeadRat_5",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_5"
+    },
+    "ability_undeadPestilence_6": {
+        "key": "ability_undeadPestilence_6",
+        "heroLevelId": "undeadPestilence_6",
+        "abilityId": "undeadPestilence_undeadRat_6",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_6"
+    },
+    "ability_undeadPestilence_7": {
+        "key": "ability_undeadPestilence_7",
+        "heroLevelId": "undeadPestilence_7",
+        "abilityId": "undeadPestilence_undeadRat_7",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_7"
+    },
+    "ability_undeadPestilence_8": {
+        "key": "ability_undeadPestilence_8",
+        "heroLevelId": "undeadPestilence_8",
+        "abilityId": "undeadPestilence_undeadRat_8",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_8"
+    },
+    "ability_undeadPestilence_9": {
+        "key": "ability_undeadPestilence_9",
+        "heroLevelId": "undeadPestilence_9",
+        "abilityId": "undeadPestilence_undeadRat_9",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_9"
+    },
+    "ability_undeadPestilence_10": {
+        "key": "ability_undeadPestilence_10",
+        "heroLevelId": "undeadPestilence_10",
+        "abilityId": "undeadPestilence_undeadRat_10",
+        "defaultAbilityId": "undeadPestilence_unholyStrike_10"
+    },
+    "ability_fireMage_1": {
+        "key": "ability_fireMage_1",
+        "heroLevelId": "fireMage_1",
+        "abilityId": "fireMage_sunrise_1",
+        "defaultAbilityId": "fireMage_attack_1"
+    },
+    "ability_fireMage_2": {
+        "key": "ability_fireMage_2",
+        "heroLevelId": "fireMage_2",
+        "abilityId": "fireMage_sunrise_2",
+        "defaultAbilityId": "fireMage_attack_2"
+    },
+    "ability_fireMage_3": {
+        "key": "ability_fireMage_3",
+        "heroLevelId": "fireMage_3",
+        "abilityId": "fireMage_sunrise_3",
+        "defaultAbilityId": "fireMage_attack_3"
+    },
+    "ability_fireMage_4": {
+        "key": "ability_fireMage_4",
+        "heroLevelId": "fireMage_4",
+        "abilityId": "fireMage_sunrise_4",
+        "defaultAbilityId": "fireMage_attack_4"
+    },
+    "ability_fireMage_5": {
+        "key": "ability_fireMage_5",
+        "heroLevelId": "fireMage_5",
+        "abilityId": "fireMage_sunrise_5",
+        "defaultAbilityId": "fireMage_attack_5"
+    },
+    "ability_fireMage_6": {
+        "key": "ability_fireMage_6",
+        "heroLevelId": "fireMage_6",
+        "abilityId": "fireMage_sunrise_6",
+        "defaultAbilityId": "fireMage_attack_6"
+    },
+    "ability_fireMage_7": {
+        "key": "ability_fireMage_7",
+        "heroLevelId": "fireMage_7",
+        "abilityId": "fireMage_sunrise_7",
+        "defaultAbilityId": "fireMage_attack_7"
+    },
+    "ability_fireMage_8": {
+        "key": "ability_fireMage_8",
+        "heroLevelId": "fireMage_8",
+        "abilityId": "fireMage_sunrise_8",
+        "defaultAbilityId": "fireMage_attack_8"
+    },
+    "ability_fireMage_9": {
+        "key": "ability_fireMage_9",
+        "heroLevelId": "fireMage_9",
+        "abilityId": "fireMage_sunrise_9",
+        "defaultAbilityId": "fireMage_attack_9"
+    },
+    "ability_fireMage_10": {
+        "key": "ability_fireMage_10",
+        "heroLevelId": "fireMage_10",
+        "abilityId": "fireMage_sunrise_10",
+        "defaultAbilityId": "fireMage_attack_10"
+    },
+    "ability_lordInquisitor_1": {
+        "key": "ability_lordInquisitor_1",
+        "heroLevelId": "lordInquisitor_1",
+        "abilityId": "lordInquisitor_holyFire_1",
+        "defaultAbilityId": "lordInquisitor_furiousMace_1"
+    },
+    "ability_lordInquisitor_2": {
+        "key": "ability_lordInquisitor_2",
+        "heroLevelId": "lordInquisitor_2",
+        "abilityId": "lordInquisitor_holyFire_2",
+        "defaultAbilityId": "lordInquisitor_furiousMace_2"
+    },
+    "ability_lordInquisitor_3": {
+        "key": "ability_lordInquisitor_3",
+        "heroLevelId": "lordInquisitor_3",
+        "abilityId": "lordInquisitor_holyFire_3",
+        "defaultAbilityId": "lordInquisitor_furiousMace_3"
+    },
+    "ability_lordInquisitor_4": {
+        "key": "ability_lordInquisitor_4",
+        "heroLevelId": "lordInquisitor_4",
+        "abilityId": "lordInquisitor_holyFire_4",
+        "defaultAbilityId": "lordInquisitor_furiousMace_4"
+    },
+    "ability_lordInquisitor_5": {
+        "key": "ability_lordInquisitor_5",
+        "heroLevelId": "lordInquisitor_5",
+        "abilityId": "lordInquisitor_holyFire_5",
+        "defaultAbilityId": "lordInquisitor_furiousMace_5"
+    },
+    "ability_lordInquisitor_6": {
+        "key": "ability_lordInquisitor_6",
+        "heroLevelId": "lordInquisitor_6",
+        "abilityId": "lordInquisitor_holyFire_6",
+        "defaultAbilityId": "lordInquisitor_furiousMace_6"
+    },
+    "ability_lordInquisitor_7": {
+        "key": "ability_lordInquisitor_7",
+        "heroLevelId": "lordInquisitor_7",
+        "abilityId": "lordInquisitor_holyFire_7",
+        "defaultAbilityId": "lordInquisitor_furiousMace_7"
+    },
+    "ability_lordInquisitor_8": {
+        "key": "ability_lordInquisitor_8",
+        "heroLevelId": "lordInquisitor_8",
+        "abilityId": "lordInquisitor_holyFire_8",
+        "defaultAbilityId": "lordInquisitor_furiousMace_8"
+    },
+    "ability_lordInquisitor_9": {
+        "key": "ability_lordInquisitor_9",
+        "heroLevelId": "lordInquisitor_9",
+        "abilityId": "lordInquisitor_holyFire_9",
+        "defaultAbilityId": "lordInquisitor_furiousMace_9"
+    },
+    "ability_lordInquisitor_10": {
+        "key": "ability_lordInquisitor_10",
+        "heroLevelId": "lordInquisitor_10",
+        "abilityId": "lordInquisitor_holyFire_10",
+        "defaultAbilityId": "lordInquisitor_furiousMace_10"
+    },
+    "ability_drunkTank_1": {
+        "key": "ability_drunkTank_1",
+        "heroLevelId": "drunkTank_1",
+        "abilityId": "drunkTank_burp_1",
+        "defaultAbilityId": "drunkTank_barrel_1"
+    },
+    "ability_drunkTank_2": {
+        "key": "ability_drunkTank_2",
+        "heroLevelId": "drunkTank_2",
+        "abilityId": "drunkTank_burp_2",
+        "defaultAbilityId": "drunkTank_barrel_2"
+    },
+    "ability_drunkTank_3": {
+        "key": "ability_drunkTank_3",
+        "heroLevelId": "drunkTank_3",
+        "abilityId": "drunkTank_burp_3",
+        "defaultAbilityId": "drunkTank_barrel_3"
+    },
+    "ability_drunkTank_4": {
+        "key": "ability_drunkTank_4",
+        "heroLevelId": "drunkTank_4",
+        "abilityId": "drunkTank_burp_4",
+        "defaultAbilityId": "drunkTank_barrel_4"
+    },
+    "ability_drunkTank_5": {
+        "key": "ability_drunkTank_5",
+        "heroLevelId": "drunkTank_5",
+        "abilityId": "drunkTank_burp_5",
+        "defaultAbilityId": "drunkTank_barrel_5"
+    },
+    "ability_drunkTank_6": {
+        "key": "ability_drunkTank_6",
+        "heroLevelId": "drunkTank_6",
+        "abilityId": "drunkTank_burp_6",
+        "defaultAbilityId": "drunkTank_barrel_6"
+    },
+    "ability_drunkTank_7": {
+        "key": "ability_drunkTank_7",
+        "heroLevelId": "drunkTank_7",
+        "abilityId": "drunkTank_burp_7",
+        "defaultAbilityId": "drunkTank_barrel_7"
+    },
+    "ability_drunkTank_8": {
+        "key": "ability_drunkTank_8",
+        "heroLevelId": "drunkTank_8",
+        "abilityId": "drunkTank_burp_8",
+        "defaultAbilityId": "drunkTank_barrel_8"
+    },
+    "ability_drunkTank_9": {
+        "key": "ability_drunkTank_9",
+        "heroLevelId": "drunkTank_9",
+        "abilityId": "drunkTank_burp_9",
+        "defaultAbilityId": "drunkTank_barrel_9"
+    },
+    "ability_drunkTank_10": {
+        "key": "ability_drunkTank_10",
+        "heroLevelId": "drunkTank_10",
+        "abilityId": "drunkTank_burp_10",
+        "defaultAbilityId": "drunkTank_barrel_10"
+    },
+    "ability_bardHero_1": {
+        "key": "ability_bardHero_1",
+        "heroLevelId": "bardHero_1",
+        "abilityId": "bardHero_courageSong_1",
+        "defaultAbilityId": "bardHero_1_melee"
+    },
+    "ability_bardHero_2": {
+        "key": "ability_bardHero_2",
+        "heroLevelId": "bardHero_2",
+        "abilityId": "bardHero_courageSong_2",
+        "defaultAbilityId": "bardHero_2_melee"
+    },
+    "ability_bardHero_3": {
+        "key": "ability_bardHero_3",
+        "heroLevelId": "bardHero_3",
+        "abilityId": "bardHero_courageSong_3",
+        "defaultAbilityId": "bardHero_3_melee"
+    },
+    "ability_bardHero_4": {
+        "key": "ability_bardHero_4",
+        "heroLevelId": "bardHero_4",
+        "abilityId": "bardHero_courageSong_4",
+        "defaultAbilityId": "bardHero_4_melee"
+    },
+    "ability_bardHero_5": {
+        "key": "ability_bardHero_5",
+        "heroLevelId": "bardHero_5",
+        "abilityId": "bardHero_courageSong_5",
+        "defaultAbilityId": "bardHero_5_melee"
+    },
+    "ability_bardHero_6": {
+        "key": "ability_bardHero_6",
+        "heroLevelId": "bardHero_6",
+        "abilityId": "bardHero_courageSong_6",
+        "defaultAbilityId": "bardHero_6_melee"
+    },
+    "ability_bardHero_7": {
+        "key": "ability_bardHero_7",
+        "heroLevelId": "bardHero_7",
+        "abilityId": "bardHero_courageSong_7",
+        "defaultAbilityId": "bardHero_7_melee"
+    },
+    "ability_bardHero_8": {
+        "key": "ability_bardHero_8",
+        "heroLevelId": "bardHero_8",
+        "abilityId": "bardHero_courageSong_8",
+        "defaultAbilityId": "bardHero_8_melee"
+    },
+    "ability_bardHero_9": {
+        "key": "ability_bardHero_9",
+        "heroLevelId": "bardHero_9",
+        "abilityId": "bardHero_courageSong_9",
+        "defaultAbilityId": "bardHero_9_melee"
+    },
+    "ability_bardHero_10": {
+        "key": "ability_bardHero_10",
+        "heroLevelId": "bardHero_10",
+        "abilityId": "bardHero_courageSong_10",
+        "defaultAbilityId": "bardHero_10_melee"
+    },
+    "ability_elevateTank_1": {
+        "key": "ability_elevateTank_1",
+        "heroLevelId": "elevateTank_1",
+        "abilityId": "elevateTank_sacredShield_1",
+        "defaultAbilityId": "elevateTank_meleeThrow_1"
+    },
+    "ability_elevateTank_2": {
+        "key": "ability_elevateTank_2",
+        "heroLevelId": "elevateTank_2",
+        "abilityId": "elevateTank_sacredShield_2",
+        "defaultAbilityId": "elevateTank_meleeThrow_2"
+    },
+    "ability_elevateTank_3": {
+        "key": "ability_elevateTank_3",
+        "heroLevelId": "elevateTank_3",
+        "abilityId": "elevateTank_sacredShield_3",
+        "defaultAbilityId": "elevateTank_meleeThrow_3"
+    },
+    "ability_elevateTank_4": {
+        "key": "ability_elevateTank_4",
+        "heroLevelId": "elevateTank_4",
+        "abilityId": "elevateTank_sacredShield_4",
+        "defaultAbilityId": "elevateTank_meleeThrow_4"
+    },
+    "ability_elevateTank_5": {
+        "key": "ability_elevateTank_5",
+        "heroLevelId": "elevateTank_5",
+        "abilityId": "elevateTank_sacredShield_5",
+        "defaultAbilityId": "elevateTank_meleeThrow_5"
+    },
+    "ability_elevateTank_6": {
+        "key": "ability_elevateTank_6",
+        "heroLevelId": "elevateTank_6",
+        "abilityId": "elevateTank_sacredShield_6",
+        "defaultAbilityId": "elevateTank_meleeThrow_6"
+    },
+    "ability_elevateTank_7": {
+        "key": "ability_elevateTank_7",
+        "heroLevelId": "elevateTank_7",
+        "abilityId": "elevateTank_sacredShield_7",
+        "defaultAbilityId": "elevateTank_meleeThrow_7"
+    },
+    "ability_elevateTank_8": {
+        "key": "ability_elevateTank_8",
+        "heroLevelId": "elevateTank_8",
+        "abilityId": "elevateTank_sacredShield_8",
+        "defaultAbilityId": "elevateTank_meleeThrow_8"
+    },
+    "ability_elevateTank_9": {
+        "key": "ability_elevateTank_9",
+        "heroLevelId": "elevateTank_9",
+        "abilityId": "elevateTank_sacredShield_9",
+        "defaultAbilityId": "elevateTank_meleeThrow_9"
+    },
+    "ability_elevateTank_10": {
+        "key": "ability_elevateTank_10",
+        "heroLevelId": "elevateTank_10",
+        "abilityId": "elevateTank_sacredShield_10",
+        "defaultAbilityId": "elevateTank_meleeThrow_10"
+    },
+    "ability_elevateArcher_1": {
+        "key": "ability_elevateArcher_1",
+        "heroLevelId": "elevateArcher_1",
+        "abilityId": "elevateArcher_arrowWave_1",
+        "defaultAbilityId": "elevateArcher_impale_1"
+    },
+    "ability_elevateArcher_2": {
+        "key": "ability_elevateArcher_2",
+        "heroLevelId": "elevateArcher_2",
+        "abilityId": "elevateArcher_arrowWave_2",
+        "defaultAbilityId": "elevateArcher_impale_2"
+    },
+    "ability_elevateArcher_3": {
+        "key": "ability_elevateArcher_3",
+        "heroLevelId": "elevateArcher_3",
+        "abilityId": "elevateArcher_arrowWave_3",
+        "defaultAbilityId": "elevateArcher_impale_3"
+    },
+    "ability_elevateArcher_4": {
+        "key": "ability_elevateArcher_4",
+        "heroLevelId": "elevateArcher_4",
+        "abilityId": "elevateArcher_arrowWave_4",
+        "defaultAbilityId": "elevateArcher_impale_4"
+    },
+    "ability_elevateArcher_5": {
+        "key": "ability_elevateArcher_5",
+        "heroLevelId": "elevateArcher_5",
+        "abilityId": "elevateArcher_arrowWave_5",
+        "defaultAbilityId": "elevateArcher_impale_5"
+    },
+    "ability_elevateArcher_6": {
+        "key": "ability_elevateArcher_6",
+        "heroLevelId": "elevateArcher_6",
+        "abilityId": "elevateArcher_arrowWave_6",
+        "defaultAbilityId": "elevateArcher_impale_6"
+    },
+    "ability_elevateArcher_7": {
+        "key": "ability_elevateArcher_7",
+        "heroLevelId": "elevateArcher_7",
+        "abilityId": "elevateArcher_arrowWave_7",
+        "defaultAbilityId": "elevateArcher_impale_7"
+    },
+    "ability_elevateArcher_8": {
+        "key": "ability_elevateArcher_8",
+        "heroLevelId": "elevateArcher_8",
+        "abilityId": "elevateArcher_arrowWave_8",
+        "defaultAbilityId": "elevateArcher_impale_8"
+    },
+    "ability_elevateArcher_9": {
+        "key": "ability_elevateArcher_9",
+        "heroLevelId": "elevateArcher_9",
+        "abilityId": "elevateArcher_arrowWave_9",
+        "defaultAbilityId": "elevateArcher_impale_9"
+    },
+    "ability_elevateArcher_10": {
+        "key": "ability_elevateArcher_10",
+        "heroLevelId": "elevateArcher_10",
+        "abilityId": "elevateArcher_arrowWave_10",
+        "defaultAbilityId": "elevateArcher_impale_10"
+    },
+    "ability_fireMage_1fireMage_rebirth_1": {
+        "key": "ability_fireMage_1fireMage_rebirth_1",
+        "heroLevelId": "fireMage_1",
+        "abilityId": "fireMage_rebirth_1",
+        "defaultAbilityId": "fireMage_attack_1"
+    },
+    "ability_fireMage_2fireMage_rebirth_2": {
+        "key": "ability_fireMage_2fireMage_rebirth_2",
+        "heroLevelId": "fireMage_2",
+        "abilityId": "fireMage_rebirth_2",
+        "defaultAbilityId": "fireMage_attack_2"
+    },
+    "ability_fireMage_3fireMage_rebirth_3": {
+        "key": "ability_fireMage_3fireMage_rebirth_3",
+        "heroLevelId": "fireMage_3",
+        "abilityId": "fireMage_rebirth_3",
+        "defaultAbilityId": "fireMage_attack_3"
+    },
+    "ability_fireMage_4fireMage_rebirth_4": {
+        "key": "ability_fireMage_4fireMage_rebirth_4",
+        "heroLevelId": "fireMage_4",
+        "abilityId": "fireMage_rebirth_4",
+        "defaultAbilityId": "fireMage_attack_4"
+    },
+    "ability_fireMage_5fireMage_rebirth_5": {
+        "key": "ability_fireMage_5fireMage_rebirth_5",
+        "heroLevelId": "fireMage_5",
+        "abilityId": "fireMage_rebirth_5",
+        "defaultAbilityId": "fireMage_attack_5"
+    },
+    "ability_fireMage_6fireMage_rebirth_6": {
+        "key": "ability_fireMage_6fireMage_rebirth_6",
+        "heroLevelId": "fireMage_6",
+        "abilityId": "fireMage_rebirth_6",
+        "defaultAbilityId": "fireMage_attack_6"
+    },
+    "ability_fireMage_7fireMage_rebirth_7": {
+        "key": "ability_fireMage_7fireMage_rebirth_7",
+        "heroLevelId": "fireMage_7",
+        "abilityId": "fireMage_rebirth_7",
+        "defaultAbilityId": "fireMage_attack_7"
+    },
+    "ability_fireMage_8fireMage_rebirth_8": {
+        "key": "ability_fireMage_8fireMage_rebirth_8",
+        "heroLevelId": "fireMage_8",
+        "abilityId": "fireMage_rebirth_8",
+        "defaultAbilityId": "fireMage_attack_8"
+    },
+    "ability_fireMage_9fireMage_rebirth_9": {
+        "key": "ability_fireMage_9fireMage_rebirth_9",
+        "heroLevelId": "fireMage_9",
+        "abilityId": "fireMage_rebirth_9",
+        "defaultAbilityId": "fireMage_attack_9"
+    },
+    "ability_fireMage_10fireMage_rebirth_10": {
+        "key": "ability_fireMage_10fireMage_rebirth_10",
+        "heroLevelId": "fireMage_10",
+        "abilityId": "fireMage_rebirth_10",
+        "defaultAbilityId": "fireMage_attack_10"
+    },
+    "ability_elevateSupport_1": {
+        "key": "ability_elevateSupport_1",
+        "heroLevelId": "elevateSupport_1",
+        "abilityId": "elevateSupport_healingVeil_1",
+        "defaultAbilityId": "elevateSupport_1_range"
+    },
+    "ability_elevateSupport_2": {
+        "key": "ability_elevateSupport_2",
+        "heroLevelId": "elevateSupport_2",
+        "abilityId": "elevateSupport_healingVeil_2",
+        "defaultAbilityId": "elevateSupport_2_range"
+    },
+    "ability_elevateSupport_3": {
+        "key": "ability_elevateSupport_3",
+        "heroLevelId": "elevateSupport_3",
+        "abilityId": "elevateSupport_healingVeil_3",
+        "defaultAbilityId": "elevateSupport_3_range"
+    },
+    "ability_elevateSupport_4": {
+        "key": "ability_elevateSupport_4",
+        "heroLevelId": "elevateSupport_4",
+        "abilityId": "elevateSupport_healingVeil_4",
+        "defaultAbilityId": "elevateSupport_4_range"
+    },
+    "ability_elevateSupport_5": {
+        "key": "ability_elevateSupport_5",
+        "heroLevelId": "elevateSupport_5",
+        "abilityId": "elevateSupport_healingVeil_5",
+        "defaultAbilityId": "elevateSupport_5_range"
+    },
+    "ability_elevateSupport_6": {
+        "key": "ability_elevateSupport_6",
+        "heroLevelId": "elevateSupport_6",
+        "abilityId": "elevateSupport_healingVeil_6",
+        "defaultAbilityId": "elevateSupport_6_range"
+    },
+    "ability_elevateSupport_7": {
+        "key": "ability_elevateSupport_7",
+        "heroLevelId": "elevateSupport_7",
+        "abilityId": "elevateSupport_healingVeil_7",
+        "defaultAbilityId": "elevateSupport_7_range"
+    },
+    "ability_elevateSupport_8": {
+        "key": "ability_elevateSupport_8",
+        "heroLevelId": "elevateSupport_8",
+        "abilityId": "elevateSupport_healingVeil_8",
+        "defaultAbilityId": "elevateSupport_8_range"
+    },
+    "ability_elevateSupport_9": {
+        "key": "ability_elevateSupport_9",
+        "heroLevelId": "elevateSupport_9",
+        "abilityId": "elevateSupport_healingVeil_9",
+        "defaultAbilityId": "elevateSupport_9_range"
+    },
+    "ability_elevateSupport_10": {
+        "key": "ability_elevateSupport_10",
+        "heroLevelId": "elevateSupport_10",
+        "abilityId": "elevateSupport_healingVeil_10",
+        "defaultAbilityId": "elevateSupport_10_range"
+    },
+    "ability_demonFat_1": {
+        "key": "ability_demonFat_1",
+        "heroLevelId": "demonFat_1",
+        "abilityId": "demonFat_hungryFlameball_1",
+        "defaultAbilityId": "demonFat_squeeze_1"
+    },
+    "ability_demonFat_2": {
+        "key": "ability_demonFat_2",
+        "heroLevelId": "demonFat_2",
+        "abilityId": "demonFat_hungryFlameball_2",
+        "defaultAbilityId": "demonFat_squeeze_2"
+    },
+    "ability_demonFat_3": {
+        "key": "ability_demonFat_3",
+        "heroLevelId": "demonFat_3",
+        "abilityId": "demonFat_hungryFlameball_3",
+        "defaultAbilityId": "demonFat_squeeze_3"
+    },
+    "ability_demonFat_4": {
+        "key": "ability_demonFat_4",
+        "heroLevelId": "demonFat_4",
+        "abilityId": "demonFat_hungryFlameball_4",
+        "defaultAbilityId": "demonFat_squeeze_4"
+    },
+    "ability_demonFat_5": {
+        "key": "ability_demonFat_5",
+        "heroLevelId": "demonFat_5",
+        "abilityId": "demonFat_hungryFlameball_5",
+        "defaultAbilityId": "demonFat_squeeze_5"
+    },
+    "ability_demonFat_6": {
+        "key": "ability_demonFat_6",
+        "heroLevelId": "demonFat_6",
+        "abilityId": "demonFat_hungryFlameball_6",
+        "defaultAbilityId": "demonFat_squeeze_6"
+    },
+    "ability_demonFat_7": {
+        "key": "ability_demonFat_7",
+        "heroLevelId": "demonFat_7",
+        "abilityId": "demonFat_hungryFlameball_7",
+        "defaultAbilityId": "demonFat_squeeze_7"
+    },
+    "ability_demonFat_8": {
+        "key": "ability_demonFat_8",
+        "heroLevelId": "demonFat_8",
+        "abilityId": "demonFat_hungryFlameball_8",
+        "defaultAbilityId": "demonFat_squeeze_8"
+    },
+    "ability_demonFat_9": {
+        "key": "ability_demonFat_9",
+        "heroLevelId": "demonFat_9",
+        "abilityId": "demonFat_hungryFlameball_9",
+        "defaultAbilityId": "demonFat_squeeze_9"
+    },
+    "ability_demonFat_10": {
+        "key": "ability_demonFat_10",
+        "heroLevelId": "demonFat_10",
+        "abilityId": "demonFat_hungryFlameball_10",
+        "defaultAbilityId": "demonFat_squeeze_10"
+    },
+    "ability_demonTank_1": {
+        "key": "ability_demonTank_1",
+        "heroLevelId": "demonTank_1",
+        "abilityId": "demonTank_primalFear_1",
+        "defaultAbilityId": "demonTank_1_melee"
+    },
+    "ability_demonTank_2": {
+        "key": "ability_demonTank_2",
+        "heroLevelId": "demonTank_2",
+        "abilityId": "demonTank_primalFear_2",
+        "defaultAbilityId": "demonTank_2_melee"
+    },
+    "ability_demonTank_3": {
+        "key": "ability_demonTank_3",
+        "heroLevelId": "demonTank_3",
+        "abilityId": "demonTank_primalFear_3",
+        "defaultAbilityId": "demonTank_3_melee"
+    },
+    "ability_demonTank_4": {
+        "key": "ability_demonTank_4",
+        "heroLevelId": "demonTank_4",
+        "abilityId": "demonTank_primalFear_4",
+        "defaultAbilityId": "demonTank_4_melee"
+    },
+    "ability_demonTank_5": {
+        "key": "ability_demonTank_5",
+        "heroLevelId": "demonTank_5",
+        "abilityId": "demonTank_primalFear_5",
+        "defaultAbilityId": "demonTank_5_melee"
+    },
+    "ability_demonTank_6": {
+        "key": "ability_demonTank_6",
+        "heroLevelId": "demonTank_6",
+        "abilityId": "demonTank_primalFear_6",
+        "defaultAbilityId": "demonTank_6_melee"
+    },
+    "ability_demonTank_7": {
+        "key": "ability_demonTank_7",
+        "heroLevelId": "demonTank_7",
+        "abilityId": "demonTank_primalFear_7",
+        "defaultAbilityId": "demonTank_7_melee"
+    },
+    "ability_demonTank_8": {
+        "key": "ability_demonTank_8",
+        "heroLevelId": "demonTank_8",
+        "abilityId": "demonTank_primalFear_8",
+        "defaultAbilityId": "demonTank_8_melee"
+    },
+    "ability_demonTank_9": {
+        "key": "ability_demonTank_9",
+        "heroLevelId": "demonTank_9",
+        "abilityId": "demonTank_primalFear_9",
+        "defaultAbilityId": "demonTank_9_melee"
+    },
+    "ability_demonTank_10": {
+        "key": "ability_demonTank_10",
+        "heroLevelId": "demonTank_10",
+        "abilityId": "demonTank_primalFear_10",
+        "defaultAbilityId": "demonTank_10_melee"
+    },
+    "ability_demonMage_1": {
+        "key": "ability_demonMage_1",
+        "heroLevelId": "demonMage_1",
+        "abilityId": "demonMage_inferno_1",
+        "defaultAbilityId": "demonMage_fireballs_1"
+    },
+    "ability_demonMage_2": {
+        "key": "ability_demonMage_2",
+        "heroLevelId": "demonMage_2",
+        "abilityId": "demonMage_inferno_2",
+        "defaultAbilityId": "demonMage_fireballs_2"
+    },
+    "ability_demonMage_3": {
+        "key": "ability_demonMage_3",
+        "heroLevelId": "demonMage_3",
+        "abilityId": "demonMage_inferno_3",
+        "defaultAbilityId": "demonMage_fireballs_3"
+    },
+    "ability_demonMage_4": {
+        "key": "ability_demonMage_4",
+        "heroLevelId": "demonMage_4",
+        "abilityId": "demonMage_inferno_4",
+        "defaultAbilityId": "demonMage_fireballs_4"
+    },
+    "ability_demonMage_5": {
+        "key": "ability_demonMage_5",
+        "heroLevelId": "demonMage_5",
+        "abilityId": "demonMage_inferno_5",
+        "defaultAbilityId": "demonMage_fireballs_5"
+    },
+    "ability_demonMage_6": {
+        "key": "ability_demonMage_6",
+        "heroLevelId": "demonMage_6",
+        "abilityId": "demonMage_inferno_6",
+        "defaultAbilityId": "demonMage_fireballs_6"
+    },
+    "ability_demonMage_7": {
+        "key": "ability_demonMage_7",
+        "heroLevelId": "demonMage_7",
+        "abilityId": "demonMage_inferno_7",
+        "defaultAbilityId": "demonMage_fireballs_7"
+    },
+    "ability_demonMage_8": {
+        "key": "ability_demonMage_8",
+        "heroLevelId": "demonMage_8",
+        "abilityId": "demonMage_inferno_8",
+        "defaultAbilityId": "demonMage_fireballs_8"
+    },
+    "ability_demonMage_9": {
+        "key": "ability_demonMage_9",
+        "heroLevelId": "demonMage_9",
+        "abilityId": "demonMage_inferno_9",
+        "defaultAbilityId": "demonMage_fireballs_9"
+    },
+    "ability_demonMage_10": {
+        "key": "ability_demonMage_10",
+        "heroLevelId": "demonMage_10",
+        "abilityId": "demonMage_inferno_10",
+        "defaultAbilityId": "demonMage_fireballs_10"
+    },
+    "ability_darknessMageSquadEvent_1": {
+        "key": "ability_darknessMageSquadEvent_1",
+        "heroLevelId": "darknessMageSquadEvent_1",
+        "abilityId": "darknessMageSquadEvent_summon_1",
+        "defaultAbilityId": "darknessMage_attack_1"
+    },
+    "ability_darknessMageSquadEvent_2": {
+        "key": "ability_darknessMageSquadEvent_2",
+        "heroLevelId": "darknessMageSquadEvent_2",
+        "abilityId": "darknessMageSquadEvent_summon_2",
+        "defaultAbilityId": "darknessMage_attack_2"
+    },
+    "ability_darknessMageSquadEvent_3": {
+        "key": "ability_darknessMageSquadEvent_3",
+        "heroLevelId": "darknessMageSquadEvent_3",
+        "abilityId": "darknessMageSquadEvent_summon_3",
+        "defaultAbilityId": "darknessMage_attack_3"
+    },
+    "ability_darknessMageSquadEvent_4": {
+        "key": "ability_darknessMageSquadEvent_4",
+        "heroLevelId": "darknessMageSquadEvent_4",
+        "abilityId": "darknessMageSquadEvent_summon_4",
+        "defaultAbilityId": "darknessMage_attack_4"
+    },
+    "ability_darknessMageSquadEvent_5": {
+        "key": "ability_darknessMageSquadEvent_5",
+        "heroLevelId": "darknessMageSquadEvent_5",
+        "abilityId": "darknessMageSquadEvent_summon_5",
+        "defaultAbilityId": "darknessMage_attack_5"
+    },
+    "ability_darknessMageSquadEvent_6": {
+        "key": "ability_darknessMageSquadEvent_6",
+        "heroLevelId": "darknessMageSquadEvent_6",
+        "abilityId": "darknessMageSquadEvent_summon_6",
+        "defaultAbilityId": "darknessMage_attack_6"
+    },
+    "ability_darknessMageSquadEvent_7": {
+        "key": "ability_darknessMageSquadEvent_7",
+        "heroLevelId": "darknessMageSquadEvent_7",
+        "abilityId": "darknessMageSquadEvent_summon_7",
+        "defaultAbilityId": "darknessMage_attack_7"
+    },
+    "ability_darknessMageSquadEvent_8": {
+        "key": "ability_darknessMageSquadEvent_8",
+        "heroLevelId": "darknessMageSquadEvent_8",
+        "abilityId": "darknessMageSquadEvent_summon_8",
+        "defaultAbilityId": "darknessMage_attack_8"
+    },
+    "ability_darknessMageSquadEvent_9": {
+        "key": "ability_darknessMageSquadEvent_9",
+        "heroLevelId": "darknessMageSquadEvent_9",
+        "abilityId": "darknessMageSquadEvent_summon_9",
+        "defaultAbilityId": "darknessMage_attack_9"
+    },
+    "ability_darknessMageSquadEvent_10": {
+        "key": "ability_darknessMageSquadEvent_10",
+        "heroLevelId": "darknessMageSquadEvent_10",
+        "abilityId": "darknessMageSquadEvent_summon_10",
+        "defaultAbilityId": "darknessMage_attack_10"
+    },
+    "ability_charmer_1": {
+        "key": "ability_charmer_1",
+        "heroLevelId": "charmer_1",
+        "abilityId": "charmer_summonSpirit_1",
+        "defaultAbilityId": "charmer_ray_1"
+    },
+    "ability_charmer_2": {
+        "key": "ability_charmer_2",
+        "heroLevelId": "charmer_2",
+        "abilityId": "charmer_summonSpirit_2",
+        "defaultAbilityId": "charmer_ray_2"
+    },
+    "ability_charmer_3": {
+        "key": "ability_charmer_3",
+        "heroLevelId": "charmer_3",
+        "abilityId": "charmer_summonSpirit_3",
+        "defaultAbilityId": "charmer_ray_3"
+    },
+    "ability_charmer_4": {
+        "key": "ability_charmer_4",
+        "heroLevelId": "charmer_4",
+        "abilityId": "charmer_summonSpirit_4",
+        "defaultAbilityId": "charmer_ray_4"
+    },
+    "ability_charmer_5": {
+        "key": "ability_charmer_5",
+        "heroLevelId": "charmer_5",
+        "abilityId": "charmer_summonSpirit_5",
+        "defaultAbilityId": "charmer_ray_5"
+    },
+    "ability_charmer_6": {
+        "key": "ability_charmer_6",
+        "heroLevelId": "charmer_6",
+        "abilityId": "charmer_summonSpirit_6",
+        "defaultAbilityId": "charmer_ray_6"
+    },
+    "ability_charmer_7": {
+        "key": "ability_charmer_7",
+        "heroLevelId": "charmer_7",
+        "abilityId": "charmer_summonSpirit_7",
+        "defaultAbilityId": "charmer_ray_7"
+    },
+    "ability_charmer_8": {
+        "key": "ability_charmer_8",
+        "heroLevelId": "charmer_8",
+        "abilityId": "charmer_summonSpirit_8",
+        "defaultAbilityId": "charmer_ray_8"
+    },
+    "ability_charmer_9": {
+        "key": "ability_charmer_9",
+        "heroLevelId": "charmer_9",
+        "abilityId": "charmer_summonSpirit_9",
+        "defaultAbilityId": "charmer_ray_9"
+    },
+    "ability_charmer_10": {
+        "key": "ability_charmer_10",
+        "heroLevelId": "charmer_10",
+        "abilityId": "charmer_summonSpirit_10",
+        "defaultAbilityId": "charmer_ray_10"
+    }
+}

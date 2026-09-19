@@ -1,0 +1,8 @@
+{
+    "LibraryKeyGeneration": {
+        "key": "LibraryKeyGeneration",
+        "currencyId": "LibraryKey",
+        "limit": 50,
+        "intervalInSeconds": 3600
+    }
+}

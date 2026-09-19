@@ -1,0 +1,3271 @@
+{
+    "1": {
+        "key": "1",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "2": {
+        "key": "2",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "3": {
+        "key": "3",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "4": {
+        "key": "4",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "5": {
+        "key": "5",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "6": {
+        "key": "6",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "7": {
+        "key": "7",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteHumanExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "8": {
+        "key": "8",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "9": {
+        "key": "9",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "10": {
+        "key": "10",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "11": {
+        "key": "11",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "12": {
+        "key": "12",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "13": {
+        "key": "13",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "14": {
+        "key": "14",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseHero_AccurateMerida_5",
+        "day": 6,
+        "order": 11
+    },
+    "15": {
+        "key": "15",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "16": {
+        "key": "16",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "17": {
+        "key": "17",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "18": {
+        "key": "18",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "19": {
+        "key": "19",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseHero_AccurateMerida_10",
+        "day": 8,
+        "order": 16
+    },
+    "20": {
+        "key": "20",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "21": {
+        "key": "21",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "22": {
+        "key": "22",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "23": {
+        "key": "23",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "24": {
+        "key": "24",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "25": {
+        "key": "25",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinWithHumanHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "26": {
+        "key": "26",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "27": {
+        "key": "27",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "28": {
+        "key": "28",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "29": {
+        "key": "29",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "30": {
+        "key": "30",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "31": {
+        "key": "31",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "32": {
+        "key": "32",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "33": {
+        "key": "33",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "34": {
+        "key": "34",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteHumanExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "35": {
+        "key": "35",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "36": {
+        "key": "36",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "37": {
+        "key": "37",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "38": {
+        "key": "38",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "39": {
+        "key": "39",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "40": {
+        "key": "40",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "41": {
+        "key": "41",
+        "questSetSpecialId": "SetPermanent_accurateMerida",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "42": {
+        "key": "42",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "43": {
+        "key": "43",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "44": {
+        "key": "44",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "45": {
+        "key": "45",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "46": {
+        "key": "46",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "47": {
+        "key": "47",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "48": {
+        "key": "48",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteHumanExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "49": {
+        "key": "49",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "50": {
+        "key": "50",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "51": {
+        "key": "51",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "52": {
+        "key": "52",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "53": {
+        "key": "53",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "54": {
+        "key": "54",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "55": {
+        "key": "55",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseHero_BaronBenua_5",
+        "day": 6,
+        "order": 11
+    },
+    "56": {
+        "key": "56",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "57": {
+        "key": "57",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "58": {
+        "key": "58",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "59": {
+        "key": "59",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "60": {
+        "key": "60",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseHero_BaronBenua_10",
+        "day": 8,
+        "order": 16
+    },
+    "61": {
+        "key": "61",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "62": {
+        "key": "62",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "63": {
+        "key": "63",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "64": {
+        "key": "64",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "65": {
+        "key": "65",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "66": {
+        "key": "66",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinWithHumanHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "67": {
+        "key": "67",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "68": {
+        "key": "68",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "69": {
+        "key": "69",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "70": {
+        "key": "70",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "71": {
+        "key": "71",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "72": {
+        "key": "72",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "73": {
+        "key": "73",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "74": {
+        "key": "74",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "75": {
+        "key": "75",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteHumanExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "76": {
+        "key": "76",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "77": {
+        "key": "77",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "78": {
+        "key": "78",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "79": {
+        "key": "79",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "80": {
+        "key": "80",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "81": {
+        "key": "81",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "82": {
+        "key": "82",
+        "questSetSpecialId": "SetPermanent_baronBenua",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "83": {
+        "key": "83",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "84": {
+        "key": "84",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "85": {
+        "key": "85",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "86": {
+        "key": "86",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "87": {
+        "key": "87",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "88": {
+        "key": "88",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "89": {
+        "key": "89",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteHumanExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "90": {
+        "key": "90",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "91": {
+        "key": "91",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "92": {
+        "key": "92",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "93": {
+        "key": "93",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "94": {
+        "key": "94",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "95": {
+        "key": "95",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "96": {
+        "key": "96",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseHero_ClericHero_5",
+        "day": 6,
+        "order": 11
+    },
+    "97": {
+        "key": "97",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "98": {
+        "key": "98",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "99": {
+        "key": "99",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "100": {
+        "key": "100",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "101": {
+        "key": "101",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseHero_ClericHero_10",
+        "day": 8,
+        "order": 16
+    },
+    "102": {
+        "key": "102",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "103": {
+        "key": "103",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "104": {
+        "key": "104",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "105": {
+        "key": "105",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "106": {
+        "key": "106",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "107": {
+        "key": "107",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinWithHumanHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "108": {
+        "key": "108",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "109": {
+        "key": "109",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "110": {
+        "key": "110",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "111": {
+        "key": "111",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "112": {
+        "key": "112",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "113": {
+        "key": "113",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "114": {
+        "key": "114",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "115": {
+        "key": "115",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "116": {
+        "key": "116",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteHumanExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "117": {
+        "key": "117",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "118": {
+        "key": "118",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "119": {
+        "key": "119",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "120": {
+        "key": "120",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "121": {
+        "key": "121",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "122": {
+        "key": "122",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "123": {
+        "key": "123",
+        "questSetSpecialId": "SetPermanent_clericHero",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "124": {
+        "key": "124",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "125": {
+        "key": "125",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "126": {
+        "key": "126",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "127": {
+        "key": "127",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "128": {
+        "key": "128",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "129": {
+        "key": "129",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "130": {
+        "key": "130",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteUndeadExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "131": {
+        "key": "131",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "132": {
+        "key": "132",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "133": {
+        "key": "133",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "134": {
+        "key": "134",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "135": {
+        "key": "135",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "136": {
+        "key": "136",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "137": {
+        "key": "137",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseHero_DarkKnight_5",
+        "day": 6,
+        "order": 11
+    },
+    "138": {
+        "key": "138",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "139": {
+        "key": "139",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "140": {
+        "key": "140",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "141": {
+        "key": "141",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "142": {
+        "key": "142",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseHero_DarkKnight_10",
+        "day": 8,
+        "order": 16
+    },
+    "143": {
+        "key": "143",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "144": {
+        "key": "144",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "145": {
+        "key": "145",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "146": {
+        "key": "146",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "147": {
+        "key": "147",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "148": {
+        "key": "148",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinWithUndeadHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "149": {
+        "key": "149",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "150": {
+        "key": "150",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "151": {
+        "key": "151",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "152": {
+        "key": "152",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "153": {
+        "key": "153",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "154": {
+        "key": "154",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "155": {
+        "key": "155",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "156": {
+        "key": "156",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "157": {
+        "key": "157",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteUndeadExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "158": {
+        "key": "158",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "159": {
+        "key": "159",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "160": {
+        "key": "160",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "161": {
+        "key": "161",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "162": {
+        "key": "162",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "163": {
+        "key": "163",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "164": {
+        "key": "164",
+        "questSetSpecialId": "SetPermanent_darkKnight",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "165": {
+        "key": "165",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "166": {
+        "key": "166",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "167": {
+        "key": "167",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "168": {
+        "key": "168",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "169": {
+        "key": "169",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "170": {
+        "key": "170",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "171": {
+        "key": "171",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteUndeadExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "172": {
+        "key": "172",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "173": {
+        "key": "173",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "174": {
+        "key": "174",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "175": {
+        "key": "175",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "176": {
+        "key": "176",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "177": {
+        "key": "177",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "178": {
+        "key": "178",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseHero_UndeadPirate_5",
+        "day": 6,
+        "order": 11
+    },
+    "179": {
+        "key": "179",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "180": {
+        "key": "180",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "181": {
+        "key": "181",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "182": {
+        "key": "182",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "183": {
+        "key": "183",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseHero_UndeadPirate_10",
+        "day": 8,
+        "order": 16
+    },
+    "184": {
+        "key": "184",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "185": {
+        "key": "185",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "186": {
+        "key": "186",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "187": {
+        "key": "187",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "188": {
+        "key": "188",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "189": {
+        "key": "189",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinWithUndeadHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "190": {
+        "key": "190",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "191": {
+        "key": "191",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "192": {
+        "key": "192",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "193": {
+        "key": "193",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "194": {
+        "key": "194",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "195": {
+        "key": "195",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "196": {
+        "key": "196",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "197": {
+        "key": "197",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "198": {
+        "key": "198",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteUndeadExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "199": {
+        "key": "199",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "200": {
+        "key": "200",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "201": {
+        "key": "201",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "202": {
+        "key": "202",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "203": {
+        "key": "203",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "204": {
+        "key": "204",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "205": {
+        "key": "205",
+        "questSetSpecialId": "SetPermanent_undeadPirate",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "206": {
+        "key": "206",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "207": {
+        "key": "207",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "208": {
+        "key": "208",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "209": {
+        "key": "209",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "210": {
+        "key": "210",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "211": {
+        "key": "211",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "212": {
+        "key": "212",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteMageExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "213": {
+        "key": "213",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "214": {
+        "key": "214",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "215": {
+        "key": "215",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "216": {
+        "key": "216",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "217": {
+        "key": "217",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "218": {
+        "key": "218",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "219": {
+        "key": "219",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseHero_Druid_5",
+        "day": 6,
+        "order": 11
+    },
+    "220": {
+        "key": "220",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "221": {
+        "key": "221",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "222": {
+        "key": "222",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "223": {
+        "key": "223",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "224": {
+        "key": "224",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseHero_Druid_10",
+        "day": 8,
+        "order": 16
+    },
+    "225": {
+        "key": "225",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "226": {
+        "key": "226",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "227": {
+        "key": "227",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "228": {
+        "key": "228",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "229": {
+        "key": "229",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "230": {
+        "key": "230",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinWithMageHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "231": {
+        "key": "231",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "232": {
+        "key": "232",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "233": {
+        "key": "233",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "234": {
+        "key": "234",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "235": {
+        "key": "235",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "236": {
+        "key": "236",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "237": {
+        "key": "237",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "238": {
+        "key": "238",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "239": {
+        "key": "239",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteMageExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "240": {
+        "key": "240",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "241": {
+        "key": "241",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "242": {
+        "key": "242",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "243": {
+        "key": "243",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "244": {
+        "key": "244",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "245": {
+        "key": "245",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "246": {
+        "key": "246",
+        "questSetSpecialId": "SetPermanent_druid",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "247": {
+        "key": "247",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "248": {
+        "key": "248",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "249": {
+        "key": "249",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "250": {
+        "key": "250",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "251": {
+        "key": "251",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "252": {
+        "key": "252",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "253": {
+        "key": "253",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteUndeadExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "254": {
+        "key": "254",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "255": {
+        "key": "255",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "256": {
+        "key": "256",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "257": {
+        "key": "257",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "258": {
+        "key": "258",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "259": {
+        "key": "259",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "260": {
+        "key": "260",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseHero_DebafferOnMaunt_5",
+        "day": 6,
+        "order": 11
+    },
+    "261": {
+        "key": "261",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "262": {
+        "key": "262",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "263": {
+        "key": "263",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "264": {
+        "key": "264",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "265": {
+        "key": "265",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseHero_DebafferOnMaunt_10",
+        "day": 8,
+        "order": 16
+    },
+    "266": {
+        "key": "266",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "267": {
+        "key": "267",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "268": {
+        "key": "268",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "269": {
+        "key": "269",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "270": {
+        "key": "270",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "271": {
+        "key": "271",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinWithUndeadHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "272": {
+        "key": "272",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "273": {
+        "key": "273",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "274": {
+        "key": "274",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "275": {
+        "key": "275",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "276": {
+        "key": "276",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "277": {
+        "key": "277",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "278": {
+        "key": "278",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "279": {
+        "key": "279",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "280": {
+        "key": "280",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteUndeadExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "281": {
+        "key": "281",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "282": {
+        "key": "282",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "283": {
+        "key": "283",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "284": {
+        "key": "284",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "285": {
+        "key": "285",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "286": {
+        "key": "286",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "287": {
+        "key": "287",
+        "questSetSpecialId": "SetPermanent_debafferOnMaunt",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "288": {
+        "key": "288",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinHeadhuntMissions_15_143",
+        "day": 0,
+        "order": 1
+    },
+    "289": {
+        "key": "289",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinArena_5_121",
+        "day": 0,
+        "order": 2
+    },
+    "290": {
+        "key": "290",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CompleteExpedition_5_107",
+        "day": 0,
+        "order": 3
+    },
+    "291": {
+        "key": "291",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "BossBattle_2_108",
+        "day": 0,
+        "order": 4
+    },
+    "292": {
+        "key": "292",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillBomber_30_109",
+        "day": 0,
+        "order": 5
+    },
+    "293": {
+        "key": "293",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireBattleGold_600000_120",
+        "day": 0,
+        "order": 6
+    },
+    "294": {
+        "key": "294",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseLegendaryHero_10_110",
+        "day": 0,
+        "order": 7
+    },
+    "295": {
+        "key": "295",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillInfantry_250_111",
+        "day": 1,
+        "order": 8
+    },
+    "296": {
+        "key": "296",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "LevelUpTroops_3_122",
+        "day": 1,
+        "order": 9
+    },
+    "297": {
+        "key": "297",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireHero_2_113",
+        "day": 1,
+        "order": 10
+    },
+    "298": {
+        "key": "298",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinHeadhuntMissions_10_114",
+        "day": 1,
+        "order": 11
+    },
+    "299": {
+        "key": "299",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillHero_5_115",
+        "day": 1,
+        "order": 12
+    },
+    "300": {
+        "key": "300",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseTempleFuseRare_5_124",
+        "day": 1,
+        "order": 13
+    },
+    "301": {
+        "key": "301",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseCasinoRoulette_2_141",
+        "day": 1,
+        "order": 14
+    },
+    "302": {
+        "key": "302",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireBattleGold_48000_144",
+        "day": 2,
+        "order": 15
+    },
+    "303": {
+        "key": "303",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinArena_5_121",
+        "day": 2,
+        "order": 16
+    },
+    "304": {
+        "key": "304",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CompleteExpedition_5_107",
+        "day": 2,
+        "order": 17
+    },
+    "305": {
+        "key": "305",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "BossBattle_2_108",
+        "day": 2,
+        "order": 18
+    },
+    "306": {
+        "key": "306",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillBomber_30_109",
+        "day": 2,
+        "order": 19
+    },
+    "307": {
+        "key": "307",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CollectSoftFromIdleChest_15000_117",
+        "day": 2,
+        "order": 20
+    },
+    "308": {
+        "key": "308",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseLegendaryHero_10_110",
+        "day": 2,
+        "order": 21
+    },
+    "309": {
+        "key": "309",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillInfantry_250_111",
+        "day": 3,
+        "order": 22
+    },
+    "310": {
+        "key": "310",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "LevelUpTroops_4_123",
+        "day": 3,
+        "order": 23
+    },
+    "311": {
+        "key": "311",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireHero_2_113",
+        "day": 3,
+        "order": 24
+    },
+    "312": {
+        "key": "312",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinHeadhuntMissions_10_114",
+        "day": 3,
+        "order": 25
+    },
+    "313": {
+        "key": "313",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillHero_5_115",
+        "day": 3,
+        "order": 26
+    },
+    "314": {
+        "key": "314",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseTempleFuseRare_5_124",
+        "day": 3,
+        "order": 27
+    },
+    "315": {
+        "key": "315",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WatchAds_2_119",
+        "day": 3,
+        "order": 28
+    },
+    "316": {
+        "key": "316",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinHeadhuntMissions_15_143",
+        "day": 4,
+        "order": 29
+    },
+    "317": {
+        "key": "317",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinArena_5_121",
+        "day": 4,
+        "order": 30
+    },
+    "318": {
+        "key": "318",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CompleteExpedition_5_107",
+        "day": 4,
+        "order": 31
+    },
+    "319": {
+        "key": "319",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "BossBattle_2_108",
+        "day": 4,
+        "order": 32
+    },
+    "320": {
+        "key": "320",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillBomber_30_109",
+        "day": 4,
+        "order": 33
+    },
+    "321": {
+        "key": "321",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireBattleGold_600000_120",
+        "day": 4,
+        "order": 34
+    },
+    "322": {
+        "key": "322",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseLegendaryHero_10_110",
+        "day": 4,
+        "order": 35
+    },
+    "323": {
+        "key": "323",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillInfantry_250_111",
+        "day": 5,
+        "order": 36
+    },
+    "324": {
+        "key": "324",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "LevelUpTroops_3_122",
+        "day": 5,
+        "order": 37
+    },
+    "325": {
+        "key": "325",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireHero_2_113",
+        "day": 5,
+        "order": 38
+    },
+    "326": {
+        "key": "326",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinHeadhuntMissions_10_114",
+        "day": 5,
+        "order": 39
+    },
+    "327": {
+        "key": "327",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillHero_5_115",
+        "day": 5,
+        "order": 40
+    },
+    "328": {
+        "key": "328",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseTempleFuseRare_5_124",
+        "day": 5,
+        "order": 41
+    },
+    "329": {
+        "key": "329",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseCasinoRoulette_2_141",
+        "day": 5,
+        "order": 42
+    },
+    "330": {
+        "key": "330",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "AcquireBattleGold_48000_144",
+        "day": 6,
+        "order": 43
+    },
+    "331": {
+        "key": "331",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "WinArena_5_121",
+        "day": 6,
+        "order": 44
+    },
+    "332": {
+        "key": "332",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CompleteExpedition_5_107",
+        "day": 6,
+        "order": 45
+    },
+    "333": {
+        "key": "333",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "BossBattle_2_108",
+        "day": 6,
+        "order": 46
+    },
+    "334": {
+        "key": "334",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "KillBomber_30_109",
+        "day": 6,
+        "order": 47
+    },
+    "335": {
+        "key": "335",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "CollectSoftFromIdleChest_15000_117",
+        "day": 6,
+        "order": 48
+    },
+    "336": {
+        "key": "336",
+        "questSetSpecialId": "SetPermanent_Casino",
+        "questId": "UseLegendaryHero_10_110",
+        "day": 6,
+        "order": 49
+    },
+    "337": {
+        "key": "337",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "KillInfantry_250_gear_131",
+        "day": 0,
+        "order": 1
+    },
+    "338": {
+        "key": "338",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "LevelUpTroops_3_gear_138",
+        "day": 0,
+        "order": 2
+    },
+    "339": {
+        "key": "339",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "AcquireHero_2_gear_132",
+        "day": 0,
+        "order": 3
+    },
+    "340": {
+        "key": "340",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "WinHeadhuntMissions_10_gear_133",
+        "day": 0,
+        "order": 4
+    },
+    "341": {
+        "key": "341",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "KillHero_5_gear_134",
+        "day": 0,
+        "order": 5
+    },
+    "342": {
+        "key": "342",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "UseTempleFuseRare_5_gear_140",
+        "day": 0,
+        "order": 6
+    },
+    "343": {
+        "key": "343",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "UseCasinoRoulette_2_gear_142",
+        "day": 0,
+        "order": 7
+    },
+    "344": {
+        "key": "344",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "AcquireBattleGold_48000_gear_145",
+        "day": 1,
+        "order": 8
+    },
+    "345": {
+        "key": "345",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "WinArena_5_gear_137",
+        "day": 1,
+        "order": 9
+    },
+    "346": {
+        "key": "346",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "CompleteExpedition_5_gear_127",
+        "day": 1,
+        "order": 10
+    },
+    "347": {
+        "key": "347",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "BossBattle_2_gear_128",
+        "day": 1,
+        "order": 11
+    },
+    "348": {
+        "key": "348",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "KillBomber_30_gear_129",
+        "day": 1,
+        "order": 12
+    },
+    "349": {
+        "key": "349",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "CollectSoftFromIdleChest_15000_gear_135",
+        "day": 1,
+        "order": 13
+    },
+    "350": {
+        "key": "350",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "UseLegendaryHero_10_gear_130",
+        "day": 1,
+        "order": 14
+    },
+    "351": {
+        "key": "351",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "KillInfantry_250_gear_131",
+        "day": 2,
+        "order": 15
+    },
+    "352": {
+        "key": "352",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "LevelUpTroops_4_gear_139",
+        "day": 2,
+        "order": 16
+    },
+    "353": {
+        "key": "353",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "AcquireHero_2_gear_132",
+        "day": 2,
+        "order": 17
+    },
+    "354": {
+        "key": "354",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "WinHeadhuntMissions_10_gear_133",
+        "day": 2,
+        "order": 18
+    },
+    "355": {
+        "key": "355",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "KillHero_5_gear_134",
+        "day": 2,
+        "order": 19
+    },
+    "356": {
+        "key": "356",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "UseTempleFuseRare_5_gear_140",
+        "day": 2,
+        "order": 20
+    },
+    "357": {
+        "key": "357",
+        "questSetSpecialId": "SetPermanent_Casino_Gear",
+        "questId": "WatchAds_2_gear_136",
+        "day": 2,
+        "order": 21
+    },
+    "358": {
+        "key": "358",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "359": {
+        "key": "359",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "360": {
+        "key": "360",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "361": {
+        "key": "361",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "362": {
+        "key": "362",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "363": {
+        "key": "363",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "364": {
+        "key": "364",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteUndeadExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "365": {
+        "key": "365",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "366": {
+        "key": "366",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "367": {
+        "key": "367",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "368": {
+        "key": "368",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "369": {
+        "key": "369",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "370": {
+        "key": "370",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "371": {
+        "key": "371",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseHero_bardHero_5",
+        "day": 6,
+        "order": 11
+    },
+    "372": {
+        "key": "372",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "373": {
+        "key": "373",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "374": {
+        "key": "374",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "375": {
+        "key": "375",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "376": {
+        "key": "376",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseHero_bardHero_10",
+        "day": 8,
+        "order": 16
+    },
+    "377": {
+        "key": "377",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "378": {
+        "key": "378",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "379": {
+        "key": "379",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "380": {
+        "key": "380",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "381": {
+        "key": "381",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "382": {
+        "key": "382",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinWithUndeadHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "383": {
+        "key": "383",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "384": {
+        "key": "384",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "385": {
+        "key": "385",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "386": {
+        "key": "386",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "387": {
+        "key": "387",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "388": {
+        "key": "388",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "389": {
+        "key": "389",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "390": {
+        "key": "390",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "391": {
+        "key": "391",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteUndeadExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "392": {
+        "key": "392",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "393": {
+        "key": "393",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "394": {
+        "key": "394",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "395": {
+        "key": "395",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "396": {
+        "key": "396",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "397": {
+        "key": "397",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "398": {
+        "key": "398",
+        "questSetSpecialId": "SetPermanent_bardHero",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    },
+    "399": {
+        "key": "399",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "PlayArena_5_107",
+        "day": 0,
+        "order": 0
+    },
+    "400": {
+        "key": "400",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "FightBoss_3_30",
+        "day": 0,
+        "order": 1
+    },
+    "401": {
+        "key": "401",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinHeadhuntMissions_15_146",
+        "day": 0,
+        "order": 2
+    },
+    "402": {
+        "key": "402",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_floor_1",
+        "day": 0,
+        "order": 3
+    },
+    "403": {
+        "key": "403",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireTroop_axeThrowers_1",
+        "day": 0,
+        "order": 4
+    },
+    "404": {
+        "key": "404",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "PlayArena_5_108",
+        "day": 1,
+        "order": 5
+    },
+    "405": {
+        "key": "405",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinHeadhuntMissions_15_144",
+        "day": 1,
+        "order": 6
+    },
+    "406": {
+        "key": "406",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireHero_1_104",
+        "day": 1,
+        "order": 7
+    },
+    "407": {
+        "key": "407",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_floor_2",
+        "day": 1,
+        "order": 8
+    },
+    "408": {
+        "key": "408",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireTroop_axeThrowers_2",
+        "day": 1,
+        "order": 9
+    },
+    "409": {
+        "key": "409",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "PlayArena_5_109",
+        "day": 2,
+        "order": 10
+    },
+    "410": {
+        "key": "410",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "FightBoss_3_31",
+        "day": 2,
+        "order": 11
+    },
+    "411": {
+        "key": "411",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireHero_1_105",
+        "day": 2,
+        "order": 12
+    },
+    "412": {
+        "key": "412",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_floor_3",
+        "day": 2,
+        "order": 13
+    },
+    "413": {
+        "key": "413",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireTroop_axeThrowers_3",
+        "day": 2,
+        "order": 14
+    },
+    "414": {
+        "key": "414",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinHeadhuntMissions_15_145",
+        "day": 3,
+        "order": 15
+    },
+    "415": {
+        "key": "415",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "FightBoss_3_32",
+        "day": 3,
+        "order": 16
+    },
+    "416": {
+        "key": "416",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "KillHero_5_117",
+        "day": 3,
+        "order": 17
+    },
+    "417": {
+        "key": "417",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_floor_4",
+        "day": 3,
+        "order": 18
+    },
+    "418": {
+        "key": "418",
+        "questSetSpecialId": "SetDaily_event_axeThrowers",
+        "questId": "AcquireTroop_axeThrowers_4",
+        "day": 3,
+        "order": 19
+    },
+    "419": {
+        "key": "419",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "OwnTroop_axeThrowers_Lvl2_1",
+        "day": 0,
+        "order": 0
+    },
+    "420": {
+        "key": "420",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_day1_1",
+        "day": 0,
+        "order": 1
+    },
+    "421": {
+        "key": "421",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "OwnTroop_axeThrowers_Lvl3_1",
+        "day": 1,
+        "order": 2
+    },
+    "422": {
+        "key": "422",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_day2_1",
+        "day": 1,
+        "order": 3
+    },
+    "423": {
+        "key": "423",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "OwnTroop_axeThrowers_Lvl4_1",
+        "day": 2,
+        "order": 4
+    },
+    "424": {
+        "key": "424",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_day3_1",
+        "day": 2,
+        "order": 5
+    },
+    "425": {
+        "key": "425",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "OwnTroop_axeThrowers_Lvl5_1",
+        "day": 3,
+        "order": 6
+    },
+    "426": {
+        "key": "426",
+        "questSetSpecialId": "SetPermanent_event_axeThrowers",
+        "questId": "WinTowerAxeThrowers_day4_1",
+        "day": 3,
+        "order": 7
+    },
+    "427": {
+        "key": "427",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "FightBoss_5",
+        "day": 0,
+        "order": 0
+    },
+    "428": {
+        "key": "428",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteExpedition_12",
+        "day": 0,
+        "order": 0
+    },
+    "429": {
+        "key": "429",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinHeadhuntMissions_60_75",
+        "day": 0,
+        "order": 0
+    },
+    "430": {
+        "key": "430",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "MergeTroops4Stars_10",
+        "day": 1,
+        "order": 1
+    },
+    "431": {
+        "key": "431",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "PlayArena_25",
+        "day": 1,
+        "order": 2
+    },
+    "432": {
+        "key": "432",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteDailyQuest_12",
+        "day": 2,
+        "order": 3
+    },
+    "433": {
+        "key": "433",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteUndeadExpedition_6",
+        "day": 2,
+        "order": 4
+    },
+    "434": {
+        "key": "434",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "AcquireHero_4",
+        "day": 3,
+        "order": 5
+    },
+    "435": {
+        "key": "435",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinHeadhuntMissions_40",
+        "day": 3,
+        "order": 6
+    },
+    "436": {
+        "key": "436",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillHero_25",
+        "day": 4,
+        "order": 7
+    },
+    "437": {
+        "key": "437",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CollectLuckyChestUnit_8",
+        "day": 4,
+        "order": 8
+    },
+    "438": {
+        "key": "438",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinArena_20",
+        "day": 5,
+        "order": 9
+    },
+    "439": {
+        "key": "439",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "OpenExpeditionChest_5",
+        "day": 5,
+        "order": 10
+    },
+    "440": {
+        "key": "440",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseHero_fireMage_5",
+        "day": 6,
+        "order": 11
+    },
+    "441": {
+        "key": "441",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinArena_10",
+        "day": 6,
+        "order": 12
+    },
+    "442": {
+        "key": "442",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillBomber_150",
+        "day": 7,
+        "order": 13
+    },
+    "443": {
+        "key": "443",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseTempleFuseEpic_3",
+        "day": 7,
+        "order": 14
+    },
+    "444": {
+        "key": "444",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "BattleHealCount_15000",
+        "day": 8,
+        "order": 15
+    },
+    "445": {
+        "key": "445",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseHero_fireMage_10",
+        "day": 8,
+        "order": 16
+    },
+    "446": {
+        "key": "446",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "PlayArena_15",
+        "day": 9,
+        "order": 17
+    },
+    "447": {
+        "key": "447",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseTempleFuseRare_20",
+        "day": 10,
+        "order": 18
+    },
+    "448": {
+        "key": "448",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseLegendaryHero_100",
+        "day": 11,
+        "order": 19
+    },
+    "449": {
+        "key": "449",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinHeadhuntMissions_120",
+        "day": 12,
+        "order": 20
+    },
+    "450": {
+        "key": "450",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CollectSoftFromIdleChest_24000",
+        "day": 13,
+        "order": 21
+    },
+    "451": {
+        "key": "451",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinWithUndeadHero_60",
+        "day": 14,
+        "order": 22
+    },
+    "452": {
+        "key": "452",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseRoulette_6",
+        "day": 15,
+        "order": 23
+    },
+    "453": {
+        "key": "453",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillInfantry_2500",
+        "day": 16,
+        "order": 24
+    },
+    "454": {
+        "key": "454",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 17,
+        "order": 25
+    },
+    "455": {
+        "key": "455",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinArena_20",
+        "day": 18,
+        "order": 26
+    },
+    "456": {
+        "key": "456",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillBomber_150",
+        "day": 19,
+        "order": 27
+    },
+    "457": {
+        "key": "457",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "AcquireHero_4",
+        "day": 20,
+        "order": 28
+    },
+    "458": {
+        "key": "458",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteExpeditionWithLegendaryHero_6",
+        "day": 21,
+        "order": 29
+    },
+    "459": {
+        "key": "459",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "PlayArena_15",
+        "day": 22,
+        "order": 30
+    },
+    "460": {
+        "key": "460",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteUndeadExpedition_3",
+        "day": 23,
+        "order": 31
+    },
+    "461": {
+        "key": "461",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CompleteDailyQuest_12",
+        "day": 24,
+        "order": 32
+    },
+    "462": {
+        "key": "462",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "OpenAnyChest_4_74",
+        "day": 25,
+        "order": 33
+    },
+    "463": {
+        "key": "463",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillHero_25",
+        "day": 26,
+        "order": 34
+    },
+    "464": {
+        "key": "464",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "UseRoulette_6",
+        "day": 27,
+        "order": 35
+    },
+    "465": {
+        "key": "465",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "KillInfantry_2500",
+        "day": 28,
+        "order": 36
+    },
+    "466": {
+        "key": "466",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "CollectLuckyChestUnit_4",
+        "day": 29,
+        "order": 37
+    },
+    "467": {
+        "key": "467",
+        "questSetSpecialId": "SetPermanent_fireMage",
+        "questId": "WinArena_20",
+        "day": 30,
+        "order": 38
+    }
+}

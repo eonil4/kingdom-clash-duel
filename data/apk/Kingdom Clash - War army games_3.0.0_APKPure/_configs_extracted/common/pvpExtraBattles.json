@@ -1,0 +1,32 @@
+{
+    "1": {
+        "key": "1",
+        "index": 1,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 150
+    },
+    "2": {
+        "key": "2",
+        "index": 2,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 250
+    },
+    "3": {
+        "key": "3",
+        "index": 3,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 450
+    },
+    "4": {
+        "key": "4",
+        "index": 4,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 600
+    },
+    "5": {
+        "key": "5",
+        "index": 5,
+        "priceCurrencyId": "Gem",
+        "priceCurrencyAmount": 750
+    }
+}

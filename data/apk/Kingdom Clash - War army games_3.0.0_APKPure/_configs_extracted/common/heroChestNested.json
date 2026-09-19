@@ -1,0 +1,163 @@
+{
+    "1": {
+        "key": "1",
+        "rewardHeroChestId": "firstHeroChestReward",
+        "heroDropSetId": "firstHeroSet",
+        "rarityId": "rare",
+        "weight": 1
+    },
+    "2": {
+        "key": "2",
+        "rewardHeroChestId": "secondHeroChestReward",
+        "heroDropSetId": "secondHeroSet",
+        "rarityId": "rare",
+        "weight": 1
+    },
+    "3": {
+        "key": "3",
+        "rewardHeroChestId": "thirdHeroChestReward",
+        "heroDropSetId": "thirdHeroSet",
+        "rarityId": "epic",
+        "weight": 1
+    },
+    "4": {
+        "key": "4",
+        "rewardHeroChestId": "allHeroChestReward",
+        "heroDropSetId": "rareHeroSet",
+        "rarityId": "rare",
+        "weight": 150
+    },
+    "5": {
+        "key": "5",
+        "rewardHeroChestId": "allHeroChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 125
+    },
+    "6": {
+        "key": "6",
+        "rewardHeroChestId": "allHeroChestReward",
+        "heroDropSetId": "legendaryHeroSet",
+        "rarityId": "legendary",
+        "weight": 25
+    },
+    "7": {
+        "key": "7",
+        "rewardHeroChestId": "allHeroTwoChestReward",
+        "heroDropSetId": "rareHeroSet",
+        "rarityId": "rare",
+        "weight": 65
+    },
+    "8": {
+        "key": "8",
+        "rewardHeroChestId": "allHeroTwoChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 30
+    },
+    "9": {
+        "key": "9",
+        "rewardHeroChestId": "allHeroTwoChestReward",
+        "heroDropSetId": "legendaryHeroSet",
+        "rarityId": "legendary",
+        "weight": 5
+    },
+    "10": {
+        "key": "10",
+        "rewardHeroChestId": "allHeroThreeChestReward",
+        "heroDropSetId": "rareHeroSet",
+        "rarityId": "rare",
+        "weight": 65
+    },
+    "11": {
+        "key": "11",
+        "rewardHeroChestId": "allHeroThreeChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 30
+    },
+    "12": {
+        "key": "12",
+        "rewardHeroChestId": "allHeroThreeChestReward",
+        "heroDropSetId": "legendaryHeroSet",
+        "rarityId": "legendary",
+        "weight": 5
+    },
+    "13": {
+        "key": "13",
+        "rewardHeroChestId": "allHeroFourChestReward",
+        "heroDropSetId": "rareHeroSet",
+        "rarityId": "rare",
+        "weight": 65
+    },
+    "14": {
+        "key": "14",
+        "rewardHeroChestId": "allHeroFourChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 30
+    },
+    "15": {
+        "key": "15",
+        "rewardHeroChestId": "allHeroFourChestReward",
+        "heroDropSetId": "legendaryHeroSet",
+        "rarityId": "legendary",
+        "weight": 5
+    },
+    "16": {
+        "key": "16",
+        "rewardHeroChestId": "epicLegChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 25
+    },
+    "17": {
+        "key": "17",
+        "rewardHeroChestId": "epicLegChestReward",
+        "heroDropSetId": "legendaryHeroSet",
+        "rarityId": "legendary",
+        "weight": 5
+    },
+    "18": {
+        "key": "18",
+        "rewardHeroChestId": "rareEpicChestReward",
+        "heroDropSetId": "rareHeroSet",
+        "rarityId": "rare",
+        "weight": 150
+    },
+    "19": {
+        "key": "19",
+        "rewardHeroChestId": "rareEpicChestReward",
+        "heroDropSetId": "epicHeroSet",
+        "rarityId": "epic",
+        "weight": 100
+    },
+    "20": {
+        "key": "20",
+        "rewardHeroChestId": "epicHeroClanShopReward",
+        "heroDropSetId": "epicHeroClanShopSet",
+        "rarityId": "epic",
+        "weight": 1
+    },
+    "21": {
+        "key": "21",
+        "rewardHeroChestId": "legHeroClanShopReward",
+        "heroDropSetId": "legHeroClanShopSet",
+        "rarityId": "legendary",
+        "weight": 1
+    },
+    "22": {
+        "key": "22",
+        "rewardHeroChestId": "mythHeroElevateChest",
+        "heroDropSetId": "mythHeroElevateSet",
+        "rarityId": "mythic",
+        "weight": 1
+    },
+    "23": {
+        "key": "23",
+        "rewardHeroChestId": "mythHeroDemonChest",
+        "heroDropSetId": "mythHeroDemonSet",
+        "rarityId": "mythic",
+        "weight": 1
+    }
+}

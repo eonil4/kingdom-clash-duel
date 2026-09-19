@@ -1,0 +1,14 @@
+{
+    "freeSpeedRewardContentId": {
+        "key": "freeSpeedRewardContentId",
+        "contentId": "freeSpeedModeScale",
+        "title": "caption_freeSpeedReward",
+        "resource": "free_battle_time_speedup"
+    },
+    "unlockHeroSlotRewardContentId": {
+        "key": "unlockHeroSlotRewardContentId",
+        "contentId": "unlockHeroSlot",
+        "title": "caption_unlock_hero_slot_reward",
+        "resource": "unlock_hero_slot_reward"
+    }
+}

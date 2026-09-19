@@ -1,0 +1,62 @@
+{
+    "formation_single_center": {
+        "key": "formation_single_center",
+        "count": 1,
+        "patternId": "SingleCenter"
+    },
+    "formation_single_down": {
+        "key": "formation_single_down",
+        "count": 1,
+        "patternId": "SingleDown"
+    },
+    "formation_single_right": {
+        "key": "formation_single_right",
+        "count": 1,
+        "patternId": "SingleRight"
+    },
+    "formation_double_separate_center": {
+        "key": "formation_double_separate_center",
+        "count": 2,
+        "patternId": "DoubleSeparateCenter"
+    },
+    "formation_double_separate_down": {
+        "key": "formation_double_separate_down",
+        "count": 2,
+        "patternId": "DoubleSeparateDown"
+    },
+    "formation_line_center": {
+        "key": "formation_line_center",
+        "count": 3,
+        "patternId": "LineCenter"
+    },
+    "formation_line_down": {
+        "key": "formation_line_down",
+        "count": 3,
+        "patternId": "LineDown"
+    },
+    "formation_arrow_down": {
+        "key": "formation_arrow_down",
+        "count": 3,
+        "patternId": "ArrowDown"
+    },
+    "formation_blocks_separate_down": {
+        "key": "formation_blocks_separate_down",
+        "count": 4,
+        "patternId": "BlocksSeparateDown"
+    },
+    "formation_cross": {
+        "key": "formation_cross",
+        "count": 5,
+        "patternId": "Cross"
+    },
+    "formation_letter_big_h": {
+        "key": "formation_letter_big_h",
+        "count": 7,
+        "patternId": "LetterH"
+    },
+    "formation_full": {
+        "key": "formation_full",
+        "count": 9,
+        "patternId": "Full"
+    }
+}

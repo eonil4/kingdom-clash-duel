@@ -1,0 +1,926 @@
+{
+    "currency_Gold_50000": {
+        "key": "currency_Gold_50000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 50000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_400": {
+        "key": "currency_Gem_400",
+        "localizationKey": "caption_reward_gem_400",
+        "type": "Gem",
+        "count": 400,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_75000": {
+        "key": "currency_Gold_75000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 75000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_500": {
+        "key": "currency_Gem_500",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 500,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_100000": {
+        "key": "currency_Gold_100000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 100000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_150000": {
+        "key": "currency_Gold_150000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 150000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_120000": {
+        "key": "currency_Gold_120000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 120000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_1000": {
+        "key": "currency_Gem_1000",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 1000,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_200000": {
+        "key": "currency_Gold_200000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 200000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_750": {
+        "key": "currency_Gem_750",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 750,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_100": {
+        "key": "currency_Gem_100",
+        "localizationKey": "caption_reward_gem_100",
+        "type": "Gem",
+        "count": 100,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_30000": {
+        "key": "currency_Gold_30000",
+        "localizationKey": "caption_reward_gold_30000",
+        "type": "Gold",
+        "count": 30000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_60000": {
+        "key": "currency_Gold_60000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 60000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_200": {
+        "key": "currency_Gem_200",
+        "localizationKey": "caption_reward_gem_200",
+        "type": "Gem",
+        "count": 200,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_300": {
+        "key": "currency_Gem_300",
+        "localizationKey": "caption_reward_gem_300",
+        "type": "Gem",
+        "count": 300,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_4500": {
+        "key": "currency_Gold_4500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 4500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_6000": {
+        "key": "currency_Gold_6000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 6000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_8500": {
+        "key": "currency_Gold_8500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 8500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_12500": {
+        "key": "currency_Gold_12500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 12500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_15000": {
+        "key": "currency_Gold_15000",
+        "localizationKey": "caption_reward_gold_15000",
+        "type": "Gold",
+        "count": 15000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_150": {
+        "key": "currency_Gem_150",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 150,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_17500": {
+        "key": "currency_Gold_17500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 17500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_20000": {
+        "key": "currency_Gold_20000",
+        "localizationKey": "caption_reward_gold_20000",
+        "type": "Gold",
+        "count": 20000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_250": {
+        "key": "currency_Gem_250",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 250,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_22500": {
+        "key": "currency_Gold_22500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 22500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_25000": {
+        "key": "currency_Gold_25000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 25000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_350": {
+        "key": "currency_Gem_350",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 350,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_27500": {
+        "key": "currency_Gold_27500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 27500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_450": {
+        "key": "currency_Gem_450",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 450,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_32500": {
+        "key": "currency_Gold_32500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 32500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_35000": {
+        "key": "currency_Gold_35000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 35000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_37500": {
+        "key": "currency_Gold_37500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 37500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_40000": {
+        "key": "currency_Gold_40000",
+        "localizationKey": "caption_reward_gold_40000",
+        "type": "Gold",
+        "count": 40000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_42500": {
+        "key": "currency_Gold_42500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 42500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_45000": {
+        "key": "currency_Gold_45000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 45000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_47500": {
+        "key": "currency_Gold_47500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 47500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_52500": {
+        "key": "currency_Gold_52500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 52500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_55000": {
+        "key": "currency_Gold_55000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 55000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_57500": {
+        "key": "currency_Gold_57500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 57500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_62500": {
+        "key": "currency_Gold_62500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 62500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_65000": {
+        "key": "currency_Gold_65000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 65000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_67500": {
+        "key": "currency_Gold_67500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 67500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_70000": {
+        "key": "currency_Gold_70000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 70000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_72500": {
+        "key": "currency_Gold_72500",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 72500,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_650": {
+        "key": "currency_Gem_650",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 650,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_175000": {
+        "key": "currency_Gold_175000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 175000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_2000": {
+        "key": "currency_Gold_2000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 2000,
+        "resourceId": "rewardGold"
+    },
+    "currency_vip_passive_auto_battle100": {
+        "key": "currency_vip_passive_auto_battle100",
+        "localizationKey": "",
+        "type": "AutoBattle",
+        "count": 100,
+        "resourceId": null
+    },
+    "currency_vip_active_gems250": {
+        "key": "currency_vip_active_gems250",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 250,
+        "resourceId": "rewardGem"
+    },
+    "currency_midas_passive_badgesX4": {
+        "key": "currency_midas_passive_badgesX4",
+        "localizationKey": "",
+        "type": "BadgesX4",
+        "count": 40,
+        "resourceId": null
+    },
+    "currency_Gem_275": {
+        "key": "currency_Gem_275",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 275,
+        "resourceId": "rewardGem"
+    },
+    "BadgesX2_10": {
+        "key": "BadgesX2_10",
+        "localizationKey": "caption_reward_badgesX2_10",
+        "type": "BadgesX2",
+        "count": 10,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_roulette_spin_3": {
+        "key": "currency_roulette_spin_3",
+        "localizationKey": "caption_reward_roulette_spin_3",
+        "type": "RouletteRoll",
+        "count": 3,
+        "resourceId": "rewardRouletteSpin"
+    },
+    "BadgesX2_5": {
+        "key": "BadgesX2_5",
+        "localizationKey": "caption_reward_badgesX2_5",
+        "type": "BadgesX2",
+        "count": 5,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_roulette_spin_2": {
+        "key": "currency_roulette_spin_2",
+        "localizationKey": "caption_reward_roulette_spin_2",
+        "type": "RouletteRoll",
+        "count": 2,
+        "resourceId": "rewardRouletteSpin"
+    },
+    "currencyHh_Gem_50": {
+        "key": "currencyHh_Gem_50",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 50,
+        "resourceId": "rewardGemHh"
+    },
+    "currencyHh_Gem_75": {
+        "key": "currencyHh_Gem_75",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 75,
+        "resourceId": "rewardGemHh"
+    },
+    "currencyHh_Gem_100": {
+        "key": "currencyHh_Gem_100",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 100,
+        "resourceId": "rewardGemHh"
+    },
+    "currency_Gold_9000": {
+        "key": "currency_Gold_9000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 9000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_70": {
+        "key": "currency_Gem_70",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 70,
+        "resourceId": "rewardGemHh"
+    },
+    "currency_Gem_210": {
+        "key": "currency_Gem_210",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 210,
+        "resourceId": "rewardGemHh"
+    },
+    "BadgesX2_3": {
+        "key": "BadgesX2_3",
+        "localizationKey": "",
+        "type": "BadgesX2",
+        "count": 3,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_roulette_spin_1": {
+        "key": "currency_roulette_spin_1",
+        "localizationKey": "",
+        "type": "RouletteRoll",
+        "count": 1,
+        "resourceId": "rewardRouletteSpin"
+    },
+    "currencyMW_Gem_100": {
+        "key": "currencyMW_Gem_100",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 100,
+        "resourceId": "rewardGemHh"
+    },
+    "currencyMW_Gem_150": {
+        "key": "currencyMW_Gem_150",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 150,
+        "resourceId": "rewardGemHh"
+    },
+    "BadgesX2_2": {
+        "key": "BadgesX2_2",
+        "localizationKey": "",
+        "type": "BadgesX2",
+        "count": 2,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_Gold_18000": {
+        "key": "currency_Gold_18000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 18000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_21000": {
+        "key": "currency_Gold_21000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 21000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_24000": {
+        "key": "currency_Gold_24000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 24000,
+        "resourceId": "rewardGold"
+    },
+    "BadgesX2_4": {
+        "key": "BadgesX2_4",
+        "localizationKey": "",
+        "type": "BadgesX2",
+        "count": 4,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_Gold_110000": {
+        "key": "currency_Gold_110000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 110000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_130000": {
+        "key": "currency_Gold_130000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 130000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_50": {
+        "key": "currency_Gem_50",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 50,
+        "resourceId": "rewardGem"
+    },
+    "currency_TalentSphere_1": {
+        "key": "currency_TalentSphere_1",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 1,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_2": {
+        "key": "currency_TalentSphere_2",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 2,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_3": {
+        "key": "currency_TalentSphere_3",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 3,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_4": {
+        "key": "currency_TalentSphere_4",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 4,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_5": {
+        "key": "currency_TalentSphere_5",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 5,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_9": {
+        "key": "currency_TalentSphere_9",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 9,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_10": {
+        "key": "currency_TalentSphere_10",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 10,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_11": {
+        "key": "currency_TalentSphere_11",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 11,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_12": {
+        "key": "currency_TalentSphere_12",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 12,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_22": {
+        "key": "currency_TalentSphere_22",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 22,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_55": {
+        "key": "currency_TalentSphere_55",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 55,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_TalentSphere_6": {
+        "key": "currency_TalentSphere_6",
+        "localizationKey": "",
+        "type": "TalentSphere",
+        "count": 6,
+        "resourceId": "rewardTalentSphere"
+    },
+    "currency_Gold_80000": {
+        "key": "currency_Gold_80000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 80000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_800": {
+        "key": "currency_Gem_800",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 800,
+        "resourceId": "rewardGem"
+    },
+    "BadgesX2_1": {
+        "key": "BadgesX2_1",
+        "localizationKey": "",
+        "type": "BadgesX2",
+        "count": 1,
+        "resourceId": "rewardBadgesX2"
+    },
+    "currency_Gold_12000": {
+        "key": "currency_Gold_12000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 12000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_30": {
+        "key": "currency_Gem_30",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 30,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_10000": {
+        "key": "currency_Gold_10000",
+        "localizationKey": "caption_reward_gold_10000",
+        "type": "Gold",
+        "count": 10000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_90000": {
+        "key": "currency_Gold_90000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 90000,
+        "resourceId": "rewardGold"
+    },
+    "currencyRace_Gold_50000": {
+        "key": "currencyRace_Gold_50000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 50000,
+        "resourceId": "rewardGoldRace"
+    },
+    "currencyRace_Gold_150000": {
+        "key": "currencyRace_Gold_150000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 150000,
+        "resourceId": "rewardGoldRace"
+    },
+    "currencyRace_Gem_150": {
+        "key": "currencyRace_Gem_150",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 150,
+        "resourceId": "rewardGemRace"
+    },
+    "currency_Gem_950": {
+        "key": "currency_Gem_950",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 950,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_550": {
+        "key": "currency_Gem_550",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 550,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_700": {
+        "key": "currency_Gem_700",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 700,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_850": {
+        "key": "currency_Gem_850",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 850,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_900": {
+        "key": "currency_Gem_900",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 900,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_1050": {
+        "key": "currency_Gem_1050",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 1050,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_170000": {
+        "key": "currency_Gold_170000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 170000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gem_1200": {
+        "key": "currency_Gem_1200",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 1200,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_180000": {
+        "key": "currency_Gold_180000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 180000,
+        "resourceId": "rewardGold"
+    },
+    "currency_Gold_300000": {
+        "key": "currency_Gold_300000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 300000,
+        "resourceId": "rewardGold"
+    },
+    "currencyCs_Gold_20000": {
+        "key": "currencyCs_Gold_20000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 20000,
+        "resourceId": "rewardGoldClanShop"
+    },
+    "currencyCs_Gem_150": {
+        "key": "currencyCs_Gem_150",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 150,
+        "resourceId": "rewardGemClanShop"
+    },
+    "currency_CasinoTicket_1": {
+        "key": "currency_CasinoTicket_1",
+        "localizationKey": "",
+        "type": "CasinoTicket",
+        "count": 1,
+        "resourceId": "rewardCasinoTicket"
+    },
+    "currency_CasinoTicket_5": {
+        "key": "currency_CasinoTicket_5",
+        "localizationKey": "",
+        "type": "CasinoTicket",
+        "count": 5,
+        "resourceId": "rewardCasinoTicket"
+    },
+    "currency_CasinoTicket_10": {
+        "key": "currency_CasinoTicket_10",
+        "localizationKey": "",
+        "type": "CasinoTicket",
+        "count": 10,
+        "resourceId": "rewardCasinoTicket"
+    },
+    "currencyCasino_Gem_20000": {
+        "key": "currencyCasino_Gem_20000",
+        "localizationKey": "caption_reward_gem_20000",
+        "type": "Gem",
+        "count": 20000,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currencyCasino_Gold_1000000": {
+        "key": "currencyCasino_Gold_1000000",
+        "localizationKey": "caption_reward_gold_1000000",
+        "type": "Gold",
+        "count": 1000000,
+        "resourceId": "rewardCasinoGold"
+    },
+    "currencyCasino_Gold_500000": {
+        "key": "currencyCasino_Gold_500000",
+        "localizationKey": "caption_reward_gold_500000",
+        "type": "Gold",
+        "count": 500000,
+        "resourceId": "rewardCasinoGold"
+    },
+    "currencyCasino_Gold_30000": {
+        "key": "currencyCasino_Gold_30000",
+        "localizationKey": "caption_reward_gold_30000",
+        "type": "Gold",
+        "count": 30000,
+        "resourceId": "rewardCasinoGold"
+    },
+    "currencyCasino_Gem_100": {
+        "key": "currencyCasino_Gem_100",
+        "localizationKey": "caption_reward_gem_100",
+        "type": "Gem",
+        "count": 100,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currencyCasino_Gold_10000": {
+        "key": "currencyCasino_Gold_10000",
+        "localizationKey": "caption_reward_gold_10000",
+        "type": "Gold",
+        "count": 10000,
+        "resourceId": "rewardCasinoGold"
+    },
+    "currencyCasino_Gem_300": {
+        "key": "currencyCasino_Gem_300",
+        "localizationKey": "caption_reward_gem_300",
+        "type": "Gem",
+        "count": 300,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currencyCasino_Gold_20000": {
+        "key": "currencyCasino_Gold_20000",
+        "localizationKey": "caption_reward_gold_20000",
+        "type": "Gold",
+        "count": 20000,
+        "resourceId": "rewardCasinoGold"
+    },
+    "currencyCasino_Gem_200": {
+        "key": "currencyCasino_Gem_200",
+        "localizationKey": "caption_reward_gem_200",
+        "type": "Gem",
+        "count": 200,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currencyCasino_Gem_400": {
+        "key": "currencyCasino_Gem_400",
+        "localizationKey": "caption_reward_gem_400",
+        "type": "Gem",
+        "count": 400,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currencyCasino_Gem_650": {
+        "key": "currencyCasino_Gem_650",
+        "localizationKey": "caption_reward_gem_650",
+        "type": "Gem",
+        "count": 650,
+        "resourceId": "rewardCasinoGem"
+    },
+    "currency_CasinoTicket_2": {
+        "key": "currency_CasinoTicket_2",
+        "localizationKey": "",
+        "type": "CasinoTicket",
+        "count": 2,
+        "resourceId": "rewardCasinoTicket"
+    },
+    "currency_CasinoKingTicket_1": {
+        "key": "currency_CasinoKingTicket_1",
+        "localizationKey": "",
+        "type": "CasinoKingTicket",
+        "count": 1,
+        "resourceId": "rewardCasinoKingTicket"
+    },
+    "currency_CasinoKingTicket_5": {
+        "key": "currency_CasinoKingTicket_5",
+        "localizationKey": "",
+        "type": "CasinoKingTicket",
+        "count": 5,
+        "resourceId": "rewardCasinoKingTicket"
+    },
+    "currency_CasinoKingTicket_10": {
+        "key": "currency_CasinoKingTicket_10",
+        "localizationKey": "",
+        "type": "CasinoKingTicket",
+        "count": 10,
+        "resourceId": "rewardCasinoKingTicket"
+    },
+    "currency_CasinoKingTicket_2": {
+        "key": "currency_CasinoKingTicket_2",
+        "localizationKey": "",
+        "type": "CasinoKingTicket",
+        "count": 2,
+        "resourceId": "rewardCasinoKingTicket"
+    },
+    "currency_CasinoKingTicket_3": {
+        "key": "currency_CasinoKingTicket_3",
+        "localizationKey": "",
+        "type": "CasinoKingTicket",
+        "count": 3,
+        "resourceId": "rewardCasinoKingTicket"
+    },
+    "currency_Gem_125": {
+        "key": "currency_Gem_125",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 125,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_75": {
+        "key": "currency_Gem_75",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 75,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_600": {
+        "key": "currency_Gem_600",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 600,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gem_1150": {
+        "key": "currency_Gem_1150",
+        "localizationKey": "",
+        "type": "Gem",
+        "count": 1150,
+        "resourceId": "rewardGem"
+    },
+    "currency_Gold_125000": {
+        "key": "currency_Gold_125000",
+        "localizationKey": "",
+        "type": "Gold",
+        "count": 125000,
+        "resourceId": "rewardGold"
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "battlePass": {
+        "key": "battlePass"
+    },
+    "dailyQuest": {
+        "key": "dailyQuest"
+    },
+    "headHunt": {
+        "key": "headHunt"
+    },
+    "arena": {
+        "key": "arena"
+    },
+    "openNextButton": {
+        "key": "openNextButton"
+    },
+    "bossFight": {
+        "key": "bossFight"
+    },
+    "lobbyChest": {
+        "key": "lobbyChest"
+    },
+    "gloryRoad": {
+        "key": "gloryRoad"
+    },
+    "mergeAllButton": {
+        "key": "mergeAllButton"
+    },
+    "recallAllButton": {
+        "key": "recallAllButton"
+    },
+    "roulette": {
+        "key": "roulette"
+    },
+    "communityLobbyButton": {
+        "key": "communityLobbyButton"
+    },
+    "expeditions": {
+        "key": "expeditions"
+    },
+    "formations": {
+        "key": "formations"
+    },
+    "promoCodes": {
+        "key": "promoCodes"
+    },
+    "bossWidget": {
+        "key": "bossWidget"
+    },
+    "mushroomWars": {
+        "key": "mushroomWars"
+    },
+    "templeFuse": {
+        "key": "templeFuse"
+    },
+    "clans": {
+        "key": "clans"
+    },
+    "loseScreenHints": {
+        "key": "loseScreenHints"
+    },
+    "offerCampaignLevel": {
+        "key": "offerCampaignLevel"
+    },
+    "library": {
+        "key": "library"
+    },
+    "heroCollection": {
+        "key": "heroCollection"
+    },
+    "arenaBattlePass": {
+        "key": "arenaBattlePass"
+    },
+    "race": {
+        "key": "race"
+    },
+    "serverOfferSchedule": {
+        "key": "serverOfferSchedule"
+    },
+    "offerDailyGemsSale": {
+        "key": "offerDailyGemsSale"
+    },
+    "offerDailyGoldSale": {
+        "key": "offerDailyGoldSale"
+    },
+    "casinoRoulette": {
+        "key": "casinoRoulette"
+    },
+    "king": {
+        "key": "king"
+    },
+    "gearCasino": {
+        "key": "gearCasino"
+    },
+    "freeSpeedModeScale": {
+        "key": "freeSpeedModeScale"
+    },
+    "gearShard": {
+        "key": "gearShard"
+    },
+    "squadEventTower": {
+        "key": "squadEventTower"
+    },
+    "offerChain": {
+        "key": "offerChain"
+    },
+    "unlockHeroSlot": {
+        "key": "unlockHeroSlot"
+    }
+}

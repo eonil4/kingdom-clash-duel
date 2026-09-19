@@ -1,0 +1,20 @@
+{
+    "gems1": {
+        "key": "gems1",
+        "offer1": "offerLobbyCurrency1",
+        "offer2": "offerLobbyCurrency2",
+        "icon": "offer_lobby_gems",
+        "prefabIcon": null,
+        "windowArt": "store_header_gems",
+        "windowCaption": "caption_offer_lobby_gems"
+    },
+    "gold1": {
+        "key": "gold1",
+        "offer1": "offerLobbyCurrency3",
+        "offer2": "offerLobbyCurrency4",
+        "icon": "icon_offer_gold",
+        "prefabIcon": null,
+        "windowArt": "store_header_gold",
+        "windowCaption": "caption_offer_lobby_gold"
+    }
+}

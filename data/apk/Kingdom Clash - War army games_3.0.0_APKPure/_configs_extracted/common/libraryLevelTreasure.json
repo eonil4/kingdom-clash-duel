@@ -1,0 +1,275 @@
+{
+    "LibraryTreasure_1": {
+        "key": "LibraryTreasure_1",
+        "reward1Id": "currency_TalentSphere_1",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_2": {
+        "key": "LibraryTreasure_2",
+        "reward1Id": "currency_Gold_10000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_3": {
+        "key": "LibraryTreasure_3",
+        "reward1Id": "goldChest",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_4": {
+        "key": "LibraryTreasure_4",
+        "reward1Id": "currency_Gold_30000",
+        "reward2Id": "currency_Gem_50",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_5": {
+        "key": "LibraryTreasure_5",
+        "reward1Id": "epicTwoTroopsReward",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_6": {
+        "key": "LibraryTreasure_6",
+        "reward1Id": "currency_TalentSphere_2",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_7": {
+        "key": "LibraryTreasure_7",
+        "reward1Id": "currency_Gold_50000",
+        "reward2Id": "currency_Gem_100",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_8": {
+        "key": "LibraryTreasure_8",
+        "reward1Id": "currency_TalentSphere_10",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_9": {
+        "key": "LibraryTreasure_9",
+        "reward1Id": "currency_TalentSphere_3",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_10": {
+        "key": "LibraryTreasure_10",
+        "reward1Id": "currency_Gold_70000",
+        "reward2Id": "currency_Gem_200",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_11": {
+        "key": "LibraryTreasure_11",
+        "reward1Id": "currency_TalentSphere_4",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_12": {
+        "key": "LibraryTreasure_12",
+        "reward1Id": "epicTwoTroopsReward",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_13": {
+        "key": "LibraryTreasure_13",
+        "reward1Id": "currency_TalentSphere_5",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_14": {
+        "key": "LibraryTreasure_14",
+        "reward1Id": "currency_Gold_90000",
+        "reward2Id": "currency_Gem_250",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_15": {
+        "key": "LibraryTreasure_15",
+        "reward1Id": "currency_TalentSphere_6",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_16": {
+        "key": "LibraryTreasure_16",
+        "reward1Id": "epicLegTroopsReward",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_17": {
+        "key": "LibraryTreasure_17",
+        "reward1Id": "currency_TalentSphere_22",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_18": {
+        "key": "LibraryTreasure_18",
+        "reward1Id": "currency_Gold_110000",
+        "reward2Id": "currency_Gem_300",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_19": {
+        "key": "LibraryTreasure_19",
+        "reward1Id": "currency_TalentSphere_9",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_20": {
+        "key": "LibraryTreasure_20",
+        "reward1Id": "legendaryTwoTroopsReward",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_21": {
+        "key": "LibraryTreasure_21",
+        "reward1Id": "currency_Gold_130000",
+        "reward2Id": "currency_Gem_400",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_22": {
+        "key": "LibraryTreasure_22",
+        "reward1Id": "currency_TalentSphere_11",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_23": {
+        "key": "LibraryTreasure_23",
+        "reward1Id": "currency_TalentSphere_12",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_24": {
+        "key": "LibraryTreasure_24",
+        "reward1Id": "currency_Gold_150000",
+        "reward2Id": "currency_Gem_500",
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryTreasure_25": {
+        "key": "LibraryTreasure_25",
+        "reward1Id": "currency_TalentSphere_55",
+        "reward2Id": "currency_Gold_200000",
+        "reward3Id": "currency_Gem_1000",
+        "backgroundPrefabId": "UILibraryBackground_Final_01"
+    },
+    "LibraryAxeThrowers_Day1_Treasure1": {
+        "key": "LibraryAxeThrowers_Day1_Treasure1",
+        "reward1Id": "squad_axeThrowers_1_1",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day1_Treasure2": {
+        "key": "LibraryAxeThrowers_Day1_Treasure2",
+        "reward1Id": "currency_Gold_10000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day1_Treasure3": {
+        "key": "LibraryAxeThrowers_Day1_Treasure3",
+        "reward1Id": "currency_Gem_50",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day1_Treasure4": {
+        "key": "LibraryAxeThrowers_Day1_Treasure4",
+        "reward1Id": "currency_Gold_25000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day2_Treasure1": {
+        "key": "LibraryAxeThrowers_Day2_Treasure1",
+        "reward1Id": "currency_Gold_15000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day2_Treasure2": {
+        "key": "LibraryAxeThrowers_Day2_Treasure2",
+        "reward1Id": "currency_Gem_75",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day2_Treasure3": {
+        "key": "LibraryAxeThrowers_Day2_Treasure3",
+        "reward1Id": "currency_Gold_30000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day3_Treasure1": {
+        "key": "LibraryAxeThrowers_Day3_Treasure1",
+        "reward1Id": "currency_Gold_20000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day3_Treasure2": {
+        "key": "LibraryAxeThrowers_Day3_Treasure2",
+        "reward1Id": "currency_Gem_100",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day3_Treasure3": {
+        "key": "LibraryAxeThrowers_Day3_Treasure3",
+        "reward1Id": "currency_Gold_40000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day4_Treasure1": {
+        "key": "LibraryAxeThrowers_Day4_Treasure1",
+        "reward1Id": "currency_Gold_25000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day4_Treasure2": {
+        "key": "LibraryAxeThrowers_Day4_Treasure2",
+        "reward1Id": "currency_Gem_125",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Day4_Treasure3": {
+        "key": "LibraryAxeThrowers_Day4_Treasure3",
+        "reward1Id": "currency_Gold_50000",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Library_01"
+    },
+    "LibraryAxeThrowers_Final_Treasure": {
+        "key": "LibraryAxeThrowers_Final_Treasure",
+        "reward1Id": "squad_axeThrowers_1_1",
+        "reward2Id": null,
+        "reward3Id": null,
+        "backgroundPrefabId": "UILibraryBackground_Final_01"
+    }
+}

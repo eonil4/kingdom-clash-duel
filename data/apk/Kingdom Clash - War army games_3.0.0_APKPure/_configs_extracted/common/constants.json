@@ -1,0 +1,42 @@
+{
+    "vipTimeScale": 3,
+    "freeSpeedModeScale": 2,
+    "bornBonusId": "bornBonus",
+    "idleChestDurationHours": 6,
+    "idleChestVipDurationHours": 8,
+    "flagTroopLevelId": "infantry_1",
+    "flagVipTroopLevelId": "ironGuards_1",
+    "initialHeroAbilityCooldown": 5,
+    "mergeRewardBattlePass": 5,
+    "minTroopLevelForMergeRewardBattlePass": 4,
+    "defaultLocalizationLanguageId": "en",
+    "cooldownAutoOpenOffersSeconds": 28800,
+    "playerFormationNameMaxLenght": 12,
+    "contentVersion": 14,
+    "arenaLocationPrefabId": "LocationArenaColiseum",
+    "mwMaxChapterAvailable": 2,
+    "isNewCampaignBalance": true,
+    "newCampaignBalanceVersion": 1,
+    "isNewExpeditionsAvailable": true,
+    "flagTroopMaxAttackersCount": 5,
+    "battleGoldLimit": {
+        "campaign": 10980,
+        "arena": 13380,
+        "headHunt": 9780,
+        "library": 4760
+    },
+    "dailyLossLimit": 25,
+    "unitSetBannedFromFuseId": "BannedFromFuse",
+    "requiredArenaRatingArenaBattlepass": 1500,
+    "bossTrialBattleCurrencyId": "Gem",
+    "bossTrialBattleCurrencyAmount": 10,
+    "oneTimeOfferDurationSeconds": 28800,
+    "heroCollectionCompensation": {
+        "currencyId": "Gem",
+        "amount": 100
+    },
+    "arenaLeaderboardBackgroundPrefabId": "arenaLeaderboardBackgroundPrefab",
+    "lossHintId": "loss",
+    "towerLossHintId": "lossTower",
+    "kingPajamasResourceId": "defaultArmorPrefab"
+}

@@ -1,0 +1,82 @@
+{
+    "casinoReflectWeapon_30": {
+        "key": "casinoReflectWeapon_30",
+        "gearId": "reflectWeapon",
+        "count": 30
+    },
+    "casinoReflectWeapon_1": {
+        "key": "casinoReflectWeapon_1",
+        "gearId": "reflectWeapon",
+        "count": 1
+    },
+    "casinoReflectWeapon_2": {
+        "key": "casinoReflectWeapon_2",
+        "gearId": "reflectWeapon",
+        "count": 2
+    },
+    "casinoAoeWeapon_30": {
+        "key": "casinoAoeWeapon_30",
+        "gearId": "aoeWeapon",
+        "count": 30
+    },
+    "casinoAoeWeapon_1": {
+        "key": "casinoAoeWeapon_1",
+        "gearId": "aoeWeapon",
+        "count": 1
+    },
+    "casinoAoeWeapon_2": {
+        "key": "casinoAoeWeapon_2",
+        "gearId": "aoeWeapon",
+        "count": 2
+    },
+    "casinoReflectArmor_30": {
+        "key": "casinoReflectArmor_30",
+        "gearId": "reflectArmor",
+        "count": 30
+    },
+    "casinoReflectArmor_1": {
+        "key": "casinoReflectArmor_1",
+        "gearId": "reflectArmor",
+        "count": 1
+    },
+    "casinoReflectArmor_2": {
+        "key": "casinoReflectArmor_2",
+        "gearId": "reflectArmor",
+        "count": 2
+    },
+    "casinoAoeArmor_30": {
+        "key": "casinoAoeArmor_30",
+        "gearId": "aoeArmor",
+        "count": 30
+    },
+    "casinoAoeArmor_1": {
+        "key": "casinoAoeArmor_1",
+        "gearId": "aoeArmor",
+        "count": 1
+    },
+    "casinoAoeArmor_2": {
+        "key": "casinoAoeArmor_2",
+        "gearId": "aoeArmor",
+        "count": 2
+    },
+    "casinoReflectWeapon": {
+        "key": "casinoReflectWeapon",
+        "gearId": "reflectWeapon",
+        "count": 30
+    },
+    "casinoAoeWeapon": {
+        "key": "casinoAoeWeapon",
+        "gearId": "aoeWeapon",
+        "count": 30
+    },
+    "casinoReflectArmor": {
+        "key": "casinoReflectArmor",
+        "gearId": "reflectArmor",
+        "count": 30
+    },
+    "casinoAoeArmor": {
+        "key": "casinoAoeArmor",
+        "gearId": "aoeArmor",
+        "count": 30
+    }
+}

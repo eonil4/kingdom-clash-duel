@@ -1,0 +1,38 @@
+{
+    "TowerCapture_3_5": {
+        "key": "TowerCapture_3_5",
+        "description": "towerCapture_3_5",
+        "count": 3,
+        "level": 5
+    },
+    "TowerCapture_2_2": {
+        "key": "TowerCapture_2_2",
+        "description": "towerCapture_2_2",
+        "count": 2,
+        "level": 2
+    },
+    "TowerCapture_3_3": {
+        "key": "TowerCapture_3_3",
+        "description": "towerCapture_3_3",
+        "count": 3,
+        "level": 3
+    },
+    "TowerCapture_5_5": {
+        "key": "TowerCapture_5_5",
+        "description": "towerCapture_5_5",
+        "count": 5,
+        "level": 5
+    },
+    "TowerCapture_2_1": {
+        "key": "TowerCapture_2_1",
+        "description": "towerCapture_2_1",
+        "count": 2,
+        "level": 1
+    },
+    "TowerCapture_2_3": {
+        "key": "TowerCapture_2_3",
+        "description": "towerCapture_2_3",
+        "count": 2,
+        "level": 3
+    }
+}

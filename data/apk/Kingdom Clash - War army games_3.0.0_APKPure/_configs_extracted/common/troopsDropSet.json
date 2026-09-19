@@ -1,0 +1,149 @@
+{
+    "infantrySet": {
+        "key": "infantrySet"
+    },
+    "firstTwoSet": {
+        "key": "firstTwoSet"
+    },
+    "commonTroopSet": {
+        "key": "commonTroopSet"
+    },
+    "commonTwoTroopSet": {
+        "key": "commonTwoTroopSet"
+    },
+    "commonThreeTroopSet": {
+        "key": "commonThreeTroopSet"
+    },
+    "commonFourTroopSet": {
+        "key": "commonFourTroopSet"
+    },
+    "rareTroopSet": {
+        "key": "rareTroopSet"
+    },
+    "rareTwoTroopSet": {
+        "key": "rareTwoTroopSet"
+    },
+    "rareThreeTroopSet": {
+        "key": "rareThreeTroopSet"
+    },
+    "rareFourTroopSet": {
+        "key": "rareFourTroopSet"
+    },
+    "epicTroopSet": {
+        "key": "epicTroopSet"
+    },
+    "epicTwoTroopSet": {
+        "key": "epicTwoTroopSet"
+    },
+    "epicThreeTroopSet": {
+        "key": "epicThreeTroopSet"
+    },
+    "epicFourTroopSet": {
+        "key": "epicFourTroopSet"
+    },
+    "legendaryTroopSet": {
+        "key": "legendaryTroopSet"
+    },
+    "legendaryTwoTroopSet": {
+        "key": "legendaryTwoTroopSet"
+    },
+    "archerChest": {
+        "key": "archerChest"
+    },
+    "legendaryThreeTroopSet": {
+        "key": "legendaryThreeTroopSet"
+    },
+    "commonHumanTroopSet": {
+        "key": "commonHumanTroopSet"
+    },
+    "rareHumanTroopSet": {
+        "key": "rareHumanTroopSet"
+    },
+    "epicHumanTroopSet": {
+        "key": "epicHumanTroopSet"
+    },
+    "legendaryHumanTroopSet": {
+        "key": "legendaryHumanTroopSet"
+    },
+    "epicUndeadTroopSet": {
+        "key": "epicUndeadTroopSet"
+    },
+    "rareUndeadTroopSet": {
+        "key": "rareUndeadTroopSet"
+    },
+    "commonUndeadTroopSet": {
+        "key": "commonUndeadTroopSet"
+    },
+    "legendaryUndeadTroopSet": {
+        "key": "legendaryUndeadTroopSet"
+    },
+    "commonMagesTroopSet": {
+        "key": "commonMagesTroopSet"
+    },
+    "rareMagesTroopSet": {
+        "key": "rareMagesTroopSet"
+    },
+    "epicMagesTroopSet": {
+        "key": "epicMagesTroopSet"
+    },
+    "legendaryMagesTroopSet": {
+        "key": "legendaryMagesTroopSet"
+    },
+    "legendaryFourTroopSet": {
+        "key": "legendaryFourTroopSet"
+    },
+    "NighthunterTroopSet": {
+        "key": "NighthunterTroopSet"
+    },
+    "legendaryNoNighthunterTroopSet": {
+        "key": "legendaryNoNighthunterTroopSet"
+    },
+    "StoneGolemTroopSet": {
+        "key": "StoneGolemTroopSet"
+    },
+    "legendaryNoStoneGolemTroopSet": {
+        "key": "legendaryNoStoneGolemTroopSet"
+    },
+    "mountainsChampionTroopSet": {
+        "key": "mountainsChampionTroopSet"
+    },
+    "legendaryNoMountainsChampionTroopSet": {
+        "key": "legendaryNoMountainsChampionTroopSet"
+    },
+    "NecromancerTroopSet": {
+        "key": "NecromancerTroopSet"
+    },
+    "epicNoNecromancerTroopSet": {
+        "key": "epicNoNecromancerTroopSet"
+    },
+    "VulkanGolemTroopSet": {
+        "key": "VulkanGolemTroopSet"
+    },
+    "epicNoVulkanGolemTroopSet": {
+        "key": "epicNoVulkanGolemTroopSet"
+    },
+    "AlchemistTroopSet": {
+        "key": "AlchemistTroopSet"
+    },
+    "epicNoAlchemistTroopSet": {
+        "key": "epicNoAlchemistTroopSet"
+    },
+    "epicSquadClanShopTroopSet": {
+        "key": "epicSquadClanShopTroopSet"
+    },
+    "legSquadClanShopTroopSet": {
+        "key": "legSquadClanShopTroopSet"
+    },
+    "PhoenixTroopSet": {
+        "key": "PhoenixTroopSet"
+    },
+    "legendaryNoPhoenixTroopSet": {
+        "key": "legendaryNoPhoenixTroopSet"
+    },
+    "AxeThrowersTroopSet": {
+        "key": "AxeThrowersTroopSet"
+    },
+    "legendaryNoAxeThrowersTroopSet": {
+        "key": "legendaryNoAxeThrowersTroopSet"
+    }
+}

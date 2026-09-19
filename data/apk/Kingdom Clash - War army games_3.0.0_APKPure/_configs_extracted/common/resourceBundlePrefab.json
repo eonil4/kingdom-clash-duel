@@ -1,0 +1,2102 @@
+{
+    "generalBattle": {
+        "key": "generalBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/General\/GeneralView.prefab",
+        "bundle": "main"
+    },
+    "generalShowcase": {
+        "key": "generalShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/GeneralShowcase.prefab",
+        "bundle": "main"
+    },
+    "darkKnightBattle": {
+        "key": "darkKnightBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DarkKnight\/DarkKnightView.prefab",
+        "bundle": "main"
+    },
+    "darkKnightGacha": {
+        "key": "darkKnightGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/DarkKnight\/HeroDarkKnightGacha.prefab",
+        "bundle": "main"
+    },
+    "darkKnightShowcase": {
+        "key": "darkKnightShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DarkKnightShowcase.prefab",
+        "bundle": "main"
+    },
+    "dragonRiderBattle": {
+        "key": "dragonRiderBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DragonRider\/DragonRiderView.prefab",
+        "bundle": "main"
+    },
+    "dragonRiderGacha": {
+        "key": "dragonRiderGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/DragonRider\/HeroDragonRiderGacha.prefab",
+        "bundle": "main"
+    },
+    "dragonRiderShowcase": {
+        "key": "dragonRiderShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DragonRiderShowcase.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaBattle": {
+        "key": "accurateMeridaBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/AccurateMerida\/AccurateMeridaView.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaGacha": {
+        "key": "accurateMeridaGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/AccurateMerida\/HeroAccurateMeridaGacha.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaShowcase": {
+        "key": "accurateMeridaShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/AccurateMeridaShowcase.prefab",
+        "bundle": "main"
+    },
+    "baronBenuaBattle": {
+        "key": "baronBenuaBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/BaronBenua\/BaronBenuaView.prefab",
+        "bundle": "main"
+    },
+    "baronBenuaGacha": {
+        "key": "baronBenuaGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/BaronBenua\/HeroBaronBenuaGacha.prefab",
+        "bundle": "main"
+    },
+    "baronBenuaShowcase": {
+        "key": "baronBenuaShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/BaronBenuaShowcase.prefab",
+        "bundle": "main"
+    },
+    "swordmasterHeroBattle": {
+        "key": "swordmasterHeroBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/SwordmasterHero\/SwordmasterHeroView.prefab",
+        "bundle": "main"
+    },
+    "swordmasterHeroGacha": {
+        "key": "swordmasterHeroGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/SwordmasterHero\/HeroSwordmasterHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "swordmasterHeroShowcase": {
+        "key": "swordmasterHeroShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/SwordmasterHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "clericHeroBattle": {
+        "key": "clericHeroBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ClericHero\/ClericHeroView.prefab",
+        "bundle": "main"
+    },
+    "clericHeroGacha": {
+        "key": "clericHeroGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/ClericHero\/HeroClericHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "clericHeroShowcase": {
+        "key": "clericHeroShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/ClericHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "generalGacha": {
+        "key": "generalGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/General\/HeroGeneralGacha.prefab",
+        "bundle": "main"
+    },
+    "generalBattleLogicPrefab": {
+        "key": "generalBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/General.prefab",
+        "bundle": "main"
+    },
+    "darkKnightBattleLogicPrefab": {
+        "key": "darkKnightBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/DarkKnight.prefab",
+        "bundle": "main"
+    },
+    "dragonRiderBattleLogicPrefab": {
+        "key": "dragonRiderBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/DragonRider.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaBattleLogicPrefab": {
+        "key": "accurateMeridaBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/AccurateMerida.prefab",
+        "bundle": "main"
+    },
+    "baronBenuaBattleLogicPrefab": {
+        "key": "baronBenuaBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/BaronBenua.prefab",
+        "bundle": "main"
+    },
+    "swordmasterHeroBattleLogicPrefab": {
+        "key": "swordmasterHeroBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/SwordmasterHero.prefab",
+        "bundle": "main"
+    },
+    "clericHeroBattleLogicPrefab": {
+        "key": "clericHeroBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/ClericHero.prefab",
+        "bundle": "main"
+    },
+    "ringleaderHeroBattle": {
+        "key": "ringleaderHeroBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/RingleaderHero\/RingleaderHeroView.prefab",
+        "bundle": "main"
+    },
+    "ringleaderHeroGacha": {
+        "key": "ringleaderHeroGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/RingleaderHero\/HeroRingleaderHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "ringleaderHeroShowcase": {
+        "key": "ringleaderHeroShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/RingleaderHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "ringleaderHeroBattleLogicPrefab": {
+        "key": "ringleaderHeroBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/RingleaderHero.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaBattleGold": {
+        "key": "accurateMeridaBattleGold",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/AccurateMerida\/AccurateMeridaGoldView.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaGachaGold": {
+        "key": "accurateMeridaGachaGold",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/AccurateMerida\/HeroAccurateMeridaGachaGold.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaShowcaseGold": {
+        "key": "accurateMeridaShowcaseGold",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/AccurateMeridaShowcaseGold.prefab",
+        "bundle": "main"
+    },
+    "charmerBattle": {
+        "key": "charmerBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/Charmer\/CharmerView.prefab",
+        "bundle": "main"
+    },
+    "charmerGacha": {
+        "key": "charmerGacha",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/Charmer\/HeroCharmerGacha.prefab",
+        "bundle": "main"
+    },
+    "charmerShowcase": {
+        "key": "charmerShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/CharmerShowcase.prefab",
+        "bundle": "main"
+    },
+    "charmerBattleLogicPrefab": {
+        "key": "charmerBattleLogicPrefab",
+        "path": "Assets\/Prefabs\/GameWorld\/Characters\/Heroes\/Charmer.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaGachaSilver": {
+        "key": "accurateMeridaGachaSilver",
+        "path": "Assets\/Content\/GameWorld\/Characters\/!Heroes\/AccurateMerida\/HeroAccurateMeridaGachaSilver.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaShowcaseSilver": {
+        "key": "accurateMeridaShowcaseSilver",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/AccurateMeridaShowcaseSilver.prefab",
+        "bundle": "main"
+    },
+    "accurateMeridaBattleSilver": {
+        "key": "accurateMeridaBattleSilver",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/AccurateMerida\/AccurateMeridaSilverView.prefab",
+        "bundle": "main"
+    },
+    "sheep": {
+        "key": "sheep",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Sheep\/Sheep.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "infantryPlayerPrefab": {
+        "key": "infantryPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Infantry\/Infantry.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "infantryEnemyPrefab": {
+        "key": "infantryEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Infantry\/Infantry.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "archerPlayerPrefab": {
+        "key": "archerPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Archer\/Archer.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "archerEnemyPrefab": {
+        "key": "archerEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Archer\/Archer.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "assasinPlayerPrefab": {
+        "key": "assasinPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Assassin\/Assassin.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "assasinEnemyPrefab": {
+        "key": "assasinEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Assassin\/Assassin.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "bomberPlayerPrefab": {
+        "key": "bomberPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Bomber\/Bomber.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "bomberEnemyPrefab": {
+        "key": "bomberEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Bomber\/Bomber.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "ironGuardsPlayerPrefab": {
+        "key": "ironGuardsPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/IronGuard\/IronGuard.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "ironGuardsEnemyPrefab": {
+        "key": "ironGuardsEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/IronGuard\/IronGuard.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "butcherPlayerPrefab": {
+        "key": "butcherPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Butcher\/Butcher.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "butcherEnemyPrefab": {
+        "key": "butcherEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Butcher\/Butcher.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "catapultPlayerPrefab": {
+        "key": "catapultPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Catapult\/Catapult.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "catapultEnemyPrefab": {
+        "key": "catapultEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Catapult\/Catapult.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "paladinPlayerPrefab": {
+        "key": "paladinPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Paladin\/Paladin.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "paladinEnemyPrefab": {
+        "key": "paladinEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Paladin\/Paladin.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "hunterPlayerPrefab": {
+        "key": "hunterPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Hunter\/Hunter.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "hunterEnemyPrefab": {
+        "key": "hunterEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Hunter\/Hunter.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "beastPlayerPrefab": {
+        "key": "beastPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Beast\/Beast.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "beastEnemyPrefab": {
+        "key": "beastEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Beast\/Beast.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "undeadMagePlayerPrefab": {
+        "key": "undeadMagePlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadMage\/UndeadMage.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadMageEnemyPrefab": {
+        "key": "undeadMageEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadMage\/UndeadMage.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "alchemistPlayerPrefab": {
+        "key": "alchemistPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Alchemist\/alchemist.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "alchemistEnemyPrefab": {
+        "key": "alchemistEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Alchemist\/alchemist.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "lancerPlayerPrefab": {
+        "key": "lancerPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Lancer\/Lancer.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "lancerEnemyPrefab": {
+        "key": "lancerEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Lancer\/Lancer.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "necromancerPlayerPrefab": {
+        "key": "necromancerPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Necromancer\/Necromancer.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "necromancerEnemyPrefab": {
+        "key": "necromancerEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Necromancer\/Necromancer.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "skeletonPlayerPrefab": {
+        "key": "skeletonPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Skeleton\/Skeleton.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "skeletonEnemyPrefab": {
+        "key": "skeletonEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Skeleton\/Skeleton.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "impPlayerPrefab": {
+        "key": "impPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Imp\/Imp.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "impEnemyPrefab": {
+        "key": "impEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Imp\/Imp.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "mountainsChampionPlayerPrefab": {
+        "key": "mountainsChampionPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MountainsChampion\/MountainsChampion.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "mountainsChampionEnemyPrefab": {
+        "key": "mountainsChampionEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MountainsChampion\/MountainsChampion.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "undeadInfantryPlayerPrefab": {
+        "key": "undeadInfantryPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadInfantry\/UndeadInfantry.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadInfantryEnemyPrefab": {
+        "key": "undeadInfantryEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadInfantry\/UndeadInfantry.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "monkPlayerPrefab": {
+        "key": "monkPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Monk\/Monk.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "monkEnemyPrefab": {
+        "key": "monkEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Monk\/Monk.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "monkGhostPlayerPrefab": {
+        "key": "monkGhostPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MonkGhost\/MonkGhost.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "monkGhostEnemyPrefab": {
+        "key": "monkGhostEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MonkGhost\/MonkGhost.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "shamanPlayerPrefab": {
+        "key": "shamanPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Shaman\/Shaman.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "shamanEnemyPrefab": {
+        "key": "shamanEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Shaman\/Shaman.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "undeadJavelinPlayerPrefab": {
+        "key": "undeadJavelinPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadJavelin\/UndeadJavelin.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadJavelinEnemyPrefab": {
+        "key": "undeadJavelinEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadJavelin\/UndeadJavelin.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "miniBossAccurateMeridaPlayerPrefab": {
+        "key": "miniBossAccurateMeridaPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/AccurateMerida\/MiniBossAccurateMeridaView.prefab",
+        "bundle": "main"
+    },
+    "miniBossAccurateMeridaEnemyPrefab": {
+        "key": "miniBossAccurateMeridaEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/AccurateMerida\/MiniBossAccurateMeridaView.prefab",
+        "bundle": "main"
+    },
+    "miniBossDarkKnightPlayerPrefab": {
+        "key": "miniBossDarkKnightPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/DarkKnight\/MiniBossDarkKnightView.prefab",
+        "bundle": "main"
+    },
+    "miniBossDarkKnightEnemyPrefab": {
+        "key": "miniBossDarkKnightEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/DarkKnight\/MiniBossDarkKnightView.prefab",
+        "bundle": "main"
+    },
+    "miniBossDragonRiderPlayerPrefab": {
+        "key": "miniBossDragonRiderPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/DragonRider\/MiniBossDragonRiderView.prefab",
+        "bundle": "main"
+    },
+    "miniBossDragonRiderEnemyPrefab": {
+        "key": "miniBossDragonRiderEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/DragonRider\/MiniBossDragonRiderView.prefab",
+        "bundle": "main"
+    },
+    "miniBossGeneralPlayerPrefab": {
+        "key": "miniBossGeneralPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/General\/MiniBossGeneralView.prefab",
+        "bundle": "main"
+    },
+    "miniBossGeneralEnemyPrefab": {
+        "key": "miniBossGeneralEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/General\/MiniBossGeneralView.prefab",
+        "bundle": "main"
+    },
+    "miniBossSwordmasterHeroPlayerPrefab": {
+        "key": "miniBossSwordmasterHeroPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/Swordmaster\/MiniBossSwordmasterHeroView.prefab",
+        "bundle": "main"
+    },
+    "miniBossSwordmasterHeroEnemyPrefab": {
+        "key": "miniBossSwordmasterHeroEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!MiniBosses\/Swordmaster\/MiniBossSwordmasterHeroView.prefab",
+        "bundle": "main"
+    },
+    "nunGacha": {
+        "key": "nunGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/Nun\/NunHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "nunBattle": {
+        "key": "nunBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/Nun\/NunHeroView.prefab",
+        "bundle": "main"
+    },
+    "nunShowcase": {
+        "key": "nunShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/NunHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "forestQueenGacha": {
+        "key": "forestQueenGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ForestQueen\/ForestQueenGacha.prefab",
+        "bundle": "main"
+    },
+    "forestQueenBattle": {
+        "key": "forestQueenBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ForestQueen\/ForestQueenView.prefab",
+        "bundle": "main"
+    },
+    "forestQueenShowcase": {
+        "key": "forestQueenShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/ForestQueenShowcase.prefab",
+        "bundle": "main"
+    },
+    "undeadHeadlessPlayerPrefab": {
+        "key": "undeadHeadlessPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/HeadlessUndead\/HeadlessUndead.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadHeadlessEnemyPrefab": {
+        "key": "undeadHeadlessEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/HeadlessUndead\/HeadlessUndead.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "boneDragonBattle": {
+        "key": "boneDragonBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/BoneDragon\/BoneDragonHeroView.prefab",
+        "bundle": "main"
+    },
+    "boneDragonGacha": {
+        "key": "boneDragonGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/BoneDragon\/BoneDragonHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "boneDragonShowcase": {
+        "key": "boneDragonShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/BoneDragonHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "spiderBlastPlayerPrefab": {
+        "key": "spiderBlastPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderBlast\/SpiderBlast.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "spiderBlastEnemyPrefab": {
+        "key": "spiderBlastEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderBlast\/SpiderBlast.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "bossDragonBattlePrefab": {
+        "key": "bossDragonBattlePrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Bosses\/BossDragon\/BossDragonBattle.prefab",
+        "bundle": "main"
+    },
+    "bossDragonBattleLogicPrefab": {
+        "key": "bossDragonBattleLogicPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Bosses\/BossDragon\/BossDragonBattleLogic.prefab",
+        "bundle": "main"
+    },
+    "golemInfantryPlayerPrefab": {
+        "key": "golemInfantryPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/GolemInfantry\/GolemInfantry.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "golemInfantryEnemyPrefab": {
+        "key": "golemInfantryEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/GolemInfantry\/GolemInfantry.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "undeadWarriorBattle": {
+        "key": "undeadWarriorBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadWarrior\/UndeadWarriorView.prefab",
+        "bundle": "main"
+    },
+    "undeadWarriorGacha": {
+        "key": "undeadWarriorGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadWarrior\/UndeadWarriorGacha.prefab",
+        "bundle": "main"
+    },
+    "undeadWarriorShowcase": {
+        "key": "undeadWarriorShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/UndeadWarriorShowcase.prefab",
+        "bundle": "main"
+    },
+    "undeadGunnerBattle": {
+        "key": "undeadGunnerBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadGunner\/UndeadGunnerView.prefab",
+        "bundle": "main"
+    },
+    "undeadGunnerGacha": {
+        "key": "undeadGunnerGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadGunner\/UndeadGunnerGacha.prefab",
+        "bundle": "main"
+    },
+    "undeadGunnerShowcase": {
+        "key": "undeadGunnerShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/UndeadGunnerShowcase.prefab",
+        "bundle": "main"
+    },
+    "damnCatapultPlayerPrefab": {
+        "key": "damnCatapultPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/DamnCatapult\/DamnCatapult.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "damnCatapultEnemyPrefab": {
+        "key": "damnCatapultEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/DamnCatapult\/DamnCatapult.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "magicArcherPlayerPrefab": {
+        "key": "magicArcherPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MagicArcher\/MagicArcher.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "magicArcherEnemyPrefab": {
+        "key": "magicArcherEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MagicArcher\/MagicArcher.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "darknessMageGacha": {
+        "key": "darknessMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DarknessMage\/HeroDarknessMageGacha.prefab",
+        "bundle": "main"
+    },
+    "darknessMageShowcase": {
+        "key": "darknessMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DarknessMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "darknessMageBattle": {
+        "key": "darknessMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DarknessMage\/DarknessMageView.prefab",
+        "bundle": "main"
+    },
+    "mwIronGuard": {
+        "key": "mwIronGuard",
+        "path": "Assets\/MushroomWars\/Content\/Units\/IronGuard.prefab",
+        "bundle": "main"
+    },
+    "mwInfantry": {
+        "key": "mwInfantry",
+        "path": "Assets\/MushroomWars\/Content\/Units\/Infantry.prefab",
+        "bundle": "main"
+    },
+    "mwLancer": {
+        "key": "mwLancer",
+        "path": "Assets\/MushroomWars\/Content\/Units\/Lancer.prefab",
+        "bundle": "main"
+    },
+    "ArcherTower01": {
+        "key": "ArcherTower01",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Archery\/Archery_01.prefab",
+        "bundle": "main"
+    },
+    "ArcherTower02": {
+        "key": "ArcherTower02",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Archery\/Archery_02.prefab",
+        "bundle": "main"
+    },
+    "ArcherTower03": {
+        "key": "ArcherTower03",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Archery\/Archery_03.prefab",
+        "bundle": "main"
+    },
+    "ArcherTower04": {
+        "key": "ArcherTower04",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Archery\/Archery_04.prefab",
+        "bundle": "main"
+    },
+    "ArcherTower05": {
+        "key": "ArcherTower05",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Archery\/Archery_05.prefab",
+        "bundle": "main"
+    },
+    "Infantry01": {
+        "key": "Infantry01",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Infantry\/Infantry_01.prefab",
+        "bundle": "main"
+    },
+    "Infantry02": {
+        "key": "Infantry02",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Infantry\/Infantry_02.prefab",
+        "bundle": "main"
+    },
+    "Infantry03": {
+        "key": "Infantry03",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Infantry\/Infantry_03.prefab",
+        "bundle": "main"
+    },
+    "Infantry04": {
+        "key": "Infantry04",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Infantry\/Infantry_04.prefab",
+        "bundle": "main"
+    },
+    "Infantry05": {
+        "key": "Infantry05",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Infantry\/Infantry_05.prefab",
+        "bundle": "main"
+    },
+    "HeavyInfantry01": {
+        "key": "HeavyInfantry01",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/HeavyInfantry\/HeavyInfantry_01.prefab",
+        "bundle": "main"
+    },
+    "HeavyInfantry02": {
+        "key": "HeavyInfantry02",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/HeavyInfantry\/HeavyInfantry_02.prefab",
+        "bundle": "main"
+    },
+    "HeavyInfantry03": {
+        "key": "HeavyInfantry03",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/HeavyInfantry\/HeavyInfantry_03.prefab",
+        "bundle": "main"
+    },
+    "HeavyInfantry04": {
+        "key": "HeavyInfantry04",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/HeavyInfantry\/HeavyInfantry_04.prefab",
+        "bundle": "main"
+    },
+    "HeavyInfantry05": {
+        "key": "HeavyInfantry05",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/HeavyInfantry\/HeavyInfantry_05.prefab",
+        "bundle": "main"
+    },
+    "Cavalry01": {
+        "key": "Cavalry01",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Cavalry\/Cavalry_01.prefab",
+        "bundle": "main"
+    },
+    "Cavalry02": {
+        "key": "Cavalry02",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Cavalry\/Cavalry_02.prefab",
+        "bundle": "main"
+    },
+    "Cavalry03": {
+        "key": "Cavalry03",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Cavalry\/Cavalry_03.prefab",
+        "bundle": "main"
+    },
+    "Cavalry04": {
+        "key": "Cavalry04",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Cavalry\/Cavalry_04.prefab",
+        "bundle": "main"
+    },
+    "Cavalry05": {
+        "key": "Cavalry05",
+        "path": "Assets\/MushroomWars\/Content\/Towers\/Cavalry\/Cavalry_05.prefab",
+        "bundle": "main"
+    },
+    "iceMageBattle": {
+        "key": "iceMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/IceMage\/IceMage.prefab",
+        "bundle": "main"
+    },
+    "iceMageGacha": {
+        "key": "iceMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/IceMage\/IceMageGacha.prefab",
+        "bundle": "main"
+    },
+    "iceMageShowcase": {
+        "key": "iceMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/IceMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "tomb": {
+        "key": "tomb",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Tomb\/TombView.prefab",
+        "bundle": "main"
+    },
+    "flyingMonsterPlayerPrefab": {
+        "key": "flyingMonsterPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/FlyingMonster\/FlyingMonster.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "flyingMonsterEnemyPrefab": {
+        "key": "flyingMonsterEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/FlyingMonster\/FlyingMonster.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "stoneGolemPlayerPrefab": {
+        "key": "stoneGolemPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StoneGolem\/StoneGolem.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "stoneGolemEnemyPrefab": {
+        "key": "stoneGolemEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StoneGolem\/StoneGolem.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "miniStoneGolemPlayerPrefab": {
+        "key": "miniStoneGolemPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MiniStoneGolem\/MiniStoneGolem.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "miniStoneGolemEnemyPrefab": {
+        "key": "miniStoneGolemEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MiniStoneGolem\/MiniStoneGolem.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "pyrotechnicianPlayerPrefab": {
+        "key": "pyrotechnicianPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Pyrotechnician\/Pyrotechnician.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "pyrotechnicianEnemyPrefab": {
+        "key": "pyrotechnicianEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Pyrotechnician\/Pyrotechnician.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "stormSpearmanPlayerPrefab": {
+        "key": "stormSpearmanPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StormSpearman\/StormSpearman.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "stormSpearmanEnemyPrefab": {
+        "key": "stormSpearmanEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StormSpearman\/StormSpearman.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "widgetLobbySelectableHero": {
+        "key": "widgetLobbySelectableHero",
+        "path": "Assets\/Content\/UI\/Lobby\/WidgetLobbySelectableHero.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsUIDaily": {
+        "key": "offerTroopsUIDaily",
+        "path": "Assets\/ART\/Gacha\/Booster_Book\/Ui_BoosterBooks\/Ui_Daily_Booster.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsUIRoyal": {
+        "key": "offerTroopsUIRoyal",
+        "path": "Assets\/ART\/Gacha\/Booster_Book\/Ui_BoosterBooks\/Ui_Royal_Booster.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsUIWisdom": {
+        "key": "offerTroopsUIWisdom",
+        "path": "Assets\/ART\/Gacha\/Booster_Book\/Ui_BoosterBooks\/Ui_Wisdom_Booster.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsGachaDaily": {
+        "key": "offerTroopsGachaDaily",
+        "path": "Assets\/Prefabs\/Gacha\/Booster_Book\/Definition_Daily_Booster.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsGachaRoyal": {
+        "key": "offerTroopsGachaRoyal",
+        "path": "Assets\/Prefabs\/Gacha\/Booster_Book\/Definition_Royal_Booster.prefab",
+        "bundle": "main"
+    },
+    "offerTroopsGachaWisdom": {
+        "key": "offerTroopsGachaWisdom",
+        "path": "Assets\/Prefabs\/Gacha\/Booster_Book\/Definition_Wisdom_Booster.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignDefault": {
+        "key": "locationCampaignDefault",
+        "path": "Assets\/Content\/Locations\/LocationCampaignDefault.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_01": {
+        "key": "mwLocation_01_01",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_01.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_02": {
+        "key": "mwLocation_01_02",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_02.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_03": {
+        "key": "mwLocation_01_03",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_03.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_04": {
+        "key": "mwLocation_01_04",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_04.prefab",
+        "bundle": "main"
+    },
+    "airMageBattle": {
+        "key": "airMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/AirMage\/AirMage.prefab",
+        "bundle": "main"
+    },
+    "airMageShowcase": {
+        "key": "airMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/AirMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "airMageGacha": {
+        "key": "airMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/AirMage\/AirMageGacha.prefab",
+        "bundle": "main"
+    },
+    "mushroomWarsChapterMagicIsland": {
+        "key": "mushroomWarsChapterMagicIsland",
+        "path": "Assets\/ART\/ChapterSelection\/Magic_Island.prefab",
+        "bundle": "main"
+    },
+    "mushroomWarsChapterNecroIsland": {
+        "key": "mushroomWarsChapterNecroIsland",
+        "path": "Assets\/ART\/ChapterSelection\/Necro_Island.prefab",
+        "bundle": "main"
+    },
+    "mushroomWarsChapterNormalIsland": {
+        "key": "mushroomWarsChapterNormalIsland",
+        "path": "Assets\/ART\/ChapterSelection\/Normal_Island.prefab",
+        "bundle": "main"
+    },
+    "druidGacha": {
+        "key": "druidGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/Druid\/DruidGacha.prefab",
+        "bundle": "main"
+    },
+    "druidShowcase": {
+        "key": "druidShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DruidShowcase.prefab",
+        "bundle": "main"
+    },
+    "druidBattle": {
+        "key": "druidBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/Druid\/Druid.prefab",
+        "bundle": "main"
+    },
+    "mushroomWarsMapMeadow": {
+        "key": "mushroomWarsMapMeadow",
+        "path": "Assets\/Content\/MushroomWars\/Map\/Map_Meadow.prefab",
+        "bundle": "main"
+    },
+    "locationArenaDefault": {
+        "key": "locationArenaDefault",
+        "path": "Assets\/Content\/Locations\/LocationArenaDefault.prefab",
+        "bundle": "main"
+    },
+    "locationMissionsHardDefault": {
+        "key": "locationMissionsHardDefault",
+        "path": "Assets\/Content\/Locations\/LocationMissionsWinter.prefab",
+        "bundle": "main"
+    },
+    "locationMissionsNormalDefault": {
+        "key": "locationMissionsNormalDefault",
+        "path": "Assets\/Content\/Locations\/LocationMissionsDesert.prefab",
+        "bundle": "main"
+    },
+    "locationBossDragon": {
+        "key": "locationBossDragon",
+        "path": "Assets\/Content\/Locations\/LocationBossDragon.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignDefault": {
+        "key": "lobbyCampaignDefault",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignDefault.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_05": {
+        "key": "mwLocation_01_05",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_05.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_06": {
+        "key": "mwLocation_01_06",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_06.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_07": {
+        "key": "mwLocation_01_07",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_07.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_08": {
+        "key": "mwLocation_01_08",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_08.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_09": {
+        "key": "mwLocation_01_09",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_09.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_10": {
+        "key": "mwLocation_01_10",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_10.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_11": {
+        "key": "mwLocation_01_11",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_11.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_12": {
+        "key": "mwLocation_01_12",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_12.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_13": {
+        "key": "mwLocation_01_13",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_13.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_14": {
+        "key": "mwLocation_01_14",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_14.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_15": {
+        "key": "mwLocation_01_15",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_15.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_16": {
+        "key": "mwLocation_01_16",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_16.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_17": {
+        "key": "mwLocation_01_17",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_17.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_18": {
+        "key": "mwLocation_01_18",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_18.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_19": {
+        "key": "mwLocation_01_19",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_19.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_01_20": {
+        "key": "mwLocation_01_20",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_01_20.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_01": {
+        "key": "mwLocation_02_01",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_01.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_02": {
+        "key": "mwLocation_02_02",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_02.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_03": {
+        "key": "mwLocation_02_03",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_03.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_04": {
+        "key": "mwLocation_02_04",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_04.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_05": {
+        "key": "mwLocation_02_05",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_05.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_06": {
+        "key": "mwLocation_02_06",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_06.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_07": {
+        "key": "mwLocation_02_07",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_07.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_08": {
+        "key": "mwLocation_02_08",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_08.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_09": {
+        "key": "mwLocation_02_09",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_09.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_10": {
+        "key": "mwLocation_02_10",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_10.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_11": {
+        "key": "mwLocation_02_11",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_11.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_12": {
+        "key": "mwLocation_02_12",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_12.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_13": {
+        "key": "mwLocation_02_13",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_13.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_14": {
+        "key": "mwLocation_02_14",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_14.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_15": {
+        "key": "mwLocation_02_15",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_15.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_16": {
+        "key": "mwLocation_02_16",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_16.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_17": {
+        "key": "mwLocation_02_17",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_17.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_18": {
+        "key": "mwLocation_02_18",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_18.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_19": {
+        "key": "mwLocation_02_19",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_19.prefab",
+        "bundle": "main"
+    },
+    "mwLocation_02_20": {
+        "key": "mwLocation_02_20",
+        "path": "Assets\/MushroomWars\/Content\/Locations\/Location_02_20.prefab",
+        "bundle": "main"
+    },
+    "mageStudentPlayerPrefab": {
+        "key": "mageStudentPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MageStudent\/MageStudent.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "mageStudentEnemyPrefab": {
+        "key": "mageStudentEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/MageStudent\/MageStudent.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "vulkanGolemPlayerPrefab": {
+        "key": "vulkanGolemPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/VulkanGolem\/VulkanGolem.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "vulkanGolemEnemyPrefab": {
+        "key": "vulkanGolemEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/VulkanGolem\/VulkanGolem.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignMagicForest": {
+        "key": "lobbyCampaignMagicForest",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignMagicForest.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignMagicForest": {
+        "key": "locationCampaignMagicForest",
+        "path": "Assets\/Content\/Locations\/LocationCampaignMagicForest.prefab",
+        "bundle": "main"
+    },
+    "vulkanGolemPlayerPrefab2": {
+        "key": "vulkanGolemPlayerPrefab2",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/VulkanGolem2\/VulkanGolem2.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "vulkanGolemEnemyPrefab2": {
+        "key": "vulkanGolemEnemyPrefab2",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/VulkanGolem2\/VulkanGolem2.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "locationBossSpiderQueen": {
+        "key": "locationBossSpiderQueen",
+        "path": "Assets\/Content\/Locations\/LocationBossSpiderQueen.prefab",
+        "bundle": "main"
+    },
+    "bossSpiderQueenBattlePrefab": {
+        "key": "bossSpiderQueenBattlePrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Bosses\/SpiderQueen\/SpiderQueenBattle.prefab",
+        "bundle": "main"
+    },
+    "spiderMeleePlayerPrefab": {
+        "key": "spiderMeleePlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderMelee\/SpiderMelee.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "spiderMeleeEnemyPrefab": {
+        "key": "spiderMeleeEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderMelee\/SpiderMelee.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "spiderBangPlayerPrefab": {
+        "key": "spiderBangPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderBang\/SpiderBang.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "spiderBangEnemyPrefab": {
+        "key": "spiderBangEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SpiderBang\/SpiderBang.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignNecropolis": {
+        "key": "lobbyCampaignNecropolis",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignNecropolis.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignNecropolis": {
+        "key": "locationCampaignNecropolis",
+        "path": "Assets\/Content\/Locations\/LocationCampaignNecropolis.prefab",
+        "bundle": "main"
+    },
+    "eliteWarriorPlayerPrefab": {
+        "key": "eliteWarriorPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/EliteWarrior\/EliteWarrior.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "eliteWarriorEnemyPrefab": {
+        "key": "eliteWarriorEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/EliteWarrior\/EliteWarrior.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "gravediggerPlayerPrefab": {
+        "key": "gravediggerPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Gravedigger\/Gravedigger.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "gravediggerEnemyPrefab": {
+        "key": "gravediggerEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Gravedigger\/Gravedigger.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "fireMageGacha": {
+        "key": "fireMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/FireMage\/FireMageGacha.prefab",
+        "bundle": "main"
+    },
+    "fireMageShowcase": {
+        "key": "fireMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/FireMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "fireMageBattle": {
+        "key": "fireMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/FireMage\/FireMage.prefab",
+        "bundle": "main"
+    },
+    "skeletonWarriorPlayerPrefab": {
+        "key": "skeletonWarriorPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SkeletonWarrior\/SkeletonWarrior.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "skeletonWarriorEnemyPrefab": {
+        "key": "skeletonWarriorEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/SkeletonWarrior\/SkeletonWarrior.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "lightningElementalGacha": {
+        "key": "lightningElementalGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/LightningElemental\/LightningElementalGacha.prefab",
+        "bundle": "main"
+    },
+    "lightningElementalShowcase": {
+        "key": "lightningElementalShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/LightningElementalShowcase.prefab",
+        "bundle": "main"
+    },
+    "lightningElementalBattle": {
+        "key": "lightningElementalBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/LightningElemental\/LightningElemental.prefab",
+        "bundle": "main"
+    },
+    "windElementalPlayerPrefab": {
+        "key": "windElementalPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/WindElemental\/WindElemental.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "windElementalEnemyPrefab": {
+        "key": "windElementalEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/WindElemental\/WindElemental.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "waterMageGacha": {
+        "key": "waterMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/WaterMage\/WaterMageGacha.prefab",
+        "bundle": "main"
+    },
+    "waterMageShowcase": {
+        "key": "waterMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/WaterMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "waterMageBattle": {
+        "key": "waterMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/WaterMage\/WaterMage.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Undead": {
+        "key": "HeroLobby_Undead",
+        "path": "Assets\/ART\/Enviro\/HeroLobby_Necropolis\/Baked\/HeroLobby_Necropolis_Baked.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Mage": {
+        "key": "HeroLobby_Mage",
+        "path": "Assets\/ART\/Enviro\/HeroLobby_Mage\/Baked\/HeroLobby_Mage_Baked.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Human": {
+        "key": "HeroLobby_Human",
+        "path": "Assets\/ART\/Enviro\/HeroLobby_Human\/Baked\/HeroLobby_Human_Baked.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Default": {
+        "key": "HeroLobby_Default",
+        "path": "Assets\/ART\/Enviro\/HeroLobby_Default\/HeroLobby_Default.prefab",
+        "bundle": "main"
+    },
+    "undeadPirateGacha": {
+        "key": "undeadPirateGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadPirate\/UndeadPirateGacha.prefab",
+        "bundle": "main"
+    },
+    "undeadPirateShowcase": {
+        "key": "undeadPirateShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/UndeadPirateShowcase.prefab",
+        "bundle": "main"
+    },
+    "undeadPirateBattle": {
+        "key": "undeadPirateBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadPirate\/UndeadPirate.prefab",
+        "bundle": "main"
+    },
+    "sandMageGacha": {
+        "key": "sandMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/SandMage\/SandMageGacha.prefab",
+        "bundle": "main"
+    },
+    "sandMageShowcase": {
+        "key": "sandMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/SandMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "sandMageBattle": {
+        "key": "sandMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/SandMage\/SandMage.prefab",
+        "bundle": "main"
+    },
+    "stunToadPlayerPrefab": {
+        "key": "stunToadPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StunToad\/StunToad.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "stunToadEnemyPrefab": {
+        "key": "stunToadEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/StunToad\/StunToad.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "UILibraryBackground_Battle_01": {
+        "key": "UILibraryBackground_Battle_01",
+        "path": "Assets\/Content\/UI\/LIbraryBackground\/UILibraryBackground_Battle_01.prefab",
+        "bundle": "main"
+    },
+    "UILibraryBackground_EpicBattle_01": {
+        "key": "UILibraryBackground_EpicBattle_01",
+        "path": "Assets\/Content\/UI\/LIbraryBackground\/UILibraryBackground_EpicBattle_01.prefab",
+        "bundle": "main"
+    },
+    "UILibraryBackground_Final_01": {
+        "key": "UILibraryBackground_Final_01",
+        "path": "Assets\/Content\/UI\/LIbraryBackground\/UILibraryBackground_Final_01.prefab",
+        "bundle": "main"
+    },
+    "UILibraryBackground_Library_01": {
+        "key": "UILibraryBackground_Library_01",
+        "path": "Assets\/Content\/UI\/LIbraryBackground\/UILibraryBackground_Library_01.prefab",
+        "bundle": "main"
+    },
+    "debafferOnMauntGacha": {
+        "key": "debafferOnMauntGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DebafferOnMaunt\/DebafferOnMauntGacha.prefab",
+        "bundle": "main"
+    },
+    "debafferOnMauntShowcase": {
+        "key": "debafferOnMauntShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DebafferOnMauntShowcase.prefab",
+        "bundle": "main"
+    },
+    "debafferOnMauntBattle": {
+        "key": "debafferOnMauntBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DebafferOnMaunt\/DebafferOnMaunt.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_ice_fire": {
+        "key": "collection_illustration_ice_fire",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_ice_fire.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_human_generals": {
+        "key": "collection_illustration_human_generals",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_human_generals.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_elemental": {
+        "key": "collection_illustration_elemental",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_elemental.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_skeleton": {
+        "key": "collection_illustration_skeleton",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_skeleton.prefab",
+        "bundle": "main"
+    },
+    "LocationArenaColiseum": {
+        "key": "LocationArenaColiseum",
+        "path": "Assets\/Content\/Locations\/LocationArenaColiseum.prefab",
+        "bundle": "main"
+    },
+    "locationBossKraken": {
+        "key": "locationBossKraken",
+        "path": "Assets\/Content\/Locations\/LocationBossKraken.prefab",
+        "bundle": "main"
+    },
+    "bossKrakenBattlePrefab": {
+        "key": "bossKrakenBattlePrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Bosses\/Kraken\/KrakenBattle.prefab",
+        "bundle": "main"
+    },
+    "phoenixPlayerPrefab": {
+        "key": "phoenixPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Phoenix\/Phoenix.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "phoenixEnemyPrefab": {
+        "key": "phoenixEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/Phoenix\/Phoenix.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "cursedGiantGacha": {
+        "key": "cursedGiantGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/CursedGiant\/CursedGiantGacha.prefab",
+        "bundle": "main"
+    },
+    "cursedGiantShowcase": {
+        "key": "cursedGiantShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/CursedGiantShowcase.prefab",
+        "bundle": "main"
+    },
+    "cursedGiantBattle": {
+        "key": "cursedGiantBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/CursedGiant\/CursedGiant.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignCoast": {
+        "key": "lobbyCampaignCoast",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignCoast.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignCoast": {
+        "key": "locationCampaignCoast",
+        "path": "Assets\/Content\/Locations\/LocationCampaignCoast.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignWheatField": {
+        "key": "lobbyCampaignWheatField",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignWheatField.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignWheatField": {
+        "key": "locationCampaignWheatField",
+        "path": "Assets\/Content\/Locations\/LocationCampaignWheatField.prefab",
+        "bundle": "main"
+    },
+    "locationLibraryFloorDefault": {
+        "key": "locationLibraryFloorDefault",
+        "path": "Assets\/Content\/Locations\/LocationLibraryFloorDefault.prefab",
+        "bundle": "main"
+    },
+    "doubleShieldGacha": {
+        "key": "doubleShieldGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DoubleShield\/DoubleShieldGacha.prefab",
+        "bundle": "main"
+    },
+    "doubleShieldShowcase": {
+        "key": "doubleShieldShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DoubleShieldShowcase.prefab",
+        "bundle": "main"
+    },
+    "doubleShieldBattle": {
+        "key": "doubleShieldBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DoubleShield\/DoubleShield.prefab",
+        "bundle": "main"
+    },
+    "lobbyCampaignTown": {
+        "key": "lobbyCampaignTown",
+        "path": "Assets\/Content\/Lobby\/LobbyCampaignTown.prefab",
+        "bundle": "main"
+    },
+    "locationCampaignTown": {
+        "key": "locationCampaignTown",
+        "path": "Assets\/Content\/Locations\/LocationCampaignTown.prefab",
+        "bundle": "main"
+    },
+    "undeadPestilenceGacha": {
+        "key": "undeadPestilenceGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadPestilence\/UndeadPestilenceGacha.prefab",
+        "bundle": "main"
+    },
+    "undeadPestilenceShowcase": {
+        "key": "undeadPestilenceShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/UndeadPestilenceShowcase.prefab",
+        "bundle": "main"
+    },
+    "undeadPestilenceBattle": {
+        "key": "undeadPestilenceBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/UndeadPestilence\/UndeadPestilence.prefab",
+        "bundle": "main"
+    },
+    "undeadRatPlayerPrefab": {
+        "key": "undeadRatPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadRat\/UndeadRat.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadRatEnemyPrefab": {
+        "key": "undeadRatEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadRat\/UndeadRat.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "lordInquisitorGacha": {
+        "key": "lordInquisitorGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/LordInquisitor\/LordInquisitorGacha.prefab",
+        "bundle": "main"
+    },
+    "lordInquisitorShowcase": {
+        "key": "lordInquisitorShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/LordInquisitorShowcase.prefab",
+        "bundle": "main"
+    },
+    "lordInquisitorBattle": {
+        "key": "lordInquisitorBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/LordInquisitor\/LordInquisitor.prefab",
+        "bundle": "main"
+    },
+    "drunkTankGacha": {
+        "key": "drunkTankGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DrunkTank\/DrunkTankGacha.prefab",
+        "bundle": "main"
+    },
+    "drunkTankShowcase": {
+        "key": "drunkTankShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DrunkTankShowcase.prefab",
+        "bundle": "main"
+    },
+    "drunkTankBattle": {
+        "key": "drunkTankBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DrunkTank\/DrunkTank.prefab",
+        "bundle": "main"
+    },
+    "bardHeroGacha": {
+        "key": "bardHeroGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/BardHero\/BardHeroGacha.prefab",
+        "bundle": "main"
+    },
+    "bardHeroShowcase": {
+        "key": "bardHeroShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/BardHeroShowcase.prefab",
+        "bundle": "main"
+    },
+    "bardHeroBattle": {
+        "key": "bardHeroBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/BardHero\/BardHero.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_tavern": {
+        "key": "collection_illustration_tavern",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_tavern.prefab",
+        "bundle": "main"
+    },
+    "elevateTankGacha": {
+        "key": "elevateTankGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateTank\/ElevateTankGacha.prefab",
+        "bundle": "main"
+    },
+    "elevateTankShowcase": {
+        "key": "elevateTankShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/ElevateTankShowcase.prefab",
+        "bundle": "main"
+    },
+    "elevateTankBattle": {
+        "key": "elevateTankBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateTank\/ElevateTank.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Elevate": {
+        "key": "HeroLobby_Elevate",
+        "path": "Assets\/ART\/Enviro\/HeroLobby\/HeroLobby_Heaven\/Baked\/HeroLobby_Heaven_Baked.prefab",
+        "bundle": "main"
+    },
+    "collection_illustration_holy": {
+        "key": "collection_illustration_holy",
+        "path": "Assets\/Content\/HeroCollectionIllustration\/collection_illustration_warriorsOfLight.prefab",
+        "bundle": "main"
+    },
+    "undeadSkeletonPlayerPrefab": {
+        "key": "undeadSkeletonPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadSkeleton\/UndeadSkeleton.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "undeadSkeletonEnemyPrefab": {
+        "key": "undeadSkeletonEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/UndeadSkeleton\/UndeadSkeleton.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "elevateArcherGacha": {
+        "key": "elevateArcherGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateArcher\/ElevateArcherGacha.prefab",
+        "bundle": "main"
+    },
+    "elevateArcherShowcase": {
+        "key": "elevateArcherShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/ElevateArcherShowcase.prefab",
+        "bundle": "main"
+    },
+    "elevateArcherBattle": {
+        "key": "elevateArcherBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateArcher\/ElevateArcher.prefab",
+        "bundle": "main"
+    },
+    "elevateSupportGacha": {
+        "key": "elevateSupportGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateSupport\/ElevateSupportGacha.prefab",
+        "bundle": "main"
+    },
+    "elevateSupportShowcase": {
+        "key": "elevateSupportShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/ElevateSupportShowcase.prefab",
+        "bundle": "main"
+    },
+    "elevateSupportBattle": {
+        "key": "elevateSupportBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/ElevateSupport\/ElevateSupport.prefab",
+        "bundle": "main"
+    },
+    "demonFatGacha": {
+        "key": "demonFatGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonFat\/DemonFatGacha.prefab",
+        "bundle": "main"
+    },
+    "demonFatShowcase": {
+        "key": "demonFatShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DemonFatShowcase.prefab",
+        "bundle": "main"
+    },
+    "demonFatBattle": {
+        "key": "demonFatBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonFat\/DemonFat.prefab",
+        "bundle": "main"
+    },
+    "elevateCasinoScene": {
+        "key": "elevateCasinoScene",
+        "path": "Assets\/ART\/Enviro\/Casino\/Prefabs\/CasinoSceneElevateShowcase.prefab",
+        "bundle": "main"
+    },
+    "elevateCasinoSceneSquare": {
+        "key": "elevateCasinoSceneSquare",
+        "path": "Assets\/ART\/Enviro\/Casino\/Prefabs\/CasinoSceneElevateShowcaseSquare.prefab",
+        "bundle": "main"
+    },
+    "demonTankBattle": {
+        "key": "demonTankBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonTank\/DemonTank.prefab",
+        "bundle": "main"
+    },
+    "demonTankShowcase": {
+        "key": "demonTankShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DemonTankShowcase.prefab",
+        "bundle": "main"
+    },
+    "demonTankGacha": {
+        "key": "demonTankGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonTank\/DemonTankGacha.prefab",
+        "bundle": "main"
+    },
+    "HeroLobby_Demon": {
+        "key": "HeroLobby_Demon",
+        "path": "Assets\/ART\/Enviro\/HeroLobby\/HeroLobby_Hell\/Prefabs\/HeroLobby_Hell_Prefab.prefab",
+        "bundle": "main"
+    },
+    "demonMageGacha": {
+        "key": "demonMageGacha",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonMage\/DemonMageGacha.prefab",
+        "bundle": "main"
+    },
+    "demonMageShowcase": {
+        "key": "demonMageShowcase",
+        "path": "Assets\/Content\/GameWorld\/Showcase\/DemonMageShowcase.prefab",
+        "bundle": "main"
+    },
+    "demonMageBattle": {
+        "key": "demonMageBattle",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/!Heroes\/DemonMage\/DemonMage.prefab",
+        "bundle": "main"
+    },
+    "axeThrowersPlayerPrefab": {
+        "key": "axeThrowersPlayerPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/AxeThrowers\/AxeThrowers.Baked.Blue.prefab",
+        "bundle": "main"
+    },
+    "axeThrowersEnemyPrefab": {
+        "key": "axeThrowersEnemyPrefab",
+        "path": "Assets\/Content\/GameWorld\/UnitViews\/Troops\/AxeThrowers\/AxeThrowers.Baked.Red.prefab",
+        "bundle": "main"
+    },
+    "demonCasinoScene": {
+        "key": "demonCasinoScene",
+        "path": "Assets\/ART\/Enviro\/Casino\/Prefabs\/CasinoSceneDemonsShowcase.prefab",
+        "bundle": "main"
+    },
+    "demonCasinoSceneSquare": {
+        "key": "demonCasinoSceneSquare",
+        "path": "Assets\/ART\/Enviro\/Casino\/Prefabs\/CasinoSceneDemonsShowcaseSquare.prefab",
+        "bundle": "main"
+    },
+    "elevateCasinoBackground": {
+        "key": "elevateCasinoBackground",
+        "path": "Assets\/ART\/Enviro\/Casino\/UI\/CasinoBackgroundUIElevate.prefab",
+        "bundle": "main"
+    },
+    "demonCasinoBackground": {
+        "key": "demonCasinoBackground",
+        "path": "Assets\/ART\/Enviro\/Casino\/UI\/CasinoBackgroundUIDemons.prefab",
+        "bundle": "main"
+    },
+    "defaultArmorPrefab": {
+        "key": "defaultArmorPrefab",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/defaultArmor.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorPrefab_01": {
+        "key": "aoeArmorPrefab_01",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/aoeArmor_01.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorPrefab_02": {
+        "key": "aoeArmorPrefab_02",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/aoeArmor_02.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorPrefab_03": {
+        "key": "aoeArmorPrefab_03",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/aoeArmor_03.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorPrefab_04": {
+        "key": "aoeArmorPrefab_04",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/aoeArmor_04.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorPrefab_01": {
+        "key": "reflectArmorPrefab_01",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/reflectArmor_01.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorPrefab_02": {
+        "key": "reflectArmorPrefab_02",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/reflectArmor_02.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorPrefab_03": {
+        "key": "reflectArmorPrefab_03",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/reflectArmor_03.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorPrefab_04": {
+        "key": "reflectArmorPrefab_04",
+        "path": "Assets\/Content\/King\/Prefabs\/Armor\/reflectArmor_04.prefab",
+        "bundle": "main"
+    },
+    "aoeWeaponPrefab": {
+        "key": "aoeWeaponPrefab",
+        "path": "Assets\/Content\/King\/Prefabs\/Weapon\/aoeWeapon.prefab",
+        "bundle": "main"
+    },
+    "reflectWeaponPrefab": {
+        "key": "reflectWeaponPrefab",
+        "path": "Assets\/Content\/King\/Prefabs\/Weapon\/reflectWeapon.prefab",
+        "bundle": "main"
+    },
+    "arenaLeaderboardBackgroundPrefab": {
+        "key": "arenaLeaderboardBackgroundPrefab",
+        "path": "Assets\/Content\/King\/KingArenaLobbies\/LeaderboardBackgroundColiseum.prefab",
+        "bundle": "main"
+    },
+    "bossDragonLeaderboardBackgroundPrefab": {
+        "key": "bossDragonLeaderboardBackgroundPrefab",
+        "path": "Assets\/Content\/King\/KingArenaLobbies\/LeaderboardBackgroundBossDragon.prefab",
+        "bundle": "main"
+    },
+    "bossSpiderLeaderboardBackgroundPrefab": {
+        "key": "bossSpiderLeaderboardBackgroundPrefab",
+        "path": "Assets\/Content\/King\/KingArenaLobbies\/LeaderboardBackgroundBossSpider.prefab",
+        "bundle": "main"
+    },
+    "bossKrakenLeaderboardBackgroundPrefab": {
+        "key": "bossKrakenLeaderboardBackgroundPrefab",
+        "path": "Assets\/Content\/King\/KingArenaLobbies\/LeaderboardBackgroundBossKraken.prefab",
+        "bundle": "main"
+    },
+    "kings_container": {
+        "key": "kings_container",
+        "path": "Assets\/Content\/King\/Definition\/KingsContainer.prefab",
+        "bundle": "main"
+    },
+    "king_controller": {
+        "key": "king_controller",
+        "path": "Assets\/Content\/King\/Definition\/KingController3.prefab",
+        "bundle": "main"
+    },
+    "king_controller_only_king_leaderboard": {
+        "key": "king_controller_only_king_leaderboard",
+        "path": "Assets\/Content\/King\/Definition\/KingController3 OnlyKing Leaderboard.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorCasinoScene": {
+        "key": "aoeArmorCasinoScene",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemArmorSpider.prefab",
+        "bundle": "main"
+    },
+    "aoeArmorCasinoSceneSquare": {
+        "key": "aoeArmorCasinoSceneSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemArmorSpiderSquare.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorCasinoScene": {
+        "key": "reflectArmorCasinoScene",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemArmorArena.prefab",
+        "bundle": "main"
+    },
+    "reflectArmorCasinoSceneSquare": {
+        "key": "reflectArmorCasinoSceneSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemArmorArenaSquare.prefab",
+        "bundle": "main"
+    },
+    "aoeWeaponCasinoScene": {
+        "key": "aoeWeaponCasinoScene",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemWeaponSpear.prefab",
+        "bundle": "main"
+    },
+    "aoeWeaponCasinoSceneSquare": {
+        "key": "aoeWeaponCasinoSceneSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemWeaponSpearSquare.prefab",
+        "bundle": "main"
+    },
+    "reflectWeaponCasinoScene": {
+        "key": "reflectWeaponCasinoScene",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemWeaponHammer.prefab",
+        "bundle": "main"
+    },
+    "reflectWeaponCasinoSceneSquare": {
+        "key": "reflectWeaponCasinoSceneSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemWeaponHammerSquare.prefab",
+        "bundle": "main"
+    },
+    "armorCasinoBackground": {
+        "key": "armorCasinoBackground",
+        "path": "Assets\/Content\/King\/Casino\/UI\/CasinoBackgroundUIArmor.prefab",
+        "bundle": "main"
+    },
+    "weaponCasinoBackground": {
+        "key": "weaponCasinoBackground",
+        "path": "Assets\/Content\/King\/Casino\/UI\/CasinoBackgroundUIForge.prefab",
+        "bundle": "main"
+    },
+    "kings_container_clan_clash": {
+        "key": "kings_container_clan_clash",
+        "path": "Assets\/Content\/King\/Definition\/KingsContainerClanClash.prefab",
+        "bundle": "main"
+    },
+    "CasinoShowcaseKingItemSelectableArmor": {
+        "key": "CasinoShowcaseKingItemSelectableArmor",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemSelectableArmor.prefab",
+        "bundle": "main"
+    },
+    "CasinoShowcaseKingItemSelectableArmorSquare": {
+        "key": "CasinoShowcaseKingItemSelectableArmorSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemSelectableArmorSquare.prefab",
+        "bundle": "main"
+    },
+    "CasinoShowcaseKingItemSelectableWeapon": {
+        "key": "CasinoShowcaseKingItemSelectableWeapon",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemSelectableWeapon.prefab",
+        "bundle": "main"
+    },
+    "CasinoShowcaseKingItemSelectableWeaponSquare": {
+        "key": "CasinoShowcaseKingItemSelectableWeaponSquare",
+        "path": "Assets\/Content\/King\/Casino\/Showcase\/CasinoShowcaseKingItemSelectableWeaponSquare.prefab",
+        "bundle": "main"
+    },
+    "kings_container_clan_clash_pvp": {
+        "key": "kings_container_clan_clash_pvp",
+        "path": "Assets\/Content\/King\/Definition\/KingsContainerClanClashPvp.prefab",
+        "bundle": "main"
+    },
+    "kingVariant_Default": {
+        "key": "kingVariant_Default",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male.prefab",
+        "bundle": "main"
+    },
+    "kingVariant_Female": {
+        "key": "kingVariant_Female",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Big_Pattern_01": {
+        "key": "UIClanFlag_Big_Pattern_01",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Big_Pattern_01.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Big_Pattern_02": {
+        "key": "UIClanFlag_Big_Pattern_02",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Big_Pattern_02.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Big_Pattern_03": {
+        "key": "UIClanFlag_Big_Pattern_03",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Big_Pattern_03.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Big_Pattern_04": {
+        "key": "UIClanFlag_Big_Pattern_04",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Big_Pattern_04.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Big_Pattern_05": {
+        "key": "UIClanFlag_Big_Pattern_05",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Big_Pattern_05.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Small_Pattern_01": {
+        "key": "UIClanFlag_Small_Pattern_01",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Small_Pattern_01.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Small_Pattern_02": {
+        "key": "UIClanFlag_Small_Pattern_02",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Small_Pattern_02.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Small_Pattern_03": {
+        "key": "UIClanFlag_Small_Pattern_03",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Small_Pattern_03.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Small_Pattern_04": {
+        "key": "UIClanFlag_Small_Pattern_04",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Small_Pattern_04.prefab",
+        "bundle": "main"
+    },
+    "UIClanFlag_Small_Pattern_05": {
+        "key": "UIClanFlag_Small_Pattern_05",
+        "path": "Assets\/Prefabs\/ClanFlags\/UIClanFlag_Small_Pattern_05.prefab",
+        "bundle": "main"
+    },
+    "king_pose_01": {
+        "key": "king_pose_01",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male Pose1.prefab",
+        "bundle": "main"
+    },
+    "king_pose_02": {
+        "key": "king_pose_02",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male Pose2.prefab",
+        "bundle": "main"
+    },
+    "king_pose_03": {
+        "key": "king_pose_03",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male Pose3.prefab",
+        "bundle": "main"
+    },
+    "king_pose_04": {
+        "key": "king_pose_04",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male Pose4.prefab",
+        "bundle": "main"
+    },
+    "king_pose_05": {
+        "key": "king_pose_05",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/King_MP_Skin Variant Male Pose5.prefab",
+        "bundle": "main"
+    },
+    "queen_pose_01": {
+        "key": "queen_pose_01",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female Pose1.prefab",
+        "bundle": "main"
+    },
+    "queen_pose_02": {
+        "key": "queen_pose_02",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female Pose2.prefab",
+        "bundle": "main"
+    },
+    "queen_pose_03": {
+        "key": "queen_pose_03",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female Pose3.prefab",
+        "bundle": "main"
+    },
+    "queen_pose_04": {
+        "key": "queen_pose_04",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female Pose4.prefab",
+        "bundle": "main"
+    },
+    "queen_pose_05": {
+        "key": "queen_pose_05",
+        "path": "Assets\/Content\/King\/_new\/KingVariants\/Queen_MP_Skin Variant Female Pose5.prefab",
+        "bundle": "main"
+    },
+    "lobbyAxeThrowersTower": {
+        "key": "lobbyAxeThrowersTower",
+        "path": "Assets\/Content\/Lobby\/Tower\/LobbyAxeThrowersTower.prefab",
+        "bundle": "main"
+    },
+    "demoUnitAxeThrowersTower": {
+        "key": "demoUnitAxeThrowersTower",
+        "path": "Assets\/Content\/Lobby\/Tower\/DemoUnitAxeThrowersTower.prefab",
+        "bundle": "main"
+    },
+    "emojiBaronAngryPrefab": {
+        "key": "emojiBaronAngryPrefab",
+        "path": "Assets\/Clans_anims\/Baron\/Baron_angry.prefab",
+        "bundle": "main"
+    },
+    "emojiBaronDiscontentPrefab": {
+        "key": "emojiBaronDiscontentPrefab",
+        "path": "Assets\/Clans_anims\/Baron\/Baron_discontent.prefab",
+        "bundle": "main"
+    },
+    "emojiBaronIdlePrefab": {
+        "key": "emojiBaronIdlePrefab",
+        "path": "Assets\/Clans_anims\/Baron\/Baron_idle.prefab",
+        "bundle": "main"
+    },
+    "emojiBaronSadPrefab": {
+        "key": "emojiBaronSadPrefab",
+        "path": "Assets\/Clans_anims\/Baron\/Baron_sad.prefab",
+        "bundle": "main"
+    },
+    "emojiBaronThimbsPrefab": {
+        "key": "emojiBaronThimbsPrefab",
+        "path": "Assets\/Clans_anims\/Baron\/Baron_thumbs.prefab",
+        "bundle": "main"
+    },
+    "emojiFiremageDeterminationPrefab": {
+        "key": "emojiFiremageDeterminationPrefab",
+        "path": "Assets\/Clans_anims\/Firemage\/Firemage_determination.prefab",
+        "bundle": "main"
+    },
+    "emojiFiremageFacepalmPrefab": {
+        "key": "emojiFiremageFacepalmPrefab",
+        "path": "Assets\/Clans_anims\/Firemage\/Firemage_facepalm.prefab",
+        "bundle": "main"
+    },
+    "emojiFiremageGiftPrefab": {
+        "key": "emojiFiremageGiftPrefab",
+        "path": "Assets\/Clans_anims\/Firemage\/Firemage_gift.prefab",
+        "bundle": "main"
+    },
+    "emojiFiremageRagePrefab": {
+        "key": "emojiFiremageRagePrefab",
+        "path": "Assets\/Clans_anims\/Firemage\/Firemage_rage.prefab",
+        "bundle": "main"
+    },
+    "emojiFiremageVictoryPrefab": {
+        "key": "emojiFiremageVictoryPrefab",
+        "path": "Assets\/Clans_anims\/Firemage\/Firemage_victory.prefab",
+        "bundle": "main"
+    },
+    "emojiForestQueenGoodbyePrefab": {
+        "key": "emojiForestQueenGoodbyePrefab",
+        "path": "Assets\/Clans_anims\/Forest_Qween\/Forest_goodbye.prefab",
+        "bundle": "main"
+    },
+    "emojiForestQueenHappyPrefab": {
+        "key": "emojiForestQueenHappyPrefab",
+        "path": "Assets\/Clans_anims\/Forest_Qween\/Forest_happy.prefab",
+        "bundle": "main"
+    },
+    "emojiForestQueenHelloPrefab": {
+        "key": "emojiForestQueenHelloPrefab",
+        "path": "Assets\/Clans_anims\/Forest_Qween\/Forest_hello.prefab",
+        "bundle": "main"
+    },
+    "emojiForestQueenScaredPrefab": {
+        "key": "emojiForestQueenScaredPrefab",
+        "path": "Assets\/Clans_anims\/Forest_Qween\/Forest_scared.prefab",
+        "bundle": "main"
+    },
+    "emojiForestQueenWistfulPrefab": {
+        "key": "emojiForestQueenWistfulPrefab",
+        "path": "Assets\/Clans_anims\/Forest_Qween\/Forest_wistful.prefab",
+        "bundle": "main"
+    }
+}

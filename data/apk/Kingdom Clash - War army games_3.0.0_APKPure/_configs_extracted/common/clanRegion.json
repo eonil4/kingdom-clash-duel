@@ -1,0 +1,1332 @@
+{
+    "ww": {
+        "key": "ww",
+        "isCountry": false,
+        "contryIsoCode": "WW",
+        "order": 1,
+        "title_Localized": "caption_clans_country_international"
+    },
+    "at": {
+        "key": "at",
+        "isCountry": true,
+        "contryIsoCode": "AT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_austria"
+    },
+    "az": {
+        "key": "az",
+        "isCountry": true,
+        "contryIsoCode": "AZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_azerbaijan"
+    },
+    "al": {
+        "key": "al",
+        "isCountry": true,
+        "contryIsoCode": "AL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_albania"
+    },
+    "ad": {
+        "key": "ad",
+        "isCountry": true,
+        "contryIsoCode": "AD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_andorra"
+    },
+    "am": {
+        "key": "am",
+        "isCountry": true,
+        "contryIsoCode": "AM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_armenia"
+    },
+    "af": {
+        "key": "af",
+        "isCountry": true,
+        "contryIsoCode": "AF",
+        "order": 2,
+        "title_Localized": "caption_clans_country_afghanistan"
+    },
+    "bd": {
+        "key": "bd",
+        "isCountry": true,
+        "contryIsoCode": "BD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bangladesh"
+    },
+    "bh": {
+        "key": "bh",
+        "isCountry": true,
+        "contryIsoCode": "BH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bahrain"
+    },
+    "by": {
+        "key": "by",
+        "isCountry": true,
+        "contryIsoCode": "BY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_belarus"
+    },
+    "be": {
+        "key": "be",
+        "isCountry": true,
+        "contryIsoCode": "BE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_belgium"
+    },
+    "bg": {
+        "key": "bg",
+        "isCountry": true,
+        "contryIsoCode": "BG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bulgaria"
+    },
+    "ba": {
+        "key": "ba",
+        "isCountry": true,
+        "contryIsoCode": "BA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bosnia_and_herzegovina"
+    },
+    "bn": {
+        "key": "bn",
+        "isCountry": true,
+        "contryIsoCode": "BN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_brunei"
+    },
+    "bt": {
+        "key": "bt",
+        "isCountry": true,
+        "contryIsoCode": "BT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_butane"
+    },
+    "va": {
+        "key": "va",
+        "isCountry": true,
+        "contryIsoCode": "VA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_vatican"
+    },
+    "gb": {
+        "key": "gb",
+        "isCountry": true,
+        "contryIsoCode": "GB",
+        "order": 2,
+        "title_Localized": "caption_clans_country_great_britain"
+    },
+    "hu": {
+        "key": "hu",
+        "isCountry": true,
+        "contryIsoCode": "HU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_hungary"
+    },
+    "tl": {
+        "key": "tl",
+        "isCountry": true,
+        "contryIsoCode": "TL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_east_timor"
+    },
+    "vn": {
+        "key": "vn",
+        "isCountry": true,
+        "contryIsoCode": "VN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_vietnam"
+    },
+    "de": {
+        "key": "de",
+        "isCountry": true,
+        "contryIsoCode": "DE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_germany"
+    },
+    "gr": {
+        "key": "gr",
+        "isCountry": true,
+        "contryIsoCode": "GR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_greece"
+    },
+    "ge": {
+        "key": "ge",
+        "isCountry": true,
+        "contryIsoCode": "GE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_georgia"
+    },
+    "dk": {
+        "key": "dk",
+        "isCountry": true,
+        "contryIsoCode": "DK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_denmark"
+    },
+    "il": {
+        "key": "il",
+        "isCountry": true,
+        "contryIsoCode": "IL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_israel"
+    },
+    "in": {
+        "key": "in",
+        "isCountry": true,
+        "contryIsoCode": "IN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_india"
+    },
+    "id": {
+        "key": "id",
+        "isCountry": true,
+        "contryIsoCode": "ID",
+        "order": 2,
+        "title_Localized": "caption_clans_country_indonesia"
+    },
+    "jo": {
+        "key": "jo",
+        "isCountry": true,
+        "contryIsoCode": "JO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_jordan"
+    },
+    "iq": {
+        "key": "iq",
+        "isCountry": true,
+        "contryIsoCode": "IQ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_iraq"
+    },
+    "ir": {
+        "key": "ir",
+        "isCountry": true,
+        "contryIsoCode": "IR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_iran"
+    },
+    "ie": {
+        "key": "ie",
+        "isCountry": true,
+        "contryIsoCode": "IE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ireland"
+    },
+    "is": {
+        "key": "is",
+        "isCountry": true,
+        "contryIsoCode": "IS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_iceland"
+    },
+    "es": {
+        "key": "es",
+        "isCountry": true,
+        "contryIsoCode": "ES",
+        "order": 2,
+        "title_Localized": "caption_clans_country_spain"
+    },
+    "it": {
+        "key": "it",
+        "isCountry": true,
+        "contryIsoCode": "IT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_italy"
+    },
+    "ye": {
+        "key": "ye",
+        "isCountry": true,
+        "contryIsoCode": "YE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_yemen"
+    },
+    "kz": {
+        "key": "kz",
+        "isCountry": true,
+        "contryIsoCode": "KZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_kazakhstan"
+    },
+    "kh": {
+        "key": "kh",
+        "isCountry": true,
+        "contryIsoCode": "KH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cambodia"
+    },
+    "qa": {
+        "key": "qa",
+        "isCountry": true,
+        "contryIsoCode": "QA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_qatar"
+    },
+    "cy": {
+        "key": "cy",
+        "isCountry": true,
+        "contryIsoCode": "CY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cyprus"
+    },
+    "kg": {
+        "key": "kg",
+        "isCountry": true,
+        "contryIsoCode": "KG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_kyrgyzstan"
+    },
+    "cn": {
+        "key": "cn",
+        "isCountry": true,
+        "contryIsoCode": "CN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_china"
+    },
+    "kp": {
+        "key": "kp",
+        "isCountry": true,
+        "contryIsoCode": "KP",
+        "order": 2,
+        "title_Localized": "caption_clans_country_north_korea"
+    },
+    "kw": {
+        "key": "kw",
+        "isCountry": true,
+        "contryIsoCode": "KW",
+        "order": 2,
+        "title_Localized": "caption_clans_country_kuwait"
+    },
+    "la": {
+        "key": "la",
+        "isCountry": true,
+        "contryIsoCode": "LA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_laos"
+    },
+    "lv": {
+        "key": "lv",
+        "isCountry": true,
+        "contryIsoCode": "LV",
+        "order": 2,
+        "title_Localized": "caption_clans_country_latvia"
+    },
+    "lb": {
+        "key": "lb",
+        "isCountry": true,
+        "contryIsoCode": "LB",
+        "order": 2,
+        "title_Localized": "caption_clans_country_lebanon"
+    },
+    "lt": {
+        "key": "lt",
+        "isCountry": true,
+        "contryIsoCode": "LT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_lithuania"
+    },
+    "li": {
+        "key": "li",
+        "isCountry": true,
+        "contryIsoCode": "LI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_liechtenstein"
+    },
+    "lu": {
+        "key": "lu",
+        "isCountry": true,
+        "contryIsoCode": "LU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_luxembourg"
+    },
+    "my": {
+        "key": "my",
+        "isCountry": true,
+        "contryIsoCode": "MY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_malaysia"
+    },
+    "mv": {
+        "key": "mv",
+        "isCountry": true,
+        "contryIsoCode": "MV",
+        "order": 2,
+        "title_Localized": "caption_clans_country_maldives"
+    },
+    "mt": {
+        "key": "mt",
+        "isCountry": true,
+        "contryIsoCode": "MT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_malta"
+    },
+    "md": {
+        "key": "md",
+        "isCountry": true,
+        "contryIsoCode": "MD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_moldova"
+    },
+    "mc": {
+        "key": "mc",
+        "isCountry": true,
+        "contryIsoCode": "MC",
+        "order": 2,
+        "title_Localized": "caption_clans_country_monaco"
+    },
+    "mn": {
+        "key": "mn",
+        "isCountry": true,
+        "contryIsoCode": "MN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mongolia"
+    },
+    "mm": {
+        "key": "mm",
+        "isCountry": true,
+        "contryIsoCode": "MM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_myanmar"
+    },
+    "np": {
+        "key": "np",
+        "isCountry": true,
+        "contryIsoCode": "NP",
+        "order": 2,
+        "title_Localized": "caption_clans_country_nepal"
+    },
+    "nl": {
+        "key": "nl",
+        "isCountry": true,
+        "contryIsoCode": "NL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_netherlands"
+    },
+    "no": {
+        "key": "no",
+        "isCountry": true,
+        "contryIsoCode": "NO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_norway"
+    },
+    "om": {
+        "key": "om",
+        "isCountry": true,
+        "contryIsoCode": "OM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_oman"
+    },
+    "ae": {
+        "key": "ae",
+        "isCountry": true,
+        "contryIsoCode": "AE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_uae"
+    },
+    "pk": {
+        "key": "pk",
+        "isCountry": true,
+        "contryIsoCode": "PK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_pakistan"
+    },
+    "pl": {
+        "key": "pl",
+        "isCountry": true,
+        "contryIsoCode": "PL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_poland"
+    },
+    "pt": {
+        "key": "pt",
+        "isCountry": true,
+        "contryIsoCode": "PT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_portugal"
+    },
+    "kr": {
+        "key": "kr",
+        "isCountry": true,
+        "contryIsoCode": "KR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_south_korea"
+    },
+    "mk": {
+        "key": "mk",
+        "isCountry": true,
+        "contryIsoCode": "MK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_north_macedonia"
+    },
+    "ru": {
+        "key": "ru",
+        "isCountry": true,
+        "contryIsoCode": "RU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_russia"
+    },
+    "ro": {
+        "key": "ro",
+        "isCountry": true,
+        "contryIsoCode": "RO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_romania"
+    },
+    "sm": {
+        "key": "sm",
+        "isCountry": true,
+        "contryIsoCode": "SM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_san_marino"
+    },
+    "sa": {
+        "key": "sa",
+        "isCountry": true,
+        "contryIsoCode": "SA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_saudi_arabia"
+    },
+    "rs": {
+        "key": "rs",
+        "isCountry": true,
+        "contryIsoCode": "RS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_serbia"
+    },
+    "sg": {
+        "key": "sg",
+        "isCountry": true,
+        "contryIsoCode": "SG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_singapore"
+    },
+    "sy": {
+        "key": "sy",
+        "isCountry": true,
+        "contryIsoCode": "SY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_syria"
+    },
+    "sk": {
+        "key": "sk",
+        "isCountry": true,
+        "contryIsoCode": "SK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_slovakia"
+    },
+    "si": {
+        "key": "si",
+        "isCountry": true,
+        "contryIsoCode": "SI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_slovenia"
+    },
+    "tj": {
+        "key": "tj",
+        "isCountry": true,
+        "contryIsoCode": "TJ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_tajikistan"
+    },
+    "th": {
+        "key": "th",
+        "isCountry": true,
+        "contryIsoCode": "TH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_thailand"
+    },
+    "tm": {
+        "key": "tm",
+        "isCountry": true,
+        "contryIsoCode": "TM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_turkmenistan"
+    },
+    "tr": {
+        "key": "tr",
+        "isCountry": true,
+        "contryIsoCode": "TR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_turkey"
+    },
+    "uz": {
+        "key": "uz",
+        "isCountry": true,
+        "contryIsoCode": "UZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_uzbekistan"
+    },
+    "ua": {
+        "key": "ua",
+        "isCountry": true,
+        "contryIsoCode": "UA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ukraine"
+    },
+    "ph": {
+        "key": "ph",
+        "isCountry": true,
+        "contryIsoCode": "PH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_philippines"
+    },
+    "fi": {
+        "key": "fi",
+        "isCountry": true,
+        "contryIsoCode": "FI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_finland"
+    },
+    "fr": {
+        "key": "fr",
+        "isCountry": true,
+        "contryIsoCode": "FR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_france"
+    },
+    "hr": {
+        "key": "hr",
+        "isCountry": true,
+        "contryIsoCode": "HR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_croatia"
+    },
+    "me": {
+        "key": "me",
+        "isCountry": true,
+        "contryIsoCode": "ME",
+        "order": 2,
+        "title_Localized": "caption_clans_country_montenegro"
+    },
+    "cz": {
+        "key": "cz",
+        "isCountry": true,
+        "contryIsoCode": "CZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_czech"
+    },
+    "ch": {
+        "key": "ch",
+        "isCountry": true,
+        "contryIsoCode": "CH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_switzerland"
+    },
+    "se": {
+        "key": "se",
+        "isCountry": true,
+        "contryIsoCode": "SE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_sweden"
+    },
+    "lk": {
+        "key": "lk",
+        "isCountry": true,
+        "contryIsoCode": "LK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_sri_lanka"
+    },
+    "ee": {
+        "key": "ee",
+        "isCountry": true,
+        "contryIsoCode": "EE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_estonia"
+    },
+    "jp": {
+        "key": "jp",
+        "isCountry": true,
+        "contryIsoCode": "JP",
+        "order": 2,
+        "title_Localized": "caption_clans_country_japan"
+    },
+    "dz": {
+        "key": "dz",
+        "isCountry": true,
+        "contryIsoCode": "DZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_algeria"
+    },
+    "ao": {
+        "key": "ao",
+        "isCountry": true,
+        "contryIsoCode": "AO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_angola"
+    },
+    "bj": {
+        "key": "bj",
+        "isCountry": true,
+        "contryIsoCode": "BJ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_benin"
+    },
+    "bf": {
+        "key": "bf",
+        "isCountry": true,
+        "contryIsoCode": "BF",
+        "order": 2,
+        "title_Localized": "caption_clans_country_burkina_faso"
+    },
+    "bi": {
+        "key": "bi",
+        "isCountry": true,
+        "contryIsoCode": "BI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_burundi"
+    },
+    "ga": {
+        "key": "ga",
+        "isCountry": true,
+        "contryIsoCode": "GA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_gabon"
+    },
+    "gm": {
+        "key": "gm",
+        "isCountry": true,
+        "contryIsoCode": "GM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_gambia"
+    },
+    "gh": {
+        "key": "gh",
+        "isCountry": true,
+        "contryIsoCode": "GH",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ghana"
+    },
+    "gn": {
+        "key": "gn",
+        "isCountry": true,
+        "contryIsoCode": "GN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_guinea"
+    },
+    "gw": {
+        "key": "gw",
+        "isCountry": true,
+        "contryIsoCode": "GW",
+        "order": 2,
+        "title_Localized": "caption_clans_country_guinea_bissau"
+    },
+    "cd": {
+        "key": "cd",
+        "isCountry": true,
+        "contryIsoCode": "CD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_democratic_republic_congo"
+    },
+    "dj": {
+        "key": "dj",
+        "isCountry": true,
+        "contryIsoCode": "DJ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_djibouti"
+    },
+    "eg": {
+        "key": "eg",
+        "isCountry": true,
+        "contryIsoCode": "EG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_egypt"
+    },
+    "zm": {
+        "key": "zm",
+        "isCountry": true,
+        "contryIsoCode": "ZM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_zambia"
+    },
+    "zw": {
+        "key": "zw",
+        "isCountry": true,
+        "contryIsoCode": "ZW",
+        "order": 2,
+        "title_Localized": "caption_clans_country_zimbabwe"
+    },
+    "cv": {
+        "key": "cv",
+        "isCountry": true,
+        "contryIsoCode": "CV",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cape_verde"
+    },
+    "cm": {
+        "key": "cm",
+        "isCountry": true,
+        "contryIsoCode": "CM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cameroon"
+    },
+    "ke": {
+        "key": "ke",
+        "isCountry": true,
+        "contryIsoCode": "KE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_kenya"
+    },
+    "ci": {
+        "key": "ci",
+        "isCountry": true,
+        "contryIsoCode": "CI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ivory_coast"
+    },
+    "km": {
+        "key": "km",
+        "isCountry": true,
+        "contryIsoCode": "KM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_comoros"
+    },
+    "ls": {
+        "key": "ls",
+        "isCountry": true,
+        "contryIsoCode": "LS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_lesotho"
+    },
+    "ly": {
+        "key": "ly",
+        "isCountry": true,
+        "contryIsoCode": "LY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_libya"
+    },
+    "lr": {
+        "key": "lr",
+        "isCountry": true,
+        "contryIsoCode": "LR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_liberia"
+    },
+    "mu": {
+        "key": "mu",
+        "isCountry": true,
+        "contryIsoCode": "MU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mauritius"
+    },
+    "mr": {
+        "key": "mr",
+        "isCountry": true,
+        "contryIsoCode": "MR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mauritania"
+    },
+    "mg": {
+        "key": "mg",
+        "isCountry": true,
+        "contryIsoCode": "MG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_madagascar"
+    },
+    "mw": {
+        "key": "mw",
+        "isCountry": true,
+        "contryIsoCode": "MW",
+        "order": 2,
+        "title_Localized": "caption_clans_country_malawi"
+    },
+    "ml": {
+        "key": "ml",
+        "isCountry": true,
+        "contryIsoCode": "ML",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mali"
+    },
+    "ma": {
+        "key": "ma",
+        "isCountry": true,
+        "contryIsoCode": "MA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_morocco"
+    },
+    "mz": {
+        "key": "mz",
+        "isCountry": true,
+        "contryIsoCode": "MZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mozambique"
+    },
+    "na": {
+        "key": "na",
+        "isCountry": true,
+        "contryIsoCode": "NA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_namibia"
+    },
+    "ne": {
+        "key": "ne",
+        "isCountry": true,
+        "contryIsoCode": "NE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_niger"
+    },
+    "ng": {
+        "key": "ng",
+        "isCountry": true,
+        "contryIsoCode": "NG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_nigeria"
+    },
+    "cg": {
+        "key": "cg",
+        "isCountry": true,
+        "contryIsoCode": "CG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_republic_congo"
+    },
+    "rw": {
+        "key": "rw",
+        "isCountry": true,
+        "contryIsoCode": "RW",
+        "order": 2,
+        "title_Localized": "caption_clans_country_rwanda"
+    },
+    "st": {
+        "key": "st",
+        "isCountry": true,
+        "contryIsoCode": "ST",
+        "order": 2,
+        "title_Localized": "caption_clans_country_sao_tome_principe"
+    },
+    "sc": {
+        "key": "sc",
+        "isCountry": true,
+        "contryIsoCode": "SC",
+        "order": 2,
+        "title_Localized": "caption_clans_country_seychelles"
+    },
+    "sn": {
+        "key": "sn",
+        "isCountry": true,
+        "contryIsoCode": "SN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_senegal"
+    },
+    "so": {
+        "key": "so",
+        "isCountry": true,
+        "contryIsoCode": "SO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_somalia"
+    },
+    "sd": {
+        "key": "sd",
+        "isCountry": true,
+        "contryIsoCode": "SD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_sudan"
+    },
+    "sl": {
+        "key": "sl",
+        "isCountry": true,
+        "contryIsoCode": "SL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_sierra_leone"
+    },
+    "tz": {
+        "key": "tz",
+        "isCountry": true,
+        "contryIsoCode": "TZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_tanzania"
+    },
+    "tg": {
+        "key": "tg",
+        "isCountry": true,
+        "contryIsoCode": "TG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_togo"
+    },
+    "tn": {
+        "key": "tn",
+        "isCountry": true,
+        "contryIsoCode": "TN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_tunisia"
+    },
+    "ug": {
+        "key": "ug",
+        "isCountry": true,
+        "contryIsoCode": "UG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_uganda"
+    },
+    "cf": {
+        "key": "cf",
+        "isCountry": true,
+        "contryIsoCode": "CF",
+        "order": 2,
+        "title_Localized": "caption_clans_country_car"
+    },
+    "td": {
+        "key": "td",
+        "isCountry": true,
+        "contryIsoCode": "TD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_chad"
+    },
+    "gq": {
+        "key": "gq",
+        "isCountry": true,
+        "contryIsoCode": "GQ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_equatorial_guinea"
+    },
+    "er": {
+        "key": "er",
+        "isCountry": true,
+        "contryIsoCode": "ER",
+        "order": 2,
+        "title_Localized": "caption_clans_country_eritrea"
+    },
+    "sz": {
+        "key": "sz",
+        "isCountry": true,
+        "contryIsoCode": "SZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_eswatini"
+    },
+    "et": {
+        "key": "et",
+        "isCountry": true,
+        "contryIsoCode": "ET",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ethiopia"
+    },
+    "ss": {
+        "key": "ss",
+        "isCountry": true,
+        "contryIsoCode": "SS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_south_sudan"
+    },
+    "za": {
+        "key": "za",
+        "isCountry": true,
+        "contryIsoCode": "ZA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_south_africa"
+    },
+    "ag": {
+        "key": "ag",
+        "isCountry": true,
+        "contryIsoCode": "AG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_antigua_barbuda"
+    },
+    "bs": {
+        "key": "bs",
+        "isCountry": true,
+        "contryIsoCode": "BS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bahamas"
+    },
+    "bb": {
+        "key": "bb",
+        "isCountry": true,
+        "contryIsoCode": "BB",
+        "order": 2,
+        "title_Localized": "caption_clans_country_barbados"
+    },
+    "bz": {
+        "key": "bz",
+        "isCountry": true,
+        "contryIsoCode": "BZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_belize"
+    },
+    "ht": {
+        "key": "ht",
+        "isCountry": true,
+        "contryIsoCode": "HT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_haiti"
+    },
+    "gt": {
+        "key": "gt",
+        "isCountry": true,
+        "contryIsoCode": "GT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_guatemala"
+    },
+    "hn": {
+        "key": "hn",
+        "isCountry": true,
+        "contryIsoCode": "HN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_honduras"
+    },
+    "gd": {
+        "key": "gd",
+        "isCountry": true,
+        "contryIsoCode": "GD",
+        "order": 2,
+        "title_Localized": "caption_clans_country_grenada"
+    },
+    "dm": {
+        "key": "dm",
+        "isCountry": true,
+        "contryIsoCode": "DM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_dominica"
+    },
+    "do": {
+        "key": "do",
+        "isCountry": true,
+        "contryIsoCode": "DO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_dominican_republic"
+    },
+    "ca": {
+        "key": "ca",
+        "isCountry": true,
+        "contryIsoCode": "CA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_canada"
+    },
+    "cr": {
+        "key": "cr",
+        "isCountry": true,
+        "contryIsoCode": "CR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_costa_rica"
+    },
+    "cu": {
+        "key": "cu",
+        "isCountry": true,
+        "contryIsoCode": "CU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cuba"
+    },
+    "mx": {
+        "key": "mx",
+        "isCountry": true,
+        "contryIsoCode": "MX",
+        "order": 2,
+        "title_Localized": "caption_clans_country_mexico"
+    },
+    "ni": {
+        "key": "ni",
+        "isCountry": true,
+        "contryIsoCode": "NI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_nicaragua"
+    },
+    "pa": {
+        "key": "pa",
+        "isCountry": true,
+        "contryIsoCode": "PA",
+        "order": 2,
+        "title_Localized": "caption_clans_country_panama"
+    },
+    "sv": {
+        "key": "sv",
+        "isCountry": true,
+        "contryIsoCode": "SV",
+        "order": 2,
+        "title_Localized": "caption_clans_country_salvador"
+    },
+    "lc": {
+        "key": "lc",
+        "isCountry": true,
+        "contryIsoCode": "LC",
+        "order": 2,
+        "title_Localized": "caption_clans_country_saint_lucia"
+    },
+    "vc": {
+        "key": "vc",
+        "isCountry": true,
+        "contryIsoCode": "VC",
+        "order": 2,
+        "title_Localized": "caption_clans_country_saint_vincent_grenadines"
+    },
+    "kn": {
+        "key": "kn",
+        "isCountry": true,
+        "contryIsoCode": "KN",
+        "order": 2,
+        "title_Localized": "caption_clans_country_saint_kitts_Nevis"
+    },
+    "us": {
+        "key": "us",
+        "isCountry": true,
+        "contryIsoCode": "US",
+        "order": 2,
+        "title_Localized": "caption_clans_country_usa"
+    },
+    "tt": {
+        "key": "tt",
+        "isCountry": true,
+        "contryIsoCode": "TT",
+        "order": 2,
+        "title_Localized": "caption_clans_country_trinidad_tobago"
+    },
+    "jm": {
+        "key": "jm",
+        "isCountry": true,
+        "contryIsoCode": "JM",
+        "order": 2,
+        "title_Localized": "caption_clans_country_jamaica"
+    },
+    "ar": {
+        "key": "ar",
+        "isCountry": true,
+        "contryIsoCode": "AR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_argentina"
+    },
+    "bo": {
+        "key": "bo",
+        "isCountry": true,
+        "contryIsoCode": "BO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_bolivia"
+    },
+    "br": {
+        "key": "br",
+        "isCountry": true,
+        "contryIsoCode": "BR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_brazil"
+    },
+    "ve": {
+        "key": "ve",
+        "isCountry": true,
+        "contryIsoCode": "VE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_venezuela"
+    },
+    "gy": {
+        "key": "gy",
+        "isCountry": true,
+        "contryIsoCode": "GY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_guyana"
+    },
+    "gf": {
+        "key": "gf",
+        "isCountry": true,
+        "contryIsoCode": "GF",
+        "order": 2,
+        "title_Localized": "caption_clans_country_guiana"
+    },
+    "co": {
+        "key": "co",
+        "isCountry": true,
+        "contryIsoCode": "CO",
+        "order": 2,
+        "title_Localized": "caption_clans_country_colombia"
+    },
+    "py": {
+        "key": "py",
+        "isCountry": true,
+        "contryIsoCode": "PY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_paraguay"
+    },
+    "pe": {
+        "key": "pe",
+        "isCountry": true,
+        "contryIsoCode": "PE",
+        "order": 2,
+        "title_Localized": "caption_clans_country_peru"
+    },
+    "sr": {
+        "key": "sr",
+        "isCountry": true,
+        "contryIsoCode": "SR",
+        "order": 2,
+        "title_Localized": "caption_clans_country_suriname"
+    },
+    "uy": {
+        "key": "uy",
+        "isCountry": true,
+        "contryIsoCode": "UY",
+        "order": 2,
+        "title_Localized": "caption_clans_country_uruguay"
+    },
+    "fk": {
+        "key": "fk",
+        "isCountry": true,
+        "contryIsoCode": "FK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_falkland_islands"
+    },
+    "cl": {
+        "key": "cl",
+        "isCountry": true,
+        "contryIsoCode": "CL",
+        "order": 2,
+        "title_Localized": "caption_clans_country_chile"
+    },
+    "ec": {
+        "key": "ec",
+        "isCountry": true,
+        "contryIsoCode": "EC",
+        "order": 2,
+        "title_Localized": "caption_clans_country_ecuador"
+    },
+    "ki": {
+        "key": "ki",
+        "isCountry": true,
+        "contryIsoCode": "KI",
+        "order": 2,
+        "title_Localized": "caption_clans_country_kiribati"
+    },
+    "ck": {
+        "key": "ck",
+        "isCountry": true,
+        "contryIsoCode": "CK",
+        "order": 2,
+        "title_Localized": "caption_clans_country_cook_islands"
+    },
+    "ws": {
+        "key": "ws",
+        "isCountry": true,
+        "contryIsoCode": "WS",
+        "order": 2,
+        "title_Localized": "caption_clans_country_samoa"
+    },
+    "nz": {
+        "key": "nz",
+        "isCountry": true,
+        "contryIsoCode": "NZ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_new_zealand"
+    },
+    "pg": {
+        "key": "pg",
+        "isCountry": true,
+        "contryIsoCode": "PG",
+        "order": 2,
+        "title_Localized": "caption_clans_country_papua_new_guinea"
+    },
+    "sb": {
+        "key": "sb",
+        "isCountry": true,
+        "contryIsoCode": "SB",
+        "order": 2,
+        "title_Localized": "caption_clans_country_solomon_islands"
+    },
+    "fj": {
+        "key": "fj",
+        "isCountry": true,
+        "contryIsoCode": "FJ",
+        "order": 2,
+        "title_Localized": "caption_clans_country_fiji"
+    },
+    "au": {
+        "key": "au",
+        "isCountry": true,
+        "contryIsoCode": "AU",
+        "order": 2,
+        "title_Localized": "caption_clans_country_australia"
+    }
+}

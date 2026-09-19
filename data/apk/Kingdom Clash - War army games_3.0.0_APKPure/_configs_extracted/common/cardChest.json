@@ -1,0 +1,22 @@
+{
+    "cardChest_1": {
+        "key": "cardChest_1",
+        "stars": 1,
+        "resourceId": "cardChest_1"
+    },
+    "cardChest_2": {
+        "key": "cardChest_2",
+        "stars": 2,
+        "resourceId": "cardChest_2"
+    },
+    "cardChest_3": {
+        "key": "cardChest_3",
+        "stars": 3,
+        "resourceId": "cardChest_3"
+    },
+    "cardChest_4": {
+        "key": "cardChest_4",
+        "stars": 4,
+        "resourceId": "cardChest_4"
+    }
+}

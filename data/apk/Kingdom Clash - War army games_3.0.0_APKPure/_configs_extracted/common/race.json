@@ -1,0 +1,29 @@
+{
+    "swordOut_event": {
+        "key": "swordOut_event",
+        "name": "swordOut_race_title",
+        "entranceChestId": "RaceWelcomeChest",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "activities": [
+            "Shop",
+            "CardChest",
+            "CampaignChestHero",
+            "LuckyChest",
+            "ExpeditionChest",
+            "GloryRoad",
+            "BattlePass",
+            "HeadHunt",
+            "ShopArena",
+            "CampaignChestTroops",
+            "ClanChest",
+            "MushroomWars",
+            "RouletteProgress",
+            "RouletteRoll",
+            "AnyRealOffer",
+            "Library",
+            "Race",
+            "BattlePassArena"
+        ],
+        "hintId": "race"
+    }
+}

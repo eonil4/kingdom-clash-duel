@@ -1,0 +1,14 @@
+{
+    "normal": {
+        "key": "normal"
+    },
+    "arena": {
+        "key": "arena"
+    },
+    "casino": {
+        "key": "casino"
+    },
+    "tower": {
+        "key": "tower"
+    }
+}

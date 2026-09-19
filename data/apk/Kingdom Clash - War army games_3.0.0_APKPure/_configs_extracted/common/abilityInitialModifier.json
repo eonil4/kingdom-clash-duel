@@ -1,0 +1,57 @@
+{
+    "evasion_aura_trickster_1": {
+        "key": "evasion_aura_trickster_1",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_1"
+    },
+    "evasion_aura_trickster_2": {
+        "key": "evasion_aura_trickster_2",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_2"
+    },
+    "evasion_aura_trickster_3": {
+        "key": "evasion_aura_trickster_3",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_3"
+    },
+    "evasion_aura_trickster_4": {
+        "key": "evasion_aura_trickster_4",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_4"
+    },
+    "evasion_aura_trickster_5": {
+        "key": "evasion_aura_trickster_5",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_5"
+    },
+    "evasion_aura_trickster_6": {
+        "key": "evasion_aura_trickster_6",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_6"
+    },
+    "evasion_aura_trickster_7": {
+        "key": "evasion_aura_trickster_7",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_7"
+    },
+    "evasion_aura_trickster_8": {
+        "key": "evasion_aura_trickster_8",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_8"
+    },
+    "evasion_aura_trickster_9": {
+        "key": "evasion_aura_trickster_9",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_9"
+    },
+    "evasion_aura_trickster_10": {
+        "key": "evasion_aura_trickster_10",
+        "abilityInfoId": "evasion_aura_trickster",
+        "modifier": "evasion_aura_10"
+    },
+    "reflect_aura_boss_1": {
+        "key": "reflect_aura_boss_1",
+        "abilityInfoId": "reflect_aura_boss",
+        "modifier": "reflect_aura_1"
+    }
+}

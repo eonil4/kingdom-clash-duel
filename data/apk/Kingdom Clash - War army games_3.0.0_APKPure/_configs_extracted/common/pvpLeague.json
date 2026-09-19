@@ -1,0 +1,130 @@
+{
+    "bronze01": {
+        "key": "bronze01",
+        "title_Localized": "league_name_bronze_1",
+        "titleColorId": "league_bronze",
+        "titleRewardLocalized": "league_reward_bronze",
+        "titleRewardColorId": "league_bronze_reward",
+        "resourceId": "league_bronze_ui_01"
+    },
+    "bronze02": {
+        "key": "bronze02",
+        "title_Localized": "league_name_bronze_2",
+        "titleColorId": "league_bronze",
+        "titleRewardLocalized": "league_reward_bronze",
+        "titleRewardColorId": "league_bronze_reward",
+        "resourceId": "league_bronze_ui_02"
+    },
+    "bronze03": {
+        "key": "bronze03",
+        "title_Localized": "league_name_bronze_3",
+        "titleColorId": "league_bronze",
+        "titleRewardLocalized": "league_reward_bronze",
+        "titleRewardColorId": "league_bronze_reward",
+        "resourceId": "league_bronze_ui_03"
+    },
+    "silver01": {
+        "key": "silver01",
+        "title_Localized": "league_name_silver_1",
+        "titleColorId": "league_silver",
+        "titleRewardLocalized": "league_reward_silver",
+        "titleRewardColorId": "league_silver_reward",
+        "resourceId": "league_silver_ui_01"
+    },
+    "silver02": {
+        "key": "silver02",
+        "title_Localized": "league_name_silver_2",
+        "titleColorId": "league_silver",
+        "titleRewardLocalized": "league_reward_silver",
+        "titleRewardColorId": "league_silver_reward",
+        "resourceId": "league_silver_ui_02"
+    },
+    "silver03": {
+        "key": "silver03",
+        "title_Localized": "league_name_silver_3",
+        "titleColorId": "league_silver",
+        "titleRewardLocalized": "league_reward_silver",
+        "titleRewardColorId": "league_silver_reward",
+        "resourceId": "league_silver_ui_03"
+    },
+    "gold01": {
+        "key": "gold01",
+        "title_Localized": "league_name_gold_1",
+        "titleColorId": "league_gold",
+        "titleRewardLocalized": "league_reward_gold",
+        "titleRewardColorId": "league_gold_reward",
+        "resourceId": "league_gold_ui_01"
+    },
+    "gold02": {
+        "key": "gold02",
+        "title_Localized": "league_name_gold_2",
+        "titleColorId": "league_gold",
+        "titleRewardLocalized": "league_reward_gold",
+        "titleRewardColorId": "league_gold_reward",
+        "resourceId": "league_gold_ui_02"
+    },
+    "gold03": {
+        "key": "gold03",
+        "title_Localized": "league_name_gold_3",
+        "titleColorId": "league_gold",
+        "titleRewardLocalized": "league_reward_gold",
+        "titleRewardColorId": "league_gold_reward",
+        "resourceId": "league_gold_ui_03"
+    },
+    "platinum01": {
+        "key": "platinum01",
+        "title_Localized": "league_name_platinum_1",
+        "titleColorId": "league_platinum",
+        "titleRewardLocalized": "league_reward_platinum",
+        "titleRewardColorId": "league_platinum_reward",
+        "resourceId": "league_platinum_ui_01"
+    },
+    "platinum02": {
+        "key": "platinum02",
+        "title_Localized": "league_name_platinum_2",
+        "titleColorId": "league_platinum",
+        "titleRewardLocalized": "league_reward_platinum",
+        "titleRewardColorId": "league_platinum_reward",
+        "resourceId": "league_platinum_ui_02"
+    },
+    "platinum03": {
+        "key": "platinum03",
+        "title_Localized": "league_name_platinum_3",
+        "titleColorId": "league_platinum",
+        "titleRewardLocalized": "league_reward_platinum",
+        "titleRewardColorId": "league_platinum_reward",
+        "resourceId": "league_platinum_ui_03"
+    },
+    "diamond01": {
+        "key": "diamond01",
+        "title_Localized": "league_name_diamond_1",
+        "titleColorId": "league_diamond",
+        "titleRewardLocalized": "league_reward_diamond",
+        "titleRewardColorId": "league_diamond_reward",
+        "resourceId": "league_diamond_ui_01"
+    },
+    "diamond02": {
+        "key": "diamond02",
+        "title_Localized": "league_name_diamond_2",
+        "titleColorId": "league_diamond",
+        "titleRewardLocalized": "league_reward_diamond",
+        "titleRewardColorId": "league_diamond_reward",
+        "resourceId": "league_diamond_ui_02"
+    },
+    "diamond03": {
+        "key": "diamond03",
+        "title_Localized": "league_name_diamond_3",
+        "titleColorId": "league_diamond",
+        "titleRewardLocalized": "league_reward_diamond",
+        "titleRewardColorId": "league_diamond_reward",
+        "resourceId": "league_diamond_ui_03"
+    },
+    "master01": {
+        "key": "master01",
+        "title_Localized": "league_name_master_1",
+        "titleColorId": "league_master",
+        "titleRewardLocalized": "league_reward_master",
+        "titleRewardColorId": "league_master_reward",
+        "resourceId": "league_master_ui_01"
+    }
+}

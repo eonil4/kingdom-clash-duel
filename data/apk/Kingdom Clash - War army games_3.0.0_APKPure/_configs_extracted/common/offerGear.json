@@ -1,0 +1,66 @@
+{
+    "offerGear_1": {
+        "key": "offerGear_1",
+        "title_Localized": "offerGear_1_Name",
+        "gearId": "aoeWeapon",
+        "count": 1,
+        "analyticsCategory": "expedition_gear",
+        "criteriaId": "expeditionUnlimitedShop",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "gearShards",
+        "priceCurrencyAmount": 550,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerGear_2": {
+        "key": "offerGear_2",
+        "title_Localized": "offerGear_2_Name",
+        "gearId": "aoeArmor",
+        "count": 1,
+        "analyticsCategory": "expedition_gear",
+        "criteriaId": "expeditionUnlimitedShop",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "gearShards",
+        "priceCurrencyAmount": 550,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerGear_3": {
+        "key": "offerGear_3",
+        "title_Localized": "offerGear_3_Name",
+        "gearId": "reflectWeapon",
+        "count": 1,
+        "analyticsCategory": "expedition_gear",
+        "criteriaId": "expeditionUnlimitedShop",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "gearShards",
+        "priceCurrencyAmount": 550,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    },
+    "offerGear_4": {
+        "key": "offerGear_4",
+        "title_Localized": "offerGear_4_Name",
+        "gearId": "reflectArmor",
+        "count": 1,
+        "analyticsCategory": "expedition_gear",
+        "criteriaId": "expeditionUnlimitedShop",
+        "onCriteria": {
+            "offerRemoveDueDate": false
+        },
+        "skuId": null,
+        "priceCurrencyId": "gearShards",
+        "priceCurrencyAmount": 550,
+        "purchaseCounterId": null,
+        "isPromoFlag": false
+    }
+}

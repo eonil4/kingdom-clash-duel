@@ -1,0 +1,10 @@
+{
+    "kingMale": {
+        "key": "kingMale",
+        "variant": "Male"
+    },
+    "queenFemale": {
+        "key": "queenFemale",
+        "variant": "Female"
+    }
+}

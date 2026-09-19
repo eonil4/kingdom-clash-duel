@@ -1,0 +1,114 @@
+{
+    "dragonRider": {
+        "key": "dragonRider",
+        "offer1": "lobbyDragonOfferX1",
+        "offer2": "lobbyDragonOfferX12",
+        "icon": "icon_offer_dragon",
+        "prefabIcon": null
+    },
+    "cleric": {
+        "key": "cleric",
+        "offer1": "lobbyClericOfferX1",
+        "offer2": "lobbyClericOfferX12",
+        "icon": "icon_offer_cleric",
+        "prefabIcon": null
+    },
+    "accurateMerida": {
+        "key": "accurateMerida",
+        "offer1": "lobbyAccurateMeridaOfferX1",
+        "offer2": "lobbyAccurateMeridaOfferX12",
+        "icon": "icon_offer_merida",
+        "prefabIcon": null
+    },
+    "boneDragon": {
+        "key": "boneDragon",
+        "offer1": "lobbyBoneDragonOfferX1",
+        "offer2": "lobbyBoneDragonOfferX12",
+        "icon": "icon_offer_boneDragon",
+        "prefabIcon": null
+    },
+    "forestQueen": {
+        "key": "forestQueen",
+        "offer1": "lobbyForestQueenOfferX1",
+        "offer2": "lobbyForestQueenOfferX12",
+        "icon": "icon_offer_forestQueen",
+        "prefabIcon": null
+    },
+    "charmer": {
+        "key": "charmer",
+        "offer1": "lobbyCharmerOfferX1",
+        "offer2": "lobbyCharmerOfferX12",
+        "icon": "icon_offer_charmer",
+        "prefabIcon": null
+    },
+    "airMage": {
+        "key": "airMage",
+        "offer1": "lobbyAirMageOfferX1",
+        "offer2": "lobbyAirMageOfferX12",
+        "icon": "icon_offer_airMage",
+        "prefabIcon": null
+    },
+    "darknessMage": {
+        "key": "darknessMage",
+        "offer1": "lobbyDarknessMageOfferX1",
+        "offer2": "lobbyDarknessMageOfferX12",
+        "icon": "icon_offer_darknessMage",
+        "prefabIcon": null
+    },
+    "iceMage": {
+        "key": "iceMage",
+        "offer1": "lobbyIceMageOfferX1",
+        "offer2": "lobbyIceMageOfferX12",
+        "icon": "icon_offer_iceMage",
+        "prefabIcon": null
+    },
+    "fireMage": {
+        "key": "fireMage",
+        "offer1": "lobbyFireMageOfferX1",
+        "offer2": "lobbyFireMageOfferX12",
+        "icon": "icon_offer_fireMage",
+        "prefabIcon": null
+    },
+    "sandMage": {
+        "key": "sandMage",
+        "offer1": "lobbySandMageOfferX1",
+        "offer2": "lobbySandMageOfferX12",
+        "icon": "icon_offer_sandMage",
+        "prefabIcon": null
+    },
+    "undeadPirate": {
+        "key": "undeadPirate",
+        "offer1": "lobbyUndeadPirateOfferX1",
+        "offer2": "lobbyUndeadPirateOfferX12",
+        "icon": "icon_offer_undeadPirate",
+        "prefabIcon": null
+    },
+    "waterMage": {
+        "key": "waterMage",
+        "offer1": "lobbyWaterMageOfferX1",
+        "offer2": "lobbyWaterMageOfferX12",
+        "icon": "icon_offer_waterMage",
+        "prefabIcon": null
+    },
+    "lordInquisitor": {
+        "key": "lordInquisitor",
+        "offer1": "lobbyLordInquisitorOfferX1",
+        "offer2": "lobbyLordInquisitorOfferX12",
+        "icon": "icon_offer_lordInquisitor",
+        "prefabIcon": null
+    },
+    "undeadPestilence": {
+        "key": "undeadPestilence",
+        "offer1": "lobbyUndeadPestilenceOfferX1",
+        "offer2": "lobbyUndeadPestilenceOfferX12",
+        "icon": "icon_offer_undeadPestilence",
+        "prefabIcon": null
+    },
+    "bardHero": {
+        "key": "bardHero",
+        "offer1": "lobbyBardHeroOfferX1",
+        "offer2": "lobbyBardHeroOfferX12",
+        "icon": "icon_offer_bardHero",
+        "prefabIcon": null
+    }
+}

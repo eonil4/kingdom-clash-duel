@@ -1,0 +1,30 @@
+{
+    "daily": {
+        "key": "daily",
+        "title_Localized": "title_daily_quest_category",
+        "durationDays": 1,
+        "order": 1,
+        "initialQuestNodeId": "daily1"
+    },
+    "special": {
+        "key": "special",
+        "title_Localized": "title_special_quest_category",
+        "durationDays": 4,
+        "order": 2,
+        "initialQuestNodeId": "special1"
+    },
+    "casino": {
+        "key": "casino",
+        "title_Localized": "title_daily_quest_category",
+        "durationDays": 1,
+        "order": 3,
+        "initialQuestNodeId": "casinoQuest"
+    },
+    "tower": {
+        "key": "tower",
+        "title_Localized": "title_daily_quest_category",
+        "durationDays": 1,
+        "order": 1,
+        "initialQuestNodeId": "towerAxeThrowersQuest"
+    }
+}

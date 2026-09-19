@@ -1,0 +1,474 @@
+{
+    "1": {
+        "key": "1",
+        "scheduleId": "dailyGiftReward",
+        "order": 1,
+        "itemId": "offerLegendaryTroopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "2": {
+        "key": "2",
+        "scheduleId": "dailyGiftReward",
+        "order": 2,
+        "itemId": "offerFreeVipScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isVipNotBought"
+    },
+    "3": {
+        "key": "3",
+        "scheduleId": "dailyGiftReward",
+        "order": 3,
+        "itemId": "offerFreeMidasScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isMidasNotBought"
+    },
+    "4": {
+        "key": "4",
+        "scheduleId": "dailyGiftReward",
+        "order": 4,
+        "itemId": "offerFreeHorsrhoeScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isRouletteNoLock"
+    },
+    "5": {
+        "key": "5",
+        "scheduleId": "dailyGiftReward",
+        "order": 5,
+        "itemId": "offerFreeBadgesX2Scheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "6": {
+        "key": "6",
+        "scheduleId": "dailyGiftReward",
+        "order": 6,
+        "itemId": "offerFreeGemScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "7": {
+        "key": "7",
+        "scheduleId": "dailyGiftReward",
+        "order": 7,
+        "itemId": "offerFreeChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "8": {
+        "key": "8",
+        "scheduleId": "dailyGiftReward",
+        "order": 8,
+        "itemId": "offerFreeGoldScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "9": {
+        "key": "9",
+        "scheduleId": "dailyGiftReward",
+        "order": 9,
+        "itemId": "offerFreeVipScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isVipNotBought"
+    },
+    "10": {
+        "key": "10",
+        "scheduleId": "dailyGiftReward",
+        "order": 10,
+        "itemId": "offerFreeMidasScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isMidasNotBought"
+    },
+    "11": {
+        "key": "11",
+        "scheduleId": "dailyGiftReward",
+        "order": 11,
+        "itemId": "offerFreeHorsrhoeScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isRouletteNoLock"
+    },
+    "12": {
+        "key": "12",
+        "scheduleId": "dailyGiftReward",
+        "order": 12,
+        "itemId": "offerFreeBadgesX2Scheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "13": {
+        "key": "13",
+        "scheduleId": "dailyGiftReward",
+        "order": 13,
+        "itemId": "offerFreeGemScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "14": {
+        "key": "14",
+        "scheduleId": "dailyGiftReward",
+        "order": 14,
+        "itemId": "offerFreeChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "15": {
+        "key": "15",
+        "scheduleId": "dailyGiftReward",
+        "order": 15,
+        "itemId": "offerFreeGoldScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "16": {
+        "key": "16",
+        "scheduleId": "dailyGiftReward",
+        "order": 16,
+        "itemId": "offerFreeVipScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isVipNotBought"
+    },
+    "17": {
+        "key": "17",
+        "scheduleId": "dailyGiftReward",
+        "order": 17,
+        "itemId": "offerFreeMidasScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isMidasNotBought"
+    },
+    "18": {
+        "key": "18",
+        "scheduleId": "dailyGiftReward",
+        "order": 18,
+        "itemId": "offerFreeHorsrhoeScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isRouletteNoLock"
+    },
+    "19": {
+        "key": "19",
+        "scheduleId": "dailyGiftReward",
+        "order": 19,
+        "itemId": "offerFreeBadgesX2Scheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "20": {
+        "key": "20",
+        "scheduleId": "dailyGiftReward",
+        "order": 20,
+        "itemId": "offerFreeGemScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "21": {
+        "key": "21",
+        "scheduleId": "dailyGiftReward",
+        "order": 21,
+        "itemId": "offerFreeChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "22": {
+        "key": "22",
+        "scheduleId": "dailyGiftReward",
+        "order": 22,
+        "itemId": "offerFreeGoldScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "23": {
+        "key": "23",
+        "scheduleId": "dailyGiftReward",
+        "order": 23,
+        "itemId": "offerFreeVipScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isVipNotBought"
+    },
+    "24": {
+        "key": "24",
+        "scheduleId": "dailyGiftReward",
+        "order": 24,
+        "itemId": "offerFreeMidasScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isMidasNotBought"
+    },
+    "25": {
+        "key": "25",
+        "scheduleId": "dailyGiftReward",
+        "order": 25,
+        "itemId": "offerFreeHorsrhoeScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "isRouletteNoLock"
+    },
+    "26": {
+        "key": "26",
+        "scheduleId": "dailyGiftReward",
+        "order": 26,
+        "itemId": "offerFreeBadgesX2Scheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "27": {
+        "key": "27",
+        "scheduleId": "dailyGiftReward",
+        "order": 27,
+        "itemId": "offerFreeGemScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "28": {
+        "key": "28",
+        "scheduleId": "dailyGiftReward",
+        "order": 28,
+        "itemId": "offerFreeChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "29": {
+        "key": "29",
+        "scheduleId": "dailyGiftReward",
+        "order": 29,
+        "itemId": "offerFreeGoldScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "30": {
+        "key": "30",
+        "scheduleId": "goldSkin",
+        "order": 1,
+        "itemId": "goldAccurateMeridaScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "goldMerida_IsNotBought"
+    },
+    "31": {
+        "key": "31",
+        "scheduleId": "goldSkin",
+        "order": 2,
+        "itemId": "goldAccurateMeridaScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": "goldMerida_IsNotBought"
+    },
+    "32": {
+        "key": "32",
+        "scheduleId": "pvpTroop",
+        "order": 1,
+        "itemId": "offerPvpTroopChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "33": {
+        "key": "33",
+        "scheduleId": "pvpTroop",
+        "order": 2,
+        "itemId": "offerPvpTroopChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "47": {
+        "key": "47",
+        "scheduleId": "pvpHero",
+        "order": 1,
+        "itemId": "offerPvpHeroChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "48": {
+        "key": "48",
+        "scheduleId": "pvpHero",
+        "order": 2,
+        "itemId": "offerPvpHeroChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "49": {
+        "key": "49",
+        "scheduleId": "pvpChest",
+        "order": 1,
+        "itemId": "offerPvpOfferChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "50": {
+        "key": "50",
+        "scheduleId": "pvpChest",
+        "order": 2,
+        "itemId": "offerPvpOfferChestScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "51": {
+        "key": "51",
+        "scheduleId": "silverSkin",
+        "order": 1,
+        "itemId": "silverAccurateMeridaScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "52": {
+        "key": "52",
+        "scheduleId": "silverSkin",
+        "order": 2,
+        "itemId": "silverAccurateMeridaScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "53": {
+        "key": "53",
+        "scheduleId": "offerDaily",
+        "order": 1,
+        "itemId": "offerDailyScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "54": {
+        "key": "54",
+        "scheduleId": "offerDaily",
+        "order": 2,
+        "itemId": "offerDailyScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "57": {
+        "key": "57",
+        "scheduleId": "offerLobbyTroops",
+        "order": 1,
+        "itemId": "offerLobbyTroopsScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "58": {
+        "key": "58",
+        "scheduleId": "offerLobbyGift",
+        "order": 1,
+        "itemId": "offerLobbyGiftScheduler",
+        "durationInSeconds": 172800,
+        "restrictionId": null
+    },
+    "59": {
+        "key": "59",
+        "scheduleId": "offerClan",
+        "order": 1,
+        "itemId": "offerClanShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "60": {
+        "key": "60",
+        "scheduleId": "offerClan",
+        "order": 2,
+        "itemId": "offerClanShopHeroScheduler_1",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "61": {
+        "key": "61",
+        "scheduleId": "offerClan",
+        "order": 3,
+        "itemId": "offerClanShopHeroScheduler_2",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "62": {
+        "key": "62",
+        "scheduleId": "offerClan",
+        "order": 4,
+        "itemId": "offerClanShopHeroScheduler_3",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "63": {
+        "key": "63",
+        "scheduleId": "offerClan",
+        "order": 5,
+        "itemId": "offerClanShopHeroScheduler_4",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "64": {
+        "key": "64",
+        "scheduleId": "offerClan",
+        "order": 6,
+        "itemId": "offerClanShopHeroScheduler_5",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "65": {
+        "key": "65",
+        "scheduleId": "offerClan",
+        "order": 7,
+        "itemId": "offerClanShopHeroScheduler_6",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "66": {
+        "key": "66",
+        "scheduleId": "offerClan",
+        "order": 8,
+        "itemId": "offerClanShopHeroScheduler_7",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "67": {
+        "key": "67",
+        "scheduleId": "offerGemSale",
+        "order": 1,
+        "itemId": "offerDailyGemsSaleScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "68": {
+        "key": "68",
+        "scheduleId": "offerGoldSale",
+        "order": 1,
+        "itemId": "offerDailyGoldSaleScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "69": {
+        "key": "69",
+        "scheduleId": "offerCasino",
+        "order": 1,
+        "itemId": "offerCasinoShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "70": {
+        "key": "70",
+        "scheduleId": "offerCasinoReflectArmor",
+        "order": 1,
+        "itemId": "offerCasinoReflectArmorShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "71": {
+        "key": "71",
+        "scheduleId": "offerCasinoAoeArmor",
+        "order": 1,
+        "itemId": "offerCasinoAoeArmorShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "72": {
+        "key": "72",
+        "scheduleId": "offerCasinoAoeWeapon",
+        "order": 1,
+        "itemId": "offerCasinoAoeWeaponShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "73": {
+        "key": "73",
+        "scheduleId": "offerCasinoReflectWeapon",
+        "order": 1,
+        "itemId": "offerCasinoReflectWeaponShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    },
+    "74": {
+        "key": "74",
+        "scheduleId": "offerTowerAxeThrowersShop",
+        "order": 1,
+        "itemId": "offerTowerAxeThrowersShopScheduler",
+        "durationInSeconds": 86400,
+        "restrictionId": null
+    }
+}

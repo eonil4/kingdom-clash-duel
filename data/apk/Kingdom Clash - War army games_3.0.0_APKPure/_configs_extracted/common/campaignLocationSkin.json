@@ -1,0 +1,50 @@
+{
+    "location_default": {
+        "key": "location_default",
+        "locationArtId": "location_Meadows",
+        "locationPrefabId": "locationCampaignDefault",
+        "lobbyPrefabId": "lobbyCampaignDefault",
+        "locationName": "caption_location_skin_meadow",
+        "locationUnlockReason": null
+    },
+    "location_MagicForest": {
+        "key": "location_MagicForest",
+        "locationArtId": "location_MagicForest",
+        "locationPrefabId": "locationCampaignMagicForest",
+        "lobbyPrefabId": "lobbyCampaignMagicForest",
+        "locationName": "caption_location_skin_magic_forest",
+        "locationUnlockReason": "caption_reason_location_skin_magic_forest"
+    },
+    "location_Necropolis": {
+        "key": "location_Necropolis",
+        "locationArtId": "location_Necropolis",
+        "locationPrefabId": "locationCampaignNecropolis",
+        "lobbyPrefabId": "lobbyCampaignNecropolis",
+        "locationName": "caption_location_skin_necropolis",
+        "locationUnlockReason": "caption_reason_location_skin_necropolis"
+    },
+    "location_WheatField": {
+        "key": "location_WheatField",
+        "locationArtId": "location_WheatField",
+        "locationPrefabId": "locationCampaignWheatField",
+        "lobbyPrefabId": "lobbyCampaignWheatField",
+        "locationName": "caption_location_skin_wheat_field",
+        "locationUnlockReason": "caption_reason_location_skin_wheat_field"
+    },
+    "location_Coast": {
+        "key": "location_Coast",
+        "locationArtId": "location_Coast",
+        "locationPrefabId": "locationCampaignCoast",
+        "lobbyPrefabId": "lobbyCampaignCoast",
+        "locationName": "caption_location_skin_coast",
+        "locationUnlockReason": "caption_reason_location_skin_coast"
+    },
+    "location_Town": {
+        "key": "location_Town",
+        "locationArtId": "location_Town",
+        "locationPrefabId": "locationCampaignTown",
+        "lobbyPrefabId": "lobbyCampaignTown",
+        "locationName": "caption_location_skin_town",
+        "locationUnlockReason": "caption_reason_location_skin_town"
+    }
+}

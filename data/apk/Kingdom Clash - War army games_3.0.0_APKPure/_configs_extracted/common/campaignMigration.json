@@ -1,0 +1,86 @@
+{
+    "1": {
+        "key": "1",
+        "oldLevelFromIn": 52,
+        "oldLevelToIn": 120,
+        "newLevelFromIn": 51,
+        "newLevelToIn": 51
+    },
+    "2": {
+        "key": "2",
+        "oldLevelFromIn": 121,
+        "oldLevelToIn": 500,
+        "newLevelFromIn": 52,
+        "newLevelToIn": 160
+    },
+    "3": {
+        "key": "3",
+        "oldLevelFromIn": 501,
+        "oldLevelToIn": 1000,
+        "newLevelFromIn": 160,
+        "newLevelToIn": 240
+    },
+    "4": {
+        "key": "4",
+        "oldLevelFromIn": 1001,
+        "oldLevelToIn": 2000,
+        "newLevelFromIn": 240,
+        "newLevelToIn": 320
+    },
+    "5": {
+        "key": "5",
+        "oldLevelFromIn": 2001,
+        "oldLevelToIn": 3000,
+        "newLevelFromIn": 320,
+        "newLevelToIn": 450
+    },
+    "6": {
+        "key": "6",
+        "oldLevelFromIn": 3001,
+        "oldLevelToIn": 4000,
+        "newLevelFromIn": 450,
+        "newLevelToIn": 550
+    },
+    "7": {
+        "key": "7",
+        "oldLevelFromIn": 4001,
+        "oldLevelToIn": 5000,
+        "newLevelFromIn": 550,
+        "newLevelToIn": 650
+    },
+    "8": {
+        "key": "8",
+        "oldLevelFromIn": 5001,
+        "oldLevelToIn": 6000,
+        "newLevelFromIn": 650,
+        "newLevelToIn": 750
+    },
+    "9": {
+        "key": "9",
+        "oldLevelFromIn": 6001,
+        "oldLevelToIn": 7000,
+        "newLevelFromIn": 750,
+        "newLevelToIn": 850
+    },
+    "10": {
+        "key": "10",
+        "oldLevelFromIn": 7001,
+        "oldLevelToIn": 8000,
+        "newLevelFromIn": 850,
+        "newLevelToIn": 970
+    },
+    "11": {
+        "key": "11",
+        "oldLevelFromIn": 8001,
+        "oldLevelToIn": 9000,
+        "newLevelFromIn": 970,
+        "newLevelToIn": 1080
+    },
+    "12": {
+        "key": "12",
+        "oldLevelFromIn": 9001,
+        "oldLevelToIn": 10000,
+        "newLevelFromIn": 1080,
+        "newLevelToIn": 1190
+    }
+}

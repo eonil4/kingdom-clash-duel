@@ -1,0 +1,1192 @@
+{
+    "LibraryBattle_1": {
+        "key": "LibraryBattle_1",
+        "locationId": "library",
+        "formationKey": "libraryLevel1",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_2": {
+        "key": "LibraryBattle_2",
+        "locationId": "library",
+        "formationKey": "libraryLevel2",
+        "battleEffectSetId": "libraryEffectSet_45",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_3": {
+        "key": "LibraryBattle_3",
+        "locationId": "library",
+        "formationKey": "libraryLevel3",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_4": {
+        "key": "LibraryBattle_4",
+        "locationId": "library",
+        "formationKey": "libraryLevel4",
+        "battleEffectSetId": "libraryEffectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_5": {
+        "key": "LibraryBattle_5",
+        "locationId": "library",
+        "formationKey": "libraryLevel5",
+        "battleEffectSetId": "libraryEffectSet_46",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_6": {
+        "key": "LibraryBattle_6",
+        "locationId": "library",
+        "formationKey": "libraryLevel6",
+        "battleEffectSetId": "libraryEffectSet_47",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_7": {
+        "key": "LibraryBattle_7",
+        "locationId": "library",
+        "formationKey": "libraryLevel7",
+        "battleEffectSetId": "libraryEffectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_8": {
+        "key": "LibraryBattle_8",
+        "locationId": "library",
+        "formationKey": "libraryLevel8",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_9": {
+        "key": "LibraryBattle_9",
+        "locationId": "library",
+        "formationKey": "libraryLevel9",
+        "battleEffectSetId": "libraryEffectSet_48",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_10": {
+        "key": "LibraryBattle_10",
+        "locationId": "library",
+        "formationKey": "libraryLevel10",
+        "battleEffectSetId": "libraryEffectSet_78",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_11": {
+        "key": "LibraryBattle_11",
+        "locationId": "library",
+        "formationKey": "libraryLevel11",
+        "battleEffectSetId": "libraryEffectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_12": {
+        "key": "LibraryBattle_12",
+        "locationId": "library",
+        "formationKey": "libraryLevel12",
+        "battleEffectSetId": "libraryEffectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_13": {
+        "key": "LibraryBattle_13",
+        "locationId": "library",
+        "formationKey": "libraryLevel13",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_14": {
+        "key": "LibraryBattle_14",
+        "locationId": "library",
+        "formationKey": "libraryLevel14",
+        "battleEffectSetId": "libraryEffectSet_45",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_15": {
+        "key": "LibraryBattle_15",
+        "locationId": "library",
+        "formationKey": "libraryLevel15",
+        "battleEffectSetId": "libraryEffectSet_47",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_16": {
+        "key": "LibraryBattle_16",
+        "locationId": "library",
+        "formationKey": "libraryLevel16",
+        "battleEffectSetId": "libraryEffectSet_46",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_17": {
+        "key": "LibraryBattle_17",
+        "locationId": "library",
+        "formationKey": "libraryLevel17",
+        "battleEffectSetId": "libraryEffectSet_79",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_18": {
+        "key": "LibraryBattle_18",
+        "locationId": "library",
+        "formationKey": "libraryLevel18",
+        "battleEffectSetId": "libraryEffectSet_50",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_19": {
+        "key": "LibraryBattle_19",
+        "locationId": "library",
+        "formationKey": "libraryLevel19",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_20": {
+        "key": "LibraryBattle_20",
+        "locationId": "library",
+        "formationKey": "libraryLevel20",
+        "battleEffectSetId": "libraryEffectSet_5",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_21": {
+        "key": "LibraryBattle_21",
+        "locationId": "library",
+        "formationKey": "libraryLevel21",
+        "battleEffectSetId": "libraryEffectSet_51",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_22": {
+        "key": "LibraryBattle_22",
+        "locationId": "library",
+        "formationKey": "libraryLevel22",
+        "battleEffectSetId": "libraryEffectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_23": {
+        "key": "LibraryBattle_23",
+        "locationId": "library",
+        "formationKey": "libraryLevel23",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_24": {
+        "key": "LibraryBattle_24",
+        "locationId": "library",
+        "formationKey": "libraryLevel24",
+        "battleEffectSetId": "libraryEffectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_25": {
+        "key": "LibraryBattle_25",
+        "locationId": "library",
+        "formationKey": "libraryLevel25",
+        "battleEffectSetId": "libraryEffectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_26": {
+        "key": "LibraryBattle_26",
+        "locationId": "library",
+        "formationKey": "libraryLevel26",
+        "battleEffectSetId": "libraryEffectSet_50",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_27": {
+        "key": "LibraryBattle_27",
+        "locationId": "library",
+        "formationKey": "libraryLevel27",
+        "battleEffectSetId": "libraryEffectSet_52",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_28": {
+        "key": "LibraryBattle_28",
+        "locationId": "library",
+        "formationKey": "libraryLevel28",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_29": {
+        "key": "LibraryBattle_29",
+        "locationId": "library",
+        "formationKey": "libraryLevel29",
+        "battleEffectSetId": "libraryEffectSet_45",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_30": {
+        "key": "LibraryBattle_30",
+        "locationId": "library",
+        "formationKey": "libraryLevel30",
+        "battleEffectSetId": "libraryEffectSet_53",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_31": {
+        "key": "LibraryBattle_31",
+        "locationId": "library",
+        "formationKey": "libraryLevel31",
+        "battleEffectSetId": "libraryEffectSet_51",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_32": {
+        "key": "LibraryBattle_32",
+        "locationId": "library",
+        "formationKey": "libraryLevel32",
+        "battleEffectSetId": "libraryEffectSet_9",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_33": {
+        "key": "LibraryBattle_33",
+        "locationId": "library",
+        "formationKey": "libraryLevel33",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_34": {
+        "key": "LibraryBattle_34",
+        "locationId": "library",
+        "formationKey": "libraryLevel34",
+        "battleEffectSetId": "libraryEffectSet_7",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_35": {
+        "key": "LibraryBattle_35",
+        "locationId": "library",
+        "formationKey": "libraryLevel35",
+        "battleEffectSetId": "libraryEffectSet_54",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_36": {
+        "key": "LibraryBattle_36",
+        "locationId": "library",
+        "formationKey": "libraryLevel36",
+        "battleEffectSetId": "libraryEffectSet_48",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_37": {
+        "key": "LibraryBattle_37",
+        "locationId": "library",
+        "formationKey": "libraryLevel37",
+        "battleEffectSetId": "libraryEffectSet_79",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_38": {
+        "key": "LibraryBattle_38",
+        "locationId": "library",
+        "formationKey": "libraryLevel38",
+        "battleEffectSetId": "libraryEffectSet_55",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_39": {
+        "key": "LibraryBattle_39",
+        "locationId": "library",
+        "formationKey": "libraryLevel39",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_40": {
+        "key": "LibraryBattle_40",
+        "locationId": "library",
+        "formationKey": "libraryLevel40",
+        "battleEffectSetId": "libraryEffectSet_11",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_41": {
+        "key": "LibraryBattle_41",
+        "locationId": "library",
+        "formationKey": "libraryLevel41",
+        "battleEffectSetId": "libraryEffectSet_48",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_42": {
+        "key": "LibraryBattle_42",
+        "locationId": "library",
+        "formationKey": "libraryLevel42",
+        "battleEffectSetId": "libraryEffectSet_51",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_43": {
+        "key": "LibraryBattle_43",
+        "locationId": "library",
+        "formationKey": "libraryLevel43",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_44": {
+        "key": "LibraryBattle_44",
+        "locationId": "library",
+        "formationKey": "libraryLevel44",
+        "battleEffectSetId": "libraryEffectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_45": {
+        "key": "LibraryBattle_45",
+        "locationId": "library",
+        "formationKey": "libraryLevel45",
+        "battleEffectSetId": "libraryEffectSet_50",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_46": {
+        "key": "LibraryBattle_46",
+        "locationId": "library",
+        "formationKey": "libraryLevel46",
+        "battleEffectSetId": "libraryEffectSet_6",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_47": {
+        "key": "LibraryBattle_47",
+        "locationId": "library",
+        "formationKey": "libraryLevel47",
+        "battleEffectSetId": "libraryEffectSet_56",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_48": {
+        "key": "LibraryBattle_48",
+        "locationId": "library",
+        "formationKey": "libraryLevel48",
+        "battleEffectSetId": "libraryEffectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_49": {
+        "key": "LibraryBattle_49",
+        "locationId": "library",
+        "formationKey": "libraryLevel49",
+        "battleEffectSetId": "libraryEffectSet_48",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_50": {
+        "key": "LibraryBattle_50",
+        "locationId": "library",
+        "formationKey": "libraryLevel50",
+        "battleEffectSetId": "libraryEffectSet_12",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_51": {
+        "key": "LibraryBattle_51",
+        "locationId": "library",
+        "formationKey": "libraryLevel51",
+        "battleEffectSetId": "libraryEffectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_52": {
+        "key": "LibraryBattle_52",
+        "locationId": "library",
+        "formationKey": "libraryLevel52",
+        "battleEffectSetId": "libraryEffectSet_7",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_53": {
+        "key": "LibraryBattle_53",
+        "locationId": "library",
+        "formationKey": "libraryLevel53",
+        "battleEffectSetId": "libraryEffectSet_57",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_54": {
+        "key": "LibraryBattle_54",
+        "locationId": "library",
+        "formationKey": "libraryLevel54",
+        "battleEffectSetId": "libraryEffectSet_48",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_55": {
+        "key": "LibraryBattle_55",
+        "locationId": "library",
+        "formationKey": "libraryLevel55",
+        "battleEffectSetId": "libraryEffectSet_58",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_56": {
+        "key": "LibraryBattle_56",
+        "locationId": "library",
+        "formationKey": "libraryLevel56",
+        "battleEffectSetId": "libraryEffectSet_46",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_57": {
+        "key": "LibraryBattle_57",
+        "locationId": "library",
+        "formationKey": "libraryLevel57",
+        "battleEffectSetId": "libraryEffectSet_13",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_58": {
+        "key": "LibraryBattle_58",
+        "locationId": "library",
+        "formationKey": "libraryLevel58",
+        "battleEffectSetId": "libraryEffectSet_17",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_59": {
+        "key": "LibraryBattle_59",
+        "locationId": "library",
+        "formationKey": "libraryLevel59",
+        "battleEffectSetId": "libraryEffectSet_14",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_60": {
+        "key": "LibraryBattle_60",
+        "locationId": "library",
+        "formationKey": "libraryLevel60",
+        "battleEffectSetId": "libraryEffectSet_82",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_61": {
+        "key": "LibraryBattle_61",
+        "locationId": "library",
+        "formationKey": "libraryLevel61",
+        "battleEffectSetId": "libraryEffectSet_27",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_62": {
+        "key": "LibraryBattle_62",
+        "locationId": "library",
+        "formationKey": "libraryLevel62",
+        "battleEffectSetId": "libraryEffectSet_26",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_63": {
+        "key": "LibraryBattle_63",
+        "locationId": "library",
+        "formationKey": "libraryLevel63",
+        "battleEffectSetId": "libraryEffectSet_19",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_64": {
+        "key": "LibraryBattle_64",
+        "locationId": "library",
+        "formationKey": "libraryLevel64",
+        "battleEffectSetId": "libraryEffectSet_35",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_65": {
+        "key": "LibraryBattle_65",
+        "locationId": "library",
+        "formationKey": "libraryLevel65",
+        "battleEffectSetId": "libraryEffectSet_20",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_66": {
+        "key": "LibraryBattle_66",
+        "locationId": "library",
+        "formationKey": "libraryLevel66",
+        "battleEffectSetId": "libraryEffectSet_27",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_67": {
+        "key": "LibraryBattle_67",
+        "locationId": "library",
+        "formationKey": "libraryLevel67",
+        "battleEffectSetId": "libraryEffectSet_61",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_68": {
+        "key": "LibraryBattle_68",
+        "locationId": "library",
+        "formationKey": "libraryLevel68",
+        "battleEffectSetId": "libraryEffectSet_22",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_69": {
+        "key": "LibraryBattle_69",
+        "locationId": "library",
+        "formationKey": "libraryLevel69",
+        "battleEffectSetId": "libraryEffectSet_17",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_70": {
+        "key": "LibraryBattle_70",
+        "locationId": "library",
+        "formationKey": "libraryLevel70",
+        "battleEffectSetId": "libraryEffectSet_12",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_71": {
+        "key": "LibraryBattle_71",
+        "locationId": "library",
+        "formationKey": "libraryLevel71",
+        "battleEffectSetId": "libraryEffectSet_60",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_72": {
+        "key": "LibraryBattle_72",
+        "locationId": "library",
+        "formationKey": "libraryLevel72",
+        "battleEffectSetId": "libraryEffectSet_41",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_73": {
+        "key": "LibraryBattle_73",
+        "locationId": "library",
+        "formationKey": "libraryLevel73",
+        "battleEffectSetId": "libraryEffectSet_14",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_74": {
+        "key": "LibraryBattle_74",
+        "locationId": "library",
+        "formationKey": "libraryLevel74",
+        "battleEffectSetId": "libraryEffectSet_39",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_75": {
+        "key": "LibraryBattle_75",
+        "locationId": "library",
+        "formationKey": "libraryLevel75",
+        "battleEffectSetId": "libraryEffectSet_62",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_76": {
+        "key": "LibraryBattle_76",
+        "locationId": "library",
+        "formationKey": "libraryLevel76",
+        "battleEffectSetId": "libraryEffectSet_25",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_77": {
+        "key": "LibraryBattle_77",
+        "locationId": "library",
+        "formationKey": "libraryLevel77",
+        "battleEffectSetId": "libraryEffectSet_23",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_78": {
+        "key": "LibraryBattle_78",
+        "locationId": "library",
+        "formationKey": "libraryLevel78",
+        "battleEffectSetId": "libraryEffectSet_22",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_79": {
+        "key": "LibraryBattle_79",
+        "locationId": "library",
+        "formationKey": "libraryLevel79",
+        "battleEffectSetId": "libraryEffectSet_40",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_80": {
+        "key": "LibraryBattle_80",
+        "locationId": "library",
+        "formationKey": "libraryLevel80",
+        "battleEffectSetId": "libraryEffectSet_24",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_81": {
+        "key": "LibraryBattle_81",
+        "locationId": "library",
+        "formationKey": "libraryLevel81",
+        "battleEffectSetId": "libraryEffectSet_41",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_82": {
+        "key": "LibraryBattle_82",
+        "locationId": "library",
+        "formationKey": "libraryLevel82",
+        "battleEffectSetId": "libraryEffectSet_27",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_83": {
+        "key": "LibraryBattle_83",
+        "locationId": "library",
+        "formationKey": "libraryLevel83",
+        "battleEffectSetId": "libraryEffectSet_35",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_84": {
+        "key": "LibraryBattle_84",
+        "locationId": "library",
+        "formationKey": "libraryLevel84",
+        "battleEffectSetId": "libraryEffectSet_20",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_85": {
+        "key": "LibraryBattle_85",
+        "locationId": "library",
+        "formationKey": "libraryLevel85",
+        "battleEffectSetId": "libraryEffectSet_27",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_86": {
+        "key": "LibraryBattle_86",
+        "locationId": "library",
+        "formationKey": "libraryLevel86",
+        "battleEffectSetId": "libraryEffectSet_38",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_87": {
+        "key": "LibraryBattle_87",
+        "locationId": "library",
+        "formationKey": "libraryLevel87",
+        "battleEffectSetId": "libraryEffectSet_64",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_88": {
+        "key": "LibraryBattle_88",
+        "locationId": "library",
+        "formationKey": "libraryLevel88",
+        "battleEffectSetId": "libraryEffectSet_65",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_89": {
+        "key": "LibraryBattle_89",
+        "locationId": "library",
+        "formationKey": "libraryLevel89",
+        "battleEffectSetId": "libraryEffectSet_31",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_90": {
+        "key": "LibraryBattle_90",
+        "locationId": "library",
+        "formationKey": "libraryLevel90",
+        "battleEffectSetId": "libraryEffectSet_18",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_91": {
+        "key": "LibraryBattle_91",
+        "locationId": "library",
+        "formationKey": "libraryLevel91",
+        "battleEffectSetId": "libraryEffectSet_66",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_92": {
+        "key": "LibraryBattle_92",
+        "locationId": "library",
+        "formationKey": "libraryLevel92",
+        "battleEffectSetId": "libraryEffectSet_67",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_93": {
+        "key": "LibraryBattle_93",
+        "locationId": "library",
+        "formationKey": "libraryLevel93",
+        "battleEffectSetId": "libraryEffectSet_68",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_94": {
+        "key": "LibraryBattle_94",
+        "locationId": "library",
+        "formationKey": "libraryLevel94",
+        "battleEffectSetId": "libraryEffectSet_69",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_95": {
+        "key": "LibraryBattle_95",
+        "locationId": "library",
+        "formationKey": "libraryLevel95",
+        "battleEffectSetId": "libraryEffectSet_70",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_96": {
+        "key": "LibraryBattle_96",
+        "locationId": "library",
+        "formationKey": "libraryLevel96",
+        "battleEffectSetId": "libraryEffectSet_71",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_97": {
+        "key": "LibraryBattle_97",
+        "locationId": "library",
+        "formationKey": "libraryLevel97",
+        "battleEffectSetId": "libraryEffectSet_18",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_98": {
+        "key": "LibraryBattle_98",
+        "locationId": "library",
+        "formationKey": "libraryLevel98",
+        "battleEffectSetId": "libraryEffectSet_72",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_99": {
+        "key": "LibraryBattle_99",
+        "locationId": "library",
+        "formationKey": "libraryLevel99",
+        "battleEffectSetId": "libraryEffectSet_73",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_100": {
+        "key": "LibraryBattle_100",
+        "locationId": "library",
+        "formationKey": "libraryLevel100",
+        "battleEffectSetId": "libraryEffectSet_23",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_101": {
+        "key": "LibraryBattle_101",
+        "locationId": "library",
+        "formationKey": "libraryLevel101",
+        "battleEffectSetId": "libraryEffectSet_74",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_102": {
+        "key": "LibraryBattle_102",
+        "locationId": "library",
+        "formationKey": "libraryLevel102",
+        "battleEffectSetId": "libraryEffectSet_92",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_103": {
+        "key": "LibraryBattle_103",
+        "locationId": "library",
+        "formationKey": "libraryLevel103",
+        "battleEffectSetId": "libraryEffectSet_75",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_104": {
+        "key": "LibraryBattle_104",
+        "locationId": "library",
+        "formationKey": "libraryLevel104",
+        "battleEffectSetId": "libraryEffectSet_76",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_105": {
+        "key": "LibraryBattle_105",
+        "locationId": "library",
+        "formationKey": "libraryLevel105",
+        "battleEffectSetId": "libraryEffectSet_93",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_106": {
+        "key": "LibraryBattle_106",
+        "locationId": "library",
+        "formationKey": "libraryLevel106",
+        "battleEffectSetId": "libraryEffectSet_65",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_107": {
+        "key": "LibraryBattle_107",
+        "locationId": "library",
+        "formationKey": "libraryLevel107",
+        "battleEffectSetId": "libraryEffectSet_77",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_108": {
+        "key": "LibraryBattle_108",
+        "locationId": "library",
+        "formationKey": "libraryLevel108",
+        "battleEffectSetId": "libraryEffectSet_22",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_109": {
+        "key": "LibraryBattle_109",
+        "locationId": "library",
+        "formationKey": "libraryLevel109",
+        "battleEffectSetId": "libraryEffectSet_44",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_110": {
+        "key": "LibraryBattle_110",
+        "locationId": "library",
+        "formationKey": "libraryLevel110",
+        "battleEffectSetId": "libraryEffectSet_80",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_111": {
+        "key": "LibraryBattle_111",
+        "locationId": "library",
+        "formationKey": "libraryLevel111",
+        "battleEffectSetId": "libraryEffectSet_40",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_112": {
+        "key": "LibraryBattle_112",
+        "locationId": "library",
+        "formationKey": "libraryLevel112",
+        "battleEffectSetId": "libraryEffectSet_15",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_113": {
+        "key": "LibraryBattle_113",
+        "locationId": "library",
+        "formationKey": "libraryLevel113",
+        "battleEffectSetId": "libraryEffectSet_19",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_114": {
+        "key": "LibraryBattle_114",
+        "locationId": "library",
+        "formationKey": "libraryLevel114",
+        "battleEffectSetId": "libraryEffectSet_20",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_115": {
+        "key": "LibraryBattle_115",
+        "locationId": "library",
+        "formationKey": "libraryLevel115",
+        "battleEffectSetId": "libraryEffectSet_30",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_116": {
+        "key": "LibraryBattle_116",
+        "locationId": "library",
+        "formationKey": "libraryLevel116",
+        "battleEffectSetId": "libraryEffectSet_81",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_117": {
+        "key": "LibraryBattle_117",
+        "locationId": "library",
+        "formationKey": "libraryLevel117",
+        "battleEffectSetId": "libraryEffectSet_82",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_118": {
+        "key": "LibraryBattle_118",
+        "locationId": "library",
+        "formationKey": "libraryLevel118",
+        "battleEffectSetId": "libraryEffectSet_83",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_119": {
+        "key": "LibraryBattle_119",
+        "locationId": "library",
+        "formationKey": "libraryLevel119",
+        "battleEffectSetId": "libraryEffectSet_17",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_120": {
+        "key": "LibraryBattle_120",
+        "locationId": "library",
+        "formationKey": "libraryLevel120",
+        "battleEffectSetId": "libraryEffectSet_23",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_121": {
+        "key": "LibraryBattle_121",
+        "locationId": "library",
+        "formationKey": "libraryLevel121",
+        "battleEffectSetId": "libraryEffectSet_85",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_122": {
+        "key": "LibraryBattle_122",
+        "locationId": "library",
+        "formationKey": "libraryLevel122",
+        "battleEffectSetId": "libraryEffectSet_86",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_123": {
+        "key": "LibraryBattle_123",
+        "locationId": "library",
+        "formationKey": "libraryLevel123",
+        "battleEffectSetId": "libraryEffectSet_22",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_124": {
+        "key": "LibraryBattle_124",
+        "locationId": "library",
+        "formationKey": "libraryLevel124",
+        "battleEffectSetId": "libraryEffectSet_35",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_125": {
+        "key": "LibraryBattle_125",
+        "locationId": "library",
+        "formationKey": "libraryLevel125",
+        "battleEffectSetId": "libraryEffectSet_37",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_126": {
+        "key": "LibraryBattle_126",
+        "locationId": "library",
+        "formationKey": "libraryLevel126",
+        "battleEffectSetId": "libraryEffectSet_87",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_127": {
+        "key": "LibraryBattle_127",
+        "locationId": "library",
+        "formationKey": "libraryLevel127",
+        "battleEffectSetId": "libraryEffectSet_24",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_128": {
+        "key": "LibraryBattle_128",
+        "locationId": "library",
+        "formationKey": "libraryLevel128",
+        "battleEffectSetId": "libraryEffectSet_89",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_129": {
+        "key": "LibraryBattle_129",
+        "locationId": "library",
+        "formationKey": "libraryLevel129",
+        "battleEffectSetId": "libraryEffectSet_43",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_130": {
+        "key": "LibraryBattle_130",
+        "locationId": "library",
+        "formationKey": "libraryLevel130",
+        "battleEffectSetId": "libraryEffectSet_16",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_131": {
+        "key": "LibraryBattle_131",
+        "locationId": "library",
+        "formationKey": "libraryLevel131",
+        "battleEffectSetId": "libraryEffectSet_43",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_132": {
+        "key": "LibraryBattle_132",
+        "locationId": "library",
+        "formationKey": "libraryLevel132",
+        "battleEffectSetId": "libraryEffectSet_39",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_133": {
+        "key": "LibraryBattle_133",
+        "locationId": "library",
+        "formationKey": "libraryLevel133",
+        "battleEffectSetId": "libraryEffectSet_91",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_134": {
+        "key": "LibraryBattle_134",
+        "locationId": "library",
+        "formationKey": "libraryLevel134",
+        "battleEffectSetId": "libraryEffectSet_36",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_135": {
+        "key": "LibraryBattle_135",
+        "locationId": "library",
+        "formationKey": "libraryLevel135",
+        "battleEffectSetId": "libraryEffectSet_37",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_136": {
+        "key": "LibraryBattle_136",
+        "locationId": "library",
+        "formationKey": "libraryLevel136",
+        "battleEffectSetId": "libraryEffectSet_38",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_137": {
+        "key": "LibraryBattle_137",
+        "locationId": "library",
+        "formationKey": "libraryLevel137",
+        "battleEffectSetId": "libraryEffectSet_94",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_138": {
+        "key": "LibraryBattle_138",
+        "locationId": "library",
+        "formationKey": "libraryLevel138",
+        "battleEffectSetId": "libraryEffectSet_95",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_139": {
+        "key": "LibraryBattle_139",
+        "locationId": "library",
+        "formationKey": "libraryLevel139",
+        "battleEffectSetId": "libraryEffectSet_96",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_140": {
+        "key": "LibraryBattle_140",
+        "locationId": "library",
+        "formationKey": "libraryLevel140",
+        "battleEffectSetId": "libraryEffectSet_94",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_141": {
+        "key": "LibraryBattle_141",
+        "locationId": "library",
+        "formationKey": "libraryLevel141",
+        "battleEffectSetId": "libraryEffectSet_22",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_142": {
+        "key": "LibraryBattle_142",
+        "locationId": "library",
+        "formationKey": "libraryLevel142",
+        "battleEffectSetId": "libraryEffectSet_32",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_143": {
+        "key": "LibraryBattle_143",
+        "locationId": "library",
+        "formationKey": "libraryLevel143",
+        "battleEffectSetId": "libraryEffectSet_97",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_144": {
+        "key": "LibraryBattle_144",
+        "locationId": "library",
+        "formationKey": "libraryLevel144",
+        "battleEffectSetId": "libraryEffectSet_36",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_145": {
+        "key": "LibraryBattle_145",
+        "locationId": "library",
+        "formationKey": "libraryLevel145",
+        "battleEffectSetId": "libraryEffectSet_43",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_146": {
+        "key": "LibraryBattle_146",
+        "locationId": "library",
+        "formationKey": "libraryLevel146",
+        "battleEffectSetId": "libraryEffectSet_98",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_147": {
+        "key": "LibraryBattle_147",
+        "locationId": "library",
+        "formationKey": "libraryLevel147",
+        "battleEffectSetId": "libraryEffectSet_99",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "LibraryBattle_148": {
+        "key": "LibraryBattle_148",
+        "locationId": "library",
+        "formationKey": "libraryLevel148",
+        "battleEffectSetId": "libraryEffectSet_94",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_149": {
+        "key": "LibraryBattle_149",
+        "locationId": "library",
+        "formationKey": "libraryLevel149",
+        "battleEffectSetId": "libraryEffectSet_43",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "LibraryBattle_150": {
+        "key": "LibraryBattle_150",
+        "locationId": "library",
+        "formationKey": "libraryLevel150",
+        "battleEffectSetId": "libraryEffectSet_94",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "libraryAxeThrowersBattle_1": {
+        "key": "libraryAxeThrowersBattle_1",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel1",
+        "battleEffectSetId": "library_axeThrowers_effectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_2": {
+        "key": "libraryAxeThrowersBattle_2",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel2",
+        "battleEffectSetId": "library_axeThrowers_effectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_3": {
+        "key": "libraryAxeThrowersBattle_3",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel3",
+        "battleEffectSetId": "library_axeThrowers_effectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_4": {
+        "key": "libraryAxeThrowersBattle_4",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel4",
+        "battleEffectSetId": "library_axeThrowers_effectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_5": {
+        "key": "libraryAxeThrowersBattle_5",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel5",
+        "battleEffectSetId": "library_axeThrowers_effectSet_1",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "libraryAxeThrowersBattle_6": {
+        "key": "libraryAxeThrowersBattle_6",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel6",
+        "battleEffectSetId": "library_axeThrowers_effectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_7": {
+        "key": "libraryAxeThrowersBattle_7",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel7",
+        "battleEffectSetId": "library_axeThrowers_effectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_8": {
+        "key": "libraryAxeThrowersBattle_8",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel8",
+        "battleEffectSetId": "library_axeThrowers_effectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_9": {
+        "key": "libraryAxeThrowersBattle_9",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel9",
+        "battleEffectSetId": "library_axeThrowers_effectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_10": {
+        "key": "libraryAxeThrowersBattle_10",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel10",
+        "battleEffectSetId": "library_axeThrowers_effectSet_2",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "libraryAxeThrowersBattle_11": {
+        "key": "libraryAxeThrowersBattle_11",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel11",
+        "battleEffectSetId": "library_axeThrowers_effectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_12": {
+        "key": "libraryAxeThrowersBattle_12",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel12",
+        "battleEffectSetId": "library_axeThrowers_effectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_13": {
+        "key": "libraryAxeThrowersBattle_13",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel13",
+        "battleEffectSetId": "library_axeThrowers_effectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_14": {
+        "key": "libraryAxeThrowersBattle_14",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel14",
+        "battleEffectSetId": "library_axeThrowers_effectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_15": {
+        "key": "libraryAxeThrowersBattle_15",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel15",
+        "battleEffectSetId": "library_axeThrowers_effectSet_3",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    },
+    "libraryAxeThrowersBattle_16": {
+        "key": "libraryAxeThrowersBattle_16",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel16",
+        "battleEffectSetId": "library_axeThrowers_effectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_17": {
+        "key": "libraryAxeThrowersBattle_17",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel17",
+        "battleEffectSetId": "library_axeThrowers_effectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_18": {
+        "key": "libraryAxeThrowersBattle_18",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel18",
+        "battleEffectSetId": "library_axeThrowers_effectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_19": {
+        "key": "libraryAxeThrowersBattle_19",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel19",
+        "battleEffectSetId": "library_axeThrowers_effectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_Battle_01"
+    },
+    "libraryAxeThrowersBattle_20": {
+        "key": "libraryAxeThrowersBattle_20",
+        "locationId": "library",
+        "formationKey": "librarySquadEventLevel20",
+        "battleEffectSetId": "library_axeThrowers_effectSet_4",
+        "backgroundPrefabId": "UILibraryBackground_EpicBattle_01"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "common": {
+        "key": "common",
+        "order": 1,
+        "fusePriceCurreny": "Gold",
+        "fusePrice": 500,
+        "name": "Common_Name"
+    },
+    "rare": {
+        "key": "rare",
+        "order": 2,
+        "fusePriceCurreny": "Gem",
+        "fusePrice": 7,
+        "name": "Rare_Name"
+    },
+    "epic": {
+        "key": "epic",
+        "order": 3,
+        "fusePriceCurreny": "Gem",
+        "fusePrice": 20,
+        "name": "Epic_Name"
+    },
+    "legendary": {
+        "key": "legendary",
+        "order": 4,
+        "fusePriceCurreny": null,
+        "fusePrice": 0,
+        "name": "Legendary_Name"
+    },
+    "mythic": {
+        "key": "mythic",
+        "order": 5,
+        "fusePriceCurreny": null,
+        "fusePrice": 0,
+        "name": "Mythic_Name"
+    }
+}

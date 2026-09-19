@@ -1,0 +1,968 @@
+{
+    "darkKnightRoulette_level_2": {
+        "key": "darkKnightRoulette_level_2",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "darkKnightRoulette_level_3": {
+        "key": "darkKnightRoulette_level_3",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 25,
+        "rewardId": "hero_darkKnight_1"
+    },
+    "darkKnightRoulette_level_4": {
+        "key": "darkKnightRoulette_level_4",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "darkKnightRoulette_level_5": {
+        "key": "darkKnightRoulette_level_5",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 100,
+        "rewardId": "hero_darkKnight_2"
+    },
+    "darkKnightRoulette_level_6": {
+        "key": "darkKnightRoulette_level_6",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "darkKnightRoulette_level_1": {
+        "key": "darkKnightRoulette_level_1",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "darkKnightRoulette_level_7": {
+        "key": "darkKnightRoulette_level_7",
+        "rouletteLinkId": "roulette_link_darkKnight",
+        "rollAmount": 200,
+        "rewardId": "hero_darkKnight_4"
+    },
+    "accurateMeridaRoulette_level_2": {
+        "key": "accurateMeridaRoulette_level_2",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "accurateMeridaRoulette_level_3": {
+        "key": "accurateMeridaRoulette_level_3",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 25,
+        "rewardId": "hero_accurateMerida_1"
+    },
+    "accurateMeridaRoulette_level_4": {
+        "key": "accurateMeridaRoulette_level_4",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "accurateMeridaRoulette_level_5": {
+        "key": "accurateMeridaRoulette_level_5",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 100,
+        "rewardId": "hero_accurateMerida_2"
+    },
+    "accurateMeridaRoulette_level_6": {
+        "key": "accurateMeridaRoulette_level_6",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "accurateMeridaRoulette_level_1": {
+        "key": "accurateMeridaRoulette_level_1",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "accurateMeridaRoulette_level_7": {
+        "key": "accurateMeridaRoulette_level_7",
+        "rouletteLinkId": "roulette_link_accurateMerida",
+        "rollAmount": 200,
+        "rewardId": "hero_accurateMerida_4"
+    },
+    "generalRoulette_level_2": {
+        "key": "generalRoulette_level_2",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "generalRoulette_level_3": {
+        "key": "generalRoulette_level_3",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 25,
+        "rewardId": "hero_general_1"
+    },
+    "generalRoulette_level_4": {
+        "key": "generalRoulette_level_4",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "generalRoulette_level_5": {
+        "key": "generalRoulette_level_5",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 100,
+        "rewardId": "hero_general_2"
+    },
+    "generalRoulette_level_6": {
+        "key": "generalRoulette_level_6",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "generalRoulette_level_1": {
+        "key": "generalRoulette_level_1",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "generalRoulette_level_7": {
+        "key": "generalRoulette_level_7",
+        "rouletteLinkId": "roulette_link_general",
+        "rollAmount": 200,
+        "rewardId": "hero_general_4"
+    },
+    "headHuntRoulette_level_2": {
+        "key": "headHuntRoulette_level_2",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 15,
+        "rewardId": "currencyHh_Gem_50"
+    },
+    "headHuntRoulette_level_3": {
+        "key": "headHuntRoulette_level_3",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 35,
+        "rewardId": "woodenChest"
+    },
+    "headHuntRoulette_level_4": {
+        "key": "headHuntRoulette_level_4",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 55,
+        "rewardId": "currencyHh_Gem_75"
+    },
+    "headHuntRoulette_level_5": {
+        "key": "headHuntRoulette_level_5",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 75,
+        "rewardId": "goldChest"
+    },
+    "headHuntRoulette_level_6": {
+        "key": "headHuntRoulette_level_6",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 95,
+        "rewardId": "currencyHh_Gem_100"
+    },
+    "headHuntRoulette_level_1": {
+        "key": "headHuntRoulette_level_1",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "headHuntRoulette_level_7": {
+        "key": "headHuntRoulette_level_7",
+        "rouletteLinkId": "roulette_link_headHunt",
+        "rollAmount": 120,
+        "rewardId": "shopChest"
+    },
+    "mw_roll_link_chapter_1_common_1": {
+        "key": "mw_roll_link_chapter_1_common_1",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "mw_roll_link_chapter_1_common_2": {
+        "key": "mw_roll_link_chapter_1_common_2",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 3,
+        "rewardId": "currency_Gold_6000"
+    },
+    "mw_roll_link_chapter_1_common_3": {
+        "key": "mw_roll_link_chapter_1_common_3",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 5,
+        "rewardId": "BadgesX2_1"
+    },
+    "mw_roll_link_chapter_1_common_4": {
+        "key": "mw_roll_link_chapter_1_common_4",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 10,
+        "rewardId": "currency_Gem_30"
+    },
+    "mw_roll_link_chapter_1_common_5": {
+        "key": "mw_roll_link_chapter_1_common_5",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 15,
+        "rewardId": "currency_Gold_9000"
+    },
+    "mw_roll_link_chapter_1_common_6": {
+        "key": "mw_roll_link_chapter_1_common_6",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 20,
+        "rewardId": "currency_roulette_spin_1"
+    },
+    "mw_roll_link_chapter_1_common_7": {
+        "key": "mw_roll_link_chapter_1_common_7",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 25,
+        "rewardId": "currencyHh_Gem_50"
+    },
+    "mw_roll_link_chapter_1_common_8": {
+        "key": "mw_roll_link_chapter_1_common_8",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 30,
+        "rewardId": "currency_Gold_12000"
+    },
+    "mw_roll_link_chapter_1_common_9": {
+        "key": "mw_roll_link_chapter_1_common_9",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 35,
+        "rewardId": "woodenChest"
+    },
+    "mw_roll_link_chapter_1_common_10": {
+        "key": "mw_roll_link_chapter_1_common_10",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 40,
+        "rewardId": "squad_paladin_1_1"
+    },
+    "mw_roll_link_chapter_1_common_11": {
+        "key": "mw_roll_link_chapter_1_common_11",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 45,
+        "rewardId": "currency_Gem_70"
+    },
+    "mw_roll_link_chapter_1_common_12": {
+        "key": "mw_roll_link_chapter_1_common_12",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 50,
+        "rewardId": "currency_Gold_15000"
+    },
+    "mw_roll_link_chapter_1_common_13": {
+        "key": "mw_roll_link_chapter_1_common_13",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 55,
+        "rewardId": "woodenChest_x2"
+    },
+    "mw_roll_link_chapter_1_common_14": {
+        "key": "mw_roll_link_chapter_1_common_14",
+        "rouletteLinkId": "mw_link_chapter_1_common",
+        "rollAmount": 60,
+        "rewardId": "squad_alchemist_4_1"
+    },
+    "mw_roll_link_chapter_1_premium_1": {
+        "key": "mw_roll_link_chapter_1_premium_1",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "mw_roll_link_chapter_1_premium_2": {
+        "key": "mw_roll_link_chapter_1_premium_2",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 3,
+        "rewardId": "currency_Gold_15000"
+    },
+    "mw_roll_link_chapter_1_premium_3": {
+        "key": "mw_roll_link_chapter_1_premium_3",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 5,
+        "rewardId": "BadgesX2_3"
+    },
+    "mw_roll_link_chapter_1_premium_4": {
+        "key": "mw_roll_link_chapter_1_premium_4",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 10,
+        "rewardId": "currencyMW_Gem_100"
+    },
+    "mw_roll_link_chapter_1_premium_5": {
+        "key": "mw_roll_link_chapter_1_premium_5",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 15,
+        "rewardId": "currency_Gold_20000"
+    },
+    "mw_roll_link_chapter_1_premium_6": {
+        "key": "mw_roll_link_chapter_1_premium_6",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 20,
+        "rewardId": "currency_roulette_spin_2"
+    },
+    "mw_roll_link_chapter_1_premium_7": {
+        "key": "mw_roll_link_chapter_1_premium_7",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 25,
+        "rewardId": "currencyMW_Gem_150"
+    },
+    "mw_roll_link_chapter_1_premium_8": {
+        "key": "mw_roll_link_chapter_1_premium_8",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 30,
+        "rewardId": "currency_Gold_30000"
+    },
+    "mw_roll_link_chapter_1_premium_9": {
+        "key": "mw_roll_link_chapter_1_premium_9",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 35,
+        "rewardId": "goldChest"
+    },
+    "mw_roll_link_chapter_1_premium_10": {
+        "key": "mw_roll_link_chapter_1_premium_10",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 40,
+        "rewardId": "squad_paladin_4_1"
+    },
+    "mw_roll_link_chapter_1_premium_11": {
+        "key": "mw_roll_link_chapter_1_premium_11",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 45,
+        "rewardId": "currency_Gem_210"
+    },
+    "mw_roll_link_chapter_1_premium_12": {
+        "key": "mw_roll_link_chapter_1_premium_12",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 50,
+        "rewardId": "currency_Gold_45000"
+    },
+    "mw_roll_link_chapter_1_premium_13": {
+        "key": "mw_roll_link_chapter_1_premium_13",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 55,
+        "rewardId": "shopChest_x2"
+    },
+    "mw_roll_link_chapter_1_premium_14": {
+        "key": "mw_roll_link_chapter_1_premium_14",
+        "rouletteLinkId": "mw_link_chapter_1_premium",
+        "rollAmount": 60,
+        "rewardId": "squad_hunter_4_1"
+    },
+    "mw_roll_link_chapter_2_common_1": {
+        "key": "mw_roll_link_chapter_2_common_1",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "mw_roll_link_chapter_2_common_2": {
+        "key": "mw_roll_link_chapter_2_common_2",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 3,
+        "rewardId": "currency_Gold_12000"
+    },
+    "mw_roll_link_chapter_2_common_3": {
+        "key": "mw_roll_link_chapter_2_common_3",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 5,
+        "rewardId": "currency_roulette_spin_1"
+    },
+    "mw_roll_link_chapter_2_common_4": {
+        "key": "mw_roll_link_chapter_2_common_4",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 10,
+        "rewardId": "currency_Gold_15000"
+    },
+    "mw_roll_link_chapter_2_common_5": {
+        "key": "mw_roll_link_chapter_2_common_5",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 15,
+        "rewardId": "BadgesX2_2"
+    },
+    "mw_roll_link_chapter_2_common_6": {
+        "key": "mw_roll_link_chapter_2_common_6",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 20,
+        "rewardId": "currency_Gem_70"
+    },
+    "mw_roll_link_chapter_2_common_7": {
+        "key": "mw_roll_link_chapter_2_common_7",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 25,
+        "rewardId": "currency_Gold_18000"
+    },
+    "mw_roll_link_chapter_2_common_8": {
+        "key": "mw_roll_link_chapter_2_common_8",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 30,
+        "rewardId": "squad_alchemist_1_1"
+    },
+    "mw_roll_link_chapter_2_common_9": {
+        "key": "mw_roll_link_chapter_2_common_9",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 35,
+        "rewardId": "currency_roulette_spin_2"
+    },
+    "mw_roll_link_chapter_2_common_10": {
+        "key": "mw_roll_link_chapter_2_common_10",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 40,
+        "rewardId": "currency_Gold_21000"
+    },
+    "mw_roll_link_chapter_2_common_11": {
+        "key": "mw_roll_link_chapter_2_common_11",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 45,
+        "rewardId": "BadgesX2_3"
+    },
+    "mw_roll_link_chapter_2_common_12": {
+        "key": "mw_roll_link_chapter_2_common_12",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "mw_roll_link_chapter_2_common_13": {
+        "key": "mw_roll_link_chapter_2_common_13",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 55,
+        "rewardId": "currency_Gold_24000"
+    },
+    "mw_roll_link_chapter_2_common_14": {
+        "key": "mw_roll_link_chapter_2_common_14",
+        "rouletteLinkId": "mw_link_chapter_2_common",
+        "rollAmount": 60,
+        "rewardId": "squad_paladin_4_1"
+    },
+    "mw_roll_link_chapter_2_premium_1": {
+        "key": "mw_roll_link_chapter_2_premium_1",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "mw_roll_link_chapter_2_premium_2": {
+        "key": "mw_roll_link_chapter_2_premium_2",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 3,
+        "rewardId": "currency_Gold_25000"
+    },
+    "mw_roll_link_chapter_2_premium_3": {
+        "key": "mw_roll_link_chapter_2_premium_3",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 5,
+        "rewardId": "currency_roulette_spin_2"
+    },
+    "mw_roll_link_chapter_2_premium_4": {
+        "key": "mw_roll_link_chapter_2_premium_4",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 10,
+        "rewardId": "currency_Gold_30000"
+    },
+    "mw_roll_link_chapter_2_premium_5": {
+        "key": "mw_roll_link_chapter_2_premium_5",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 15,
+        "rewardId": "BadgesX2_4"
+    },
+    "mw_roll_link_chapter_2_premium_6": {
+        "key": "mw_roll_link_chapter_2_premium_6",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 20,
+        "rewardId": "currency_Gem_210"
+    },
+    "mw_roll_link_chapter_2_premium_7": {
+        "key": "mw_roll_link_chapter_2_premium_7",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 25,
+        "rewardId": "currency_Gold_40000"
+    },
+    "mw_roll_link_chapter_2_premium_8": {
+        "key": "mw_roll_link_chapter_2_premium_8",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 30,
+        "rewardId": "squad_lancer_4_1"
+    },
+    "mw_roll_link_chapter_2_premium_9": {
+        "key": "mw_roll_link_chapter_2_premium_9",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 35,
+        "rewardId": "currency_roulette_spin_3"
+    },
+    "mw_roll_link_chapter_2_premium_10": {
+        "key": "mw_roll_link_chapter_2_premium_10",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 40,
+        "rewardId": "currency_Gold_50000"
+    },
+    "mw_roll_link_chapter_2_premium_11": {
+        "key": "mw_roll_link_chapter_2_premium_11",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 45,
+        "rewardId": "BadgesX2_5"
+    },
+    "mw_roll_link_chapter_2_premium_12": {
+        "key": "mw_roll_link_chapter_2_premium_12",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 50,
+        "rewardId": "shopChest_x2"
+    },
+    "mw_roll_link_chapter_2_premium_13": {
+        "key": "mw_roll_link_chapter_2_premium_13",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 55,
+        "rewardId": "currency_Gold_60000"
+    },
+    "mw_roll_link_chapter_2_premium_14": {
+        "key": "mw_roll_link_chapter_2_premium_14",
+        "rouletteLinkId": "mw_link_chapter_2_premium",
+        "rollAmount": 60,
+        "rewardId": "squad_hunter_4_1"
+    },
+    "doubleShieldRoulette_level_2": {
+        "key": "doubleShieldRoulette_level_2",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "doubleShieldRoulette_level_3": {
+        "key": "doubleShieldRoulette_level_3",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 25,
+        "rewardId": "hero_doubleShield_1"
+    },
+    "doubleShieldRoulette_level_4": {
+        "key": "doubleShieldRoulette_level_4",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "doubleShieldRoulette_level_5": {
+        "key": "doubleShieldRoulette_level_5",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 100,
+        "rewardId": "hero_doubleShield_2"
+    },
+    "doubleShieldRoulette_level_6": {
+        "key": "doubleShieldRoulette_level_6",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "doubleShieldRoulette_level_1": {
+        "key": "doubleShieldRoulette_level_1",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "doubleShieldRoulette_level_7": {
+        "key": "doubleShieldRoulette_level_7",
+        "rouletteLinkId": "roulette_link_doubleShield",
+        "rollAmount": 200,
+        "rewardId": "hero_doubleShield_4"
+    },
+    "cursedGiantRoulette_level_2": {
+        "key": "cursedGiantRoulette_level_2",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "cursedGiantRoulette_level_3": {
+        "key": "cursedGiantRoulette_level_3",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 25,
+        "rewardId": "hero_cursedGiant_1"
+    },
+    "cursedGiantRoulette_level_4": {
+        "key": "cursedGiantRoulette_level_4",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "cursedGiantRoulette_level_5": {
+        "key": "cursedGiantRoulette_level_5",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 100,
+        "rewardId": "hero_cursedGiant_2"
+    },
+    "cursedGiantRoulette_level_6": {
+        "key": "cursedGiantRoulette_level_6",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "cursedGiantRoulette_level_1": {
+        "key": "cursedGiantRoulette_level_1",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "cursedGiantRoulette_level_7": {
+        "key": "cursedGiantRoulette_level_7",
+        "rouletteLinkId": "roulette_link_cursedGiant",
+        "rollAmount": 200,
+        "rewardId": "hero_cursedGiant_4"
+    },
+    "undeadWarriorRoulette_level_2": {
+        "key": "undeadWarriorRoulette_level_2",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "undeadWarriorRoulette_level_3": {
+        "key": "undeadWarriorRoulette_level_3",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 25,
+        "rewardId": "hero_undeadWarrior_1"
+    },
+    "undeadWarriorRoulette_level_4": {
+        "key": "undeadWarriorRoulette_level_4",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "undeadWarriorRoulette_level_5": {
+        "key": "undeadWarriorRoulette_level_5",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 100,
+        "rewardId": "hero_undeadWarrior_2"
+    },
+    "undeadWarriorRoulette_level_6": {
+        "key": "undeadWarriorRoulette_level_6",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "undeadWarriorRoulette_level_1": {
+        "key": "undeadWarriorRoulette_level_1",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "undeadWarriorRoulette_level_7": {
+        "key": "undeadWarriorRoulette_level_7",
+        "rouletteLinkId": "roulette_link_undeadWarrior",
+        "rollAmount": 200,
+        "rewardId": "hero_undeadWarrior_4"
+    },
+    "lightningElementalRoulette_level_2": {
+        "key": "lightningElementalRoulette_level_2",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 10,
+        "rewardId": "woodenChest"
+    },
+    "lightningElementalRoulette_level_3": {
+        "key": "lightningElementalRoulette_level_3",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 25,
+        "rewardId": "hero_lightningElemental_1"
+    },
+    "lightningElementalRoulette_level_4": {
+        "key": "lightningElementalRoulette_level_4",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 50,
+        "rewardId": "goldChest"
+    },
+    "lightningElementalRoulette_level_5": {
+        "key": "lightningElementalRoulette_level_5",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 100,
+        "rewardId": "hero_lightningElemental_2"
+    },
+    "lightningElementalRoulette_level_6": {
+        "key": "lightningElementalRoulette_level_6",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 150,
+        "rewardId": "shopChest"
+    },
+    "lightningElementalRoulette_level_1": {
+        "key": "lightningElementalRoulette_level_1",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "lightningElementalRoulette_level_7": {
+        "key": "lightningElementalRoulette_level_7",
+        "rouletteLinkId": "roulette_link_lightningElemental",
+        "rollAmount": 200,
+        "rewardId": "hero_lightningElemental_4"
+    },
+    "roulette_link_raceSwordOut_level_1": {
+        "key": "roulette_link_raceSwordOut_level_1",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_raceSwordOut_level_2": {
+        "key": "roulette_link_raceSwordOut_level_2",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 250,
+        "rewardId": "currencyRace_Gold_50000"
+    },
+    "roulette_link_raceSwordOut_level_3": {
+        "key": "roulette_link_raceSwordOut_level_3",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 500,
+        "rewardId": "currencyHh_Gem_75"
+    },
+    "roulette_link_raceSwordOut_level_4": {
+        "key": "roulette_link_raceSwordOut_level_4",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 1500,
+        "rewardId": "currencyRace_Gold_150000"
+    },
+    "roulette_link_raceSwordOut_level_5": {
+        "key": "roulette_link_raceSwordOut_level_5",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 3500,
+        "rewardId": "currencyRace_Gem_150"
+    },
+    "roulette_link_raceSwordOut_level_6": {
+        "key": "roulette_link_raceSwordOut_level_6",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 6000,
+        "rewardId": "squad_necromancer_4_1"
+    },
+    "roulette_link_raceSwordOut_level_7": {
+        "key": "roulette_link_raceSwordOut_level_7",
+        "rouletteLinkId": "roulette_link_raceSwordOut",
+        "rollAmount": 9000,
+        "rewardId": "hero_undeadPestilence_1"
+    },
+    "roulette_link_casinoRoulette_1_Level_1": {
+        "key": "roulette_link_casinoRoulette_1_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_1_Level_2": {
+        "key": "roulette_link_casinoRoulette_1_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_1_Level_3": {
+        "key": "roulette_link_casinoRoulette_1_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_1_Level_4": {
+        "key": "roulette_link_casinoRoulette_1_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_1_Level_5": {
+        "key": "roulette_link_casinoRoulette_1_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_1_Level_6": {
+        "key": "roulette_link_casinoRoulette_1_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_1_Level_7": {
+        "key": "roulette_link_casinoRoulette_1_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_1",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    },
+    "roulette_link_casinoRoulette_2_Level_1": {
+        "key": "roulette_link_casinoRoulette_2_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_2_Level_2": {
+        "key": "roulette_link_casinoRoulette_2_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_2_Level_3": {
+        "key": "roulette_link_casinoRoulette_2_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_2_Level_4": {
+        "key": "roulette_link_casinoRoulette_2_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_2_Level_5": {
+        "key": "roulette_link_casinoRoulette_2_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_2_Level_6": {
+        "key": "roulette_link_casinoRoulette_2_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_2_Level_7": {
+        "key": "roulette_link_casinoRoulette_2_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_2",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_1": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_2": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_3": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_4": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_5": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_6": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_reflectWeapon_new_Level_7": {
+        "key": "roulette_link_casinoRoulette_reflectWeapon_new_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectWeapon_new",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_1": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_2": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_3": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_4": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_5": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_6": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_reflectArmor_new_Level_7": {
+        "key": "roulette_link_casinoRoulette_reflectArmor_new_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_reflectArmor_new",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_1": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_2": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_3": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_4": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_5": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_6": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_aoeWeapon_new_Level_7": {
+        "key": "roulette_link_casinoRoulette_aoeWeapon_new_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeWeapon_new",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_1": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_1",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 0,
+        "rewardId": null
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_2": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_2",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 10,
+        "rewardId": "currencyCasino_Gem_200"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_3": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_3",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 20,
+        "rewardId": "squad_phoenix_2_1"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_4": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_4",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 30,
+        "rewardId": "currencyCasino_Gem_400"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_5": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_5",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 50,
+        "rewardId": "squad_phoenix_4_1"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_6": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_6",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 70,
+        "rewardId": "currencyCasino_Gem_650"
+    },
+    "roulette_link_casinoRoulette_aoeArmor_new_Level_7": {
+        "key": "roulette_link_casinoRoulette_aoeArmor_new_Level_7",
+        "rouletteLinkId": "roulette_link_casinoRoulette_aoeArmor_new",
+        "rollAmount": 100,
+        "rewardId": "squad_phoenix_8_1"
+    }
+}

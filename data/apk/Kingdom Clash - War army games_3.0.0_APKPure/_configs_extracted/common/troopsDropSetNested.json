@@ -1,0 +1,1843 @@
+{
+    "1": {
+        "key": "1",
+        "dropSetId": "infantrySet",
+        "troopsId": "infantry",
+        "weight": 1,
+        "stars": 1
+    },
+    "2": {
+        "key": "2",
+        "dropSetId": "firstTwoSet",
+        "troopsId": "infantry",
+        "weight": 25,
+        "stars": 1
+    },
+    "3": {
+        "key": "3",
+        "dropSetId": "firstTwoSet",
+        "troopsId": "archer",
+        "weight": 25,
+        "stars": 1
+    },
+    "4": {
+        "key": "4",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "undeadInfantry",
+        "weight": 10,
+        "stars": 1
+    },
+    "5": {
+        "key": "5",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "undeadJavelin",
+        "weight": 10,
+        "stars": 1
+    },
+    "6": {
+        "key": "6",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "infantry",
+        "weight": 10,
+        "stars": 1
+    },
+    "7": {
+        "key": "7",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 1
+    },
+    "8": {
+        "key": "8",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "catapult",
+        "weight": 10,
+        "stars": 1
+    },
+    "9": {
+        "key": "9",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 1
+    },
+    "10": {
+        "key": "10",
+        "dropSetId": "commonTroopSet",
+        "troopsId": "mageStudent",
+        "weight": 10,
+        "stars": 1
+    },
+    "11": {
+        "key": "11",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "undeadInfantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "12": {
+        "key": "12",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "undeadJavelin",
+        "weight": 10,
+        "stars": 2
+    },
+    "13": {
+        "key": "13",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "infantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "14": {
+        "key": "14",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 2
+    },
+    "15": {
+        "key": "15",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "catapult",
+        "weight": 10,
+        "stars": 2
+    },
+    "16": {
+        "key": "16",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "17": {
+        "key": "17",
+        "dropSetId": "commonTwoTroopSet",
+        "troopsId": "mageStudent",
+        "weight": 10,
+        "stars": 2
+    },
+    "18": {
+        "key": "18",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "undeadInfantry",
+        "weight": 10,
+        "stars": 3
+    },
+    "19": {
+        "key": "19",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "undeadJavelin",
+        "weight": 10,
+        "stars": 3
+    },
+    "20": {
+        "key": "20",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "infantry",
+        "weight": 10,
+        "stars": 3
+    },
+    "21": {
+        "key": "21",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 3
+    },
+    "22": {
+        "key": "22",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "catapult",
+        "weight": 10,
+        "stars": 3
+    },
+    "23": {
+        "key": "23",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 3
+    },
+    "24": {
+        "key": "24",
+        "dropSetId": "commonThreeTroopSet",
+        "troopsId": "mageStudent",
+        "weight": 10,
+        "stars": 3
+    },
+    "25": {
+        "key": "25",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "undeadInfantry",
+        "weight": 10,
+        "stars": 4
+    },
+    "26": {
+        "key": "26",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "undeadJavelin",
+        "weight": 10,
+        "stars": 4
+    },
+    "27": {
+        "key": "27",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "infantry",
+        "weight": 10,
+        "stars": 4
+    },
+    "28": {
+        "key": "28",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 4
+    },
+    "29": {
+        "key": "29",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "catapult",
+        "weight": 10,
+        "stars": 4
+    },
+    "30": {
+        "key": "30",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 4
+    },
+    "31": {
+        "key": "31",
+        "dropSetId": "commonFourTroopSet",
+        "troopsId": "mageStudent",
+        "weight": 10,
+        "stars": 4
+    },
+    "32": {
+        "key": "32",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "ironGuards",
+        "weight": 10,
+        "stars": 1
+    },
+    "33": {
+        "key": "33",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "gravedigger",
+        "weight": 10,
+        "stars": 1
+    },
+    "34": {
+        "key": "34",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "bomber",
+        "weight": 10,
+        "stars": 1
+    },
+    "35": {
+        "key": "35",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "assasin",
+        "weight": 10,
+        "stars": 1
+    },
+    "36": {
+        "key": "36",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "butcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "37": {
+        "key": "37",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "undeadMage",
+        "weight": 10,
+        "stars": 1
+    },
+    "38": {
+        "key": "38",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "imp",
+        "weight": 10,
+        "stars": 1
+    },
+    "39": {
+        "key": "39",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "damnCatapult",
+        "weight": 10,
+        "stars": 1
+    },
+    "40": {
+        "key": "40",
+        "dropSetId": "rareTroopSet",
+        "troopsId": "spiderBlast",
+        "weight": 10,
+        "stars": 1
+    },
+    "41": {
+        "key": "41",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "ironGuards",
+        "weight": 10,
+        "stars": 2
+    },
+    "42": {
+        "key": "42",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "gravedigger",
+        "weight": 10,
+        "stars": 2
+    },
+    "43": {
+        "key": "43",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "bomber",
+        "weight": 10,
+        "stars": 2
+    },
+    "44": {
+        "key": "44",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "assasin",
+        "weight": 10,
+        "stars": 2
+    },
+    "45": {
+        "key": "45",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "butcher",
+        "weight": 10,
+        "stars": 2
+    },
+    "46": {
+        "key": "46",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "undeadMage",
+        "weight": 10,
+        "stars": 2
+    },
+    "47": {
+        "key": "47",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "imp",
+        "weight": 10,
+        "stars": 2
+    },
+    "48": {
+        "key": "48",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "damnCatapult",
+        "weight": 10,
+        "stars": 2
+    },
+    "49": {
+        "key": "49",
+        "dropSetId": "rareTwoTroopSet",
+        "troopsId": "spiderBlast",
+        "weight": 10,
+        "stars": 2
+    },
+    "50": {
+        "key": "50",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "ironGuards",
+        "weight": 10,
+        "stars": 3
+    },
+    "51": {
+        "key": "51",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "gravedigger",
+        "weight": 10,
+        "stars": 3
+    },
+    "52": {
+        "key": "52",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "bomber",
+        "weight": 10,
+        "stars": 3
+    },
+    "53": {
+        "key": "53",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "assasin",
+        "weight": 10,
+        "stars": 3
+    },
+    "54": {
+        "key": "54",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "butcher",
+        "weight": 10,
+        "stars": 3
+    },
+    "55": {
+        "key": "55",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "undeadMage",
+        "weight": 10,
+        "stars": 3
+    },
+    "56": {
+        "key": "56",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "imp",
+        "weight": 10,
+        "stars": 3
+    },
+    "57": {
+        "key": "57",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "damnCatapult",
+        "weight": 10,
+        "stars": 3
+    },
+    "58": {
+        "key": "58",
+        "dropSetId": "rareThreeTroopSet",
+        "troopsId": "spiderBlast",
+        "weight": 10,
+        "stars": 3
+    },
+    "59": {
+        "key": "59",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "ironGuards",
+        "weight": 10,
+        "stars": 4
+    },
+    "60": {
+        "key": "60",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "gravedigger",
+        "weight": 10,
+        "stars": 4
+    },
+    "61": {
+        "key": "61",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "bomber",
+        "weight": 10,
+        "stars": 4
+    },
+    "62": {
+        "key": "62",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "assasin",
+        "weight": 10,
+        "stars": 4
+    },
+    "63": {
+        "key": "63",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "butcher",
+        "weight": 10,
+        "stars": 4
+    },
+    "64": {
+        "key": "64",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "undeadMage",
+        "weight": 10,
+        "stars": 4
+    },
+    "65": {
+        "key": "65",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "imp",
+        "weight": 10,
+        "stars": 4
+    },
+    "66": {
+        "key": "66",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "damnCatapult",
+        "weight": 10,
+        "stars": 4
+    },
+    "67": {
+        "key": "67",
+        "dropSetId": "rareFourTroopSet",
+        "troopsId": "spiderBlast",
+        "weight": 10,
+        "stars": 4
+    },
+    "68": {
+        "key": "68",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 1
+    },
+    "69": {
+        "key": "69",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "70": {
+        "key": "70",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 1
+    },
+    "71": {
+        "key": "71",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 1
+    },
+    "72": {
+        "key": "72",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "73": {
+        "key": "73",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "74": {
+        "key": "74",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 1
+    },
+    "75": {
+        "key": "75",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 1
+    },
+    "76": {
+        "key": "76",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "77": {
+        "key": "77",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "78": {
+        "key": "78",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "79": {
+        "key": "79",
+        "dropSetId": "epicTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 1
+    },
+    "80": {
+        "key": "80",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 2
+    },
+    "81": {
+        "key": "81",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 2
+    },
+    "82": {
+        "key": "82",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 2
+    },
+    "83": {
+        "key": "83",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 2
+    },
+    "84": {
+        "key": "84",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 2
+    },
+    "85": {
+        "key": "85",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 2
+    },
+    "86": {
+        "key": "86",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 2
+    },
+    "87": {
+        "key": "87",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 2
+    },
+    "88": {
+        "key": "88",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 2
+    },
+    "89": {
+        "key": "89",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 2
+    },
+    "90": {
+        "key": "90",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 2
+    },
+    "91": {
+        "key": "91",
+        "dropSetId": "epicTwoTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 2
+    },
+    "92": {
+        "key": "92",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 3
+    },
+    "93": {
+        "key": "93",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 3
+    },
+    "94": {
+        "key": "94",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 3
+    },
+    "95": {
+        "key": "95",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 3
+    },
+    "96": {
+        "key": "96",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 3
+    },
+    "97": {
+        "key": "97",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 3
+    },
+    "98": {
+        "key": "98",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 3
+    },
+    "99": {
+        "key": "99",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 3
+    },
+    "100": {
+        "key": "100",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 3
+    },
+    "101": {
+        "key": "101",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 3
+    },
+    "102": {
+        "key": "102",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 3
+    },
+    "103": {
+        "key": "103",
+        "dropSetId": "epicThreeTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 3
+    },
+    "104": {
+        "key": "104",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 4
+    },
+    "105": {
+        "key": "105",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 4
+    },
+    "106": {
+        "key": "106",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 4
+    },
+    "107": {
+        "key": "107",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 4
+    },
+    "108": {
+        "key": "108",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 4
+    },
+    "109": {
+        "key": "109",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 4
+    },
+    "110": {
+        "key": "110",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 4
+    },
+    "111": {
+        "key": "111",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 4
+    },
+    "112": {
+        "key": "112",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 4
+    },
+    "113": {
+        "key": "113",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 4
+    },
+    "114": {
+        "key": "114",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 4
+    },
+    "115": {
+        "key": "115",
+        "dropSetId": "epicFourTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 4
+    },
+    "116": {
+        "key": "116",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "117": {
+        "key": "117",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "118": {
+        "key": "118",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "119": {
+        "key": "119",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "120": {
+        "key": "120",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "121": {
+        "key": "121",
+        "dropSetId": "legendaryTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "122": {
+        "key": "122",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 2
+    },
+    "123": {
+        "key": "123",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 2
+    },
+    "124": {
+        "key": "124",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 2
+    },
+    "125": {
+        "key": "125",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 2
+    },
+    "126": {
+        "key": "126",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 2
+    },
+    "127": {
+        "key": "127",
+        "dropSetId": "legendaryTwoTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 2
+    },
+    "128": {
+        "key": "128",
+        "dropSetId": "archerChest",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 1
+    },
+    "129": {
+        "key": "129",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 3
+    },
+    "130": {
+        "key": "130",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 3
+    },
+    "131": {
+        "key": "131",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 3
+    },
+    "132": {
+        "key": "132",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 3
+    },
+    "133": {
+        "key": "133",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 3
+    },
+    "134": {
+        "key": "134",
+        "dropSetId": "legendaryThreeTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 3
+    },
+    "135": {
+        "key": "135",
+        "dropSetId": "commonHumanTroopSet",
+        "troopsId": "archer",
+        "weight": 10,
+        "stars": 2
+    },
+    "136": {
+        "key": "136",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 4
+    },
+    "137": {
+        "key": "137",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 4
+    },
+    "138": {
+        "key": "138",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 4
+    },
+    "139": {
+        "key": "139",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 4
+    },
+    "140": {
+        "key": "140",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 4
+    },
+    "141": {
+        "key": "141",
+        "dropSetId": "legendaryFourTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 4
+    },
+    "142": {
+        "key": "142",
+        "dropSetId": "commonHumanTroopSet",
+        "troopsId": "infantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "143": {
+        "key": "143",
+        "dropSetId": "rareHumanTroopSet",
+        "troopsId": "ironGuards",
+        "weight": 10,
+        "stars": 2
+    },
+    "144": {
+        "key": "144",
+        "dropSetId": "rareHumanTroopSet",
+        "troopsId": "bomber",
+        "weight": 10,
+        "stars": 2
+    },
+    "145": {
+        "key": "145",
+        "dropSetId": "commonHumanTroopSet",
+        "troopsId": "catapult",
+        "weight": 10,
+        "stars": 2
+    },
+    "146": {
+        "key": "146",
+        "dropSetId": "rareHumanTroopSet",
+        "troopsId": "assasin",
+        "weight": 10,
+        "stars": 2
+    },
+    "147": {
+        "key": "147",
+        "dropSetId": "rareHumanTroopSet",
+        "troopsId": "butcher",
+        "weight": 10,
+        "stars": 2
+    },
+    "148": {
+        "key": "148",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 2
+    },
+    "149": {
+        "key": "149",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 2
+    },
+    "150": {
+        "key": "150",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 2
+    },
+    "151": {
+        "key": "151",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 2
+    },
+    "152": {
+        "key": "152",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 2
+    },
+    "153": {
+        "key": "153",
+        "dropSetId": "legendaryHumanTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 2
+    },
+    "154": {
+        "key": "154",
+        "dropSetId": "legendaryHumanTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 2
+    },
+    "155": {
+        "key": "155",
+        "dropSetId": "epicHumanTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 2
+    },
+    "156": {
+        "key": "156",
+        "dropSetId": "legendaryUndeadTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 2
+    },
+    "157": {
+        "key": "157",
+        "dropSetId": "legendaryUndeadTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 2
+    },
+    "158": {
+        "key": "158",
+        "dropSetId": "epicUndeadTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 2
+    },
+    "159": {
+        "key": "159",
+        "dropSetId": "epicUndeadTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 2
+    },
+    "160": {
+        "key": "160",
+        "dropSetId": "rareUndeadTroopSet",
+        "troopsId": "undeadMage",
+        "weight": 10,
+        "stars": 2
+    },
+    "161": {
+        "key": "161",
+        "dropSetId": "rareUndeadTroopSet",
+        "troopsId": "imp",
+        "weight": 10,
+        "stars": 2
+    },
+    "162": {
+        "key": "162",
+        "dropSetId": "rareUndeadTroopSet",
+        "troopsId": "damnCatapult",
+        "weight": 10,
+        "stars": 2
+    },
+    "163": {
+        "key": "163",
+        "dropSetId": "rareUndeadTroopSet",
+        "troopsId": "spiderBlast",
+        "weight": 10,
+        "stars": 2
+    },
+    "164": {
+        "key": "164",
+        "dropSetId": "rareUndeadTroopSet",
+        "troopsId": "gravedigger",
+        "weight": 10,
+        "stars": 2
+    },
+    "165": {
+        "key": "165",
+        "dropSetId": "commonUndeadTroopSet",
+        "troopsId": "undeadInfantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "166": {
+        "key": "166",
+        "dropSetId": "commonUndeadTroopSet",
+        "troopsId": "undeadJavelin",
+        "weight": 10,
+        "stars": 2
+    },
+    "167": {
+        "key": "167",
+        "dropSetId": "commonMagesTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "168": {
+        "key": "168",
+        "dropSetId": "commonMagesTroopSet",
+        "troopsId": "mageStudent",
+        "weight": 10,
+        "stars": 2
+    },
+    "169": {
+        "key": "169",
+        "dropSetId": "rareMagesTroopSet",
+        "troopsId": "golemInfantry",
+        "weight": 10,
+        "stars": 2
+    },
+    "170": {
+        "key": "170",
+        "dropSetId": "epicMagesTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 2
+    },
+    "171": {
+        "key": "171",
+        "dropSetId": "epicMagesTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 2
+    },
+    "172": {
+        "key": "172",
+        "dropSetId": "epicMagesTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 2
+    },
+    "173": {
+        "key": "173",
+        "dropSetId": "epicMagesTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 2
+    },
+    "174": {
+        "key": "174",
+        "dropSetId": "legendaryMagesTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 2
+    },
+    "175": {
+        "key": "175",
+        "dropSetId": "legendaryMagesTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 2
+    },
+    "176": {
+        "key": "176",
+        "dropSetId": "NighthunterTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "177": {
+        "key": "177",
+        "dropSetId": "legendaryNoNighthunterTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "178": {
+        "key": "178",
+        "dropSetId": "legendaryNoNighthunterTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "179": {
+        "key": "179",
+        "dropSetId": "legendaryNoNighthunterTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "180": {
+        "key": "180",
+        "dropSetId": "legendaryNoNighthunterTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "181": {
+        "key": "181",
+        "dropSetId": "legendaryNoNighthunterTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "182": {
+        "key": "182",
+        "dropSetId": "StoneGolemTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "183": {
+        "key": "183",
+        "dropSetId": "legendaryNoStoneGolemTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "184": {
+        "key": "184",
+        "dropSetId": "legendaryNoStoneGolemTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "185": {
+        "key": "185",
+        "dropSetId": "legendaryNoStoneGolemTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "186": {
+        "key": "186",
+        "dropSetId": "legendaryNoStoneGolemTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "187": {
+        "key": "187",
+        "dropSetId": "legendaryNoStoneGolemTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "188": {
+        "key": "188",
+        "dropSetId": "mountainsChampionTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "189": {
+        "key": "189",
+        "dropSetId": "legendaryNoMountainsChampionTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "190": {
+        "key": "190",
+        "dropSetId": "legendaryNoMountainsChampionTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "191": {
+        "key": "191",
+        "dropSetId": "legendaryNoMountainsChampionTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "192": {
+        "key": "192",
+        "dropSetId": "legendaryNoMountainsChampionTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "193": {
+        "key": "193",
+        "dropSetId": "legendaryNoMountainsChampionTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "194": {
+        "key": "194",
+        "dropSetId": "NecromancerTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "195": {
+        "key": "195",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 1
+    },
+    "196": {
+        "key": "196",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 1
+    },
+    "197": {
+        "key": "197",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 1
+    },
+    "198": {
+        "key": "198",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "199": {
+        "key": "199",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "200": {
+        "key": "200",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 1
+    },
+    "201": {
+        "key": "201",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 1
+    },
+    "202": {
+        "key": "202",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "203": {
+        "key": "203",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "204": {
+        "key": "204",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "205": {
+        "key": "205",
+        "dropSetId": "epicNoNecromancerTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 1
+    },
+    "206": {
+        "key": "206",
+        "dropSetId": "VulkanGolemTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "207": {
+        "key": "207",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 1
+    },
+    "208": {
+        "key": "208",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 1
+    },
+    "209": {
+        "key": "209",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 1
+    },
+    "210": {
+        "key": "210",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "211": {
+        "key": "211",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "212": {
+        "key": "212",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 1
+    },
+    "213": {
+        "key": "213",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 1
+    },
+    "214": {
+        "key": "214",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "215": {
+        "key": "215",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "216": {
+        "key": "216",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "217": {
+        "key": "217",
+        "dropSetId": "epicNoVulkanGolemTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 1
+    },
+    "218": {
+        "key": "218",
+        "dropSetId": "AlchemistTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 1
+    },
+    "219": {
+        "key": "219",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 1
+    },
+    "220": {
+        "key": "220",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 1
+    },
+    "221": {
+        "key": "221",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "222": {
+        "key": "222",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "223": {
+        "key": "223",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "224": {
+        "key": "224",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 1
+    },
+    "225": {
+        "key": "225",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 1
+    },
+    "226": {
+        "key": "226",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "227": {
+        "key": "227",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "228": {
+        "key": "228",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "229": {
+        "key": "229",
+        "dropSetId": "epicNoAlchemistTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 1
+    },
+    "230": {
+        "key": "230",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "paladin",
+        "weight": 10,
+        "stars": 1
+    },
+    "231": {
+        "key": "231",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "alchemist",
+        "weight": 10,
+        "stars": 1
+    },
+    "232": {
+        "key": "232",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "lancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "233": {
+        "key": "233",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "pyrotechnician",
+        "weight": 10,
+        "stars": 1
+    },
+    "234": {
+        "key": "234",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "eliteWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "235": {
+        "key": "235",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "monk",
+        "weight": 10,
+        "stars": 1
+    },
+    "236": {
+        "key": "236",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "necromancer",
+        "weight": 10,
+        "stars": 1
+    },
+    "237": {
+        "key": "237",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "skeletonWarrior",
+        "weight": 10,
+        "stars": 1
+    },
+    "238": {
+        "key": "238",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "magicArcher",
+        "weight": 10,
+        "stars": 1
+    },
+    "239": {
+        "key": "239",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "stormSpearman",
+        "weight": 10,
+        "stars": 1
+    },
+    "240": {
+        "key": "240",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "vulkanGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "241": {
+        "key": "241",
+        "dropSetId": "epicSquadClanShopTroopSet",
+        "troopsId": "windElemental",
+        "weight": 10,
+        "stars": 1
+    },
+    "242": {
+        "key": "242",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "243": {
+        "key": "243",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "244": {
+        "key": "244",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "245": {
+        "key": "245",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "246": {
+        "key": "246",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "247": {
+        "key": "247",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "248": {
+        "key": "248",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "phoenix",
+        "weight": 10,
+        "stars": 1
+    },
+    "249": {
+        "key": "249",
+        "dropSetId": "legSquadClanShopTroopSet",
+        "troopsId": "stunToad",
+        "weight": 10,
+        "stars": 1
+    },
+    "250": {
+        "key": "250",
+        "dropSetId": "PhoenixTroopSet",
+        "troopsId": "phoenix",
+        "weight": 10,
+        "stars": 1
+    },
+    "251": {
+        "key": "251",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "252": {
+        "key": "252",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "253": {
+        "key": "253",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "254": {
+        "key": "254",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "255": {
+        "key": "255",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "256": {
+        "key": "256",
+        "dropSetId": "legendaryNoPhoenixTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    },
+    "257": {
+        "key": "257",
+        "dropSetId": "AxeThrowersTroopSet",
+        "troopsId": "axeThrowers",
+        "weight": 10,
+        "stars": 1
+    },
+    "258": {
+        "key": "258",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "stoneGolem",
+        "weight": 10,
+        "stars": 1
+    },
+    "259": {
+        "key": "259",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "mountainsChampion",
+        "weight": 10,
+        "stars": 1
+    },
+    "260": {
+        "key": "260",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "shaman",
+        "weight": 10,
+        "stars": 1
+    },
+    "261": {
+        "key": "261",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "hunter",
+        "weight": 10,
+        "stars": 1
+    },
+    "262": {
+        "key": "262",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "undeadHeadless",
+        "weight": 10,
+        "stars": 1
+    },
+    "263": {
+        "key": "263",
+        "dropSetId": "legendaryNoAxeThrowersTroopSet",
+        "troopsId": "flyingMonster",
+        "weight": 10,
+        "stars": 1
+    }
+}

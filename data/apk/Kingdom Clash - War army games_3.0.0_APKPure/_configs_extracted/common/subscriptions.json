@@ -1,0 +1,12 @@
+{
+    "passiveVIPRewards": [
+        "currency_vip_passive_auto_battle100"
+    ],
+    "activeVIPRewards": [
+        "currency_vip_active_gems250"
+    ],
+    "passiveMidasRewards": [
+        "currency_midas_passive_badgesX4"
+    ],
+    "activeMidasRewards": []
+}

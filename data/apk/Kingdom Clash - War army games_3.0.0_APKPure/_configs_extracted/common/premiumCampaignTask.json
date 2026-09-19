@@ -1,0 +1,602 @@
+{
+    "offerCampaignLevelSet01_1": {
+        "key": "offerCampaignLevelSet01_1",
+        "targetCampaignLevel": 50,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01"
+    },
+    "offerCampaignLevelSet01_2": {
+        "key": "offerCampaignLevelSet01_2",
+        "targetCampaignLevel": 200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01"
+    },
+    "offerCampaignLevelSet01_3": {
+        "key": "offerCampaignLevelSet01_3",
+        "targetCampaignLevel": 300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01"
+    },
+    "offerCampaignLevelSet01_4": {
+        "key": "offerCampaignLevelSet01_4",
+        "targetCampaignLevel": 400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01"
+    },
+    "offerCampaignLevelSet01_5": {
+        "key": "offerCampaignLevelSet01_5",
+        "targetCampaignLevel": 500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet01"
+    },
+    "offerCampaignLevelSet02_1": {
+        "key": "offerCampaignLevelSet02_1",
+        "targetCampaignLevel": 600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02"
+    },
+    "offerCampaignLevelSet02_2": {
+        "key": "offerCampaignLevelSet02_2",
+        "targetCampaignLevel": 700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02"
+    },
+    "offerCampaignLevelSet02_3": {
+        "key": "offerCampaignLevelSet02_3",
+        "targetCampaignLevel": 800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02"
+    },
+    "offerCampaignLevelSet02_4": {
+        "key": "offerCampaignLevelSet02_4",
+        "targetCampaignLevel": 900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02"
+    },
+    "offerCampaignLevelSet02_5": {
+        "key": "offerCampaignLevelSet02_5",
+        "targetCampaignLevel": 1000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet02"
+    },
+    "offerCampaignLevelSet03_1": {
+        "key": "offerCampaignLevelSet03_1",
+        "targetCampaignLevel": 1100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03"
+    },
+    "offerCampaignLevelSet03_2": {
+        "key": "offerCampaignLevelSet03_2",
+        "targetCampaignLevel": 1200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03"
+    },
+    "offerCampaignLevelSet03_3": {
+        "key": "offerCampaignLevelSet03_3",
+        "targetCampaignLevel": 1300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03"
+    },
+    "offerCampaignLevelSet03_4": {
+        "key": "offerCampaignLevelSet03_4",
+        "targetCampaignLevel": 1400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03"
+    },
+    "offerCampaignLevelSet03_5": {
+        "key": "offerCampaignLevelSet03_5",
+        "targetCampaignLevel": 1500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet03"
+    },
+    "offerCampaignLevelSet04_1": {
+        "key": "offerCampaignLevelSet04_1",
+        "targetCampaignLevel": 1600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04"
+    },
+    "offerCampaignLevelSet04_2": {
+        "key": "offerCampaignLevelSet04_2",
+        "targetCampaignLevel": 1700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04"
+    },
+    "offerCampaignLevelSet04_3": {
+        "key": "offerCampaignLevelSet04_3",
+        "targetCampaignLevel": 1800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04"
+    },
+    "offerCampaignLevelSet04_4": {
+        "key": "offerCampaignLevelSet04_4",
+        "targetCampaignLevel": 1900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04"
+    },
+    "offerCampaignLevelSet04_5": {
+        "key": "offerCampaignLevelSet04_5",
+        "targetCampaignLevel": 2000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet04"
+    },
+    "offerCampaignLevelSet05_1": {
+        "key": "offerCampaignLevelSet05_1",
+        "targetCampaignLevel": 2100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05"
+    },
+    "offerCampaignLevelSet05_2": {
+        "key": "offerCampaignLevelSet05_2",
+        "targetCampaignLevel": 2200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05"
+    },
+    "offerCampaignLevelSet05_3": {
+        "key": "offerCampaignLevelSet05_3",
+        "targetCampaignLevel": 2300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05"
+    },
+    "offerCampaignLevelSet05_4": {
+        "key": "offerCampaignLevelSet05_4",
+        "targetCampaignLevel": 2400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05"
+    },
+    "offerCampaignLevelSet05_5": {
+        "key": "offerCampaignLevelSet05_5",
+        "targetCampaignLevel": 2500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet05"
+    },
+    "offerCampaignLevelSet06_1": {
+        "key": "offerCampaignLevelSet06_1",
+        "targetCampaignLevel": 2600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06"
+    },
+    "offerCampaignLevelSet06_2": {
+        "key": "offerCampaignLevelSet06_2",
+        "targetCampaignLevel": 2700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06"
+    },
+    "offerCampaignLevelSet06_3": {
+        "key": "offerCampaignLevelSet06_3",
+        "targetCampaignLevel": 2800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06"
+    },
+    "offerCampaignLevelSet06_4": {
+        "key": "offerCampaignLevelSet06_4",
+        "targetCampaignLevel": 2900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06"
+    },
+    "offerCampaignLevelSet06_5": {
+        "key": "offerCampaignLevelSet06_5",
+        "targetCampaignLevel": 3000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet06"
+    },
+    "offerCampaignLevelSet07_1": {
+        "key": "offerCampaignLevelSet07_1",
+        "targetCampaignLevel": 3100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07"
+    },
+    "offerCampaignLevelSet07_2": {
+        "key": "offerCampaignLevelSet07_2",
+        "targetCampaignLevel": 3200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07"
+    },
+    "offerCampaignLevelSet07_3": {
+        "key": "offerCampaignLevelSet07_3",
+        "targetCampaignLevel": 3300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07"
+    },
+    "offerCampaignLevelSet07_4": {
+        "key": "offerCampaignLevelSet07_4",
+        "targetCampaignLevel": 3400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07"
+    },
+    "offerCampaignLevelSet07_5": {
+        "key": "offerCampaignLevelSet07_5",
+        "targetCampaignLevel": 3500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet07"
+    },
+    "offerCampaignLevelSet08_1": {
+        "key": "offerCampaignLevelSet08_1",
+        "targetCampaignLevel": 3600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08"
+    },
+    "offerCampaignLevelSet08_2": {
+        "key": "offerCampaignLevelSet08_2",
+        "targetCampaignLevel": 3700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08"
+    },
+    "offerCampaignLevelSet08_3": {
+        "key": "offerCampaignLevelSet08_3",
+        "targetCampaignLevel": 3800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08"
+    },
+    "offerCampaignLevelSet08_4": {
+        "key": "offerCampaignLevelSet08_4",
+        "targetCampaignLevel": 3900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08"
+    },
+    "offerCampaignLevelSet08_5": {
+        "key": "offerCampaignLevelSet08_5",
+        "targetCampaignLevel": 4000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet08"
+    },
+    "offerCampaignLevelSet09_1": {
+        "key": "offerCampaignLevelSet09_1",
+        "targetCampaignLevel": 4100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09"
+    },
+    "offerCampaignLevelSet09_2": {
+        "key": "offerCampaignLevelSet09_2",
+        "targetCampaignLevel": 4200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09"
+    },
+    "offerCampaignLevelSet09_3": {
+        "key": "offerCampaignLevelSet09_3",
+        "targetCampaignLevel": 4300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09"
+    },
+    "offerCampaignLevelSet09_4": {
+        "key": "offerCampaignLevelSet09_4",
+        "targetCampaignLevel": 4400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09"
+    },
+    "offerCampaignLevelSet09_5": {
+        "key": "offerCampaignLevelSet09_5",
+        "targetCampaignLevel": 4500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet09"
+    },
+    "offerCampaignLevelSet10_1": {
+        "key": "offerCampaignLevelSet10_1",
+        "targetCampaignLevel": 4600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10"
+    },
+    "offerCampaignLevelSet10_2": {
+        "key": "offerCampaignLevelSet10_2",
+        "targetCampaignLevel": 4700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10"
+    },
+    "offerCampaignLevelSet10_3": {
+        "key": "offerCampaignLevelSet10_3",
+        "targetCampaignLevel": 4800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10"
+    },
+    "offerCampaignLevelSet10_4": {
+        "key": "offerCampaignLevelSet10_4",
+        "targetCampaignLevel": 4900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10"
+    },
+    "offerCampaignLevelSet10_5": {
+        "key": "offerCampaignLevelSet10_5",
+        "targetCampaignLevel": 5000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet10"
+    },
+    "offerCampaignLevelSet11_1": {
+        "key": "offerCampaignLevelSet11_1",
+        "targetCampaignLevel": 5100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11"
+    },
+    "offerCampaignLevelSet11_2": {
+        "key": "offerCampaignLevelSet11_2",
+        "targetCampaignLevel": 5200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11"
+    },
+    "offerCampaignLevelSet11_3": {
+        "key": "offerCampaignLevelSet11_3",
+        "targetCampaignLevel": 5300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11"
+    },
+    "offerCampaignLevelSet11_4": {
+        "key": "offerCampaignLevelSet11_4",
+        "targetCampaignLevel": 5400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11"
+    },
+    "offerCampaignLevelSet11_5": {
+        "key": "offerCampaignLevelSet11_5",
+        "targetCampaignLevel": 5500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet11"
+    },
+    "offerCampaignLevelSet12_1": {
+        "key": "offerCampaignLevelSet12_1",
+        "targetCampaignLevel": 5600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12"
+    },
+    "offerCampaignLevelSet12_2": {
+        "key": "offerCampaignLevelSet12_2",
+        "targetCampaignLevel": 5700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12"
+    },
+    "offerCampaignLevelSet12_3": {
+        "key": "offerCampaignLevelSet12_3",
+        "targetCampaignLevel": 5800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12"
+    },
+    "offerCampaignLevelSet12_4": {
+        "key": "offerCampaignLevelSet12_4",
+        "targetCampaignLevel": 5900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12"
+    },
+    "offerCampaignLevelSet12_5": {
+        "key": "offerCampaignLevelSet12_5",
+        "targetCampaignLevel": 6000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet12"
+    },
+    "offerCampaignLevelSet13_1": {
+        "key": "offerCampaignLevelSet13_1",
+        "targetCampaignLevel": 6100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13"
+    },
+    "offerCampaignLevelSet13_2": {
+        "key": "offerCampaignLevelSet13_2",
+        "targetCampaignLevel": 6200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13"
+    },
+    "offerCampaignLevelSet13_3": {
+        "key": "offerCampaignLevelSet13_3",
+        "targetCampaignLevel": 6300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13"
+    },
+    "offerCampaignLevelSet13_4": {
+        "key": "offerCampaignLevelSet13_4",
+        "targetCampaignLevel": 6400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13"
+    },
+    "offerCampaignLevelSet13_5": {
+        "key": "offerCampaignLevelSet13_5",
+        "targetCampaignLevel": 6500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet13"
+    },
+    "offerCampaignLevelSet14_1": {
+        "key": "offerCampaignLevelSet14_1",
+        "targetCampaignLevel": 6600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14"
+    },
+    "offerCampaignLevelSet14_2": {
+        "key": "offerCampaignLevelSet14_2",
+        "targetCampaignLevel": 6700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14"
+    },
+    "offerCampaignLevelSet14_3": {
+        "key": "offerCampaignLevelSet14_3",
+        "targetCampaignLevel": 6800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14"
+    },
+    "offerCampaignLevelSet14_4": {
+        "key": "offerCampaignLevelSet14_4",
+        "targetCampaignLevel": 6900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14"
+    },
+    "offerCampaignLevelSet14_5": {
+        "key": "offerCampaignLevelSet14_5",
+        "targetCampaignLevel": 7000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet14"
+    },
+    "offerCampaignLevelSet15_1": {
+        "key": "offerCampaignLevelSet15_1",
+        "targetCampaignLevel": 7100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15"
+    },
+    "offerCampaignLevelSet15_2": {
+        "key": "offerCampaignLevelSet15_2",
+        "targetCampaignLevel": 7200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15"
+    },
+    "offerCampaignLevelSet15_3": {
+        "key": "offerCampaignLevelSet15_3",
+        "targetCampaignLevel": 7300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15"
+    },
+    "offerCampaignLevelSet15_4": {
+        "key": "offerCampaignLevelSet15_4",
+        "targetCampaignLevel": 7400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15"
+    },
+    "offerCampaignLevelSet15_5": {
+        "key": "offerCampaignLevelSet15_5",
+        "targetCampaignLevel": 7500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet15"
+    },
+    "offerCampaignLevelSet16_1": {
+        "key": "offerCampaignLevelSet16_1",
+        "targetCampaignLevel": 7600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16"
+    },
+    "offerCampaignLevelSet16_2": {
+        "key": "offerCampaignLevelSet16_2",
+        "targetCampaignLevel": 7700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16"
+    },
+    "offerCampaignLevelSet16_3": {
+        "key": "offerCampaignLevelSet16_3",
+        "targetCampaignLevel": 7800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16"
+    },
+    "offerCampaignLevelSet16_4": {
+        "key": "offerCampaignLevelSet16_4",
+        "targetCampaignLevel": 7900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16"
+    },
+    "offerCampaignLevelSet16_5": {
+        "key": "offerCampaignLevelSet16_5",
+        "targetCampaignLevel": 8000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet16"
+    },
+    "offerCampaignLevelSet17_1": {
+        "key": "offerCampaignLevelSet17_1",
+        "targetCampaignLevel": 8100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17"
+    },
+    "offerCampaignLevelSet17_2": {
+        "key": "offerCampaignLevelSet17_2",
+        "targetCampaignLevel": 8200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17"
+    },
+    "offerCampaignLevelSet17_3": {
+        "key": "offerCampaignLevelSet17_3",
+        "targetCampaignLevel": 8300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17"
+    },
+    "offerCampaignLevelSet17_4": {
+        "key": "offerCampaignLevelSet17_4",
+        "targetCampaignLevel": 8400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17"
+    },
+    "offerCampaignLevelSet17_5": {
+        "key": "offerCampaignLevelSet17_5",
+        "targetCampaignLevel": 8500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet17"
+    },
+    "offerCampaignLevelSet18_1": {
+        "key": "offerCampaignLevelSet18_1",
+        "targetCampaignLevel": 8600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18"
+    },
+    "offerCampaignLevelSet18_2": {
+        "key": "offerCampaignLevelSet18_2",
+        "targetCampaignLevel": 8700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18"
+    },
+    "offerCampaignLevelSet18_3": {
+        "key": "offerCampaignLevelSet18_3",
+        "targetCampaignLevel": 8800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18"
+    },
+    "offerCampaignLevelSet18_4": {
+        "key": "offerCampaignLevelSet18_4",
+        "targetCampaignLevel": 8900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18"
+    },
+    "offerCampaignLevelSet18_5": {
+        "key": "offerCampaignLevelSet18_5",
+        "targetCampaignLevel": 9000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet18"
+    },
+    "offerCampaignLevelSet19_1": {
+        "key": "offerCampaignLevelSet19_1",
+        "targetCampaignLevel": 9100,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19"
+    },
+    "offerCampaignLevelSet19_2": {
+        "key": "offerCampaignLevelSet19_2",
+        "targetCampaignLevel": 9200,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19"
+    },
+    "offerCampaignLevelSet19_3": {
+        "key": "offerCampaignLevelSet19_3",
+        "targetCampaignLevel": 9300,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19"
+    },
+    "offerCampaignLevelSet19_4": {
+        "key": "offerCampaignLevelSet19_4",
+        "targetCampaignLevel": 9400,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19"
+    },
+    "offerCampaignLevelSet19_5": {
+        "key": "offerCampaignLevelSet19_5",
+        "targetCampaignLevel": 9500,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet19"
+    },
+    "offerCampaignLevelSet20_1": {
+        "key": "offerCampaignLevelSet20_1",
+        "targetCampaignLevel": 9600,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20"
+    },
+    "offerCampaignLevelSet20_2": {
+        "key": "offerCampaignLevelSet20_2",
+        "targetCampaignLevel": 9700,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20"
+    },
+    "offerCampaignLevelSet20_3": {
+        "key": "offerCampaignLevelSet20_3",
+        "targetCampaignLevel": 9800,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20"
+    },
+    "offerCampaignLevelSet20_4": {
+        "key": "offerCampaignLevelSet20_4",
+        "targetCampaignLevel": 9900,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20"
+    },
+    "offerCampaignLevelSet20_5": {
+        "key": "offerCampaignLevelSet20_5",
+        "targetCampaignLevel": 10000,
+        "gemsAmount": 3000,
+        "premiumCampaignTaskSetId": "offerCampaignLevelSet20"
+    }
+}

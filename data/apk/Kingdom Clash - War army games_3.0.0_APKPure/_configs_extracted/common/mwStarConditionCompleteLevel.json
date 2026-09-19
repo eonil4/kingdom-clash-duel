@@ -1,0 +1,47 @@
+{
+    "Finish180": {
+        "key": "Finish180",
+        "description": "mwCaptureFinish180",
+        "seconds": 180
+    },
+    "Finish600": {
+        "key": "Finish600",
+        "description": "mwCaptureFinish600",
+        "seconds": 600
+    },
+    "Finish240": {
+        "key": "Finish240",
+        "description": "mwCaptureFinish240",
+        "seconds": 240
+    },
+    "Finish200": {
+        "key": "Finish200",
+        "description": "mwCaptureFinish200",
+        "seconds": 200
+    },
+    "Finish220": {
+        "key": "Finish220",
+        "description": "mwCaptureFinish220",
+        "seconds": 220
+    },
+    "Finish300": {
+        "key": "Finish300",
+        "description": "mwCaptureFinish300",
+        "seconds": 300
+    },
+    "Finish480": {
+        "key": "Finish480",
+        "description": "mwCaptureFinish480",
+        "seconds": 480
+    },
+    "Finish350": {
+        "key": "Finish350",
+        "description": "mwCaptureFinish350",
+        "seconds": 350
+    },
+    "Finish270": {
+        "key": "Finish270",
+        "description": "mwCaptureFinish270",
+        "seconds": 270
+    }
+}

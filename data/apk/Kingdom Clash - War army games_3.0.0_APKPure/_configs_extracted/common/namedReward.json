@@ -1,0 +1,209 @@
+{
+    "unlockRoulette": {
+        "key": "unlockRoulette"
+    },
+    "unlockImp": {
+        "key": "unlockImp"
+    },
+    "addOfferBeginnerBundle": {
+        "key": "addOfferBeginnerBundle"
+    },
+    "unlockBeginnerBundleDailyGift": {
+        "key": "unlockBeginnerBundleDailyGift"
+    },
+    "offerDragonRiderScheduler": {
+        "key": "offerDragonRiderScheduler"
+    },
+    "unlockCommunityLobbyButton": {
+        "key": "unlockCommunityLobbyButton"
+    },
+    "r_070": {
+        "key": "r_070"
+    },
+    "unlockSilverSkin": {
+        "key": "unlockSilverSkin"
+    },
+    "unlockMountainsChampion": {
+        "key": "unlockMountainsChampion"
+    },
+    "unlockMonk": {
+        "key": "unlockMonk"
+    },
+    "unlockShaman": {
+        "key": "unlockShaman"
+    },
+    "unlockUndeadInfantry": {
+        "key": "unlockUndeadInfantry"
+    },
+    "unlockUndeadJavelin": {
+        "key": "unlockUndeadJavelin"
+    },
+    "unlockOfferDaily1": {
+        "key": "unlockOfferDaily1"
+    },
+    "unlockExpeditions": {
+        "key": "unlockExpeditions"
+    },
+    "unlockOfferDailyGemsSale": {
+        "key": "unlockOfferDailyGemsSale"
+    },
+    "unlockUndeadHeadless": {
+        "key": "unlockUndeadHeadless"
+    },
+    "unlockDamnCatapult": {
+        "key": "unlockDamnCatapult"
+    },
+    "unlockSpiderBlast": {
+        "key": "unlockSpiderBlast"
+    },
+    "unlockMagicArcher": {
+        "key": "unlockMagicArcher"
+    },
+    "unlockGolemInfantry": {
+        "key": "unlockGolemInfantry"
+    },
+    "r_0110": {
+        "key": "r_0110"
+    },
+    "unlockBossFight": {
+        "key": "unlockBossFight"
+    },
+    "unlockFormations": {
+        "key": "unlockFormations"
+    },
+    "unlockOfferPackHero": {
+        "key": "unlockOfferPackHero"
+    },
+    "unlockOfferLobbyTroops": {
+        "key": "unlockOfferLobbyTroops"
+    },
+    "unlockPromocodes": {
+        "key": "unlockPromocodes"
+    },
+    "unlockBossWidget": {
+        "key": "unlockBossWidget"
+    },
+    "unlockStoneGolem": {
+        "key": "unlockStoneGolem"
+    },
+    "unlockFlyingMonster": {
+        "key": "unlockFlyingMonster"
+    },
+    "unlockCampaignLocationSkinMagicForest": {
+        "key": "unlockCampaignLocationSkinMagicForest"
+    },
+    "unlockCampaignLocationSkinNecropolis": {
+        "key": "unlockCampaignLocationSkinNecropolis"
+    },
+    "r_0140": {
+        "key": "r_0140"
+    },
+    "unlockStormSpearman": {
+        "key": "unlockStormSpearman"
+    },
+    "unlockPyrotechnician": {
+        "key": "unlockPyrotechnician"
+    },
+    "unlockMushroomWars": {
+        "key": "unlockMushroomWars"
+    },
+    "unlockOfferLobbyGift": {
+        "key": "unlockOfferLobbyGift"
+    },
+    "unlockTempleFuse": {
+        "key": "unlockTempleFuse"
+    },
+    "unlockClans": {
+        "key": "unlockClans"
+    },
+    "unlockMageStudent": {
+        "key": "unlockMageStudent"
+    },
+    "unlockVulkanGolem": {
+        "key": "unlockVulkanGolem"
+    },
+    "unlockCampaignLocationSkinDefault": {
+        "key": "unlockCampaignLocationSkinDefault"
+    },
+    "unlockLoseScreenHints": {
+        "key": "unlockLoseScreenHints"
+    },
+    "unlockOfferCampaignLevel": {
+        "key": "unlockOfferCampaignLevel"
+    },
+    "unlockNecromancer": {
+        "key": "unlockNecromancer"
+    },
+    "unlockOfferCampaignLevelNew": {
+        "key": "unlockOfferCampaignLevelNew"
+    },
+    "unlockCampaignLocationSkinTown": {
+        "key": "unlockCampaignLocationSkinTown"
+    },
+    "unlockSkeletonWarrior": {
+        "key": "unlockSkeletonWarrior"
+    },
+    "unlockGravedigger": {
+        "key": "unlockGravedigger"
+    },
+    "unlockEliteWarrior": {
+        "key": "unlockEliteWarrior"
+    },
+    "unlockWindElemental": {
+        "key": "unlockWindElemental"
+    },
+    "unlockUndeadShaman": {
+        "key": "unlockUndeadShaman"
+    },
+    "unlockLibrary": {
+        "key": "unlockLibrary"
+    },
+    "unlockStunToad": {
+        "key": "unlockStunToad"
+    },
+    "unlockCampaignLocationSkinWheatField": {
+        "key": "unlockCampaignLocationSkinWheatField"
+    },
+    "unlockCampaignLocationSkinCoast": {
+        "key": "unlockCampaignLocationSkinCoast"
+    },
+    "r_0210": {
+        "key": "r_0210"
+    },
+    "unlockRace": {
+        "key": "unlockRace"
+    },
+    "unlockServerOfferSchedule": {
+        "key": "unlockServerOfferSchedule"
+    },
+    "r_0230": {
+        "key": "r_0230"
+    },
+    "unlockOfferDailyGoldSale": {
+        "key": "unlockOfferDailyGoldSale"
+    },
+    "unlockCasinoRoulette": {
+        "key": "unlockCasinoRoulette"
+    },
+    "unlockKing": {
+        "key": "unlockKing"
+    },
+    "unlockGearCasino": {
+        "key": "unlockGearCasino"
+    },
+    "unlockFreeSpeedReward": {
+        "key": "unlockFreeSpeedReward"
+    },
+    "unlockGearShards": {
+        "key": "unlockGearShards"
+    },
+    "unlockSquadEventTower": {
+        "key": "unlockSquadEventTower"
+    },
+    "unlockOfferChain": {
+        "key": "unlockOfferChain"
+    },
+    "unlockHeroSlotReward": {
+        "key": "unlockHeroSlotReward"
+    }
+}

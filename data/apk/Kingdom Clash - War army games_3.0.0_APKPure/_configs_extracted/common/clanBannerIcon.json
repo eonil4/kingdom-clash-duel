@@ -1,0 +1,102 @@
+{
+    "clan_flag_symbol_1": {
+        "key": "clan_flag_symbol_1",
+        "serverId": 1,
+        "iconId": "flag_symbol_01"
+    },
+    "clan_flag_symbol_2": {
+        "key": "clan_flag_symbol_2",
+        "serverId": 2,
+        "iconId": "flag_symbol_02"
+    },
+    "clan_flag_symbol_3": {
+        "key": "clan_flag_symbol_3",
+        "serverId": 3,
+        "iconId": "flag_symbol_03"
+    },
+    "clan_flag_symbol_4": {
+        "key": "clan_flag_symbol_4",
+        "serverId": 4,
+        "iconId": "flag_symbol_04"
+    },
+    "clan_flag_symbol_5": {
+        "key": "clan_flag_symbol_5",
+        "serverId": 5,
+        "iconId": "flag_symbol_05"
+    },
+    "clan_flag_symbol_6": {
+        "key": "clan_flag_symbol_6",
+        "serverId": 6,
+        "iconId": "flag_symbol_06"
+    },
+    "clan_flag_symbol_7": {
+        "key": "clan_flag_symbol_7",
+        "serverId": 7,
+        "iconId": "flag_symbol_07"
+    },
+    "clan_flag_symbol_8": {
+        "key": "clan_flag_symbol_8",
+        "serverId": 8,
+        "iconId": "flag_symbol_08"
+    },
+    "clan_flag_symbol_9": {
+        "key": "clan_flag_symbol_9",
+        "serverId": 9,
+        "iconId": "flag_symbol_09"
+    },
+    "clan_flag_symbol_10": {
+        "key": "clan_flag_symbol_10",
+        "serverId": 10,
+        "iconId": "flag_symbol_10"
+    },
+    "clan_flag_symbol_11": {
+        "key": "clan_flag_symbol_11",
+        "serverId": 11,
+        "iconId": "flag_symbol_11"
+    },
+    "clan_flag_symbol_12": {
+        "key": "clan_flag_symbol_12",
+        "serverId": 12,
+        "iconId": "flag_symbol_12"
+    },
+    "clan_flag_symbol_13": {
+        "key": "clan_flag_symbol_13",
+        "serverId": 13,
+        "iconId": "flag_symbol_13"
+    },
+    "clan_flag_symbol_14": {
+        "key": "clan_flag_symbol_14",
+        "serverId": 14,
+        "iconId": "flag_symbol_14"
+    },
+    "clan_flag_symbol_15": {
+        "key": "clan_flag_symbol_15",
+        "serverId": 15,
+        "iconId": "flag_symbol_15"
+    },
+    "clan_flag_symbol_16": {
+        "key": "clan_flag_symbol_16",
+        "serverId": 16,
+        "iconId": "flag_symbol_16"
+    },
+    "clan_flag_symbol_17": {
+        "key": "clan_flag_symbol_17",
+        "serverId": 17,
+        "iconId": "flag_symbol_17"
+    },
+    "clan_flag_symbol_18": {
+        "key": "clan_flag_symbol_18",
+        "serverId": 18,
+        "iconId": "flag_symbol_18"
+    },
+    "clan_flag_symbol_19": {
+        "key": "clan_flag_symbol_19",
+        "serverId": 19,
+        "iconId": "flag_symbol_19"
+    },
+    "clan_flag_symbol_20": {
+        "key": "clan_flag_symbol_20",
+        "serverId": 20,
+        "iconId": "flag_symbol_20"
+    }
+}

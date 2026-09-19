@@ -1,0 +1,62 @@
+{
+    "demonFat_echoOfPain_1": {
+        "key": "echoOfPain_1",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_1",
+        "damageDuration": 5
+    },
+    "demonFat_echoOfPain_2": {
+        "key": "echoOfPain_2",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_2",
+        "damageDuration": 5
+    },
+    "demonFat_echoOfPain_3": {
+        "key": "echoOfPain_3",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_3",
+        "damageDuration": 5
+    },
+    "demonFat_echoOfPain_4": {
+        "key": "echoOfPain_4",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_4",
+        "damageDuration": 6
+    },
+    "demonFat_echoOfPain_5": {
+        "key": "echoOfPain_5",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_5",
+        "damageDuration": 6
+    },
+    "demonFat_echoOfPain_6": {
+        "key": "echoOfPain_6",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_6",
+        "damageDuration": 6
+    },
+    "demonFat_echoOfPain_7": {
+        "key": "echoOfPain_7",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_7",
+        "damageDuration": 7
+    },
+    "demonFat_echoOfPain_8": {
+        "key": "echoOfPain_8",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_8",
+        "damageDuration": 7
+    },
+    "demonFat_echoOfPain_9": {
+        "key": "echoOfPain_9",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_9",
+        "damageDuration": 7
+    },
+    "demonFat_echoOfPain_10": {
+        "key": "echoOfPain_10",
+        "abilityInfoId": "demonFat_echoOfPain",
+        "damageModifier": "demonFat_buff_10",
+        "damageDuration": 8
+    }
+}
