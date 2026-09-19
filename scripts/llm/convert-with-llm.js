@@ -75,6 +75,13 @@ async function processImageFolder(folderArg) {
         throw new Error("LLM did not return power and name.");
       }
 
+      if (extracted?.power < 444) {
+        console.error(
+          `\t[LLM] LOW power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
+            (extracted.englishName ? ` english=${JSON.stringify(extracted.englishName)}` : ""),
+        );
+      }
+    
       const nameLatinRaw =
         extracted.englishName?.trim() || toSafeEnemyFilenameToken(extracted.name);
       const mapEntry = {
