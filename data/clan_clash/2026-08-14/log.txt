@@ -1,0 +1,293 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-14 (48 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+
+[Processing] Screenshot_2026.08.14_02.33.07.259.png
+	[LLM] Screenshot_2026.08.14_02.33.07.259.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9153162 name="Игрис UZB" (20.3s)
+	[Conversion] -> 009_153_162-UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.33.16.042.png
+	[LLM] Screenshot_2026.08.14_02.33.16.042.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6143168 name="WOLF UZB" (18.7s)
+	[Conversion] -> 006_143_168-WOLF_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.33.37.726.png
+	[LLM] Screenshot_2026.08.14_02.33.37.726.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6200319 name="ESKIBOY UZB" (19.3s)
+	[Conversion] -> 006_200_319-ESKIBOY_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.33.46.876.png
+	[LLM] Screenshot_2026.08.14_02.33.46.876.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9633143 name="SANJAR557 UZB" (20.2s)
+	[Conversion] -> 009_633_143-SANJAR557_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.33.56.142.png
+	[LLM] Screenshot_2026.08.14_02.33.56.142.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9270990 name="XA3PAT UZB" (20.1s)
+	[Conversion] -> 009_270_990-XA3PAT_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.08.626.png
+	[LLM] Screenshot_2026.08.14_02.34.08.626.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5124504 name="UzB" (18.5s)
+	[Conversion] -> 005_124_504-UzB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.17.359.png
+	[LLM] Screenshot_2026.08.14_02.34.17.359.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5610021 name="leaderUZB" (18.7s)
+	[Conversion] -> 005_610_021-leaderUZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.25.326.png
+	[LLM] Screenshot_2026.08.14_02.34.25.326.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8524877 name="Dior UZB" (19.1s)
+	[Conversion] -> 008_524_877-Dior_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.33.959.png
+	[LLM] Screenshot_2026.08.14_02.34.33.959.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5053829 name="ФЕДЯР УЗВ" (19.4s)
+	[Conversion] -> 005_053_829-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.43.626.png
+	[LLM] Screenshot_2026.08.14_02.34.43.626.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6472635 name="Cobp_UZB" (19.7s)
+	[Conversion] -> 006_472_635-Cobp_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.34.53.159.png
+	[LLM] Screenshot_2026.08.14_02.34.53.159.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6548315 name="ЛОЧИН UZB" (19.5s)
+	[Conversion] -> 006_548_315-UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.35.02.342.png
+	[LLM] Screenshot_2026.08.14_02.35.02.342.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8333348 name="ГУБЕРНАТОР UZB" (20.0s)
+	[Conversion] -> 008_333_348-UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.35.13.726.png
+	[LLM] Screenshot_2026.08.14_02.35.13.726.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9013085 name="AMIRSHAYX UZB" (20.3s)
+	[Conversion] -> 009_013_085-AMIRSHAYX_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.35.23.925.png
+	[LLM] Screenshot_2026.08.14_02.35.23.925.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7273435 name="shunqor 2" (20.0s)
+	[Conversion] -> 007_273_435-shunqor_2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.35.37.809.png
+	[LLM] Screenshot_2026.08.14_02.35.37.809.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1535840 name="SHAH UZB^2" (21.8s)
+	[Conversion] -> 001_535_840-SHAH_UZB_2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.35.46.959.png
+	[LLM] Screenshot_2026.08.14_02.35.46.959.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1409742 name="Bonk SvE" (19.6s)
+	[Conversion] -> 001_409_742-Bonk_SvE.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.36.01.475.png
+	[LLM] Screenshot_2026.08.14_02.36.01.475.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1233263 name="Bonk² SvE" (20.2s)
+	[Conversion] -> 001_233_263-Bonk_SvE.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.36.10.576.png
+	[LLM] Screenshot_2026.08.14_02.36.10.576.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8579153 name="[NEW_KAROL_UZB]" (20.9s)
+	[Conversion] -> 008_579_153-[NEW_KAROL_UZB].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.36.22.259.png
+	[LLM] Screenshot_2026.08.14_02.36.22.259.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10084294 name="STRAKER UZB" (20.7s)
+	[Conversion] -> 010_084_294-STRAKER_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.36.32.759.png
+	[LLM] Screenshot_2026.08.14_02.36.32.759.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8359015 name="AKADEMIK UZB" (19.9s)
+	[Conversion] -> 008_359_015-AKADEMIK_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.36.45.025.png
+	[LLM] Screenshot_2026.08.14_02.36.45.025.png (attempt 1/3, timeout 600s)...
+	[LLM] power=217 name="Amir uzb" (19.5s)
+	[Conversion] -> 000_000_217-Amir_uzb.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.37.09.426.png
+	[LLM] Screenshot_2026.08.14_02.37.09.426.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9277223 name="Kapitan UZB" (20.2s)
+	[Conversion] -> 009_277_223-Kapitan_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.37.24.142.png
+	[LLM] Screenshot_2026.08.14_02.37.24.142.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6766087 name="STREETMAN UZB" (19.7s)
+	[Conversion] -> 006_766_087-STREETMAN_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.37.35.759.png
+	[LLM] Screenshot_2026.08.14_02.37.35.759.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5196682 name="Nike_UZB" (19.8s)
+	[Conversion] -> 005_196_682-Nike_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.37.48.426.png
+	[LLM] Screenshot_2026.08.14_02.37.48.426.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7550210 name="TaTaPnH__UZB" (20.2s)
+	[Conversion] -> 007_550_210-TaTaPnH_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.37.59.209.png
+	[LLM] Screenshot_2026.08.14_02.37.59.209.png (attempt 1/3, timeout 600s)...
+	[LLM] power=285 name="ТАМЕРЛАН[UZB]" (19.8s)
+	[Conversion] -> 000_000_285-[UZB].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.38.11.292.png
+	[LLM] Screenshot_2026.08.14_02.38.11.292.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7713633 name="LION KING_UZB" (20.6s)
+	[Conversion] -> 007_713_633-LION_KING_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.38.22.342.png
+	[LLM] Screenshot_2026.08.14_02.38.22.342.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10862943 name="Alisheyh UZB" (20.5s)
+	[Conversion] -> 010_862_943-Alisheyh_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.38.37.026.png
+	[LLM] Screenshot_2026.08.14_02.38.37.026.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8712652 name="UZB SVE" (19.8s)
+	[Conversion] -> 008_712_652-UZB_SVE.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.38.50.059.png
+	[LLM] Screenshot_2026.08.14_02.38.50.059.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8727910 name="MЭДЖИК UZB" (20.6s)
+	[Conversion] -> 008_727_910-M_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.39.01.159.png
+	[LLM] Screenshot_2026.08.14_02.39.01.159.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10794414 name="Генерал UZB" (20.3s)
+	[Conversion] -> 010_794_414-UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.39.14.709.png
+	[LLM] Screenshot_2026.08.14_02.39.14.709.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8653923 name="СЕРЖАНТ У3Б" (20.6s)
+	[Conversion] -> 008_653_923-3.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.39.27.542.png
+	[LLM] Screenshot_2026.08.14_02.39.27.542.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5280803 name="DARKOUZB" (20.5s)
+	[Conversion] -> 005_280_803-DARKOUZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.39.38.509.png
+	[LLM] Screenshot_2026.08.14_02.39.38.509.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7093569 name="SAYID UZB" (20.6s)
+	[Conversion] -> 007_093_569-SAYID_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.39.49.675.png
+	[LLM] Screenshot_2026.08.14_02.39.49.675.png (attempt 1/3, timeout 600s)...
+	[LLM] power=297 name="RITSERUZB" (20.0s)
+	[Conversion] -> 000_000_297-RITSERUZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.40.03.326.png
+	[LLM] Screenshot_2026.08.14_02.40.03.326.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9293784 name="Граф uzb" (20.4s)
+	[Conversion] -> 009_293_784-uzb.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.40.15.359.png
+	[LLM] Screenshot_2026.08.14_02.40.15.359.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4302146 name="Mario_SvE" (20.5s)
+	[Conversion] -> 004_302_146-Mario_SvE.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.40.28.525.png
+	[LLM] Screenshot_2026.08.14_02.40.28.525.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7379308 name="BOMBA UZB" (20.8s)
+	[Conversion] -> 007_379_308-BOMBA_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.40.44.242.png
+	[LLM] Screenshot_2026.08.14_02.40.44.242.png (attempt 1/3, timeout 600s)...
+	[LLM] power=206534 name="Luna_UZB" (20.3s)
+	[Conversion] -> 000_206_534-Luna_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.02.092.png
+	[LLM] Screenshot_2026.08.14_02.41.02.092.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9183860 name="XON (UZB)" (21.3s)
+	[Conversion] -> 009_183_860-XON_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.14.725.png
+	[LLM] Screenshot_2026.08.14_02.41.14.725.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9022065 name="PAN4ER UZB" (22.0s)
+	[Conversion] -> 009_022_065-PAN4ER_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.25.459.png
+	[LLM] Screenshot_2026.08.14_02.41.25.459.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5510454 name="SHAH UZB" (21.5s)
+	[Conversion] -> 005_510_454-SHAH_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.36.976.png
+	[LLM] Screenshot_2026.08.14_02.41.36.976.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7825879 name="13 UzB" (21.5s)
+	[Conversion] -> 007_825_879-13_UzB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.46.559.png
+	[LLM] Screenshot_2026.08.14_02.41.46.559.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9243670 name="Анвар UZB" (22.1s)
+	[Conversion] -> 009_243_670-UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.41.58.576.png
+	[LLM] Screenshot_2026.08.14_02.41.58.576.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8979156 name="Qaqnus" (22.4s)
+	[Conversion] -> 008_979_156-Qaqnus.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.42.08.292.png
+	[LLM] Screenshot_2026.08.14_02.42.08.292.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8924088 name="Legend" (21.3s)
+	[Conversion] -> 008_924_088-Legend.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.42.18.359.png
+	[LLM] Screenshot_2026.08.14_02.42.18.359.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10386949 name="SHUNQOR<<UzB>>" (23.1s)
+	[Conversion] -> 010_386_949-SHUNQOR%253C%253CUzB%253E%253E-SHUNQOR%3C%3CUzB%3E%3E.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.14_02.42.31.909.png
+	[LLM] Screenshot_2026.08.14_02.42.31.909.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8511807 name="STRONG UZB" (21.7s)
+	[Conversion] -> 008_511_807-STRONG_UZB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 48 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 18.5s / 20.3s / 23.1s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
