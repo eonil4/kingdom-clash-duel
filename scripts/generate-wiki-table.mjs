@@ -1,8 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const WORKSPACE_ROOT = path.resolve(__dirname, '..');
 
 // 1. Get the target folder path from command line arguments
-const targetFolder = process.argv[2];
+const targetFolderArg = process.argv[2];
 const extensionParts = process.argv.slice(3);
 const extensionArg =
   extensionParts.length === 0
@@ -11,7 +16,7 @@ const extensionArg =
       ? extensionParts[0]
       : extensionParts.join(',');
 
-if (!targetFolder) {
+if (!targetFolderArg) {
   console.error("Error: Please provide the folder path!");
   console.log(
     "Usage: node generate-wiki-table.mjs <folder_path> [ext|ext1 ext2|ext1,ext2|\"ext1|ext2\"]",
@@ -47,6 +52,24 @@ function parseExtensions(raw) {
     .map((part) => (part.startsWith('.') ? part : `.${part}`));
 }
 
+/**
+ * Resolve folder for filesystem access, and a repo-relative POSIX path for GitHub URLs.
+ * Absolute paths under the workspace are converted so URLs never include drive letters.
+ * @param {string} folderArg
+ */
+function resolveFolderPaths(folderArg) {
+  const abs = path.isAbsolute(folderArg)
+    ? path.resolve(folderArg)
+    : path.resolve(WORKSPACE_ROOT, folderArg);
+  let rel = path.relative(WORKSPACE_ROOT, abs).replace(/\\/g, '/');
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
+    throw new Error(
+      `Folder must be inside the workspace root (${WORKSPACE_ROOT}): ${folderArg}`,
+    );
+  }
+  return { abs, rel };
+}
+
 const extensions = parseExtensions(extensionArg);
 const extensionSet = new Set(extensions);
 
@@ -56,16 +79,15 @@ const GITHUB_USER = 'eonil4';
 const GITHUB_REPO = 'kingdom-clash-duel';
 const GITHUB_BRANCH = 'main';
 
-// Ensure correct slashes for URL path construction (cross-platform compatibility)
-const normalizedPath = targetFolder.replace(/\\/g, '/');
+const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(targetFolderArg);
 
 // Generate the base GitHub RAW URL with standard /refs/heads/ path
-const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${normalizedPath}`;
+const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
 
 try {
   // Read all files from the target directory
   const files = fs.readdirSync(targetFolder);
-  
+
   const images = files
     .filter((file) => extensionSet.has(path.extname(file).toLowerCase()))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
@@ -82,11 +104,11 @@ try {
 
   for (let i = 0; i < images.length; i++) {
     const imageName = images[i];
-    
+
     // Crucial fix: Encode the filename to correctly escape % and special characters
     const encodedImageName = encodeURIComponent(imageName);
     const imageUrl = `${baseUrl}/${encodedImageName}`;
-    
+
     const displayName = path.basename(imageName, path.extname(imageName));
 
     html += '  <tr>\n';
@@ -103,9 +125,10 @@ try {
   fs.writeFileSync(outputPath, html, 'utf8');
 
   console.log(`Successfully generated: ${outputPath}`);
+  console.log(`Repo path: ${repoRelativePath}`);
   console.log(`Extensions: ${extensions.join(', ')}`);
   console.log(`Total images in the table: ${images.length}`);
-
 } catch (error) {
   console.error(`An error occurred while processing the folder: ${error.message}`);
+  process.exit(1);
 }
