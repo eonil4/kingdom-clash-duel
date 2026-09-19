@@ -6,11 +6,17 @@
  *   LLM_MODEL      — default qwen/qwen3-vl-4b
  *   LM_API_TOKEN   — optional Bearer token
  *   LLM_SKIP_CACHE_CLEAR — set 1 to skip prediction-cache clearing
+ *
+ * config/llm.json `userPrompt` may be a string (legacy) or an object:
+ *   - image                 — string prompt, or { prompt, enemy }
+ *   - image.enemy.name      — { prompt, roi } for name crop
+ *   - image.enemy.power     — { prompt, roi } for power crop
  */
 import fs from "fs/promises";
 import { readFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import sharp from "sharp";
 import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
@@ -55,7 +61,7 @@ const VISION_MODEL_HINTS = Array.isArray(_llmConfig.visionModelHints)
 const SYSTEM_PROMPT = _llmConfig.systemPrompt ?? `You extract structured data from Kingdom Clash arena screenshots.
 Reply with JSON only — no markdown, no prose outside the JSON object.`;
 
-const USER_PROMPT = _llmConfig.userPrompt ?? `You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).
+const DEFAULT_USER_PROMPT_IMAGE = `You are an expert data extraction engine specializing in complex video game UIs. Your single task is to analyze the image and extract the primary combat statistics for the OPPONENT (the enemy).
 
 CRITICAL INSTRUCTION: Focus ONLY on the dedicated opponent status panel located on the right side of the screen. This panel has a specific visual structure, usually containing three elements in order: [Name] -> [Unit Count/Icon] -> [Total Power Score].
 
@@ -74,6 +80,98 @@ Return ONLY this JSON shape. Do not include any preceding text, explanation, or 
   "language": "<language of the name text, e.g. Korean, Russian, English>",
   "englishName": "<Latin/English transliteration for filenames; omit if name is already Latin>"
 }`;
+
+const DEFAULT_NAME_CROP = {
+  prompt: `This image is a cropped OPPONENT NAME window. Extract name, nameLatin, and language. Return ONLY JSON: {"name":"...","nameLatin":"...","language":"..."}`,
+  roi: { x: 486, y: 118, width: 290, height: 36 },
+};
+
+const DEFAULT_POWER_CROP = {
+  prompt: `This image is a cropped OPPONENT POWER window. Extract power as a positive integer. Return ONLY JSON: {"power": <integer>}`,
+  roi: { x: 666, y: 234, width: 162, height: 24 },
+};
+
+/**
+ * @returns {string}
+ */
+export function resolveUserPromptImage() {
+  const up = _llmConfig.userPrompt;
+  if (typeof up === "string" && up.trim()) return up;
+  if (!up || typeof up !== "object" || Array.isArray(up)) {
+    return DEFAULT_USER_PROMPT_IMAGE;
+  }
+
+  const image = up.image;
+  if (typeof image === "string" && image.trim()) return image;
+  if (image && typeof image === "object" && !Array.isArray(image)) {
+    if (typeof image.prompt === "string" && image.prompt.trim()) return image.prompt;
+  }
+  return DEFAULT_USER_PROMPT_IMAGE;
+}
+
+/**
+ * @param {unknown} raw
+ * @param {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }} fallback
+ * @returns {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }}
+ */
+function normalizeCropConfig(raw, fallback) {
+  if (typeof raw === "string" && raw.trim()) {
+    return { prompt: raw.trim(), roi: { ...fallback.roi } };
+  }
+
+  if (raw && typeof raw === "object" && !Array.isArray(raw)) {
+    const prompt =
+      typeof raw.prompt === "string" && raw.prompt.trim()
+        ? raw.prompt.trim()
+        : fallback.prompt;
+    const roiSrc = raw.roi && typeof raw.roi === "object" ? raw.roi : raw;
+    const x = Number(roiSrc.x);
+    const y = Number(roiSrc.y);
+    const width = Number(roiSrc.width ?? roiSrc.w);
+    const height = Number(roiSrc.height ?? roiSrc.h);
+    const roi =
+      Number.isFinite(x) &&
+      Number.isFinite(y) &&
+      Number.isFinite(width) &&
+      Number.isFinite(height) &&
+      width > 0 &&
+      height > 0
+        ? { x, y, width, height }
+        : { ...fallback.roi };
+    return { prompt, roi };
+  }
+
+  return { prompt: fallback.prompt, roi: { ...fallback.roi } };
+}
+
+/**
+ * @param {"name" | "power"} kind
+ * @returns {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }}
+ */
+export function resolveEnemyCropConfig(kind) {
+  const fallback = kind === "name" ? DEFAULT_NAME_CROP : DEFAULT_POWER_CROP;
+  const up = _llmConfig.userPrompt;
+  if (!up || typeof up !== "object" || Array.isArray(up)) {
+    return { prompt: fallback.prompt, roi: { ...fallback.roi } };
+  }
+
+  const nested =
+    up.image &&
+    typeof up.image === "object" &&
+    !Array.isArray(up.image) &&
+    up.image.enemy &&
+    typeof up.image.enemy === "object" &&
+    !Array.isArray(up.image.enemy)
+      ? up.image.enemy[kind]
+      : undefined;
+
+  if (nested !== undefined) {
+    return normalizeCropConfig(nested, fallback);
+  }
+
+  // Legacy dotted keys: "image.enemy.name" / "image.enemy.power"
+  return normalizeCropConfig(up[`image.enemy.${kind}`], fallback);
+}
 
 /**
  * @param {string} host
@@ -118,7 +216,7 @@ export function parseEnemyJsonFromLlm(text) {
 
 /**
  * @param {unknown} data
- * @returns {{ power: number, name: string, language?: string, englishName?: string }}
+ * @returns {{ power: number, name: string, language?: string, nameLatin?: string, englishName?: string }}
  */
 export function normalizeEnemyExtraction(data) {
   if (!data || typeof data !== "object" || Array.isArray(data)) {
@@ -145,10 +243,56 @@ export function normalizeEnemyExtraction(data) {
   if (typeof data.language === "string" && data.language.trim()) {
     out.language = data.language.trim();
   }
+  if (typeof data.nameLatin === "string" && data.nameLatin.trim()) {
+    out.nameLatin = data.nameLatin.trim();
+  }
   if (typeof data.englishName === "string" && data.englishName.trim()) {
     out.englishName = data.englishName.trim();
   }
   return out;
+}
+
+/**
+ * @param {unknown} data
+ * @returns {{ name: string, language?: string, nameLatin?: string }}
+ */
+export function normalizeEnemyNameExtraction(data) {
+  if (!data || typeof data !== "object" || Array.isArray(data)) {
+    throw new Error("LLM name JSON must be an object.");
+  }
+  const name = typeof data.name === "string" ? data.name.trim() : "";
+  if (!name) throw new Error('LLM name JSON missing non-empty "name".');
+  const out = { name };
+  if (typeof data.language === "string" && data.language.trim()) {
+    out.language = data.language.trim();
+  }
+  if (typeof data.nameLatin === "string" && data.nameLatin.trim()) {
+    out.nameLatin = data.nameLatin.trim();
+  }
+  return out;
+}
+
+/**
+ * @param {unknown} data
+ * @returns {{ power: number }}
+ */
+export function normalizeEnemyPowerExtraction(data) {
+  if (!data || typeof data !== "object" || Array.isArray(data)) {
+    throw new Error("LLM power JSON must be an object.");
+  }
+  let power;
+  if (typeof data.power === "number" && Number.isFinite(data.power)) {
+    power = Math.round(data.power);
+  } else if (typeof data.power === "string") {
+    const digits = data.power.replace(/[^\d]+/g, "");
+    power = digits ? Number(digits) : NaN;
+  } else {
+    power = NaN;
+  }
+  if (!Number.isFinite(power) || power <= 0 || power > 999_999_999) {
+    throw new Error(`Invalid power from LLM: ${JSON.stringify(data.power)}`);
+  }
+  return { power };
 }
 
 /**
@@ -235,6 +379,85 @@ async function fetchWithTimeout(url, init, timeoutMs = REQUEST_TIMEOUT_MS) {
 }
 
 /**
+ * @param {{ left: number, top: number, width: number, height: number }} roi
+ * @param {{ width: number, height: number }} meta
+ */
+function clampRoi(roi, meta) {
+  const left = Math.max(0, Math.min(roi.left, meta.width - 1));
+  const top = Math.max(0, Math.min(roi.top, meta.height - 1));
+  const width = Math.max(1, Math.min(roi.width, meta.width - left));
+  const height = Math.max(1, Math.min(roi.height, meta.height - top));
+  return { left, top, width, height };
+}
+
+/**
+ * @param {string} imagePath
+ * @param {{ x: number, y: number, width: number, height: number }} roi
+ * @returns {Promise<Buffer>}
+ */
+export async function cropEnemyRoiToPngBuffer(imagePath, roi) {
+  const meta = await sharp(imagePath).metadata();
+  if (!meta.width || !meta.height) {
+    throw new Error(`Could not read image dimensions: ${imagePath}`);
+  }
+  const box = clampRoi(
+    { left: Math.floor(roi.x), top: Math.floor(roi.y), width: Math.floor(roi.width), height: Math.floor(roi.height) },
+    { width: meta.width, height: meta.height },
+  );
+  return sharp(imagePath).extract(box).png().toBuffer();
+}
+
+/**
+ * @param {string} host
+ * @param {string} model
+ * @param {string} userPrompt
+ * @param {{ mime: string, bytes: Buffer }[]} images
+ * @param {number} timeoutMs
+ */
+async function chatVisionWithImages(host, model, userPrompt, images, timeoutMs) {
+  const url = `${apiBase(host)}${CHAT_PATH}`;
+  const headers = { "Content-Type": "application/json" };
+  const token = process.env.LM_API_TOKEN?.trim();
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  /** @type {object[]} */
+  const input = [{ type: "text", content: userPrompt }];
+  for (const img of images) {
+    input.push({
+      type: "image",
+      data_url: `data:${img.mime};base64,${img.bytes.toString("base64")}`,
+    });
+  }
+
+  const response = await fetchWithTimeout(
+    url,
+    {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        model,
+        system_prompt: SYSTEM_PROMPT,
+        input,
+        temperature: 0,
+      }),
+    },
+    timeoutMs,
+  );
+
+  if (!response.ok) {
+    const body = await response.text().catch(() => "");
+    throw new Error(
+      `LM Studio HTTP ${response.status} for model "${model}": ${body.slice(0, 400) || response.statusText}`,
+    );
+  }
+
+  const payload = await response.json();
+  const content = extractTextFromLmStudioResponse(payload);
+  if (!content) throw new Error("LM Studio returned an empty message.");
+  return content;
+}
+
+/**
  * @param {string} imagePath
  * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
  * @returns {Promise<{ power: number, name: string, language?: string, englishName?: string }>}
@@ -257,42 +480,69 @@ export async function extractEnemyDataFromScreenshot(imagePath, options = {}) {
 
   const imageBytes = await fs.readFile(imagePath);
   const mime = mimeForImagePath(imagePath);
-  const dataUrl = `data:${mime};base64,${imageBytes.toString("base64")}`;
-  const url = `${apiBase(host)}${CHAT_PATH}`;
-
-  const headers = { "Content-Type": "application/json" };
-  const token = process.env.LM_API_TOKEN?.trim();
-  if (token) headers.Authorization = `Bearer ${token}`;
-
-  const response = await fetchWithTimeout(
-    url,
-    {
-      method: "POST",
-      headers,
-      body: JSON.stringify({
-        model,
-        system_prompt: SYSTEM_PROMPT,
-        input: [
-          { type: "text", content: USER_PROMPT },
-          { type: "image", data_url: dataUrl },
-        ],
-        temperature: 0,
-      }),
-    },
+  const content = await chatVisionWithImages(
+    host,
+    model,
+    resolveUserPromptImage(),
+    [{ mime, bytes: imageBytes }],
     timeoutMs,
   );
+  return normalizeEnemyExtraction(parseEnemyJsonFromLlm(content));
+}
 
-  if (!response.ok) {
-    const body = await response.text().catch(() => "");
-    throw new Error(
-      `LM Studio HTTP ${response.status} for model "${model}": ${body.slice(0, 400) || response.statusText}`,
-    );
+/**
+ * Crop name + power ROIs from the screenshot and recognize each crop with the LLM
+ * using `userPrompt.image.enemy.name` / `userPrompt.image.enemy.power`.
+ *
+ * @param {string} imagePath
+ * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
+ * @returns {Promise<{ power: number, name: string, language?: string, nameLatin?: string }>}
+ */
+export async function extractEnemyDataFromNamePowerCrops(imagePath, options = {}) {
+  const host = resolveHost(options.host);
+  const model = await resolveVisionModel(host, options.model);
+  const timeoutMs = options.timeoutMs ?? REQUEST_TIMEOUT_MS;
+  const clearBeforeEach =
+    options.clearCacheBeforeEachCall !== undefined
+      ? options.clearCacheBeforeEachCall === true
+      : shouldClearPredictionCacheBeforeEachCall({ config: _llmConfig });
+
+  if (clearBeforeEach) {
+    await clearLmPredictionCache({
+      config: _llmConfig,
+      label: "before LLM crop calls",
+    });
   }
 
-  const payload = await response.json();
-  const content = extractTextFromLmStudioResponse(payload);
-  if (!content) throw new Error("LM Studio returned an empty message.");
-  return normalizeEnemyExtraction(parseEnemyJsonFromLlm(content));
+  const nameCfg = resolveEnemyCropConfig("name");
+  const powerCfg = resolveEnemyCropConfig("power");
+  const nameBytes = await cropEnemyRoiToPngBuffer(imagePath, nameCfg.roi);
+  const powerBytes = await cropEnemyRoiToPngBuffer(imagePath, powerCfg.roi);
+
+  const nameContent = await chatVisionWithImages(
+    host,
+    model,
+    nameCfg.prompt,
+    [{ mime: "image/png", bytes: nameBytes }],
+    timeoutMs,
+  );
+  const namePart = normalizeEnemyNameExtraction(parseEnemyJsonFromLlm(nameContent));
+
+  const powerContent = await chatVisionWithImages(
+    host,
+    model,
+    powerCfg.prompt,
+    [{ mime: "image/png", bytes: powerBytes }],
+    timeoutMs,
+  );
+  const powerPart = normalizeEnemyPowerExtraction(parseEnemyJsonFromLlm(powerContent));
+
+  return normalizeEnemyExtraction({
+    name: namePart.name,
+    power: powerPart.power,
+    language: namePart.language,
+    nameLatin: namePart.nameLatin,
+  });
 }
 
 function parseExtractCliArgs(argv) {

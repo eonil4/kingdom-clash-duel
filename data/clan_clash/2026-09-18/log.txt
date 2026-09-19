@@ -1,398 +1,287 @@
 
-Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-09-18 (47 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
-	[Cache] Cleared before run: 1 path(s)
-	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-09-18 (47 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
 
 [Processing] Screenshot_2026.09.18_15.16.26.031.png
-	[LLM] Screenshot_2026.09.18_15.16.26.031.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5957518 name="Godzilla [GFC]" (18.5s)
+	[LLM crops] Screenshot_2026.09.18_15.16.26.031.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5957518 name="Godzilla [GFC]" latin="Godzilla [GFC]" (9.6s)
 	[Skip] WebP already exists: 005_957_518-Godzilla_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.16.33.931.png
-	[LLM] Screenshot_2026.09.18_15.16.33.931.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5218630 name="Kikkervisje GFC" (19.3s)
-	[Skip] WebP already exists: 005_218_630-Kikkervisje_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.16.33.931.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5218630 name="Kikkervisje CFC" latin="Kikkervisje CFC" (10.2s)
+	[Skip] WebP already exists: 005_218_630-Kikkervisje_CFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.16.41.514.png
-	[LLM] Screenshot_2026.09.18_15.16.41.514.png (attempt 1/3, timeout 600s)...
-	[LLM] power=5704141 name="Xinx[GFC]" (18.8s)
+	[LLM crops] Screenshot_2026.09.18_15.16.41.514.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5704141 name="Xinx[GFC]" latin="Xinx[GFC]" (9.0s)
 	[Skip] WebP already exists: 005_704_141-Xinx[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.16.49.914.png
-	[LLM] Screenshot_2026.09.18_15.16.49.914.png (attempt 1/3, timeout 600s)...
-	[LLM] power=205 name="WP[GFC]" (18.2s)
-	[Conversion] -> 000_000_205-WP[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.16.49.914.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4312823 name="WP[GFC]" latin="WP[GFC]" (8.7s)
+	[Skip] WebP already exists: 004_312_823-WP[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.16.58.464.png
-	[LLM] Screenshot_2026.09.18_15.16.58.464.png (attempt 1/3, timeout 600s)...
-	[LLM] power=615733 name="ram" (20.5s)
+	[LLM crops] Screenshot_2026.09.18_15.16.58.464.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=615733 name="ram" latin="ram" (8.0s)
 	[Skip] WebP already exists: 000_615_733-ram.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.05.881.png
-	[LLM] Screenshot_2026.09.18_15.17.05.881.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1746459 name="Retart [GFC]" (19.9s)
+	[LLM crops] Screenshot_2026.09.18_15.17.05.881.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1746459 name="Retart [GFC]" latin="Retart [GFC]" (9.6s)
 	[Skip] WebP already exists: 001_746_459-Retart_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.12.831.png
-	[LLM] Screenshot_2026.09.18_15.17.12.831.png (attempt 1/3, timeout 600s)...
-	[LLM] power=221 name="Славеч" (19.1s)
-	[Skip] WebP already exists: 000_000_221-.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.17.12.831.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=173385 name="Славец" latin="Slavets" (8.5s)
+	[Conversion] -> 000_173_385-Slavets.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.22.814.png
-	[LLM] Screenshot_2026.09.18_15.17.22.814.png (attempt 1/3, timeout 600s)...
-	[LLM] power=2772262 name="Doffehof (GFC)" (19.3s)
-	[Skip] WebP already exists: 002_772_262-Doffehof_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.17.22.814.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2772262 name="Dofferhof (GFC)" latin="Dofferhof (GFC)" (9.8s)
+	[Skip] WebP already exists: 002_772_262-Dofferhof_GFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.31.881.png
-	[LLM] Screenshot_2026.09.18_15.17.31.881.png (attempt 1/3, timeout 600s)...
-	[LLM] power=261 name="Kvothe[GFC]" (18.9s)
-	[Skip] WebP already exists: 000_000_261-Kvothe[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.17.31.881.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=8455177 name="Kvothe[GFC]" latin="Kvothe[GFC]" (10.0s)
+	[Skip] WebP already exists: 008_455_177-Kvothe[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.40.998.png
-	[LLM] Screenshot_2026.09.18_15.17.40.998.png (attempt 1/3, timeout 600s)...
-	[LLM] power=210 name="SDV074 [GFC]" (19.8s)
-	[Skip] WebP already exists: 000_000_210-SDV074_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.17.40.998.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5563159 name="SDV074 [GFC]" latin="SDV074 [GFC]" (10.7s)
+	[Skip] WebP already exists: 005_563_159-SDV074_[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.17.50.948.png
-	[LLM] Screenshot_2026.09.18_15.17.50.948.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1595447 name="Jonnie2 [GFC]" (19.2s)
+	[LLM crops] Screenshot_2026.09.18_15.17.50.948.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1595447 name="Jonnie2 [GFC]" latin="Jonnie2 [GFC]" (9.7s)
 	[Skip] WebP already exists: 001_595_447-Jonnie2_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.01.098.png
-	[LLM] Screenshot_2026.09.18_15.18.01.098.png (attempt 1/3, timeout 600s)...
-	[LLM] power=2850866 name="Excalibur [GFC]" (19.7s)
+	[LLM crops] Screenshot_2026.09.18_15.18.01.098.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2850866 name="Excalibur [GFC]" latin="Excalibur [GFC]" (9.0s)
 	[Skip] WebP already exists: 002_850_866-Excalibur_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.10.248.png
-	[LLM] Screenshot_2026.09.18_15.18.10.248.png (attempt 1/3, timeout 600s)...
-
-Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-09-18 (47 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
-	[Cache] Cleared before run: 1 path(s)
-	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
-
-[Skip] Screenshot_2026.09.18_15.16.26.031.png — WebP exists: 005_957_518-Godzilla_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.16.33.931.png — WebP exists: 005_218_630-Kikkervisje_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.16.41.514.png — WebP exists: 005_704_141-Xinx[GFC].webp
-
-[Processing] Screenshot_2026.09.18_15.16.49.914.png
-	[LLM] Screenshot_2026.09.18_15.16.49.914.png (attempt 1/3, timeout 600s)...
-	[LLM] power=205 name="WP[GFC]" (5.5s)
-	[Conversion] -> 000_000_205-WP[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
-
-[Skip] Screenshot_2026.09.18_15.16.58.464.png — WebP exists: 000_615_733-ram.webp
-
-[Skip] Screenshot_2026.09.18_15.17.05.881.png — WebP exists: 001_746_459-Retart_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.12.831.png — WebP exists: 000_000_221-.webp
-
-[Skip] Screenshot_2026.09.18_15.17.22.814.png — WebP exists: 002_772_262-Doffehof_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.17.31.881.png — WebP exists: 000_000_261-Kvothe[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.40.998.png — WebP exists: 000_000_210-SDV074_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.50.948.png — WebP exists: 001_595_447-Jonnie2_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.18.01.098.png — WebP exists: 002_850_866-Excalibur_[GFC].webp
-
-[Processing] Screenshot_2026.09.18_15.18.10.248.png
-	[LLM] Screenshot_2026.09.18_15.18.10.248.png (attempt 1/3, timeout 600s)...
-	[LLM] power=3241055 name="Player13210gfc" (6.6s)
+	[LLM crops] Screenshot_2026.09.18_15.18.10.248.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3241055 name="Player13210gfc" latin="Player13210gfc" (9.3s)
 	[Skip] WebP already exists: 003_241_055-Player13210gfc.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.20.564.png
-	[LLM] Screenshot_2026.09.18_15.18.20.564.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1230697 name="Dieke2GFC" (18.2s)
+	[LLM crops] Screenshot_2026.09.18_15.18.20.564.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1230697 name="Dieke2GFC" latin="Dieke2GFC" (8.5s)
 	[Skip] WebP already exists: 001_230_697-Dieke2GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.30.248.png
-	[LLM] Screenshot_2026.09.18_15.18.30.248.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1359275 name="CROAndromedaGFC" (19.6s)
-	[Skip] WebP already exists: 001_359_275-CROAndromedaGFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.18.30.248.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1359275 name="CROAndromedaCFC" latin="CROAndromedaCFC" (8.8s)
+	[Skip] WebP already exists: 001_359_275-CROAndromedaCFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.41.647.png
-	[LLM] Screenshot_2026.09.18_15.18.41.647.png (attempt 1/3, timeout 600s)...
-	[LLM] power=2529302 name="KiBling [GFC]" (20.3s)
+	[LLM crops] Screenshot_2026.09.18_15.18.41.647.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2529302 name="KiBling [GFC]" latin="KiBling [GFC]" (8.2s)
 	[Skip] WebP already exists: 002_529_302-KiBling_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.18.52.748.png
-	[LLM] Screenshot_2026.09.18_15.18.52.748.png (attempt 1/3, timeout 600s)...
-	[LLM] power=217 name="Snake [GFC]" (19.8s)
-	[Skip] WebP already exists: 000_000_217-Snake_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.18.52.748.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2628367 name="Snake [GFC]" latin="Snake [GFC]" (7.0s)
+	[Skip] WebP already exists: 002_628_367-Snake_[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.19.03.198.png
-	[LLM] Screenshot_2026.09.18_15.19.03.198.png (attempt 1/3, timeout 600s)...
-	[LLM] power=1401003 name="Борцеслав" (20.2s)
-	[Skip] WebP already exists: 001_401_003-.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.19.03.198.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1401003 name="Борцеслав" latin="Borceslav" (7.3s)
+	[Conversion] -> 001_401_003-Borceslav.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.19.13.498.png
-	[LLM] Screenshot_2026.09.18_15.19.13.498.png (attempt 1/3, timeout 600s)...
-	[LLM] power=8878737 name="GFCrifter" (20.4s)
-	[Skip] WebP already exists: 008_878_737-GFCrifter.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.19.13.498.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=8878737 name="GFCther" latin="GFCther" (7.2s)
+	[Skip] WebP already exists: 008_878_737-GFCther.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.19.26.031.png
-	[LLM] Screenshot_2026.09.18_15.19.26.031.png (attempt 1/3, timeout 600s)...
-	[LLM] power=857020 name="VRBMA (GFC)" (20.6s)
+	[LLM crops] Screenshot_2026.09.18_15.19.26.031.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=857020 name="VRBMA (GFC)" latin="VRBMA (GFC)" (7.6s)
 	[Skip] WebP already exists: 000_857_020-VRBMA_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.19.42.398.png
-	[LLM] Screenshot_2026.09.18_15.19.42.398.png (attempt 1/3, timeout 600s)...
-	[LLM] power=290145 name="Saufsenn" (20.6s)
+	[LLM crops] Screenshot_2026.09.18_15.19.42.398.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=290145 name="Saufsenn" latin="Saufsenn" (7.2s)
 	[Skip] WebP already exists: 000_290_145-Saufsenn.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.22.33.414.png
-	[LLM] Screenshot_2026.09.18_15.22.33.414.png (attempt 1/3, timeout 600s)...
-	[LLM] power=332986 name="Jaap GFC" (20.4s)
+	[LLM crops] Screenshot_2026.09.18_15.22.33.414.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=332986 name="Jaap GFC" latin="Jaap GFC" (7.6s)
 	[Skip] WebP already exists: 000_332_986-Jaap_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.22.47.131.png
-	[LLM] Screenshot_2026.09.18_15.22.47.131.png (attempt 1/3, timeout 600s)...
-	[LLM] power=109259 name="Drakonus" (19.7s)
+	[LLM crops] Screenshot_2026.09.18_15.22.47.131.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=109259 name="Drakonus" latin="Drakonus" (7.3s)
 	[Skip] WebP already exists: 000_109_259-Drakonus.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.22.59.864.png
-	[LLM] Screenshot_2026.09.18_15.22.59.864.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9920722 name="+|R_ostr1ng+|+" (21.0s)
-	[Skip] WebP already exists: 009_920_722-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.22.59.864.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9920722 name="ADDICTCFC" latin="ADDICTCFC" (7.4s)
+	[Skip] WebP already exists: 009_920_722-ADDICTCFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.23.10.981.png
-	[LLM] Screenshot_2026.09.18_15.23.10.981.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10629337 name="+|R_ostr1ng+|+" (20.6s)
-	[Skip] WebP already exists: 010_629_337-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.23.10.981.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10629337 name="RUDI CFC" latin="RUDI CFC" (8.1s)
+	[Skip] WebP already exists: 010_629_337-RUDI_CFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.23.25.781.png
-	[LLM] Screenshot_2026.09.18_15.23.25.781.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10116377 name="DutchwarRioRGFc" (20.4s)
-	[Skip] WebP already exists: 010_116_377-DutchwarRioRGFc.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.23.25.781.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10116377 name="DutchwarriorGFC" latin="DutchwarriorGFC" (8.1s)
+	[Skip] WebP already exists: 010_116_377-DutchwarriorGFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.23.37.098.png
-	[LLM] Screenshot_2026.09.18_15.23.37.098.png (attempt 1/3, timeout 600s)...
-	[LLM] power=250 name="Diablo42 GFC" (20.1s)
-	[Skip] WebP already exists: 000_000_250-Diablo42_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.23.37.098.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=435761 name="Diablo42 CFC" latin="Diablo42 CFC" (7.4s)
+	[Skip] WebP already exists: 000_435_761-Diablo42_CFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.23.47.597.png
-	[LLM] Screenshot_2026.09.18_15.23.47.597.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10664914 name="DiekeGFC" (20.0s)
+	[LLM crops] Screenshot_2026.09.18_15.23.47.597.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10664914 name="DiekeGFC" latin="DiekeGFC" (7.1s)
 	[Skip] WebP already exists: 010_664_914-DiekeGFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.00.447.png
-	[LLM] Screenshot_2026.09.18_15.24.00.447.png (attempt 1/3, timeout 600s)...
-	[LLM] power=843413 name="Hefttruck [GFC]" (20.6s)
-	[Skip] WebP already exists: 000_843_413-Hefttruck_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.00.447.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=843413 name="Heftuck [GFC]" latin="Heftuck [GFC]" (8.2s)
+	[Skip] WebP already exists: 000_843_413-Heftuck_[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.11.181.png
-	[LLM] Screenshot_2026.09.18_15.24.11.181.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9121311 name="Shadowf@xGFC" (20.3s)
-	[Skip] WebP already exists: 009_121_311-Shadowf_xGFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.11.181.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9121311 name="Shadow@xCFC" latin="Shadow@xCFC" (8.8s)
+	[Skip] WebP already exists: 009_121_311-Shadow_xCFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.21.747.png
-	[LLM] Screenshot_2026.09.18_15.24.21.747.png (attempt 1/3, timeout 600s)...
-	[LLM] power=205 name="Pin [GFC]" (20.2s)
-	[Skip] WebP already exists: 000_000_205-Pin_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.21.747.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7345500 name="Pin [GFC]" latin="Pin [GFC]" (9.5s)
+	[Skip] WebP already exists: 007_345_500-Pin_[GFC].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.32.414.png
-	[LLM] Screenshot_2026.09.18_15.24.32.414.png (attempt 1/3, timeout 600s)...
-	[LLM] power=217 name="Mars GFC" (19.9s)
-	[Skip] WebP already exists: 000_000_217-Mars_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.32.414.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=8428018 name="Mars CFC" latin="Mars CFC" (8.9s)
+	[Skip] WebP already exists: 008_428_018-Mars_CFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.45.181.png
-	[LLM] Screenshot_2026.09.18_15.24.45.181.png (attempt 1/3, timeout 600s)...
-
-Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-09-18 (47 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
-	[Cache] Cleared before run: 1 path(s)
-	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
-
-[Skip] Screenshot_2026.09.18_15.16.26.031.png — WebP exists: 005_957_518-Godzilla_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.16.33.931.png — WebP exists: 005_218_630-Kikkervisje_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.16.41.514.png — WebP exists: 005_704_141-Xinx[GFC].webp
-
-[Processing] Screenshot_2026.09.18_15.16.49.914.png
-	[Map] Using existing entry -> 000_000_205-WP[GFC].webp
-	[Conversion] -> 000_000_205-WP[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
-
-[Skip] Screenshot_2026.09.18_15.16.58.464.png — WebP exists: 000_615_733-ram.webp
-
-[Skip] Screenshot_2026.09.18_15.17.05.881.png — WebP exists: 001_746_459-Retart_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.12.831.png — WebP exists: 000_000_221-.webp
-
-[Skip] Screenshot_2026.09.18_15.17.22.814.png — WebP exists: 002_772_262-Doffehof_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.17.31.881.png — WebP exists: 000_000_261-Kvothe[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.40.998.png — WebP exists: 000_000_210-SDV074_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.17.50.948.png — WebP exists: 001_595_447-Jonnie2_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.18.01.098.png — WebP exists: 002_850_866-Excalibur_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.18.10.248.png — WebP exists: 003_241_055-Player13210gfc.webp
-
-[Skip] Screenshot_2026.09.18_15.18.20.564.png — WebP exists: 001_230_697-Dieke2GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.18.30.248.png — WebP exists: 001_359_275-CROAndromedaGFC.webp
-
-[Skip] Screenshot_2026.09.18_15.18.41.647.png — WebP exists: 002_529_302-KiBling_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.18.52.748.png — WebP exists: 000_000_217-Snake_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.19.03.198.png — WebP exists: 001_401_003-.webp
-
-[Skip] Screenshot_2026.09.18_15.19.13.498.png — WebP exists: 008_878_737-GFCrifter.webp
-
-[Skip] Screenshot_2026.09.18_15.19.26.031.png — WebP exists: 000_857_020-VRBMA_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.19.42.398.png — WebP exists: 000_290_145-Saufsenn.webp
-
-[Skip] Screenshot_2026.09.18_15.22.33.414.png — WebP exists: 000_332_986-Jaap_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.22.47.131.png — WebP exists: 000_109_259-Drakonus.webp
-
-[Skip] Screenshot_2026.09.18_15.22.59.864.png — WebP exists: 009_920_722-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
-
-[Skip] Screenshot_2026.09.18_15.23.10.981.png — WebP exists: 010_629_337-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
-
-[Skip] Screenshot_2026.09.18_15.23.25.781.png — WebP exists: 010_116_377-DutchwarRioRGFc.webp
-
-[Skip] Screenshot_2026.09.18_15.23.37.098.png — WebP exists: 000_000_250-Diablo42_GFC.webp
-
-[Skip] Screenshot_2026.09.18_15.23.47.597.png — WebP exists: 010_664_914-DiekeGFC.webp
-
-[Skip] Screenshot_2026.09.18_15.24.00.447.png — WebP exists: 000_843_413-Hefttruck_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.24.11.181.png — WebP exists: 009_121_311-Shadowf_xGFC.webp
-
-[Skip] Screenshot_2026.09.18_15.24.21.747.png — WebP exists: 000_000_205-Pin_[GFC].webp
-
-[Skip] Screenshot_2026.09.18_15.24.32.414.png — WebP exists: 000_000_217-Mars_GFC.webp
-
-[Processing] Screenshot_2026.09.18_15.24.45.181.png
-	[LLM] Screenshot_2026.09.18_15.24.45.181.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9516496 name="+|VooGRC+|" (11.0s)
-	[Skip] WebP already exists: 009_516_496-%257CVooGRC_%257C-%7CVooGRC_%7C.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.45.181.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9516496 name="VOOGE" latin="VOOGE" (8.4s)
+	[Skip] WebP already exists: 009_516_496-VOOGE.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.24.54.647.png
-	[LLM] Screenshot_2026.09.18_15.24.54.647.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7677023 name="VikingGFC" (19.2s)
-	[Skip] WebP already exists: 007_677_023-VikingGFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.24.54.647.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7677023 name="VikingCFC" latin="VikingCFC" (8.6s)
+	[Conversion] -> 007_677_023-VikingCFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.25.05.147.png
-	[LLM] Screenshot_2026.09.18_15.25.05.147.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10432379 name="Barbarossa[GFC]" (19.5s)
+	[LLM crops] Screenshot_2026.09.18_15.25.05.147.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10432379 name="Barbarossa[GFC]" latin="Barbarossa[GFC]" (9.2s)
 	[Skip] WebP already exists: 010_432_379-Barbarossa[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.25.19.414.png
-	[LLM] Screenshot_2026.09.18_15.25.19.414.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9274830 name="GFC Hero" (20.2s)
-	[Skip] WebP already exists: 009_274_830-GFC_Hero.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.25.19.414.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9274830 name="GFC|Hero" latin="GFC|Hero" (7.4s)
+	[Conversion] -> 009_274_830-GFC%7CHero.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.25.31.331.png
-	[LLM] Screenshot_2026.09.18_15.25.31.331.png (attempt 1/3, timeout 600s)...
-	[LLM] power=7124740 name="GFClose2dBone" (20.7s)
+	[LLM crops] Screenshot_2026.09.18_15.25.31.331.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7124740 name="GFClose2dBone" latin="GFClose2dBone" (8.1s)
 	[Skip] WebP already exists: 007_124_740-GFClose2dBone.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.25.49.631.png
-	[LLM] Screenshot_2026.09.18_15.25.49.631.png (attempt 1/3, timeout 600s)...
-	[LLM] power=957183 name="[GFC]XLR8" (21.6s)
-	[Skip] WebP already exists: 000_957_183-[GFC]XLR8.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.25.49.631.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=957183 name="[GFC]XL83" latin="[GFC]XL83" (10.1s)
+	[Conversion] -> 000_957_183-[GFC]XL83.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.26.03.381.png
-	[LLM] Screenshot_2026.09.18_15.26.03.381.png (attempt 1/3, timeout 600s)...
-	[LLM] power=9180979 name="Nemo GFC" (20.1s)
+	[LLM crops] Screenshot_2026.09.18_15.26.03.381.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9180979 name="Nemo GFC" latin="Nemo GFC" (9.8s)
 	[Skip] WebP already exists: 009_180_979-Nemo_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.26.15.614.png
-	[LLM] Screenshot_2026.09.18_15.26.15.614.png (attempt 1/3, timeout 600s)...
-	[LLM] power=11436871 name="Bryan|GFC" (19.4s)
-	[Skip] WebP already exists: 011_436_871-Bryan%257CGFC-Bryan%7CGFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.26.15.614.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=11436871 name="Bryan|GFC" latin="Bryan|GFC" (10.0s)
+	[Conversion] -> 011_436_871-Bryan%7CGFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.26.31.931.png
-	[LLM] Screenshot_2026.09.18_15.26.31.931.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10689887 name="Deventer [GFC]" (19.5s)
+	[LLM crops] Screenshot_2026.09.18_15.26.31.931.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10689887 name="Deventer [GFC]" latin="Deventer [GFC]" (10.5s)
 	[Skip] WebP already exists: 010_689_887-Deventer_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.26.44.514.png
-	[LLM] Screenshot_2026.09.18_15.26.44.514.png (attempt 1/3, timeout 600s)...
-	[LLM] power=10402658 name="Robbie [GFC]" (19.6s)
+	[LLM crops] Screenshot_2026.09.18_15.26.44.514.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=10402658 name="Robbie [GFC]" latin="Robbie [GFC]" (9.1s)
 	[Skip] WebP already exists: 010_402_658-Robbie_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.26.54.264.png
-	[LLM] Screenshot_2026.09.18_15.26.54.264.png (attempt 1/3, timeout 600s)...
-	[LLM] power=3423924 name="Jonnie [GFC]" (20.0s)
+	[LLM crops] Screenshot_2026.09.18_15.26.54.264.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3423924 name="Jonnie [GFC]" latin="Jonnie [GFC]" (9.9s)
 	[Skip] WebP already exists: 003_423_924-Jonnie_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.27.04.564.png
-	[LLM] Screenshot_2026.09.18_15.27.04.564.png (attempt 1/3, timeout 600s)...
-	[LLM] power=3297783 name="ALVAREZ GFC" (20.0s)
+	[LLM crops] Screenshot_2026.09.18_15.27.04.564.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3297783 name="ALVAREZ GFC" latin="ALVAREZ GFC" (9.0s)
 	[Skip] WebP already exists: 003_297_783-ALVAREZ_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.27.15.164.png
-	[LLM] Screenshot_2026.09.18_15.27.15.164.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6857118 name="George [GFC]" (20.3s)
+	[LLM crops] Screenshot_2026.09.18_15.27.15.164.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6857118 name="George [GFC]" latin="George [GFC]" (7.7s)
 	[Skip] WebP already exists: 006_857_118-George_[GFC].webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.27.34.731.png
-	[LLM] Screenshot_2026.09.18_15.27.34.731.png (attempt 1/3, timeout 600s)...
-	[LLM] power=4347924 name="appelboom GFC" (20.7s)
-	[Conversion] -> 004_347_924-appelboom_GFC.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.27.34.731.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4347924 name="appelboom GFC" latin="appelboom GFC" (8.0s)
+	[Skip] WebP already exists: 004_347_924-appelboom_GFC.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
 [Processing] Screenshot_2026.09.18_15.27.46.997.png
-	[LLM] Screenshot_2026.09.18_15.27.46.997.png (attempt 1/3, timeout 600s)...
-	[LLM] power=6568451 name="+|R_ostr1ng+|+" (21.2s)
-	[Conversion] -> 006_568_451-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
-	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+	[LLM crops] Screenshot_2026.09.18_15.27.46.997.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6568451 name="RESILIENCEC|F" latin="RESILIENCEC|F" (9.0s)
+	[Conversion] -> 006_568_451-RESILIENCEC%7CF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
-Done: 2 new (LLM), 1 from map only, 44 skipped (complete), 0 failed. LLM min/median/max: 11.0s / 20.0s / 21.6s
-Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+Done (convert2): 7 new (LLM crops), 0 from map only, 40 skipped (complete), 0 failed. LLM min/median/max: 7.0s / 8.7s / 10.7s
+Map: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json

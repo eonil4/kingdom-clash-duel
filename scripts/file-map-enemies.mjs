@@ -132,7 +132,14 @@ export function canonicalEnemyMapKey(
   // Include the raw display name token only if it is present and different
   // from the latin token (avoids duplicates like "Foo-Foo").
   if (nameToken && nameToken !== latinNameToken) parts.push(nameToken);
-  if (englishNameToken) parts.push(englishNameToken);
+  // Same for English: omit when it matches latin or the raw name token.
+  if (
+    englishNameToken &&
+    englishNameToken !== latinNameToken &&
+    englishNameToken !== nameToken
+  ) {
+    parts.push(englishNameToken);
+  }
 
   const webpBase = `${parts.join("-")}.webp`;
   return `${dir}/${originalBase}/${webpBase}`;
