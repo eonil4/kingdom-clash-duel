@@ -1,0 +1,301 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-09-04 (49 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.09.04_02.06.42.936.png
+	[LLM] Screenshot_2026.09.04_02.06.42.936.png (attempt 1/3, timeout 600s)...
+	[LLM] power=261 name="X SKF" (17.6s)
+	[Conversion] -> 000_000_261-X_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.06.52.869.png
+	[LLM] Screenshot_2026.09.04_02.06.52.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9382635 name="Leroy♥SKF" (19.8s)
+	[Conversion] -> 009_382_635-Leroy_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.01.136.png
+	[LLM] Screenshot_2026.09.04_02.07.01.136.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8092586 name="Whoooosh|skf|422" (20.2s)
+	[Conversion] -> 008_092_586-Whoooosh%257Cskf%257C422-Whoooosh%7Cskf%7C422.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.08.952.png
+	[LLM] Screenshot_2026.09.04_02.07.08.952.png (attempt 1/3, timeout 600s)...
+	[LLM] power=251 name="hypo_jr" (19.5s)
+	[Conversion] -> 000_000_251-hypo_jr.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.17.502.png
+	[LLM] Screenshot_2026.09.04_02.07.17.502.png (attempt 1/3, timeout 600s)...
+	[LLM] power=185 name="RAGNAROK" (19.3s)
+	[Conversion] -> 000_000_185-RAGNAROK.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.26.352.png
+	[LLM] Screenshot_2026.09.04_02.07.26.352.png (attempt 1/3, timeout 600s)...
+	[LLM] power=215 name="Пушишка ^_^ SkF" (20.0s)
+	[Conversion] -> 000_000_215-SkF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.37.802.png
+	[LLM] Screenshot_2026.09.04_02.07.37.802.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4469797 name="Шишка SKF" (19.9s)
+	[Conversion] -> 004_469_797-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.07.51.869.png
+	[LLM] Screenshot_2026.09.04_02.07.51.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=231 name="Oldbabay SKF" (19.8s)
+	[Conversion] -> 000_000_231-Oldbabay_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.00.869.png
+	[LLM] Screenshot_2026.09.04_02.08.00.869.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5264262 name="За сланец !" (20.5s)
+	[Conversion] -> 005_264_262-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.12.069.png
+	[LLM] Screenshot_2026.09.04_02.08.12.069.png (attempt 1/3, timeout 600s)...
+	[LLM] power=201 name="Николай SKF" (21.3s)
+	[Conversion] -> 000_000_201-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.23.202.png
+	[LLM] Screenshot_2026.09.04_02.08.23.202.png (attempt 1/3, timeout 600s)...
+	[LLM] power=187 name="Mr.RU ~skf~" (21.0s)
+	[Conversion] -> 000_000_187-Mr.RU_skf.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.34.019.png
+	[LLM] Screenshot_2026.09.04_02.08.34.019.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5308961 name="13 RUS [SKF]" (22.0s)
+	[Conversion] -> 005_308_961-13_RUS_[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.44.436.png
+	[LLM] Screenshot_2026.09.04_02.08.44.436.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7833760 name="Моряк Попай SKF" (21.2s)
+	[Conversion] -> 007_833_760-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.08.57.185.png
+	[LLM] Screenshot_2026.09.04_02.08.57.185.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4511023 name="гендальф 3S" (21.5s)
+	[Conversion] -> 004_511_023-3S.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.09.08.769.png
+	[LLM] Screenshot_2026.09.04_02.09.08.769.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4205801 name="смерть SKF" (21.2s)
+	[Conversion] -> 004_205_801-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.09.19.202.png
+	[LLM] Screenshot_2026.09.04_02.09.19.202.png (attempt 1/3, timeout 600s)...
+	[LLM] power=247 name="ERÉMA SKF" (21.2s)
+	[Conversion] -> 000_000_247-ER_MA_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.09.30.052.png
+	[LLM] Screenshot_2026.09.04_02.09.30.052.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6656140 name="ЛЮМ SKF" (21.7s)
+	[Conversion] -> 006_656_140-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.09.39.886.png
+	[LLM] Screenshot_2026.09.04_02.09.39.886.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5620399 name="SAMskf" (24.6s)
+	[Conversion] -> 005_620_399-SAMskf.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.09.54.019.png
+	[LLM] Screenshot_2026.09.04_02.09.54.019.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4308940 name="Garik 3S_SKF" (24.4s)
+	[Conversion] -> 004_308_940-Garik_3S_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.10.07.436.png
+	[LLM] Screenshot_2026.09.04_02.10.07.436.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9467723 name="Mikola skf" (22.6s)
+	[Conversion] -> 009_467_723-Mikola_skf.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.10.20.219.png
+	[LLM] Screenshot_2026.09.04_02.10.20.219.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2042167 name="микроинсульт" (22.6s)
+	[Conversion] -> 002_042_167-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.10.32.057.png
+	[LLM] Screenshot_2026.09.04_02.10.32.057.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1380979 name="+|R_ostr1ng+|+" (23.1s)
+	[Conversion] -> 001_380_979-%257CR_ostr1ng_%257C-%7CR_ostr1ng_%7C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.10.43.002.png
+	[LLM] Screenshot_2026.09.04_02.10.43.002.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2570012 name="Санчо Пансаッ" (23.1s)
+	[Conversion] -> 002_570_012-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.10.57.319.png
+	[LLM] Screenshot_2026.09.04_02.10.57.319.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9598440 name="Алексей[SKF]" (23.6s)
+	[Conversion] -> 009_598_440-[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.11.09.236.png
+	[LLM] Screenshot_2026.09.04_02.11.09.236.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6700798 name="сaня SKF" (23.0s)
+	[Conversion] -> 006_700_798-a_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.11.37.802.png
+	[LLM] Screenshot_2026.09.04_02.11.37.802.png (attempt 1/3, timeout 600s)...
+	[LLM] power=199 name="Markus [SKF]" (22.3s)
+	[Conversion] -> 000_000_199-Markus_[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.11.51.236.png
+	[LLM] Screenshot_2026.09.04_02.11.51.236.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9309324 name="HACKIKINII SKF" (23.7s)
+	[Conversion] -> 009_309_324-HACKIKINII_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.12.05.952.png
+	[LLM] Screenshot_2026.09.04_02.12.05.952.png (attempt 1/3, timeout 600s)...
+	[LLM] power=2882017 name="Misha_Skf" (23.0s)
+	[Conversion] -> 002_882_017-Misha_Skf.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.12.17.669.png
+	[LLM] Screenshot_2026.09.04_02.12.17.669.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5733099 name="Уенчы SKF" (22.5s)
+	[Conversion] -> 005_733_099-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.12.29.586.png
+	[LLM] Screenshot_2026.09.04_02.12.29.586.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7227014 name="димаг SKF" (22.5s)
+	[Conversion] -> 007_227_014-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.12.42.686.png
+	[LLM] Screenshot_2026.09.04_02.12.42.686.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3875861 name="MAXskf" (22.4s)
+	[Conversion] -> 003_875_861-MAXskf.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.12.54.302.png
+	[LLM] Screenshot_2026.09.04_02.12.54.302.png (attempt 1/3, timeout 600s)...
+	[LLM] power=215 name="Луч" (22.0s)
+	[Conversion] -> 000_000_215-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.13.06.752.png
+	[LLM] Screenshot_2026.09.04_02.13.06.752.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10158289 name="SMOG" (22.3s)
+	[Conversion] -> 010_158_289-SMOG.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.13.23.486.png
+	[LLM] Screenshot_2026.09.04_02.13.23.486.png (attempt 1/3, timeout 600s)...
+	[LLM] power=195 name="White SKF" (21.5s)
+	[Conversion] -> 000_000_195-White_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.13.38.169.png
+	[LLM] Screenshot_2026.09.04_02.13.38.169.png (attempt 1/3, timeout 600s)...
+	[LLM] power=193 name="FCSM[SKF]" (22.6s)
+	[Conversion] -> 000_000_193-FCSM[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.13.51.402.png
+	[LLM] Screenshot_2026.09.04_02.13.51.402.png (attempt 1/3, timeout 600s)...
+	[LLM] power=207 name="Ivan_G" (21.9s)
+	[Conversion] -> 000_000_207-Ivan_G.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.14.04.552.png
+	[LLM] Screenshot_2026.09.04_02.14.04.552.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5789041 name="YpAn74 SKF" (23.1s)
+	[Conversion] -> 005_789_041-YpAn74_SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.14.21.102.png
+	[LLM] Screenshot_2026.09.04_02.14.21.102.png (attempt 1/3, timeout 600s)...
+	[LLM] power=203 name="hy po.Sr♥" (22.7s)
+	[Conversion] -> 000_000_203-hy_po.Sr.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.14.34.186.png
+	[LLM] Screenshot_2026.09.04_02.14.34.186.png (attempt 1/3, timeout 600s)...
+	[LLM] power=243 name="DARK[SKF]" (22.3s)
+	[Conversion] -> 000_000_243-DARK[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.14.53.852.png
+	[LLM] Screenshot_2026.09.04_02.14.53.852.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10254247 name="СТУДЕНТ. [SKF]" (23.3s)
+	[Conversion] -> 010_254_247-._[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.15.07.086.png
+	[LLM] Screenshot_2026.09.04_02.15.07.086.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5529014 name="Чирцк" (24.5s)
+	[Conversion] -> 005_529_014-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.15.21.002.png
+	[LLM] Screenshot_2026.09.04_02.15.21.002.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8507251 name="Мурманскf" (24.0s)
+	[Conversion] -> 008_507_251-f.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.15.33.836.png
+	[LLM] Screenshot_2026.09.04_02.15.33.836.png (attempt 1/3, timeout 600s)...
+	[LLM] power=207 name="Vladimir" (23.0s)
+	[Conversion] -> 000_000_207-Vladimir.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.15.44.486.png
+	[LLM] Screenshot_2026.09.04_02.15.44.486.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4756739 name="Саша" (23.2s)
+	[Conversion] -> 004_756_739-.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.15.56.519.png
+	[LLM] Screenshot_2026.09.04_02.15.56.519.png (attempt 1/3, timeout 600s)...
+	[LLM] power=233 name="Богомол[SKF]" (23.6s)
+	[Conversion] -> 000_000_233-[SKF].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.16.09.086.png
+	[LLM] Screenshot_2026.09.04_02.16.09.086.png (attempt 1/3, timeout 600s)...
+	[LLM] power=245 name="НильсРассел SKF" (24.0s)
+	[Conversion] -> 000_000_245-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.16.21.919.png
+	[LLM] Screenshot_2026.09.04_02.16.21.919.png (attempt 1/3, timeout 600s)...
+	[LLM] power=207 name="Артём SKF" (22.6s)
+	[Conversion] -> 000_000_207-SKF.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.16.34.836.png
+	[LLM] Screenshot_2026.09.04_02.16.34.836.png (attempt 1/3, timeout 600s)...
+	[LLM] power=227 name="González" (22.3s)
+	[Conversion] -> 000_000_227-Gonz_lez.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.09.04_02.16.46.952.png
+	[LLM] Screenshot_2026.09.04_02.16.46.952.png (attempt 1/3, timeout 600s)...
+	[LLM] power=211 name="OMSK.55....." (23.9s)
+	[Conversion] -> 000_000_211-OMSK.55......webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 49 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 17.6s / 22.4s / 24.6s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json

@@ -1,0 +1,295 @@
+
+Processing folder: C:\DEV\workspace\kingdom-clash-duel\data\enemies\2026-08-28 (48 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.08.28_02.16.00.554.png
+	[LLM] Screenshot_2026.08.28_02.16.00.554.png (attempt 1/3, timeout 600s)...
+	[LLM] power=245 name="SasznikWP" (28.3s)
+	[Conversion] -> 000_000_245-SasznikWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.08.186.png
+	[LLM] Screenshot_2026.08.28_02.16.08.186.png (attempt 1/3, timeout 600s)...
+	[LLM] power=213 name="WP/ MARO" (23.8s)
+	[Conversion] -> 000_000_213-WP%252F_MARO-WP%2F_MARO.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.21.970.png
+	[LLM] Screenshot_2026.08.28_02.16.21.970.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8246774 name="Arek__WP" (23.3s)
+	[Conversion] -> 008_246_774-Arek_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.32.653.png
+	[LLM] Screenshot_2026.08.28_02.16.32.653.png (attempt 1/3, timeout 600s)...
+	[LLM] power=209 name="DUH (WP)" (23.1s)
+	[Conversion] -> 000_000_209-DUH_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.42.020.png
+	[LLM] Screenshot_2026.08.28_02.16.42.020.png (attempt 1/3, timeout 600s)...
+	[LLM] power=251 name="Ponury WP" (22.5s)
+	[Conversion] -> 000_000_251-Ponury_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.49.470.png
+	[LLM] Screenshot_2026.08.28_02.16.49.470.png (attempt 1/3, timeout 600s)...
+	[LLM] power=239 name="KosiarzWP" (23.1s)
+	[Conversion] -> 000_000_239-KosiarzWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.16.57.586.png
+	[LLM] Screenshot_2026.08.28_02.16.57.586.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8151922 name="Submax WP" (22.1s)
+	[Conversion] -> 008_151_922-Submax_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.17.06.020.png
+	[LLM] Screenshot_2026.08.28_02.17.06.020.png (attempt 1/3, timeout 600s)...
+	[LLM] power=219 name="Nooobis | WP |" (21.6s)
+	[Conversion] -> 000_000_219-Nooobis_%257C_WP_%257C-Nooobis_%7C_WP_%7C.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.17.15.420.png
+	[LLM] Screenshot_2026.08.28_02.17.15.420.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5116243 name="BYCUN WP" (23.2s)
+	[Conversion] -> 005_116_243-BYCUN_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.17.24.586.png
+	[LLM] Screenshot_2026.08.28_02.17.24.586.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3936789 name="Zeo WP" (21.0s)
+	[Conversion] -> 003_936_789-Zeo_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.17.34.170.png
+	[LLM] Screenshot_2026.08.28_02.17.34.170.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6103053 name="WP Yebudu" (23.7s)
+	[Conversion] -> 006_103_053-WP_Yebudu.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.17.55.486.png
+	[LLM] Screenshot_2026.08.28_02.17.55.486.png (attempt 1/3, timeout 600s)...
+	[LLM] power=3787445 name="ketjow" (21.7s)
+	[Conversion] -> 003_787_445-ketjow.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.18.05.203.png
+	[LLM] Screenshot_2026.08.28_02.18.05.203.png (attempt 1/3, timeout 600s)...
+	[LLM] power=229 name="Apfel WP" (21.3s)
+	[Conversion] -> 000_000_229-Apfel_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.18.15.853.png
+	[LLM] Screenshot_2026.08.28_02.18.15.853.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5129989 name="Geralt WP" (22.4s)
+	[Conversion] -> 005_129_989-Geralt_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.18.26.986.png
+	[LLM] Screenshot_2026.08.28_02.18.26.986.png (attempt 1/3, timeout 600s)...
+	[LLM] power=227 name="K4lion WP" (20.6s)
+	[Conversion] -> 000_000_227-K4lion_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.18.38.686.png
+	[LLM] Screenshot_2026.08.28_02.18.38.686.png (attempt 1/3, timeout 600s)...
+	[LLM] power=199 name="Bafuty WP" (20.6s)
+	[Conversion] -> 000_000_199-Bafuty_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.18.50.253.png
+	[LLM] Screenshot_2026.08.28_02.18.50.253.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4440297 name="Averir_x_WP" (21.3s)
+	[Conversion] -> 004_440_297-Averir_x_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.19.03.720.png
+	[LLM] Screenshot_2026.08.28_02.19.03.720.png (attempt 1/3, timeout 600s)...
+	[LLM] power=4138073 name="MarCO WP" (21.8s)
+	[Conversion] -> 004_138_073-MarCO_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.19.21.520.png
+	[LLM] Screenshot_2026.08.28_02.19.21.520.png (attempt 1/3, timeout 600s)...
+	[LLM] power=1432750 name="LordAPRIL_WP" (21.7s)
+	[Conversion] -> 001_432_750-LordAPRIL_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.19.34.203.png
+	[LLM] Screenshot_2026.08.28_02.19.34.203.png (attempt 1/3, timeout 600s)...
+	[LLM] power=211 name="Cormoran_WP" (20.7s)
+	[Conversion] -> 000_000_211-Cormoran_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.19.46.520.png
+	[LLM] Screenshot_2026.08.28_02.19.46.520.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5487185 name="Mr_W33D [WP]" (21.6s)
+	[Conversion] -> 005_487_185-Mr_W33D_[WP].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.19.59.020.png
+	[LLM] Screenshot_2026.08.28_02.19.59.020.png (attempt 1/3, timeout 600s)...
+	[LLM] power=295 name="Ezio «WP»" (21.4s)
+	[Conversion] -> 000_000_295-Ezio_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.20.11.786.png
+	[LLM] Screenshot_2026.08.28_02.20.11.786.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7460196 name="WP Rumcajs XxX" (22.1s)
+	[Conversion] -> 007_460_196-WP_Rumcajs_XxX.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.20.24.703.png
+	[LLM] Screenshot_2026.08.28_02.20.24.703.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7900409 name="Czernobog wp" (23.0s)
+	[Conversion] -> 007_900_409-Czernobog_wp.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.20.42.103.png
+	[LLM] Screenshot_2026.08.28_02.20.42.103.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8434327 name="HANYS WP" (22.1s)
+	[Conversion] -> 008_434_327-HANYS_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.20.54.220.png
+	[LLM] Screenshot_2026.08.28_02.20.54.220.png (attempt 1/3, timeout 600s)...
+	[LLM] power=203 name="Konrad♡WP" (21.6s)
+	[Conversion] -> 000_000_203-Konrad_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.21.04.653.png
+	[LLM] Screenshot_2026.08.28_02.21.04.653.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8449778 name="JaremaWP" (21.0s)
+	[Conversion] -> 008_449_778-JaremaWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.21.16.436.png
+	[LLM] Screenshot_2026.08.28_02.21.16.436.png (attempt 1/3, timeout 600s)...
+	[LLM] power=257 name="HunJsonil" (21.1s)
+	[Conversion] -> 000_000_257-HunJsonil.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.21.27.137.png
+	[LLM] Screenshot_2026.08.28_02.21.27.137.png (attempt 1/3, timeout 600s)...
+	[LLM] power=277 name="KUFEL 79WP" (21.5s)
+	[Conversion] -> 000_000_277-KUFEL_79WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.21.40.170.png
+	[LLM] Screenshot_2026.08.28_02.21.40.170.png (attempt 1/3, timeout 600s)...
+	[LLM] power=10492497 name="PefzinWP" (21.0s)
+	[Conversion] -> 010_492_497-PefzinWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.21.53.136.png
+	[LLM] Screenshot_2026.08.28_02.21.53.136.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8362565 name="MarWel WP" (21.1s)
+	[Conversion] -> 008_362_565-MarWel_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.22.04.953.png
+	[LLM] Screenshot_2026.08.28_02.22.04.953.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7980812 name="DAS_WP" (23.4s)
+	[Conversion] -> 007_980_812-DAS_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.22.16.703.png
+	[LLM] Screenshot_2026.08.28_02.22.16.703.png (attempt 1/3, timeout 600s)...
+	[LLM] power=208 name="Padre WP" (22.0s)
+	[Conversion] -> 000_000_208-Padre_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.22.30.603.png
+	[LLM] Screenshot_2026.08.28_02.22.30.603.png (attempt 1/3, timeout 600s)...
+	[LLM] power=261 name="DARK MOON WP" (23.0s)
+	[Conversion] -> 000_000_261-DARK_MOON_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.22.42.120.png
+	[LLM] Screenshot_2026.08.28_02.22.42.120.png (attempt 1/3, timeout 600s)...
+	[LLM] power=221 name="Robert WP" (22.2s)
+	[Conversion] -> 000_000_221-Robert_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.22.57.270.png
+	[LLM] Screenshot_2026.08.28_02.22.57.270.png (attempt 1/3, timeout 600s)...
+	[LLM] power=233 name="AcerWP" (22.2s)
+	[Conversion] -> 000_000_233-AcerWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.23.07.736.png
+	[LLM] Screenshot_2026.08.28_02.23.07.736.png (attempt 1/3, timeout 600s)...
+	[LLM] power=209 name="/WP/ Koval" (22.7s)
+	[Conversion] -> 000_000_209-%252FWP%252F_Koval-%2FWP%2F_Koval.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.23.21.603.png
+	[LLM] Screenshot_2026.08.28_02.23.21.603.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8737950 name="MUMik WP" (23.4s)
+	[Conversion] -> 008_737_950-MUMik_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.23.33.636.png
+	[LLM] Screenshot_2026.08.28_02.23.33.636.png (attempt 1/3, timeout 600s)...
+	[LLM] power=229 name="KRIS WP" (22.3s)
+	[Conversion] -> 000_000_229-KRIS_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.23.43.820.png
+	[LLM] Screenshot_2026.08.28_02.23.43.820.png (attempt 1/3, timeout 600s)...
+	[LLM] power=225 name="Roland WP" (22.2s)
+	[Conversion] -> 000_000_225-Roland_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.23.55.603.png
+	[LLM] Screenshot_2026.08.28_02.23.55.603.png (attempt 1/3, timeout 600s)...
+	[LLM] power=229 name="Gastronom $WP$" (23.2s)
+	[Conversion] -> 000_000_229-Gastronom_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.24.06.420.png
+	[LLM] Screenshot_2026.08.28_02.24.06.420.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7988486 name="Riven WP" (22.8s)
+	[Conversion] -> 007_988_486-Riven_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.24.28.686.png
+	[LLM] Screenshot_2026.08.28_02.24.28.686.png (attempt 1/3, timeout 600s)...
+	[LLM] power=8926749 name="MateooWP" (25.2s)
+	[Conversion] -> 008_926_749-MateooWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.24.46.953.png
+	[LLM] Screenshot_2026.08.28_02.24.46.953.png (attempt 1/3, timeout 600s)...
+	[LLM] power=7110069 name="Thorgal WP" (23.7s)
+	[Conversion] -> 007_110_069-Thorgal_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.24.56.720.png
+	[LLM] Screenshot_2026.08.28_02.24.56.720.png (attempt 1/3, timeout 600s)...
+	[LLM] power=9897138 name="Woo22 WP" (24.4s)
+	[Conversion] -> 009_897_138-Woo22_WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.25.07.786.png
+	[LLM] Screenshot_2026.08.28_02.25.07.786.png (attempt 1/3, timeout 600s)...
+	[LLM] power=5582645 name="/WP/Miszelin" (24.4s)
+	[Conversion] -> 005_582_645-%252FWP%252FMiszelin-%2FWP%2FMiszelin.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.25.20.736.png
+	[LLM] Screenshot_2026.08.28_02.25.20.736.png (attempt 1/3, timeout 600s)...
+	[LLM] power=217 name="Lukasz1985.WP" (23.3s)
+	[Conversion] -> 000_000_217-Lukasz1985.WP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+[Processing] Screenshot_2026.08.28_02.25.30.486.png
+	[LLM] Screenshot_2026.08.28_02.25.30.486.png (attempt 1/3, timeout 600s)...
+	[LLM] power=6861427 name="MatiWP" (23.7s)
+	[Conversion] -> 006_861_427-MatiWP.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
+
+Done: 48 new (LLM), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 20.6s / 22.2s / 28.3s
+Map: C:\DEV\workspace\kingdom-clash-duel\scripts\fileMap.json
