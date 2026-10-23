@@ -1,0 +1,249 @@
+
+Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-23 (39 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.10.23_02.04.37.057.png
+	[LLM crops] Screenshot_2026.10.23_02.04.37.057.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6743332 name="Lincolnlad DoA" latin="Lincolnlad DoA" (35.5s)
+	[Conversion] -> 006_743_332-Lincolnlad_DoA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.04.45.940.png
+	[LLM crops] Screenshot_2026.10.23_02.04.45.940.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=8737160 name="Seto Kaiba" latin="Seto Kaiba" (12.9s)
+	[Conversion] -> 008_737_160-Seto_Kaiba.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.19.48.373.png
+	[LLM crops] Screenshot_2026.10.23_02.19.48.373.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4614049 name="DOA Shredder" latin="DOA Shredder" (14.0s)
+	[Conversion] -> 004_614_049-DOA_Shredder.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.19.57.073.png
+	[LLM crops] Screenshot_2026.10.23_02.19.57.073.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4739684 name="Pastor" latin="Pastor" (12.1s)
+	[Conversion] -> 004_739_684-Pastor.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.05.523.png
+	[LLM crops] Screenshot_2026.10.23_02.20.05.523.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5260519 name="Hui734" latin="Hui734" (13.7s)
+	[Conversion] -> 005_260_519-Hui734.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.12.889.png
+	[LLM crops] Screenshot_2026.10.23_02.20.12.889.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6498473 name="Kenny G" latin="Kenny G" (12.3s)
+	[Conversion] -> 006_498_473-Kenny_G.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.21.206.png
+	[LLM crops] Screenshot_2026.10.23_02.20.21.206.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4013789 name="Count Binface" latin="Count Binface" (13.4s)
+	[Conversion] -> 004_013_789-Count_Binface.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.29.339.png
+	[LLM crops] Screenshot_2026.10.23_02.20.29.339.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1051174 name="DoAPrivateParts" latin="DoAPrivateParts" (14.9s)
+	[Conversion] -> 001_051_174-DoAPrivateParts.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.38.806.png
+	[LLM crops] Screenshot_2026.10.23_02.20.38.806.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3097157 name="Denzil DOA" latin="Denzil DOA" (15.0s)
+	[Conversion] -> 003_097_157-Denzil_DOA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.20.49.589.png
+	[LLM crops] Screenshot_2026.10.23_02.20.49.589.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4105594 name="DOA-ROCKETS1642" latin="DOA-ROCKETS1642" (17.9s)
+	[Conversion] -> 004_105_594-DOA-ROCKETS1642.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.00.156.png
+	[LLM crops] Screenshot_2026.10.23_02.21.00.156.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=303777 name="DOA | Sengen" latin="DOA | Sengen" (15.1s)
+	[Conversion] -> 000_303_777-DOA_%7C_Sengen.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.12.173.png
+	[LLM crops] Screenshot_2026.10.23_02.21.12.173.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4779971 name="Burnsie" latin="Burnsie" (13.6s)
+	[Conversion] -> 004_779_971-Burnsie.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.24.306.png
+	[LLM crops] Screenshot_2026.10.23_02.21.24.306.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3292511 name="R1. DOA" latin="R1. DOA" (15.0s)
+	[Conversion] -> 003_292_511-R1._DOA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.35.489.png
+	[LLM crops] Screenshot_2026.10.23_02.21.35.489.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5262966 name="Vessel" latin="Vessel" (12.8s)
+	[Conversion] -> 005_262_966-Vessel.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.45.156.png
+	[LLM crops] Screenshot_2026.10.23_02.21.45.156.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=518040 name="Maximilian" latin="Maximilian" (13.9s)
+	[Conversion] -> 000_518_040-Maximilian.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.21.54.706.png
+	[LLM crops] Screenshot_2026.10.23_02.21.54.706.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3919509 name="DOA | Zay" latin="DOA | Zay" (15.5s)
+	[Conversion] -> 003_919_509-DOA_%7C_Zay.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.22.06.639.png
+	[LLM crops] Screenshot_2026.10.23_02.22.06.639.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3417128 name="VERÔ.DOA" latin="VERÔ.DOA" (15.1s)
+	[Conversion] -> 003_417_128-VER_.DOA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.22.17.273.png
+	[LLM crops] Screenshot_2026.10.23_02.22.17.273.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3178838 name="Sparticus" latin="Sparticus" (14.3s)
+	[Conversion] -> 003_178_838-Sparticus.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.22.26.973.png
+	[LLM crops] Screenshot_2026.10.23_02.22.26.973.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3681654 name="justboy" latin="justboy" (13.7s)
+	[Conversion] -> 003_681_654-justboy.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.22.38.873.png
+	[LLM crops] Screenshot_2026.10.23_02.22.38.873.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2903844 name="DoA Konrad" latin="DoA Konrad" (14.4s)
+	[Conversion] -> 002_903_844-DoA_Konrad.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.22.49.173.png
+	[LLM crops] Screenshot_2026.10.23_02.22.49.173.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2914885 name="DOA Torgo Nudho" latin="DOA Torgo Nudho" (16.2s)
+	[Conversion] -> 002_914_885-DOA_Torgo_Nudho.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.23.00.273.png
+	[LLM crops] Screenshot_2026.10.23_02.23.00.273.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2399082 name="DOA | Uzi" latin="DOA | Uzi" (14.3s)
+	[Conversion] -> 002_399_082-DOA_%7C_Uzi.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.23.13.140.png
+	[LLM crops] Screenshot_2026.10.23_02.23.13.140.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7685683 name="ZEON DOA" latin="ZEON DOA" (14.6s)
+	[Conversion] -> 007_685_683-ZEON_DOA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.23.24.406.png
+	[LLM crops] Screenshot_2026.10.23_02.23.24.406.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4670485 name="Poo" latin="Poo" (12.4s)
+	[Conversion] -> 004_670_485-Poo.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.23.38.406.png
+	[LLM crops] Screenshot_2026.10.23_02.23.38.406.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2447752 name="FFHall" latin="FFHall" (12.3s)
+	[Conversion] -> 002_447_752-FFHall.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.23.51.123.png
+	[LLM crops] Screenshot_2026.10.23_02.23.51.123.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2058081 name="V3ro{POA}" latin="V3ro{POA}" (13.8s)
+	[Conversion] -> 002_058_081-V3ro_POA.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.24.03.106.png
+	[LLM crops] Screenshot_2026.10.23_02.24.03.106.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1484052 name="DOA.Patriot" latin="DOA.Patriot" (13.6s)
+	[Conversion] -> 001_484_052-DOA.Patriot.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.24.16.323.png
+	[LLM crops] Screenshot_2026.10.23_02.24.16.323.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=1776914 name="Peasant" latin="Peasant" (12.4s)
+	[Conversion] -> 001_776_914-Peasant.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.24.26.773.png
+	[LLM crops] Screenshot_2026.10.23_02.24.26.773.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=761822 name="Eregal" latin="Eregal" (12.9s)
+	[Conversion] -> 000_761_822-Eregal.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.24.39.856.png
+	[LLM crops] Screenshot_2026.10.23_02.24.39.856.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=450695 name="Flystr8ja" latin="Flystr8ja" (13.3s)
+	[Conversion] -> 000_450_695-Flystr8ja.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.24.58.073.png
+	[LLM crops] Screenshot_2026.10.23_02.24.58.073.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=549576 name="Vilastromoz" latin="Vilastromoz" (13.6s)
+	[Conversion] -> 000_549_576-Vilastromoz.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.25.09.689.png
+	[LLM crops] Screenshot_2026.10.23_02.25.09.689.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=312075 name="TheDesertFox" latin="TheDesertFox" (13.9s)
+	[Conversion] -> 000_312_075-TheDesertFox.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.25.25.256.png
+	[LLM crops] Screenshot_2026.10.23_02.25.25.256.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=369784 name="LankShear {jon}" latin="LankShear {jon}" (14.3s)
+	[Conversion] -> 000_369_784-LankShear_jon.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.25.41.956.png
+	[LLM crops] Screenshot_2026.10.23_02.25.41.956.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9045242 name="KimitakeHiraoka" latin="KimitakeHiraoka" (15.0s)
+	[Conversion] -> 009_045_242-KimitakeHiraoka.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.25.52.406.png
+	[LLM crops] Screenshot_2026.10.23_02.25.52.406.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=12853209 name="DOA | Phantom" latin="DOA | Phantom" (13.8s)
+	[Conversion] -> 012_853_209-DOA_%7C_Phantom.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.26.03.273.png
+	[LLM crops] Screenshot_2026.10.23_02.26.03.273.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7858749 name="I.r.BABOON" latin="I.r.BABOON" (14.8s)
+	[Conversion] -> 007_858_749-I.r.BABOON.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.26.39.306.png
+	[LLM crops] Screenshot_2026.10.23_02.26.39.306.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5258069 name="Am Yisrael Chai" latin="Am Yisrael Chai" (15.3s)
+	[Conversion] -> 005_258_069-Am_Yisrael_Chai.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.26.50.973.png
+	[LLM crops] Screenshot_2026.10.23_02.26.50.973.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6515047 name="sam the slayer" latin="sam the slayer" (12.8s)
+	[Conversion] -> 006_515_047-sam_the_slayer.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.23_02.27.05.989.png
+	[LLM crops] Screenshot_2026.10.23_02.27.05.989.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3197900 name="ShadowDoa" latin="ShadowDoa" (13.0s)
+	[Conversion] -> 003_197_900-ShadowDoa.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+Done (convert2): 39 new (LLM crops), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 12.1s / 13.9s / 35.5s
+Map: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-23\index.html
+Repo path: data/clan_clash/2026-10-23
+Extensions: .webp
+Total images in the table: 39
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-23\clan\index.html
+Repo path: data/clan_clash/2026-10-23/clan
+Extensions: .jpg, .png
+Total images in the table: 27
