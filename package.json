@@ -19,7 +19,7 @@
     "llm:clan_clash:webp": "node scripts/llm/convert-to-webp.mjs",
     "generate-wiki-table:enemies": "node scripts/generate-wiki-table.mjs data/clan_clash/2026-10-23 webp",
     "generate-wiki-table:clan": "node scripts/generate-wiki-table.mjs data/clan_clash/2026-10-23/clan jpg png",
-    "generate-wiki-table:clan:duels": "node scripts/generate-wiki-table.mjs data/clan_clash/2026-10-23/duels jpg png webp",
+    "generate-wiki-table:duels": "node scripts/generate-wiki-matrix.mjs data/clan_clash/2026-10-23/duels jpg png webp --compact --height 400",
     "ocr:enemy:latin": "node scripts/ocr/convert-text-to-latin.mjs",
     "ocr:enemy": "node scripts/ocr/ocr-enemy.mjs",
     "ocr:enemies": "node scripts/ocr/ocr-enemy.mjs",
