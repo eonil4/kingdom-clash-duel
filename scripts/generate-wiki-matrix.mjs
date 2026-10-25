@@ -8,16 +8,23 @@
  *   → col: 006_285_941
  *
  * Usage:
- *   node scripts/generate-wiki-matrix.mjs <folder> [ext...] [--separator _vs_] [--rows desc|asc] [--cols desc|asc] [--scale <percent>] [--row-scroll|--single-table] [--compact]
+ *   node scripts/generate-wiki-matrix.mjs <folder> [ext...] [--separator #] [--rows desc|asc] [--cols desc|asc] [--scale <percent>] [--width <px|%>] [--height <px|%>] [--row-scroll|--single-table] [--compact] [--view both|enemy|clan] [--no-slider]
  *
  * Defaults:
- *   separator: _vs_
+ *   separator: # (file format: <clan>#<enemy>.<ext>)
  *   rows: desc
  *   cols: desc
  *   scale: full size (100%)
  *   rowScroll: true (each row has its own horizontal scrollbar)
  *   compact: false (all matrix columns present in each row)
+ *   slider: true (zoom slider toolbar at the top: 10-100%, 10% steps)
+ *   view: both (enemies first, then clan)
  *   extensions: jpg png webp
+ *
+ * Views:
+ *   --view both (default): First enemies (# utáni) lists, then clan (# előtti) lists.
+ *   --view enemy / --view enemies: Only enemy (# utáni) lists.
+ *   --view clan: Only clan (# előtti) lists.
  *
  * Row-by-row horizontal scrollbar:
  *   --row-scroll (default: true): Each row is rendered as its own scrollable table with
@@ -48,7 +55,7 @@ const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";
 const GITHUB_REPO = "kingdom-clash-duel";
 const GITHUB_BRANCH = "main";
-const DEFAULT_SEPARATOR = "_vs_";
+const DEFAULT_SEPARATOR = "#";
 const DEFAULT_EXTENSIONS = [".jpg", ".png", ".webp"];
 
 /**
@@ -150,6 +157,8 @@ function parseArgs(argv) {
     rowScroll: true,
     /** In row-scroll mode, only show columns that have duels for that attacker */
     compact: false,
+    /** Which view(s) to generate: "both" (default), "enemy" / "enemies", or "clan" */
+    view: "both",
     extensions: /** @type {string[]} */ ([]),
   };
 
@@ -159,6 +168,14 @@ function parseArgs(argv) {
     if (a === "--help") {
       usage();
       process.exit(0);
+    }
+    if (a === "--view") {
+      args.view = String(argv[++i] ?? "both").toLowerCase();
+      continue;
+    }
+    if (a.startsWith("--view=")) {
+      args.view = a.slice("--view=".length).toLowerCase() || "both";
+      continue;
     }
     if (a === "--separator" || a === "-s") {
       args.separator = String(argv[++i] ?? DEFAULT_SEPARATOR);
@@ -304,21 +321,23 @@ function compareLabels(a, b, dir) {
 }
 
 /**
- * Split stem by first occurrence of separator → [row, col].
+ * Split stem by first occurrence of separator into { clan, enemy }
+ * clan: before separator (# előtti)
+ * enemy: after separator (# utáni)
  * @param {string} stem
  * @param {string} separator
- * @returns {{ row: string, col: string } | undefined}
+ * @returns {{ clan: string, enemy: string, left: string, right: string } | undefined}
  */
 function splitVsParts(stem, separator) {
   const idx = stem.indexOf(separator);
   if (idx <= 0) return undefined;
-  const row = stem.slice(0, idx);
-  const col = stem.slice(idx + separator.length);
+  const clan = stem.slice(0, idx);
+  const enemy = stem.slice(idx + separator.length);
   // Exactly two sides: skip names with extra separator occurrences in either part.
-  if (!row || !col || row.includes(separator) || col.includes(separator)) {
+  if (!clan || !enemy || clan.includes(separator) || enemy.includes(separator)) {
     return undefined;
   }
-  return { row, col };
+  return { clan, enemy, left: clan, right: enemy };
 }
 
 /**
@@ -393,104 +412,63 @@ function resolveImageDims(meta, args) {
  */
 function buildImgAttrs(meta, args) {
   const dims = resolveImageDims(meta, args);
+  let attrs = "";
   if (dims.w !== undefined) {
     const heightAttr = dims.hasExplicitHeight && dims.h !== undefined ? ` height="${dims.h}"` : "";
-    return ` width="${dims.w}"${heightAttr} style="min-width: ${dims.w}px; max-width: none;"`;
+    attrs += ` width="${dims.w}"${heightAttr} style="min-width: ${dims.w}px; max-width: none;"`;
+  } else if (args.scale && args.scale !== 100) {
+    attrs += ` width="${Math.round(args.scale)}%"`;
   }
-  if (args.scale && args.scale !== 100) {
-    return ` width="${Math.round(args.scale)}%"`;
+  if (meta && meta.width) {
+    attrs += ` data-orig-w="${meta.width}" data-orig-h="${meta.height}"`;
   }
-  return "";
+  return attrs;
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
-  if (!args.folder) {
-    usage();
-    process.exit(1);
-  }
-
-  const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(args.folder);
-  const extensionSet = new Set(args.extensions.map((e) => e.toLowerCase()));
-  const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
-
-  const files = fs.readdirSync(targetFolder);
-  /** @type {Map<string, Map<string, string>>} row -> col -> filename */
-  const matrix = new Map();
-  /** @type {Set<string>} */
-  const rowSet = new Set();
-  /** @type {Set<string>} */
-  const colSet = new Set();
-  let skipped = 0;
-
-  for (const file of files) {
-    const ext = path.extname(file).toLowerCase();
-    if (!extensionSet.has(ext)) continue;
-    const stem = path.basename(file, ext);
-    const parts = splitVsParts(stem, args.separator);
-    if (!parts) {
-      skipped++;
-      continue;
-    }
-
-    rowSet.add(parts.row);
-    colSet.add(parts.col);
-
-    if (!matrix.has(parts.row)) matrix.set(parts.row, new Map());
-    const rowMap = matrix.get(parts.row);
-    const prev = rowMap.get(parts.col);
-    if (!prev || extensionPriority(ext) > extensionPriority(path.extname(prev))) {
-      rowMap.set(parts.col, file);
-    }
-  }
-
-  const rows = [...rowSet].sort((a, b) => compareLabels(a, b, args.rows));
-  const cols = [...colSet].sort((a, b) => compareLabels(a, b, args.cols));
-
-  if (rows.length === 0 || cols.length === 0) {
-    console.log(`No duel images matching separator ${JSON.stringify(args.separator)} in: ${targetFolder}`);
-    process.exit(0);
-  }
-
-  /** @type {Map<string, { width: number, height: number }>} */
-  const metaMap = new Map();
-  await Promise.all(
-    files.map(async (file) => {
-      try {
-        const meta = await sharp(path.join(targetFolder, file)).metadata();
-        if (meta.width && meta.height) {
-          metaMap.set(file, { width: meta.width, height: meta.height });
-        }
-      } catch {
-        // ignore
-      }
-    }),
-  );
-
-  const defaultMeta = metaMap.values().next().value;
-  const defaultDims = resolveImageDims(defaultMeta, args);
-  const fallbackColW = defaultDims.w ?? 473;
-
+/**
+ * Render one matrix section (e.g. Enemies or Clan).
+ * @param {object} param
+ */
+function renderMatrixSection({
+  title,
+  rows,
+  cols,
+  matrixMap,
+  baseUrl,
+  metaMap,
+  args,
+  fallbackColW,
+  origFallbackColW,
+  showHeading = true,
+}) {
   /** @type {Map<string, number>} */
   const colWidthMap = new Map();
+  /** @type {Map<string, number>} */
+  const origColWidthMap = new Map();
   for (const col of cols) {
     let maxW = 0;
+    let origMaxW = 0;
     for (const row of rows) {
-      const f = matrix.get(row)?.get(col);
+      const f = matrixMap.get(row)?.get(col);
       if (f && metaMap.has(f)) {
         const m = metaMap.get(f);
         const dims = resolveImageDims(m, args);
         if (dims.w && dims.w > maxW) maxW = dims.w;
+        if (m.width > origMaxW) origMaxW = m.width;
       }
     }
     if (maxW > 0) colWidthMap.set(col, maxW);
+    if (origMaxW > 0) origColWidthMap.set(col, origMaxW);
   }
 
   let html = "";
+  if (showHeading && title) {
+    html += `<h2>${escapeHtml(title)}</h2>\n\n`;
+  }
 
   if (args.rowScroll) {
     for (const row of rows) {
-      const rowMap = matrix.get(row) ?? new Map();
+      const rowMap = matrixMap.get(row) ?? new Map();
       const activeCols = args.compact
         ? cols.filter((col) => rowMap.has(col))
         : cols;
@@ -505,14 +483,15 @@ async function main() {
       }
       for (const col of activeCols) {
         const colW = colWidthMap.get(col) ?? fallbackColW;
+        const origColW = origColWidthMap.get(col) ?? origFallbackColW;
         const thWidth = colW ? ` width="${colW}"` : "";
         const thStyle = colW ? ` style="min-width: ${colW}px;"` : "";
         // In GitHub Markdown, inline style is stripped and `.markdown-body img { max-width: 100% }`
         // squashes columns down to the container width. A sequence of non-breaking spaces
         // establishes an intrinsic min-content width, enabling horizontal table scrolling on GitHub.
         const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
-        const spacer = `<span>${"&nbsp;".repeat(nbspCount)}</span>`;
-        html += `    <th align="center" valign="bottom"${thWidth}${thStyle}><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+        const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
+        html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
       }
       html += "  </tr>\n";
 
@@ -528,9 +507,10 @@ async function main() {
         const file = rowMap.get(col);
         if (!file) {
           const colW = colWidthMap.get(col) ?? fallbackColW;
+          const origColW = origColWidthMap.get(col) ?? origFallbackColW;
           const tdWidth = colW ? ` width="${colW}"` : "";
           const tdStyle = colW ? ` style="min-width: ${colW}px;"` : "";
-          html += `    <td align="center" valign="middle"${tdWidth}${tdStyle}></td>\n`;
+          html += `    <td align="center" valign="middle"${tdWidth}${tdStyle} data-orig-w="${origColW}"></td>\n`;
           continue;
         }
         const imageUrl = `${baseUrl}/${encodeURIComponent(file)}`;
@@ -562,11 +542,12 @@ async function main() {
     html += '    <th align="center" valign="bottom"></th>\n';
     for (const col of cols) {
       const colW = colWidthMap.get(col) ?? fallbackColW;
+      const origColW = origColWidthMap.get(col) ?? origFallbackColW;
       const thWidth = colW ? ` width="${colW}"` : "";
       const thStyle = colW ? ` style="min-width: ${colW}px;"` : "";
       const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
-      const spacer = `<span>${"&nbsp;".repeat(nbspCount)}</span>`;
-      html += `    <th align="center" valign="bottom"${thWidth}${thStyle}><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+      const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
+      html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
     }
     html += "  </tr>\n";
 
@@ -577,14 +558,15 @@ async function main() {
         `style="writing-mode: vertical-rl; text-orientation: mixed; white-space: nowrap;">` +
         `<sub><b>${escapeHtml(row)}</b></sub></th>\n`;
 
-      const rowMap = matrix.get(row) ?? new Map();
+      const rowMap = matrixMap.get(row) ?? new Map();
       for (const col of cols) {
         const file = rowMap.get(col);
         if (!file) {
           const colW = colWidthMap.get(col) ?? fallbackColW;
+          const origColW = origColWidthMap.get(col) ?? origFallbackColW;
           const tdWidth = colW ? ` width="${colW}"` : "";
           const tdStyle = colW ? ` style="min-width: ${colW}px;"` : "";
-          html += `    <td align="center" valign="middle"${tdWidth}${tdStyle}></td>\n`;
+          html += `    <td align="center" valign="middle"${tdWidth}${tdStyle} data-orig-w="${origColW}"></td>\n`;
           continue;
         }
         const imageUrl = `${baseUrl}/${encodeURIComponent(file)}`;
@@ -603,6 +585,210 @@ async function main() {
     if (args.frame) {
       html += "</div>\n";
     }
+    html += "\n";
+  }
+
+  return html;
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  if (!args.folder) {
+    usage();
+    process.exit(1);
+  }
+
+  const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(args.folder);
+  const extensionSet = new Set(args.extensions.map((e) => e.toLowerCase()));
+  const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
+
+  const files = fs.readdirSync(targetFolder);
+  const enemySet = new Set();
+  const clanSet = new Set();
+  /** @type {Map<string, Map<string, string>>} enemy -> clan -> file */
+  const enemyMatrix = new Map();
+  /** @type {Map<string, Map<string, string>>} clan -> enemy -> file */
+  const clanMatrix = new Map();
+  let skipped = 0;
+  let totalDuels = 0;
+
+  for (const file of files) {
+    const ext = path.extname(file).toLowerCase();
+    if (!extensionSet.has(ext)) continue;
+    const stem = path.basename(file, ext);
+    const parts = splitVsParts(stem, args.separator);
+    if (!parts) {
+      skipped++;
+      continue;
+    }
+
+    const { clan, enemy } = parts;
+    clanSet.add(clan);
+    enemySet.add(enemy);
+    totalDuels++;
+
+    if (!enemyMatrix.has(enemy)) enemyMatrix.set(enemy, new Map());
+    const enemyRow = enemyMatrix.get(enemy);
+    const prevEnemy = enemyRow.get(clan);
+    if (!prevEnemy || extensionPriority(ext) > extensionPriority(path.extname(prevEnemy))) {
+      enemyRow.set(clan, file);
+    }
+
+    if (!clanMatrix.has(clan)) clanMatrix.set(clan, new Map());
+    const clanRow = clanMatrix.get(clan);
+    const prevClan = clanRow.get(enemy);
+    if (!prevClan || extensionPriority(ext) > extensionPriority(path.extname(prevClan))) {
+      clanRow.set(enemy, file);
+    }
+  }
+
+  // Enemies (# utáni) and Clan (# előtti) sorted according to CLI args
+  const enemies = [...enemySet].sort((a, b) => compareLabels(a, b, args.rows));
+  const clans = [...clanSet].sort((a, b) => compareLabels(a, b, args.cols));
+
+  if (enemies.length === 0 || clans.length === 0) {
+    console.log(`No duel images matching separator ${JSON.stringify(args.separator)} in: ${targetFolder}`);
+    process.exit(0);
+  }
+
+  /** @type {Map<string, { width: number, height: number }>} */
+  const metaMap = new Map();
+  await Promise.all(
+    files.map(async (file) => {
+      try {
+        const meta = await sharp(path.join(targetFolder, file)).metadata();
+        if (meta.width && meta.height) {
+          metaMap.set(file, { width: meta.width, height: meta.height });
+        }
+      } catch {
+        // ignore
+      }
+    }),
+  );
+
+  const defaultMeta = metaMap.values().next().value;
+  const defaultDims = resolveImageDims(defaultMeta, args);
+  const fallbackColW = defaultDims.w ?? 473;
+  const origFallbackColW = defaultMeta?.width ?? 473;
+
+  // View sections: by default first enemies (# utáni), then clan (# előtti)
+  const sections = [];
+  if (args.view === "both" || args.view === "enemy" || args.view === "enemies") {
+    sections.push({
+      title: "Enemies",
+      rows: enemies,
+      cols: clans,
+      matrixMap: enemyMatrix,
+    });
+  }
+  if (args.view === "both" || args.view === "clan") {
+    sections.push({
+      title: "Clan",
+      rows: clans,
+      cols: enemies,
+      matrixMap: clanMatrix,
+    });
+  }
+
+  let initialPercent = 100;
+  if (args.width !== undefined && defaultMeta?.width) {
+    initialPercent = Math.min(100, Math.max(10, Math.round((defaultDims.w / defaultMeta.width) * 10) * 10));
+  } else if (args.height !== undefined && defaultMeta?.height) {
+    initialPercent = Math.min(100, Math.max(10, Math.round((defaultDims.h / defaultMeta.height) * 10) * 10));
+  } else if (args.scale !== undefined) {
+    initialPercent = Math.min(100, Math.max(10, Math.round(args.scale / 10) * 10));
+  }
+
+  let html = "";
+
+  if (args.slider) {
+    html += `<!-- Zoom Toolbar (10% - 100%, 10% step) -->\n`;
+    html += `<div id="zoom-toolbar" style="position: sticky; top: 0; z-index: 1000; background: #ffffff; padding: 10px 16px; margin-bottom: 16px; border: 1px solid #d0d7de; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 14px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 14px;">\n`;
+    html += `  <label for="zoom-slider" style="font-weight: 600; cursor: pointer; user-select: none;">Zoom:</label>\n`;
+    html += `  <input type="range" id="zoom-slider" min="10" max="100" step="10" value="${initialPercent}" style="cursor: pointer; width: 220px;" />\n`;
+    html += `  <span id="zoom-value" style="font-weight: 600; min-width: 48px; user-select: none;">${initialPercent}%</span>\n`;
+    html += `  <button type="button" id="zoom-reset-100" style="padding: 4px 10px; font-size: 12px; cursor: pointer; border: 1px solid #d0d7de; border-radius: 4px; background: #f6f8fa;">100%</button>\n`;
+    if (initialPercent !== 100) {
+      html += `  <button type="button" id="zoom-reset-default" style="padding: 4px 10px; font-size: 12px; cursor: pointer; border: 1px solid #d0d7de; border-radius: 4px; background: #f6f8fa;">Reset (${initialPercent}%)</button>\n`;
+    }
+    html += `</div>\n\n`;
+  }
+
+  for (const s of sections) {
+    html += renderMatrixSection({
+      title: s.title,
+      rows: s.rows,
+      cols: s.cols,
+      matrixMap: s.matrixMap,
+      baseUrl,
+      metaMap,
+      args,
+      fallbackColW,
+      origFallbackColW,
+      showHeading: sections.length > 1 || args.view !== "both",
+    });
+  }
+
+  if (args.slider) {
+    html += `<script>\n`;
+    html += `(function() {\n`;
+    html += `  const slider = document.getElementById('zoom-slider');\n`;
+    html += `  const valueDisplay = document.getElementById('zoom-value');\n`;
+    html += `  const btn100 = document.getElementById('zoom-reset-100');\n`;
+    html += `  const btnDef = document.getElementById('zoom-reset-default');\n`;
+    html += `  if (!slider) return;\n\n`;
+    html += `  function updateZoom(percent) {\n`;
+    html += `    const factor = percent / 100;\n`;
+    html += `    if (valueDisplay) valueDisplay.textContent = percent + '%';\n\n`;
+    html += `    // Scale images\n`;
+    html += `    document.querySelectorAll('img[data-orig-w]').forEach(img => {\n`;
+    html += `      const origW = parseFloat(img.getAttribute('data-orig-w'));\n`;
+    html += `      if (origW && !isNaN(origW)) {\n`;
+    html += `        const newW = Math.round(origW * factor);\n`;
+    html += `        img.width = newW;\n`;
+    html += `        img.style.minWidth = newW + 'px';\n`;
+    html += `      }\n`;
+    html += `      if (img.hasAttribute('height') && img.hasAttribute('data-orig-h')) {\n`;
+    html += `        const origH = parseFloat(img.getAttribute('data-orig-h'));\n`;
+    html += `        if (origH && !isNaN(origH)) {\n`;
+    html += `          img.height = Math.round(origH * factor);\n`;
+    html += `        }\n`;
+    html += `      }\n`;
+    html += `    });\n\n`;
+    html += `    // Scale column widths (th and empty td)\n`;
+    html += `    document.querySelectorAll('th[data-orig-w], td[data-orig-w]').forEach(cell => {\n`;
+    html += `      const origW = parseFloat(cell.getAttribute('data-orig-w'));\n`;
+    html += `      if (origW && !isNaN(origW)) {\n`;
+    html += `        const newW = Math.round(origW * factor);\n`;
+    html += `        cell.width = newW;\n`;
+    html += `        cell.style.minWidth = newW + 'px';\n`;
+    html += `      }\n`;
+    html += `    });\n\n`;
+    html += `    // Scale spacer text so non-breaking spaces don't prevent shrinking\n`;
+    html += `    document.querySelectorAll('.col-spacer').forEach(sp => {\n`;
+    html += `      sp.style.fontSize = Math.max(1, Math.round(14 * factor)) + 'px';\n`;
+    html += `      sp.style.lineHeight = '1';\n`;
+    html += `    });\n`;
+    html += `  }\n\n`;
+    html += `  slider.addEventListener('input', function() {\n`;
+    html += `    updateZoom(parseInt(this.value, 10));\n`;
+    html += `  });\n\n`;
+    html += `  if (btn100) {\n`;
+    html += `    btn100.addEventListener('click', function() {\n`;
+    html += `      slider.value = 100;\n`;
+    html += `      updateZoom(100);\n`;
+    html += `    });\n`;
+    html += `  }\n\n`;
+    if (initialPercent !== 100) {
+      html += `  if (btnDef) {\n`;
+      html += `    btnDef.addEventListener('click', function() {\n`;
+      html += `      slider.value = ${initialPercent};\n`;
+      html += `      updateZoom(${initialPercent});\n`;
+      html += `    });\n`;
+      html += `  }\n`;
+    }
+    html += `})();\n`;
+    html += `</script>\n`;
   }
 
   const outputPath = path.join(targetFolder, "index.html");
@@ -625,8 +811,9 @@ async function main() {
         : "full (100%)";
   console.log(`Scale / Size: ${sizeInfo}`);
   console.log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
+  console.log(`Sections: ${sections.map((s) => s.title).join(", ")}`);
+  console.log(`Enemies: ${enemies.length}, Clan: ${clans.length}, Duels: ${totalDuels}`);
   console.log(`Extensions: ${args.extensions.join(", ")}`);
-  console.log(`Matrix: ${rows.length} rows × ${cols.length} cols`);
   if (skipped > 0) {
     console.log(`Skipped files (no separator match): ${skipped}`);
   }
