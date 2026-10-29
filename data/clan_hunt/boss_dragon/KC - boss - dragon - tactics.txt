@@ -1,4 +1,4 @@
-before - [auto off][x1 speed]
+preset - [auto off][x1 speed]
 ***
 04:49 - [run] 1. képesség aktív lesz
 04:38 - [heal]

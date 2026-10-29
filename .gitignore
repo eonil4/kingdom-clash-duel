@@ -7,8 +7,12 @@ coverage
 
 # APK / native bundles — exceed GitHub's 100 MB per-file limit (keep locally only)
 data/**/*_APKPure.zip
+data/**/*.xapk
 data/**/*_APKPure/main/assets/assetpack/main
 data/**/*_APKPure/**/libil2cpp.so
+
+# Captures over GitHub's 100 MB per-file limit (keep locally only)
+data/clan_hunt/boss_kraken/SVID_20261013_210422_1.mp4
 
 # Derived APK unpacks
 data/_apk_analysis_casual/
