@@ -1,0 +1,279 @@
+
+Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-30 (44 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=false]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Processing] Screenshot_2026.10.30_01.23.31.137.png
+	[LLM crops] Screenshot_2026.10.30_01.23.31.137.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5429169 name="Monietooth VV2" latin="Monietooth VV2" (16.9s)
+	[Conversion] -> 005_429_169-Monietooth_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.23.57.403.png
+	[LLM crops] Screenshot_2026.10.30_01.23.57.403.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3433022 name="McFeenyVV²" latin="McFeenyVV²" (13.3s)
+	[Conversion] -> 003_433_022-McFeenyVV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.24.13.204.png
+	[LLM crops] Screenshot_2026.10.30_01.24.13.204.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5657887 name="DirtDogs VV2" latin="DirtDogs VV2" (14.2s)
+	[Conversion] -> 005_657_887-DirtDogs_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.24.25.520.png
+	[LLM crops] Screenshot_2026.10.30_01.24.25.520.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4516522 name="billy [VV]" latin="billy [VV]" (12.9s)
+	[Conversion] -> 004_516_522-billy_[VV].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.24.36.354.png
+	[LLM crops] Screenshot_2026.10.30_01.24.36.354.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5658822 name="SauTa" latin="SauTa" (12.5s)
+	[Conversion] -> 005_658_822-SauTa.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.24.44.987.png
+	[LLM crops] Screenshot_2026.10.30_01.24.44.987.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9047061 name="Eric VV2" latin="Eric VV2" (13.7s)
+	[Conversion] -> 009_047_061-Eric_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.24.54.537.png
+	[LLM crops] Screenshot_2026.10.30_01.24.54.537.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3917962 name="Fluffyferret VV" latin="Fluffyferret VV" (14.0s)
+	[Conversion] -> 003_917_962-Fluffyferret_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.25.04.537.png
+	[LLM crops] Screenshot_2026.10.30_01.25.04.537.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4613384 name="VVStitchr" latin="VVStitchr" (13.3s)
+	[Conversion] -> 004_613_384-VVStitchr.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.25.18.387.png
+	[LLM crops] Screenshot_2026.10.30_01.25.18.387.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7139126 name="SayWhatVV" latin="SayWhatVV" (13.1s)
+	[Conversion] -> 007_139_126-SayWhatVV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.25.28.937.png
+	[LLM crops] Screenshot_2026.10.30_01.25.28.937.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4941702 name="Scuba Steve VV2" latin="Scuba Steve VV2" (14.1s)
+	[Conversion] -> 004_941_702-Scuba_Steve_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.25.39.120.png
+	[LLM crops] Screenshot_2026.10.30_01.25.39.120.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3050135 name="BamBam VV2" latin="BamBam VV2" (15.7s)
+	[Conversion] -> 003_050_135-BamBam_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.25.53.304.png
+	[LLM crops] Screenshot_2026.10.30_01.25.53.304.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9211517 name="FarsIs XV2" latin="FarsIs XV2" (14.5s)
+	[Conversion] -> 009_211_517-FarsIs_XV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.26.04.137.png
+	[LLM crops] Screenshot_2026.10.30_01.26.04.137.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4432633 name="inmate33151 VV2" latin="inmate33151 VV2" (16.5s)
+	[Conversion] -> 004_432_633-inmate33151_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.26.17.737.png
+	[LLM crops] Screenshot_2026.10.30_01.26.17.737.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4625817 name="NormalEyes XVII" latin="NormalEyes XVII" (13.2s)
+	[Conversion] -> 004_625_817-NormalEyes_XVII.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.26.28.320.png
+	[LLM crops] Screenshot_2026.10.30_01.26.28.320.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4942810 name="DudemanVV" latin="DudemanVV" (11.9s)
+	[Conversion] -> 004_942_810-DudemanVV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.26.45.637.png
+	[LLM crops] Screenshot_2026.10.30_01.26.45.637.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3623011 name="LVG VV²" latin="LVG VV²" (12.9s)
+	[Conversion] -> 003_623_011-LVG_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.26.56.487.png
+	[LLM crops] Screenshot_2026.10.30_01.26.56.487.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2835451 name="M. Iqbal VV²" latin="M. Iqbal VV²" (15.0s)
+	[Conversion] -> 002_835_451-M._Iqbal_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.27.08.987.png
+	[LLM crops] Screenshot_2026.10.30_01.27.08.987.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4955341 name="Haggardly VV2" latin="Haggardly VV2" (14.4s)
+	[Conversion] -> 004_955_341-Haggardly_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.27.20.903.png
+	[LLM crops] Screenshot_2026.10.30_01.27.20.903.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3266471 name="Smash VV2" latin="Smash VV2" (13.5s)
+	[Conversion] -> 003_266_471-Smash_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.27.31.304.png
+	[LLM crops] Screenshot_2026.10.30_01.27.31.304.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3827645 name="MikRu" latin="MikRu" (12.6s)
+	[Conversion] -> 003_827_645-MikRu.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.27.52.387.png
+	[LLM crops] Screenshot_2026.10.30_01.27.52.387.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5543103 name="C.E.P." latin="C.E.P." (12.6s)
+	[Conversion] -> 005_543_103-C.E.P..webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.28.03.570.png
+	[LLM crops] Screenshot_2026.10.30_01.28.03.570.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5012140 name="Aleksey03ru_VV2" latin="Aleksey03ru_VV2" (15.5s)
+	[Conversion] -> 005_012_140-Aleksey03ru_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.28.18.304.png
+	[LLM crops] Screenshot_2026.10.30_01.28.18.304.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4238707 name="Candybober VV²" latin="Candybober VV²" (14.5s)
+	[Conversion] -> 004_238_707-Candybober_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.28.30.854.png
+	[LLM crops] Screenshot_2026.10.30_01.28.30.854.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3962854 name="Sia VV" latin="Sia VV" (13.1s)
+	[Conversion] -> 003_962_854-Sia_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.28.40.820.png
+	[LLM crops] Screenshot_2026.10.30_01.28.40.820.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6476125 name="Stroud VV2" latin="Stroud VV2" (13.6s)
+	[Conversion] -> 006_476_125-Stroud_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.28.53.720.png
+	[LLM crops] Screenshot_2026.10.30_01.28.53.720.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7230093 name="Dimwit 443 VV" latin="Dimwit 443 VV" (14.9s)
+	[Conversion] -> 007_230_093-Dimwit_443_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.29.05.787.png
+	[LLM crops] Screenshot_2026.10.30_01.29.05.787.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5050407 name="Pinkwater VV" latin="Pinkwater VV" (12.8s)
+	[Conversion] -> 005_050_407-Pinkwater_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.29.15.704.png
+	[LLM crops] Screenshot_2026.10.30_01.29.15.704.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6766403 name="Master Yoda vv" latin="Master Yoda vv" (12.7s)
+	[Conversion] -> 006_766_403-Master_Yoda_vv.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.29.26.870.png
+	[LLM crops] Screenshot_2026.10.30_01.29.26.870.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3955273 name="Its G VV2" latin="Its G VV2" (14.8s)
+	[Conversion] -> 003_955_273-Its_G_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.29.41.020.png
+	[LLM crops] Screenshot_2026.10.30_01.29.41.020.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=2726363 name="Dolemite VV" latin="Dolemite VV" (14.6s)
+	[Conversion] -> 002_726_363-Dolemite_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.29.51.570.png
+	[LLM crops] Screenshot_2026.10.30_01.29.51.570.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6514574 name="DB VV2" latin="DB VV2" (14.2s)
+	[Conversion] -> 006_514_574-DB_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.30.02.703.png
+	[LLM crops] Screenshot_2026.10.30_01.30.02.703.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5843067 name="443 XP?" latin="443 XP?" (13.8s)
+	[Conversion] -> 005_843_067-443_XP%3F.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.30.15.537.png
+	[LLM crops] Screenshot_2026.10.30_01.30.15.537.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6379275 name="What 443 VV2" latin="What 443 VV2" (14.5s)
+	[Conversion] -> 006_379_275-What_443_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.30.28.387.png
+	[LLM crops] Screenshot_2026.10.30_01.30.28.387.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=9165678 name="Papa Muché VV2" latin="Papa Muché VV2" (14.0s)
+	[Conversion] -> 009_165_678-Papa_Much_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.30.40.737.png
+	[LLM crops] Screenshot_2026.10.30_01.30.40.737.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7907894 name="Iskander VV2" latin="Iskander VV2" (13.9s)
+	[Conversion] -> 007_907_894-Iskander_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.30.50.737.png
+	[LLM crops] Screenshot_2026.10.30_01.30.50.737.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=3237916 name="MoonKnight YV2" latin="MoonKnight YV2" (12.0s)
+	[Conversion] -> 003_237_916-MoonKnight_YV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.01.837.png
+	[LLM crops] Screenshot_2026.10.30_01.31.01.837.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6206725 name="All♥VV²" latin="All♥VV²" (12.0s)
+	[Conversion] -> 006_206_725-All_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.12.070.png
+	[LLM crops] Screenshot_2026.10.30_01.31.12.070.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5063503 name="Crush VV" latin="Crush VV" (11.4s)
+	[Conversion] -> 005_063_503-Crush_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.22.387.png
+	[LLM crops] Screenshot_2026.10.30_01.31.22.387.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=8831536 name="Brother D VV" latin="Brother D VV" (11.9s)
+	[Conversion] -> 008_831_536-Brother_D_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.31.820.png
+	[LLM crops] Screenshot_2026.10.30_01.31.31.820.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=5575471 name="darthmoose.vv2" latin="darthmoose.vv2" (12.7s)
+	[Conversion] -> 005_575_471-darthmoose.vv2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.41.187.png
+	[LLM crops] Screenshot_2026.10.30_01.31.41.187.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=7011325 name="VV2★443★Typhos" latin="VV2★443★Typhos" (15.0s)
+	[Conversion] -> 007_011_325-VV2_443_Typhos.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.31.50.637.png
+	[LLM crops] Screenshot_2026.10.30_01.31.50.637.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=4440946 name="Bobbo VV" latin="Bobbo VV" (12.4s)
+	[Conversion] -> 004_440_946-Bobbo_VV.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.32.02.070.png
+	[LLM crops] Screenshot_2026.10.30_01.32.02.070.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6974502 name="SandhogVV2" latin="SandhogVV2" (13.0s)
+	[Conversion] -> 006_974_502-SandhogVV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.10.30_01.32.13.437.png
+	[LLM crops] Screenshot_2026.10.30_01.32.13.437.png (attempt 1/3, timeout 60s)...
+	[LLM crops] power=6640787 name="FOREST LORD VV2" latin="FOREST LORD VV2" (13.3s)
+	[Conversion] -> 006_640_787-FOREST_LORD_VV2.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+Done (convert2): 44 new (LLM crops), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 11.4s / 13.5s / 16.9s
+Map: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-30\index.html
+Repo path: data/clan_clash/2026-10-30
+Extensions: .webp
+Total images in the table: 44
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-10-30\clan\index.html
+Repo path: data/clan_clash/2026-10-30/clan
+Extensions: .jpg, .png
+Total images in the table: 49
