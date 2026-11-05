@@ -21,6 +21,16 @@
           "prompt": "This image is a cropped OPPONENT POWER window from a Kingdom Clash arena screenshot (digits only).\n\nExtract:\n- power: the combat power as a single continuous positive integer (NO spaces or commas).\n\nReturn ONLY this JSON shape:\n\n{\n  \"power\": <integer>\n}",
           "roi": { "x": 666, "y": 234, "width": 162, "height": 24 }
         }
+      },
+      "clan": {
+        "name": {
+          "prompt": "This image is a cropped CLAN MEMBER NAME window from a Kingdom Clash formation screenshot (text may include symbols like +, |, _, brackets).\n\nExtract:\n- name: exact string as shown, including symbols; preserve case.\n- nameLatin: Latin transliteration (keep symbols).\n- language: language of the name text.\n\nReturn ONLY this JSON shape:\n\n{\n  \"name\": \"<exact_name>\",\n  \"nameLatin\": \"<transliteration>\",\n  \"language\": \"<detected_language>\"\n}",
+          "roi": { "x": 500, "y": 57, "width": 400, "height": 48 }
+        },
+        "power": {
+          "prompt": "This image is a cropped CLAN MEMBER POWER window from a Kingdom Clash formation screenshot (digits only).\n\nExtract:\n- power: the combat power as a single continuous positive integer (NO spaces or commas).\n\nReturn ONLY this JSON shape:\n\n{\n  \"power\": <integer>\n}",
+          "roi": { "x": 360, "y": 122, "width": 180, "height": 36 }
+        }
       }
     }
   },
