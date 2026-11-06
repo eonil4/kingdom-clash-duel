@@ -289,6 +289,7 @@ export async function saveFileMap(mapRoot, mapPath = DEFAULT_FILE_MAP_PATH) {
           nameLatin: it.entry.nameLatin || null,
           power: it.entry.power || null,
           canonical: it.canonicalKey || null,
+          language: it.entry.language || null,
         };
       }
       await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");

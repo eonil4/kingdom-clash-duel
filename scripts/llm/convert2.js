@@ -302,10 +302,10 @@ async function processImageFolder(folderArg, options = {}) {
             name: mapEntry.name,
             nameLatin: mapEntry.nameLatin,
             power: mapEntry.power,
+            language: extracted.language ?? null,
             // durationMs is only available when LLM was just called; include if present
             processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
             canonical: path.posix.basename(mapKey),
-            extractedAt: new Date().toISOString(),
             extractedAt: new Date().toISOString(),
           };
           await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
