@@ -111,12 +111,15 @@ try {
 
     const displayName = path.basename(imageName, path.extname(imageName));
 
-    html += '  <tr>\n';
-    html += '    <td align="center" valign="middle">\n';
+    const id = displayName.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
+    // Add H3 anchor similar to duels for quick navigation
+    html += `  <tr>\n`;
+    html += `    <td align="center" valign="middle">\n`;
+    html += `      <h3 id="img-${id}"><a href="#img-${id}">${displayName}</a></h3>\n`;
     html += `      <img src="${imageUrl}" height="800" alt="${displayName}" /><br />\n`;
     html += `      <sub><b>${displayName}</b></sub>\n`;
-    html += '    </td>\n';
-    html += '  </tr>\n';
+    html += `    </td>\n`;
+    html += `  </tr>\n`;
   }
   html += '</table>\n';
 

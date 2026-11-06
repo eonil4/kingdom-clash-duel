@@ -441,6 +441,9 @@ function renderMatrixSection({
   origFallbackColW,
   showHeading = true,
 }) {
+  function toId(s) {
+    return String(s).replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
+  }
   /** @type {Map<string, number>} */
   const colWidthMap = new Map();
   /** @type {Map<string, number>} */
@@ -466,6 +469,16 @@ function renderMatrixSection({
     html += `<h2>${escapeHtml(title)}</h2>\n\n`;
   }
 
+  // Section TOC: links to each row (h3)
+  if (rows && rows.length > 0) {
+    html += '<div class="section-toc" style="margin-bottom:8px;">\n';
+    for (const r of rows) {
+      const rid = toId(r);
+      html += `  <a href="#row-${rid}" style="margin-right:12px;">${escapeHtml(r)}</a>\n`;
+    }
+    html += '</div>\n\n';
+  }
+
   if (args.rowScroll) {
     for (const row of rows) {
       const rowMap = matrixMap.get(row) ?? new Map();
@@ -475,7 +488,8 @@ function renderMatrixSection({
 
       if (activeCols.length === 0) continue;
 
-      html += `<h3>${escapeHtml(row)}</h3>\n`;
+      const rowId = toId(row);
+      html += `<h3 id="row-${rowId}">${escapeHtml(row)}</h3>\n`;
       html += '<table style="border-collapse: collapse; white-space: nowrap;">\n';
       html += "  <tr>\n";
       if (!args.compact) {
