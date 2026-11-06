@@ -25,6 +25,7 @@ import path from "path";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { readFileSync } from "fs";
+import { loadExistingFileMap, collectEnemyEntriesFromMap, DEFAULT_FILE_MAP_PATH, WORKSPACE_ROOT } from "../file-map-enemies.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -289,6 +290,57 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
     }
   } else {
     console.log(`\n[Wiki] skip clan (missing or empty): ${clanDir}`);
+  }
+
+  // After processing clan folder, also populate/overwrite data.json from fileMap.json entries
+  async function syncFileMapToClanData(folderAbs) {
+    try {
+      const mapRoot = await loadExistingFileMap(DEFAULT_FILE_MAP_PATH);
+      const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
+
+      // Load existing clan data.json if present (keep entries produced by formation/enemy extractors)
+      const outPath = path.join(folderAbs, "data.json");
+      let existing = {};
+      try {
+        const raw = await fs.promises.readFile(outPath, "utf8");
+        existing = JSON.parse(raw);
+      } catch {
+        existing = {};
+      }
+
+      let added = 0;
+      for (const r of rows) {
+        if (path.resolve(r.folderAbs) !== path.resolve(folderAbs)) continue;
+        const key = r.canonicalKey;
+        const entry = r.entry || {};
+        // Only add from fileMap when key is not already present in existing data.json
+        if (!Object.prototype.hasOwnProperty.call(existing, key)) {
+          existing[key] = {
+            name: entry.name || null,
+            nameLatin: entry.nameLatin || null,
+            power: entry.power || null,
+            language: entry.language || null,
+            originalFileName: r.originalFileName || null,
+          };
+          added++;
+        }
+      }
+
+      if (added > 0) {
+        await fs.promises.writeFile(outPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+        console.log(`[Data] merged ${added} fileMap entries into ${outPath}`);
+      } else {
+        console.log("[Data] no new fileMap entries to merge for clan folder");
+      }
+    } catch (err) {
+      console.warn(`[Data] failed to sync fileMap -> data.json: ${err instanceof Error ? err.message : err}`);
+    }
+  }
+
+  try {
+    await syncFileMapToClanData(clanDir);
+  } catch {
+    // ignore
   }
 
   const clanDuelsDir = path.join(dirAbs, "clan_duels");

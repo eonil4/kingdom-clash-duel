@@ -21,6 +21,8 @@ import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
 } from "./clear-lm-prediction-cache.mjs";
+import { canonicalEnemyMapKey, WORKSPACE_ROOT, formatPowerForFilename } from "../file-map-enemies.mjs";
+import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 
 // local paths (adjusted for scripts/llm location)
 const __filename = fileURLToPath(import.meta.url);
@@ -250,6 +252,78 @@ export function normalizeEnemyExtraction(data) {
     out.englishName = data.englishName.trim();
   }
   return out;
+}
+
+async function upsertEnemyDataJsonForImage(imagePath, extracted, durationMs) {
+  const folder = path.dirname(imagePath);
+  const base = path.basename(imagePath);
+  const dataPath = path.join(folder, "data.json");
+  let existing = {};
+  try {
+    const raw = await fs.readFile(dataPath, "utf8");
+    existing = JSON.parse(raw);
+  } catch {
+    existing = {};
+  }
+  existing[base] = {
+    name: extracted.name,
+    nameLatin: extracted.nameLatin,
+    power: extracted.power,
+    language: extracted.language ?? null,
+    extractedAt: new Date().toISOString(),
+    processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
+  };
+  await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+  return dataPath;
+}
+
+async function renameEnemyImageToCanonicalLike(imagePath, extracted) {
+  try {
+    const folder = path.dirname(imagePath);
+    const ext = path.extname(imagePath);
+    const safeName = toSafeEnemyFilenameToken(extracted.nameLatin || extracted.name);
+    const powerToken = formatPowerForFilename(Number(extracted.power));
+    let candidate = `${powerToken}-${safeName}${ext}`;
+    let candidateAbs = path.join(folder, candidate);
+    let i = 1;
+    while (true) {
+      try {
+        await fs.access(candidateAbs);
+        candidate = `${powerToken}-${safeName}-${i}${ext}`;
+        candidateAbs = path.join(folder, candidate);
+        i++;
+        if (i > 1000) break;
+      } catch {
+        break;
+      }
+    }
+    await fs.rename(imagePath, candidateAbs);
+    return { renamed: true, newPath: candidateAbs };
+  } catch (err) {
+    return { renamed: false, error: err instanceof Error ? err.message : String(err) };
+  }
+}
+
+async function removeEnemyOriginalIfCanonicalExists(imagePath, extracted) {
+  try {
+    const canonicalKey = canonicalEnemyMapKey(imagePath, {
+      power: extracted.power,
+      nameLatinRaw: extracted.nameLatin || extracted.name,
+      nameEnglish: undefined,
+      nameRaw: extracted.name,
+    });
+    const parts = canonicalKey.split("/").filter(Boolean);
+    const canonicalAbs = path.join(WORKSPACE_ROOT, ...parts);
+    try {
+      await fs.access(canonicalAbs);
+      await fs.unlink(imagePath);
+      return { deleted: true, canonical: canonicalAbs };
+    } catch {
+      return { deleted: false };
+    }
+  } catch (err) {
+    return { deleted: false, error: err instanceof Error ? err.message : String(err) };
+  }
 }
 
 /**
@@ -583,13 +657,127 @@ async function cliMain() {
   console.log(`Host: ${host}`);
   console.log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
   console.log(`Image: ${resolved}\n`);
+  // Reconcile data.json: if entries point to old/original filenames but a canonical/renamed file exists,
+  // update data.json keys and remove the old original files.
+  async function reconcileDataJsonWithCanonicalFiles(folder) {
+    const dataPath = path.join(folder, "data.json");
+    const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
+    if (!raw) return;
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch {
+      return;
+    }
+    const files = await fs.readdir(folder).catch(() => []);
+    let changed = false;
+    for (const [oldKey, entry] of Object.entries(parsed)) {
+      if (files.includes(oldKey)) continue;
+      const nameToken = toSafeEnemyFilenameToken(entry.nameLatin || entry.name || "UNKNOWN");
+      const powerToken = formatPowerForFilename(Number(entry.power || 0));
+      const exts = [".webp", ".png", ".jpg", ".jpeg"];
+      let found = null;
+      for (const ext of exts) {
+        const cand = `${powerToken}-${nameToken}${ext}`;
+        if (files.includes(cand)) {
+          found = cand;
+          break;
+        }
+        for (let i = 1; i <= 10 && !found; i++) {
+          const c2 = `${powerToken}-${nameToken}-${i}${ext}`;
+          if (files.includes(c2)) {
+            found = c2;
+            break;
+          }
+        }
+        if (found) break;
+      }
+      if (found) {
+        try {
+          await fs.unlink(path.join(folder, oldKey)).catch(() => {});
+        } catch {
+          // ignore
+        }
+        if (!Object.prototype.hasOwnProperty.call(parsed, found)) {
+          parsed[found] = entry;
+        }
+        delete parsed[oldKey];
+        changed = true;
+      }
+    }
+    if (changed) {
+      await fs.writeFile(path.join(folder, "data.json"), `${JSON.stringify(parsed, null, 2)}\n`, "utf8");
+      console.log(`[Data] reconciled data.json in ${folder}`);
+    }
+  }
 
+  try {
+    await reconcileDataJsonWithCanonicalFiles(path.dirname(resolved));
+  } catch {
+    // ignore reconciliation errors
+  }
+
+  // Skip processing if this filename is already recorded in data.json for the folder
+  try {
+    const folder = path.dirname(resolved);
+    const base = path.basename(resolved);
+    const dataPath = path.join(folder, "data.json");
+    const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === "object" && Object.prototype.hasOwnProperty.call(parsed, base)) {
+        console.log(`[Skip] ${base} already present in ${dataPath}`);
+        process.exit(0);
+      }
+    }
+  } catch {
+    // ignore parse errors and continue
+  }
+
+  const start = performance.now();
   const result = await extractEnemyDataFromScreenshot(resolved, {
     host,
     model,
     clearCacheBeforeEachCall,
   });
+  const durationMs = performance.now() - start;
   console.log(JSON.stringify(result, null, 2));
+  console.log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
+
+  try {
+    // rename image immediately to canonical-like filename
+    const renamed = await renameEnemyImageToCanonicalLike(resolved, result);
+    let usedPath = resolved;
+    if (renamed.renamed) {
+      usedPath = renamed.newPath;
+      console.log(`[Rename] moved -> ${usedPath}`);
+    } else {
+      console.warn(`[Rename] failed: ${renamed.error}`);
+    }
+
+    const dataJson = await upsertEnemyDataJsonForImage(usedPath, result, durationMs);
+    console.log(`[Data] wrote ${dataJson} (processing ${Math.round(durationMs)}ms)`);
+
+    // per-folder log
+    try {
+      const folder = path.dirname(usedPath);
+      const base = path.basename(usedPath);
+      const logPath = path.join(folder, "log.txt");
+      const entry = `[${new Date().toISOString()}] ${base} processed ${Math.round(durationMs)}ms name=${JSON.stringify(
+        result.name,
+      )}\n`;
+      await fs.appendFile(logPath, entry, "utf8");
+    } catch {
+      // ignore logging errors
+    }
+
+    const removed = await removeEnemyOriginalIfCanonicalExists(usedPath, result);
+    if (removed.deleted) {
+      console.log(`[Cleanup] deleted file because canonical exists: ${removed.canonical}`);
+    }
+  } catch (err) {
+    console.warn("[Data] failed to write data.json, rename, or cleanup:", err instanceof Error ? err.message : String(err));
+  }
 }
 
 const invokedDirectly =

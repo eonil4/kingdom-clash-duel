@@ -78,13 +78,66 @@ export async function loadConfiguredFolders(mapPath, workspaceRoot = WORKSPACE_R
 
 export async function loadExistingFileMap(mapPath) {
   try {
-    const raw = await fs.readFile(mapPath, "utf8");
-    const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-    return parsed;
+    // If an explicit fileMap.json exists, read it for backwards compatibility.
+    const raw = await fs.readFile(mapPath, "utf8").catch(() => null);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+      return parsed;
+    }
   } catch {
-    return {};
+    // fallthrough to build from per-folder data.json
   }
+
+  // Build nested map structure from per-folder data.json files under data/clan_clash
+  const root = {};
+  const baseDir = path.join(WORKSPACE_ROOT);
+  async function walkDirs(dir) {
+    let entries;
+    try {
+      entries = await fs.readdir(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    // if data.json exists here, load entries
+    try {
+      const dataPath = path.join(dir, "data.json");
+      const raw = await fs.readFile(dataPath, "utf8").catch(() => null);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object") {
+          const relDir = path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
+          for (const [origName, entry] of Object.entries(parsed)) {
+            const filePath = path.join(dir, origName);
+            const power = Number(entry && entry.power ? entry.power : 0);
+            const nameLatinRaw = entry && (entry.nameLatin || entry.name) ? (entry.nameLatin || entry.name) : "";
+            const mapKey = canonicalEnemyMapKey(filePath, {
+              power,
+              nameLatinRaw,
+              nameEnglish: undefined,
+              nameRaw: entry && entry.name ? entry.name : undefined,
+            });
+            setNestedMapping(root, mapKey, {
+              name: entry.name || null,
+              nameLatin: entry.nameLatin || null,
+              power: entry.power || null,
+              originalFileName: origName,
+            });
+          }
+        }
+      }
+    } catch {
+      // ignore
+    }
+
+    for (const e of entries || []) {
+      if (e.isDirectory()) {
+        await walkDirs(path.join(dir, e.name));
+      }
+    }
+  }
+  await walkDirs(path.join(WORKSPACE_ROOT, "data", "clan_clash")).catch(() => {});
+  return root;
 }
 
 export function toMapKey(filePath, workspaceRoot = WORKSPACE_ROOT) {
@@ -211,8 +264,45 @@ export function sortMapNode(node) {
 
 /** Write sorted map to disk (call after each processed image to persist progress). */
 export async function saveFileMap(mapRoot, mapPath = DEFAULT_FILE_MAP_PATH) {
-  const sorted = sortMapNode(mapRoot);
-  await fs.writeFile(mapPath, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
+  // Convert nested mapRoot into per-folder data.json files (merge with existing)
+  const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
+  const group = {};
+  for (const r of rows) {
+    const folder = r.folderAbs;
+    if (!group[folder]) group[folder] = [];
+    group[folder].push(r);
+  }
+  for (const [folder, items] of Object.entries(group)) {
+    try {
+      const dataPath = path.join(folder, "data.json");
+      let existing = {};
+      try {
+        const raw = await fs.readFile(dataPath, "utf8");
+        existing = JSON.parse(raw);
+      } catch {
+        existing = {};
+      }
+      for (const it of items) {
+        const key = it.originalFileName || it.canonicalKey;
+        existing[key] = {
+          name: it.entry.name || null,
+          nameLatin: it.entry.nameLatin || null,
+          power: it.entry.power || null,
+          canonical: it.canonicalKey || null,
+        };
+      }
+      await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+    } catch {
+      // ignore write errors
+    }
+  }
+
+  // Remove legacy global fileMap.json if present
+  try {
+    await fs.unlink(mapPath).catch(() => {});
+  } catch {
+    // ignore
+  }
 }
 
 function resolveDiskOriginalFromMapParts(parts, entry, workspaceRoot) {

@@ -33,6 +33,7 @@ import {
   toMapKey,
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
+ 
 import { extractEnemyDataFromNamePowerCrops } from "./llm-enemy-extract.mjs";
 import {
   clearLmPredictionCache,
@@ -286,6 +287,31 @@ async function processImageFolder(folderArg, options = {}) {
         });
         outputPath = path.join(folderAbs, path.posix.basename(mapKey));
         setNestedMapping(mapRoot, mapKey, mapEntry);
+        // Also persist results to per-folder data.json so consumers can read results without fileMap.json
+        try {
+          const dataPath = path.join(folderAbs, "data.json");
+          let existing = {};
+          try {
+            const raw = await fs.readFile(dataPath, "utf8");
+            existing = JSON.parse(raw);
+          } catch {
+            existing = {};
+          }
+          const key = originalFileName;
+          existing[key] = {
+            name: mapEntry.name,
+            nameLatin: mapEntry.nameLatin,
+            power: mapEntry.power,
+            // durationMs is only available when LLM was just called; include if present
+            processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
+            canonical: path.posix.basename(mapKey),
+            extractedAt: new Date().toISOString(),
+            extractedAt: new Date().toISOString(),
+          };
+          await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+        } catch {
+          // ignore data.json write errors
+        }
       }
 
       if (!force) {

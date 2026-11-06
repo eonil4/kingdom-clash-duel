@@ -566,6 +566,66 @@ async function cliMain() {
   console.log(`Host: ${host}`);
   console.log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
   console.log(`Image: ${resolved}\n`);
+  // Reconcile data.json: if entries point to old/original filenames but a canonical/renamed file exists,
+  // update data.json keys and remove the old original files.
+  async function reconcileDataJsonWithCanonicalFiles(folder) {
+    const dataPath = path.join(folder, "data.json");
+    const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
+    if (!raw) return;
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch {
+      return;
+    }
+    const files = await fs.readdir(folder).catch(() => []);
+    let changed = false;
+    for (const [oldKey, entry] of Object.entries(parsed)) {
+      if (files.includes(oldKey)) continue; // file still present
+      const nameToken = toSafeEnemyFilenameToken(entry.nameLatin || entry.name || "UNKNOWN");
+      const powerToken = formatPowerForFilename(Number(entry.power || 0));
+      const exts = [".webp", ".png", ".jpg", ".jpeg"];
+      let found = null;
+      for (const ext of exts) {
+        const cand = `${powerToken}-${nameToken}${ext}`;
+        if (files.includes(cand)) {
+          found = cand;
+          break;
+        }
+        for (let i = 1; i <= 10 && !found; i++) {
+          const c2 = `${powerToken}-${nameToken}-${i}${ext}`;
+          if (files.includes(c2)) {
+            found = c2;
+            break;
+          }
+        }
+        if (found) break;
+      }
+      if (found) {
+        // delete oldKey file if exists
+        try {
+          await fs.unlink(path.join(folder, oldKey)).catch(() => {});
+        } catch {
+          // ignore
+        }
+        if (!Object.prototype.hasOwnProperty.call(parsed, found)) {
+          parsed[found] = entry;
+        }
+        delete parsed[oldKey];
+        changed = true;
+      }
+    }
+    if (changed) {
+      await fs.writeFile(path.join(folder, "data.json"), `${JSON.stringify(parsed, null, 2)}\n`, "utf8");
+      console.log(`[Data] reconciled data.json in ${folder}`);
+    }
+  }
+
+  try {
+    await reconcileDataJsonWithCanonicalFiles(path.dirname(resolved));
+  } catch {
+    // ignore reconciliation errors
+  }
   // Skip processing if this filename is already recorded in data.json for the folder
   try {
     const folder = path.dirname(resolved);
