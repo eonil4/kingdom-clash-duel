@@ -3,24 +3,336 @@
     "name": "Горький",
     "nameLatin": "Gorkiy",
     "power": 8104472,
-    "canonical": "008_104_472-Gorkiy.webp"
+    "canonical": "008_104_472-Gorkiy.webp",
+    "language": null
   },
   "Screenshot_2026.11.06_10.21.21.242.png": {
     "name": "медвєдь29.ZR",
     "nameLatin": "medved29.ZR",
     "power": 4193076,
-    "canonical": "004_193_076-medved29.ZR.webp"
+    "canonical": "004_193_076-medved29.ZR.webp",
+    "language": null
   },
   "Screenshot_2026.11.06_10.21.30.141.png": {
     "name": "Storm.ZR",
     "nameLatin": "Storm.ZR",
     "power": 5417964,
-    "canonical": "005_417_964-Storm.ZR.webp"
+    "canonical": "005_417_964-Storm.ZR.webp",
+    "language": null
   },
   "Screenshot_2026.11.06_10.21.39.475.png": {
     "name": "Lexa.pb",
     "nameLatin": "Lexa.pb",
     "power": 4460210,
-    "canonical": "004_460_210-Lexa.pb.webp"
+    "canonical": "004_460_210-Lexa.pb.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.21.48.142.png": {
+    "name": "фил акму",
+    "nameLatin": "fil akmu",
+    "power": 2336004,
+    "canonical": "002_336_004-fil_akmu.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.21.59.175.png": {
+    "name": "TARAKAH",
+    "nameLatin": "TARAKAH",
+    "power": 3939536,
+    "canonical": "003_939_536-TARAKAH.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.22.42.108.png": {
+    "name": "Last Emperor",
+    "nameLatin": "Last Emperor",
+    "power": 10091904,
+    "canonical": "010_091_904-Last_Emperor.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.22.53.858.png": {
+    "name": "Тюмень =V=",
+    "nameLatin": "Tyumen' =V=",
+    "power": 3260845,
+    "canonical": "003_260_845-Tyumen%27_V.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.23.14.658.png": {
+    "name": "Омск 3Р",
+    "nameLatin": "Omsk 3R",
+    "power": 4397815,
+    "canonical": "004_397_815-Omsk_3R.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.23.31.608.png": {
+    "name": "Разрушитель ЗР",
+    "nameLatin": "Razrushitel' ZR",
+    "power": 3432017,
+    "canonical": "003_432_017-Razrushitel%27_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.23.42.558.png": {
+    "name": "Mako_ZR",
+    "nameLatin": "Mako_ZR",
+    "power": 3369177,
+    "canonical": "003_369_177-Mako_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.23.51.941.png": {
+    "name": "ШерШень_ZR",
+    "nameLatin": "SherShen_ZR",
+    "power": 4816740,
+    "canonical": "004_816_740-SherShen_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_10.24.43.492.png": {
+    "name": "Мясник",
+    "nameLatin": "Myasnik",
+    "power": 2551807,
+    "canonical": "002_551_807-Myasnik.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_11.12.38.858.png": {
+    "name": "Mazza",
+    "nameLatin": "Mazza",
+    "power": 2709643,
+    "canonical": "002_709_643-Mazza.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_11.12.48.108.png": {
+    "name": "ВАХТАВИКИ.ZR",
+    "nameLatin": "VAXTAVIKI.ZR",
+    "power": 2034755,
+    "canonical": "002_034_755-VAXTAVIKI.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.19.49.841.png": {
+    "name": "lexus S",
+    "nameLatin": "lexus S",
+    "power": 1647756,
+    "canonical": "001_647_756-lexus_S.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.20.06.924.png": {
+    "name": "sigma.ZR",
+    "nameLatin": "sigma.ZR",
+    "power": 2918669,
+    "canonical": "002_918_669-sigma.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.20.26.041.png": {
+    "name": "4iliec",
+    "nameLatin": "4iliec",
+    "power": 2929728,
+    "canonical": "002_929_728-4iliec.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.20.39.225.png": {
+    "name": "Куба з РСБ",
+    "nameLatin": "Kuba z RSB",
+    "power": 4888728,
+    "canonical": "004_888_728-Kuba_z_RSB.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.20.50.541.png": {
+    "name": "Алексей",
+    "nameLatin": "Alexey",
+    "power": 2076763,
+    "canonical": "002_076_763-Alexey.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.21.07.458.png": {
+    "name": "Павел",
+    "nameLatin": "Pavel",
+    "power": 1049055,
+    "canonical": "001_049_055-Pavel.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.22.06.741.png": {
+    "name": "Есаул Сахалин65",
+    "nameLatin": "Esaul Sakhalin65",
+    "power": 7844663,
+    "canonical": "007_844_663-Esaul_Sakhalin65.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.22.25.024.png": {
+    "name": "котайсон",
+    "nameLatin": "kotaison",
+    "power": 3852778,
+    "canonical": "003_852_778-kotaison.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.22.45.825.png": {
+    "name": "Mákó,ZR",
+    "nameLatin": "Mákó,ZR",
+    "power": 3122499,
+    "canonical": "003_122_499-M_k_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.22.59.858.png": {
+    "name": "МЕДВЕДЬ.ZR",
+    "nameLatin": "MEDEBYY.ZR",
+    "power": 5542923,
+    "canonical": "005_542_923-MEDEBYY.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.23.17.524.png": {
+    "name": "*Dron16*",
+    "nameLatin": "*Dron16*",
+    "power": 6884270,
+    "canonical": "006_884_270-%2ADron16%2A.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.23.27.224.png": {
+    "name": "Бацілко.ZR",
+    "nameLatin": "Bacilko.ZR",
+    "power": 6002759,
+    "canonical": "006_002_759-Bacilko.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.23.39.874.png": {
+    "name": "LINCH",
+    "nameLatin": "LINCH",
+    "power": 4591390,
+    "canonical": "004_591_390-LINCH.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.23.52.508.png": {
+    "name": "Калуга ЗР",
+    "nameLatin": "Kaluga ZR",
+    "power": 7551671,
+    "canonical": "007_551_671-Kaluga_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.24.12.807.png": {
+    "name": "OVERLORD",
+    "nameLatin": "OVERLORD",
+    "power": 6832163,
+    "canonical": "006_832_163-OVERLORD.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.24.27.375.png": {
+    "name": "Шляпник",
+    "nameLatin": "Shlyapnik",
+    "power": 3442818,
+    "canonical": "003_442_818-Shlyapnik.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.24.58.474.png": {
+    "name": "BOPOH",
+    "nameLatin": "BOPOH",
+    "power": 6360760,
+    "canonical": "006_360_760-BOPOH.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.25.12.208.png": {
+    "name": "яромаг",
+    "nameLatin": "yromag",
+    "power": 6977449,
+    "canonical": "006_977_449-yromag.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.25.27.275.png": {
+    "name": "Myxa",
+    "nameLatin": "Myxa",
+    "power": 6814630,
+    "canonical": "006_814_630-Myxa.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.25.41.392.png": {
+    "name": "Den. ZR",
+    "nameLatin": "Den. ZR",
+    "power": 6418721,
+    "canonical": "006_418_721-Den._ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.25.53.041.png": {
+    "name": "Грек",
+    "nameLatin": "Grek",
+    "power": 1944630,
+    "canonical": "001_944_630-Grek.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.26.06.791.png": {
+    "name": "ЮРЧИК ЗР",
+    "nameLatin": "YURCHIK ZR",
+    "power": 5654638,
+    "canonical": "005_654_638-YURCHIK_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.26.19.108.png": {
+    "name": "ИСКАНДЕР_ZR",
+    "nameLatin": "ISKANDER_ZR",
+    "power": 2602886,
+    "canonical": "002_602_886-ISKANDER_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.26.37.174.png": {
+    "name": "Скуф [ZR]",
+    "nameLatin": "Skuf [ZR]",
+    "power": 7773530,
+    "canonical": "007_773_530-Skuf_[ZR].webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.26.53.958.png": {
+    "name": "Артём_ZR",
+    "nameLatin": "Artëm_ZR",
+    "power": 5570142,
+    "canonical": "005_570_142-Art_m_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.27.06.474.png": {
+    "name": "Церияліс ZR",
+    "nameLatin": "Tserialis ZR",
+    "power": 4944355,
+    "canonical": "004_944_355-Tserialis_ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.27.19.908.png": {
+    "name": "Stas \"ZV\"",
+    "nameLatin": "Stas \"ZV\"",
+    "power": 3648255,
+    "canonical": "003_648_255-Stas_%22ZV%22.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.28.34.774.png": {
+    "name": "Кимыч.ZR",
+    "nameLatin": "Kimych.ZR",
+    "power": 8962515,
+    "canonical": "008_962_515-Kimych.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.29.20.191.png": {
+    "name": "УЗБЕК",
+    "nameLatin": "UZBEK",
+    "power": 6078397,
+    "canonical": "006_078_397-UZBEK.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.29.32.258.png": {
+    "name": "Дима8 zr",
+    "nameLatin": "Dima8 zr",
+    "power": 3372453,
+    "canonical": "003_372_453-Dima8_zr.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.29.44.108.png": {
+    "name": "САНАЙ.ЗР",
+    "nameLatin": "SANA.I.ZR",
+    "power": 7132434,
+    "canonical": "007_132_434-SANA.I.ZR.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.32.04.458.png": {
+    "name": "Сахалин",
+    "nameLatin": "Sakhalin",
+    "power": 4478855,
+    "canonical": "004_478_855-Sakhalin.webp",
+    "language": null
+  },
+  "Screenshot_2026.11.06_12.32.16.241.png": {
+    "name": "Ричард Рал",
+    "nameLatin": "RichardRal",
+    "power": 2268545,
+    "canonical": "002_268_545-RichardRal.webp",
+    "language": null
   }
 }

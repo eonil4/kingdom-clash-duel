@@ -5,7 +5,7 @@ Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-
 
 [Processing] Screenshot_2026.11.06_10.21.12.375.png
 	[LLM crops] Screenshot_2026.11.06_10.21.12.375.png (attempt 1/3, timeout 60s)...
-	[LLM crops] power=8104472 name="Горький" latin="Gorkiy" (13.0s)
+	[LLM crops] power=8104472 name="Горький" latin="Gorkiy" (11.3s)
 	[Conversion] -> 008_104_472-Gorkiy.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
@@ -13,7 +13,7 @@ Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-
 	[LLM crops] Screenshot_2026.11.06_10.21.21.242.png (attempt 1/3, timeout 60s)...
 	[Cache] Cleared before LLM crop calls: 1 path(s)
 	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
-	[LLM crops] power=4193076 name="медвєдь29.ZR" latin="medved29.ZR" (14.0s)
+	[LLM crops] power=4193076 name="медвєдь29.ZR" latin="medved29.ZR" (13.9s)
 	[Conversion] -> 004_193_076-medved29.ZR.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
@@ -21,7 +21,7 @@ Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-
 	[LLM crops] Screenshot_2026.11.06_10.21.30.141.png (attempt 1/3, timeout 60s)...
 	[Cache] Cleared before LLM crop calls: 1 path(s)
 	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
-	[LLM crops] power=5417964 name="Storm.ZR" latin="Storm.ZR" (12.4s)
+	[LLM crops] power=5417964 name="Storm.ZR" latin="Storm.ZR" (12.2s)
 	[Conversion] -> 005_417_964-Storm.ZR.webp
 	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
 
@@ -37,3 +37,357 @@ Processing folder (convert2 / name+power crops): C:\DEV\workspace\kingdom-clash-
 	[LLM crops] Screenshot_2026.11.06_10.21.48.142.png (attempt 1/3, timeout 60s)...
 	[Cache] Cleared before LLM crop calls: 1 path(s)
 	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2336004 name="фил акму" latin="fil akmu" (12.6s)
+	[Conversion] -> 002_336_004-fil_akmu.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.21.59.175.png
+	[LLM crops] Screenshot_2026.11.06_10.21.59.175.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3939536 name="TARAKAH" latin="TARAKAH" (13.0s)
+	[Conversion] -> 003_939_536-TARAKAH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.22.42.108.png
+	[LLM crops] Screenshot_2026.11.06_10.22.42.108.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=10091904 name="Last Emperor" latin="Last Emperor" (15.1s)
+	[Conversion] -> 010_091_904-Last_Emperor.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.22.53.858.png
+	[LLM crops] Screenshot_2026.11.06_10.22.53.858.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3260845 name="Тюмень =V=" latin="Tyumen' =V=" (14.9s)
+	[Conversion] -> 003_260_845-Tyumen%27_V.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.23.14.658.png
+	[LLM crops] Screenshot_2026.11.06_10.23.14.658.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4397815 name="Омск 3Р" latin="Omsk 3R" (15.8s)
+	[Conversion] -> 004_397_815-Omsk_3R.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.23.31.608.png
+	[LLM crops] Screenshot_2026.11.06_10.23.31.608.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3432017 name="Разрушитель ЗР" latin="Razrushitel' ZR" (14.1s)
+	[Conversion] -> 003_432_017-Razrushitel%27_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.23.42.558.png
+	[LLM crops] Screenshot_2026.11.06_10.23.42.558.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3369177 name="Mako_ZR" latin="Mako_ZR" (13.0s)
+	[Conversion] -> 003_369_177-Mako_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.23.51.941.png
+	[LLM crops] Screenshot_2026.11.06_10.23.51.941.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4816740 name="ШерШень_ZR" latin="SherShen_ZR" (13.9s)
+	[Conversion] -> 004_816_740-SherShen_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_10.24.43.492.png
+	[LLM crops] Screenshot_2026.11.06_10.24.43.492.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2551807 name="Мясник" latin="Myasnik" (13.1s)
+	[Conversion] -> 002_551_807-Myasnik.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_11.12.38.858.png
+	[LLM crops] Screenshot_2026.11.06_11.12.38.858.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2709643 name="Mazza" latin="Mazza" (12.7s)
+	[Conversion] -> 002_709_643-Mazza.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_11.12.48.108.png
+	[LLM crops] Screenshot_2026.11.06_11.12.48.108.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2034755 name="ВАХТАВИКИ.ZR" latin="VAXTAVIKI.ZR" (14.9s)
+	[Conversion] -> 002_034_755-VAXTAVIKI.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.19.49.841.png
+	[LLM crops] Screenshot_2026.11.06_12.19.49.841.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=1647756 name="lexus S" latin="lexus S" (12.5s)
+	[Conversion] -> 001_647_756-lexus_S.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.20.06.924.png
+	[LLM crops] Screenshot_2026.11.06_12.20.06.924.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2918669 name="sigma.ZR" latin="sigma.ZR" (12.3s)
+	[Conversion] -> 002_918_669-sigma.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.20.26.041.png
+	[LLM crops] Screenshot_2026.11.06_12.20.26.041.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2929728 name="4iliec" latin="4iliec" (11.4s)
+	[Conversion] -> 002_929_728-4iliec.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.20.39.225.png
+	[LLM crops] Screenshot_2026.11.06_12.20.39.225.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4888728 name="Куба з РСБ" latin="Kuba z RSB" (14.4s)
+	[Conversion] -> 004_888_728-Kuba_z_RSB.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.20.50.541.png
+	[LLM crops] Screenshot_2026.11.06_12.20.50.541.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2076763 name="Алексей" latin="Alexey" (12.2s)
+	[Conversion] -> 002_076_763-Alexey.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.21.07.458.png
+	[LLM crops] Screenshot_2026.11.06_12.21.07.458.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=1049055 name="Павел" latin="Pavel" (11.4s)
+	[Conversion] -> 001_049_055-Pavel.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.22.06.741.png
+	[LLM crops] Screenshot_2026.11.06_12.22.06.741.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=7844663 name="Есаул Сахалин65" latin="Esaul Sakhalin65" (14.9s)
+	[Conversion] -> 007_844_663-Esaul_Sakhalin65.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.22.25.024.png
+	[LLM crops] Screenshot_2026.11.06_12.22.25.024.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3852778 name="котайсон" latin="kotaison" (11.6s)
+	[Conversion] -> 003_852_778-kotaison.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.22.45.825.png
+	[LLM crops] Screenshot_2026.11.06_12.22.45.825.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3122499 name="Mákó,ZR" latin="Mákó,ZR" (12.5s)
+	[Conversion] -> 003_122_499-M_k_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.22.59.858.png
+	[LLM crops] Screenshot_2026.11.06_12.22.59.858.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=5542923 name="МЕДВЕДЬ.ZR" latin="MEDEBYY.ZR" (13.3s)
+	[Conversion] -> 005_542_923-MEDEBYY.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.23.17.524.png
+	[LLM crops] Screenshot_2026.11.06_12.23.17.524.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6884270 name="*Dron16*" latin="*Dron16*" (12.1s)
+	[Conversion] -> 006_884_270-%2ADron16%2A.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.23.27.224.png
+	[LLM crops] Screenshot_2026.11.06_12.23.27.224.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6002759 name="Бацілко.ZR" latin="Bacilko.ZR" (13.7s)
+	[Conversion] -> 006_002_759-Bacilko.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.23.39.874.png
+	[LLM crops] Screenshot_2026.11.06_12.23.39.874.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4591390 name="LINCH" latin="LINCH" (11.5s)
+	[Conversion] -> 004_591_390-LINCH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.23.52.508.png
+	[LLM crops] Screenshot_2026.11.06_12.23.52.508.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=7551671 name="Калуга ЗР" latin="Kaluga ZR" (12.3s)
+	[Conversion] -> 007_551_671-Kaluga_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.24.12.807.png
+	[LLM crops] Screenshot_2026.11.06_12.24.12.807.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6832163 name="OVERLORD" latin="OVERLORD" (11.3s)
+	[Conversion] -> 006_832_163-OVERLORD.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.24.27.375.png
+	[LLM crops] Screenshot_2026.11.06_12.24.27.375.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3442818 name="Шляпник" latin="Shlyapnik" (12.5s)
+	[Conversion] -> 003_442_818-Shlyapnik.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.24.58.474.png
+	[LLM crops] Screenshot_2026.11.06_12.24.58.474.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6360760 name="BOPOH" latin="BOPOH" (11.5s)
+	[Conversion] -> 006_360_760-BOPOH.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.25.12.208.png
+	[LLM crops] Screenshot_2026.11.06_12.25.12.208.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6977449 name="яромаг" latin="yromag" (11.3s)
+	[Conversion] -> 006_977_449-yromag.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.25.27.275.png
+	[LLM crops] Screenshot_2026.11.06_12.25.27.275.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6814630 name="Myxa" latin="Myxa" (11.2s)
+	[Conversion] -> 006_814_630-Myxa.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.25.41.392.png
+	[LLM crops] Screenshot_2026.11.06_12.25.41.392.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6418721 name="Den. ZR" latin="Den. ZR" (12.1s)
+	[Conversion] -> 006_418_721-Den._ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.25.53.041.png
+	[LLM crops] Screenshot_2026.11.06_12.25.53.041.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=1944630 name="Грек" latin="Grek" (12.0s)
+	[Conversion] -> 001_944_630-Grek.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.26.06.791.png
+	[LLM crops] Screenshot_2026.11.06_12.26.06.791.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=5654638 name="ЮРЧИК ЗР" latin="YURCHIK ZR" (13.1s)
+	[Conversion] -> 005_654_638-YURCHIK_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.26.19.108.png
+	[LLM crops] Screenshot_2026.11.06_12.26.19.108.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2602886 name="ИСКАНДЕР_ZR" latin="ISKANDER_ZR" (12.7s)
+	[Conversion] -> 002_602_886-ISKANDER_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.26.37.174.png
+	[LLM crops] Screenshot_2026.11.06_12.26.37.174.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=7773530 name="Скуф [ZR]" latin="Skuf [ZR]" (13.0s)
+	[Conversion] -> 007_773_530-Skuf_[ZR].webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.26.53.958.png
+	[LLM crops] Screenshot_2026.11.06_12.26.53.958.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=5570142 name="Артём_ZR" latin="Artëm_ZR" (13.5s)
+	[Conversion] -> 005_570_142-Art_m_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.27.06.474.png
+	[LLM crops] Screenshot_2026.11.06_12.27.06.474.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4944355 name="Церияліс ZR" latin="Tserialis ZR" (14.0s)
+	[Conversion] -> 004_944_355-Tserialis_ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.27.19.908.png
+	[LLM crops] Screenshot_2026.11.06_12.27.19.908.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3648255 name="Stas \"ZV\"" latin="Stas \"ZV\"" (12.3s)
+	[Conversion] -> 003_648_255-Stas_%22ZV%22.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.28.34.774.png
+	[LLM crops] Screenshot_2026.11.06_12.28.34.774.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=8962515 name="Кимыч.ZR" latin="Kimych.ZR" (13.1s)
+	[Conversion] -> 008_962_515-Kimych.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.29.20.191.png
+	[LLM crops] Screenshot_2026.11.06_12.29.20.191.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=6078397 name="УЗБЕК" latin="UZBEK" (12.6s)
+	[Conversion] -> 006_078_397-UZBEK.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.29.32.258.png
+	[LLM crops] Screenshot_2026.11.06_12.29.32.258.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=3372453 name="Дима8 zr" latin="Dima8 zr" (13.0s)
+	[Conversion] -> 003_372_453-Dima8_zr.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.29.44.108.png
+	[LLM crops] Screenshot_2026.11.06_12.29.44.108.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=7132434 name="САНАЙ.ЗР" latin="SANA.I.ZR" (12.7s)
+	[Conversion] -> 007_132_434-SANA.I.ZR.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.32.04.458.png
+	[LLM crops] Screenshot_2026.11.06_12.32.04.458.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=4478855 name="Сахалин" latin="Sakhalin" (12.0s)
+	[Conversion] -> 004_478_855-Sakhalin.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+[Processing] Screenshot_2026.11.06_12.32.16.241.png
+	[LLM crops] Screenshot_2026.11.06_12.32.16.241.png (attempt 1/3, timeout 60s)...
+	[Cache] Cleared before LLM crop calls: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+	[LLM crops] power=2268545 name="Ричард Рал" latin="RichardRal" (12.0s)
+	[Conversion] -> 002_268_545-RichardRal.webp
+	[Map] saved C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+
+Done (convert2): 48 new (LLM crops), 0 from map only, 0 skipped (complete), 0 failed. LLM min/median/max: 11.2s / 12.6s / 15.8s
+Map: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\fileMap.json
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-06\index.html
+Repo path: data/clan_clash/2026-11-06
+Extensions: .webp
+Total images in the table: 48
