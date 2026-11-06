@@ -254,7 +254,7 @@ export function normalizeEnemyExtraction(data) {
   return out;
 }
 
-async function upsertEnemyDataJsonForImage(imagePath, extracted, durationMs) {
+async function upsertEnemyDataJsonForImage(imagePath, extracted, durationMs, canonical) {
   const folder = path.dirname(imagePath);
   const base = path.basename(imagePath);
   const dataPath = path.join(folder, "data.json");
@@ -272,6 +272,7 @@ async function upsertEnemyDataJsonForImage(imagePath, extracted, durationMs) {
     language: extracted.language ?? null,
     extractedAt: new Date().toISOString(),
     processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
+    canonical: canonical ?? null,
   };
   await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
   return dataPath;
@@ -745,17 +746,11 @@ async function cliMain() {
   console.log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
 
   try {
-    // rename image immediately to canonical-like filename
-    const renamed = await renameEnemyImageToCanonicalLike(resolved, result);
-    let usedPath = resolved;
-    if (renamed.renamed) {
-      usedPath = renamed.newPath;
-      console.log(`[Rename] moved -> ${usedPath}`);
-    } else {
-      console.warn(`[Rename] failed: ${renamed.error}`);
-    }
-
-    const dataJson = await upsertEnemyDataJsonForImage(usedPath, result, durationMs);
+    // Do not rename originals. Persist data.json entry keyed by original filename.
+    const canonicalBase = `${formatPowerForFilename(Number(result.power))}-${toSafeEnemyFilenameToken(
+      result.nameLatin || result.name,
+    )}.webp`;
+    const dataJson = await upsertEnemyDataJsonForImage(resolved, result, durationMs, canonicalBase);
     console.log(`[Data] wrote ${dataJson} (processing ${Math.round(durationMs)}ms)`);
 
     // per-folder log
@@ -771,10 +766,7 @@ async function cliMain() {
       // ignore logging errors
     }
 
-    const removed = await removeEnemyOriginalIfCanonicalExists(usedPath, result);
-    if (removed.deleted) {
-      console.log(`[Cleanup] deleted file because canonical exists: ${removed.canonical}`);
-    }
+    // do not remove original image; conversion script will create canonical webp separately
   } catch (err) {
     console.warn("[Data] failed to write data.json, rename, or cleanup:", err instanceof Error ? err.message : String(err));
   }

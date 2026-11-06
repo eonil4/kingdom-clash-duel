@@ -454,7 +454,7 @@ export async function extractClanDataFromNamePowerCrops(imagePath, options = {})
   });
 }
 
-async function upsertClanDataJsonForImage(imagePath, extracted, durationMs) {
+async function upsertClanDataJsonForImage(imagePath, extracted, durationMs, canonical) {
   const folder = path.dirname(imagePath);
   const base = path.basename(imagePath);
   const dataPath = path.join(folder, "data.json");
@@ -472,6 +472,7 @@ async function upsertClanDataJsonForImage(imagePath, extracted, durationMs) {
     language: extracted.language ?? null,
     extractedAt: new Date().toISOString(),
     processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
+    canonical: canonical ?? null,
   };
   await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
   return dataPath;
@@ -652,23 +653,12 @@ async function cliMain() {
   console.log(JSON.stringify(result, null, 2));
   console.log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
   try {
-    // rename image immediately to canonical-like filename
-    const renamed = await renameImageToCanonicalLike(resolved, result);
-    let usedPath = resolved;
-    if (renamed.renamed) {
-      usedPath = renamed.newPath;
-      console.log(`[Rename] moved -> ${usedPath}`);
-    } else {
-      console.warn(`[Rename] failed: ${renamed.error}`);
-    }
-
-    const dataJson = await upsertClanDataJsonForImage(usedPath, result, durationMs);
+    // Do not rename originals. Persist data.json entry keyed by original filename and include canonical suggestion.
+    const canonicalBase = `${formatPowerForFilename(Number(result.power))}-${toSafeEnemyFilenameToken(
+      result.nameLatin || result.name,
+    )}.webp`;
+    const dataJson = await upsertClanDataJsonForImage(resolved, result, durationMs, canonicalBase);
     console.log(`[Data] wrote ${dataJson} (processing ${Math.round(durationMs)}ms)`);
-
-    const removed = await removeOriginalIfCanonicalExists(usedPath, result);
-    if (removed.deleted) {
-      console.log(`[Cleanup] deleted file because canonical exists: ${removed.canonical}`);
-    }
   } catch (err) {
     console.warn("[Data] failed to write data.json, rename, or cleanup:", err instanceof Error ? err.message : String(err));
   }

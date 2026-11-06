@@ -1,688 +1,688 @@
 {
-  "004_790_336-HuN_%7C_Vikii-1.png": {
-    "name": "HuN | Vikii",
-    "nameLatin": "HuN | Vikii",
-    "power": 4790336,
-    "canonical": "004_790_336-HuN_%7C_Vikii.webp",
-    "language": null
-  },
-  "004_828_797-HuN%7CKensei-1.png": {
-    "name": "HuN|Kensei",
-    "nameLatin": "HuN|Kensei",
-    "power": 4828797,
-    "canonical": "004_828_797-HuN%7CKensei.webp",
-    "language": null
-  },
-  "005_141_041-HuN%7C_Attila-1.png": {
-    "name": "HuN| Attila",
-    "nameLatin": "HuN| Attila",
-    "power": 5141041,
-    "canonical": "005_141_041-HuN%7C_Attila.webp",
-    "language": null
-  },
-  "005_159_618-HuN%7CPlayerX-1.png": {
-    "name": "HuN|PlayerX",
-    "nameLatin": "HuN|PlayerX",
-    "power": 5159618,
-    "canonical": "005_159_618-HuN%7CPlayerX.webp",
-    "language": null
-  },
-  "005_230_047-HuN%7CTravis-1.png": {
-    "name": "HuN|Travis",
-    "nameLatin": "HuN|Travis",
-    "power": 5230047,
-    "canonical": "005_230_047-HuN%7CTravis.webp",
-    "language": null
-  },
-  "005_309_499-HuN%7CFarkas-1.png": {
-    "name": "HuN|Farkas",
-    "nameLatin": "HuN|Farkas",
-    "power": 5309499,
-    "canonical": "005_309_499-HuN%7CFarkas.webp",
-    "language": null
-  },
-  "005_334_120-HuN_%7C_Nachmalem-1.png": {
-    "name": "HuN | Nachmalem",
-    "nameLatin": "HuN | Nachmalem",
-    "power": 5334120,
-    "canonical": "005_334_120-HuN_%7C_Nachmalem.webp",
-    "language": null
-  },
-  "005_476_216-HuN%7CJustme_34-1.png": {
-    "name": "HuN|Justme#34",
-    "nameLatin": "HuN|Justme#34",
-    "power": 5476216,
-    "canonical": "005_476_216-HuN%7CJustme_34.webp",
-    "language": null
-  },
-  "005_595_135-Batman_HuN2-1.png": {
-    "name": "Batman HuN2",
-    "nameLatin": "Batman HuN2",
-    "power": 5595135,
-    "canonical": "005_595_135-Batman_HuN2.webp",
-    "language": null
-  },
-  "005_678_834-L_l-1.png": {
-    "name": "Lõlõ",
-    "nameLatin": "Lõlõ",
-    "power": 5678834,
-    "canonical": "005_678_834-L_l.webp",
-    "language": null
-  },
-  "005_778_220-HuN%7CNIX-1.png": {
-    "name": "HuN|NIX",
-    "nameLatin": "HuN|NIX",
-    "power": 5778220,
-    "canonical": "005_778_220-HuN%7CNIX.webp",
-    "language": null
-  },
-  "005_799_237-HuN%7C_Bullpapa-1.png": {
-    "name": "HuN| Bullpapa",
-    "nameLatin": "HuN| Bullpapa",
-    "power": 5799237,
-    "canonical": "005_799_237-HuN%7C_Bullpapa.webp",
-    "language": null
-  },
-  "006_026_820-HuN_%7C_Baxi-1.png": {
-    "name": "HuN | Baxi",
-    "nameLatin": "HuN | Baxi",
-    "power": 6026820,
-    "canonical": "006_026_820-HuN_%7C_Baxi.webp",
-    "language": null
-  },
-  "006_063_253-HuN%7CLordEdmund-1.png": {
-    "name": "HuN|LordEdmund",
-    "nameLatin": "HuN|LordEdmund",
-    "power": 6063253,
-    "canonical": "006_063_253-HuN%7CLordEdmund.webp",
-    "language": null
-  },
-  "006_064_705-HuN%7CTivadar-1.png": {
-    "name": "HuN|Tivadar",
-    "nameLatin": "HuN|Tivadar",
-    "power": 6064705,
-    "canonical": "006_064_705-HuN%7CTivadar.webp",
-    "language": null
-  },
-  "006_127_174-HuN%7CHunter-1.png": {
-    "name": "HuN|Hunter ®",
-    "nameLatin": "HuN|Hunter",
-    "power": 6127174,
-    "canonical": "006_127_174-HuN%7CHunter.webp",
-    "language": null
-  },
-  "006_133_118-Hun%7CTamasss-1.png": {
-    "name": "HuN|Tamásss",
-    "nameLatin": "Hun|Tamasss",
-    "power": 6133118,
-    "canonical": "006_133_118-Hun%7CTamasss-HuN%7CTam_sss.webp",
-    "language": null
-  },
-  "006_248_375-HuN%7CTillusq01-1.png": {
-    "name": "HuN|Tillusq01",
-    "nameLatin": "HuN|Tillusq01",
-    "power": 6248375,
-    "canonical": "006_248_375-HuN%7CTillusq01.webp",
-    "language": null
-  },
-  "006_250_216-HuN%7CMitit-1.png": {
-    "name": "HuN|Mitit",
-    "nameLatin": "HuN|Mitit",
-    "power": 6250216,
-    "canonical": "006_250_216-HuN%7CMitit.webp",
-    "language": null
-  },
-  "006_354_260-HuN_%7C_Sakartvelo-1.png": {
-    "name": "HuN | საქართველო",
-    "nameLatin": "HuN | Sakartvelo",
-    "power": 6354260,
-    "canonical": "006_354_260-HuN_%7C_Sakartvelo-HuN_%7C.webp",
-    "language": null
-  },
-  "006_413_966-Huneonil-1.png": {
-    "name": "HuN|eonil",
-    "nameLatin": "Huneonil",
-    "power": 6413966,
-    "canonical": "006_413_966-Huneonil-HuN%7Ceonil.webp",
-    "language": null
-  },
-  "006_486_643-Hun%7CHercules-1.png": {
-    "name": "HuN|Hercules",
-    "nameLatin": "Hun|Hercules",
-    "power": 6486643,
-    "canonical": "006_486_643-Hun%7CHercules-HuN%7CHercules.webp",
-    "language": null
-  },
-  "006_678_599-HunzSepultura-1.png": {
-    "name": "HuN|zSepultura",
-    "nameLatin": "HunzSepultura",
-    "power": 6678599,
-    "canonical": "006_678_599-HunzSepultura-HuN%7CzSepultura.webp",
-    "language": null
-  },
-  "006_927_761-HuN_%7C_Hado-1.png": {
-    "name": "HuN | Hado",
-    "nameLatin": "HuN | Hado",
-    "power": 6927761,
-    "canonical": "006_927_761-HuN_%7C_Hado.webp",
-    "language": null
-  },
-  "007_368_923-HuN%7CKonrad_grof-1.png": {
-    "name": "HuN|Konrád gróf",
-    "nameLatin": "HuN|Konrad grof",
-    "power": 7368923,
-    "canonical": "007_368_923-HuN%7CKonrad_grof-HuN%7CKonr_d_gr_f.webp",
-    "language": null
-  },
-  "007_458_814-HUN%7CB_B-1.png": {
-    "name": "HUN|B®B;€",
-    "nameLatin": "HUN|B®B;€",
-    "power": 7458814,
-    "canonical": "007_458_814-HUN%7CB_B.webp",
-    "language": null
-  },
-  "007_497_009-HuN%7CLehel-1.png": {
-    "name": "HuN|Lehel",
-    "nameLatin": "HuN|Lehel",
-    "power": 7497009,
-    "canonical": "007_497_009-HuN%7CLehel.webp",
-    "language": null
-  },
-  "007_588_418-Hun%7CSzabi-1.png": {
-    "name": "HuN|Szabi",
-    "nameLatin": "Hun|Szabi",
-    "power": 7588418,
-    "canonical": "007_588_418-Hun%7CSzabi-HuN%7CSzabi.webp",
-    "language": null
-  },
-  "007_817_342-HuN_%7C_Treff2-1.png": {
-    "name": "HuN | Treff2",
-    "nameLatin": "HuN | Treff2",
-    "power": 7817342,
-    "canonical": "007_817_342-HuN_%7C_Treff2.webp",
-    "language": null
-  },
-  "007_827_589-HUN%7CElcfe-1.png": {
-    "name": "HUN|Elcfe",
-    "nameLatin": "HUN|Elcfe",
-    "power": 7827589,
-    "canonical": "007_827_589-HUN%7CElcfe.webp",
-    "language": null
-  },
-  "007_908_099-HuN_%7C_Phoenix-1.png": {
-    "name": "HuN | Phoenix",
-    "nameLatin": "HuN | Phoenix",
-    "power": 7908099,
-    "canonical": "007_908_099-HuN_%7C_Phoenix.webp",
-    "language": null
-  },
-  "008_038_169-HuN%7C_DreDD-1.png": {
-    "name": "HuN| ÐreÐÐ",
-    "nameLatin": "HuN| DreDD",
-    "power": 8038169,
-    "canonical": "008_038_169-HuN%7C_DreDD-HuN%7C_re.webp",
-    "language": null
-  },
-  "008_296_112-Hun%7CCsati-1.png": {
-    "name": "HuN|Csáti",
-    "nameLatin": "Hun|Csati",
-    "power": 8296112,
-    "canonical": "008_296_112-Hun%7CCsati-HuN%7CCs_ti.webp",
-    "language": null
-  },
-  "008_729_776-HuN%7CNorbee-1.png": {
-    "name": "HuN|Norbee",
-    "nameLatin": "HuN|Norbee",
-    "power": 8729776,
-    "canonical": "008_729_776-HuN%7CNorbee.webp",
-    "language": null
-  },
-  "010_069_292-HuN%7CPufi-1.png": {
-    "name": "HuN|Pufi",
-    "nameLatin": "HuN|Pufi",
-    "power": 10069292,
-    "canonical": "010_069_292-HuN%7CPufi.webp",
-    "language": null
-  },
-  "010_562_995-HuN%7CMorfi-1.png": {
-    "name": "HuN|Morfi",
-    "nameLatin": "HuN|Morfi",
-    "power": 10562995,
-    "canonical": "010_562_995-HuN%7CMorfi.webp",
-    "language": null
-  },
-  "004_779_205-HunNapsugaR.png": {
-    "name": "HuN|NapSugaR",
-    "nameLatin": "HunNapsugaR",
-    "power": 4779205,
-    "canonical": "004_779_205-HunNapsugaR-HuN%7CNapSugaR.webp",
-    "language": null
-  },
-  "004_245_392-HuN%7C_Y.png": {
-    "name": "HuN|〇尺Y",
-    "nameLatin": "HuN|〇尺Y",
-    "power": 4245392,
-    "canonical": "004_245_392-HuN%7C_Y.webp",
-    "language": null
-  },
-  "004_175_533-Hun%7Cnudli.png": {
-    "name": "HuN|nudli",
-    "nameLatin": "Hun|nudli",
-    "power": 4175533,
-    "canonical": "004_175_533-Hun%7Cnudli-HuN%7Cnudli.webp",
-    "language": null
-  },
-  "004_115_062-HuN_%7C_Sven.png": {
-    "name": "HuN | Sven",
-    "nameLatin": "HuN | Sven",
-    "power": 4115062,
-    "canonical": "004_115_062-HuN_%7C_Sven.webp",
-    "language": null
-  },
-  "003_882_508-HuN%7CPeet04.png": {
-    "name": "HuN|Peet04",
-    "nameLatin": "HuN|Peet04",
-    "power": 3882508,
-    "canonical": "003_882_508-HuN%7CPeet04.webp",
-    "language": null
-  },
-  "003_186_498-HuN%7CAxeLock.png": {
-    "name": "HuN|AxeLock",
-    "nameLatin": "HuN|AxeLock",
-    "power": 3186498,
-    "canonical": "003_186_498-HuN%7CAxeLock.webp",
-    "language": null
-  },
-  "002_852_556-HuN%7CGodd.png": {
-    "name": "HuN|Godd",
-    "nameLatin": "HuN|Godd",
-    "power": 2852556,
-    "canonical": "002_852_556-HuN%7CGodd.webp",
-    "language": null
-  },
-  "002_765_920-HUN%7C_Norbert.png": {
-    "name": "HUN| Norbert",
-    "nameLatin": "HUN| Norbert",
-    "power": 2765920,
-    "canonical": "002_765_920-HUN%7C_Norbert.webp",
-    "language": null
-  },
-  "002_763_136-Hun%7CTomi7.png": {
-    "name": "HuN|Tomi7",
-    "nameLatin": "Hun|Tomi7",
-    "power": 2763136,
-    "canonical": "002_763_136-Hun%7CTomi7-HuN%7CTomi7.webp",
-    "language": null
-  },
-  "002_732_789-Hun%7CC_Rgu.png": {
-    "name": "HuN|C◎Rgu$",
-    "nameLatin": "Hun|C◎Rgu$",
-    "power": 2732789,
-    "canonical": "002_732_789-Hun%7CC_Rgu-HuN%7CC_Rgu.webp",
-    "language": null
-  },
-  "001_562_609-TOLDI.png": {
-    "name": "TOLDI",
-    "nameLatin": "TOLDI",
-    "power": 1562609,
-    "canonical": "001_562_609-TOLDI.webp",
-    "language": null
-  },
-  "007_561_578-HuN%7CG-Hero.png": {
-    "name": "HuN|G-Hero",
-    "nameLatin": "HuN|G-Hero",
-    "power": 7561578,
-    "canonical": "007_561_578-HuN%7CG-Hero.webp",
-    "language": null
-  },
-  "005_741_714-Hun%7CElfBar.png": {
-    "name": "HuN|ElfBar",
-    "nameLatin": "HuN|ElfBar",
-    "power": 5741714,
-    "canonical": "005_741_714-HuN%7CElfBar.webp",
-    "language": null
-  },
-  "004_790_336-HuN_%7C_Vikii.webp": {
-    "name": "HuN | Vikii",
-    "nameLatin": "HuN | Vikii",
-    "power": 4790336,
-    "language": null,
-    "originalFileName": "004_790_336-HuN_%7C_Vikii-1.png"
-  },
-  "004_828_797-HuN%7CKensei.webp": {
-    "name": "HuN|Kensei",
-    "nameLatin": "HuN|Kensei",
-    "power": 4828797,
-    "language": null,
-    "originalFileName": "004_828_797-HuN%7CKensei-1.png"
-  },
-  "005_141_041-HuN%7C_Attila.webp": {
-    "name": "HuN| Attila",
-    "nameLatin": "HuN| Attila",
-    "power": 5141041,
-    "language": null,
-    "originalFileName": "005_141_041-HuN%7C_Attila-1.png"
-  },
-  "005_159_618-HuN%7CPlayerX.webp": {
-    "name": "HuN|PlayerX",
-    "nameLatin": "HuN|PlayerX",
-    "power": 5159618,
-    "language": null,
-    "originalFileName": "005_159_618-HuN%7CPlayerX-1.png"
-  },
-  "005_230_047-HuN%7CTravis.webp": {
-    "name": "HuN|Travis",
-    "nameLatin": "HuN|Travis",
-    "power": 5230047,
-    "language": null,
-    "originalFileName": "005_230_047-HuN%7CTravis-1.png"
-  },
-  "005_309_499-HuN%7CFarkas.webp": {
-    "name": "HuN|Farkas",
-    "nameLatin": "HuN|Farkas",
-    "power": 5309499,
-    "language": null,
-    "originalFileName": "005_309_499-HuN%7CFarkas-1.png"
-  },
-  "005_334_120-HuN_%7C_Nachmalem.webp": {
-    "name": "HuN | Nachmalem",
-    "nameLatin": "HuN | Nachmalem",
-    "power": 5334120,
-    "language": null,
-    "originalFileName": "005_334_120-HuN_%7C_Nachmalem-1.png"
-  },
-  "005_476_216-HuN%7CJustme_34.webp": {
-    "name": "HuN|Justme#34",
-    "nameLatin": "HuN|Justme#34",
-    "power": 5476216,
-    "language": null,
-    "originalFileName": "005_476_216-HuN%7CJustme_34-1.png"
-  },
-  "005_595_135-Batman_HuN2.webp": {
-    "name": "Batman HuN2",
-    "nameLatin": "Batman HuN2",
-    "power": 5595135,
-    "language": null,
-    "originalFileName": "005_595_135-Batman_HuN2-1.png"
-  },
-  "005_678_834-L_l.webp": {
-    "name": "Lõlõ",
-    "nameLatin": "Lõlõ",
-    "power": 5678834,
-    "language": null,
-    "originalFileName": "005_678_834-L_l-1.png"
-  },
-  "005_778_220-HuN%7CNIX.webp": {
-    "name": "HuN|NIX",
-    "nameLatin": "HuN|NIX",
-    "power": 5778220,
-    "language": null,
-    "originalFileName": "005_778_220-HuN%7CNIX-1.png"
-  },
-  "005_799_237-HuN%7C_Bullpapa.webp": {
-    "name": "HuN| Bullpapa",
-    "nameLatin": "HuN| Bullpapa",
-    "power": 5799237,
-    "language": null,
-    "originalFileName": "005_799_237-HuN%7C_Bullpapa-1.png"
-  },
-  "006_026_820-HuN_%7C_Baxi.webp": {
-    "name": "HuN | Baxi",
-    "nameLatin": "HuN | Baxi",
-    "power": 6026820,
-    "language": null,
-    "originalFileName": "006_026_820-HuN_%7C_Baxi-1.png"
-  },
-  "006_063_253-HuN%7CLordEdmund.webp": {
-    "name": "HuN|LordEdmund",
-    "nameLatin": "HuN|LordEdmund",
-    "power": 6063253,
-    "language": null,
-    "originalFileName": "006_063_253-HuN%7CLordEdmund-1.png"
-  },
-  "006_064_705-HuN%7CTivadar.webp": {
-    "name": "HuN|Tivadar",
-    "nameLatin": "HuN|Tivadar",
-    "power": 6064705,
-    "language": null,
-    "originalFileName": "006_064_705-HuN%7CTivadar-1.png"
-  },
-  "006_127_174-HuN%7CHunter.webp": {
-    "name": "HuN|Hunter ®",
-    "nameLatin": "HuN|Hunter",
-    "power": 6127174,
-    "language": null,
-    "originalFileName": "006_127_174-HuN%7CHunter-1.png"
-  },
-  "006_133_118-Hun%7CTamasss-HuN%7CTam_sss.webp": {
-    "name": "HuN|Tamásss",
-    "nameLatin": "Hun|Tamasss",
-    "power": 6133118,
-    "language": null,
-    "originalFileName": "006_133_118-Hun%7CTamasss-1.png"
-  },
-  "006_248_375-HuN%7CTillusq01.webp": {
-    "name": "HuN|Tillusq01",
-    "nameLatin": "HuN|Tillusq01",
-    "power": 6248375,
-    "language": null,
-    "originalFileName": "006_248_375-HuN%7CTillusq01-1.png"
-  },
-  "006_250_216-HuN%7CMitit.webp": {
-    "name": "HuN|Mitit",
-    "nameLatin": "HuN|Mitit",
-    "power": 6250216,
-    "language": null,
-    "originalFileName": "006_250_216-HuN%7CMitit-1.png"
-  },
-  "006_354_260-HuN_%7C_Sakartvelo-HuN_%7C.webp": {
-    "name": "HuN | საქართველო",
-    "nameLatin": "HuN | Sakartvelo",
-    "power": 6354260,
-    "language": null,
-    "originalFileName": "006_354_260-HuN_%7C_Sakartvelo-1.png"
-  },
-  "006_413_966-Huneonil-HuN%7Ceonil.webp": {
-    "name": "HuN|eonil",
-    "nameLatin": "Huneonil",
-    "power": 6413966,
-    "language": null,
-    "originalFileName": "006_413_966-Huneonil-1.png"
-  },
-  "006_486_643-Hun%7CHercules-HuN%7CHercules.webp": {
-    "name": "HuN|Hercules",
-    "nameLatin": "Hun|Hercules",
-    "power": 6486643,
-    "language": null,
-    "originalFileName": "006_486_643-Hun%7CHercules-1.png"
-  },
-  "006_678_599-HunzSepultura-HuN%7CzSepultura.webp": {
-    "name": "HuN|zSepultura",
-    "nameLatin": "HunzSepultura",
-    "power": 6678599,
-    "language": null,
-    "originalFileName": "006_678_599-HunzSepultura-1.png"
-  },
-  "006_927_761-HuN_%7C_Hado.webp": {
-    "name": "HuN | Hado",
-    "nameLatin": "HuN | Hado",
-    "power": 6927761,
-    "language": null,
-    "originalFileName": "006_927_761-HuN_%7C_Hado-1.png"
-  },
-  "007_368_923-HuN%7CKonrad_grof-HuN%7CKonr_d_gr_f.webp": {
-    "name": "HuN|Konrád gróf",
-    "nameLatin": "HuN|Konrad grof",
-    "power": 7368923,
-    "language": null,
-    "originalFileName": "007_368_923-HuN%7CKonrad_grof-1.png"
-  },
-  "007_458_814-HUN%7CB_B.webp": {
-    "name": "HUN|B®B;€",
-    "nameLatin": "HUN|B®B;€",
-    "power": 7458814,
-    "language": null,
-    "originalFileName": "007_458_814-HUN%7CB_B-1.png"
-  },
-  "007_497_009-HuN%7CLehel.webp": {
-    "name": "HuN|Lehel",
-    "nameLatin": "HuN|Lehel",
-    "power": 7497009,
-    "language": null,
-    "originalFileName": "007_497_009-HuN%7CLehel-1.png"
-  },
-  "007_588_418-Hun%7CSzabi-HuN%7CSzabi.webp": {
-    "name": "HuN|Szabi",
-    "nameLatin": "Hun|Szabi",
-    "power": 7588418,
-    "language": null,
-    "originalFileName": "007_588_418-Hun%7CSzabi-1.png"
-  },
-  "007_817_342-HuN_%7C_Treff2.webp": {
-    "name": "HuN | Treff2",
-    "nameLatin": "HuN | Treff2",
-    "power": 7817342,
-    "language": null,
-    "originalFileName": "007_817_342-HuN_%7C_Treff2-1.png"
-  },
-  "007_827_589-HUN%7CElcfe.webp": {
-    "name": "HUN|Elcfe",
-    "nameLatin": "HUN|Elcfe",
-    "power": 7827589,
-    "language": null,
-    "originalFileName": "007_827_589-HUN%7CElcfe-1.png"
-  },
-  "007_908_099-HuN_%7C_Phoenix.webp": {
-    "name": "HuN | Phoenix",
-    "nameLatin": "HuN | Phoenix",
-    "power": 7908099,
-    "language": null,
-    "originalFileName": "007_908_099-HuN_%7C_Phoenix-1.png"
-  },
-  "008_038_169-HuN%7C_DreDD-HuN%7C_re.webp": {
-    "name": "HuN| ÐreÐÐ",
-    "nameLatin": "HuN| DreDD",
-    "power": 8038169,
-    "language": null,
-    "originalFileName": "008_038_169-HuN%7C_DreDD-1.png"
-  },
-  "008_296_112-Hun%7CCsati-HuN%7CCs_ti.webp": {
-    "name": "HuN|Csáti",
-    "nameLatin": "Hun|Csati",
-    "power": 8296112,
-    "language": null,
-    "originalFileName": "008_296_112-Hun%7CCsati-1.png"
-  },
-  "008_729_776-HuN%7CNorbee.webp": {
-    "name": "HuN|Norbee",
-    "nameLatin": "HuN|Norbee",
-    "power": 8729776,
-    "language": null,
-    "originalFileName": "008_729_776-HuN%7CNorbee-1.png"
-  },
-  "010_069_292-HuN%7CPufi.webp": {
-    "name": "HuN|Pufi",
-    "nameLatin": "HuN|Pufi",
-    "power": 10069292,
-    "language": null,
-    "originalFileName": "010_069_292-HuN%7CPufi-1.png"
-  },
-  "010_562_995-HuN%7CMorfi.webp": {
-    "name": "HuN|Morfi",
-    "nameLatin": "HuN|Morfi",
-    "power": 10562995,
-    "language": null,
-    "originalFileName": "010_562_995-HuN%7CMorfi-1.png"
-  },
-  "004_779_205-HunNapsugaR-HuN%7CNapSugaR.webp": {
-    "name": "HuN|NapSugaR",
-    "nameLatin": "HunNapsugaR",
-    "power": 4779205,
-    "language": null,
-    "originalFileName": "004_779_205-HunNapsugaR.png"
-  },
-  "004_245_392-HuN%7C_Y.webp": {
-    "name": "HuN|〇尺Y",
-    "nameLatin": "HuN|〇尺Y",
-    "power": 4245392,
-    "language": null,
-    "originalFileName": "004_245_392-HuN%7C_Y.png"
-  },
-  "004_175_533-Hun%7Cnudli-HuN%7Cnudli.webp": {
-    "name": "HuN|nudli",
-    "nameLatin": "Hun|nudli",
-    "power": 4175533,
-    "language": null,
-    "originalFileName": "004_175_533-Hun%7Cnudli.png"
-  },
-  "004_115_062-HuN_%7C_Sven.webp": {
-    "name": "HuN | Sven",
-    "nameLatin": "HuN | Sven",
-    "power": 4115062,
-    "language": null,
-    "originalFileName": "004_115_062-HuN_%7C_Sven.png"
-  },
-  "003_882_508-HuN%7CPeet04.webp": {
-    "name": "HuN|Peet04",
-    "nameLatin": "HuN|Peet04",
-    "power": 3882508,
-    "language": null,
-    "originalFileName": "003_882_508-HuN%7CPeet04.png"
-  },
-  "003_186_498-HuN%7CAxeLock.webp": {
-    "name": "HuN|AxeLock",
-    "nameLatin": "HuN|AxeLock",
-    "power": 3186498,
-    "language": null,
-    "originalFileName": "003_186_498-HuN%7CAxeLock.png"
-  },
-  "002_852_556-HuN%7CGodd.webp": {
-    "name": "HuN|Godd",
-    "nameLatin": "HuN|Godd",
-    "power": 2852556,
-    "language": null,
-    "originalFileName": "002_852_556-HuN%7CGodd.png"
-  },
-  "002_765_920-HUN%7C_Norbert.webp": {
-    "name": "HUN| Norbert",
-    "nameLatin": "HUN| Norbert",
-    "power": 2765920,
-    "language": null,
-    "originalFileName": "002_765_920-HUN%7C_Norbert.png"
-  },
-  "002_763_136-Hun%7CTomi7-HuN%7CTomi7.webp": {
-    "name": "HuN|Tomi7",
-    "nameLatin": "Hun|Tomi7",
-    "power": 2763136,
-    "language": null,
-    "originalFileName": "002_763_136-Hun%7CTomi7.png"
-  },
-  "002_732_789-Hun%7CC_Rgu-HuN%7CC_Rgu.webp": {
-    "name": "HuN|C◎Rgu$",
-    "nameLatin": "Hun|C◎Rgu$",
-    "power": 2732789,
-    "language": null,
-    "originalFileName": "002_732_789-Hun%7CC_Rgu.png"
-  },
-  "001_562_609-TOLDI.webp": {
-    "name": "TOLDI",
-    "nameLatin": "TOLDI",
-    "power": 1562609,
-    "language": null,
-    "originalFileName": "001_562_609-TOLDI.png"
-  },
-  "007_561_578-HuN%7CG-Hero.webp": {
-    "name": "HuN|G-Hero",
-    "nameLatin": "HuN|G-Hero",
-    "power": 7561578,
-    "language": null,
-    "originalFileName": "007_561_578-HuN%7CG-Hero.png"
-  },
-  "005_741_714-HuN%7CElfBar.webp": {
-    "name": "HuN|ElfBar",
-    "nameLatin": "HuN|ElfBar",
-    "power": 5741714,
-    "language": null,
-    "originalFileName": "005_741_714-Hun%7CElfBar.png"
-  }
+    "005_778_220-HuN%7CNIX.webp":  {
+                                       "name":  "HuN|NIX",
+                                       "nameLatin":  "HuN|NIX",
+                                       "power":  5778220,
+                                       "language":  null,
+                                       "originalFileName":  "005_778_220-HuN%7CNIX-1.png"
+                                   },
+    "006_486_643-Hun%7CHercules-HuN%7CHercules.webp":  {
+                                                           "name":  "HuN|Hercules",
+                                                           "nameLatin":  "Hun|Hercules",
+                                                           "power":  6486643,
+                                                           "language":  null,
+                                                           "originalFileName":  "006_486_643-Hun%7CHercules-1.png"
+                                                       },
+    "007_368_923-HuN%7CKonrad_grof.png":  {
+                                              "name":  "HuN|Konrád gróf",
+                                              "nameLatin":  "HuN|Konrad grof",
+                                              "power":  7368923,
+                                              "canonical":  "007_368_923-HuN%7CKonrad_grof-HuN%7CKonr_d_gr_f.webp",
+                                              "language":  null
+                                          },
+    "002_852_556-HuN%7CGodd.png":  {
+                                       "name":  "HuN|Godd",
+                                       "nameLatin":  "HuN|Godd",
+                                       "power":  2852556,
+                                       "canonical":  "002_852_556-HuN%7CGodd.webp",
+                                       "language":  null
+                                   },
+    "005_159_618-HuN%7CPlayerX.webp":  {
+                                           "name":  "HuN|PlayerX",
+                                           "nameLatin":  "HuN|PlayerX",
+                                           "power":  5159618,
+                                           "language":  null,
+                                           "originalFileName":  "005_159_618-HuN%7CPlayerX-1.png"
+                                       },
+    "006_248_375-HuN%7CTillusq01.webp":  {
+                                             "name":  "HuN|Tillusq01",
+                                             "nameLatin":  "HuN|Tillusq01",
+                                             "power":  6248375,
+                                             "language":  null,
+                                             "originalFileName":  "006_248_375-HuN%7CTillusq01-1.png"
+                                         },
+    "005_141_041-HuN%7C_Attila.png":  {
+                                          "name":  "HuN| Attila",
+                                          "nameLatin":  "HuN| Attila",
+                                          "power":  5141041,
+                                          "canonical":  "005_141_041-HuN%7C_Attila.webp",
+                                          "language":  null
+                                      },
+    "006_927_761-HuN_%7C_Hado.webp":  {
+                                          "name":  "HuN | Hado",
+                                          "nameLatin":  "HuN | Hado",
+                                          "power":  6927761,
+                                          "language":  null,
+                                          "originalFileName":  "006_927_761-HuN_%7C_Hado-1.png"
+                                      },
+    "003_186_498-HuN%7CAxeLock.png":  {
+                                          "name":  "HuN|AxeLock",
+                                          "nameLatin":  "HuN|AxeLock",
+                                          "power":  3186498,
+                                          "canonical":  "003_186_498-HuN%7CAxeLock.webp",
+                                          "language":  null
+                                      },
+    "006_026_820-HuN_%7C_Baxi.webp":  {
+                                          "name":  "HuN | Baxi",
+                                          "nameLatin":  "HuN | Baxi",
+                                          "power":  6026820,
+                                          "language":  null,
+                                          "originalFileName":  "006_026_820-HuN_%7C_Baxi-1.png"
+                                      },
+    "006_678_599-HunzSepultura-HuN%7CzSepultura.webp":  {
+                                                            "name":  "HuN|zSepultura",
+                                                            "nameLatin":  "HunzSepultura",
+                                                            "power":  6678599,
+                                                            "language":  null,
+                                                            "originalFileName":  "006_678_599-HunzSepultura-1.png"
+                                                        },
+    "005_799_237-HuN%7C_Bullpapa.png":  {
+                                            "name":  "HuN| Bullpapa",
+                                            "nameLatin":  "HuN| Bullpapa",
+                                            "power":  5799237,
+                                            "canonical":  "005_799_237-HuN%7C_Bullpapa.webp",
+                                            "language":  null
+                                        },
+    "008_038_169-HuN%7C_DreDD.png":  {
+                                         "name":  "HuN| ÐreÐÐ",
+                                         "nameLatin":  "HuN| DreDD",
+                                         "power":  8038169,
+                                         "canonical":  "008_038_169-HuN%7C_DreDD-HuN%7C_re.webp",
+                                         "language":  null
+                                     },
+    "005_476_216-HuN%7CJustme_34.webp":  {
+                                             "name":  "HuN|Justme#34",
+                                             "nameLatin":  "HuN|Justme#34",
+                                             "power":  5476216,
+                                             "language":  null,
+                                             "originalFileName":  "005_476_216-HuN%7CJustme_34-1.png"
+                                         },
+    "006_678_599-HunzSepultura.png":  {
+                                          "name":  "HuN|zSepultura",
+                                          "nameLatin":  "HunzSepultura",
+                                          "power":  6678599,
+                                          "canonical":  "006_678_599-HunzSepultura-HuN%7CzSepultura.webp",
+                                          "language":  null
+                                      },
+    "007_368_923-HuN%7CKonrad_grof-HuN%7CKonr_d_gr_f.webp":  {
+                                                                 "name":  "HuN|Konrád gróf",
+                                                                 "nameLatin":  "HuN|Konrad grof",
+                                                                 "power":  7368923,
+                                                                 "language":  null,
+                                                                 "originalFileName":  "007_368_923-HuN%7CKonrad_grof-1.png"
+                                                             },
+    "007_827_589-HUN%7CElcfe.png":  {
+                                        "name":  "HUN|Elcfe",
+                                        "nameLatin":  "HUN|Elcfe",
+                                        "power":  7827589,
+                                        "canonical":  "007_827_589-HUN%7CElcfe.webp",
+                                        "language":  null
+                                    },
+    "006_063_253-HuN%7CLordEdmund.png":  {
+                                             "name":  "HuN|LordEdmund",
+                                             "nameLatin":  "HuN|LordEdmund",
+                                             "power":  6063253,
+                                             "canonical":  "006_063_253-HuN%7CLordEdmund.webp",
+                                             "language":  null
+                                         },
+    "002_732_789-Hun%7CC_Rgu-HuN%7CC_Rgu.webp":  {
+                                                     "name":  "HuN|C◎Rgu$",
+                                                     "nameLatin":  "Hun|C◎Rgu$",
+                                                     "power":  2732789,
+                                                     "language":  null,
+                                                     "originalFileName":  "002_732_789-Hun%7CC_Rgu.png"
+                                                 },
+    "005_741_714-HuN%7CElfBar.webp":  {
+                                          "name":  "HuN|ElfBar",
+                                          "nameLatin":  "HuN|ElfBar",
+                                          "power":  5741714,
+                                          "language":  null,
+                                          "originalFileName":  "005_741_714-Hun%7CElfBar.png"
+                                      },
+    "006_250_216-HuN%7CMitit.webp":  {
+                                         "name":  "HuN|Mitit",
+                                         "nameLatin":  "HuN|Mitit",
+                                         "power":  6250216,
+                                         "language":  null,
+                                         "originalFileName":  "006_250_216-HuN%7CMitit-1.png"
+                                     },
+    "007_561_578-HuN%7CG-Hero.webp":  {
+                                          "name":  "HuN|G-Hero",
+                                          "nameLatin":  "HuN|G-Hero",
+                                          "power":  7561578,
+                                          "language":  null,
+                                          "originalFileName":  "007_561_578-HuN%7CG-Hero.png"
+                                      },
+    "002_732_789-Hun%7CC_Rgu.png":  {
+                                        "name":  "HuN|C◎Rgu$",
+                                        "nameLatin":  "Hun|C◎Rgu$",
+                                        "power":  2732789,
+                                        "canonical":  "002_732_789-Hun%7CC_Rgu-HuN%7CC_Rgu.webp",
+                                        "language":  null
+                                    },
+    "004_175_533-Hun%7Cnudli.png":  {
+                                        "name":  "HuN|nudli",
+                                        "nameLatin":  "Hun|nudli",
+                                        "power":  4175533,
+                                        "canonical":  "004_175_533-Hun%7Cnudli-HuN%7Cnudli.webp",
+                                        "language":  null
+                                    },
+    "005_778_220-HuN%7CNIX.png":  {
+                                      "name":  "HuN|NIX",
+                                      "nameLatin":  "HuN|NIX",
+                                      "power":  5778220,
+                                      "canonical":  "005_778_220-HuN%7CNIX.webp",
+                                      "language":  null
+                                  },
+    "004_245_392-HuN%7C_Y.png":  {
+                                     "name":  "HuN|〇尺Y",
+                                     "nameLatin":  "HuN|〇尺Y",
+                                     "power":  4245392,
+                                     "canonical":  "004_245_392-HuN%7C_Y.webp",
+                                     "language":  null
+                                 },
+    "007_497_009-HuN%7CLehel.webp":  {
+                                         "name":  "HuN|Lehel",
+                                         "nameLatin":  "HuN|Lehel",
+                                         "power":  7497009,
+                                         "language":  null,
+                                         "originalFileName":  "007_497_009-HuN%7CLehel-1.png"
+                                     },
+    "010_562_995-HuN%7CMorfi.png":  {
+                                        "name":  "HuN|Morfi",
+                                        "nameLatin":  "HuN|Morfi",
+                                        "power":  10562995,
+                                        "canonical":  "010_562_995-HuN%7CMorfi.webp",
+                                        "language":  null
+                                    },
+    "005_141_041-HuN%7C_Attila.webp":  {
+                                           "name":  "HuN| Attila",
+                                           "nameLatin":  "HuN| Attila",
+                                           "power":  5141041,
+                                           "language":  null,
+                                           "originalFileName":  "005_141_041-HuN%7C_Attila-1.png"
+                                       },
+    "002_852_556-HuN%7CGodd.webp":  {
+                                        "name":  "HuN|Godd",
+                                        "nameLatin":  "HuN|Godd",
+                                        "power":  2852556,
+                                        "language":  null,
+                                        "originalFileName":  "002_852_556-HuN%7CGodd.png"
+                                    },
+    "006_413_966-Huneonil.png":  {
+                                     "name":  "HuN|eonil",
+                                     "nameLatin":  "Huneonil",
+                                     "power":  6413966,
+                                     "canonical":  "006_413_966-Huneonil-HuN%7Ceonil.webp",
+                                     "language":  null
+                                 },
+    "005_476_216-HuN%7CJustme_34.png":  {
+                                            "name":  "HuN|Justme#34",
+                                            "nameLatin":  "HuN|Justme#34",
+                                            "power":  5476216,
+                                            "canonical":  "005_476_216-HuN%7CJustme_34.webp",
+                                            "language":  null
+                                        },
+    "004_828_797-HuN%7CKensei.webp":  {
+                                          "name":  "HuN|Kensei",
+                                          "nameLatin":  "HuN|Kensei",
+                                          "power":  4828797,
+                                          "language":  null,
+                                          "originalFileName":  "004_828_797-HuN%7CKensei-1.png"
+                                      },
+    "006_927_761-HuN_%7C_Hado.png":  {
+                                         "name":  "HuN | Hado",
+                                         "nameLatin":  "HuN | Hado",
+                                         "power":  6927761,
+                                         "canonical":  "006_927_761-HuN_%7C_Hado.webp",
+                                         "language":  null
+                                     },
+    "004_115_062-HuN_%7C_Sven.webp":  {
+                                          "name":  "HuN | Sven",
+                                          "nameLatin":  "HuN | Sven",
+                                          "power":  4115062,
+                                          "language":  null,
+                                          "originalFileName":  "004_115_062-HuN_%7C_Sven.png"
+                                      },
+    "005_595_135-Batman_HuN2.webp":  {
+                                         "name":  "Batman HuN2",
+                                         "nameLatin":  "Batman HuN2",
+                                         "power":  5595135,
+                                         "language":  null,
+                                         "originalFileName":  "005_595_135-Batman_HuN2-1.png"
+                                     },
+    "008_038_169-HuN%7C_DreDD-HuN%7C_re.webp":  {
+                                                    "name":  "HuN| ÐreÐÐ",
+                                                    "nameLatin":  "HuN| DreDD",
+                                                    "power":  8038169,
+                                                    "language":  null,
+                                                    "originalFileName":  "008_038_169-HuN%7C_DreDD-1.png"
+                                                },
+    "007_458_814-HUN%7CB_B.webp":  {
+                                       "name":  "HUN|B®B;€",
+                                       "nameLatin":  "HUN|B®B;€",
+                                       "power":  7458814,
+                                       "language":  null,
+                                       "originalFileName":  "007_458_814-HUN%7CB_B-1.png"
+                                   },
+    "004_115_062-HuN_%7C_Sven.png":  {
+                                         "name":  "HuN | Sven",
+                                         "nameLatin":  "HuN | Sven",
+                                         "power":  4115062,
+                                         "canonical":  "004_115_062-HuN_%7C_Sven.webp",
+                                         "language":  null
+                                     },
+    "005_678_834-L_l.webp":  {
+                                 "name":  "Lõlõ",
+                                 "nameLatin":  "Lõlõ",
+                                 "power":  5678834,
+                                 "language":  null,
+                                 "originalFileName":  "005_678_834-L_l-1.png"
+                             },
+    "002_763_136-Hun%7CTomi7-HuN%7CTomi7.webp":  {
+                                                     "name":  "HuN|Tomi7",
+                                                     "nameLatin":  "Hun|Tomi7",
+                                                     "power":  2763136,
+                                                     "language":  null,
+                                                     "originalFileName":  "002_763_136-Hun%7CTomi7.png"
+                                                 },
+    "005_334_120-HuN_%7C_Nachmalem.webp":  {
+                                               "name":  "HuN | Nachmalem",
+                                               "nameLatin":  "HuN | Nachmalem",
+                                               "power":  5334120,
+                                               "language":  null,
+                                               "originalFileName":  "005_334_120-HuN_%7C_Nachmalem-1.png"
+                                           },
+    "007_817_342-HuN_%7C_Treff2.png":  {
+                                           "name":  "HuN | Treff2",
+                                           "nameLatin":  "HuN | Treff2",
+                                           "power":  7817342,
+                                           "canonical":  "007_817_342-HuN_%7C_Treff2.webp",
+                                           "language":  null
+                                       },
+    "007_908_099-HuN_%7C_Phoenix.png":  {
+                                            "name":  "HuN | Phoenix",
+                                            "nameLatin":  "HuN | Phoenix",
+                                            "power":  7908099,
+                                            "canonical":  "007_908_099-HuN_%7C_Phoenix.webp",
+                                            "language":  null
+                                        },
+    "006_248_375-HuN%7CTillusq01.png":  {
+                                            "name":  "HuN|Tillusq01",
+                                            "nameLatin":  "HuN|Tillusq01",
+                                            "power":  6248375,
+                                            "canonical":  "006_248_375-HuN%7CTillusq01.webp",
+                                            "language":  null
+                                        },
+    "006_026_820-HuN_%7C_Baxi.png":  {
+                                         "name":  "HuN | Baxi",
+                                         "nameLatin":  "HuN | Baxi",
+                                         "power":  6026820,
+                                         "canonical":  "006_026_820-HuN_%7C_Baxi.webp",
+                                         "language":  null
+                                     },
+    "008_296_112-Hun%7CCsati.png":  {
+                                        "name":  "HuN|Csáti",
+                                        "nameLatin":  "Hun|Csati",
+                                        "power":  8296112,
+                                        "canonical":  "008_296_112-Hun%7CCsati-HuN%7CCs_ti.webp",
+                                        "language":  null
+                                    },
+    "003_882_508-HuN%7CPeet04.webp":  {
+                                          "name":  "HuN|Peet04",
+                                          "nameLatin":  "HuN|Peet04",
+                                          "power":  3882508,
+                                          "language":  null,
+                                          "originalFileName":  "003_882_508-HuN%7CPeet04.png"
+                                      },
+    "005_741_714-Hun%7CElfBar.png":  {
+                                         "name":  "HuN|ElfBar",
+                                         "nameLatin":  "HuN|ElfBar",
+                                         "power":  5741714,
+                                         "canonical":  "005_741_714-HuN%7CElfBar.webp",
+                                         "language":  null
+                                     },
+    "005_799_237-HuN%7C_Bullpapa.webp":  {
+                                             "name":  "HuN| Bullpapa",
+                                             "nameLatin":  "HuN| Bullpapa",
+                                             "power":  5799237,
+                                             "language":  null,
+                                             "originalFileName":  "005_799_237-HuN%7C_Bullpapa-1.png"
+                                         },
+    "010_069_292-HuN%7CPufi.webp":  {
+                                        "name":  "HuN|Pufi",
+                                        "nameLatin":  "HuN|Pufi",
+                                        "power":  10069292,
+                                        "language":  null,
+                                        "originalFileName":  "010_069_292-HuN%7CPufi-1.png"
+                                    },
+    "008_729_776-HuN%7CNorbee.png":  {
+                                         "name":  "HuN|Norbee",
+                                         "nameLatin":  "HuN|Norbee",
+                                         "power":  8729776,
+                                         "canonical":  "008_729_776-HuN%7CNorbee.webp",
+                                         "language":  null
+                                     },
+    "006_133_118-Hun%7CTamasss.png":  {
+                                          "name":  "HuN|Tamásss",
+                                          "nameLatin":  "Hun|Tamasss",
+                                          "power":  6133118,
+                                          "canonical":  "006_133_118-Hun%7CTamasss-HuN%7CTam_sss.webp",
+                                          "language":  null
+                                      },
+    "006_354_260-HuN_%7C_Sakartvelo-HuN_%7C.webp":  {
+                                                        "name":  "HuN | საქართველო",
+                                                        "nameLatin":  "HuN | Sakartvelo",
+                                                        "power":  6354260,
+                                                        "language":  null,
+                                                        "originalFileName":  "006_354_260-HuN_%7C_Sakartvelo-1.png"
+                                                    },
+    "006_486_643-Hun%7CHercules.png":  {
+                                           "name":  "HuN|Hercules",
+                                           "nameLatin":  "Hun|Hercules",
+                                           "power":  6486643,
+                                           "canonical":  "006_486_643-Hun%7CHercules-HuN%7CHercules.webp",
+                                           "language":  null
+                                       },
+    "007_561_578-HuN%7CG-Hero.png":  {
+                                         "name":  "HuN|G-Hero",
+                                         "nameLatin":  "HuN|G-Hero",
+                                         "power":  7561578,
+                                         "canonical":  "007_561_578-HuN%7CG-Hero.webp",
+                                         "language":  null
+                                     },
+    "006_133_118-Hun%7CTamasss-HuN%7CTam_sss.webp":  {
+                                                         "name":  "HuN|Tamásss",
+                                                         "nameLatin":  "Hun|Tamasss",
+                                                         "power":  6133118,
+                                                         "language":  null,
+                                                         "originalFileName":  "006_133_118-Hun%7CTamasss-1.png"
+                                                     },
+    "002_763_136-Hun%7CTomi7.png":  {
+                                        "name":  "HuN|Tomi7",
+                                        "nameLatin":  "Hun|Tomi7",
+                                        "power":  2763136,
+                                        "canonical":  "002_763_136-Hun%7CTomi7-HuN%7CTomi7.webp",
+                                        "language":  null
+                                    },
+    "005_309_499-HuN%7CFarkas.webp":  {
+                                          "name":  "HuN|Farkas",
+                                          "nameLatin":  "HuN|Farkas",
+                                          "power":  5309499,
+                                          "language":  null,
+                                          "originalFileName":  "005_309_499-HuN%7CFarkas-1.png"
+                                      },
+    "003_882_508-HuN%7CPeet04.png":  {
+                                         "name":  "HuN|Peet04",
+                                         "nameLatin":  "HuN|Peet04",
+                                         "power":  3882508,
+                                         "canonical":  "003_882_508-HuN%7CPeet04.webp",
+                                         "language":  null
+                                     },
+    "004_779_205-HunNapsugaR-HuN%7CNapSugaR.webp":  {
+                                                        "name":  "HuN|NapSugaR",
+                                                        "nameLatin":  "HunNapsugaR",
+                                                        "power":  4779205,
+                                                        "language":  null,
+                                                        "originalFileName":  "004_779_205-HunNapsugaR.png"
+                                                    },
+    "004_790_336-HuN_%7C_Vikii.png":  {
+                                          "name":  "HuN | Vikii",
+                                          "nameLatin":  "HuN | Vikii",
+                                          "power":  4790336,
+                                          "canonical":  "004_790_336-HuN_%7C_Vikii.webp",
+                                          "language":  null
+                                      },
+    "007_588_418-Hun%7CSzabi.png":  {
+                                        "name":  "HuN|Szabi",
+                                        "nameLatin":  "Hun|Szabi",
+                                        "power":  7588418,
+                                        "canonical":  "007_588_418-Hun%7CSzabi-HuN%7CSzabi.webp",
+                                        "language":  null
+                                    },
+    "004_779_205-HunNapsugaR.png":  {
+                                        "name":  "HuN|NapSugaR",
+                                        "nameLatin":  "HunNapsugaR",
+                                        "power":  4779205,
+                                        "canonical":  "004_779_205-HunNapsugaR-HuN%7CNapSugaR.webp",
+                                        "language":  null
+                                    },
+    "001_562_609-TOLDI.png":  {
+                                  "name":  "TOLDI",
+                                  "nameLatin":  "TOLDI",
+                                  "power":  1562609,
+                                  "canonical":  "001_562_609-TOLDI.webp",
+                                  "language":  null
+                              },
+    "005_678_834-L_l.png":  {
+                                "name":  "Lõlõ",
+                                "nameLatin":  "Lõlõ",
+                                "power":  5678834,
+                                "canonical":  "005_678_834-L_l.webp",
+                                "language":  null
+                            },
+    "007_827_589-HUN%7CElcfe.webp":  {
+                                         "name":  "HUN|Elcfe",
+                                         "nameLatin":  "HUN|Elcfe",
+                                         "power":  7827589,
+                                         "language":  null,
+                                         "originalFileName":  "007_827_589-HUN%7CElcfe-1.png"
+                                     },
+    "007_458_814-HUN%7CB_B.png":  {
+                                      "name":  "HUN|B®B;€",
+                                      "nameLatin":  "HUN|B®B;€",
+                                      "power":  7458814,
+                                      "canonical":  "007_458_814-HUN%7CB_B.webp",
+                                      "language":  null
+                                  },
+    "004_828_797-HuN%7CKensei.png":  {
+                                         "name":  "HuN|Kensei",
+                                         "nameLatin":  "HuN|Kensei",
+                                         "power":  4828797,
+                                         "canonical":  "004_828_797-HuN%7CKensei.webp",
+                                         "language":  null
+                                     },
+    "005_159_618-HuN%7CPlayerX.png":  {
+                                          "name":  "HuN|PlayerX",
+                                          "nameLatin":  "HuN|PlayerX",
+                                          "power":  5159618,
+                                          "canonical":  "005_159_618-HuN%7CPlayerX.webp",
+                                          "language":  null
+                                      },
+    "006_250_216-HuN%7CMitit.png":  {
+                                        "name":  "HuN|Mitit",
+                                        "nameLatin":  "HuN|Mitit",
+                                        "power":  6250216,
+                                        "canonical":  "006_250_216-HuN%7CMitit.webp",
+                                        "language":  null
+                                    },
+    "006_354_260-HuN_%7C_Sakartvelo.png":  {
+                                               "name":  "HuN | საქართველო",
+                                               "nameLatin":  "HuN | Sakartvelo",
+                                               "power":  6354260,
+                                               "canonical":  "006_354_260-HuN_%7C_Sakartvelo-HuN_%7C.webp",
+                                               "language":  null
+                                           },
+    "005_595_135-Batman_HuN2.png":  {
+                                        "name":  "Batman HuN2",
+                                        "nameLatin":  "Batman HuN2",
+                                        "power":  5595135,
+                                        "canonical":  "005_595_135-Batman_HuN2.webp",
+                                        "language":  null
+                                    },
+    "003_186_498-HuN%7CAxeLock.webp":  {
+                                           "name":  "HuN|AxeLock",
+                                           "nameLatin":  "HuN|AxeLock",
+                                           "power":  3186498,
+                                           "language":  null,
+                                           "originalFileName":  "003_186_498-HuN%7CAxeLock.png"
+                                       },
+    "004_790_336-HuN_%7C_Vikii.webp":  {
+                                           "name":  "HuN | Vikii",
+                                           "nameLatin":  "HuN | Vikii",
+                                           "power":  4790336,
+                                           "language":  null,
+                                           "originalFileName":  "004_790_336-HuN_%7C_Vikii-1.png"
+                                       },
+    "010_069_292-HuN%7CPufi.png":  {
+                                       "name":  "HuN|Pufi",
+                                       "nameLatin":  "HuN|Pufi",
+                                       "power":  10069292,
+                                       "canonical":  "010_069_292-HuN%7CPufi.webp",
+                                       "language":  null
+                                   },
+    "005_334_120-HuN_%7C_Nachmalem.png":  {
+                                              "name":  "HuN | Nachmalem",
+                                              "nameLatin":  "HuN | Nachmalem",
+                                              "power":  5334120,
+                                              "canonical":  "005_334_120-HuN_%7C_Nachmalem.webp",
+                                              "language":  null
+                                          },
+    "007_588_418-Hun%7CSzabi-HuN%7CSzabi.webp":  {
+                                                     "name":  "HuN|Szabi",
+                                                     "nameLatin":  "Hun|Szabi",
+                                                     "power":  7588418,
+                                                     "language":  null,
+                                                     "originalFileName":  "007_588_418-Hun%7CSzabi-1.png"
+                                                 },
+    "006_064_705-HuN%7CTivadar.webp":  {
+                                           "name":  "HuN|Tivadar",
+                                           "nameLatin":  "HuN|Tivadar",
+                                           "power":  6064705,
+                                           "language":  null,
+                                           "originalFileName":  "006_064_705-HuN%7CTivadar-1.png"
+                                       },
+    "004_245_392-HuN%7C_Y.webp":  {
+                                      "name":  "HuN|〇尺Y",
+                                      "nameLatin":  "HuN|〇尺Y",
+                                      "power":  4245392,
+                                      "language":  null,
+                                      "originalFileName":  "004_245_392-HuN%7C_Y.png"
+                                  },
+    "006_413_966-Huneonil-HuN%7Ceonil.webp":  {
+                                                  "name":  "HuN|eonil",
+                                                  "nameLatin":  "Huneonil",
+                                                  "power":  6413966,
+                                                  "language":  null,
+                                                  "originalFileName":  "006_413_966-Huneonil-1.png"
+                                              },
+    "005_309_499-HuN%7CFarkas.png":  {
+                                         "name":  "HuN|Farkas",
+                                         "nameLatin":  "HuN|Farkas",
+                                         "power":  5309499,
+                                         "canonical":  "005_309_499-HuN%7CFarkas.webp",
+                                         "language":  null
+                                     },
+    "006_063_253-HuN%7CLordEdmund.webp":  {
+                                              "name":  "HuN|LordEdmund",
+                                              "nameLatin":  "HuN|LordEdmund",
+                                              "power":  6063253,
+                                              "language":  null,
+                                              "originalFileName":  "006_063_253-HuN%7CLordEdmund-1.png"
+                                          },
+    "007_497_009-HuN%7CLehel.png":  {
+                                        "name":  "HuN|Lehel",
+                                        "nameLatin":  "HuN|Lehel",
+                                        "power":  7497009,
+                                        "canonical":  "007_497_009-HuN%7CLehel.webp",
+                                        "language":  null
+                                    },
+    "006_127_174-HuN%7CHunter.webp":  {
+                                          "name":  "HuN|Hunter ®",
+                                          "nameLatin":  "HuN|Hunter",
+                                          "power":  6127174,
+                                          "language":  null,
+                                          "originalFileName":  "006_127_174-HuN%7CHunter-1.png"
+                                      },
+    "005_230_047-HuN%7CTravis.webp":  {
+                                          "name":  "HuN|Travis",
+                                          "nameLatin":  "HuN|Travis",
+                                          "power":  5230047,
+                                          "language":  null,
+                                          "originalFileName":  "005_230_047-HuN%7CTravis-1.png"
+                                      },
+    "001_562_609-TOLDI.webp":  {
+                                   "name":  "TOLDI",
+                                   "nameLatin":  "TOLDI",
+                                   "power":  1562609,
+                                   "language":  null,
+                                   "originalFileName":  "001_562_609-TOLDI.png"
+                               },
+    "006_064_705-HuN%7CTivadar.png":  {
+                                          "name":  "HuN|Tivadar",
+                                          "nameLatin":  "HuN|Tivadar",
+                                          "power":  6064705,
+                                          "canonical":  "006_064_705-HuN%7CTivadar.webp",
+                                          "language":  null
+                                      },
+    "008_729_776-HuN%7CNorbee.webp":  {
+                                          "name":  "HuN|Norbee",
+                                          "nameLatin":  "HuN|Norbee",
+                                          "power":  8729776,
+                                          "language":  null,
+                                          "originalFileName":  "008_729_776-HuN%7CNorbee-1.png"
+                                      },
+    "010_562_995-HuN%7CMorfi.webp":  {
+                                         "name":  "HuN|Morfi",
+                                         "nameLatin":  "HuN|Morfi",
+                                         "power":  10562995,
+                                         "language":  null,
+                                         "originalFileName":  "010_562_995-HuN%7CMorfi-1.png"
+                                     },
+    "005_230_047-HuN%7CTravis.png":  {
+                                         "name":  "HuN|Travis",
+                                         "nameLatin":  "HuN|Travis",
+                                         "power":  5230047,
+                                         "canonical":  "005_230_047-HuN%7CTravis.webp",
+                                         "language":  null
+                                     },
+    "006_127_174-HuN%7CHunter.png":  {
+                                         "name":  "HuN|Hunter ®",
+                                         "nameLatin":  "HuN|Hunter",
+                                         "power":  6127174,
+                                         "canonical":  "006_127_174-HuN%7CHunter.webp",
+                                         "language":  null
+                                     },
+    "008_296_112-Hun%7CCsati-HuN%7CCs_ti.webp":  {
+                                                     "name":  "HuN|Csáti",
+                                                     "nameLatin":  "Hun|Csati",
+                                                     "power":  8296112,
+                                                     "language":  null,
+                                                     "originalFileName":  "008_296_112-Hun%7CCsati-1.png"
+                                                 },
+    "007_908_099-HuN_%7C_Phoenix.webp":  {
+                                             "name":  "HuN | Phoenix",
+                                             "nameLatin":  "HuN | Phoenix",
+                                             "power":  7908099,
+                                             "language":  null,
+                                             "originalFileName":  "007_908_099-HuN_%7C_Phoenix-1.png"
+                                         },
+    "007_817_342-HuN_%7C_Treff2.webp":  {
+                                            "name":  "HuN | Treff2",
+                                            "nameLatin":  "HuN | Treff2",
+                                            "power":  7817342,
+                                            "language":  null,
+                                            "originalFileName":  "007_817_342-HuN_%7C_Treff2-1.png"
+                                        },
+    "002_765_920-HUN%7C_Norbert.png":  {
+                                           "name":  "HUN| Norbert",
+                                           "nameLatin":  "HUN| Norbert",
+                                           "power":  2765920,
+                                           "canonical":  "002_765_920-HUN%7C_Norbert.webp",
+                                           "language":  null
+                                       },
+    "002_765_920-HUN%7C_Norbert.webp":  {
+                                            "name":  "HUN| Norbert",
+                                            "nameLatin":  "HUN| Norbert",
+                                            "power":  2765920,
+                                            "language":  null,
+                                            "originalFileName":  "002_765_920-HUN%7C_Norbert.png"
+                                        },
+    "004_175_533-Hun%7Cnudli-HuN%7Cnudli.webp":  {
+                                                     "name":  "HuN|nudli",
+                                                     "nameLatin":  "Hun|nudli",
+                                                     "power":  4175533,
+                                                     "language":  null,
+                                                     "originalFileName":  "004_175_533-Hun%7Cnudli.png"
+                                                 }
 }
