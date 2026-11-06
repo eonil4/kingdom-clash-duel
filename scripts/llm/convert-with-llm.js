@@ -5,7 +5,7 @@
  *   node scripts/llm/convert-with-llm.js data/enemies/2026-05-22/test
  *
  * Requires LM Studio with a loaded vision model:
- *   LLM_MODEL=qwen/qwen3-vl-4b
+ *   LLM_MODEL=qwen/qwen3-vl-8b
  *   LLM_HOST=http://127.0.0.1:1234
  */
 import fs from "fs/promises";

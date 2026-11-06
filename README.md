@@ -46,7 +46,7 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 For `convert.js` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
 
 ```bash
-set LLM_MODEL=qwen/qwen3-vl-4b
+set LLM_MODEL=qwen/qwen3-vl-8b
 set LLM_HOST=http://127.0.0.1:1234
 pnpm llm:convert
 ```

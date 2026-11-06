@@ -5,7 +5,7 @@ import { writeWebpFromRasterFile } from "../enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../../ocr/enemy-filename-tokens.mjs";
 
 it("converts test screenshot into model-named output folder", async () => {
-  const model = "qwen/qwen3-vl-4b";
+  const model = "qwen/qwen3-vl-8b";
   const modelFolder = toSafeEnemyFilenameToken(model);
   const src = path.resolve("data/enemies/test/Screenshot_2026.06.19_09.49.47.958.png");
 

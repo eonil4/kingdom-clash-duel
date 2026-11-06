@@ -42,7 +42,7 @@ function loadDefaultModel() {
   } catch {
     // ignore
   }
-  return "qwen/qwen3-vl-4b";
+  return "qwen/qwen3-vl-8b";
 }
 
 /** Latest `YYYY-MM-DD` folder under data/clan_clash, else undefined. */
@@ -246,14 +246,47 @@ async function runWikiTable(dirAbs, extensions, logFd) {
  * @param {string} dirAbs
  * @param {number} [logFd]
  */
-async function runWikiTablesAfterConvert(dirAbs, logFd) {
+async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
   let code = await runWikiTable(dirAbs, ["webp"], logFd);
   if (code !== 0) return code;
 
   const clanDir = path.join(dirAbs, "clan");
   if (dirExistsAndNotEmpty(clanDir)) {
-    code = await runWikiTable(clanDir, ["jpg", "png"], logFd);
-    if (code !== 0) return code;
+    // Create a per-clan log file and use it for extraction + wiki generation
+    const clanLogPath = path.join(clanDir, "log.txt");
+    let clanLogFd;
+    try {
+      clanLogFd = fs.openSync(clanLogPath, "a");
+      // If a clan folder exists, run the formation extractor on each image before generating the wiki.
+      try {
+        const files = fs.readdirSync(clanDir).filter((n) => /\.(png|jpe?g|webp)$/i.test(n));
+        if (files.length > 0) {
+          console.log(`\n[LLM-formation] processing ${files.length} files in ${clanDir}`);
+          const extractor = path.join(__dirname, "llm-formation-extract.mjs");
+          for (const f of files) {
+            const img = path.join(clanDir, f);
+            console.log(`\t[LLM-formation] ${f}`);
+            const rc = await runNode([extractor, img], { env, logFd: clanLogFd });
+            if (rc !== 0) {
+              console.warn(`\t[LLM-formation] extractor failed for ${f} (exit ${rc})`);
+            }
+          }
+        } else {
+          console.log(`\n[LLM-formation] no supported images in ${clanDir}`);
+        }
+      } catch (err) {
+        console.warn(`[LLM-formation] error while processing clan folder: ${err instanceof Error ? err.message : err}`);
+      }
+
+      code = await runWikiTable(clanDir, ["jpg", "png"], clanLogFd);
+      if (code !== 0) return code;
+    } finally {
+      try {
+        if (typeof clanLogFd === "number") fs.closeSync(clanLogFd);
+      } catch {
+        // ignore
+      }
+    }
   } else {
     console.log(`\n[Wiki] skip clan (missing or empty): ${clanDir}`);
   }
@@ -300,7 +333,7 @@ async function processFolder({
     return 0;
   }
 
-  return runWikiTablesAfterConvert(folderAbs, logFd);
+  return runWikiTablesAfterConvert(folderAbs, logFd, env);
 }
 
 async function main() {

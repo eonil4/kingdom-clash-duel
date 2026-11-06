@@ -10,8 +10,8 @@
     "battle:clan_clash": "node scripts/battle/run-battle.mjs",
     "battle:clan_clash:example": "node scripts/battle/run-battle.mjs data/battle/examples/attacker.json data/battle/examples/defender.json data/battle/examples/battleResult.json",
     "llm:clan_clash": "cross-env LLM_MODEL=qwen/qwen3-vl-8b node scripts/llm/clan-clash.mjs data/clan_clash/2026-11-06 --full",
-    "llm:clan_clash:recursive": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/clan-clash.mjs data/clan_clash/ --full --recursive 1",
-    "llm:clan_clash:test:qwen/qwen3-vl-4b": "cross-env LLM_MODEL=qwen/qwen3-vl-4b node scripts/llm/clan-clash.mjs data/clan_clash/test/qwen_qwen3-vl-4b",
+    "llm:clan_clash:recursive": "cross-env LLM_MODEL=qwen/qwen3-vl-8b node scripts/llm/clan-clash.mjs data/clan_clash/ --full --recursive 1",
+    "llm:clan_clash:test:qwen/qwen3-vl-8b": "cross-env LLM_MODEL=qwen/qwen3-vl-8b node scripts/llm/clan-clash.mjs data/clan_clash/test/qwen_qwen3-vl-4b",
     "llm:clan_clash:test:mistralai/devstral-small-2-2512": "cross-env LLM_MODEL=mistralai/devstral-small-2-2512 node scripts/llm/clan-clash.mjs data/clan_clash/test/mistralai_devstral-small-2-2512",
     "llm:clan_clash:test:google/gemma-4-26b-a4b": "cross-env LLM_MODEL=google/gemma-4-26b-a4b node scripts/llm/clan-clash.mjs data/clan_clash/test/google_gemma-4-26b-a4b",
     "llm:clan_clash:clear-lm-cache": "rimraf \"%USERPROFILE%/.lmstudio/.internal/api-prediction-history/packs\" \"%USERPROFILE%/.cache/lm-studio/.internal/api-prediction-history/packs\"",
@@ -28,8 +28,10 @@
     "ocr:enemies:process": "pnpm ocr:enemies && pnpm llm:clan_clash:webp",
     "extract:image:name:enemy": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.07.04_12.27.26.944.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.07.04_12.27.26.944_name.webp 486 118 290 36",
     "extract:image:power:enemy": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.07.04_12.27.26.944.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.07.04_12.27.26.944_power.webp 666 234 162 24",
-    "extract:image:name:clan": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991_name.webp 500 57 400 48",
-    "extract:image:power:clan": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991_power.webp 360 122 180 36"
+    "extract:image:name:clan": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991_name.webp 498 57 400 48",
+    "extract:image:power:clan": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.24.05.991_power.webp 360 122 180 36",
+    "extract:image:name:clan:2": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.21.15.925.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.21.15.925_name.webp 460 57 400 48",
+    "extract:image:power:clan:2": "node scripts/extract_image.mjs data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.21.15.925.png data/clan_clash/test/qwen_qwen3-vl-4b/Screenshot_2026.11.05_23.21.15.925_power.webp 360 122 180 36"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",

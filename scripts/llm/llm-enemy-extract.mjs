@@ -3,7 +3,7 @@
  *
  * Env:
  *   LLM_HOST       — default http://127.0.0.1:1234
- *   LLM_MODEL      — default qwen/qwen3-vl-4b
+ *   LLM_MODEL      — default qwen/qwen3-vl-8b
  *   LM_API_TOKEN   — optional Bearer token
  *   LLM_SKIP_CACHE_CLEAR — set 1 to skip prediction-cache clearing
  *
@@ -35,7 +35,7 @@ try {
   _llmConfig = {};
 }
 
-export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "qwen/qwen3-vl-4b";
+export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "qwen/qwen3-vl-8b";
 const DEFAULT_HOST = _llmConfig.host ?? "http://127.0.0.1:1234";
 const CHAT_PATH = "/api/v1/chat";
 const MODELS_PATH = "/api/v1/models";

@@ -1,0 +1,646 @@
+{
+  "010_562_995-HuN%7CMorfi.png": {
+    "name": "HuN|Morfi",
+    "nameLatin": "HuN|Morfi",
+    "power": 10562995,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:26:09.298Z"
+  },
+  "010_069_292-HuN%7CPufi.png": {
+    "name": "HuN|Pufi",
+    "nameLatin": "HuN|Pufi",
+    "power": 10069292,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:26:24.282Z"
+  },
+  "008_729_776-HuN%7CNorbee.png": {
+    "name": "HuN|Norbee",
+    "nameLatin": "HuN|Norbee",
+    "power": 8729776,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:26:38.361Z"
+  },
+  "008_296_112-Hun%7CCsati.png": {
+    "name": "HuN|Csáti",
+    "nameLatin": "Hun|Csati",
+    "power": 8296112,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T00:26:53.750Z"
+  },
+  "008_038_169-HuN%7C_DreDD.png": {
+    "name": "HuN| ÐreÐÐ",
+    "nameLatin": "HuN| DreDD",
+    "power": 8038169,
+    "language": "Cyrillic",
+    "extractedAt": "2026-11-06T00:27:45.823Z"
+  },
+  "007_908_099-HuN_%7C_Phoenix.png": {
+    "name": "HuN | Phoenix",
+    "nameLatin": "HuN | Phoenix",
+    "power": 7908099,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:28:35.293Z"
+  },
+  "007_827_589-HUN%7CElcfe.png": {
+    "name": "HUN|Elcfe",
+    "nameLatin": "HUN|Elcfe",
+    "power": 7827589,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:29:25.129Z"
+  },
+  "007_817_342-HuN_%7C_Treff2.png": {
+    "name": "HuN | Treff2",
+    "nameLatin": "HuN | Treff2",
+    "power": 7817342,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:30:15.419Z"
+  },
+  "007_588_418-Hun%7CSzabi.png": {
+    "name": "HuN|Szabi",
+    "nameLatin": "Hun|Szabi",
+    "power": 7588418,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T00:31:05.461Z"
+  },
+  "007_497_009-HuN%7CLehel.png": {
+    "name": "HuN|Lehel",
+    "nameLatin": "HuN|Lehel",
+    "power": 7497009,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:32:41.197Z"
+  },
+  "007_458_814-HUN%7CB_B.png": {
+    "name": "HUN|B®B;€",
+    "nameLatin": "HUN|B®B;€",
+    "power": 7458814,
+    "language": "Cyrillic",
+    "extractedAt": "2026-11-06T00:33:32.253Z"
+  },
+  "007_368_923-HuN%7CKonrad_grof.png": {
+    "name": "HuN|Konrád gróf",
+    "nameLatin": "HuN|Konrad grof",
+    "power": 7368923,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T00:34:21.777Z"
+  },
+  "006_927_761-HuN_%7C_Hado.png": {
+    "name": "HuN | Hado",
+    "nameLatin": "HuN | Hado",
+    "power": 6927761,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:35:10.189Z"
+  },
+  "006_678_599-HunzSepultura.png": {
+    "name": "HuN|zSepultura",
+    "nameLatin": "HunzSepultura",
+    "power": 6678599,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:36:02.316Z"
+  },
+  "006_486_643-Hun%7CHercules.png": {
+    "name": "HuN|Hercules",
+    "nameLatin": "Hun|Hercules",
+    "power": 6486643,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:36:52.526Z"
+  },
+  "006_413_966-Huneonil.png": {
+    "name": "HuN|eonil",
+    "nameLatin": "Huneonil",
+    "power": 6413966,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:37:43.416Z"
+  },
+  "006_354_260-HuN_%7C_Sakartvelo.png": {
+    "name": "HuN | საქართველო",
+    "nameLatin": "HuN | Sakartvelo",
+    "power": 6354260,
+    "language": "Georgian",
+    "extractedAt": "2026-11-06T00:38:36.585Z"
+  },
+  "006_250_216-HuN%7CMitit.png": {
+    "name": "HuN|Mitit",
+    "nameLatin": "HuN|Mitit",
+    "power": 6250216,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:39:26.137Z"
+  },
+  "006_248_375-HuN%7CTillusq01.png": {
+    "name": "HuN|Tillusq01",
+    "nameLatin": "HuN|Tillusq01",
+    "power": 6248375,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:40:18.889Z"
+  },
+  "006_133_118-Hun%7CTamasss.png": {
+    "name": "HuN|Tamásss",
+    "nameLatin": "Hun|Tamasss",
+    "power": 6133118,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T00:41:12.648Z"
+  },
+  "006_127_174-HuN%7CHunter.png": {
+    "name": "HuN|Hunter ®",
+    "nameLatin": "HuN|Hunter",
+    "power": 6127174,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:42:02.064Z"
+  },
+  "006_064_705-HuN%7CTivadar.png": {
+    "name": "HuN|Tivadar",
+    "nameLatin": "HuN|Tivadar",
+    "power": 6064705,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:42:54.031Z"
+  },
+  "006_063_253-HuN%7CLordEdmund.png": {
+    "name": "HuN|LordEdmund",
+    "nameLatin": "HuN|LordEdmund",
+    "power": 6063253,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:43:44.186Z"
+  },
+  "006_026_820-HuN_%7C_Baxi.png": {
+    "name": "HuN | Baxi",
+    "nameLatin": "HuN | Baxi",
+    "power": 6026820,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:44:32.768Z"
+  },
+  "005_799_237-HuN%7C_Bullpapa.png": {
+    "name": "HuN| Bullpapa",
+    "nameLatin": "HuN| Bullpapa",
+    "power": 5799237,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:45:25.923Z"
+  },
+  "005_778_220-HuN%7CNIX.png": {
+    "name": "HuN|NIX",
+    "nameLatin": "HuN|NIX",
+    "power": 5778220,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:46:17.880Z"
+  },
+  "005_678_834-L_l.png": {
+    "name": "Lõlõ",
+    "nameLatin": "Lõlõ",
+    "power": 5678834,
+    "language": "Estonian",
+    "extractedAt": "2026-11-06T00:47:55.686Z"
+  },
+  "005_595_135-Batman_HuN2.png": {
+    "name": "Batman HuN2",
+    "nameLatin": "Batman HuN2",
+    "power": 5595135,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:48:44.893Z"
+  },
+  "005_476_216-HuN%7CJustme_34.png": {
+    "name": "HuN|Justme#34",
+    "nameLatin": "HuN|Justme#34",
+    "power": 5476216,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:49:38.471Z"
+  },
+  "005_334_120-HuN_%7C_Nachmalem.png": {
+    "name": "HuN | Nachmalem",
+    "nameLatin": "HuN | Nachmalem",
+    "power": 5334120,
+    "language": "German",
+    "extractedAt": "2026-11-06T00:50:29.804Z"
+  },
+  "005_309_499-HuN%7CFarkas.png": {
+    "name": "HuN|Farkas",
+    "nameLatin": "HuN|Farkas",
+    "power": 5309499,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:51:22.309Z"
+  },
+  "005_230_047-HuN%7CTravis.png": {
+    "name": "HuN|Travis",
+    "nameLatin": "HuN|Travis",
+    "power": 5230047,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:52:14.939Z"
+  },
+  "005_159_618-HuN%7CPlayerX.png": {
+    "name": "HuN|PlayerX",
+    "nameLatin": "HuN|PlayerX",
+    "power": 5159618,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:53:07.094Z"
+  },
+  "005_141_041-HuN%7C_Attila.png": {
+    "name": "HuN| Attila",
+    "nameLatin": "HuN| Attila",
+    "power": 5141041,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:53:57.367Z"
+  },
+  "004_828_797-HuN%7CKensei.png": {
+    "name": "HuN|Kensei",
+    "nameLatin": "HuN|Kensei",
+    "power": 4828797,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:54:47.668Z"
+  },
+  "004_790_336-HuN_%7C_Vikii.png": {
+    "name": "HuN | Vikii",
+    "nameLatin": "HuN | Vikii",
+    "power": 4790336,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:55:40.307Z"
+  },
+  "004_790_336-HuN_%7C_Vikii-1.png": {
+    "name": "HuN | Vikii",
+    "nameLatin": "HuN | Vikii",
+    "power": 4790336,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:57:07.740Z",
+    "processingMs": 14094
+  },
+  "004_828_797-HuN%7CKensei-1.png": {
+    "name": "HuN|Kensei",
+    "nameLatin": "HuN|Kensei",
+    "power": 4828797,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:57:22.668Z",
+    "processingMs": 14477
+  },
+  "005_141_041-HuN%7C_Attila-1.png": {
+    "name": "HuN| Attila",
+    "nameLatin": "HuN| Attila",
+    "power": 5141041,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:57:37.141Z",
+    "processingMs": 13941
+  },
+  "005_159_618-HuN%7CPlayerX-1.png": {
+    "name": "HuN|PlayerX",
+    "nameLatin": "HuN|PlayerX",
+    "power": 5159618,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:57:51.646Z",
+    "processingMs": 14135
+  },
+  "005_230_047-HuN%7CTravis-1.png": {
+    "name": "HuN|Travis",
+    "nameLatin": "HuN|Travis",
+    "power": 5230047,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:58:05.075Z",
+    "processingMs": 13073
+  },
+  "005_309_499-HuN%7CFarkas-1.png": {
+    "name": "HuN|Farkas",
+    "nameLatin": "HuN|Farkas",
+    "power": 5309499,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:58:20.311Z",
+    "processingMs": 14827
+  },
+  "005_334_120-HuN_%7C_Nachmalem-1.png": {
+    "name": "HuN | Nachmalem",
+    "nameLatin": "HuN | Nachmalem",
+    "power": 5334120,
+    "language": "German",
+    "extractedAt": "2026-11-06T00:58:34.722Z",
+    "processingMs": 13872
+  },
+  "005_476_216-HuN%7CJustme_34-1.png": {
+    "name": "HuN|Justme#34",
+    "nameLatin": "HuN|Justme#34",
+    "power": 5476216,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:58:50.487Z",
+    "processingMs": 15372
+  },
+  "005_595_135-Batman_HuN2-1.png": {
+    "name": "Batman HuN2",
+    "nameLatin": "Batman HuN2",
+    "power": 5595135,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:59:05.261Z",
+    "processingMs": 14337
+  },
+  "005_678_834-L_l-1.png": {
+    "name": "Lõlõ",
+    "nameLatin": "Lõlõ",
+    "power": 5678834,
+    "language": "Estonian",
+    "extractedAt": "2026-11-06T00:59:20.876Z",
+    "processingMs": 14829
+  },
+  "005_778_220-HuN%7CNIX-1.png": {
+    "name": "HuN|NIX",
+    "nameLatin": "HuN|NIX",
+    "power": 5778220,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:59:36.115Z",
+    "processingMs": 14786
+  },
+  "005_799_237-HuN%7C_Bullpapa-1.png": {
+    "name": "HuN| Bullpapa",
+    "nameLatin": "HuN| Bullpapa",
+    "power": 5799237,
+    "language": "English",
+    "extractedAt": "2026-11-06T00:59:51.551Z",
+    "processingMs": 14983
+  },
+  "006_026_820-HuN_%7C_Baxi-1.png": {
+    "name": "HuN | Baxi",
+    "nameLatin": "HuN | Baxi",
+    "power": 6026820,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:00:07.694Z",
+    "processingMs": 15738
+  },
+  "006_063_253-HuN%7CLordEdmund-1.png": {
+    "name": "HuN|LordEdmund",
+    "nameLatin": "HuN|LordEdmund",
+    "power": 6063253,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:00:24.083Z",
+    "processingMs": 15973
+  },
+  "006_064_705-HuN%7CTivadar-1.png": {
+    "name": "HuN|Tivadar",
+    "nameLatin": "HuN|Tivadar",
+    "power": 6064705,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:00:39.673Z",
+    "processingMs": 15162
+  },
+  "006_127_174-HuN%7CHunter-1.png": {
+    "name": "HuN|Hunter ®",
+    "nameLatin": "HuN|Hunter",
+    "power": 6127174,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:00:53.714Z",
+    "processingMs": 13648
+  },
+  "006_133_118-Hun%7CTamasss-1.png": {
+    "name": "HuN|Tamásss",
+    "nameLatin": "Hun|Tamasss",
+    "power": 6133118,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T01:01:10.663Z",
+    "processingMs": 16421
+  },
+  "006_248_375-HuN%7CTillusq01-1.png": {
+    "name": "HuN|Tillusq01",
+    "nameLatin": "HuN|Tillusq01",
+    "power": 6248375,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:01:26.493Z",
+    "processingMs": 15452
+  },
+  "006_250_216-HuN%7CMitit-1.png": {
+    "name": "HuN|Mitit",
+    "nameLatin": "HuN|Mitit",
+    "power": 6250216,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:01:42.027Z",
+    "processingMs": 14892
+  },
+  "006_354_260-HuN_%7C_Sakartvelo-1.png": {
+    "name": "HuN | საქართველო",
+    "nameLatin": "HuN | Sakartvelo",
+    "power": 6354260,
+    "language": "Georgian",
+    "extractedAt": "2026-11-06T01:01:59.391Z",
+    "processingMs": 16932
+  },
+  "006_413_966-Huneonil-1.png": {
+    "name": "HuN|eonil",
+    "nameLatin": "Huneonil",
+    "power": 6413966,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:02:13.652Z",
+    "processingMs": 13805
+  },
+  "006_486_643-Hun%7CHercules-1.png": {
+    "name": "HuN|Hercules",
+    "nameLatin": "Hun|Hercules",
+    "power": 6486643,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:02:28.460Z",
+    "processingMs": 14412
+  },
+  "006_678_599-HunzSepultura-1.png": {
+    "name": "HuN|zSepultura",
+    "nameLatin": "HunzSepultura",
+    "power": 6678599,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:02:45.093Z",
+    "processingMs": 16146
+  },
+  "006_927_761-HuN_%7C_Hado-1.png": {
+    "name": "HuN | Hado",
+    "nameLatin": "HuN | Hado",
+    "power": 6927761,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:03:00.862Z",
+    "processingMs": 15366
+  },
+  "007_368_923-HuN%7CKonrad_grof-1.png": {
+    "name": "HuN|Konrád gróf",
+    "nameLatin": "HuN|Konrad grof",
+    "power": 7368923,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T01:03:17.884Z",
+    "processingMs": 16615
+  },
+  "007_458_814-HUN%7CB_B-1.png": {
+    "name": "HUN|B®B;€",
+    "nameLatin": "HUN|B®B;€",
+    "power": 7458814,
+    "language": "Cyrillic",
+    "extractedAt": "2026-11-06T01:03:35.554Z",
+    "processingMs": 17272
+  },
+  "007_497_009-HuN%7CLehel-1.png": {
+    "name": "HuN|Lehel",
+    "nameLatin": "HuN|Lehel",
+    "power": 7497009,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:03:50.825Z",
+    "processingMs": 14892
+  },
+  "007_588_418-Hun%7CSzabi-1.png": {
+    "name": "HuN|Szabi",
+    "nameLatin": "Hun|Szabi",
+    "power": 7588418,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T01:04:06.753Z",
+    "processingMs": 15521
+  },
+  "007_817_342-HuN_%7C_Treff2-1.png": {
+    "name": "HuN | Treff2",
+    "nameLatin": "HuN | Treff2",
+    "power": 7817342,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:05:00.039Z",
+    "processingMs": 52886
+  },
+  "007_827_589-HUN%7CElcfe-1.png": {
+    "name": "HUN|Elcfe",
+    "nameLatin": "HUN|Elcfe",
+    "power": 7827589,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:05:53.343Z",
+    "processingMs": 52929
+  },
+  "007_908_099-HuN_%7C_Phoenix-1.png": {
+    "name": "HuN | Phoenix",
+    "nameLatin": "HuN | Phoenix",
+    "power": 7908099,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:06:44.943Z",
+    "processingMs": 51202
+  },
+  "008_038_169-HuN%7C_DreDD-1.png": {
+    "name": "HuN| ÐreÐÐ",
+    "nameLatin": "HuN| DreDD",
+    "power": 8038169,
+    "language": "Cyrillic",
+    "extractedAt": "2026-11-06T01:07:40.905Z",
+    "processingMs": 55552
+  },
+  "008_296_112-Hun%7CCsati-1.png": {
+    "name": "HuN|Csáti",
+    "nameLatin": "Hun|Csati",
+    "power": 8296112,
+    "language": "Hungarian",
+    "extractedAt": "2026-11-06T01:08:31.768Z",
+    "processingMs": 50428
+  },
+  "008_729_776-HuN%7CNorbee-1.png": {
+    "name": "HuN|Norbee",
+    "nameLatin": "HuN|Norbee",
+    "power": 8729776,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:09:22.660Z",
+    "processingMs": 50504
+  },
+  "010_069_292-HuN%7CPufi-1.png": {
+    "name": "HuN|Pufi",
+    "nameLatin": "HuN|Pufi",
+    "power": 10069292,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:10:17.954Z",
+    "processingMs": 54866
+  },
+  "010_562_995-HuN%7CMorfi-1.png": {
+    "name": "HuN|Morfi",
+    "nameLatin": "HuN|Morfi",
+    "power": 10562995,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:11:11.854Z",
+    "processingMs": 53524
+  },
+  "004_779_205-HunNapsugaR.png": {
+    "name": "HuN|NapSugaR",
+    "nameLatin": "HunNapsugaR",
+    "power": 4779205,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:14:37.179Z",
+    "processingMs": 51777
+  },
+  "004_245_392-HuN%7C_Y.png": {
+    "name": "HuN|〇尺Y",
+    "nameLatin": "HuN|〇尺Y",
+    "power": 4245392,
+    "language": "Chinese",
+    "extractedAt": "2026-11-06T01:15:32.337Z",
+    "processingMs": 54769
+  },
+  "004_175_533-Hun%7Cnudli.png": {
+    "name": "HuN|nudli",
+    "nameLatin": "Hun|nudli",
+    "power": 4175533,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:16:23.590Z",
+    "processingMs": 50839
+  },
+  "004_115_062-HuN_%7C_Sven.png": {
+    "name": "HuN | Sven",
+    "nameLatin": "HuN | Sven",
+    "power": 4115062,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:17:15.527Z",
+    "processingMs": 51563
+  },
+  "003_882_508-HuN%7CPeet04.png": {
+    "name": "HuN|Peet04",
+    "nameLatin": "HuN|Peet04",
+    "power": 3882508,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:18:10.082Z",
+    "processingMs": 54078
+  },
+  "003_186_498-HuN%7CAxeLock.png": {
+    "name": "HuN|AxeLock",
+    "nameLatin": "HuN|AxeLock",
+    "power": 3186498,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:19:00.729Z",
+    "processingMs": 50283
+  },
+  "002_852_556-HuN%7CGodd.png": {
+    "name": "HuN|Godd",
+    "nameLatin": "HuN|Godd",
+    "power": 2852556,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:19:50.822Z",
+    "processingMs": 49737
+  },
+  "002_765_920-HUN%7C_Norbert.png": {
+    "name": "HUN| Norbert",
+    "nameLatin": "HUN| Norbert",
+    "power": 2765920,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:20:44.499Z",
+    "processingMs": 53247
+  },
+  "002_763_136-Hun%7CTomi7.png": {
+    "name": "HuN|Tomi7",
+    "nameLatin": "Hun|Tomi7",
+    "power": 2763136,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:21:34.378Z",
+    "processingMs": 49467
+  },
+  "002_732_789-Hun%7CC_Rgu.png": {
+    "name": "HuN|C◎Rgu$",
+    "nameLatin": "Hun|C◎Rgu$",
+    "power": 2732789,
+    "language": "Chinese",
+    "extractedAt": "2026-11-06T01:22:27.091Z",
+    "processingMs": 52360
+  },
+  "001_562_609-TOLDI.png": {
+    "name": "TOLDI",
+    "nameLatin": "TOLDI",
+    "power": 1562609,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:23:23.880Z",
+    "processingMs": 56347
+  },
+  "007_561_578-HuN%7CG-Hero.png": {
+    "name": "HuN|G-Hero",
+    "nameLatin": "HuN|G-Hero",
+    "power": 7561578,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:24:18.317Z",
+    "processingMs": 54078
+  },
+  "005_741_714-Hun%7CElfBar.png": {
+    "name": "HuN|ElfBar",
+    "nameLatin": "HuN|ElfBar",
+    "power": 5741714,
+    "language": "English",
+    "extractedAt": "2026-11-06T01:25:12.417Z",
+    "processingMs": 54078
+  }
+}
