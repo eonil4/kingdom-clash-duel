@@ -1,41 +1,7 @@
-preset - [auto off][x1 speed]
-***v2***
-04:55 - [Anavin skill] amint lehet
-04:39 - [cannon] amikor a polip balról teljesen keresztbe nyúl
-04:39 - [Anavin skill] amint lehet
-04:23 - [cannon] mielőtt az 1. skill (csáp) betöltene, és amikor kezdi becsukni a száját
-04:12 - [cannon] mielőtt az 3. skill (hordó) betöltene
-04:02 - [cannon] amint lehet
-03:39 - [cannon] egy nagy és egy kis rugózás után nyugalmi állapotba kerül
-03:21 - [cannon] mielőtt az 1. skill (csáp) betöltene
-03:09 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
-02:59 - [cannon] amint lehet
-02:36 - [cannon] mielőtt az 1. skill (csáp) betöltene
-02:17 - [cannon] mielőtt az 1. skill (csáp) betöltene
-02:06 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
-01:56 - [cannon] amint lehet
-01:33 - [cannon] mielőtt az 1. skill (csáp) betöltene
-01:14 - [cannon] mielőtt az 1. skill (csáp) betöltene
-01:03 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
-00:53 - [cannon] amint lehet
-00:30 - [cannon] mielőtt az 1. skill (csáp) betöltene
-00:20 - [cannon] amint lehet
-00:10 - [cannon] amint lehet
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"Akár meele akár range resist a polip, a task és a polip mozgása okán az impek, alchemistek, fejsze dobáló vörösök, sőt még a 10es szürke távolsági egységek azok, amik igazán hatékonyak."
+"Többet érhet egy majdnem teljes tábla 8as-9es imp alchekkal kiegeszitve, amiknek a nagy része 5 percen keresztül sebez, mint 10es melee egységek, amik meghalnak a harapasoktol."
+"Ha már melee egység, akkor stormwitch, bone braker, lava golem, ha nincs elég ezekből akkor jöhetnek a további erős bossos egységek."
+"Imádja az alchekat és ahol vannak, onnan szedi fel a többit is, ezért kell teljesen balra tolni, mert akkor csak a közepéig kolbaszolnak el, így talán polip békén hagyja a leglenyegesebb jobb oldalt
 
 ***v1***
 04:55 - [Anavin skill] amint lehet
@@ -59,3 +25,27 @@ preset - [auto off][x1 speed]
 00:22 - [cannon] amint lehet
 00:12 - [cannon] amint lehet
 00:02 - [cannon] amint lehet
+
+preset - [auto off][x1 speed]
+***v2***
+04:55 - [Anavin skill] amint lehet
+04:39 - [cannon] amikor a polip balról teljesen keresztbe nyúl
+04:39 - [Anavin skill] amint lehet
+04:23 - [cannon] mielőtt az 1. skill (csáp) betöltene, és amikor kezdi becsukni a száját
+04:12 - [cannon] mielőtt az 3. skill (hordó) betöltene
+04:02 - [cannon] amint lehet
+03:39 - [cannon] egy nagy és egy kis rugózás után nyugalmi állapotba kerül
+03:21 - [cannon] mielőtt az 1. skill (csáp) betöltene
+03:09 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
+02:59 - [cannon] amint lehet
+02:36 - [cannon] mielőtt az 1. skill (csáp) betöltene
+02:17 - [cannon] mielőtt az 1. skill (csáp) betöltene
+02:06 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
+01:56 - [cannon] amint lehet
+01:33 - [cannon] mielőtt az 1. skill (csáp) betöltene
+01:14 - [cannon] mielőtt az 1. skill (csáp) betöltene
+01:03 - [cannon] az 3. skill (hordó) után egy nagyot rugózik, majd utána
+00:53 - [cannon] amint lehet
+00:30 - [cannon] mielőtt az 1. skill (csáp) betöltene
+00:20 - [cannon] amint lehet
+00:10 - [cannon] amint lehet
