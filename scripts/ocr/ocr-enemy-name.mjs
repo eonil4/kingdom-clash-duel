@@ -19,7 +19,7 @@ import {
 /** Letters, digits, tag punctuation (Windows-safe); excludes reserved filename chars. */
 const NAME_STRIP_OUTSIDE_CLASS = /[^\p{L}\d_\- \\|\[\]]+/gu;
 
-function cleanupName(text) {
+export function cleanupName(text) {
   const cleaned = String(text)
     .replace(/\s+/g, " ")
     .replace(NAME_STRIP_OUTSIDE_CLASS, "")
@@ -42,14 +42,14 @@ function cleanupName(text) {
   return pool[pool.length - 1] ?? "";
 }
 
-function cleanupNamePhrase(text) {
+export function cleanupNamePhrase(text) {
   return String(text)
     .replace(NAME_STRIP_OUTSIDE_CLASS, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function scoreNameCandidate(name) {
+export function scoreNameCandidate(name) {
   if (!name) return -1;
   if (!/^[\p{L}][\p{L}\d_\-\\|\[\]]{1,48}$/u.test(name)) return -1;
   let score = name.length;
@@ -145,7 +145,7 @@ function isTestFolderPrimaryScreenshot(folderAbsPath, filePath) {
   return lower === "test.png" || /^screenshot_/i.test(base);
 }
 
-function isLikelyOcrNoise(name) {
+export function isLikelyOcrNoise(name) {
   const n = cleanupName(String(name || ""));
   if (!n) return true;
   const oneToken = n.split(/\s+/).length === 1;
@@ -202,7 +202,7 @@ function extractTopRightLineName(ocrData, width, height) {
   return candidates[0]?.text ?? "";
 }
 
-function extractBestPhraseFromRawText(rawText) {
+export function extractBestPhraseFromRawText(rawText) {
   const lines = String(rawText || "")
     .split(/\r?\n/)
     .map((l) => cleanupNamePhrase(l))
@@ -307,13 +307,6 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameTextLineResRaw = await worker.recognize(nameTextLineBufRaw);
   const nameTextLineResNeutral = await worker.recognize(nameTextLineBufNeutral);
   const nameTextLineResThreshold = await worker.recognize(nameTextLineBufThreshold);
-  await worker.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "7",
-  });
-  const nameTextResCyrRaw = await worker.recognize(nameTextBufRaw);
-  const nameTextResCyrNeutral = await worker.recognize(nameTextBufNeutral);
-  const nameTextResCyrThreshold = await worker.recognize(nameTextBufThreshold);
   await workerRus.setParameters({
     tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "7",
@@ -337,9 +330,6 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     cleanupNamePhrase(nameTextLineResRaw.data.text),
     cleanupNamePhrase(nameTextLineResNeutral.data.text),
     cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextResCyrRaw.data.text),
-    cleanupNamePhrase(nameTextResCyrNeutral.data.text),
-    cleanupNamePhrase(nameTextResCyrThreshold.data.text),
     cleanupNamePhrase(nameTextRusRaw.data.text),
     cleanupNamePhrase(nameTextRusNeutral.data.text),
     cleanupNamePhrase(nameTextRusThreshold.data.text),
@@ -360,9 +350,6 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     cleanupNamePhrase(nameTextLineResRaw.data.text),
     cleanupNamePhrase(nameTextLineResNeutral.data.text),
     cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextResCyrRaw.data.text),
-    cleanupNamePhrase(nameTextResCyrNeutral.data.text),
-    cleanupNamePhrase(nameTextResCyrThreshold.data.text),
     cleanupNamePhrase(nameTextRusRaw.data.text),
     cleanupNamePhrase(nameTextRusNeutral.data.text),
     cleanupNamePhrase(nameTextRusThreshold.data.text),

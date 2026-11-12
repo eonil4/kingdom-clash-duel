@@ -10,9 +10,9 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { loadApkBattleConfig, DEFAULT_CONFIG_DIR } from "./load-apk-config.mjs";
+import { loadApkBattleConfig } from "./load-apk-config.mjs";
 import { resolveArmy } from "./army-resolver.mjs";
-import { simulateCombat, summarizeSide } from "./combat-engine.mjs";
+import { simulateCombat, summarizeSide, DEFENSE_FACTOR, TICK_DT_SEC } from "./combat-engine.mjs";
 import { estimateClashScore } from "./clash-score.mjs";
 
 function usage() {
@@ -194,9 +194,9 @@ async function main() {
     },
     clash,
     engine: {
-      defenseFactor: 0.5,
-      tickDtSec: 0.25,
-      configSource: DEFAULT_CONFIG_DIR,
+      defenseFactor: DEFENSE_FACTOR,
+      tickDtSec: TICK_DT_SEC,
+      configSource: config.configDir,
     },
   };
 

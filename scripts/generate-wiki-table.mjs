@@ -1,10 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const WORKSPACE_ROOT = path.resolve(__dirname, '..');
+import { WORKSPACE_ROOT } from './file-map-enemies.mjs';
 
 // 1. Get the target folder path from command line arguments
 const targetFolderArg = process.argv[2];
@@ -31,8 +27,7 @@ if (!targetFolderArg) {
  * Parse extension filter: `.webp`, `.jpg`, `.png`, `.jpg|.png`, `.(jpg|png)`, `jpg,png`
  * @param {string} raw
  * @returns {string[]}
- */
-function parseExtensions(raw) {
+ */function parseExtensions(raw) {
   let value = String(raw).trim();
   if (!value) return ['.webp'];
 
@@ -73,6 +68,17 @@ function resolveFolderPaths(folderArg) {
 const extensions = parseExtensions(extensionArg);
 const extensionSet = new Set(extensions);
 
+/**
+ * @param {string} text
+ */
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 // Configuration updated to match the exact working GitHub structure
 const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
 const GITHUB_USER = 'eonil4';
@@ -110,14 +116,15 @@ try {
     const imageUrl = `${baseUrl}/${encodedImageName}`;
 
     const displayName = path.basename(imageName, path.extname(imageName));
+    const safeName = escapeHtml(displayName);
 
     const id = displayName.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
     // Add H3 anchor similar to duels for quick navigation
     html += `  <tr>\n`;
     html += `    <td align="center" valign="middle">\n`;
-    html += `      <h3 id="img-${id}"><a href="#img-${id}">${displayName}</a></h3>\n`;
-    html += `      <img src="${imageUrl}" height="800" alt="${displayName}" /><br />\n`;
-    html += `      <sub><b>${displayName}</b></sub>\n`;
+    html += `      <h3 id="img-${id}"><a href="#img-${id}">${safeName}</a></h3>\n`;
+    html += `      <img src="${imageUrl}" height="800" alt="${safeName}" /><br />\n`;
+    html += `      <sub><b>${safeName}</b></sub>\n`;
     html += `    </td>\n`;
     html += `  </tr>\n`;
   }

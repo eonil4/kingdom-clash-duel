@@ -3,9 +3,9 @@
  * Damage formula is a placeholder until APK/IL2CPP confirms the real curve.
  */
 
-const DEFENSE_FACTOR = 0.5;
+export const DEFENSE_FACTOR = 0.5;
 const DEFAULT_MAX_DURATION_SEC = 300;
-const DT = 0.25;
+export const TICK_DT_SEC = 0.25;
 
 /**
  * Mulberry32 PRNG for deterministic sims.
@@ -124,7 +124,7 @@ export function simulateCombat(opts) {
       if (!unit.alive || unit.hp <= 0) continue;
       if (unit.flags.has("canNotAttack") || unit.flags.has("aiDisabled")) continue;
 
-      unit.cooldownRemaining -= DT;
+      unit.cooldownRemaining -= TICK_DT_SEC;
       if (unit.cooldownRemaining > 0) continue;
 
       const liveEnemies = living(units, unit.side === "attacker" ? "defender" : "attacker");
@@ -155,7 +155,7 @@ export function simulateCombat(opts) {
       }
     }
 
-    t += DT;
+    t += TICK_DT_SEC;
     if (t >= maxDurationSec) {
       timedOut = true;
       break;

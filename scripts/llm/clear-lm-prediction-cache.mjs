@@ -2,6 +2,7 @@
  * Clear LM Studio API prediction-history packs from disk.
  */
 import fs from "fs/promises";
+import os from "os";
 import path from "path";
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
@@ -16,14 +17,26 @@ const DEFAULT_CACHE_PATHS = [
 ];
 
 /**
+ * Env lookup with a home-directory fallback for USERPROFILE/HOME, so `%USERPROFILE%`
+ * paths resolve on POSIX too.
+ * @param {string} name
+ */
+function envOrHome(name) {
+  const value = process.env[name];
+  if (value !== undefined && value !== "") return value;
+  if (name === "USERPROFILE" || name === "HOME") return os.homedir();
+  return "";
+}
+
+/**
  * Expand %VAR% / $VAR / ${VAR} using process.env.
  * @param {string} raw
  */
 export function expandEnvPath(raw) {
   return String(raw)
-    .replace(/%([^%]+)%/g, (_, name) => process.env[name] ?? "")
-    .replace(/\$\{([^}]+)\}/g, (_, name) => process.env[name] ?? "")
-    .replace(/\$([A-Za-z_][A-Za-z0-9_]*)/g, (_, name) => process.env[name] ?? "");
+    .replace(/%([^%]+)%/g, (_, name) => envOrHome(name))
+    .replace(/\$\{([^}]+)\}/g, (_, name) => envOrHome(name))
+    .replace(/\$([A-Za-z_][A-Za-z0-9_]*)/g, (_, name) => envOrHome(name));
 }
 
 /**
@@ -123,4 +136,11 @@ export function shouldClearPredictionCacheBeforeRun(options = {}) {
 
   const cfg = loadLlmConfigSync(options.config);
   return cfg.clearPredictionCacheBeforeRun === true;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
+  clearLmPredictionCache({ label: "LM prediction cache" }).catch((err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
 }
