@@ -40,9 +40,9 @@ C. Armies → deterministic battle report
 | root | 6 | 1,627 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **25 files / 168 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **26 files / 171 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -245,12 +245,13 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 ## 6. P4 — tests, scripts, docs
 
 ### P4-1 Coverage gaps — **resolved**
-**Status: fixed 2026-11-12** — 42 new tests across five files:
+**Status: fixed 2026-11-12** — 45 new tests across six files:
 1. `tests/unit/llm-normalizers.test.ts` (13) — enemy/clan normalisers, power-string parsing, name requirements vs `UNKNOWN`, invalid power bounds, fenced/prose JSON extraction. Pins two behaviours worth knowing: `"-5"` parses to `5` (non-digits stripped) and clan results never carry `englishName`.
 2. `tests/unit/enemy-records.test.ts` (7) — power padding, token dedup, percent-escaping, `<folder>/<source>/<canonical>.webp` resolution for png- and webp-keyed entries, source-path lookup with backslash normalisation.
 3. `tests/unit/battle-outcome.test.ts` (5) — full `decideOutcome` ordering (wipe → living count → HP → damage → tie) including `timeout_*` reasons.
 4. `tests/unit/duel-matrix.test.ts` (11) — `splitVsParts` separator rules plus `parseArgs` defaults, positionals/extensions, `--compact`/`--no-slider`/`--single-table`/`--no-frame` toggles, view/separator/sort, scale/dimension parsing and invalid-value rejection.
 5. `tests/unit/battle-sim-engine.test.ts` (6) — `simulateCombat` determinism per seed, wipe Victory/Defeat, no-attack timeout draw, AoE splash kills in the same lane, and hp+damage accounting.
+6. `tests/unit/army-resolver.test.ts` (3) — synthetic-config troop/hero resolution (abilities, gear, cell patterns), slotIndex ordering, and invalid/unknown-id errors.
 
 To make these importable, `decideOutcome`, `splitVsParts` and `parseArgs` are now exported and the matrix CLI runs only when invoked directly; its `#!/usr/bin/env node` line was removed because Vite/esbuild rejects a shebang inside an imported module (the script is always started via `node …`).
 
@@ -291,7 +292,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 168/168)
+pnpm test:unit                       # must stay green (currently 171/171)
 pnpm check:imports                   # all relative specifiers resolve
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
