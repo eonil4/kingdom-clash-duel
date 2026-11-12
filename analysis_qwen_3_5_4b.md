@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 29 source files, 6,410 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 34 source files, 6,732 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -12,12 +12,16 @@ Three independent pipelines live under `scripts/`:
 
 ```
 A. Screenshot → enemy/clan records → canonical .webp
-   OCR path:   ocr/ocr-enemy.mjs ──tesseract──┐
-   LLM path:   llm/llm-enemy-extract.mjs      ├→ data/clan_clash/**/data.json
-               llm/llm-formation-extract.mjs  │   (per-folder store, merged by
-               llm/convert.mjs ───────────────┘    file-map-enemies.mjs)
+   strategies: pipeline/ocr-strategy.mjs (tesseract)
+               pipeline/llm-strategy.mjs (LM Studio, crops | screenshot)
+                     ↓
+               pipeline/run-extraction.mjs (iterate → skip → extract → persist → webp)
+                     ↑
+   CLIs:       ocr/ocr-enemy.mjs (date-folder discovery, no webp)
+               llm/convert.mjs --extractor llm|ocr (webp + map)
+   clan members: llm/llm-formation-extract.mjs (vision-client descriptors)
                        ↓ sharp
-               <power>-<name>.webp  (Windows-safe, percent-encoded)
+               data/clan_clash/**/data.json + <power>-<name>.webp
 
 B. Folder → HTML gallery
    generate-wiki-table.mjs   (one image per row, remote raw.githubusercontent URLs)
@@ -29,15 +33,16 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,701 | `clan-clash.mjs` (orchestrator), `convert.mjs --mode`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 6 | 1,096 | `ocr-enemy.mjs` (main), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `llm/` | 11 | 2,416 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `ocr/` | 6 | 968 | `ocr-enemy.mjs` (discovery CLI), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 917 | `run-battle.mjs` |
+| `pipeline/` | 5 | 734 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
 | root | 4 | 1,480 | `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `file-map-enemies.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, map helpers, battle outcome, duel splitting, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, map helpers, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **10 files / 77 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **14 files / 101 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -145,6 +150,16 @@ The four unreferenced functions were removed during the P1-2 rewrite:
 - `llm-formation-extract.mjs:505` `renameImageToCanonicalLike`
 
 They contradicted the code's own comments at `llm-enemy-extract.mjs:749` / `llm-formation-extract.mjs:656` ("Do not rename originals"), and were the only uses of `canonicalEnemyMapKey`/`WORKSPACE_ROOT` in those files.
+
+### P1-4 Two duplicated orchestration loops — **resolved (strategy pattern)**
+**Status: 2026-11-12** — OCR and LLM extraction now implement one `ExtractionStrategy` contract (`prepare` / `shouldSkip` / `extract` / `dispose`) and share `pipeline/run-extraction.mjs`, which owns iteration, skip gates, data.json persistence, optional webp conversion and optional nested-map maintenance:
+
+- `pipeline/ocr-strategy.mjs` absorbs the per-image OCR logic (filename-power precedence, test-folder refinement, Latin artifacts); `ocr-enemy.mjs` shrank 274 → 146 lines and now only discovers folders, filters (`--only/--limit/--debug-crops/--force-ocr`) and runs the runner with `webp:false`.
+- `pipeline/llm-strategy.mjs` owns `crops|screenshot`, the retry/backoff loop with escalating timeouts, the `<444` warning and mode-specific filename rules; `convert.mjs` shrank 481 → 195 lines and gained `--extractor llm|ocr` (OCR can drive the webp pipeline without LM Studio).
+- `pipeline/data-json-store.mjs` preserves both record shapes byte-for-byte (`ocr-enemy` keeps its field order; `convert` keeps `processingMs`/`extractedAt`).
+- Tests: `tests/unit/{pipeline-runner,data-json-store,ocr-strategy,llm-strategy}.test.ts` (24 cases) use fakes and injected extractors — no tesseract or LM Studio required.
+- Parity: an OCR run through the new runner produced the identical record as before the change; `clan-clash` orchestration is unchanged.
+- Caveat observed during smoke testing (pre-existing, not introduced here): `convert` saves the entire nested map, so any run rewrites every `data.json` with normalised formatting — verified by restoring the touched file after a temp-folder run.
 
 ---
 
@@ -255,11 +270,13 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 | 5 | Make per-folder `data.json` the only store; remove `DEFAULT_FILE_MAP_PATH` read/unlink and hardcoded default folders | `file-map-enemies.mjs`, `llm/*`, `clan-clash.mjs` | Removes a whole class of "why did it re-run the LLM" bugs — **done** |
 | 6 | De-duplicate the OCR recognition pass; export the scorers; add P4-1 tests | `ocr/`, `tests/unit/` | Direct latency win + regression net for heuristics — **done** (21 → 18 recognitions, +20 tests) |
 | 7 | Reconcile timeouts in `config/llm.json` vs code, fix battle-report config fields, escape wiki-table names, add `.ocr-debug/` to `.gitignore` | misc | Small, independent — **done** (plus the Windows cache-clear script and package/README drift) |
+| 8 | Replace the duplicated OCR/LLM orchestration with an `ExtractionStrategy` + shared runner; add `convert --extractor llm\|ocr` | `pipeline/`, `ocr/`, `llm/` | One loop, testable strategies — **done** (CLIs 274+481 → 146+195; pipeline 734) |
 
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 77/77)
+pnpm test:unit                       # must stay green (currently 101/101)
+node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
 node -e "import('./scripts/ocr/ocr-enemy.mjs')"             # P0-1: no ERR_MODULE_NOT_FOUND
 node scripts/generate-wiki-matrix.mjs data/clan_clash/2026-10-30/duels jpg png webp --compact --height 600
