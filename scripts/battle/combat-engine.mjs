@@ -180,7 +180,7 @@ export function simulateCombat(opts) {
 /**
  * Hypothesis win rule (see clan_clash-battle.md §6.2).
  */
-function decideOutcome(atkLiving, defLiving, atkAll, defAll, timedOut) {
+export function decideOutcome(atkLiving, defLiving, atkAll, defAll, timedOut) {
   if (defLiving.length === 0 && atkLiving.length > 0) {
     return { outcome: "Victory", outcomeReason: "enemy_wiped" };
   }

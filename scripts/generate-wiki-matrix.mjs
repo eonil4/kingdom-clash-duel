@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Build an HTML duel matrix from filenames split by a separator (default `_vs_`).
  *
@@ -44,6 +43,7 @@
  */
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { WORKSPACE_ROOT } from "./file-map-enemies.mjs";
 
@@ -334,7 +334,7 @@ function compareLabels(a, b, dir) {
  * @param {string} separator
  * @returns {{ clan: string, enemy: string, left: string, right: string } | undefined}
  */
-function splitVsParts(stem, separator) {
+export function splitVsParts(stem, separator) {
   const idx = stem.indexOf(separator);
   if (idx <= 0) return undefined;
   const clan = stem.slice(0, idx);
@@ -850,7 +850,11 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;");
 }
 
-main().catch((error) => {
-  console.error(`An error occurred: ${error instanceof Error ? error.message : error}`);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
+if (invokedDirectly) {
+  main().catch((error) => {
+    console.error(`An error occurred: ${error instanceof Error ? error.message : error}`);
+    process.exit(1);
+  });
+}
