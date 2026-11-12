@@ -17,7 +17,7 @@ pnpm install
 
 Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first install; builds are allowed in `pnpm-workspace.yaml` (`allowBuilds`).
 
-`pnpm run ci` runs the unit suite plus the relative-import check (`pnpm check:imports`); the same steps run in GitHub Actions on every push and pull request (`.github/workflows/ci.yml`).
+`pnpm run ci` runs the unit suite plus the relative-import check (`pnpm check:imports`); the same steps run in GitHub Actions on every push and pull request, on both Linux and Windows (`.github/workflows/ci.yml`).
 
 ## Commands
 

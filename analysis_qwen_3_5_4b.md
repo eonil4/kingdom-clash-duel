@@ -231,7 +231,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - Dead exports removed from `enemy-records.mjs` (`deleteNestedMappingKey`, `getNestedMappingReadonly`, `sortMapNode`) and the internal-only `DATA_ROOT`/`dataJsonPath` are no longer exported. `run-battle.mjs` now guards `main()` and exposes `parseArgs` for tests (also accepting `--seed=`/`--config-dir=`).
 - `generate-wiki-table.mjs` is importable (guarded `main`), with `parseExtensions`/`escapeHtml`/`resolveFolderPaths` covered by tests. `clan-clash.mjs` exposes `parseArgs`/`parseFullFlag`/`parseRecursiveLevel`/`resolveConvertTarget` for tests.
 - Real bug found by the new cache tests: `resolvePredictionCachePaths` normalised an empty env expansion to `"."` (the cwd) before filtering; empty paths are now dropped before normalisation, so `clearLmPredictionCache` can never be handed the working directory.
-- Post-audit CI: `.github/workflows/ci.yml` runs frozen install + unit tests + `check:imports` on every push/PR; `packageManager` is pinned to `pnpm@12.15.0` and `scripts/check-imports.mjs` (with tests) makes the mechanical import check part of `pnpm run ci`.
+- Post-audit CI: `.github/workflows/ci.yml` runs frozen install + unit tests + `check:imports` on every push/PR on both Ubuntu and Windows; `packageManager` is pinned to `pnpm@12.15.0` and `scripts/check-imports.mjs` (with tests) makes the mechanical import check part of `pnpm run ci`.
 - Remaining CLI parsers covered: `extract_image` (coordinate validation via mocked `process.exit`) and `show-llm-config` (`formatSource`, real config load). Both CLIs guard `main()` and lost their shebangs so tests can import them.
 
 ### P3-6 Strong points worth keeping
