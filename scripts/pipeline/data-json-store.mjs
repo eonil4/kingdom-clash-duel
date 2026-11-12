@@ -11,7 +11,7 @@ import path from "path";
 /**
  * @param {string} folderAbs
  */
-export function dataJsonPath(folderAbs) {
+function dataJsonPath(folderAbs) {
   return path.join(folderAbs, "data.json");
 }
 

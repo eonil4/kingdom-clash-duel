@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export const WORKSPACE_ROOT = path.join(__dirname, "..");
 /** Single store: per-folder `data.json` files under this root. */
-export const DATA_ROOT = path.join(WORKSPACE_ROOT, "data", "clan_clash");
+const DATA_ROOT = path.join(WORKSPACE_ROOT, "data", "clan_clash");
 
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|bmp|tiff?)$/i;
 
@@ -211,32 +211,6 @@ export function canonicalEnemyMapKey(
   return `${dir}/${originalBase}/${webpBase}`;
 }
 
-export function deleteNestedMappingKey(target, mapKey) {
-  const parts = mapKey.split("/").filter(Boolean);
-  if (parts.length === 0) return;
-  let cursor = target;
-  for (let i = 0; i < parts.length - 1; i++) {
-    const part = parts[i];
-    if (!cursor[part] || typeof cursor[part] !== "object") return;
-    cursor = cursor[part];
-  }
-  const last = parts[parts.length - 1];
-  if (Object.prototype.hasOwnProperty.call(cursor, last)) {
-    delete cursor[last];
-  }
-}
-
-export function getNestedMappingReadonly(source, mapKey) {
-  const parts = mapKey.split("/").filter(Boolean);
-  let cursor = source;
-  for (const part of parts) {
-    if (!cursor || typeof cursor !== "object" || Array.isArray(cursor)) return undefined;
-    cursor = cursor[part];
-  }
-  if (!cursor || typeof cursor !== "object" || Array.isArray(cursor)) return undefined;
-  return cursor;
-}
-
 export function setNestedMapping(target, mapKey, value) {
   const parts = mapKey.split("/").filter(Boolean);
   if (parts.length === 0) return;
@@ -250,29 +224,6 @@ export function setNestedMapping(target, mapKey, value) {
     cursor = cursor[part];
   }
   cursor[parts[parts.length - 1]] = value;
-}
-
-export function sortMapNode(node) {
-  if (!node || typeof node !== "object" || Array.isArray(node)) return node;
-  const entries = Object.entries(node).map(([key, value]) => [key, sortMapNode(value)]);
-
-  entries.sort((a, b) => {
-    const [ka, va] = a;
-    const [kb, vb] = b;
-    const aIsFile = isFileEntryNode(va);
-    const bIsFile = isFileEntryNode(vb);
-
-    if (aIsFile && bIsFile) {
-      const pa = Number(va.power);
-      const pb = Number(vb.power);
-      if (!Number.isNaN(pa) && !Number.isNaN(pb) && pa !== pb) return pa - pb;
-      return ka.localeCompare(kb);
-    }
-    if (aIsFile !== bIsFile) return aIsFile ? 1 : -1;
-    return ka.localeCompare(kb);
-  });
-
-  return Object.fromEntries(entries);
 }
 
 /** Persist the nested map into per-folder data.json files (merges with existing entries). */

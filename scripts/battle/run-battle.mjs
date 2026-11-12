@@ -10,6 +10,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
+import { fileURLToPath } from "url";
 import { loadApkBattleConfig } from "./load-apk-config.mjs";
 import { resolveArmy } from "./army-resolver.mjs";
 import { simulateCombat, summarizeSide, DEFENSE_FACTOR, TICK_DT_SEC } from "./combat-engine.mjs";
@@ -24,14 +25,16 @@ function usage() {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   /** @type {{ attacker?: string, defender?: string, output?: string, seed?: number, configDir?: string }} */
   const args = {};
   const positionals = [];
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--seed") args.seed = Number(argv[++i]);
+    else if (a.startsWith("--seed=")) args.seed = Number(a.slice("--seed=".length));
     else if (a === "--config-dir") args.configDir = argv[++i];
+    else if (a.startsWith("--config-dir=")) args.configDir = a.slice("--config-dir=".length);
     else if (a === "--help" || a === "-h") {
       usage();
       process.exit(0);
@@ -213,7 +216,11 @@ async function main() {
   console.log(`Wrote ${outAbs}`);
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
+}
