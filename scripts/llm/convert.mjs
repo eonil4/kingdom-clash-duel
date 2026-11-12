@@ -24,7 +24,7 @@ import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
 import { createLlmStrategy, resolveLlmMode } from "../pipeline/llm-strategy.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
-import { loadLlmConfig, REQUEST_TIMEOUT_MS } from "./vision-client.mjs";
+import { loadLlmConfig, isInvokedDirectly, REQUEST_TIMEOUT_MS } from "./vision-client.mjs";
 import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
@@ -46,14 +46,14 @@ const LLM_TIMEOUT_PER_ATTEMPT_MS = Number.isFinite(Number(_llmConfig.llmTimeoutP
  * @param {string | undefined} raw
  * @returns {"llm" | "ocr"}
  */
-function resolveExtractor(raw) {
+export function resolveExtractor(raw) {
   const v = String(raw ?? "llm").trim().toLowerCase();
   if (v === "llm") return "llm";
   if (v === "ocr") return "ocr";
   throw new Error(`Unknown --extractor ${JSON.stringify(raw)} (use llm or ocr)`);
 }
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = {
     folder: undefined,
     /** @type {"llm" | "ocr"} */
@@ -190,7 +190,9 @@ async function main() {
   console.log("Store: per-folder data.json");
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+if (isInvokedDirectly(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
+}

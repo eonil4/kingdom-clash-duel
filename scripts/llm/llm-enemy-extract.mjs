@@ -165,9 +165,6 @@ export function resolveVisionModel(host, preferred) {
   return target.resolveModel(host, preferred);
 }
 
-/** @deprecated use resolveVisionModel */
-export const resolveOllamaVisionModel = resolveVisionModel;
-
 /**
  * @param {string} imagePath
  * @param {{ x: number, y: number, width: number, height: number }} roi

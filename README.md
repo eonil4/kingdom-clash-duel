@@ -104,15 +104,17 @@ In directories named **`test`**, only **`test.png`** and **`Screenshot_*`** file
 }
 ```
 
-On disk, sources stay in **`data/enemies/2026-05-08/test/`** next to generated **`*.webp`** files.
+Sources stay in their date folder (for example `data/clan_clash/2026-11-06/`) next to the generated **`*.webp`** files and the folder's `data.json`.
 
 ## Project layout (high level)
 
-- `scripts/` — Enemy OCR, LLM convert, WebP helpers
-- `config/` — LLM settings (`llm.json`)
+- `scripts/pipeline/` — extraction strategy contract, shared runner, per-folder data.json store
+- `scripts/ocr/` — tesseract scan CLIs (`ocr-enemy`, `ocr-clan`) and name/power building blocks
+- `scripts/llm/` — LM Studio client, extraction descriptors, `convert.mjs`, WebP helpers
+- `scripts/battle/` — Clan Clash simulator (APK config tables → battle report)
+- `config/` — LLM settings (`llm.json`, including crop ROIs and `roiReference`)
 - `tests/unit/` — Vitest unit tests
 - `data/clan_clash/` — Clan clash images + per-folder `data.json`
-- `data/enemies/` — Enemy images (by date / folder)
 
 ## License
 
