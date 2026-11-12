@@ -60,7 +60,11 @@ export function resolvePredictionCachePaths(config) {
   const raw = Array.isArray(cfg.predictionCachePaths) && cfg.predictionCachePaths.length > 0
     ? cfg.predictionCachePaths
     : DEFAULT_CACHE_PATHS;
-  return raw.map((p) => path.normalize(expandEnvPath(String(p)))).filter(Boolean);
+  return raw
+    .map((p) => expandEnvPath(String(p)).trim())
+    // Drop empty expansions before normalizing: path.normalize("") is "." (the cwd).
+    .filter(Boolean)
+    .map((p) => path.normalize(p));
 }
 
 /**

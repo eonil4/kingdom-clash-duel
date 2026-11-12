@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 37 source files, 7,043 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 37 source files, 7,021 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -33,16 +33,16 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,357 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `llm/` | 11 | 2,365 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
 | `ocr/` | 8 | 1,189 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `scan-cli.mjs` (shared scan helpers), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
-| `battle/` | 5 | 917 | `run-battle.mjs` |
+| `battle/` | 5 | 924 | `run-battle.mjs` |
 | `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 5 | 1,588 | `enemy-records.mjs`, `roi.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
+| root | 5 | 1,551 | `enemy-records.mjs`, `roi.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert CLI args, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert/battle/clan-clash CLI args, wiki-table helpers, cache-path expansion, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **17 files / 130 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **21 files / 153 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -228,6 +228,9 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - Post-audit follow-up: `ocr-clan.mjs` runs the same strategy over `<date>/clan` folders with the `clan` ROIs and a `tight` name-box style (no arena refinement/full-image fallback). It works end-to-end (power from the filename, name from OCR) but formation fonts are stylised, so it stays best-effort next to `llm-formation-extract.mjs`. `pnpm ocr:clan`.
 - The two OCR scan CLIs now share `ocr/scan-cli.mjs` (arg parsing, image collection, `--only`/`--limit` selection, folder grouping), covered by `tests/unit/ocr-scan.test.ts`.
 - `convert.mjs` arg handling (`--extractor`, `--mode` aliases, cache toggles) is covered by `tests/unit/convert-args.test.ts`; the CLI now only runs `main()` when invoked directly, and the unused deprecated `resolveOllamaVisionModel` alias was removed.
+- Dead exports removed from `enemy-records.mjs` (`deleteNestedMappingKey`, `getNestedMappingReadonly`, `sortMapNode`) and the internal-only `DATA_ROOT`/`dataJsonPath` are no longer exported. `run-battle.mjs` now guards `main()` and exposes `parseArgs` for tests (also accepting `--seed=`/`--config-dir=`).
+- `generate-wiki-table.mjs` is importable (guarded `main`), with `parseExtensions`/`escapeHtml`/`resolveFolderPaths` covered by tests. `clan-clash.mjs` exposes `parseArgs`/`parseFullFlag`/`parseRecursiveLevel`/`resolveConvertTarget` for tests.
+- Real bug found by the new cache tests: `resolvePredictionCachePaths` normalised an empty env expansion to `"."` (the cwd) before filtering; empty paths are now dropped before normalisation, so `clearLmPredictionCache` can never be handed the working directory.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -285,7 +288,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 130/130)
+pnpm test:unit                       # must stay green (currently 153/153)
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
 node -e "import('./scripts/ocr/ocr-enemy.mjs')"             # P0-1: no ERR_MODULE_NOT_FOUND

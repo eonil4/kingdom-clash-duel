@@ -64,7 +64,7 @@ function resolveDefaultDir() {
   }
 }
 
-function parseFullFlag(raw) {
+export function parseFullFlag(raw) {
   if (raw === undefined || raw === null || raw === "") return true;
   const v = String(raw).trim().toLowerCase();
   if (v === "1" || v === "true" || v === "yes" || v === "on") return true;
@@ -76,7 +76,7 @@ function parseFullFlag(raw) {
  * @param {string | undefined} raw
  * @returns {number}
  */
-function parseRecursiveLevel(raw) {
+export function parseRecursiveLevel(raw) {
   if (raw === undefined || raw === null || raw === "") return 0;
   const n = Number(raw);
   if (!Number.isInteger(n) || n < 0) {
@@ -87,7 +87,7 @@ function parseRecursiveLevel(raw) {
   return n;
 }
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = {
     dir: undefined,
     script: "convert2",
@@ -153,7 +153,7 @@ function parseArgs(argv) {
  * @param {string} name
  * @returns {{ script: string, mode: "crops" | "screenshot" }}
  */
-function resolveConvertTarget(name) {
+export function resolveConvertTarget(name) {
   const mode =
     name === "convert" || name === "convert.js"
       ? "screenshot"
@@ -404,7 +404,11 @@ async function main() {
   process.exit(worstCode);
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
+}
