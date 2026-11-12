@@ -135,7 +135,7 @@ function parseExtensions(raw) {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = {
     folder: undefined,
     separator: DEFAULT_SEPARATOR,
