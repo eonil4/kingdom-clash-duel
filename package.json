@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "packageManager": "pnpm@12.15.0",
   "scripts": {
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
-    "ci": "pnpm test:unit",
+    "check:imports": "node scripts/check-imports.mjs",
+    "ci": "pnpm test:unit && pnpm check:imports",
     "battle:clan_clash": "node scripts/battle/run-battle.mjs",
     "battle:clan_clash:example": "node scripts/battle/run-battle.mjs data/battle/examples/attacker.json data/battle/examples/defender.json data/battle/examples/battleResult.json",
     "llm:clan_clash": "cross-env LLM_MODEL=qwen/qwen3-vl-8b node scripts/llm/clan-clash.mjs --full",

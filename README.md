@@ -1,11 +1,13 @@
-# Arena fight practice
+# Kingdom Clash Duel
+
+![CI](https://github.com/eonil4/kingdom-clash-duel/actions/workflows/ci.yml/badge.svg)
 
 Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into per-folder `data/clan_clash/**/data.json` and WebP assets.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) 22+
+- [pnpm](https://pnpm.io/) 12 (pinned via `packageManager`; `corepack enable` is the easiest way)
 
 ## Setup
 
@@ -14,6 +16,8 @@ pnpm install
 ```
 
 Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first install; builds are allowed in `pnpm-workspace.yaml` (`allowBuilds`).
+
+`pnpm run ci` runs the unit suite plus the relative-import check (`pnpm check:imports`); the same steps run in GitHub Actions on every push and pull request (`.github/workflows/ci.yml`).
 
 ## Commands
 
