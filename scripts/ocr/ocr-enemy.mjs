@@ -1,6 +1,6 @@
 /**
- * Scan configured folders from fileMap.json, OCR each screenshot for name + power,
- * convert name to Latin artifacts, and write entries under canonical `.webp` keys.
+ * Scan `data/clan_clash/YYYY-MM-DD` arena folders, OCR each screenshot for name + power,
+ * convert name to Latin artifacts, and record entries in each folder's data.json.
  */
 import fs from "fs/promises";
 import path from "path";
@@ -8,19 +8,13 @@ import { fileURLToPath } from "url";
 import { createWorker } from "tesseract.js";
 import {
   canonicalEnemyMapKey,
-  DEFAULT_FILE_MAP_PATH,
-  deleteNestedMappingKey,
-  findEnemyRowBySourceRel,
   loadConfiguredFolders,
-  loadExistingFileMap,
   parsePowerFromOriginalBasename,
-  setNestedMapping,
-  sortMapNode,
   toMapKey,
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
 import { convertTextToLatinArtifacts } from "./convert-text-to-latin.mjs";
-import { parseLatinNameHintFromEncodedOriginalBasename } from "../enemy-filename-tokens.mjs";
+import { parseLatinNameHintFromEncodedOriginalBasename } from "./enemy-filename-tokens.mjs";
 import {
   normalizeOpponentDisplayName,
   ocrEnemyName,
@@ -43,7 +37,6 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
 
 function parseArgs(argv) {
   const args = {
-    out: DEFAULT_FILE_MAP_PATH,
     limit: undefined,
     only: undefined,
     debugCrops: false,
@@ -52,8 +45,7 @@ function parseArgs(argv) {
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--" || a === undefined) continue;
-    if (a === "--out") args.out = path.resolve(argv[++i]);
-    else if (a === "--limit") args.limit = Number(argv[++i]);
+    if (a === "--limit") args.limit = Number(argv[++i]);
     else if (a === "--only") args.only = argv[++i];
     else if (a === "--debug-crops") args.debugCrops = true;
     else if (a === "--force-ocr") args.forceOcr = true;
@@ -81,9 +73,9 @@ async function collectImageFilesInFolderOnly(dir) {
 }
 
 async function main() {
-  const { out, limit, only, debugCrops, forceOcr } = parseArgs(process.argv.slice(2));
+  const { limit, only, debugCrops, forceOcr } = parseArgs(process.argv.slice(2));
 
-  const configuredFolders = await loadConfiguredFolders(out);
+  const configuredFolders = await loadConfiguredFolders();
   let all = [];
   if (configuredFolders.length > 0) {
     for (const folder of configuredFolders) {
@@ -138,16 +130,35 @@ async function main() {
     await worker.setParameters({ preserve_interword_spaces: "1" });
     await workerRus.setParameters({ preserve_interword_spaces: "1" });
 
-    const fileMap = await loadExistingFileMap(out);
     const debugDir = debugCrops ? path.join(__dirname, ".ocr-debug") : undefined;
+
+    /** @type {Set<string>} */
+    const writtenDataFiles = new Set();
+    /** @type {Map<string, { path: string, entries: Record<string, object> }>} */
+    const dataByFolder = new Map();
+    async function readFolderData(folder) {
+      const cached = dataByFolder.get(folder);
+      if (cached) return cached;
+      const dataPath = path.join(folder, "data.json");
+      let entries = {};
+      try {
+        const parsed = JSON.parse(await fs.readFile(dataPath, "utf8"));
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) entries = parsed;
+      } catch {
+        entries = {};
+      }
+      const record = { path: dataPath, entries };
+      dataByFolder.set(folder, record);
+      return record;
+    }
 
     for (const filePath of targets) {
       const base = path.basename(filePath);
-      const mapKeySource = toMapKey(filePath);
       try {
-        if (!forceOcr && findEnemyRowBySourceRel(fileMap, mapKeySource)) {
+        const folderData = await readFolderData(path.dirname(filePath));
+        if (!forceOcr && folderData.entries[base]) {
           console.log(
-            `Skipping OCR for mapped source image (use --force-ocr to refresh): ${filePath}`,
+            `Skipping OCR for recorded image (use --force-ocr to refresh): ${filePath}`,
           );
           continue;
         }
@@ -224,16 +235,20 @@ async function main() {
           nameEnglish: finalArt.nameEnglish,
           nameRaw: displayName || latinHint || "",
         });
-        const prevRow = findEnemyRowBySourceRel(fileMap, mapKeySource);
-        if (prevRow && prevRow.fullMapKey !== mapKeyCanonical) {
-          deleteNestedMappingKey(fileMap, prevRow.fullMapKey);
-        }
-        setNestedMapping(fileMap, mapKeyCanonical, {
-          power,
+        folderData.entries[base] = {
           name: displayName || latinHint || "",
           nameLatin: finalArt.latinRaw,
+          power,
+          language: null,
+          canonical: path.posix.basename(mapKeyCanonical),
           ...(finalArt.nameEnglish ? { nameEnglish: finalArt.nameEnglish } : {}),
-        });
+        };
+        await fs.writeFile(
+          folderData.path,
+          `${JSON.stringify(folderData.entries, null, 2)}\n`,
+          "utf8",
+        );
+        writtenDataFiles.add(folderData.path);
         console.log(
           `OK: ${filePath} -> ${path.posix.basename(mapKeyCanonical)} { power: ${power}, name: "${displayName || latinHint}", alphabet: "${finalArt.alphabet}", latinRaw: "${finalArt.latinRaw}"${finalArt.nameEnglish ? `, nameEnglish: "${finalArt.nameEnglish}"` : ""} }`,
         );
@@ -243,10 +258,9 @@ async function main() {
       }
     }
 
-    const sortedFileMap = sortMapNode(fileMap);
-    await fs.mkdir(path.dirname(out), { recursive: true });
-    await fs.writeFile(out, JSON.stringify(sortedFileMap, null, 2) + "\n", "utf8");
-    console.log(`Wrote: ${out}`);
+    if (writtenDataFiles.size > 0) {
+      console.log(`Updated ${writtenDataFiles.size} data.json file(s)`);
+    }
   } finally {
     await worker.terminate();
     await workerRus.terminate();

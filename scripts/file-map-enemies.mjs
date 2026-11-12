@@ -7,12 +7,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const WORKSPACE_ROOT = path.join(__dirname, "..");
-export const DEFAULT_FILE_MAP_PATH = path.join(
-  WORKSPACE_ROOT,
-  "data",
-  "clan_clash",
-  "fileMap.json",
-);
+/** Single store: per-folder `data.json` files under this root. */
+export const DATA_ROOT = path.join(WORKSPACE_ROOT, "data", "clan_clash");
 
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|bmp|tiff?)$/i;
 
@@ -65,33 +61,42 @@ export async function loadConfiguredFoldersFromRoot(mapRoot, workspaceRoot = WOR
   return out;
 }
 
-export async function loadConfiguredFolders(mapPath, workspaceRoot = WORKSPACE_ROOT) {
+/**
+ * OCR discovery: `data/clan_clash/YYYY-MM-DD` folders that exist and contain at least one
+ * image. Subfolders (`clan/`, `victory/`, `duel/`, …) hold formation/battle-result captures,
+ * not opponent-panel screenshots, so they are not registered.
+ */
+export async function loadConfiguredFolders(workspaceRoot = WORKSPACE_ROOT) {
+  const root = path.join(workspaceRoot, "data", "clan_clash");
+  let entries;
   try {
-    const raw = await fs.readFile(mapPath, "utf8");
-    const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return [];
-    return loadConfiguredFoldersFromRoot(parsed, workspaceRoot);
+    entries = await fs.readdir(root, { withFileTypes: true });
   } catch {
     return [];
   }
+
+  const out = [];
+  for (const e of entries) {
+    if (!e.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/.test(e.name)) continue;
+    const absPath = path.join(root, e.name);
+    let files;
+    try {
+      files = await fs.readdir(absPath);
+    } catch {
+      continue;
+    }
+    if (!files.some((f) => IMAGE_EXT_RE.test(f))) continue;
+    out.push({
+      absPath,
+      relPath: path.relative(workspaceRoot, absPath).split(path.sep).join("/"),
+    });
+  }
+  return out.sort((a, b) => a.relPath.localeCompare(b.relPath));
 }
 
-export async function loadExistingFileMap(mapPath) {
-  try {
-    // If an explicit fileMap.json exists, read it for backwards compatibility.
-    const raw = await fs.readFile(mapPath, "utf8").catch(() => null);
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-      return parsed;
-    }
-  } catch {
-    // fallthrough to build from per-folder data.json
-  }
-
-  // Build nested map structure from per-folder data.json files under data/clan_clash
+export async function loadExistingFileMap() {
+  // Build the nested map from per-folder data.json files under data/clan_clash
   const root = {};
-  const baseDir = path.join(WORKSPACE_ROOT);
   async function walkDirs(dir) {
     let entries;
     try {
@@ -108,20 +113,28 @@ export async function loadExistingFileMap(mapPath) {
         if (parsed && typeof parsed === "object") {
           const relDir = path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
           for (const [origName, entry] of Object.entries(parsed)) {
-            const filePath = path.join(dir, origName);
-            const power = Number(entry && entry.power ? entry.power : 0);
-            const nameLatinRaw = entry && (entry.nameLatin || entry.name) ? (entry.nameLatin || entry.name) : "";
-            const mapKey = canonicalEnemyMapKey(filePath, {
-              power,
-              nameLatinRaw,
-              nameEnglish: undefined,
-              nameRaw: entry && entry.name ? entry.name : undefined,
-            });
+            // data.json is the store: honour its `originalFileName`/`canonical` fields when present.
+            const storedOriginal =
+              typeof entry?.originalFileName === "string" ? entry.originalFileName.trim() : "";
+            const sourceName = storedOriginal || origName;
+            const canonicalName =
+              (typeof entry?.canonical === "string" && entry.canonical.trim()) ||
+              (path.extname(origName).toLowerCase() === ".webp" ? origName : "");
+            const mapKey =
+              canonicalName && relDir
+                ? `${relDir}/${sourceName}/${canonicalName}`
+                : canonicalEnemyMapKey(path.join(dir, sourceName), {
+                    power: Number(entry?.power) || 0,
+                    nameLatinRaw: entry?.nameLatin || entry?.name || "",
+                    nameEnglish: undefined,
+                    nameRaw: entry?.name || undefined,
+                  });
             setNestedMapping(root, mapKey, {
-              name: entry.name || null,
-              nameLatin: entry.nameLatin || null,
-              power: entry.power || null,
-              originalFileName: origName,
+              name: entry?.name || null,
+              nameLatin: entry?.nameLatin || null,
+              power: entry?.power || null,
+              language: entry?.language ?? null,
+              originalFileName: sourceName,
             });
           }
         }
@@ -136,7 +149,7 @@ export async function loadExistingFileMap(mapPath) {
       }
     }
   }
-  await walkDirs(path.join(WORKSPACE_ROOT, "data", "clan_clash")).catch(() => {});
+  await walkDirs(DATA_ROOT).catch(() => {});
   return root;
 }
 
@@ -262,8 +275,8 @@ export function sortMapNode(node) {
   return Object.fromEntries(entries);
 }
 
-/** Write sorted map to disk (call after each processed image to persist progress). */
-export async function saveFileMap(mapRoot, mapPath = DEFAULT_FILE_MAP_PATH) {
+/** Persist the nested map into per-folder data.json files (merges with existing entries). */
+export async function saveFileMap(mapRoot) {
   // Convert nested mapRoot into per-folder data.json files (merge with existing)
   const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
   const group = {};
@@ -284,37 +297,37 @@ export async function saveFileMap(mapRoot, mapPath = DEFAULT_FILE_MAP_PATH) {
       }
       for (const it of items) {
         const key = it.originalFileName || it.canonicalKey;
+        const prev = existing[key] && typeof existing[key] === "object" ? existing[key] : {};
         existing[key] = {
-          name: it.entry.name || null,
-          nameLatin: it.entry.nameLatin || null,
-          power: it.entry.power || null,
-          canonical: it.canonicalKey || null,
-          language: it.entry.language || null,
+          ...prev,
+          name: it.entry.name || prev.name || null,
+          nameLatin: it.entry.nameLatin || prev.nameLatin || null,
+          power: it.entry.power || prev.power || null,
+          canonical: it.canonicalKey || prev.canonical || null,
+          language: it.entry.language ?? prev.language ?? null,
         };
       }
       await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
-    } catch {
-      // ignore write errors
+    } catch (err) {
+      console.warn(
+        `[Data] failed to write ${path.join(folder, "data.json")}: ` +
+          `${err instanceof Error ? err.message : String(err)}`,
+      );
     }
-  }
-
-  // Remove legacy global fileMap.json if present
-  try {
-    await fs.unlink(mapPath).catch(() => {});
-  } catch {
-    // ignore
   }
 }
 
 function resolveDiskOriginalFromMapParts(parts, entry, workspaceRoot) {
   const last = parts[parts.length - 1];
-  if (last && /\.(png|jpe?g)$/i.test(last)) {
+  const legacy = typeof entry.originalFileName === "string" ? entry.originalFileName.trim() : "";
+  // Map keys are `<folder>/<original-or-canonical name>/<canonical>.webp`; the real folder is
+  // everything before the name segment.
+  if (last && IMAGE_EXT_RE.test(last)) {
     return {
       folderAbs: path.join(workspaceRoot, ...parts.slice(0, -1)),
-      originalFileName: last,
+      originalFileName: legacy || last,
     };
   }
-  const legacy = typeof entry.originalFileName === "string" ? entry.originalFileName.trim() : "";
   return {
     folderAbs: path.join(workspaceRoot, ...parts),
     originalFileName: legacy,

@@ -3,36 +3,29 @@
  *
  * Usage:
  *   node scripts/llm/convert-to-webp.mjs
- *   node scripts/llm/convert-to-webp.mjs --map data/clan_clash/fileMap.json
  *   node scripts/llm/convert-to-webp.mjs --dry-run
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import {
   collectEnemyEntriesFromMap,
-  DEFAULT_FILE_MAP_PATH,
   loadExistingFileMap,
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 function parseArgs(argv) {
-  const args = { mapPath: DEFAULT_FILE_MAP_PATH, dryRun: false };
+  const args = { dryRun: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--map") args.mapPath = path.resolve(argv[++i]);
-    else if (a === "--dry-run") args.dryRun = true;
+    if (a === "--dry-run") args.dryRun = true;
   }
   return args;
 }
 
 async function main() {
-  const { mapPath, dryRun } = parseArgs(process.argv.slice(2));
-  const mapRoot = await loadExistingFileMap(mapPath);
+  const { dryRun } = parseArgs(process.argv.slice(2));
+  const mapRoot = await loadExistingFileMap();
   const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
 
   let planned = 0;
