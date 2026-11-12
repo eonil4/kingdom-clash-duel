@@ -1,26 +1,28 @@
 /**
- * Process enemy screenshots in a folder: LLM extraction, WebP conversion, fileMap update.
+ * Process enemy screenshots in a folder: LLM extraction, WebP conversion, per-folder data.json.
  *
- * By default skips sources that already have a canonical WebP on disk (per fileMap).
+ * Modes (--mode):
+ *   crops       (default) crop the name + power ROIs and recognize each crop
+ *               (config/llm.json userPrompt.image.enemy.{name,power})
+ *   screenshot  extract name + power from the full screenshot in one call
+ *
+ * By default skips sources that already have a canonical WebP on disk (per folder data.json).
  * Use --force to re-run LLM and conversion for every PNG.
  *
  * Usage:
- *   node scripts/llm/convert.js data/enemies/2026-05-22/test
- *   node scripts/llm/convert.js data/enemies/2026-05-22/test --force
- *   node scripts/llm/convert.js data/enemies/2026-05-22/test --clear-cache
- *   node scripts/llm/convert.js data/enemies/2026-05-22/test --no-clear-cache
+ *   node scripts/llm/convert.mjs <folder>
+ *   node scripts/llm/convert.mjs <folder> --mode screenshot --force
+ *   node scripts/llm/convert.mjs <folder> --clear-cache
+ *   node scripts/llm/convert.mjs <folder> --no-clear-cache
  *
  * Env: LLM_MODEL, LLM_HOST, LLM_SKIP_CACHE_CLEAR (see llm-enemy-extract.mjs)
  */
 import fs from "fs/promises";
-import { readFileSync } from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   canonicalEnemyMapKey,
-  DEFAULT_FILE_MAP_PATH,
   findEnemyRowBySourceRel,
   loadExistingFileMap,
   saveFileMap,
@@ -28,37 +30,59 @@ import {
   toMapKey,
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
-import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
+import {
+  extractEnemyDataFromNamePowerCrops,
+  extractEnemyDataFromScreenshot,
+} from "./llm-enemy-extract.mjs";
+import { loadLlmConfig, REQUEST_TIMEOUT_MS } from "./vision-client.mjs";
 import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
   shouldClearPredictionCacheBeforeRun,
 } from "./clear-lm-prediction-cache.mjs";
 
-// Load optional LM config overrides from config/llm.json
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const CONFIG_PATH = path.join(__dirname, "..", "..", "config", "llm.json");
-let _llmConfig = {};
-try {
-  const raw = readFileSync(CONFIG_PATH, "utf8");
-  _llmConfig = JSON.parse(raw);
-} catch {
-  _llmConfig = {};
-}
+const _llmConfig = loadLlmConfig();
 
 const LLM_MAX_ATTEMPTS = Number.isFinite(Number(_llmConfig.llmMaxAttempts ?? _llmConfig.maxAttempts))
   ? Number(_llmConfig.llmMaxAttempts ?? _llmConfig.maxAttempts)
   : 3;
 const RETRY_BASE_DELAY_MS = Number.isFinite(Number(_llmConfig.retryBaseDelayMs)) ? Number(_llmConfig.retryBaseDelayMs) : 1500;
-/** Per-attempt LLM request timeout: attempt × configured ms (default 10 min) */
+/** Per-attempt LLM request timeout; attempt N uses N × this value. */
 const LLM_TIMEOUT_PER_ATTEMPT_MS = Number.isFinite(Number(_llmConfig.llmTimeoutPerAttemptMs))
   ? Number(_llmConfig.llmTimeoutPerAttemptMs)
-  : 600_000;
+  : REQUEST_TIMEOUT_MS;
+
+/** Below this, an extraction is almost certainly wrong (e.g. read "1" or a unit count). */
+const LOW_POWER_WARN_THRESHOLD = 444;
+
+/** @type {Record<"crops" | "screenshot", { logTag: string, extract: Function }>} */
+const MODES = {
+  crops: {
+    logTag: "[LLM crops]",
+    extract: extractEnemyDataFromNamePowerCrops,
+  },
+  screenshot: {
+    logTag: "[LLM]",
+    extract: extractEnemyDataFromScreenshot,
+  },
+};
+
+/**
+ * @param {string | undefined} raw
+ * @returns {"crops" | "screenshot"}
+ */
+function resolveMode(raw) {
+  const v = String(raw ?? "crops").trim().toLowerCase();
+  if (v === "crops" || v === "crop" || v === "name-power") return "crops";
+  if (v === "screenshot" || v === "full") return "screenshot";
+  throw new Error(`Unknown --mode ${JSON.stringify(raw)} (use crops or screenshot)`);
+}
 
 function parseArgs(argv) {
   const args = {
     folder: undefined,
+    /** @type {"crops" | "screenshot"} */
+    mode: "crops",
     force: false,
     model: undefined,
     /** @type {boolean | undefined} */
@@ -71,8 +95,11 @@ function parseArgs(argv) {
     else if (a === "--clear-cache") args.clearCache = true;
     else if (a === "--no-clear-cache") args.clearCache = false;
     else if (a === "--model" || a === "-m") args.model = argv[++i];
+    else if (a === "--mode" || a === "-M") args.mode = argv[++i];
+    else if (a.startsWith("--mode=")) args.mode = a.slice("--mode=".length);
     else if (!a.startsWith("-") && !args.folder) args.folder = a;
   }
+  args.mode = resolveMode(args.mode);
   return args;
 }
 
@@ -119,34 +146,43 @@ async function resolveExistingOutput(mapRoot, imagePath) {
 
 /**
  * @param {string} imagePath
+ * @param {"crops" | "screenshot"} mode
  * @param {string | undefined} model
  * @param {{ clearCacheBeforeEachCall?: boolean }} [options]
  */
-async function callLLMApiForDataExtraction(imagePath, model, options = {}) {
+async function callLLMApiForExtraction(imagePath, mode, model, options = {}) {
+  const { logTag, extract } = MODES[mode];
   const startedAt = performance.now();
   let lastErr;
   for (let attempt = 1; attempt <= LLM_MAX_ATTEMPTS; attempt++) {
     const timeoutMs = attempt * LLM_TIMEOUT_PER_ATTEMPT_MS;
     try {
       console.log(
-        `\t[LLM] ${path.basename(imagePath)} (attempt ${attempt}/${LLM_MAX_ATTEMPTS}, timeout ${timeoutMs / 1000}s)...`,
+        `\t${logTag} ${path.basename(imagePath)} (attempt ${attempt}/${LLM_MAX_ATTEMPTS}, timeout ${timeoutMs / 1000}s)...`,
       );
-      const extracted = await extractEnemyDataFromScreenshot(imagePath, {
+      const extracted = await extract(imagePath, {
         timeoutMs,
         model,
         clearCacheBeforeEachCall: options.clearCacheBeforeEachCall,
       });
       const durationMs = performance.now() - startedAt;
+      const detail =
+        mode === "crops"
+          ? extracted.nameLatin
+            ? ` latin=${JSON.stringify(extracted.nameLatin)}`
+            : ""
+          : extracted.englishName
+            ? ` english=${JSON.stringify(extracted.englishName)}`
+            : "";
       console.log(
-        `\t[LLM] power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
-          (extracted.englishName ? ` english=${JSON.stringify(extracted.englishName)}` : "") +
-          ` (${formatDuration(durationMs)})`,
+        `\t${logTag} power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
+          `${detail} (${formatDuration(durationMs)})`,
       );
       return { extracted, durationMs };
     } catch (err) {
       lastErr = err;
       const msg = err instanceof Error ? err.message : String(err);
-      console.warn(`\t[LLM] attempt ${attempt}/${LLM_MAX_ATTEMPTS} failed: ${msg}`);
+      console.warn(`\t${logTag} attempt ${attempt}/${LLM_MAX_ATTEMPTS} failed: ${msg}`);
       if (attempt < LLM_MAX_ATTEMPTS) {
         await delay(RETRY_BASE_DELAY_MS * attempt);
       }
@@ -155,6 +191,102 @@ async function callLLMApiForDataExtraction(imagePath, model, options = {}) {
   throw lastErr instanceof Error
     ? lastErr
     : new Error(String(lastErr ?? "LLM extraction failed"));
+}
+
+/**
+ * @param {{ power: number, name: string, englishName?: string }} extracted
+ * @param {string} logTag
+ */
+function warnIfLowPower(extracted, logTag) {
+  if (Number(extracted.power) < LOW_POWER_WARN_THRESHOLD) {
+    console.error(
+      `\t${logTag} LOW power=${extracted.power} name=${JSON.stringify(extracted.name)}` +
+        (extracted.englishName ? ` english=${JSON.stringify(extracted.englishName)}` : ""),
+    );
+  }
+}
+
+/**
+ * @param {"crops" | "screenshot"} mode
+ * @param {string} imagePath
+ * @param {{ power: number, name: string, nameLatin?: string, englishName?: string }} extracted
+ * @returns {{ mapKey: string, mapEntry: object }}
+ */
+function buildMapEntry(mode, imagePath, extracted) {
+  if (mode === "crops") {
+    const nameRaw = extracted.name?.trim() || "";
+    const nameLatinRaw = extracted.nameLatin?.trim() || "";
+    if (!nameRaw && !nameLatinRaw) {
+      throw new Error("LLM did not return name or nameLatin.");
+    }
+
+    const mapEntry = {
+      name: nameRaw || nameLatinRaw,
+      nameLatin: nameLatinRaw || toSafeEnemyFilenameToken(nameRaw),
+      power: Number(extracted.power),
+    };
+
+    // Filename: nameLatin (fallback to name when latin is empty). Never use english.
+    const filenameNameRaw = nameLatinRaw || nameRaw;
+    const mapKey = canonicalEnemyMapKey(imagePath, {
+      power: mapEntry.power,
+      nameLatinRaw: filenameNameRaw,
+      nameRaw: undefined,
+      nameEnglish: undefined,
+    });
+    return { mapKey, mapEntry };
+  }
+
+  const nameLatinRaw =
+    extracted.englishName?.trim() || toSafeEnemyFilenameToken(extracted.name);
+  const mapEntry = {
+    name: extracted.name,
+    nameLatin: nameLatinRaw,
+    power: Number(extracted.power),
+  };
+  if (extracted.englishName?.trim()) {
+    mapEntry.nameEnglish = extracted.englishName.trim();
+  }
+
+  const mapKey = canonicalEnemyMapKey(imagePath, {
+    power: mapEntry.power,
+    nameLatinRaw,
+    nameEnglish: mapEntry.nameEnglish,
+    nameRaw: mapEntry.name,
+  });
+  return { mapKey, mapEntry };
+}
+
+/**
+ * Persist the extraction next to the source image so results survive a failed conversion.
+ * `saveFileMap` later refreshes the same key with canonical-map fields.
+ */
+async function persistExtractedData({
+  folderAbs,
+  originalFileName,
+  extracted,
+  mapEntry,
+  durationMs,
+  canonical,
+}) {
+  const dataPath = path.join(folderAbs, "data.json");
+  let existing = {};
+  try {
+    const raw = await fs.readFile(dataPath, "utf8");
+    existing = JSON.parse(raw);
+  } catch {
+    existing = {};
+  }
+  existing[originalFileName] = {
+    name: mapEntry.name,
+    nameLatin: mapEntry.nameLatin,
+    power: mapEntry.power,
+    language: extracted.language ?? null,
+    processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
+    canonical: canonical ?? null,
+    extractedAt: new Date().toISOString(),
+  };
+  await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
 }
 
 /** @param {object | undefined} entry */
@@ -178,10 +310,10 @@ function mapEntryFromRow(entry) {
 
 /**
  * @param {string} folderArg
- * @param {{ force?: boolean, model?: string, clearCache?: boolean }} [options]
+ * @param {{ mode: "crops" | "screenshot", force?: boolean, model?: string, clearCache?: boolean }} options
  */
-async function processImageFolder(folderArg, options = {}) {
-  const { force = false, model = undefined, clearCache = undefined } = options;
+async function processImageFolder(folderArg, options) {
+  const { force = false, model = undefined, clearCache = undefined, mode } = options;
   const clearBeforeEach = shouldClearPredictionCacheBeforeEachCall({
     cliOverride: clearCache,
     config: _llmConfig,
@@ -206,7 +338,7 @@ async function processImageFolder(folderArg, options = {}) {
   }
 
   console.log(
-    `\nProcessing folder: ${folderAbs} (${pngFiles.length} PNGs, ${force ? "force" : "missing only"})` +
+    `\nProcessing folder (convert / ${mode}): ${folderAbs} (${pngFiles.length} PNGs, ${force ? "force" : "missing only"})` +
       ` [cache: beforeRun=${clearBeforeRun}, beforeEachCall=${clearBeforeEach}]`,
   );
 
@@ -217,7 +349,7 @@ async function processImageFolder(folderArg, options = {}) {
     });
   }
 
-  const mapRoot = await loadExistingFileMap(DEFAULT_FILE_MAP_PATH);
+  const mapRoot = await loadExistingFileMap();
   let converted = 0;
   let skippedComplete = 0;
   let convertedFromMap = 0;
@@ -248,40 +380,45 @@ async function processImageFolder(folderArg, options = {}) {
       if (!force && existing.row && existing.webpPath && !existing.exists) {
         const mapEntry = mapEntryFromRow(existing.row.entry);
         if (!mapEntry) {
-          throw new Error("fileMap row exists but is missing name/power.");
+          throw new Error("data.json row exists but is missing name/power.");
         }
         mapKey = existing.row.fullMapKey;
         outputPath = existing.webpPath;
         usedMapOnly = true;
         console.log(`\t[Map] Using existing entry -> ${path.basename(outputPath)}`);
       } else {
-        const { extracted, durationMs } = await callLLMApiForDataExtraction(imagePath, model, {
-          clearCacheBeforeEachCall: clearBeforeEach,
-        });
+        const { extracted, durationMs } = await callLLMApiForExtraction(
+          imagePath,
+          mode,
+          model,
+          { clearCacheBeforeEachCall: clearBeforeEach },
+        );
         llmDurationsMs.push(durationMs);
         if (!extracted?.power || !extracted?.name) {
           throw new Error("LLM did not return power and name.");
         }
+        warnIfLowPower(extracted, MODES[mode].logTag);
 
-        const nameLatinRaw =
-          extracted.englishName?.trim() || toSafeEnemyFilenameToken(extracted.name);
-        const mapEntry = {
-          name: extracted.name,
-          nameLatin: nameLatinRaw,
-          power: Number(extracted.power),
-        };
-        if (extracted.englishName?.trim()) {
-          mapEntry.nameEnglish = extracted.englishName.trim();
-        }
-
-        mapKey = canonicalEnemyMapKey(imagePath, {
-          power: mapEntry.power,
-          nameLatinRaw,
-          nameEnglish: mapEntry.nameEnglish,
-          nameRaw: mapEntry.name,
-        });
+        const { mapKey: builtKey, mapEntry } = buildMapEntry(mode, imagePath, extracted);
+        mapKey = builtKey;
         outputPath = path.join(folderAbs, path.posix.basename(mapKey));
         setNestedMapping(mapRoot, mapKey, mapEntry);
+
+        try {
+          await persistExtractedData({
+            folderAbs,
+            originalFileName,
+            extracted,
+            mapEntry,
+            durationMs,
+            canonical: path.posix.basename(mapKey),
+          });
+        } catch (err) {
+          console.warn(
+            `\t[Data] failed to write data.json for ${originalFileName}: ` +
+              `${err instanceof Error ? err.message : String(err)}`,
+          );
+        }
       }
 
       if (!force) {
@@ -290,7 +427,7 @@ async function processImageFolder(folderArg, options = {}) {
           console.log(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
           if (!usedMapOnly) {
             await saveFileMap(mapRoot);
-            console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
+            console.log("\t[Data] saved data.json");
           }
           skippedComplete++;
           continue;
@@ -302,7 +439,7 @@ async function processImageFolder(folderArg, options = {}) {
       console.log(`\t[Conversion] -> ${path.basename(outputPath)}`);
       await writeWebpFromRasterFile(imagePath, outputPath);
       await saveFileMap(mapRoot);
-      console.log(`\t[Map] saved ${DEFAULT_FILE_MAP_PATH}`);
+      console.log("\t[Data] saved data.json");
       if (usedMapOnly) {
         convertedFromMap++;
       } else {
@@ -320,22 +457,24 @@ async function processImageFolder(folderArg, options = {}) {
     : "";
 
   console.log(
-    `\nDone: ${converted} new (LLM), ${convertedFromMap} from map only, ${skippedComplete} skipped (complete), ${failed} failed.${timingSuffix}`,
+    `\nDone (convert / ${mode}): ${converted} new (LLM), ${convertedFromMap} from map only, ${skippedComplete} skipped (complete), ${failed} failed.${timingSuffix}`,
   );
-  console.log(`Map: ${DEFAULT_FILE_MAP_PATH}`);
+  console.log("Store: per-folder data.json");
 }
 
 async function main() {
-  const { folder, force, model, clearCache } = parseArgs(process.argv.slice(2));
-  await processImageFolder(folder ?? "data/enemies/2026-05-22/test", {
-    force,
-    model,
-    clearCache,
-  });
+  const { folder, mode, force, model, clearCache } = parseArgs(process.argv.slice(2));
+  if (!folder) {
+    console.error(
+      "Usage: node scripts/llm/convert.mjs <folder> [--mode crops|screenshot] [--force] [--model <id>] [--clear-cache|--no-clear-cache]",
+    );
+    process.exit(1);
+  }
+  console.log(`Mode: ${mode}`);
+  await processImageFolder(folder, { mode, force, model, clearCache });
 }
 
 main().catch((err) => {
-  console.error(err);
+  console.error(err instanceof Error ? err.message : err);
   process.exit(1);
 });
-

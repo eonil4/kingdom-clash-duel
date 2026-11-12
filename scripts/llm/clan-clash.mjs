@@ -6,9 +6,13 @@
  *   pnpm llm:clan_clash:full -- <dir>
  *   node scripts/llm/clan-clash.mjs [<dir>] [--full] [--recursive <n>] [--force] [--model <id>] [--script convert|convert2]
  *
+ * `--script` selects the extraction mode of the shared `convert.mjs` entry point:
+ *   convert  → --mode screenshot
+ *   convert2 → --mode crops (default)
+ *
  * When <dir> is omitted, uses the latest data/clan_clash/YYYY-MM-DD folder.
  *
- * `--recursive <n>` / `--recursive=<n>` (default 0 = root only):
+ * `--recursive <n>` / `--recursive=<n>` (default 0 = root only; bare `--recursive` means 1):
  *   Run convert (and optional wiki) on the root and every subdirectory down to depth n,
  *   even if the root folder has no images. Depth 0 = root only; 1 = root + children; etc.
  *
@@ -25,7 +29,6 @@ import path from "path";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { readFileSync } from "fs";
-import { loadExistingFileMap, collectEnemyEntriesFromMap, DEFAULT_FILE_MAP_PATH, WORKSPACE_ROOT } from "../file-map-enemies.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -74,7 +77,7 @@ function parseFullFlag(raw) {
  * @returns {number}
  */
 function parseRecursiveLevel(raw) {
-  if (raw === undefined || raw === null || raw === "") return 1;
+  if (raw === undefined || raw === null || raw === "") return 0;
   const n = Number(raw);
   if (!Number.isInteger(n) || n < 0) {
     throw new Error(
@@ -144,17 +147,23 @@ function parseArgs(argv) {
   return args;
 }
 
-function resolveConvertScript(name) {
-  const file =
+/**
+ * `--script convert` → full-screenshot extraction, `--script convert2` → crop extraction.
+ * Both run the single `convert.mjs` entry point.
+ * @param {string} name
+ * @returns {{ script: string, mode: "crops" | "screenshot" }}
+ */
+function resolveConvertTarget(name) {
+  const mode =
     name === "convert" || name === "convert.js"
-      ? "convert.js"
+      ? "screenshot"
       : name === "convert2" || name === "convert2.js"
-        ? "convert2.js"
+        ? "crops"
         : null;
-  if (!file) {
+  if (!mode) {
     throw new Error(`Unknown --script ${JSON.stringify(name)} (use convert or convert2)`);
   }
-  return path.join(__dirname, file);
+  return { script: path.join(__dirname, "convert.mjs"), mode };
 }
 
 /**
@@ -292,57 +301,6 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
     console.log(`\n[Wiki] skip clan (missing or empty): ${clanDir}`);
   }
 
-  // After processing clan folder, also populate/overwrite data.json from fileMap.json entries
-  async function syncFileMapToClanData(folderAbs) {
-    try {
-      const mapRoot = await loadExistingFileMap(DEFAULT_FILE_MAP_PATH);
-      const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
-
-      // Load existing clan data.json if present (keep entries produced by formation/enemy extractors)
-      const outPath = path.join(folderAbs, "data.json");
-      let existing = {};
-      try {
-        const raw = await fs.promises.readFile(outPath, "utf8");
-        existing = JSON.parse(raw);
-      } catch {
-        existing = {};
-      }
-
-      let added = 0;
-      for (const r of rows) {
-        if (path.resolve(r.folderAbs) !== path.resolve(folderAbs)) continue;
-        const key = r.canonicalKey;
-        const entry = r.entry || {};
-        // Only add from fileMap when key is not already present in existing data.json
-        if (!Object.prototype.hasOwnProperty.call(existing, key)) {
-          existing[key] = {
-            name: entry.name || null,
-            nameLatin: entry.nameLatin || null,
-            power: entry.power || null,
-            language: entry.language || null,
-            originalFileName: r.originalFileName || null,
-          };
-          added++;
-        }
-      }
-
-      if (added > 0) {
-        await fs.promises.writeFile(outPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
-        console.log(`[Data] merged ${added} fileMap entries into ${outPath}`);
-      } else {
-        console.log("[Data] no new fileMap entries to merge for clan folder");
-      }
-    } catch (err) {
-      console.warn(`[Data] failed to sync fileMap -> data.json: ${err instanceof Error ? err.message : err}`);
-    }
-  }
-
-  try {
-    await syncFileMapToClanData(clanDir);
-  } catch {
-    // ignore
-  }
-
   const clanDuelsDir = path.join(dirAbs, "clan_duels");
   if (dirExistsAndNotEmpty(clanDuelsDir)) {
     code = await runWikiTable(clanDuelsDir, ["jpg", "png"], logFd);
@@ -358,6 +316,7 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
  * @param {object} options
  * @param {string} options.folderAbs
  * @param {string} options.convertScript
+ * @param {"crops" | "screenshot"} options.convertMode
  * @param {string[]} options.passthrough
  * @param {boolean} options.full
  * @param {NodeJS.ProcessEnv} options.env
@@ -366,6 +325,7 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
 async function processFolder({
   folderAbs,
   convertScript,
+  convertMode,
   passthrough,
   full,
   env,
@@ -374,7 +334,7 @@ async function processFolder({
   const rel = path.relative(ROOT, folderAbs).replace(/\\/g, "/") || folderAbs;
   console.log(`\n======== ${rel} ========`);
 
-  const convertCode = await runNode([convertScript, folderAbs, ...passthrough], {
+  const convertCode = await runNode([convertScript, folderAbs, "--mode", convertMode, ...passthrough], {
     env,
     logFd,
   });
@@ -406,7 +366,7 @@ async function main() {
     process.exit(1);
   }
 
-  const convertScript = resolveConvertScript(script);
+  const { script: convertScript, mode: convertMode } = resolveConvertTarget(script);
   const logPath = path.join(dirAbs, "log.txt");
   const resolvedModel = model ?? process.env.LLM_MODEL ?? loadDefaultModel();
   const folders = collectDirsUpToDepth(dirAbs, recursive);
@@ -417,7 +377,7 @@ async function main() {
   const childEnv = { ...process.env, LLM_MODEL: resolvedModel };
 
   console.log(
-    `LLM convert: script=${path.basename(convertScript)} model=${resolvedModel} full=${full} recursive=${recursive}`,
+    `LLM convert: script=convert.mjs mode=${convertMode} model=${resolvedModel} full=${full} recursive=${recursive}`,
   );
   console.log(`Root: ${dirAbs}`);
   console.log(`Folders (${folders.length}):`);
@@ -431,6 +391,7 @@ async function main() {
     const code = await processFolder({
       folderAbs,
       convertScript,
+      convertMode,
       passthrough,
       full,
       env: childEnv,
