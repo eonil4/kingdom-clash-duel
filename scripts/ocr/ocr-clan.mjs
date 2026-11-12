@@ -6,49 +6,17 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { toMapKey, WORKSPACE_ROOT } from "../enemy-records.mjs";
+import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
 import { loadLlmConfig } from "../llm/vision-client.mjs";
-
-const SUPPORTED_IMAGE_EXTENSIONS = new Set([
-  ".png",
-  ".jpg",
-  ".jpeg",
-  ".bmp",
-  ".tif",
-  ".tiff",
-  ".gif",
-]);
-
-function parseArgs(argv) {
-  const args = {
-    limit: undefined,
-    only: undefined,
-    debugCrops: false,
-    forceOcr: false,
-  };
-  for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    if (a === "--" || a === undefined) continue;
-    if (a === "--limit") args.limit = Number(argv[++i]);
-    else if (a === "--only") args.only = argv[++i];
-    else if (a === "--debug-crops") args.debugCrops = true;
-    else if (a === "--force-ocr") args.forceOcr = true;
-  }
-  return args;
-}
-
-async function collectImageFilesInFolderOnly(dir) {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const files = [];
-  for (const entry of entries) {
-    if (!entry.isFile()) continue;
-    if (!SUPPORTED_IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) continue;
-    files.push(path.join(dir, entry.name));
-  }
-  return files;
-}
+import {
+  SUPPORTED_IMAGE_EXTENSIONS,
+  collectImageFiles,
+  groupFilesByFolder,
+  parseScanArgs,
+  selectTargets,
+} from "./scan-cli.mjs";
 
 /**
  * `data/clan_clash/<date>/clan` folders that exist and contain images.
@@ -84,22 +52,15 @@ async function discoverClanFolders() {
 }
 
 async function main() {
-  const { limit, only, debugCrops, forceOcr } = parseArgs(process.argv.slice(2));
+  const { limit, only, debugCrops, forceOcr } = parseScanArgs(process.argv.slice(2));
 
   const clanFolders = await discoverClanFolders();
   let all = [];
   for (const folder of clanFolders) {
-    all.push(...(await collectImageFilesInFolderOnly(folder.absPath)));
+    all.push(...(await collectImageFiles(folder.absPath)));
   }
 
-  const targets = only
-    ? all.filter(
-        (p) =>
-          path.basename(p) === only ||
-          toMapKey(p) === only ||
-          toMapKey(p).endsWith(`/${only}`),
-      )
-    : all.slice(0, typeof limit === "number" ? limit : all.length);
+  const targets = selectTargets(all, { only, limit });
 
   console.log(`Scanning workspace: ${WORKSPACE_ROOT}`);
   console.log(
@@ -109,16 +70,8 @@ async function main() {
   );
   console.log(`Images: ${targets.length}`);
 
-  /** @type {Map<string, string[]>} */
-  const filesByFolder = new Map();
-  for (const filePath of targets) {
-    const folderAbs = path.dirname(filePath);
-    if (!filesByFolder.has(folderAbs)) filesByFolder.set(folderAbs, []);
-    filesByFolder.get(folderAbs).push(filePath);
-  }
-
   const stats = await runExtraction({
-    folders: [...filesByFolder].map(([absPath, files]) => ({ absPath, files })),
+    folders: groupFilesByFolder(targets),
     strategy: createOcrStrategy({
       force: forceOcr,
       debugCrops,

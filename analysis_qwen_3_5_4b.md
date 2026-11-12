@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 36 source files, 7,059 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 37 source files, 7,044 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -34,15 +34,15 @@ C. Armies → deterministic battle report
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
 | `llm/` | 11 | 2,358 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 7 | 1,204 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `ocr/` | 8 | 1,189 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `scan-cli.mjs` (shared scan helpers), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 917 | `run-battle.mjs` |
 | `pipeline/` | 5 | 765 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
 | root | 5 | 1,588 | `enemy-records.mjs`, `roi.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **15 files / 117 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **16 files / 124 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -226,6 +226,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR derives its four name variants from the configured name ROI (expansions/insets) and its power crop from the configured power ROI; the old fractional boxes remain only as fallbacks when config has no enemy ROI. Test-folder name-refinement crops no longer inherit full-screen ROIs.
 - Verified with `tests/unit/roi.test.ts` (11 cases: scaling, clamping, config resolution, crop dimensions) and an OCR run on a 900×1600 capture that produced the identical record as before the change (`power 8104472`).
 - Post-audit follow-up: `ocr-clan.mjs` runs the same strategy over `<date>/clan` folders with the `clan` ROIs and a `tight` name-box style (no arena refinement/full-image fallback). It works end-to-end (power from the filename, name from OCR) but formation fonts are stylised, so it stays best-effort next to `llm-formation-extract.mjs`. `pnpm ocr:clan`.
+- The two OCR scan CLIs now share `ocr/scan-cli.mjs` (arg parsing, image collection, `--only`/`--limit` selection, folder grouping), covered by `tests/unit/ocr-scan.test.ts`.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -283,7 +284,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 117/117)
+pnpm test:unit                       # must stay green (currently 124/124)
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
 node -e "import('./scripts/ocr/ocr-enemy.mjs')"             # P0-1: no ERR_MODULE_NOT_FOUND
