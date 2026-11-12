@@ -94,7 +94,7 @@ export async function loadConfiguredFolders(workspaceRoot = WORKSPACE_ROOT) {
   return out.sort((a, b) => a.relPath.localeCompare(b.relPath));
 }
 
-export async function loadExistingFileMap() {
+export async function loadEnemyMap() {
   // Build the nested map from per-folder data.json files under data/clan_clash
   const root = {};
   async function walkDirs(dir) {
@@ -276,7 +276,7 @@ export function sortMapNode(node) {
 }
 
 /** Persist the nested map into per-folder data.json files (merges with existing entries). */
-export async function saveFileMap(mapRoot) {
+export async function saveEnemyMap(mapRoot) {
   // Convert nested mapRoot into per-folder data.json files (merge with existing)
   const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
   const group = {};

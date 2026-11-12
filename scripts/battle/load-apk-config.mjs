@@ -3,7 +3,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { WORKSPACE_ROOT } from "../file-map-enemies.mjs";
+import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 
 export const DEFAULT_CONFIG_DIR = path.join(
   WORKSPACE_ROOT,

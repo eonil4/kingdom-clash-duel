@@ -45,7 +45,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
-import { WORKSPACE_ROOT } from "./file-map-enemies.mjs";
+import { WORKSPACE_ROOT } from "./enemy-records.mjs";
 
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";

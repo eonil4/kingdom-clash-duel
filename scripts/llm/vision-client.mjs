@@ -14,7 +14,7 @@ import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
 } from "./clear-lm-prediction-cache.mjs";
-import { formatPowerForFilename } from "../file-map-enemies.mjs";
+import { formatPowerForFilename } from "../enemy-records.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 
 const __filename = fileURLToPath(import.meta.url);

@@ -9,11 +9,11 @@ import { writeWebpFromRasterFile } from "../llm/enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   findEnemyRowBySourceRel,
-  loadExistingFileMap,
-  saveFileMap,
+  loadEnemyMap,
+  saveEnemyMap,
   setNestedMapping,
   toMapKey,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
 import { assertStrategy } from "./extraction-strategy.mjs";
 import {
   buildStoredRecord,
@@ -97,7 +97,7 @@ export async function runExtraction({
     writtenDataFiles: new Set(),
   };
 
-  const mapRoot = map ? await loadExistingFileMap() : undefined;
+  const mapRoot = map ? await loadEnemyMap() : undefined;
   /** @type {Map<string, Record<string, object>>} */
   const entriesByFolder = new Map();
   /**
@@ -117,7 +117,7 @@ export async function runExtraction({
       for (const filePath of files) {
         const basename = path.basename(filePath);
         try {
-          // With `map`, saveFileMap may add keys mid-run; re-read to avoid dropping them.
+          // With `map`, saveEnemyMap may add keys mid-run; re-read to avoid dropping them.
           const entries = cacheEntries
             ? await entriesFor(folderAbs)
             : await readFolderEntries(folderAbs);
@@ -206,7 +206,7 @@ export async function runExtraction({
               await fs.access(outputPath);
               console.log(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
               if (!usedMapOnly && map) {
-                await saveFileMap(mapRoot);
+                await saveEnemyMap(mapRoot);
                 console.log("\t[Data] saved data.json");
               }
               stats.skipped++;
@@ -219,7 +219,7 @@ export async function runExtraction({
           console.log(`\t[Conversion] -> ${path.basename(outputPath)}`);
           await writeWebpFromRasterFile(filePath, outputPath);
           if (map) {
-            await saveFileMap(mapRoot);
+            await saveEnemyMap(mapRoot);
             console.log("\t[Data] saved data.json");
           }
           if (usedMapOnly) {

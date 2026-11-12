@@ -6,7 +6,7 @@
  */
 import path from "path";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
-import { canonicalEnemyMapKey } from "../file-map-enemies.mjs";
+import { canonicalEnemyMapKey } from "../enemy-records.mjs";
 import {
   extractEnemyDataFromNamePowerCrops,
   extractEnemyDataFromScreenshot,

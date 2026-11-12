@@ -5,7 +5,7 @@ import {
   canonicalEnemyMapKey,
   collectEnemyEntriesFromMap,
   findEnemyRowBySourceRel,
-} from "../../scripts/file-map-enemies.mjs";
+} from "../../scripts/enemy-records.mjs";
 
 const WS = path.join(os.tmpdir(), "kc-ws");
 const SOURCE = path.join(WS, "data", "clan_clash", "2026-11-06", "Screenshot_x.png");

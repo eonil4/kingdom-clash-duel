@@ -4,7 +4,7 @@ import {
   createLlmStrategy,
   resolveLlmMode,
 } from "../../scripts/pipeline/llm-strategy.mjs";
-import { WORKSPACE_ROOT } from "../../scripts/file-map-enemies.mjs";
+import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
 const folderAbs = path.join(WORKSPACE_ROOT, "data", "clan_clash", "2026-11-06");
 const filePath = path.join(folderAbs, "Screenshot_x.png");

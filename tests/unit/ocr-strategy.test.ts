@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import path from "path";
 import { createOcrStrategy } from "../../scripts/pipeline/ocr-strategy.mjs";
-import { WORKSPACE_ROOT } from "../../scripts/file-map-enemies.mjs";
+import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
 function fakeWorker() {
   return {

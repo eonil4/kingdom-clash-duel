@@ -10,9 +10,9 @@ import path from "path";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import {
   collectEnemyEntriesFromMap,
-  loadExistingFileMap,
+  loadEnemyMap,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
 
 function parseArgs(argv) {
   const args = { dryRun: false };
@@ -25,7 +25,7 @@ function parseArgs(argv) {
 
 async function main() {
   const { dryRun } = parseArgs(process.argv.slice(2));
-  const mapRoot = await loadExistingFileMap();
+  const mapRoot = await loadEnemyMap();
   const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
 
   let planned = 0;

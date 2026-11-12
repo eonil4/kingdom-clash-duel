@@ -9,9 +9,9 @@ import {
   formatPowerForFilename,
   isFileEntryNode,
   loadConfiguredFoldersFromRoot,
-  loadExistingFileMap,
+  loadEnemyMap,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -131,7 +131,7 @@ async function main() {
   } else {
     console.log("Skipping OCR (--skip-ocr / RENAME_SKIP_OCR=1).");
   }
-  const mapRoot = await loadExistingFileMap();
+  const mapRoot = await loadEnemyMap();
   const configuredFolders = await loadConfiguredFoldersFromRoot(mapRoot);
   const imageFiles = [];
   for (const folder of configuredFolders) {

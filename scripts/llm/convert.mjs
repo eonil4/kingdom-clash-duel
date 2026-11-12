@@ -20,7 +20,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { WORKSPACE_ROOT } from "../file-map-enemies.mjs";
+import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
 import { createLlmStrategy, resolveLlmMode } from "../pipeline/llm-strategy.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";

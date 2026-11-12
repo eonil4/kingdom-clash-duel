@@ -37,10 +37,10 @@ C. Armies → deterministic battle report
 | `ocr/` | 6 | 968 | `ocr-enemy.mjs` (discovery CLI), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 917 | `run-battle.mjs` |
 | `pipeline/` | 5 | 734 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 4 | 1,480 | `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `file-map-enemies.mjs` |
+| root | 4 | 1,480 | `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `enemy-records.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, map helpers, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
 Current test status: **14 files / 101 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
@@ -122,7 +122,7 @@ fs.writeFileSync(p, JSON.stringify(j, null, 2) + '\\n', 'utf8');
 ### P1-1 Three conversion entry points, ~90 % identical — **resolved**
 | File | LOC | Extraction used | Retries | Writes `data.json` | Unique behavior |
 |---|---:|---|---|---|---|
-| `llm/convert.js` | 341 | full screenshot | yes (3×, backoff) | no (only via `saveFileMap`) | none |
+| `llm/convert.js` | 341 | full screenshot | yes (3×, backoff) | no (only via `saveEnemyMap`) | none |
 | `llm/convert2.js` | 371 | name/power crops | yes | yes | default target of `clan-clash.mjs` |
 | `llm/convert-with-llm.js` | 142 | full screenshot | **no** | no | warns when `power < 444` (line 78) |
 
@@ -168,13 +168,13 @@ They contradicted the code's own comments at `llm-enemy-extract.mjs:749` / `llm-
 ### P2-1 Two sources of truth for the file map — **resolved**
 **Status: fixed 2026-11-12** — per-folder `data.json` is the only store:
 
-- `file-map-enemies.mjs` no longer defines `DEFAULT_FILE_MAP_PATH`; `loadExistingFileMap()` rebuilds from `data/clan_clash/**/data.json` only (honouring each entry's `canonical`/`originalFileName`), and `saveFileMap()` writes just the per-folder `data.json`. The legacy read/unlink pair is gone; merges preserve existing `processingMs`/`extractedAt`/`language` instead of clobbering them.
+- `enemy-records.mjs` no longer defines `DEFAULT_FILE_MAP_PATH`; `loadEnemyMap()` rebuilds from `data/clan_clash/**/data.json` only (honouring each entry's `canonical`/`originalFileName`), and `saveEnemyMap()` writes just the per-folder `data.json`. The legacy read/unlink pair is gone; merges preserve existing `processingMs`/`extractedAt`/`language` instead of clobbering them.
 - OCR no longer reads or writes a master map: `loadConfiguredFolders()` discovers `data/clan_clash/YYYY-MM-DD` folders that contain images — the same set the old global map registered, excluding `clan/`, `victory/`, `duel/`, `catapults/`. Results are written into the source folder's own `data.json`, and skip-if-recorded checks that file. `--out` was removed.
 - Deleted `sync-filemap-to-clan.mjs` and the embedded clan `data.json` merge in `clan-clash.mjs`; removed `convert-to-webp.mjs --map`.
-- Fixed `resolveDiskOriginalFromMapParts`: keys shaped `<folder>/<name>/<canonical>.webp` now resolve to the real folder for webp-keyed entries too; previously clan entries produced file-path "folders" and `saveFileMap` failed silently.
+- Fixed `resolveDiskOriginalFromMapParts`: keys shaped `<folder>/<name>/<canonical>.webp` now resolve to the real folder for webp-keyed entries too; previously clan entries produced file-path "folders" and `saveEnemyMap` failed silently.
 - Verified against the live data: 133 rows rebuild, arena + clan entries resolve to the correct folder/original, 0 rows with file-path folders; an end-to-end OCR run in a throwaway `data/clan_clash/2099-01-01` folder wrote its `data.json`, and a re-run skipped the recorded image.
 
-Historical note: `loadExistingFileMap()` used to prefer `data/clan_clash/fileMap.json` and fall back to `data/clan_clash/**/data.json`, while `saveFileMap()` unlinked the legacy file after every image — so the two stores could never stay in sync.
+Historical note: `loadEnemyMap()` used to prefer `data/clan_clash/fileMap.json` and fall back to `data/clan_clash/**/data.json`, while `saveEnemyMap()` unlinked the legacy file after every image — so the two stores could never stay in sync.
 
 ### P2-2 Timeout defaults disagree with `config/llm.json` — **resolved**
 **Status: fixed 2026-11-12** — `convert.mjs` now imports `loadLlmConfig()` and `REQUEST_TIMEOUT_MS` from `vision-client.mjs`, so the per-attempt base defaults to `config.requestTimeoutMs` (60 s) instead of a hardcoded 600 s, and attempt N is documented as `N × base`. The stale "(default 10 min)" comment and the duplicate config read are gone.
@@ -185,7 +185,7 @@ Historical values: `config/llm.json` 60 000; `vision-client.mjs` fallback 180 00
 `data.json` writes are swallowed with empty catches, so partial runs look successful:
 
 - ~~`convert2.js:312-314`~~ — `convert.mjs` now warns on a failed record write
-- ~~`file-map-enemies.mjs:296-298` (`saveFileMap`)~~ — now warns (P2-1)
+- ~~`enemy-records.mjs` (`saveEnemyMap`)~~ — now warns (P2-1)
 - ~~`clan-clash.mjs:342-344` (fileMap → clan `data.json` merge)~~ — merge removed (P2-1)
 
 Remaining gap: none — `reconcileDataJsonWithCanonicalFiles` now moves stale originals to `_orphaned/` and warns on failure (see P2-4).
@@ -233,7 +233,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 ### P4-1 Coverage gaps — **resolved**
 **Status: fixed 2026-11-12** — 36 new tests across four files:
 1. `tests/unit/llm-normalizers.test.ts` (13) — enemy/clan normalisers, power-string parsing, name requirements vs `UNKNOWN`, invalid power bounds, fenced/prose JSON extraction. Pins two behaviours worth knowing: `"-5"` parses to `5` (non-digits stripped) and clan results never carry `englishName`.
-2. `tests/unit/file-map-helpers.test.ts` (7) — power padding, token dedup, percent-escaping, `<folder>/<source>/<canonical>.webp` resolution for png- and webp-keyed entries, source-path lookup with backslash normalisation.
+2. `tests/unit/enemy-records.test.ts` (7) — power padding, token dedup, percent-escaping, `<folder>/<source>/<canonical>.webp` resolution for png- and webp-keyed entries, source-path lookup with backslash normalisation.
 3. `tests/unit/battle-outcome.test.ts` (5) — full `decideOutcome` ordering (wipe → living count → HP → damage → tie) including `timeout_*` reasons.
 4. `tests/unit/duel-matrix.test.ts` (11) — `splitVsParts` separator rules plus `parseArgs` defaults, positionals/extensions, `--compact`/`--no-slider`/`--single-table`/`--no-frame` toggles, view/separator/sort, scale/dimension parsing and invalid-value rejection.
 
@@ -251,8 +251,8 @@ To make these importable, `decideOutcome`, `splitVsParts` and `parseArgs` are no
 ### P4-3 Doc/comment drift — **resolved**
 **Status: fixed 2026-11-12**
 - `parseRecursiveLevel()` now defaults to 0, matching the documented "default 0 = root only"; bare `--recursive` still means 1 and the header says so. Verified via the CLI: `--recursive=` → `recursive=0`, `--recursive` → `recursive=1`.
-- `rename-enemies.mjs` dropped its private `formatPower` and uses `formatPowerForFilename` from `file-map-enemies.mjs`.
-- `WORKSPACE_ROOT` is now defined once (`file-map-enemies.mjs`); `battle/load-apk-config.mjs`, `generate-wiki-table.mjs` and `generate-wiki-matrix.mjs` import it.
+- `rename-enemies.mjs` dropped its private `formatPower` and uses `formatPowerForFilename` from `enemy-records.mjs`.
+- `WORKSPACE_ROOT` is now defined once (`enemy-records.mjs`); `battle/load-apk-config.mjs`, `generate-wiki-table.mjs` and `generate-wiki-matrix.mjs` import it.
 - The stale `convert.js`/`convert2.js` names in the `clan-clash.mjs` header were removed.
 
 Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` header claim (file deleted, P1-1).
@@ -267,7 +267,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 | 2 | Delete `update-package-script.mjs` and the 3 uncollected test files; re-add the conversion test in `tests/unit/` | root, `llm/test/`, `tests/unit/` | Stops rot from spreading — **done** |
 | 3 | Merge `convert.js` + `convert2.js` into `convert.mjs --mode`; delete `convert-with-llm.js` after porting the `<444` warning | `llm/` | Removes ~600 duplicated lines, one third of `llm/` — **done** (854 → 492 lines) |
 | 4 | Extract `llm/vision-client.mjs`; collapse both extractors to descriptors; delete the 4 dead functions | `llm/` | Second-largest duplication — **done** (1,457 → 1,062 lines) |
-| 5 | Make per-folder `data.json` the only store; remove `DEFAULT_FILE_MAP_PATH` read/unlink and hardcoded default folders | `file-map-enemies.mjs`, `llm/*`, `clan-clash.mjs` | Removes a whole class of "why did it re-run the LLM" bugs — **done** |
+| 5 | Make per-folder `data.json` the only store; remove `DEFAULT_FILE_MAP_PATH` read/unlink and hardcoded default folders | `enemy-records.mjs`, `llm/*`, `clan-clash.mjs` | Removes a whole class of "why did it re-run the LLM" bugs — **done** |
 | 6 | De-duplicate the OCR recognition pass; export the scorers; add P4-1 tests | `ocr/`, `tests/unit/` | Direct latency win + regression net for heuristics — **done** (21 → 18 recognitions, +20 tests) |
 | 7 | Reconcile timeouts in `config/llm.json` vs code, fix battle-report config fields, escape wiki-table names, add `.ocr-debug/` to `.gitignore` | misc | Small, independent — **done** (plus the Windows cache-clear script and package/README drift) |
 | 8 | Replace the duplicated OCR/LLM orchestration with an `ExtractionStrategy` + shared runner; add `convert --extractor llm\|ocr` | `pipeline/`, `ocr/`, `llm/` | One loop, testable strategies — **done** (CLIs 274+481 → 146+195; pipeline 734) |

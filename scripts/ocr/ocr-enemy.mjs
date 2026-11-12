@@ -11,7 +11,7 @@ import {
   loadConfiguredFolders,
   toMapKey,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
 

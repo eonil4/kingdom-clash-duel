@@ -11,7 +11,7 @@ import { createWorker } from "tesseract.js";
 import {
   canonicalEnemyMapKey,
   parsePowerFromOriginalBasename,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
 import { convertTextToLatinArtifacts } from "../ocr/convert-text-to-latin.mjs";
 import { parseLatinNameHintFromEncodedOriginalBasename } from "../ocr/enemy-filename-tokens.mjs";
 import {

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { WORKSPACE_ROOT } from './file-map-enemies.mjs';
+import { WORKSPACE_ROOT } from './enemy-records.mjs';
 
 // 1. Get the target folder path from command line arguments
 const targetFolderArg = process.argv[2];
