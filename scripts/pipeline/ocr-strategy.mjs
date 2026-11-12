@@ -26,12 +26,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * @param {unknown} config
+ * @param {"enemy" | "clan"} targetKey
  * @param {"name" | "power"} kind
  */
-function configuredRoi(config, kind) {
+function configuredRoi(config, targetKey, kind) {
   const userPrompt = /** @type {any} */ (config)?.userPrompt;
   if (!userPrompt || typeof userPrompt !== "object") return undefined;
-  const cfg = resolveCropConfig(userPrompt, "enemy", kind, { prompt: "", roi: null });
+  const cfg = resolveCropConfig(userPrompt, targetKey, kind, { prompt: "", roi: null });
   const roi = /** @type {any} */ (cfg)?.roi;
   const x = Number(roi?.x);
   const y = Number(roi?.y);
@@ -47,6 +48,7 @@ function configuredRoi(config, kind) {
  * @param {{
  *   force?: boolean,
  *   debugCrops?: boolean,
+ *   targetKey?: "enemy" | "clan",
  *   config?: object,
  *   deps?: Partial<{
  *     createWorker: typeof createWorker,
@@ -63,9 +65,13 @@ function configuredRoi(config, kind) {
 export function createOcrStrategy({
   force = false,
   debugCrops = false,
+  targetKey = "enemy",
   config = {},
   deps = {},
 } = {}) {
+  if (targetKey !== "enemy" && targetKey !== "clan") {
+    throw new Error(`Unknown OCR target ${JSON.stringify(targetKey)} (use enemy or clan)`);
+  }
   const {
     createWorker: makeWorker = createWorker,
     ocrName = ocrEnemyName,
@@ -79,8 +85,10 @@ export function createOcrStrategy({
 
   const debugDir = debugCrops ? path.join(__dirname, ".ocr-debug") : undefined;
   const reference = resolveRoiReference(config);
-  const nameRoi = configuredRoi(config, "name");
-  const powerRoi = configuredRoi(config, "power");
+  const nameRoi = configuredRoi(config, targetKey, "name");
+  const powerRoi = configuredRoi(config, targetKey, "power");
+  // Arena-only: sibling crop refinement and percent-encoded filename hints.
+  const applyArenaRefinement = targetKey === "enemy";
 
   /** @type {any} */
   let worker;
@@ -147,15 +155,18 @@ export function createOcrStrategy({
         baseLabel: basename,
         nameRoi,
         reference,
+        nameBoxStyle: applyArenaRefinement ? "arena" : "tight",
       });
-      name = await refineName(
-        path.dirname(filePath),
-        filePath,
-        name,
-        worker,
-        workerRus,
-        { debugDir, baseLabel: basename },
-      );
+      if (applyArenaRefinement) {
+        name = await refineName(
+          path.dirname(filePath),
+          filePath,
+          name,
+          worker,
+          workerRus,
+          { debugDir, baseLabel: basename },
+        );
+      }
 
       const latinHintRaw = parseHint(basename);
       const latinHint =

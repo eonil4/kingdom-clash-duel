@@ -230,7 +230,7 @@ const LATIN_WHITELIST =
 /**
  * @param {import("tesseract.js").Worker} worker
  * @param {import("tesseract.js").Worker} workerRus
- * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number } }} [options]
+ * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number }, nameBoxStyle?: "arena" | "tight" }} [options]
  * @returns {Promise<string>}
  */
 export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
@@ -239,7 +239,9 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const meta = await sharp(filePath).metadata();
   if (!meta.width || !meta.height) return "";
   const configured = options.nameRoi
-    ? buildNameBoxes(meta, options.nameRoi, options.reference)
+    ? buildNameBoxes(meta, options.nameRoi, options.reference, {
+        style: options.nameBoxStyle ?? "arena",
+      })
     : undefined;
   const nameCrop = configured?.name ?? cropBoxFromPercent(meta, NAME_BOX);
   const nameCropWide = configured?.wide ?? cropBoxFromPercent(meta, NAME_BOX_WIDE);
@@ -391,7 +393,10 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     });
     name = pool[0] ?? name;
   }
-  if (scoreNameCandidate(name) < 4 || isLikelyOcrNoise(name)) {
+  if (
+    options.nameBoxStyle !== "tight" &&
+    (scoreNameCandidate(name) < 4 || isLikelyOcrNoise(name))
+  ) {
     await worker.setParameters({
       tessedit_char_whitelist: LATIN_WHITELIST,
       tessedit_pageseg_mode: "11",

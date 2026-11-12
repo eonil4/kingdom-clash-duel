@@ -158,6 +158,7 @@ describe("createOcrStrategy", () => {
       expect.objectContaining({
         nameRoi: { x: 486, y: 118, width: 290, height: 36 },
         reference: { width: 900, height: 1600 },
+        nameBoxStyle: "arena",
       }),
     );
   });
@@ -172,6 +173,45 @@ describe("createOcrStrategy", () => {
     const nameOptions = deps.ocrName.mock.calls[0][3];
     expect(nameOptions.nameRoi).toBeUndefined();
     expect(nameOptions.reference).toBeUndefined();
+  });
+
+  it("uses clan ROIs and skips arena refinement for targetKey clan", async () => {
+    const { deps } = makeDeps();
+    const config = {
+      roiReference: { width: 900, height: 1600 },
+      userPrompt: {
+        image: {
+          clan: {
+            name: { roi: { x: 498, y: 57, width: 400, height: 48 } },
+            power: { roi: { x: 360, y: 122, width: 180, height: 36 } },
+          },
+        },
+      },
+    };
+    const strategy = createOcrStrategy({ targetKey: "clan", config, deps });
+    await strategy.prepare();
+
+    await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    expect(deps.ocrPower).toHaveBeenCalledWith(filePath, expect.anything(), {
+      powerRoi: { x: 360, y: 122, width: 180, height: 36 },
+      reference: { width: 900, height: 1600 },
+    });
+    expect(deps.ocrName).toHaveBeenCalledWith(
+      filePath,
+      expect.anything(),
+      expect.anything(),
+      expect.objectContaining({
+        nameRoi: { x: 498, y: 57, width: 400, height: 48 },
+        reference: { width: 900, height: 1600 },
+        nameBoxStyle: "tight",
+      }),
+    );
+    expect(deps.refineName).not.toHaveBeenCalled();
+  });
+
+  it("rejects unknown target keys", () => {
+    expect(() => createOcrStrategy({ targetKey: "boss" as never })).toThrow("Unknown OCR target");
   });
 
   it("uses percent-encoded filename hints for the Latin label", async () => {

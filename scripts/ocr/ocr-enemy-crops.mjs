@@ -59,14 +59,18 @@ function growBox(box, fx, fy) {
  * @param {{ width: number, height: number }} meta
  * @param {{ x: number, y: number, width: number, height: number }} roi
  * @param {{ width: number, height: number } | undefined} reference
+ * @param {{ style?: "arena" | "tight" }} [options]
  */
-export function buildNameBoxes(meta, roi, reference) {
+export function buildNameBoxes(meta, roi, reference, { style = "arena" } = {}) {
   const base = scaleRoiToImage(roi, meta, reference);
   if (!base) return undefined;
+  // "tight" (formation screens) avoids pulling neighbouring UI labels into the crops.
+  const wideGrow = style === "tight" ? [0.03, 0.05] : [0.15, 0.3];
+  const textGrow = style === "tight" ? [0.0, 0.02] : [0.03, 0.08];
   return {
     name: clampPixelBox(meta, { left: base.x, top: base.y, width: base.width, height: base.height }),
-    wide: clampPixelBox(meta, growBox(base, 0.15, 0.3)),
-    text: clampPixelBox(meta, growBox(base, 0.03, 0.08)),
+    wide: clampPixelBox(meta, growBox(base, wideGrow[0], wideGrow[1])),
+    text: clampPixelBox(meta, growBox(base, textGrow[0], textGrow[1])),
     textLine: clampPixelBox(meta, {
       left: base.x,
       top: base.y + Math.round(base.height * 0.15),

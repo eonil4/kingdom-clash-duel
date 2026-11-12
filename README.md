@@ -31,10 +31,13 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 
 Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured.
 
+`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members.
+
 | Command | Description |
 |--------|-------------|
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update per-folder `data.json` |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
+| `pnpm ocr:clan` | OCR clan formation screenshots (`<date>/clan`) → per-folder `data.json` |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm ocr:enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm llm:convert:webp` | From map: create `.webp` beside originals if missing |

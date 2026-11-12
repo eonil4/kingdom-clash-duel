@@ -113,6 +113,14 @@ describe("OCR crop boxes from configured ROIs", () => {
     expect((line?.top ?? 0) + (line?.height ?? 0)).toBeLessThanOrEqual(118 + 36);
   });
 
+  it("uses tighter variants for the clan/formation style", () => {
+    const arena = buildNameBoxes(REFERENCE, NAME_ROI, REFERENCE);
+    const tight = buildNameBoxes(REFERENCE, NAME_ROI, REFERENCE, { style: "tight" });
+    expect(tight?.name).toEqual(arena?.name);
+    expect((tight?.wide?.width ?? 0) < (arena?.wide?.width ?? 0)).toBe(true);
+    expect((tight?.wide?.height ?? 0) < (arena?.wide?.height ?? 0)).toBe(true);
+  });
+
   it("scales and clamps to the image", () => {
     expect(buildNameBoxes({ width: 1800, height: 3200 }, NAME_ROI, REFERENCE)?.name).toEqual({
       left: 972,
