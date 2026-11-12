@@ -15,6 +15,7 @@ import {
   shouldClearPredictionCacheBeforeEachCall,
 } from "./clear-lm-prediction-cache.mjs";
 import { formatPowerForFilename } from "../enemy-records.mjs";
+import { resolveCropConfig, resolveRoiReference, scaleRoiToImage } from "../roi.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -209,8 +210,12 @@ export async function cropRoiToPngBuffer(imagePath, roi) {
   if (!meta.width || !meta.height) {
     throw new Error(`Could not read image dimensions: ${imagePath}`);
   }
+  const scaled = scaleRoiToImage(roi, meta, resolveRoiReference(loadLlmConfig()));
+  if (!scaled) {
+    throw new Error(`Invalid ROI: ${JSON.stringify(roi)}`);
+  }
   const box = clampRoi(
-    { left: Math.floor(roi.x), top: Math.floor(roi.y), width: Math.floor(roi.width), height: Math.floor(roi.height) },
+    { left: Math.floor(scaled.x), top: Math.floor(scaled.y), width: Math.floor(scaled.width), height: Math.floor(scaled.height) },
     { width: meta.width, height: meta.height },
   );
   return sharp(imagePath).extract(box).png().toBuffer();
@@ -268,41 +273,6 @@ async function chatVisionWithImages(host, model, systemPrompt, userPrompt, image
 }
 
 /**
- * @param {unknown} raw
- * @param {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }} fallback
- * @returns {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }}
- */
-function normalizeCropConfig(raw, fallback) {
-  if (typeof raw === "string" && raw.trim()) {
-    return { prompt: raw.trim(), roi: { ...fallback.roi } };
-  }
-
-  if (raw && typeof raw === "object" && !Array.isArray(raw)) {
-    const prompt =
-      typeof raw.prompt === "string" && raw.prompt.trim()
-        ? raw.prompt.trim()
-        : fallback.prompt;
-    const roiSrc = raw.roi && typeof raw.roi === "object" ? raw.roi : raw;
-    const x = Number(roiSrc.x);
-    const y = Number(roiSrc.y);
-    const width = Number(roiSrc.width ?? roiSrc.w);
-    const height = Number(roiSrc.height ?? roiSrc.h);
-    const roi =
-      Number.isFinite(x) &&
-      Number.isFinite(y) &&
-      Number.isFinite(width) &&
-      Number.isFinite(height) &&
-      width > 0 &&
-      height > 0
-        ? { x, y, width, height }
-        : { ...fallback.roi };
-    return { prompt, roi };
-  }
-
-  return { prompt: fallback.prompt, roi: { ...fallback.roi } };
-}
-
-/**
  * @param {unknown} userPrompt config.userPrompt
  * @param {string} fallbackPrompt
  * @returns {string}
@@ -319,35 +289,6 @@ export function resolveUserPromptImage(userPrompt, fallbackPrompt) {
     if (typeof image.prompt === "string" && image.prompt.trim()) return image.prompt;
   }
   return fallbackPrompt;
-}
-
-/**
- * @param {unknown} userPrompt config.userPrompt
- * @param {"enemy" | "clan"} targetKey
- * @param {"name" | "power"} kind
- * @param {{ prompt: string, roi: { x: number, y: number, width: number, height: number } }} fallback
- */
-export function resolveCropConfig(userPrompt, targetKey, kind, fallback) {
-  if (!userPrompt || typeof userPrompt !== "object" || Array.isArray(userPrompt)) {
-    return { prompt: fallback.prompt, roi: { ...fallback.roi } };
-  }
-
-  const nested =
-    userPrompt.image &&
-    typeof userPrompt.image === "object" &&
-    !Array.isArray(userPrompt.image) &&
-    userPrompt.image[targetKey] &&
-    typeof userPrompt.image[targetKey] === "object" &&
-    !Array.isArray(userPrompt.image[targetKey])
-      ? userPrompt.image[targetKey][kind]
-      : undefined;
-
-  if (nested !== undefined) {
-    return normalizeCropConfig(nested, fallback);
-  }
-
-  // Legacy dotted keys: "image.enemy.name" / "image.clan.power"
-  return normalizeCropConfig(userPrompt[`image.${targetKey}.${kind}`], fallback);
 }
 
 /**

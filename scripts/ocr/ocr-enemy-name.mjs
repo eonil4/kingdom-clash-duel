@@ -7,6 +7,7 @@ import sharp from "sharp";
 import { createWorker } from "tesseract.js";
 import { fileURLToPath } from "url";
 import {
+  buildNameBoxes,
   cropBoxFromPercent,
   NAME_BOX,
   NAME_BOX_WIDE,
@@ -123,7 +124,7 @@ export async function refineEnemyNameWithTestFolderCrops(
 
     const n = normalizeOpponentDisplayName(
       await ocrEnemyName(cropPath, worker, workerRus, {
-        ...options,
+        debugDir: options.debugDir,
         baseLabel: e.name,
       }),
     );
@@ -229,7 +230,7 @@ const LATIN_WHITELIST =
 /**
  * @param {import("tesseract.js").Worker} worker
  * @param {import("tesseract.js").Worker} workerRus
- * @param {{ debugDir?: string, baseLabel?: string }} [options]
+ * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number } }} [options]
  * @returns {Promise<string>}
  */
 export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
@@ -237,10 +238,14 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const base = baseLabel ?? path.basename(filePath);
   const meta = await sharp(filePath).metadata();
   if (!meta.width || !meta.height) return "";
-  const nameCrop = cropBoxFromPercent(meta, NAME_BOX);
-  const nameCropWide = cropBoxFromPercent(meta, NAME_BOX_WIDE);
-  const nameTextCrop = cropBoxFromPercent(meta, NAME_TEXT_BOX);
-  const nameTextLineCrop = cropBoxFromPercent(meta, NAME_TEXT_LINE_BOX);
+  const configured = options.nameRoi
+    ? buildNameBoxes(meta, options.nameRoi, options.reference)
+    : undefined;
+  const nameCrop = configured?.name ?? cropBoxFromPercent(meta, NAME_BOX);
+  const nameCropWide = configured?.wide ?? cropBoxFromPercent(meta, NAME_BOX_WIDE);
+  const nameTextCrop = configured?.text ?? cropBoxFromPercent(meta, NAME_TEXT_BOX);
+  const nameTextLineCrop =
+    configured?.textLine ?? cropBoxFromPercent(meta, NAME_TEXT_LINE_BOX);
   const nameImg = sharp(filePath).extract(nameCrop);
   const nameImgWide = sharp(filePath).extract(nameCropWide);
   const nameTextImg = sharp(filePath).extract(nameTextCrop);

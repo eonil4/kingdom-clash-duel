@@ -129,6 +129,51 @@ describe("createOcrStrategy", () => {
     expect(outcome.reason).toContain("OCR incomplete");
   });
 
+  it("passes configured enemy ROIs and the reference size to the OCR calls", async () => {
+    const { deps } = makeDeps();
+    const config = {
+      roiReference: { width: 900, height: 1600 },
+      userPrompt: {
+        image: {
+          enemy: {
+            name: { roi: { x: 486, y: 118, width: 290, height: 36 } },
+            power: { roi: { x: 666, y: 234, width: 162, height: 24 } },
+          },
+        },
+      },
+    };
+    const strategy = createOcrStrategy({ config, deps });
+    await strategy.prepare();
+
+    await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    expect(deps.ocrPower).toHaveBeenCalledWith(filePath, expect.anything(), {
+      powerRoi: { x: 666, y: 234, width: 162, height: 24 },
+      reference: { width: 900, height: 1600 },
+    });
+    expect(deps.ocrName).toHaveBeenCalledWith(
+      filePath,
+      expect.anything(),
+      expect.anything(),
+      expect.objectContaining({
+        nameRoi: { x: 486, y: 118, width: 290, height: 36 },
+        reference: { width: 900, height: 1600 },
+      }),
+    );
+  });
+
+  it("uses the fractional fallbacks when config has no enemy ROIs", async () => {
+    const { deps } = makeDeps();
+    const strategy = createOcrStrategy({ config: {}, deps });
+    await strategy.prepare();
+
+    await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    const nameOptions = deps.ocrName.mock.calls[0][3];
+    expect(nameOptions.nameRoi).toBeUndefined();
+    expect(nameOptions.reference).toBeUndefined();
+  });
+
   it("uses percent-encoded filename hints for the Latin label", async () => {
     const { deps } = makeDeps({
       parsePowerFromFilename: vi.fn(() => 1),

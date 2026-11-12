@@ -6,7 +6,12 @@ import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
 import { fileURLToPath } from "url";
-import { cropBoxFromPercent, POWER_BOX, preprocessForOcr } from "./ocr-enemy-crops.mjs";
+import {
+  buildPowerBox,
+  cropBoxFromPercent,
+  POWER_BOX,
+  preprocessForOcr,
+} from "./ocr-enemy-crops.mjs";
 
 function cleanupPower(text) {
   const raw = String(text ?? "");
@@ -36,13 +41,17 @@ function cleanupPower(text) {
 
 /**
  * @param {import("tesseract.js").Worker} worker
+ * @param {{ powerRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number } }} [options]
  * @returns {Promise<number | undefined>}
  */
-export async function ocrEnemyPower(filePath, worker) {
+export async function ocrEnemyPower(filePath, worker, options = {}) {
   const meta = await sharp(filePath).metadata();
   if (!meta.width || !meta.height) return undefined;
 
-  const powerCrop = cropBoxFromPercent(meta, POWER_BOX);
+  const powerCrop =
+    (options.powerRoi
+      ? buildPowerBox(meta, options.powerRoi, options.reference)
+      : undefined) ?? cropBoxFromPercent(meta, POWER_BOX);
   const powerBuf = await preprocessForOcr(sharp(filePath).extract(powerCrop), {
     threshold: 190,
   });

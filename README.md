@@ -29,6 +29,8 @@ Scripts use per-folder **`data.json`** as the only store: `data/clan_clash/YYYY-
 
 Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in the canonical basename (for example `\` → `%5C`).
 
+Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured.
+
 | Command | Description |
 |--------|-------------|
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update per-folder `data.json` |

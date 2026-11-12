@@ -14,6 +14,7 @@ import {
 } from "../enemy-records.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
+import { loadLlmConfig } from "../llm/vision-client.mjs";
 
 const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".png",
@@ -124,7 +125,7 @@ async function main() {
 
   const stats = await runExtraction({
     folders: [...filesByFolder].map(([absPath, files]) => ({ absPath, files })),
-    strategy: createOcrStrategy({ force: forceOcr, debugCrops }),
+    strategy: createOcrStrategy({ force: forceOcr, debugCrops, config: loadLlmConfig() }),
     webp: false,
     map: false,
     recordTiming: false,

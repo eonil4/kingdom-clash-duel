@@ -2,6 +2,7 @@
   "host": "http://127.0.0.1:1234",
   "defaultModel": "qwen/qwen3-vl-8b",
   "requestTimeoutMs": 60000,
+  "roiReference": { "width": 900, "height": 1600 },
   "visionModelHints": ["qwen3-vl"],
   "clearPredictionCacheBeforeRun": true,
   "clearPredictionCacheBeforeEachCall": true,

@@ -14,6 +14,7 @@ import {
 } from "../enemy-records.mjs";
 import { convertTextToLatinArtifacts } from "../ocr/convert-text-to-latin.mjs";
 import { parseLatinNameHintFromEncodedOriginalBasename } from "../ocr/enemy-filename-tokens.mjs";
+import { resolveCropConfig, resolveRoiReference } from "../roi.mjs";
 import {
   normalizeOpponentDisplayName,
   ocrEnemyName,
@@ -24,9 +25,29 @@ import { ocrEnemyPower } from "../ocr/ocr-enemy-power.mjs";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
+ * @param {unknown} config
+ * @param {"name" | "power"} kind
+ */
+function configuredRoi(config, kind) {
+  const userPrompt = /** @type {any} */ (config)?.userPrompt;
+  if (!userPrompt || typeof userPrompt !== "object") return undefined;
+  const cfg = resolveCropConfig(userPrompt, "enemy", kind, { prompt: "", roi: null });
+  const roi = /** @type {any} */ (cfg)?.roi;
+  const x = Number(roi?.x);
+  const y = Number(roi?.y);
+  const width = Number(roi?.width);
+  const height = Number(roi?.height);
+  if (![x, y, width, height].every(Number.isFinite) || width <= 0 || height <= 0) {
+    return undefined;
+  }
+  return { x, y, width, height };
+}
+
+/**
  * @param {{
  *   force?: boolean,
  *   debugCrops?: boolean,
+ *   config?: object,
  *   deps?: Partial<{
  *     createWorker: typeof createWorker,
  *     ocrName: typeof ocrEnemyName,
@@ -39,7 +60,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
  *   }>,
  * }} [options]
  */
-export function createOcrStrategy({ force = false, debugCrops = false, deps = {} } = {}) {
+export function createOcrStrategy({
+  force = false,
+  debugCrops = false,
+  config = {},
+  deps = {},
+} = {}) {
   const {
     createWorker: makeWorker = createWorker,
     ocrName = ocrEnemyName,
@@ -52,6 +78,9 @@ export function createOcrStrategy({ force = false, debugCrops = false, deps = {}
   } = deps;
 
   const debugDir = debugCrops ? path.join(__dirname, ".ocr-debug") : undefined;
+  const reference = resolveRoiReference(config);
+  const nameRoi = configuredRoi(config, "name");
+  const powerRoi = configuredRoi(config, "power");
 
   /** @type {any} */
   let worker;
@@ -101,7 +130,7 @@ export function createOcrStrategy({ force = false, debugCrops = false, deps = {}
 
     async extract({ filePath, basename }) {
       const powerFromFilename = parsePowerFromFilename(basename);
-      const powerOcr = await ocrPower(filePath, worker);
+      const powerOcr = await ocrPower(filePath, worker, { powerRoi, reference });
       const power = powerFromFilename !== undefined ? powerFromFilename : powerOcr;
 
       let warn;
@@ -116,6 +145,8 @@ export function createOcrStrategy({ force = false, debugCrops = false, deps = {}
       let name = await ocrName(filePath, worker, workerRus, {
         debugDir,
         baseLabel: basename,
+        nameRoi,
+        reference,
       });
       name = await refineName(
         path.dirname(filePath),

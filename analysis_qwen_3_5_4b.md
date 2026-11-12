@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 34 source files, 6,732 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 35 source files, 6,893 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -33,16 +33,16 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,416 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 6 | 968 | `ocr-enemy.mjs` (discovery CLI), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `llm/` | 11 | 2,358 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `ocr/` | 6 | 1,049 | `ocr-enemy.mjs` (discovery CLI), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 917 | `run-battle.mjs` |
-| `pipeline/` | 5 | 734 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 4 | 1,480 | `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `enemy-records.mjs` |
+| `pipeline/` | 5 | 765 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
+| root | 5 | 1,588 | `enemy-records.mjs`, `roi.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **14 files / 101 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **15 files / 114 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -220,7 +220,13 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - The `EBUSY`/`EPERM` retry now lives inside `writeWebpFromRasterFile` (`enemy-image-webp.mjs`) and rebuilds the Sharp pipeline per attempt, so `convert.mjs`, `rename-enemies.mjs` and `convert-to-webp.mjs` all benefit.
 - `.ocr-debug/` added to `.gitignore`.
 
-### P3-5 Strong points worth keeping
+### P3-5 OCR ignored the configured ROIs — **resolved**
+**Status: 2026-11-12** — both extraction paths now read the same pixel ROIs from `config/llm.json` (`userPrompt.image.enemy.{name,power}.roi`) and scale them from the new `roiReference` (900×1600) to the actual image:
+- `roi.mjs` centralises reference resolution, pixel scaling and crop-config parsing (nested + legacy dotted keys); `vision-client.cropRoiToPngBuffer` scales LLM crops, so non-reference resolutions work too.
+- OCR derives its four name variants from the configured name ROI (expansions/insets) and its power crop from the configured power ROI; the old fractional boxes remain only as fallbacks when config has no enemy ROI. Test-folder name-refinement crops no longer inherit full-screen ROIs.
+- Verified with `tests/unit/roi.test.ts` (11 cases: scaling, clamping, config resolution, crop dimensions) and an OCR run on a 900×1600 capture that produced the identical record as before the change (`power 8104472`).
+
+### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
 - Up-front response normalisation/validation (`normalizeEnemyExtraction`, `normalizePower...`) — the previous revision claimed this was missing; it exists.
 - Tesseract workers are created once and terminated in `finally` on all three CLIs — no leak (previous revision claimed one).
@@ -275,7 +281,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 101/101)
+pnpm test:unit                       # must stay green (currently 114/114)
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
 node -e "import('./scripts/ocr/ocr-enemy.mjs')"             # P0-1: no ERR_MODULE_NOT_FOUND

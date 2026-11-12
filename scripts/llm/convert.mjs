@@ -164,7 +164,7 @@ async function main() {
           retryBaseDelayMs: RETRY_BASE_DELAY_MS,
           clearCacheBeforeEachCall: clearBeforeEach,
         })
-      : createOcrStrategy({ force });
+      : createOcrStrategy({ force, config: _llmConfig });
 
   const stats = await runExtraction({
     folders: [
