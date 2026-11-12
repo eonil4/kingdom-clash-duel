@@ -44,12 +44,8 @@
  */
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import sharp from "sharp";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const WORKSPACE_ROOT = path.resolve(__dirname, "..");
+import { WORKSPACE_ROOT } from "./file-map-enemies.mjs";
 
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";
@@ -157,6 +153,8 @@ function parseArgs(argv) {
     rowScroll: true,
     /** In row-scroll mode, only show columns that have duels for that attacker */
     compact: false,
+    /** Emit the zoom toolbar + scaling script */
+    slider: true,
     /** Which view(s) to generate: "both" (default), "enemy" / "enemies", or "clan" */
     view: "both",
     extensions: /** @type {string[]} */ ([]),
@@ -256,6 +254,14 @@ function parseArgs(argv) {
     }
     if (a === "--compact") {
       args.compact = true;
+      continue;
+    }
+    if (a === "--slider" || a === "--zoom") {
+      args.slider = true;
+      continue;
+    }
+    if (a === "--no-slider" || a === "--no-zoom") {
+      args.slider = false;
       continue;
     }
     if (a === "--no-compact" || a === "--all-cols") {

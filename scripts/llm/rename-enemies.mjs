@@ -6,9 +6,10 @@ import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   collectEnemyEntriesFromMap,
-  DEFAULT_FILE_MAP_PATH,
+  formatPowerForFilename,
   isFileEntryNode,
   loadConfiguredFoldersFromRoot,
+  loadExistingFileMap,
   WORKSPACE_ROOT,
 } from "../file-map-enemies.mjs";
 
@@ -26,7 +27,6 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".gif",
 ]);
 
-const DEFAULT_MAP_PATH = DEFAULT_FILE_MAP_PATH;
 const OCR_SCRIPT_PATH = path.join(__dirname, "..", "ocr", "ocr-enemy.mjs");
 
 function parseArgs(argv) {
@@ -56,22 +56,6 @@ async function refreshFileMapWithOcr({ only } = {}) {
       else reject(new Error(`OCR step failed with exit code ${code ?? "unknown"}`));
     });
   });
-}
-
-async function loadFileMap() {
-  try {
-    const raw = await fs.readFile(DEFAULT_MAP_PATH, "utf8");
-    const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-    return parsed;
-  } catch {
-    return {};
-  }
-}
-
-function formatPower(power) {
-  const s = String(power).padStart(9, "0");
-  return `${s.slice(0, 3)}_${s.slice(3, 6)}_${s.slice(6, 9)}`;
 }
 
 function delay(ms) {
@@ -147,11 +131,7 @@ async function main() {
   } else {
     console.log("Skipping OCR (--skip-ocr / RENAME_SKIP_OCR=1).");
   }
-  const fileMap = await loadFileMap();
-  const mapRoot =
-    fileMap && typeof fileMap === "object" && !Array.isArray(fileMap)
-      ? fileMap
-      : {};
+  const mapRoot = await loadExistingFileMap();
   const configuredFolders = await loadConfiguredFoldersFromRoot(mapRoot);
   const imageFiles = [];
   for (const folder of configuredFolders) {
@@ -312,10 +292,10 @@ async function main() {
       : null;
 
     const { power, name, nameLatin, nameEnglish } = mapping;
-    const formattedPower = formatPower(power);
+    const formattedPower = formatPowerForFilename(power);
     const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
     const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
-    const newName = latinNameToken?.equals(englishNameToken)
+    const newName = latinNameToken === englishNameToken
       ? `${formattedPower}-${latinNameToken}.webp`
       : `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`;
     const newPath = canonicalKey
