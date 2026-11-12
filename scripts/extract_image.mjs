@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Extract a rectangular region from an image and save it.
  *
@@ -10,6 +9,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
+import { fileURLToPath } from "url";
 import sharp from "sharp";
 
 function usage() {
@@ -22,7 +22,7 @@ function usage() {
  * @param {string} name
  * @param {string} raw
  */
-function parseNonNegInt(name, raw) {
+export function parseNonNegInt(name, raw) {
   const value = Number(raw);
   if (!Number.isFinite(value) || !Number.isInteger(value) || value < 0) {
     console.error(`Invalid ${name}: expected non-negative integer, got ${JSON.stringify(raw)}`);
@@ -34,7 +34,7 @@ function parseNonNegInt(name, raw) {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   if (argv.length < 6) {
     usage();
     process.exit(1);
@@ -94,7 +94,11 @@ async function main() {
   console.log(`  -> ${outputAbs}`);
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
+}

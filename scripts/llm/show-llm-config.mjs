@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -12,11 +11,11 @@ const CONFIG_PATH = path.join(ROOT, "config", "llm.json");
 const ENV_EXAMPLE = path.join(ROOT, ".env.local.example");
 const ENV_LOCAL = path.join(ROOT, ".env.local");
 
-function formatSource(val, src) {
+export function formatSource(val, src) {
   return { value: val ?? null, source: src };
 }
 
-async function loadConfig() {
+export async function loadConfig() {
   try {
     const raw = await fs.readFile(CONFIG_PATH, "utf8");
     return JSON.parse(raw);
@@ -71,8 +70,12 @@ async function main() {
   console.log(`  env local (ignored by git): ${ENV_LOCAL}`);
 }
 
-main().catch((e) => {
-  console.error(e instanceof Error ? e.message : e);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
+if (invokedDirectly) {
+  main().catch((e) => {
+    console.error(e instanceof Error ? e.message : e);
+    process.exit(1);
+  });
+}
 

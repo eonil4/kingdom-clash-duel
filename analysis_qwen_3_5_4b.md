@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 38 source files, 7,093 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 38 source files, 7,100 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -33,16 +33,16 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,365 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `llm/` | 11 | 2,368 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
 | `ocr/` | 8 | 1,189 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `scan-cli.mjs` (shared scan helpers), `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 924 | `run-battle.mjs` |
 | `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 6 | 1,623 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
+| root | 6 | 1,627 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 216 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert/battle/clan-clash CLI args, wiki-table helpers, cache-path expansion, import checker, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, battle outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **22 files / 156 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **24 files / 162 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -232,6 +232,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - `generate-wiki-table.mjs` is importable (guarded `main`), with `parseExtensions`/`escapeHtml`/`resolveFolderPaths` covered by tests. `clan-clash.mjs` exposes `parseArgs`/`parseFullFlag`/`parseRecursiveLevel`/`resolveConvertTarget` for tests.
 - Real bug found by the new cache tests: `resolvePredictionCachePaths` normalised an empty env expansion to `"."` (the cwd) before filtering; empty paths are now dropped before normalisation, so `clearLmPredictionCache` can never be handed the working directory.
 - Post-audit CI: `.github/workflows/ci.yml` runs frozen install + unit tests + `check:imports` on every push/PR; `packageManager` is pinned to `pnpm@12.15.0` and `scripts/check-imports.mjs` (with tests) makes the mechanical import check part of `pnpm run ci`.
+- Remaining CLI parsers covered: `extract_image` (coordinate validation via mocked `process.exit`) and `show-llm-config` (`formatSource`, real config load). Both CLIs guard `main()` and lost their shebangs so tests can import them.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -289,7 +290,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 156/156)
+pnpm test:unit                       # must stay green (currently 162/162)
 pnpm check:imports                   # all relative specifiers resolve
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
 node --check scripts/ocr/ocr-enemy.mjs 2>/dev/null || true   # ESM: use import
