@@ -1,6 +1,62 @@
 {
     "Logs": [
         {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 2,
+            "Success": true,
+            "Timestamp": "20261112T012655"
+        },
+        {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 0,
+            "Success": true,
+            "Timestamp": "20261112T012517"
+        },
+        {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 2,
+            "Success": true,
+            "Timestamp": "20261112T012016"
+        },
+        {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 0,
+            "Success": true,
+            "Timestamp": "20261112T011835"
+        },
+        {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 2,
+            "Success": true,
+            "Timestamp": "20261111T202453"
+        },
+        {
+            "Activity": "KC - boss - dragon",
+            "Source": "BlueStacks App Player",
+            "Status": 0,
+            "Success": true,
+            "Timestamp": "20261111T202313"
+        },
+        {
+            "Activity": "BlueStacks App Player",
+            "Source": "BlueStacks App Player",
+            "Status": 0,
+            "Success": true,
+            "Timestamp": "20261111T201808"
+        },
+        {
+            "Activity": "BlueStacks App Player",
+            "Source": "BlueStacks App Player",
+            "Status": 1,
+            "Success": true,
+            "Timestamp": "20261111T201741"
+        },
+        {
             "Activity": "KC - boss - dragon (demo)",
             "Source": "BlueStacks App Player",
             "Status": 2,
@@ -643,62 +699,6 @@
             "Status": 1,
             "Success": true,
             "Timestamp": "20261105T190041"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 0,
-            "Success": true,
-            "Timestamp": "20261105T185943"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 3,
-            "Success": true,
-            "Timestamp": "20261105T185935"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 0,
-            "Success": true,
-            "Timestamp": "20261105T185921"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 3,
-            "Success": true,
-            "Timestamp": "20261105T185912"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 0,
-            "Success": true,
-            "Timestamp": "20261105T185849"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 3,
-            "Success": true,
-            "Timestamp": "20261105T185842"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 0,
-            "Success": true,
-            "Timestamp": "20261105T185805"
-        },
-        {
-            "Activity": "KC - recruit",
-            "Source": "BlueStacks App Player",
-            "Status": 3,
-            "Success": true,
-            "Timestamp": "20261105T185758"
         }
     ]
 }

@@ -3,7 +3,7 @@
     "Macros": [
         {
             "Acceleration": 1,
-            "CreationTime": "20260525T133623",
+            "CreationTime": "20261111T195540",
             "DoNotShowWindowOnFinish": false,
             "LoopDuration": 0,
             "LoopInterval": 0,
@@ -80,49 +80,17 @@
             "RestartPlayerAfterMinutes": 60,
             "Shortcut": "",
             "StopOnHomeScreen": false
-        },
-        {
-            "Acceleration": 1,
-            "CreationTime": "20261111T195210",
-            "DoNotShowWindowOnFinish": false,
-            "LoopDuration": 0,
-            "LoopInterval": 0,
-            "LoopIterations": 1,
-            "LoopType": "TillLoopNumber",
-            "MergeConfigurations": [
-            ],
-            "Name": "75.57M",
-            "RestartPlayer": false,
-            "RestartPlayerAfterMinutes": 60,
-            "Shortcut": "",
-            "StopOnHomeScreen": false
-        },
-        {
-            "Acceleration": 1,
-            "CreationTime": "20261111T195540",
-            "DoNotShowWindowOnFinish": false,
-            "LoopDuration": 0,
-            "LoopInterval": 0,
-            "LoopIterations": 1,
-            "LoopType": "TillLoopNumber",
-            "MergeConfigurations": [
-            ],
-            "Name": "75.56M",
-            "RestartPlayer": false,
-            "RestartPlayerAfterMinutes": 60,
-            "Shortcut": "",
-            "StopOnHomeScreen": false
         }
     ],
-    "NextMacroId": 28,
+    "NextMacroId": 29,
     "Organization": [
         {
-            "ID": 4,
+            "ID": 7,
             "IsFolder": false,
             "IsOpen": false,
             "IsVisible": true,
             "Name": "KC - boss - dragon",
-            "Order": 8,
+            "Order": -1,
             "ParentFolder": -1
         },
         {
@@ -131,7 +99,7 @@
             "IsOpen": false,
             "IsVisible": true,
             "Name": "KC - boss - dragon (demo)",
-            "Order": 1,
+            "Order": 3,
             "ParentFolder": -1
         },
         {
@@ -140,7 +108,7 @@
             "IsOpen": false,
             "IsVisible": true,
             "Name": "KC - boss - kraken",
-            "Order": 2,
+            "Order": 4,
             "ParentFolder": -1
         },
         {
@@ -149,7 +117,7 @@
             "IsOpen": false,
             "IsVisible": true,
             "Name": "KC - recruit",
-            "Order": 6,
+            "Order": 8,
             "ParentFolder": -1
         },
         {
@@ -158,25 +126,7 @@
             "IsOpen": false,
             "IsVisible": true,
             "Name": "KC - fusion",
-            "Order": 7,
-            "ParentFolder": -1
-        },
-        {
-            "ID": 6,
-            "IsFolder": false,
-            "IsOpen": false,
-            "IsVisible": true,
-            "Name": "75.57M",
-            "Order": -1,
-            "ParentFolder": -1
-        },
-        {
-            "ID": 7,
-            "IsFolder": false,
-            "IsOpen": false,
-            "IsVisible": true,
-            "Name": "75.56M",
-            "Order": -1,
+            "Order": 9,
             "ParentFolder": -1
         }
     ],

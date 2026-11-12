@@ -1,4 +1,7 @@
 {
+    "Acceleration": 1,
+    "CreationTime": "20260523T153426",
+    "DoNotShowWindowOnFinish": false,
     "Events": [
         {
             "Delta": 0,
@@ -1813,5 +1816,16 @@
             "X": 44.41999816894531,
             "Y": 72.54000091552734
         }
-    ]
+    ],
+    "LoopDuration": 0,
+    "LoopInterval": 0,
+    "LoopIterations": 1,
+    "LoopType": "TillLoopNumber",
+    "MacroSchemaVersion": 3,
+    "MergeConfigurations": [
+    ],
+    "RestartPlayer": false,
+    "RestartPlayerAfterMinutes": 60,
+    "Shortcut": "",
+    "StopOnHomeScreen": false
 }
