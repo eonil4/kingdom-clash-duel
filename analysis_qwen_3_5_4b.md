@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 44 source files, 8,643 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 46 source files, 8,738 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -42,7 +42,7 @@ C. Armies → deterministic battle report
 
 Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, atomic JSON writes, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **41 files / 358 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **42 files / 360 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -237,6 +237,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - Quality/NFR batch (see `analysis_quality_nfr.md` §7): atomic `data.json` writes (`atomic-json.mjs`, temp+rename with EBUSY retry) in every writer; `loadEnemyMap` skips and warns once per folder for invalid/placeholder entries and accepts an injectable workspace root; the runner skips `strategy.prepare()` for empty runs (0.22 s instead of spawning tesseract workers), defers `saveEnemyMap` to once per run instead of per file, and uses a prebuilt source→row index for O(1) lookups; shared `isMain()` (`cli.mjs`) replaced 15 duplicated guards; tunables live in `constants.mjs`. Measured: clan eval unchanged (92.4% similarity, 54.5% OCR-only, 11/12 exact), convert OCR smoke persists once per run with no `.tmp` leftovers.
 - OCR speed trim: dropped the redundant `raw` preprocessing passes (7 of 24 recognitions); single-image OCR 7.4 s → 4.9 s (−34%). Labelled eval: name exact unchanged 11/12, overall similarity 92.4% → 91.7% (only the known small-caps sample moved), power 12/12.
 - Parallel name/power OCR: the strategy creates a third `eng` worker for power and runs it in `Promise.all` with the name pass (a tesseract worker is not concurrency-safe). Instrumented eval: power 76–80 ms/image vs ~1.65–1.7 s for the name pass, so per-image wall time equals the name pass and the power pass leaves the critical path (~4–5% faster, +1 worker's memory). Eval accuracy unchanged (11/12 exact, 91.7%, power 12/12).
+- Arena OCR has a labelled evaluation harness now: shared metrics/run helpers moved to `ocr/ocr-eval.mjs`, with `pnpm eval:arena-ocr` over a 12-sample fixture whose labels are the Latin tokens in existing canonical `.webp` names (pseudo-labels). Baseline: **0/12 name exact, 40.2% similarity, power 10/12** — the harness confirms arena name extraction is the weak spot and gives a regression metric for future tuning. `arena-eval.test.ts` guards the fixture and runner.
 - OCR recognition is table-driven: `NAME_RECOGNITION_GROUPS` holds 4 groups / 16 variants (`crop`, `width`, `threshold`, `worker`, `psm`, `whitelist`) with a cached buffer per crop/threshold and one group runner; the arena early exit reads the first group's results and the Latin-only repair group is gated to tight boxes. Arena A/B on 10 real screenshots is byte-identical and the labelled clan eval is unchanged; the table is asserted by two tests.
 - Lowest-covered CLIs are now testable and covered at helper level: `cleanupPower` (power parsing), `isFullScreenshotForOcr`, `discoverClanFolders(workspaceRoot)`, `convert-to-webp.parseArgs`, and rename-enemies' `parseArgs`/map navigation/`buildTargetBasename` are exported; `convert-to-webp` and `rename-enemies` gained `isMain()` guards. `buildTargetBasename` also fixes a trailing-dash basename when an entry has no English token. Coverage: 56.8% → 59.7% statements, 61.2% → 64.0% functions (ocr-clan 0→51%, ocr-enemy 0→34%, convert-to-webp 0→29%, rename-enemies 0→31%, ocr-enemy-power 20→49%); 4 new test files, +19 tests.
 - Silent fallbacks are now diagnosable: `logOnce(level, key, …)` dedupes diagnostics per key; unreadable/unparseable `data.json` warns once per folder (store read and map merge), skipped configured folders log once at `debug`. Only expected cases (missing file on a new folder, logical-only map segments) stay silent.
@@ -308,7 +309,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 358/358)
+pnpm test:unit                       # must stay green (currently 360/360)
 pnpm test:coverage                   # V8 coverage + thresholds
 pnpm check:imports                   # relative specifiers resolve in scripts/ and tests/
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report

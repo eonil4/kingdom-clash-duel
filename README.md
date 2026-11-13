@@ -36,7 +36,7 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 
 Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured. Formation OCR also reads `ocr.clanNameCorrections` (wrong leading clan tag → replacement) from the same file; the built-in table applies when it is absent.
 
-`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 11/12, and 54.5% name similarity on the two OCR-only samples (the remaining miss is a small-caps name with an inline icon).
+`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 11/12, and 54.5% name similarity on the two OCR-only samples (the remaining miss is a small-caps name with an inline icon). Arena screenshots have their own fixture (`tests/fixtures/arena-ocr/labels.json`, pseudo-labels from earlier canonical filenames) and evaluator (`pnpm eval:arena-ocr`): the baseline is 0/12 name exact, 40.2% similarity, power 10/12 — the arena name path is the known weak spot and is kept behind `llm-enemy-extract.mjs` for production runs.
 
 OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent. Name recognition uses two workers (`eng+rus`, `rus`); power recognition runs on a third digits-only `eng` worker concurrently with the name pass (three live workers during a run). On arena screenshots a confident, tag-shaped first pass skips the remaining text-area OCR variants and keeps its phrase; clan (`tight`) runs the full sequence including the Latin repair pass.
 
@@ -48,6 +48,7 @@ Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
 | `pnpm ocr:clan` | OCR clan formation screenshots (`<date>/clan`) → per-folder `data.json` |
 | `pnpm eval:clan-ocr` | Report clan OCR accuracy against the labelled fixture |
+| `pnpm eval:arena-ocr` | Report arena OCR accuracy against the labelled fixture |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm ocr:enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm llm:convert:webp` | From map: create `.webp` beside originals if missing |
