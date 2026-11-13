@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Usage:
  *   pnpm llm:clan_clash

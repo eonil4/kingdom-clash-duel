@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Clan Clash headless battle simulator (APK config tables).
  *

@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import path from "path";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
 import { isMain } from "../cli.mjs";
