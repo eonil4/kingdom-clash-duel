@@ -151,8 +151,14 @@ describe("stripLeadingClippedToken", () => {
     expect(stripLeadingClippedToken("1 MAG")).toBe("MAG");
   });
 
-  it("drops a short lowercase fragment before a capitalised name", () => {
+  it("drops a lowercase fragment before the real name", () => {
     expect(stripLeadingClippedToken("an HuN")).toBe("HuN");
+    expect(stripLeadingClippedToken("clan HuN")).toBe("HuN");
+  });
+
+  it("keeps mixed-case first tokens such as misread names intact", () => {
+    expect(stripLeadingClippedToken("AulN | TOLDI")).toBe("AulN | TOLDI");
+    expect(stripLeadingClippedToken("AulN] || TOLD")).toBe("AulN] || TOLD");
   });
 
   it("keeps plausible names intact", () => {

@@ -256,8 +256,8 @@ export function stripLeadingClippedToken(text) {
   if (!m) return s;
   const [, first, rest] = m;
   const single = /^[\p{L}\d]$/u.test(first);
-  const shortLower = /^[\p{Ll}]{2}$/u.test(first) && /^[\p{Lu}]/u.test(rest);
-  return single || shortLower ? rest : s;
+  const lowercase = /^\p{Ll}+$/u.test(first);
+  return single || lowercase ? rest : s;
 }
 
 /**
