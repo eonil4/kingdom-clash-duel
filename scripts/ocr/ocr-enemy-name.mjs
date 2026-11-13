@@ -87,7 +87,9 @@ export function arenaCandidatePenalty(name) {
     const shortTag = /^[\p{Lu}]{2}$/u.test(token);
     if (letters > 0 && letters <= 2 && tokens.length > 1 && !shortTag) penalty += 8;
     if (/[\p{sc=Cyrillic}]/u.test(token) && /[A-Za-z]/.test(token)) penalty += 12;
-    if (index === 0 && letters === 0 && !token.includes("[")) penalty += 15;
+    if (index === 0 && letters === 0 && !token.includes("[")) penalty += 25;
+    // A digit-led Cyrillic token (e.g. "5ата\К") is an OCR artefact, not a name.
+    if (index === 0 && /^\d/.test(token) && /[\p{sc=Cyrillic}]/u.test(token)) penalty += 40;
   });
   return penalty;
 }
@@ -388,6 +390,28 @@ export function stripUnbalancedTagNoise(text) {
  * (e.g. an opponent-level icon read as "|", "\\" or "_").
  * @param {string} text
  */
+/**
+ * Strip repeated single-letter/lowercase fragments in front of the name
+ * (e.g. the "У я" of "У я Горький").
+ * @param {string} text
+ */
+export function stripLeadingClippedTokens(text) {
+  let current = cleanupNamePhrase(String(text ?? ""));
+  for (let i = 0; i < 4; i++) {
+    const match = current.match(/^(\S+)\s+(.+)$/u);
+    if (!match) break;
+    const [, first, rest] = match;
+    const single = /^[\p{L}\d]$/u.test(first);
+    const lowercase = /^\p{Ll}+$/u.test(first);
+    // Repeated fragments are single characters ("У я Горький"). A lowercase word
+    // is stripped only before an uppercase name ("hd Myasnik"), not before a
+    // lowercase word ("фил army" keeps its prefix).
+    if (!single && !(lowercase && /^\p{Lu}/u.test(rest))) break;
+    current = rest;
+  }
+  return current;
+}
+
 export function stripEdgeTagSeparators(text) {
   return String(text)
     .replace(/^[\s|\\_-]+/u, "")
@@ -589,7 +613,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const phraseCleanup =
     options.nameBoxStyle === "tight"
       ? cleanupNamePhrase
-      : (text) => stripEdgeTagSeparators(stripLeadingClippedToken(cleanupNamePhrase(text)));
+      : (text) => stripEdgeTagSeparators(stripLeadingClippedTokens(cleanupNamePhrase(text)));
   const candidates = [
     cleanupName(res.nameNeutral.data.text),
     cleanupName(res.nameThreshold.data.text),
@@ -634,18 +658,53 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
         /[\p{sc=Cyrillic}]/u.test(c) &&
         c.split(/\s+/).filter(Boolean).length >= 2,
     );
-    const pool =
-      mixedScriptOrSep.length > 0
-        ? mixedScriptOrSep
-        : cyrLineCandidates.length > 0
-          ? cyrLineCandidates
-          : uniq;
+    // Clean single-token Cyrillic names ("Мясник", "Павел", "ЮРЧИКЗР") compete with
+    // mixed-script lines; before this they were excluded by the line-only tiers.
+    const cyrTokenCandidates = uniq.filter(
+      (c) =>
+        /[\p{sc=Cyrillic}]/u.test(c) &&
+        c.split(/\s+/).filter(Boolean).length === 1 &&
+        (c.match(/\p{L}/gu) ?? []).length >= 3,
+    );
+    // Lowercase Latin words ("army", "fil") are valid reads and should compete
+    // with the Cyrillic tiers instead of being excluded by them.
+    const latinLowerCandidates = uniq.filter(
+      (c) => /^[a-z][a-z ]*$/u.test(c) && scoreNamePhrase(c) >= 4,
+    );
+    let pool =
+      mixedScriptOrSep.length > 0 ||
+      cyrLineCandidates.length > 0 ||
+      cyrTokenCandidates.length > 0 ||
+      latinLowerCandidates.length > 0
+        ? [
+            ...new Set([
+              ...mixedScriptOrSep,
+              ...cyrLineCandidates,
+              ...cyrTokenCandidates,
+              ...latinLowerCandidates,
+            ]),
+          ]
+        : uniq;
+    if (pool.length > 0 && pool.every((c) => arenaCandidatePenalty(c) > 0)) {
+      // Every tiered candidate is junk-shaped; fall back to clean Latin reads
+      // (e.g. "sigmaZR" competing with "5ата\К").
+      const cleanLatin = uniq.filter(
+        (c) => /[A-Za-z]/.test(c) && arenaCandidatePenalty(c) === 0 && scoreNamePhrase(c) >= 4,
+      );
+      if (cleanLatin.length > 0) pool = cleanLatin;
+    }
     pool.sort((a, b) => {
       const dq =
         arenaNameLineQuality(b) -
         arenaCandidatePenalty(b) -
         (arenaNameLineQuality(a) - arenaCandidatePenalty(a));
       if (dq !== 0) return dq;
+      const ds = scoreNamePhrase(b) - scoreNamePhrase(a);
+      if (ds !== 0) return ds;
+      // On an exact tie prefer a readable Latin candidate over Cyrillic glyph noise.
+      const la = /[A-Za-z]/.test(a) ? 1 : 0;
+      const lb = /[A-Za-z]/.test(b) ? 1 : 0;
+      if (la !== lb) return lb - la;
       const aw = a.split(/\s+/).filter(Boolean).length;
       const bw = b.split(/\s+/).filter(Boolean).length;
       if (aw !== bw) return bw - aw;

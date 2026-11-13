@@ -15,6 +15,7 @@ import {
   scoreNamePhrase,
   stripEdgeTagSeparators,
   stripLeadingClippedToken,
+  stripLeadingClippedTokens,
   stripUnbalancedTagNoise,
 } from "../../ocr-enemy-name.mjs";
 
@@ -241,6 +242,19 @@ describe("NAME_RECOGNITION_GROUPS", () => {
     expect(latin?.onlyWhen).toBe("tight");
     expect(latin?.whitelist).toContain("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     expect(latin?.whitelist).not.toMatch(/[А-Яа-я]/);
+  });
+});
+
+describe("stripLeadingClippedTokens", () => {
+  it("strips repeated single-character fragments", () => {
+    expect(stripLeadingClippedTokens("У я Горький")).toBe("Горький");
+    expect(stripLeadingClippedTokens("n HuN | TOLDI")).toBe("HuN | TOLDI");
+  });
+
+  it("strips a lowercase prefix only before an uppercase name", () => {
+    expect(stripLeadingClippedTokens("hd Myasnik")).toBe("Myasnik");
+    expect(stripLeadingClippedTokens("фил army")).toBe("фил army");
+    expect(stripLeadingClippedTokens("Myasnik")).toBe("Myasnik");
   });
 });
 
