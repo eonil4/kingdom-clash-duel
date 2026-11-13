@@ -261,6 +261,20 @@ export function stripLeadingClippedToken(text) {
 }
 
 /**
+ * Correct a narrow class of stylised-font confusions in a leading clan tag:
+ * the arena/formation font often renders "HuN" as A/S/H + "ulN" when followed by
+ * a tag separator. Only that exact leading shape is rewritten.
+ * @param {string} text
+ */
+export function correctClanNameConfusables(text) {
+  const s = cleanupNamePhrase(String(text ?? ""));
+  if (/^(?:AulN|SulN|HulN|HuIN)(?=\s*[|\\])/u.test(s)) {
+    return s.replace(/^(?:AulN|SulN|HulN|HuIN)/u, "HuN");
+  }
+  return s;
+}
+
+/**
  * Choose a clan/formation name from a Latin-only recognition pass, falling back to
  * the mixed-script result when the Latin pass is not confident enough.
  *
@@ -482,8 +496,8 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     name = pool[0] ?? name;
   }
   if (options.nameBoxStyle === "tight") {
-    name = stripLeadingClippedToken(
-      stripUnbalancedTagNoise(pickClanName(clanLatinResults, name)),
+    name = correctClanNameConfusables(
+      stripLeadingClippedToken(stripUnbalancedTagNoise(pickClanName(clanLatinResults, name))),
     );
   }
 

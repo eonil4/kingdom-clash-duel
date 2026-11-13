@@ -3,6 +3,7 @@ import {
   arenaNameLineQuality,
   cleanupName,
   cleanupNamePhrase,
+  correctClanNameConfusables,
   extractBestPhraseFromRawText,
   isLikelyOcrNoise,
   normalizeOpponentDisplayName,
@@ -165,6 +166,20 @@ describe("stripLeadingClippedToken", () => {
     expect(stripLeadingClippedToken("HuN | TOLDI")).toBe("HuN | TOLDI");
     expect(stripLeadingClippedToken("HuN|Lehel")).toBe("HuN|Lehel");
     expect(stripLeadingClippedToken("A")).toBe("A");
+  });
+});
+
+describe("correctClanNameConfusables", () => {
+  it("restores a misread leading tag before a separator", () => {
+    expect(correctClanNameConfusables("AulN | TOLDI")).toBe("HuN | TOLDI");
+    expect(correctClanNameConfusables("SulN|X")).toBe("HuN|X");
+    expect(correctClanNameConfusables(String.raw`HulN \ MAG`)).toBe(String.raw`HuN \ MAG`);
+  });
+
+  it("leaves correct or unrelated leading tokens alone", () => {
+    expect(correctClanNameConfusables("HuN | TOLDI")).toBe("HuN | TOLDI");
+    expect(correctClanNameConfusables("AulN")).toBe("AulN");
+    expect(correctClanNameConfusables("HulN House")).toBe("HulN House");
   });
 });
 

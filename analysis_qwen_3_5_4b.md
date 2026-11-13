@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 39 source files, 7,462 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 39 source files, 7,497 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -34,7 +34,7 @@ C. Armies → deterministic battle report
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
 | `llm/` | 11 | 2,373 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 9 | 1,467 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `ocr/` | 9 | 1,481 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 924 | `run-battle.mjs` |
 | `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
 | root | 6 | 1,627 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
@@ -42,7 +42,7 @@ C. Armies → deterministic battle report
 
 Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **28 files / 188 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **28 files / 191 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -226,7 +226,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR derives its four name variants from the configured name ROI (expansions/insets) and its power crop from the configured power ROI; the old fractional boxes remain only as fallbacks when config has no enemy ROI. Test-folder name-refinement crops no longer inherit full-screen ROIs.
 - Verified with `tests/unit/roi.test.ts` (11 cases: scaling, clamping, config resolution, crop dimensions) and an OCR run on a 900×1600 capture that produced the identical record as before the change (`power 8104472`).
 - Post-audit follow-up: `ocr-clan.mjs` runs the same strategy over `<date>/clan` folders with the `clan` ROIs and a `tight` name-box style (no arena refinement/full-image fallback). It works end-to-end (power from the filename, name from OCR) but formation fonts are stylised, so it stays best-effort next to `llm-formation-extract.mjs`. `pnpm ocr:clan`.
-- Clan OCR accuracy work: a labelled fixture (`tests/fixtures/clan-ocr/labels.json`, 12 samples labelled by the LLM extractor) and evaluator (`scripts/ocr/eval-clan-ocr.mjs`, `pnpm eval:clan-ocr`) report exact/similarity metrics split by filename-hint vs OCR-only. Tuning added a Latin-whitelist pass with confidence/script picking, clipped-token and unbalanced-bracket cleanup, and tight-box padding. Measured: overall name similarity 88.1% → 90.8%, OCR-only 28.5% → 44.5% (power 12/12 throughout); the remaining miss is a small-caps name with an inline icon, where forcing a Latin read would risk genuine Cyrillic names.
+- Clan OCR accuracy work: a labelled fixture (`tests/fixtures/clan-ocr/labels.json`, 12 samples labelled by the LLM extractor) and evaluator (`scripts/ocr/eval-clan-ocr.mjs`, `pnpm eval:clan-ocr`) report exact/similarity metrics split by filename-hint vs OCR-only. Tuning added a Latin-whitelist pass with confidence/script picking, clipped-token and unbalanced-bracket cleanup, tight-box padding, and a narrow leading-tag confusable correction (`AulN|`/`SulN|`/`HulN|` → `HuN|`) measured against the fixture. Results: overall name similarity 88.1% → 92.4%, OCR-only 28.5% → 54.5%, name exact 11/12, power 12/12; the remaining miss is a small-caps name with an inline icon, where forcing a Latin read would risk genuine Cyrillic names.
 - The two OCR scan CLIs now share `ocr/scan-cli.mjs` (arg parsing, image collection, `--only`/`--limit` selection, folder grouping), covered by `tests/unit/ocr-scan.test.ts`.
 - `convert.mjs` arg handling (`--extractor`, `--mode` aliases, cache toggles) is covered by `tests/unit/convert-args.test.ts`; the CLI now only runs `main()` when invoked directly, and the unused deprecated `resolveOllamaVisionModel` alias was removed.
 - Dead exports removed from `enemy-records.mjs` (`deleteNestedMappingKey`, `getNestedMappingReadonly`, `sortMapNode`) and the internal-only `DATA_ROOT`/`dataJsonPath` are no longer exported. `run-battle.mjs` now guards `main()` and exposes `parseArgs` for tests (also accepting `--seed=`/`--config-dir=`).
@@ -294,7 +294,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 188/188)
+pnpm test:unit                       # must stay green (currently 191/191)
 pnpm check:imports                   # all relative specifiers resolve
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
