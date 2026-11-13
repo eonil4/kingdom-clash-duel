@@ -284,6 +284,39 @@ describe("createOcrStrategy", () => {
     expect(deps.refineName).not.toHaveBeenCalled();
   });
 
+  it("passes configured clan name corrections to the name pass", async () => {
+    const { deps } = makeDeps();
+    const config = {
+      ocr: { clanNameCorrections: { ZzZ: "HuN", "  ": "x", AulN: "  " } },
+    };
+    const strategy = createOcrStrategy({ targetKey: "clan", config, deps });
+    await strategy.prepare();
+
+    await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    expect(deps.ocrName).toHaveBeenCalledWith(
+      filePath,
+      expect.anything(),
+      expect.anything(),
+      expect.objectContaining({ clanNameCorrections: { ZzZ: "HuN" } }),
+    );
+  });
+
+  it("ignores an invalid clan name corrections table", async () => {
+    const { deps } = makeDeps();
+    const strategy = createOcrStrategy({
+      targetKey: "clan",
+      config: { ocr: { clanNameCorrections: ["AulN"] } },
+      deps,
+    });
+    await strategy.prepare();
+
+    await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    const nameOptions = deps.ocrName.mock.calls[0][3];
+    expect(nameOptions).not.toHaveProperty("clanNameCorrections");
+  });
+
   it("rejects unknown target keys", () => {
     expect(() => createOcrStrategy({ targetKey: "boss" as never })).toThrow("Unknown OCR target");
   });

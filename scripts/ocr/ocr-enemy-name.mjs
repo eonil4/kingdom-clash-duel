@@ -5,7 +5,12 @@ import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
-import { CLAN_NAME_PICK, OCR_EARLY_EXIT, OCR_UPSCALE_WIDTHS } from "../constants.mjs";
+import {
+  CLAN_NAME_PICK,
+  DEFAULT_CLAN_NAME_CORRECTIONS,
+  OCR_EARLY_EXIT,
+  OCR_UPSCALE_WIDTHS,
+} from "../constants.mjs";
 import { log } from "../log.mjs";
 import { isMain } from "../cli.mjs";
 import {
@@ -291,15 +296,25 @@ export function stripLeadingClippedToken(text) {
 }
 
 /**
- * Correct a narrow class of stylised-font confusions in a leading clan tag:
- * the arena/formation font often renders "HuN" as A/S/H + "ulN" when followed by
- * a tag separator. Only that exact leading shape is rewritten.
+ * Correct stylised-font confusions in a leading clan tag: the arena/formation font
+ * often renders "HuN" as A/S/H + "ulN" when followed by a tag separator. Only the
+ * leading token is rewritten, and only when a separator follows it.
  * @param {string} text
+ * @param {Record<string, string>} [corrections] wrong leading token -> replacement
  */
-export function correctClanNameConfusables(text) {
+export function correctClanNameConfusables(
+  text,
+  corrections = DEFAULT_CLAN_NAME_CORRECTIONS,
+) {
   const s = cleanupNamePhrase(String(text ?? ""));
-  if (/^(?:AulN|SulN|HulN|HuIN)(?=\s*[|\\])/u.test(s)) {
-    return s.replace(/^(?:AulN|SulN|HulN|HuIN)/u, "HuN");
+  for (const [wrong, right] of Object.entries(corrections ?? {})) {
+    if (!wrong || typeof right !== "string") continue;
+    const replacement = right.trim();
+    if (!replacement) continue;
+    if (!s.startsWith(wrong)) continue;
+    const rest = s.slice(wrong.length);
+    if (!/^\s*[|\\]/u.test(rest)) continue;
+    return `${replacement}${rest}`;
   }
   return s;
 }
@@ -343,7 +358,7 @@ export function pickClanName(candidates, fallbackName) {
 /**
  * @param {import("tesseract.js").Worker} worker
  * @param {import("tesseract.js").Worker} workerRus
- * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number }, nameBoxStyle?: "arena" | "tight" }} [options]
+ * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number }, nameBoxStyle?: "arena" | "tight", clanNameCorrections?: Record<string, string> }} [options]
  * @returns {Promise<string>}
  */
 export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
@@ -533,6 +548,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   if (options.nameBoxStyle === "tight") {
     name = correctClanNameConfusables(
       stripLeadingClippedToken(stripUnbalancedTagNoise(pickClanName(clanLatinResults, name))),
+      options.clanNameCorrections,
     );
   }
 

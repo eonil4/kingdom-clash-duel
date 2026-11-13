@@ -34,9 +34,8 @@ Five writers truncate-then-write, so a crash/power loss mid-write corrupts a fol
 
 **Fix:** one helper `writeJsonAtomic(path, value)` (`writeFile` to `path.tmp-<pid>` then `rename`) used by all four. Low risk, high value; `.tmp` leftover is harmless and can be ignored.
 
-### 2.2 Dataset-specific correction inside the library (MEDIUM)
-`ocr/ocr-enemy-name.mjs:269-273` hardcodes `AulN|/SulN|/HulN| → HuN|`. It is measured and tested, but it encodes one clan's tag in generic code.
-**Fix:** move the table to `config/llm.json` (e.g. `ocr.clanNameCorrections: { "AulN|": "HuN|", … }`) and keep the function table-driven with a built-in default.
+### 2.2 Dataset-specific correction inside the library (MEDIUM) — **resolved**
+`correctClanNameConfusables(text, corrections)` now iterates a leading-token table instead of a hard-coded regex; the measured entries live in `DEFAULT_CLAN_NAME_CORRECTIONS` (`constants.mjs`) and can be overridden via `ocr.clanNameCorrections` in `config/llm.json` (the strategy validates/trims entries and falls back to the default when the section is absent or invalid). Behaviour and the labelled eval are unchanged.
 
 ### 2.3 Magic numbers spread across strategies (MEDIUM)
 Thresholds and sizes are inline and undocumented in one place: `warnBelowPower = 444` (`llm-strategy.mjs:113`), picker cut-offs `>= 20` / `>= 80` / `letters >= 4` (`ocr-enemy-name.mjs:303-306`), OCR upscale widths 1800/2000/2200/2400 (`:336-361`), tight-box growth `[0.03,0.05]` (`ocr-enemy-crops.mjs:76`), splash factor `0.35` (`combat-engine.mjs:144`), outcome multiplier `0.35` (`clash-score.mjs:23`).
@@ -158,8 +157,9 @@ The first batch from §5 is implemented on `refactor`:
 | 12 | Parallel name/power OCR (§3.1) | **done** | third `eng` worker runs `ocrEnemyPower` concurrently with the name pass; `dispose()` covers all three (also on partial `prepare()` failure); `tests/unit/ocr-strategy.test.ts` asserts the distinct worker, real overlap, and teardown. Measured power 76–80 ms/image vs ~1.7 s name pass → wall time equals the name pass (−~80 ms/image, +1 worker) |
 | 13 | Early exit on a strong first pass (§3.1) | **done** | `isStrongFirstPassResult` (tag shape, ≥60 confidence, no HUD islands) keeps the normalized phrase via `stripEdgeTagSeparators` and skips the 12 text-area variants + fallback on arena images; clan keeps the full pass for the Latin repair. A/B 30 real screenshots: 3 names fixed/cleaned, 0 regressions; triggering images 3.4 s → 0.86 s, 10-image sample −12%; `ocr-name-heuristics.test.ts` +4 */
 | 14 | LLM total retry budget (§3.2) | **done** | `maxTotalMs` in `createLlmStrategy` (config `llmMaxTotalMs`, 120 s) clamps per-attempt timeouts and backoff to the remaining budget, skips attempts once it is spent and throws a budget error with the last failure; exhausted-run worst case ~6 min → 2 min; `llm-strategy.test.ts` +3 with an injected clock |
+| 15 | Config-driven clan-name corrections (§2.2) | **done** | `correctClanNameConfusables(text, corrections)` is table-driven with `DEFAULT_CLAN_NAME_CORRECTIONS`; `ocr.clanNameCorrections` in `config/llm.json` overrides it (strategy trims, drops invalid entries, falls back to the default); eval unchanged; `ocr-name-heuristics.test.ts` +1 and `ocr-strategy.test.ts` +2 |
 
-Current suite: `pnpm test:unit` 31 files / 216 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
+Current suite: `pnpm test:unit` 31 files / 219 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-All items from §5, all four §3.1 options and the §3.2 retry budget are addressed; the `clearPredictionCacheBeforeEachCall` A/B remains a measurement note.
+All items from §5, all four §3.1 options, the §3.2 retry budget and the §2.2 config table are addressed. Still open as notes: the `clearPredictionCacheBeforeEachCall` A/B (§3.2), silent-catch diagnostics (§2.7), a declarative recognition table (§2.9), and targeted tests for the lowest-covered CLIs (§4).
 

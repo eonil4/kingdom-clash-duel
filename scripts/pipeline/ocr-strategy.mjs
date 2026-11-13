@@ -49,6 +49,25 @@ function configuredRoi(config, targetKey, kind) {
 }
 
 /**
+ * Optional `ocr.clanNameCorrections` table (wrong leading token -> replacement).
+ * Invalid entries are dropped; an empty result falls back to the built-in default.
+ * @param {unknown} config
+ * @returns {Record<string, string> | undefined}
+ */
+function configuredClanNameCorrections(config) {
+  const raw = /** @type {any} */ (config)?.ocr?.clanNameCorrections;
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+  /** @type {Record<string, string>} */
+  const corrections = {};
+  for (const [wrong, right] of Object.entries(raw)) {
+    if (typeof wrong !== "string" || !wrong.trim()) continue;
+    if (typeof right !== "string" || !right.trim()) continue;
+    corrections[wrong.trim()] = right.trim();
+  }
+  return Object.keys(corrections).length > 0 ? corrections : undefined;
+}
+
+/**
  * Prefer the traineddata bundled at the repo root so OCR works without network.
  * Falls back to tesseract.js defaults (CDN + its own cache) when files are absent.
  * @param {string} [workspaceRoot]
@@ -114,6 +133,7 @@ export function createOcrStrategy({
   const reference = resolveRoiReference(config);
   const nameRoi = configuredRoi(config, targetKey, "name");
   const powerRoi = configuredRoi(config, targetKey, "power");
+  const clanNameCorrections = configuredClanNameCorrections(config);
   // Arena-only: sibling crop refinement and percent-encoded filename hints.
   const applyArenaRefinement = targetKey === "enemy";
 
@@ -179,6 +199,7 @@ export function createOcrStrategy({
           nameRoi,
           reference,
           nameBoxStyle: applyArenaRefinement ? "arena" : "tight",
+          ...(clanNameCorrections ? { clanNameCorrections } : {}),
         }),
       ]);
       const power = powerFromFilename !== undefined ? powerFromFilename : powerOcr;

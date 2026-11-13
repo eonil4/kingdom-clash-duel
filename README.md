@@ -34,7 +34,7 @@ Scripts use per-folder **`data.json`** as the only store: `data/clan_clash/YYYY-
 
 Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in the canonical basename (for example `\` → `%5C`).
 
-Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured.
+Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured. Formation OCR also reads `ocr.clanNameCorrections` (wrong leading clan tag → replacement) from the same file; the built-in table applies when it is absent.
 
 `pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 11/12, and 54.5% name similarity on the two OCR-only samples (the remaining miss is a small-caps name with an inline icon).
 

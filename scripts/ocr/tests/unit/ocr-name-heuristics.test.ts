@@ -183,6 +183,14 @@ describe("correctClanNameConfusables", () => {
     expect(correctClanNameConfusables("AulN")).toBe("AulN");
     expect(correctClanNameConfusables("HulN House")).toBe("HulN House");
   });
+
+  it("accepts a caller-provided correction table", () => {
+    expect(correctClanNameConfusables("ZzZ|TOLDI", { ZzZ: "HuN" })).toBe("HuN|TOLDI");
+    expect(correctClanNameConfusables("ZzZ \\ TOLDI", { ZzZ: "HuN" })).toBe(String.raw`HuN \ TOLDI`);
+    // The override replaces the built-in table entirely.
+    expect(correctClanNameConfusables("AulN|TOLDI", { ZzZ: "HuN" })).toBe("AulN|TOLDI");
+    expect(correctClanNameConfusables("AulN|TOLDI", { AulN: "  " })).toBe("AulN|TOLDI");
+  });
 });
 
 describe("stripEdgeTagSeparators", () => {

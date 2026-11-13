@@ -25,6 +25,14 @@ export const OCR_UPSCALE_WIDTHS = {
 /** Minimum confidence for the first name pass to skip the remaining OCR variants. */
 export const OCR_EARLY_EXIT = { minConfidence: 60 };
 
+/** Stylised formation font misreads a leading clan tag; config `ocr.clanNameCorrections` overrides. */
+export const DEFAULT_CLAN_NAME_CORRECTIONS = {
+  AulN: "HuN",
+  SulN: "HuN",
+  HulN: "HuN",
+  HuIN: "HuN",
+};
+
 /** Padding/growth for the name crop boxes, per style. */
 export const OCR_NAME_BOX_GROWTH = {
   arena: { wide: [0.15, 0.3], text: [0.03, 0.08] },

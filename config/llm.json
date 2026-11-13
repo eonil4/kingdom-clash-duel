@@ -3,6 +3,14 @@
   "defaultModel": "qwen/qwen3-vl-8b",
   "requestTimeoutMs": 60000,
   "roiReference": { "width": 900, "height": 1600 },
+  "ocr": {
+    "clanNameCorrections": {
+      "AulN": "HuN",
+      "SulN": "HuN",
+      "HulN": "HuN",
+      "HuIN": "HuN"
+    }
+  },
   "visionModelHints": ["qwen3-vl"],
   "clearPredictionCacheBeforeRun": true,
   "clearPredictionCacheBeforeEachCall": true,
