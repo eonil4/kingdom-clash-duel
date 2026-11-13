@@ -49,9 +49,8 @@ Thresholds and sizes are inline and undocumented in one place: `warnBelowPower =
 `loadEnemyMap` trusts every `data.json` field (`Number(entry?.power) || 0`, arbitrary `canonical` strings). A hand-edited or half-written file silently produces placeholder rows; `saveEnemyMap` will then propagate them.
 **Fix:** validate entries on load (skip + warn once per folder) or add a `--strict-data` flag; never persist `power: 0` rows.
 
-### 2.6 `process.exit` inside parsers (LOW)
-`extract_image.mjs` `parseArgs`/`parseNonNegInt` and `run-battle.mjs` `parseArgs` exit the process directly, which forces tests to mock `process.exit`. CLI-only today, but it blocks reuse.
-**Fix:** throw a typed usage error in parsers; the CLI catches it, prints usage, exits 1.
+### 2.6 `process.exit` inside parsers (LOW) — **resolved**
+`extract_image.mjs` and `run-battle.mjs` parsers now throw `UsageError` (`scripts/cli.mjs`); the CLI entry points print the message + usage and exit 1, and tests assert the errors instead of mocking `process.exit`.
 
 ### 2.7 Silent-by-comment catches (LOW-MEDIUM)
 Several catches swallow errors with only a comment (`data-json-store.mjs` read, `enemy-records.mjs` walk/stat paths, `loadConfiguredFolders`). They are intentional fallbacks but invisible.
@@ -153,8 +152,9 @@ The first batch from §5 is implemented on `refactor`:
 | 5 | Shared `isMain()` + constants | **done** | `scripts/cli.mjs` used by 15 CLIs (no `invokedDirectly` left); `scripts/constants.mjs` for 444/picker/widths/growth/battle factors |
 | 6 | OCR variant trim (§3.1) | **done** | removed the redundant `raw` passes (24 → 17 recognitions): single-image OCR 7.4 s → **4.9 s (−34%)**; eval exact unchanged 11/12, overall similarity 92.4 → 91.7, power 12/12 |
 | 7 | Offline tesseract language data (§4 reliability) | **done** | `defaultWorkerOptions()` points tesseract at the bundled `eng/rus.traineddata` (`gzip:false`, temp cache) and falls back to the CDN only when they are missing; eval sample 100%, no download cache created |
+| 8 | Typed usage errors in parsers (§2.6) | **done** | `UsageError` in `cli.mjs`; `extract_image`/`run-battle` parsers throw, CLIs print usage + exit 1; tests assert messages |
 
 Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), typed usage errors (§2.6), logger with levels (§4), coverage tooling and HTML document wrapper (§2.8/§4).
+Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), logger with levels (§4), coverage tooling and HTML document wrapper (§2.8/§4).
 

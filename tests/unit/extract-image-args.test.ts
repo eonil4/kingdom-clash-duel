@@ -1,21 +1,6 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import { parseArgs } from "../../scripts/extract_image.mjs";
-
-function silence() {
-  vi.spyOn(console, "error").mockImplementation(() => {});
-}
-
-function mockExit() {
-  return vi
-    .spyOn(process, "exit")
-    .mockImplementation(((code?: number) => {
-      throw new Error(`exit:${code}`);
-    }) as never);
-}
-
-afterEach(() => {
-  vi.restoreAllMocks();
-});
+import { UsageError } from "../../scripts/cli.mjs";
 
 describe("extract_image parseArgs", () => {
   it("parses input/output and integer coordinates", () => {
@@ -30,24 +15,24 @@ describe("extract_image parseArgs", () => {
     expect(parseArgs(["i", "o", "0", "0", "1", "1"]).left).toBe(0);
   });
 
-  it("rejects negative or non-integer coordinates", () => {
-    silence();
-    mockExit();
-    expect(() => parseArgs(["i", "o", "-1", "0", "1", "1"])).toThrow("exit:1");
-    expect(() => parseArgs(["i", "o", "1.5", "0", "1", "1"])).toThrow("exit:1");
-    expect(() => parseArgs(["i", "o", "a", "0", "1", "1"])).toThrow("exit:1");
+  it("rejects negative or non-integer coordinates with a UsageError", () => {
+    expect(() => parseArgs(["i", "o", "-1", "0", "1", "1"])).toThrow(UsageError);
+    expect(() => parseArgs(["i", "o", "-1", "0", "1", "1"])).toThrow("Invalid position_x");
+    expect(() => parseArgs(["i", "o", "1.5", "0", "1", "1"])).toThrow("Invalid position_x");
+    expect(() => parseArgs(["i", "o", "a", "0", "1", "1"])).toThrow("Invalid position_x");
   });
 
   it("rejects zero width or height", () => {
-    silence();
-    mockExit();
-    expect(() => parseArgs(["i", "o", "0", "0", "0", "1"])).toThrow("exit:1");
-    expect(() => parseArgs(["i", "o", "0", "0", "1", "0"])).toThrow("exit:1");
+    expect(() => parseArgs(["i", "o", "0", "0", "0", "1"])).toThrow(
+      "width and height must be greater than 0",
+    );
+    expect(() => parseArgs(["i", "o", "0", "0", "1", "0"])).toThrow(
+      "width and height must be greater than 0",
+    );
   });
 
-  it("shows usage when arguments are missing", () => {
-    silence();
-    mockExit();
-    expect(() => parseArgs(["only-input"])).toThrow("exit:1");
+  it("requires all six arguments", () => {
+    expect(() => parseArgs(["only-input"])).toThrow(UsageError);
+    expect(() => parseArgs(["only-input"])).toThrow("Missing arguments");
   });
 });

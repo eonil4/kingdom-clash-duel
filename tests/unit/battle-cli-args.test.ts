@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseArgs } from "../../scripts/battle/run-battle.mjs";
+import { UsageError } from "../../scripts/cli.mjs";
 
 describe("run-battle parseArgs", () => {
   it("reads the three positional paths", () => {
@@ -22,5 +23,10 @@ describe("run-battle parseArgs", () => {
 
   it("ignores unknown flags", () => {
     expect(parseArgs(["--verbose", "a", "b", "c"]).attacker).toBe("a");
+  });
+
+  it("throws a UsageError when positionals are missing", () => {
+    expect(() => parseArgs(["only.json"])).toThrow(UsageError);
+    expect(() => parseArgs(["only.json"])).toThrow("Expected <attacker.json>");
   });
 });

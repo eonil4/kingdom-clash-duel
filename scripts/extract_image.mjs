@@ -10,7 +10,7 @@
 import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
-import { isMain } from "./cli.mjs";
+import { UsageError, isMain } from "./cli.mjs";
 
 function usage() {
   console.error(
@@ -25,8 +25,9 @@ function usage() {
 export function parseNonNegInt(name, raw) {
   const value = Number(raw);
   if (!Number.isFinite(value) || !Number.isInteger(value) || value < 0) {
-    console.error(`Invalid ${name}: expected non-negative integer, got ${JSON.stringify(raw)}`);
-    process.exit(1);
+    throw new UsageError(
+      `Invalid ${name}: expected non-negative integer, got ${JSON.stringify(raw)}`,
+    );
   }
   return value;
 }
@@ -36,8 +37,7 @@ export function parseNonNegInt(name, raw) {
  */
 export function parseArgs(argv) {
   if (argv.length < 6) {
-    usage();
-    process.exit(1);
+    throw new UsageError("Missing arguments: <input> <output> <x> <y> <width> <height>");
   }
 
   const [input, output, xRaw, yRaw, wRaw, hRaw] = argv;
@@ -47,8 +47,7 @@ export function parseArgs(argv) {
   const height = parseNonNegInt("height", hRaw);
 
   if (width === 0 || height === 0) {
-    console.error("width and height must be greater than 0");
-    process.exit(1);
+    throw new UsageError("width and height must be greater than 0");
   }
 
   return { input, output, left, top, width, height };
@@ -96,7 +95,12 @@ async function main() {
 
 if (isMain(import.meta.url)) {
   main().catch((err) => {
-    console.error(err instanceof Error ? err.message : err);
+    if (err instanceof UsageError) {
+      console.error(err.message);
+      usage();
+    } else {
+      console.error(err instanceof Error ? err.message : err);
+    }
     process.exit(1);
   });
 }

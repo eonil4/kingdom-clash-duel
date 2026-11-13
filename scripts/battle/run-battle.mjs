@@ -14,7 +14,7 @@ import { loadApkBattleConfig } from "./load-apk-config.mjs";
 import { resolveArmy } from "./army-resolver.mjs";
 import { simulateCombat, summarizeSide, DEFENSE_FACTOR, TICK_DT_SEC } from "./combat-engine.mjs";
 import { estimateClashScore } from "./clash-score.mjs";
-import { isMain } from "../cli.mjs";
+import { UsageError, isMain } from "../cli.mjs";
 
 function usage() {
   console.error(
@@ -41,8 +41,7 @@ export function parseArgs(argv) {
     } else if (!a.startsWith("-")) positionals.push(a);
   }
   if (positionals.length < 3) {
-    usage();
-    process.exit(1);
+    throw new UsageError("Expected <attacker.json> <defender.json> <battleResult.json>.");
   }
   args.attacker = positionals[0];
   args.defender = positionals[1];
@@ -218,7 +217,12 @@ async function main() {
 
 if (isMain(import.meta.url)) {
   main().catch((err) => {
-    console.error(err instanceof Error ? err.message : err);
+    if (err instanceof UsageError) {
+      console.error(err.message);
+      usage();
+    } else {
+      console.error(err instanceof Error ? err.message : err);
+    }
     process.exit(1);
   });
 }
