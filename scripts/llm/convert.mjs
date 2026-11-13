@@ -42,6 +42,11 @@ const RETRY_BASE_DELAY_MS = Number.isFinite(Number(_llmConfig.retryBaseDelayMs))
 const LLM_TIMEOUT_PER_ATTEMPT_MS = Number.isFinite(Number(_llmConfig.llmTimeoutPerAttemptMs))
   ? Number(_llmConfig.llmTimeoutPerAttemptMs)
   : REQUEST_TIMEOUT_MS;
+/** Total retry budget per image; 0 (or absent) keeps the unbounded escalating timeouts. */
+const LLM_MAX_TOTAL_MS =
+  Number.isFinite(Number(_llmConfig.llmMaxTotalMs)) && Number(_llmConfig.llmMaxTotalMs) > 0
+    ? Number(_llmConfig.llmMaxTotalMs)
+    : 0;
 
 /**
  * @param {string | undefined} raw
@@ -163,6 +168,7 @@ async function main() {
           attempts: LLM_MAX_ATTEMPTS,
           timeoutPerAttemptMs: LLM_TIMEOUT_PER_ATTEMPT_MS,
           retryBaseDelayMs: RETRY_BASE_DELAY_MS,
+          maxTotalMs: LLM_MAX_TOTAL_MS,
           clearCacheBeforeEachCall: clearBeforeEach,
         })
       : createOcrStrategy({ force, config: _llmConfig });

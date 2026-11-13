@@ -38,6 +38,7 @@
   },
   "llmMaxAttempts": 3,
   "retryBaseDelayMs": 1500,
-  "llmTimeoutPerAttemptMs": 60000
+  "llmTimeoutPerAttemptMs": 60000,
+  "llmMaxTotalMs": 120000
 }
 

@@ -74,6 +74,68 @@ describe("createLlmStrategy", () => {
     expect(extract).toHaveBeenCalledTimes(2);
   });
 
+  it("caps attempt timeouts by the remaining total budget", async () => {
+    let clock = 0;
+    const timeouts: number[] = [];
+    const extract = vi.fn(async (_file: string, opts: { timeoutMs: number }) => {
+      timeouts.push(opts.timeoutMs);
+      clock += 10_000;
+      throw new Error("nope");
+    });
+    const strategy = strategyFor("screenshot", extract, {
+      attempts: 3,
+      timeoutPerAttemptMs: 20_000,
+      maxTotalMs: 45_000,
+      now: () => clock,
+    });
+
+    await expect(
+      strategy.extract({ filePath, basename, folderAbs, entries: {} }),
+    ).rejects.toThrow("nope");
+    expect(timeouts).toEqual([20_000, 35_000, 25_000]);
+  });
+
+  it("stops with a budget error once retries exceed the total budget", async () => {
+    let clock = 0;
+    const extract = vi.fn(async () => {
+      clock += 30_000;
+      throw new Error("nope");
+    });
+    const strategy = strategyFor("screenshot", extract, {
+      attempts: 3,
+      timeoutPerAttemptMs: 20_000,
+      maxTotalMs: 45_000,
+      now: () => clock,
+    });
+
+    await expect(
+      strategy.extract({ filePath, basename, folderAbs, entries: {} }),
+    ).rejects.toThrow("budget of 45.0s exhausted after 2 attempt(s): nope");
+    expect(extract).toHaveBeenCalledTimes(2);
+  });
+
+  it("caps the retry delay to the remaining budget", async () => {
+    const delays: number[] = [];
+    const extract = vi.fn(async () => {
+      throw new Error("nope");
+    });
+    const strategy = strategyFor("screenshot", extract, {
+      attempts: 2,
+      timeoutPerAttemptMs: 20_000,
+      retryBaseDelayMs: 5_000,
+      maxTotalMs: 1_000,
+      now: () => 0,
+      delay: async (ms: number) => {
+        delays.push(ms);
+      },
+    });
+
+    await expect(
+      strategy.extract({ filePath, basename, folderAbs, entries: {} }),
+    ).rejects.toThrow("nope");
+    expect(delays).toEqual([1_000]);
+  });
+
   it("warns below the low-power threshold but still returns the record", async () => {
     const extract = vi.fn(async () => ({
       name: "HuN",

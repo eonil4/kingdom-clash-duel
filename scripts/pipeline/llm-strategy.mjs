@@ -100,10 +100,12 @@ function buildRecord(mode, imagePath, extracted) {
  *   attempts?: number,
  *   timeoutPerAttemptMs?: number,
  *   retryBaseDelayMs?: number,
+ *   maxTotalMs?: number,
  *   warnBelowPower?: number,
  *   clearCacheBeforeEachCall?: boolean,
  *   extractFns?: typeof LLM_MODES,
  *   delay?: (ms: number) => Promise<unknown>,
+ *   now?: () => number,
  * }} [options]
  */
 export function createLlmStrategy({
@@ -112,10 +114,12 @@ export function createLlmStrategy({
   attempts = 3,
   timeoutPerAttemptMs = 60_000,
   retryBaseDelayMs = 1500,
+  maxTotalMs = 0,
   warnBelowPower = LOW_POWER_WARN_THRESHOLD,
   clearCacheBeforeEachCall,
   extractFns = LLM_MODES,
   delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
+  now = () => performance.now(),
 } = {}) {
   const modeConfig = extractFns[mode];
   if (!modeConfig) {
@@ -132,21 +136,37 @@ export function createLlmStrategy({
     async dispose() {},
 
     async extract({ filePath, basename }) {
-      const startedAt = performance.now();
+      const startedAt = now();
       let lastErr;
 
       for (let attempt = 1; attempt <= attempts; attempt++) {
-        const timeoutMs = attempt * timeoutPerAttemptMs;
+        let timeoutMs = attempt * timeoutPerAttemptMs;
+        let budgetLeft;
+        if (maxTotalMs > 0) {
+          budgetLeft = maxTotalMs - (now() - startedAt);
+          if (budgetLeft <= 0) {
+            const detail = lastErr
+              ? `: ${lastErr instanceof Error ? lastErr.message : String(lastErr)}`
+              : "";
+            throw new Error(
+              `LLM total time budget of ${formatDuration(maxTotalMs)} exhausted ` +
+                `after ${attempt - 1} attempt(s)${detail}`,
+            );
+          }
+          timeoutMs = Math.min(timeoutMs, budgetLeft);
+        }
         try {
           logger.info(
-            `\t${logTag} ${basename} (attempt ${attempt}/${attempts}, timeout ${timeoutMs / 1000}s)...`,
+            `\t${logTag} ${basename} (attempt ${attempt}/${attempts}, timeout ${timeoutMs / 1000}s` +
+              (budgetLeft !== undefined ? `, budget ${formatDuration(budgetLeft)} left` : "") +
+              ")...",
           );
           const extracted = await extract(filePath, {
             timeoutMs,
             model,
             clearCacheBeforeEachCall,
           });
-          const durationMs = performance.now() - startedAt;
+          const durationMs = now() - startedAt;
           const detail =
             mode === "crops"
               ? extracted.nameLatin
@@ -177,7 +197,14 @@ export function createLlmStrategy({
           const msg = err instanceof Error ? err.message : String(err);
           logger.warn(`\t${logTag} attempt ${attempt}/${attempts} failed: ${msg}`);
           if (attempt < attempts) {
-            await delay(retryBaseDelayMs * attempt);
+            if (maxTotalMs > 0) {
+              const remaining = maxTotalMs - (now() - startedAt);
+              // Let the next iteration raise the budget error instead of the raw attempt error.
+              if (remaining <= 0) continue;
+              await delay(Math.min(retryBaseDelayMs * attempt, remaining));
+            } else {
+              await delay(retryBaseDelayMs * attempt);
+            }
           }
         }
       }

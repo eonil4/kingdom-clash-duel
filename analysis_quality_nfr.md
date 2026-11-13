@@ -17,7 +17,7 @@
 | `loadEnemyMap()` | 43 ms | 133 rows across 2 `data.json` files |
 | `collectEnemyEntriesFromMap()` | 1.3 ms | per call; called per converted file |
 | OCR recognitions / image | 19 (arena), 24 (clan) | measured wall time 5.9–7 s per image |
-| LLM worst case / image | 3 × 60 s + backoff | `config/llm.json` `llmMaxAttempts`/`llmTimeoutPerAttemptMs` |
+| LLM worst case / image | 60+120+180 s + backoff (~6 min) | escalating `llmTimeoutPerAttemptMs`; now bounded by `llmMaxTotalMs` |
 
 The dominant costs are tesseract recognitions (OCR) and LM Studio inference (LLM); map/data.json work is milliseconds at the current data scale but scales poorly (see §3.4).
 
@@ -76,7 +76,7 @@ Both generators now emit a full document via `scripts/html-document.mjs` (`<!DOC
 4. **Early exit — done, measured −12% on the triggering sample.** When the first pass (name/wide crops, PSM 8) already returns a tag-shaped phrase (`\`, `|` or a bracket) with confidence ≥ 60 and no HUD digit islands, the 12 text-area variants and the full-image fallback are skipped and the normalized phrase itself is kept (`isStrongFirstPassResult` + `stripEdgeTagSeparators`). Arena only: clan (`tight`) keeps the full sequence because the Latin repair pass runs in the text area. A/B on 30 real screenshots: 3 records changed (two garbage reads fixed to the canonical name, one cleaned) and 0 regressions; early-exiting images drop from ~3.4 s to 0.86 s. A 10-image arena sample went 34.3 s → 30.2 s (−12%); trigger rate is low (3/30) by design.
 
 ### 3.2 LLM path
-- Retries cost up to ~3 min + backoff per image on a wedged LM Studio (`llm-strategy.mjs`): make the escalation explicit in logs (already logged per attempt) and consider a cheaper total budget (`llmMaxTotalMs`).
+- Retries cost up to 60+120+180 s + backoff (~6 min) per image on a wedged LM Studio (`llm-strategy.mjs`) — **done, bounded**. `createLlmStrategy({ maxTotalMs })` reads `llmMaxTotalMs` from `config/llm.json` (120 s there; 0/absent disables): each next attempt is only started while budget remains, its timeout is clamped to the remaining time, the backoff is clamped too, and exhaustion throws `LLM total time budget of 2.0m exhausted after N attempt(s)` with the last error. Attempt logs now include the remaining budget. Tests inject a clock and cover clamping, exhaustion and delay clamping.
 - `clearPredictionCacheBeforeEachCall: true` in config deletes cache directories per call; this is a correctness choice, not a bug, but it is measurable I/O. A/B one folder with it off before changing defaults.
 
 ### 3.3 Duplicate `data.json` reads
@@ -157,8 +157,9 @@ The first batch from §5 is implemented on `refactor`:
 | 11 | Self-describing HTML output (§2.8) | **done** | `scripts/html-document.mjs` wraps both generators (doctype/lang/charset/viewport/title) and shares `escapeHtml`; matrix headers get `scope="col"/"row"`; `tests/unit/html-document.test.ts` |
 | 12 | Parallel name/power OCR (§3.1) | **done** | third `eng` worker runs `ocrEnemyPower` concurrently with the name pass; `dispose()` covers all three (also on partial `prepare()` failure); `tests/unit/ocr-strategy.test.ts` asserts the distinct worker, real overlap, and teardown. Measured power 76–80 ms/image vs ~1.7 s name pass → wall time equals the name pass (−~80 ms/image, +1 worker) |
 | 13 | Early exit on a strong first pass (§3.1) | **done** | `isStrongFirstPassResult` (tag shape, ≥60 confidence, no HUD islands) keeps the normalized phrase via `stripEdgeTagSeparators` and skips the 12 text-area variants + fallback on arena images; clan keeps the full pass for the Latin repair. A/B 30 real screenshots: 3 names fixed/cleaned, 0 regressions; triggering images 3.4 s → 0.86 s, 10-image sample −12%; `ocr-name-heuristics.test.ts` +4 */
+| 14 | LLM total retry budget (§3.2) | **done** | `maxTotalMs` in `createLlmStrategy` (config `llmMaxTotalMs`, 120 s) clamps per-attempt timeouts and backoff to the remaining budget, skips attempts once it is spent and throws a budget error with the last failure; exhausted-run worst case ~6 min → 2 min; `llm-strategy.test.ts` +3 with an injected clock |
 
-Current suite: `pnpm test:unit` 31 files / 213 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
+Current suite: `pnpm test:unit` 31 files / 216 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-All items from §5 and all four §3.1 options are addressed.
+All items from §5, all four §3.1 options and the §3.2 retry budget are addressed; the `clearPredictionCacheBeforeEachCall` A/B remains a measurement note.
 

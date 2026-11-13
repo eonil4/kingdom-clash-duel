@@ -66,7 +66,7 @@ set LLM_HOST=http://127.0.0.1:1234
 pnpm llm:convert
 ```
 
-`convert.mjs` skips PNGs that already have a canonical WebP (per folder `data.json`). Use `--force` to re-run extraction and overwrite. Failed LLM calls retry per `config/llm.json`. Two extraction strategies: `--extractor llm` (default; `--mode crops` for name + power ROI crops, `--mode screenshot` for the whole screenshot) and `--extractor ocr` (local tesseract, no LM Studio needed; `--mode` is ignored). Both share the same runner, so OCR runs also produce the canonical WebP and timed `data.json` entries.
+`convert.mjs` skips PNGs that already have a canonical WebP (per folder `data.json`). Use `--force` to re-run extraction and overwrite. Failed LLM calls retry per `config/llm.json` (`llmMaxAttempts`, escalating `llmTimeoutPerAttemptMs`); `llmMaxTotalMs` caps the whole retry sequence per image (120 s in the current config — 0 or absent means no cap). Two extraction strategies: `--extractor llm` (default; `--mode crops` for name + power ROI crops, `--mode screenshot` for the whole screenshot) and `--extractor ocr` (local tesseract, no LM Studio needed; `--mode` is ignored). Both share the same runner, so OCR runs also produce the canonical WebP and timed `data.json` entries.
 
 Pass arguments to Node after `--`:
 
