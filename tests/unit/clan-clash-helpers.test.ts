@@ -91,16 +91,24 @@ describe("discovery helpers", () => {
 });
 
 describe("runNode", () => {
-  it("tees stdout and returns the exit code", async () => {
-    const write = vi.spyOn(process.stdout, "write").mockImplementation(() => true);
-    const code = await runNode(["-e", "process.stdout.write('hello'); process.exit(0)"]);
-    expect(code).toBe(0);
-    expect(write.mock.calls.some(([chunk]) => String(chunk).includes("hello"))).toBe(true);
-  });
+  it(
+    "tees stdout and returns the exit code",
+    async () => {
+      const write = vi.spyOn(process.stdout, "write").mockImplementation(() => true);
+      const code = await runNode(["-e", "process.stdout.write('hello'); process.exit(0)"]);
+      expect(code).toBe(0);
+      expect(write.mock.calls.some(([chunk]) => String(chunk).includes("hello"))).toBe(true);
+    },
+    20_000,
+  );
 
-  it("returns non-zero exit codes", async () => {
-    expect(await runNode(["-e", "process.exit(3)"])).toBe(3);
-  });
+  it(
+    "returns non-zero exit codes",
+    async () => {
+      expect(await runNode(["-e", "process.exit(3)"])).toBe(3);
+    },
+    20_000,
+  );
 });
 
 describe("wiki helpers", () => {

@@ -68,6 +68,26 @@ describe("ocrEnemyName flow", () => {
     expect(workerRus.recognize).not.toHaveBeenCalled();
   });
 
+  it("prefers a repeatedly-read Latin name over Cyrillic lookalikes", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call >= 4 && call <= 6) return { text: "Mazza", confidence: 80 };
+      if (call === 7) return { text: "Махха", confidence: 80 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Mazza");
+  });
+
+  it("keeps a Cyrillic name when an all-caps Latin lookalike ties", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call >= 4 && call <= 5) return { text: "MCKAHAEP ZR", confidence: 80 };
+      if (call >= 6 && call <= 7) return { text: "ИСКАНДЕР", confidence: 80 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("ИСКАНДЕР");
+  });
+
   it("keeps a multi-word candidate instead of falling back to the full image", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) => {

@@ -666,24 +666,45 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
         c.split(/\s+/).filter(Boolean).length === 1 &&
         (c.match(/\p{L}/gu) ?? []).length >= 3,
     );
-    // Lowercase Latin words ("army", "fil") are valid reads and should compete
-    // with the Cyrillic tiers instead of being excluded by them.
+    // Lowercase Latin words ("army", "fil") and clean Latin names ("Mazza",
+    // "OVERLORD") are valid reads and should compete with the Cyrillic tiers.
     const latinLowerCandidates = uniq.filter(
       (c) => /^[a-z][a-z ]*$/u.test(c) && scoreNamePhrase(c) >= 4,
     );
+    /** @type {Map<string, number>} */
+    const votes = new Map();
+    for (const candidate of textAreaCandidates) {
+      votes.set(candidate, (votes.get(candidate) ?? 0) + 1);
+    }
+    const basePool = [
+      ...new Set([
+        ...mixedScriptOrSep,
+        ...cyrLineCandidates,
+        ...cyrTokenCandidates,
+        ...latinLowerCandidates,
+      ]),
+    ];
+    const baseMaxVote = basePool.reduce((max, c) => Math.max(max, votes.get(c) ?? 0), 0);
+    // A clean Latin name joins only when more variants read it than any non-Latin
+    // candidate ("Mazza" x6, "OVERLORD" x7); otherwise a valid Cyrillic read wins.
+    const latinCleanCandidates = uniq.filter((c) => {
+      if (
+        !/[A-Za-z]/.test(c) ||
+        /[\p{sc=Cyrillic}]/u.test(c) ||
+        arenaCandidatePenalty(c) !== 0 ||
+        scoreNamePhrase(c) < 4
+      ) {
+        return false;
+      }
+      const voteCount = votes.get(c) ?? 0;
+      if (voteCount > baseMaxVote) return true;
+      // At parity, a word-like lowercase Latin name still competes ("Mazza",
+      // "Stas ZV"), while all-caps lookalike garbage ("MCKAHAEP") does not.
+      return voteCount === baseMaxVote && voteCount > 0 && /[a-z]/.test(c) && /[aeiouy]/i.test(c);
+    });
     let pool =
-      mixedScriptOrSep.length > 0 ||
-      cyrLineCandidates.length > 0 ||
-      cyrTokenCandidates.length > 0 ||
-      latinLowerCandidates.length > 0
-        ? [
-            ...new Set([
-              ...mixedScriptOrSep,
-              ...cyrLineCandidates,
-              ...cyrTokenCandidates,
-              ...latinLowerCandidates,
-            ]),
-          ]
+      basePool.length > 0 || latinCleanCandidates.length > 0
+        ? [...new Set([...basePool, ...latinCleanCandidates])]
         : uniq;
     if (pool.length > 0 && pool.every((c) => arenaCandidatePenalty(c) > 0)) {
       // Every tiered candidate is junk-shaped; fall back to clean Latin reads
@@ -699,6 +720,10 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
         arenaCandidatePenalty(b) -
         (arenaNameLineQuality(a) - arenaCandidatePenalty(a));
       if (dq !== 0) return dq;
+      // A reading produced by several variants is more trustworthy than a
+      // one-off glyph salad ("Mazza" x6 vs "суМатна").
+      const dv = (votes.get(b) ?? 0) - (votes.get(a) ?? 0);
+      if (dv !== 0) return dv;
       const ds = scoreNamePhrase(b) - scoreNamePhrase(a);
       if (ds !== 0) return ds;
       // On an exact tie prefer a readable Latin candidate over Cyrillic glyph noise.
