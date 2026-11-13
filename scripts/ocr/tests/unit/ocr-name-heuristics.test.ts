@@ -6,9 +6,11 @@ import {
   correctClanNameConfusables,
   extractBestPhraseFromRawText,
   isLikelyOcrNoise,
+  isStrongFirstPassResult,
   normalizeOpponentDisplayName,
   pickClanName,
   scoreNameCandidate,
+  stripEdgeTagSeparators,
   stripLeadingClippedToken,
   stripUnbalancedTagNoise,
 } from "../../ocr-enemy-name.mjs";
@@ -180,6 +182,36 @@ describe("correctClanNameConfusables", () => {
     expect(correctClanNameConfusables("HuN | TOLDI")).toBe("HuN | TOLDI");
     expect(correctClanNameConfusables("AulN")).toBe("AulN");
     expect(correctClanNameConfusables("HulN House")).toBe("HulN House");
+  });
+});
+
+describe("stripEdgeTagSeparators", () => {
+  it("drops icon glyphs misread as leading or trailing separators", () => {
+    expect(stripEdgeTagSeparators("| GumitronWATAHA")).toBe("GumitronWATAHA");
+    expect(stripEdgeTagSeparators("|| Николай SKF")).toBe("Николай SKF");
+    expect(stripEdgeTagSeparators(String.raw`\МишкинСы H-1922`)).toBe("МишкинСы H-1922");
+    expect(stripEdgeTagSeparators("GumitronWATAHA |")).toBe("GumitronWATAHA");
+  });
+
+  it("keeps real tags and inner separators", () => {
+    expect(stripEdgeTagSeparators("[MAG] HuN")).toBe("[MAG] HuN");
+    expect(stripEdgeTagSeparators(String.raw`HuN | TOLDI`)).toBe(String.raw`HuN | TOLDI`);
+  });
+});
+
+describe("isStrongFirstPassResult", () => {
+  it("accepts a confident tag-shaped first pass", () => {
+    expect(isStrongFirstPassResult({ data: { text: "| GumitronWATAHA", confidence: 79 } })).toBe(true);
+    expect(isStrongFirstPassResult({ data: { text: "[MAG] HuN", confidence: 70 } })).toBe(true);
+  });
+
+  it("rejects low confidence, missing tags, HUD lines and noise", () => {
+    expect(isStrongFirstPassResult({ data: { text: "| GumitronWATAHA", confidence: 59 } })).toBe(false);
+    expect(isStrongFirstPassResult({ data: { text: "Janski WATAHA", confidence: 90 } })).toBe(false);
+    expect(isStrongFirstPassResult({ data: { text: "1 300 WATAHA", confidence: 90 } })).toBe(false);
+    expect(isStrongFirstPassResult({ data: { text: "HuN 123 MAG", confidence: 90 } })).toBe(false);
+    expect(isStrongFirstPassResult({ data: { text: "|", confidence: 99 } })).toBe(false);
+    expect(isStrongFirstPassResult({})).toBe(false);
   });
 });
 

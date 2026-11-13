@@ -22,6 +22,9 @@ export const OCR_UPSCALE_WIDTHS = {
   nameTextLine: 2400,
 };
 
+/** Minimum confidence for the first name pass to skip the remaining OCR variants. */
+export const OCR_EARLY_EXIT = { minConfidence: 60 };
+
 /** Padding/growth for the name crop boxes, per style. */
 export const OCR_NAME_BOX_GROWTH = {
   arena: { wide: [0.15, 0.3], text: [0.03, 0.08] },

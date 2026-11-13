@@ -38,7 +38,7 @@ Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy RO
 
 `pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 11/12, and 54.5% name similarity on the two OCR-only samples (the remaining miss is a small-caps name with an inline icon).
 
-OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent. Name recognition uses two workers (`eng+rus`, `rus`); power recognition runs on a third digits-only `eng` worker concurrently with the name pass (three live workers during a run).
+OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent. Name recognition uses two workers (`eng+rus`, `rus`); power recognition runs on a third digits-only `eng` worker concurrently with the name pass (three live workers during a run). On arena screenshots a confident, tag-shaped first pass skips the remaining text-area OCR variants and keeps its phrase; clan (`tight`) runs the full sequence including the Latin repair pass.
 
 Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (default), `debug`); `debug` prints per-file timings and the indexed-source count.
 
