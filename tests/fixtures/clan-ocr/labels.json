@@ -1,0 +1,65 @@
+{
+  "notes": "Clan formation screenshots with names/power taken from the LLM formation extractor (data.json). Latin names only; compare via normalised string match.",
+  "images": [
+    {
+      "path": "data/clan_clash/2026-11-06/clan/001_562_609-TOLDI.png",
+      "name": "HuN | TOLDI",
+      "power": 1562609
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/002_765_920-HUN%7C_Norbert.png",
+      "name": "HUN| Norbert",
+      "power": 2765920
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/003_186_498-HuN%7CAxeLock.png",
+      "name": "HuN|AxeLock",
+      "power": 3186498
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/004_115_062-HuN_%7C_Sven.png",
+      "name": "HuN | Sven",
+      "power": 4115062
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/004_779_205-HunNapsugaR.png",
+      "name": "HunNapsugaR",
+      "power": 4779205
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/005_141_041-HuN%7C_Attila.png",
+      "name": "HuN| Attila",
+      "power": 5141041
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/005_334_120-HuN_%7C_Nachmalem.png",
+      "name": "HuN | Nachmalem",
+      "power": 5334120
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/005_741_714-Hun%7CElfBar.png",
+      "name": "HuN|ElfBar",
+      "power": 5741714
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/006_063_253-HuN%7CLordEdmund.png",
+      "name": "HuN|LordEdmund",
+      "power": 6063253
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/006_248_375-HuN%7CTillusq01.png",
+      "name": "HuN|Tillusq01",
+      "power": 6248375
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/006_486_643-Hun%7CHercules.png",
+      "name": "Hun|Hercules",
+      "power": 6486643
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/clan/007_497_009-HuN%7CLehel.png",
+      "name": "HuN|Lehel",
+      "power": 7497009
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parsePowerFromOriginalBasename } from "../../scripts/file-map-enemies.mjs";
+import { parsePowerFromOriginalBasename } from "../../scripts/enemy-records.mjs";
 
 describe("parsePowerFromOriginalBasename", () => {
   it("parses XXX_XXX_XXX prefix before first hyphen", () => {

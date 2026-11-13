@@ -1,67 +1,35 @@
 /**
- * Scan configured folders from fileMap.json, OCR each screenshot for name + power,
- * convert name to Latin artifacts, and write entries under canonical `.webp` keys.
+ * Scan `data/clan_clash/YYYY-MM-DD` arena folders, OCR each screenshot for name + power,
+ * convert names to Latin artifacts, and record entries in each folder's data.json.
+ *
+ * Discovery/flag handling lives here; the per-image workflow runs through the shared
+ * extraction runner with the OCR strategy.
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
-import { createWorker } from "tesseract.js";
 import {
-  canonicalEnemyMapKey,
-  DEFAULT_FILE_MAP_PATH,
-  deleteNestedMappingKey,
-  findEnemyRowBySourceRel,
   loadConfiguredFolders,
-  loadExistingFileMap,
-  parsePowerFromOriginalBasename,
-  setNestedMapping,
-  sortMapNode,
   toMapKey,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
-import { convertTextToLatinArtifacts } from "./convert-text-to-latin.mjs";
-import { parseLatinNameHintFromEncodedOriginalBasename } from "../enemy-filename-tokens.mjs";
+} from "../enemy-records.mjs";
+import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
+import { runExtraction } from "../pipeline/run-extraction.mjs";
+import { loadLlmConfig } from "../llm/vision-client.mjs";
 import {
-  normalizeOpponentDisplayName,
-  ocrEnemyName,
-  refineEnemyNameWithTestFolderCrops,
-} from "./ocr-enemy-name.mjs";
-import { ocrEnemyPower } from "./ocr-enemy-power.mjs";
+  collectImageFiles,
+  groupFilesByFolder,
+  parseScanArgs,
+  selectTargets,
+} from "./scan-cli.mjs";
+import { isMain } from "../cli.mjs";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const SUPPORTED_IMAGE_EXTENSIONS = new Set([
-  ".png",
-  ".jpg",
-  ".jpeg",
-  ".bmp",
-  ".tif",
-  ".tiff",
-  ".gif",
-]);
-
-function parseArgs(argv) {
-  const args = {
-    out: DEFAULT_FILE_MAP_PATH,
-    limit: undefined,
-    only: undefined,
-    debugCrops: false,
-    forceOcr: false,
-  };
-  for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    if (a === "--" || a === undefined) continue;
-    if (a === "--out") args.out = path.resolve(argv[++i]);
-    else if (a === "--limit") args.limit = Number(argv[++i]);
-    else if (a === "--only") args.only = argv[++i];
-    else if (a === "--debug-crops") args.debugCrops = true;
-    else if (a === "--force-ocr") args.forceOcr = true;
-  }
-  return args;
-}
-
-function isFullScreenshotForOcr(folderAbsPath, filePath) {
+/**
+ * In `test/` folders only the primary screenshots are OCR sources; sibling crops
+ * are reference images used to refine names.
+ * @param {string} folderAbsPath
+ * @param {string} filePath
+ */
+export function isFullScreenshotForOcr(folderAbsPath, filePath) {
   if (path.basename(folderAbsPath).toLowerCase() !== "test") return true;
   const base = path.basename(filePath);
   const lower = base.toLowerCase();
@@ -69,21 +37,32 @@ function isFullScreenshotForOcr(folderAbsPath, filePath) {
   return /^screenshot_/i.test(base);
 }
 
-async function collectImageFilesInFolderOnly(dir) {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const files = [];
-  for (const entry of entries) {
-    if (!entry.isFile()) continue;
-    if (!SUPPORTED_IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) continue;
-    files.push(path.join(dir, entry.name));
-  }
-  return files;
-}
+/**
+ * @param {string[]} [argv]
+ * @param {{
+ *   loadFolders?: typeof loadConfiguredFolders,
+ *   collect?: typeof collectImageFiles,
+ *   run?: typeof runExtraction,
+ *   config?: object,
+ *   makeStrategy?: (options: object) => any,
+ *   log?: (...args: any[]) => void,
+ *   warn?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runOcrEnemyScan(argv = process.argv.slice(2), deps = {}) {
+  const {
+    loadFolders = loadConfiguredFolders,
+    collect = collectImageFiles,
+    run = runExtraction,
+    config = loadLlmConfig(),
+    makeStrategy = (options) => createOcrStrategy(options),
+    log = (...args) => console.log(...args),
+    warn = (...args) => console.warn(...args),
+  } = deps;
 
-async function main() {
-  const { out, limit, only, debugCrops, forceOcr } = parseArgs(process.argv.slice(2));
+  const { limit, only, debugCrops, forceOcr } = parseScanArgs(argv);
 
-  const configuredFolders = await loadConfiguredFolders(out);
+  const configuredFolders = await loadFolders();
   let all = [];
   if (configuredFolders.length > 0) {
     for (const folder of configuredFolders) {
@@ -91,170 +70,61 @@ async function main() {
       try {
         const stat = await fs.stat(folderPath);
         if (!stat.isDirectory()) {
-          console.warn(`Configured path is not a folder, skipping: ${folderPath}`);
+          warn(`Configured path is not a folder, skipping: ${folderPath}`);
           continue;
         }
-        const inFolder = await collectImageFilesInFolderOnly(folderPath);
+        const inFolder = await collect(folderPath);
         for (const fp of inFolder) {
           if (!isFullScreenshotForOcr(folderPath, fp)) {
-            console.log(`Skipping reference crop in test/: ${toMapKey(fp)}`);
+            log(`Skipping reference crop in test/: ${toMapKey(fp)}`);
             continue;
           }
           all.push(fp);
         }
       } catch {
-        console.warn(`Configured folder not found, skipping: ${folderPath}`);
+        warn(`Configured folder not found, skipping: ${folderPath}`);
       }
     }
   }
 
-  const targets = only
-    ? (() => {
-        const m = all.filter(
-          (p) =>
-            path.basename(p) === only ||
-            toMapKey(p) === only ||
-            toMapKey(p).endsWith(`/${only}`),
-        );
-        if (m.length <= 1) return m;
-        m.sort((a, b) => b.split(path.sep).length - a.split(path.sep).length);
-        return [m[0]];
-      })()
-    : all.slice(0, typeof limit === "number" ? limit : all.length);
+  const targets = selectTargets(all, { only, limit });
 
-  console.log(`Scanning workspace: ${WORKSPACE_ROOT}`);
-  console.log(
+  log(`Scanning workspace: ${WORKSPACE_ROOT}`);
+  log(
     `Configured folders: ${
       configuredFolders.length > 0
         ? configuredFolders.map((f) => f.relPath).join(", ")
         : "(none)"
     }`,
   );
-  console.log(`Images: ${targets.length}`);
+  log(`Images: ${targets.length}`);
 
-  const worker = await createWorker("eng+rus");
-  const workerRus = await createWorker("rus");
-  try {
-    await worker.setParameters({ preserve_interword_spaces: "1" });
-    await workerRus.setParameters({ preserve_interword_spaces: "1" });
+  const stats = await run({
+    folders: groupFilesByFolder(targets),
+    strategy: makeStrategy({ force: forceOcr, debugCrops, config }),
+    webp: false,
+    map: false,
+    recordTiming: false,
+    logProcessing: false,
+    logError: (err, { filePath }) => {
+      warn(`Failed OCR: ${filePath}`);
+      warn(err);
+    },
+  });
 
-    const fileMap = await loadExistingFileMap(out);
-    const debugDir = debugCrops ? path.join(__dirname, ".ocr-debug") : undefined;
-
-    for (const filePath of targets) {
-      const base = path.basename(filePath);
-      const mapKeySource = toMapKey(filePath);
-      try {
-        if (!forceOcr && findEnemyRowBySourceRel(fileMap, mapKeySource)) {
-          console.log(
-            `Skipping OCR for mapped source image (use --force-ocr to refresh): ${filePath}`,
-          );
-          continue;
-        }
-        if (!forceOcr && /^\d{3}_\d{3}_\d{3}-.+\.webp$/i.test(base)) {
-          console.log(
-            `Skipping OCR for canonical .webp file (use --force-ocr to refresh): ${filePath}`,
-          );
-          continue;
-        }
-
-        const powerFromFilename = parsePowerFromOriginalBasename(base);
-        const powerOcr = await ocrEnemyPower(filePath, worker);
-        const power =
-          powerFromFilename !== undefined ? powerFromFilename : powerOcr;
-
-        if (
-          powerFromFilename !== undefined &&
-          powerOcr !== undefined &&
-          powerFromFilename !== powerOcr
-        ) {
-          console.warn(
-            `Using filename power ${powerFromFilename} (OCR said ${powerOcr}): ${base}`,
-          );
-        }
-
-        let name = await ocrEnemyName(filePath, worker, workerRus, {
-          debugDir,
-          baseLabel: base,
-        });
-        name = await refineEnemyNameWithTestFolderCrops(
-          path.dirname(filePath),
-          filePath,
-          name,
-          worker,
-          workerRus,
-          { debugDir, baseLabel: base },
-        );
-
-        const latinHintRaw = parseLatinNameHintFromEncodedOriginalBasename(base);
-        const latinHint =
-          latinHintRaw !== undefined
-            ? normalizeOpponentDisplayName(latinHintRaw)
-            : undefined;
-
-        const ocrName = String(name ?? "").trim();
-        const displayName = (() => {
-          if (ocrName && /[\p{sc=Cyrillic}]/u.test(ocrName)) return ocrName;
-          if (latinHint) return latinHint;
-          return ocrName;
-        })();
-
-        if ((!displayName && !latinHint) || power === undefined) {
-          console.warn(
-            `OCR incomplete, skipping: ${filePath} (name="${name}", power="${power ?? ""}")`,
-          );
-          continue;
-        }
-
-        const art = convertTextToLatinArtifacts(displayName || latinHint || "");
-        let finalArt = art;
-        if (latinHint) {
-          const hintArt = convertTextToLatinArtifacts(latinHint);
-          finalArt = {
-            ...art,
-            latinRaw: hintArt.latinRaw,
-            ...(hintArt.nameEnglish ? { nameEnglish: hintArt.nameEnglish } : {}),
-          };
-          console.log(`Latin label from percent-encoded filename slug: ${latinHint}`);
-        }
-
-        const mapKeyCanonical = canonicalEnemyMapKey(filePath, {
-          power,
-          nameLatinRaw: finalArt.latinRaw,
-          nameEnglish: finalArt.nameEnglish,
-          nameRaw: displayName || latinHint || "",
-        });
-        const prevRow = findEnemyRowBySourceRel(fileMap, mapKeySource);
-        if (prevRow && prevRow.fullMapKey !== mapKeyCanonical) {
-          deleteNestedMappingKey(fileMap, prevRow.fullMapKey);
-        }
-        setNestedMapping(fileMap, mapKeyCanonical, {
-          power,
-          name: displayName || latinHint || "",
-          nameLatin: finalArt.latinRaw,
-          ...(finalArt.nameEnglish ? { nameEnglish: finalArt.nameEnglish } : {}),
-        });
-        console.log(
-          `OK: ${filePath} -> ${path.posix.basename(mapKeyCanonical)} { power: ${power}, name: "${displayName || latinHint}", alphabet: "${finalArt.alphabet}", latinRaw: "${finalArt.latinRaw}"${finalArt.nameEnglish ? `, nameEnglish: "${finalArt.nameEnglish}"` : ""} }`,
-        );
-      } catch (e) {
-        console.warn(`Failed OCR: ${filePath}`);
-        console.warn(e);
-      }
-    }
-
-    const sortedFileMap = sortMapNode(fileMap);
-    await fs.mkdir(path.dirname(out), { recursive: true });
-    await fs.writeFile(out, JSON.stringify(sortedFileMap, null, 2) + "\n", "utf8");
-    console.log(`Wrote: ${out}`);
-  } finally {
-    await worker.terminate();
-    await workerRus.terminate();
+  if (stats.writtenDataFiles.size > 0) {
+    log(`Updated ${stats.writtenDataFiles.size} data.json file(s)`);
   }
+  return stats;
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+async function main() {
+  await runOcrEnemyScan();
+}
 
+if (isMain(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

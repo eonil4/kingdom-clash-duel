@@ -1,6 +1,7 @@
 /**
  * Clan Clash points / token estimates (placeholder weights until RE confirms).
  */
+import { CLASH_OUTCOME_MULTIPLIERS } from "../constants.mjs";
 
 /**
  * Placeholder: points from attacker power, enemy power, and units defeated.
@@ -20,7 +21,7 @@ export function estimateClashScore(args) {
   const w2 = 0.00001;
   const w3 = 50;
   const outcomeMult =
-    args.outcome === "Victory" ? 1.0 : args.outcome === "Draw" ? 0.5 : 0.35;
+    CLASH_OUTCOME_MULTIPLIERS[args.outcome] ?? CLASH_OUTCOME_MULTIPLIERS.Defeat;
 
   const pointsEstimate = Math.max(
     0,

@@ -1,0 +1,284 @@
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.32.732.png
+
+[Skip] Screenshot_2026.11.13_00.59.32.732.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.36.016.png
+
+[Skip] Screenshot_2026.11.13_00.59.36.016.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.39.314.png
+
+[Skip] Screenshot_2026.11.13_00.59.39.314.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.42.581.png
+
+[Skip] Screenshot_2026.11.13_00.59.42.581.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.45.764.png
+
+[Skip] Screenshot_2026.11.13_00.59.45.764.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.48.948.png
+
+[Skip] Screenshot_2026.11.13_00.59.48.948.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.52.164.png
+
+[Skip] Screenshot_2026.11.13_00.59.52.164.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.55.331.png
+
+[Skip] Screenshot_2026.11.13_00.59.55.331.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_00.59.58.864.png
+
+[Skip] Screenshot_2026.11.13_00.59.58.864.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.03.498.png
+
+[Skip] Screenshot_2026.11.13_01.00.03.498.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.12.098.png
+
+[Skip] Screenshot_2026.11.13_01.00.12.098.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.16.064.png
+
+[Skip] Screenshot_2026.11.13_01.00.16.064.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.21.014.png
+
+[Skip] Screenshot_2026.11.13_01.00.21.014.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.24.814.png
+
+[Skip] Screenshot_2026.11.13_01.00.24.814.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.29.265.png
+
+[Skip] Screenshot_2026.11.13_01.00.29.265.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.32.281.png
+
+[Skip] Screenshot_2026.11.13_01.00.32.281.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.36.464.png
+
+[Skip] Screenshot_2026.11.13_01.00.36.464.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.39.781.png
+
+[Skip] Screenshot_2026.11.13_01.00.39.781.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.42.631.png
+
+[Skip] Screenshot_2026.11.13_01.00.42.631.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.00.46.998.png
+
+[Skip] Screenshot_2026.11.13_01.00.46.998.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.05.848.png
+
+[Skip] Screenshot_2026.11.13_01.01.05.848.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.12.348.png
+
+[Skip] Screenshot_2026.11.13_01.01.12.348.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.16.965.png
+
+[Skip] Screenshot_2026.11.13_01.01.16.965.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.23.381.png
+
+[Skip] Screenshot_2026.11.13_01.01.23.381.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.29.214.png
+
+[Skip] Screenshot_2026.11.13_01.01.29.214.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.35.081.png
+
+[Skip] Screenshot_2026.11.13_01.01.35.081.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.41.881.png
+
+[Skip] Screenshot_2026.11.13_01.01.41.881.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.01.51.581.png
+
+[Skip] Screenshot_2026.11.13_01.01.51.581.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.05.599.png
+
+[Skip] Screenshot_2026.11.13_01.02.05.599.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.13.081.png
+
+[Skip] Screenshot_2026.11.13_01.02.13.081.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.24.798.png
+
+[Skip] Screenshot_2026.11.13_01.02.24.798.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.39.198.png
+
+[Skip] Screenshot_2026.11.13_01.02.39.198.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.45.164.png
+
+[Skip] Screenshot_2026.11.13_01.02.45.164.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.02.57.681.png
+
+[Skip] Screenshot_2026.11.13_01.02.57.681.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.03.03.764.png
+
+[Skip] Screenshot_2026.11.13_01.03.03.764.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.03.35.065.png
+
+[Skip] Screenshot_2026.11.13_01.03.35.065.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.03.41.081.png
+
+[Skip] Screenshot_2026.11.13_01.03.41.081.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.03.46.914.png
+
+[Skip] Screenshot_2026.11.13_01.03.46.914.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.03.52.881.png
+
+[Skip] Screenshot_2026.11.13_01.03.52.881.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\Screenshot_2026.11.13_01.04.00.864.png
+
+[Skip] Screenshot_2026.11.13_01.04.00.864.png already present in C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\data.json
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\clan\index.html
+Repo path: data/clan_clash/2026-11-13/clan
+Extensions: .jpg, .png
+Total images in the table: 40

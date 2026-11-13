@@ -1,6 +1,6 @@
-#!/usr/bin/env node
 import path from "path";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
+import { isMain } from "../cli.mjs";
 
 async function main() {
   const src = process.argv[2] || "data/enemies/test/Screenshot_2026.06.19_09.49.47.958.png";
@@ -22,5 +22,7 @@ async function main() {
   }
 }
 
-main();
+if (isMain(import.meta.url)) {
+  main();
+}
 

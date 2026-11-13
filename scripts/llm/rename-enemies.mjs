@@ -6,11 +6,13 @@ import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
   collectEnemyEntriesFromMap,
-  DEFAULT_FILE_MAP_PATH,
+  formatPowerForFilename,
   isFileEntryNode,
   loadConfiguredFoldersFromRoot,
+  loadEnemyMap,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
+import { isMain } from "../cli.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,10 +28,9 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
   ".gif",
 ]);
 
-const DEFAULT_MAP_PATH = DEFAULT_FILE_MAP_PATH;
 const OCR_SCRIPT_PATH = path.join(__dirname, "..", "ocr", "ocr-enemy.mjs");
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = { only: undefined, skipOcr: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -41,11 +42,11 @@ function parseArgs(argv) {
   return args;
 }
 
-async function refreshFileMapWithOcr({ only } = {}) {
+export async function refreshFileMapWithOcr({ only } = {}, spawnFn = spawn) {
   const ocrArgs = [OCR_SCRIPT_PATH];
   if (only) ocrArgs.push("--only", only);
   await new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, ocrArgs, {
+    const child = spawnFn(process.execPath, ocrArgs, {
       cwd: path.join(__dirname, ".."),
       stdio: "inherit",
     });
@@ -58,28 +59,12 @@ async function refreshFileMapWithOcr({ only } = {}) {
   });
 }
 
-async function loadFileMap() {
-  try {
-    const raw = await fs.readFile(DEFAULT_MAP_PATH, "utf8");
-    const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-    return parsed;
-  } catch {
-    return {};
-  }
-}
-
-function formatPower(power) {
-  const s = String(power).padStart(9, "0");
-  return `${s.slice(0, 3)}_${s.slice(3, 6)}_${s.slice(6, 9)}`;
-}
-
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 /** Windows often returns EBUSY right after Sharp finishes writing the new file. */
-async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
+export async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
   let lastErr;
   for (let i = 0; i < attempts; i++) {
     try {
@@ -98,7 +83,7 @@ async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
   throw lastErr;
 }
 
-async function collectImageFilesInFolderOnly(dir) {
+export async function collectImageFilesInFolderOnly(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   const files = [];
 
@@ -111,14 +96,14 @@ async function collectImageFilesInFolderOnly(dir) {
   return files;
 }
 
-function toMapKey(filePath) {
+export function toMapKey(filePath, workspaceRoot = WORKSPACE_ROOT) {
   return path
-    .relative(WORKSPACE_ROOT, filePath)
+    .relative(workspaceRoot, filePath)
     .split(path.sep)
     .join("/");
 }
 
-function getNestedMapping(source, mapKey) {
+export function getNestedMapping(source, mapKey) {
   const parts = mapKey.split("/").filter(Boolean);
   let cursor = source;
   for (const part of parts) {
@@ -129,7 +114,7 @@ function getNestedMapping(source, mapKey) {
   return cursor;
 }
 
-function getNestedFolderNode(source, folderRelPosix) {
+export function getNestedFolderNode(source, folderRelPosix) {
   const parts = folderRelPosix.split("/").filter(Boolean);
   let cursor = source;
   for (const part of parts) {
@@ -139,207 +124,147 @@ function getNestedFolderNode(source, folderRelPosix) {
   return cursor;
 }
 
-async function main() {
-  const { only, skipOcr } = parseArgs(process.argv.slice(2));
-  if (!skipOcr) {
-    console.log("Refreshing file map with OCR...");
-    await refreshFileMapWithOcr({ only });
-  } else {
-    console.log("Skipping OCR (--skip-ocr / RENAME_SKIP_OCR=1).");
-  }
-  const fileMap = await loadFileMap();
-  const mapRoot =
-    fileMap && typeof fileMap === "object" && !Array.isArray(fileMap)
-      ? fileMap
-      : {};
-  const configuredFolders = await loadConfiguredFoldersFromRoot(mapRoot);
-  const imageFiles = [];
-  for (const folder of configuredFolders) {
-    imageFiles.push(...(await collectImageFilesInFolderOnly(folder.absPath)));
-  }
-  console.log(`Scanning workspace: ${WORKSPACE_ROOT}`);
-  console.log(
-    `Configured folders: ${
-      configuredFolders.length > 0
-        ? configuredFolders.map((f) => f.relPath).join(", ")
-        : "(none)"
-    }`,
-  );
+/**
+ * Canonical basename for a map entry: the Latin token wins, and the English token
+ * is appended only when it differs.
+ * @param {{ power: number, name?: string, nameLatin?: string, nameEnglish?: string }} entry
+ */
+export function buildTargetBasename(entry) {
+  const { power, name, nameLatin, nameEnglish } = entry ?? {};
+  const formattedPower = formatPowerForFilename(power);
+  const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
+  const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
+  const englishSuffix =
+    englishNameToken && englishNameToken !== latinNameToken ? `-${englishNameToken}` : "";
+  return `${formattedPower}-${latinNameToken}${englishSuffix}.webp`;
+}
 
-  /** @type {{ filePath: string, newPath: string, mode: "rename" | "convert" }[]} */
-  const mapPlans = await (async function collectRenamePlansFromMapOriginalNames(mapRoot, only) {
-    const plans = [];
-    for (const row of collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT)) {
-      let orig = row.originalFileName?.trim();
-      if (!orig && typeof row.entry.originalFileName === "string") {
-        orig = row.entry.originalFileName.trim();
-      }
-      if (!orig) continue;
+/**
+ * Plans from map rows that still carry an `originalFileName`.
+ * @param {object} mapRoot
+ * @param {string | undefined} only
+ * @param {string} [workspaceRoot]
+ * @returns {Promise<{ filePath: string, newPath: string, mode: "rename" | "convert" }[]>}
+ */
+export async function collectRenamePlansFromMap(
+  mapRoot,
+  only,
+  workspaceRoot = WORKSPACE_ROOT,
+) {
+  const plans = [];
+  for (const row of collectEnemyEntriesFromMap(mapRoot, workspaceRoot)) {
+    let orig = row.originalFileName?.trim();
+    if (!orig && typeof row.entry.originalFileName === "string") {
+      orig = row.entry.originalFileName.trim();
+    }
+    if (!orig) continue;
 
-      const canonicalKey = row.canonicalKey;
-      if (orig === canonicalKey) continue;
+    const canonicalKey = row.canonicalKey;
+    if (orig === canonicalKey) continue;
 
-      const fromPath = path.join(row.folderAbs, orig);
-      const toPath = path.join(row.folderAbs, canonicalKey);
+    const fromPath = path.join(row.folderAbs, orig);
+    const toPath = path.join(row.folderAbs, canonicalKey);
 
-      if (only) {
-        const mapKeyFrom = toMapKey(fromPath);
-        const fromBase = path.basename(fromPath);
-        if (
-          fromBase !== only &&
-          mapKeyFrom !== only &&
-          canonicalKey !== only &&
-          orig !== only
-        ) {
-          continue;
-        }
-      }
-
-      try {
-        await fs.access(fromPath);
-      } catch {
-        console.warn(
-          `Map entry missing source file (originalFileName "${orig}" for key "${canonicalKey}"), skipping`,
-        );
+    if (only) {
+      const mapKeyFrom = toMapKey(fromPath, workspaceRoot);
+      const fromBase = path.basename(fromPath);
+      if (fromBase !== only && mapKeyFrom !== only && canonicalKey !== only && orig !== only) {
         continue;
       }
-
-      if (path.resolve(fromPath) === path.resolve(toPath)) continue;
-
-      const sourceExt = path.extname(fromPath).toLowerCase();
-      const mode = sourceExt !== ".webp" ? "convert" : "rename";
-      plans.push({ filePath: fromPath, newPath: toPath, mode });
     }
-    return plans;
-  })(mapRoot, only);
 
-  const usedFrom = new Set(mapPlans.map((p) => path.resolve(p.filePath)));
-  const renamePlans = [...mapPlans];
-
-  for (const filePath of imageFiles) {
-    if (usedFrom.has(path.resolve(filePath))) continue;
-
-    const dir = path.dirname(filePath);
-    const oldName = path.basename(filePath);
-    const mapKey = toMapKey(filePath);
-    if (only && oldName !== only && mapKey !== only) continue;
-
-    const mapping = await (async function getMappingForRename(mapRoot, filePath) {
-      const mapKey = toMapKey(filePath);
-      const direct = getNestedMapping(mapRoot, mapKey);
-      if (direct && isFileEntryNode(direct)) return direct;
-
-      const parentRel = path.posix.dirname(mapKey);
-      if (parentRel === "." || parentRel === "") return undefined;
-
-      const folderNode = getNestedFolderNode(mapRoot, parentRel);
-      if (!folderNode || typeof folderNode !== "object") return undefined;
-
-      const base = path.posix.basename(mapKey);
-
-      const branch = folderNode[base];
-      if (branch && typeof branch === "object" && !isFileEntryNode(branch)) {
-        for (const [, wv] of Object.entries(branch)) {
-          if (isFileEntryNode(wv)) return wv;
-        }
-      }
-
-      for (const [, v] of Object.entries(folderNode)) {
-        if (!isFileEntryNode(v)) continue;
-        if (typeof v.originalFileName === "string" && v.originalFileName === base) return v;
-        if (typeof v.sourceFile === "string" && v.sourceFile === base) return v;
-      }
-
-      const dirAbs = path.dirname(filePath);
-      let diskFiles;
-      try {
-        diskFiles = await collectImageFilesInFolderOnly(dirAbs);
-      } catch {
-        return undefined;
-      }
-
-      const diskBasenames = new Set(diskFiles.map((p) => path.posix.basename(toMapKey(p))));
-
-      /** @type {{ webpKey: string, mapPath: string }[]} */
-      const indexedEntries = [];
-      for (const [k, val] of Object.entries(folderNode)) {
-        if (isFileEntryNode(val)) {
-          indexedEntries.push({ webpKey: k, mapPath: path.posix.join(parentRel, k) });
-        } else if (val && typeof val === "object") {
-          for (const [wk] of Object.entries(val)) {
-            if (isFileEntryNode(val[wk])) {
-              indexedEntries.push({
-                webpKey: wk,
-                mapPath: path.posix.join(parentRel, k, wk),
-              });
-            }
-          }
-        }
-      }
-
-      const canonicalKeysNotOnDisk = indexedEntries.filter((e) => !diskBasenames.has(e.webpKey));
-      const diskFilesWithoutDirectKey = diskFiles.filter((p) => !getNestedMapping(mapRoot, toMapKey(p)));
-
-      if (canonicalKeysNotOnDisk.length === 1 && diskFilesWithoutDirectKey.length === 1) {
-        return getNestedMapping(mapRoot, canonicalKeysNotOnDisk[0].mapPath);
-      }
-
-      return undefined;
-    })(mapRoot, filePath);
-
-    if (!mapping) {
+    try {
+      await fs.access(fromPath);
+    } catch {
       console.warn(
-        `No mapping for file, skipping: ${filePath} (re-run OCR so each entry has "originalFileName", or name the file like the map key)`,
+        `Map entry missing source file (originalFileName "${orig}" for key "${canonicalKey}"), skipping`,
       );
       continue;
     }
 
-    const parentRel = path.posix.dirname(mapKey);
-    const folderNode = getNestedFolderNode(mapRoot, parentRel);
-    const canonicalKey = folderNode
-      ? (function findCanonical(folderNode, mapping) {
-          if (!folderNode || typeof folderNode !== "object") return null;
-          for (const [k, v] of Object.entries(folderNode)) {
-            if (isFileEntryNode(v) && v === mapping) return k;
-            if (v && typeof v === "object" && !isFileEntryNode(v)) {
-              for (const [wk, wv] of Object.entries(v)) {
-                if (isFileEntryNode(wv) && wv === mapping) return wk;
-              }
-            }
-          }
-          return null;
-        })(folderNode, mapping)
-      : null;
+    if (path.resolve(fromPath) === path.resolve(toPath)) continue;
 
-    const { power, name, nameLatin, nameEnglish } = mapping;
-    const formattedPower = formatPower(power);
-    const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
-    const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
-    const newName = latinNameToken?.equals(englishNameToken)
-      ? `${formattedPower}-${latinNameToken}.webp`
-      : `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`;
-    const newPath = canonicalKey
-      ? path.join(dir, canonicalKey)
-      : path.join(dir, newName);
-
-    if (newPath === filePath) {
-      console.log(`Name already correct, skipping: ${filePath}`);
-      continue;
-    }
-
-    const sourceExt = path.extname(filePath).toLowerCase();
+    const sourceExt = path.extname(fromPath).toLowerCase();
     const mode = sourceExt !== ".webp" ? "convert" : "rename";
-    renamePlans.push({ filePath, newPath, mode });
+    plans.push({ filePath: fromPath, newPath: toPath, mode });
+  }
+  return plans;
+}
+
+/**
+ * Find the map entry for a disk file: direct key, canonical key in the folder,
+ * single-missing/single-unmapped pairing, or `originalFileName`/`sourceFile` match.
+ * @param {object} mapRoot
+ * @param {string} filePath
+ */
+export async function getMappingForRename(mapRoot, filePath) {
+  const mapKey = toMapKey(filePath);
+  const direct = getNestedMapping(mapRoot, mapKey);
+  if (direct && isFileEntryNode(direct)) return direct;
+
+  const parentRel = path.posix.dirname(mapKey);
+  if (parentRel === "." || parentRel === "") return undefined;
+
+  const folderNode = getNestedFolderNode(mapRoot, parentRel);
+  if (!folderNode || typeof folderNode !== "object") return undefined;
+
+  const base = path.posix.basename(mapKey);
+
+  const branch = folderNode[base];
+  if (branch && typeof branch === "object" && !isFileEntryNode(branch)) {
+    for (const [, wv] of Object.entries(branch)) {
+      if (isFileEntryNode(wv)) return wv;
+    }
   }
 
-  renamePlans.sort((a, b) => {
-    if (a.mode === b.mode) return 0;
-    if (a.mode === "convert" && b.mode === "rename") return -1;
-    return 1;
-  });
+  for (const [, v] of Object.entries(folderNode)) {
+    if (!isFileEntryNode(v)) continue;
+    if (typeof v.originalFileName === "string" && v.originalFileName === base) return v;
+    if (typeof v.sourceFile === "string" && v.sourceFile === base) return v;
+  }
 
-  console.log(`Applying ${renamePlans.length} rename / convert operation(s)…`);
-  for (const { filePath, newPath, mode } of renamePlans) {
+  const dirAbs = path.dirname(filePath);
+  let diskFiles;
+  try {
+    diskFiles = await collectImageFilesInFolderOnly(dirAbs);
+  } catch {
+    return undefined;
+  }
+
+  const diskBasenames = new Set(diskFiles.map((p) => path.posix.basename(toMapKey(p))));
+
+  /** @type {{ webpKey: string, mapPath: string }[]} */
+  const indexedEntries = [];
+  for (const [k, val] of Object.entries(folderNode)) {
+    if (isFileEntryNode(val)) {
+      indexedEntries.push({ webpKey: k, mapPath: path.posix.join(parentRel, k) });
+    } else if (val && typeof val === "object") {
+      for (const [wk] of Object.entries(val)) {
+        if (isFileEntryNode(val[wk])) {
+          indexedEntries.push({ webpKey: wk, mapPath: path.posix.join(parentRel, k, wk) });
+        }
+      }
+    }
+  }
+
+  const canonicalKeysNotOnDisk = indexedEntries.filter((e) => !diskBasenames.has(e.webpKey));
+  const diskFilesWithoutDirectKey = diskFiles.filter(
+    (p) => !getNestedMapping(mapRoot, toMapKey(p)),
+  );
+
+  if (canonicalKeysNotOnDisk.length === 1 && diskFilesWithoutDirectKey.length === 1) {
+    return getNestedMapping(mapRoot, canonicalKeysNotOnDisk[0].mapPath);
+  }
+
+  return undefined;
+}
+
+/**
+ * Apply rename/convert plans (conversions first); logs each operation.
+ * @param {{ filePath: string, newPath: string, mode: "rename" | "convert" }[]} plans
+ */
+export async function applyRenamePlans(plans) {
+  for (const { filePath, newPath, mode } of plans) {
     if (mode === "convert") {
       try {
         await fs.access(newPath);
@@ -364,12 +289,152 @@ async function main() {
     console.log(`Renaming:\n  ${filePath}\n  -> ${newPath}`);
     await fs.rename(filePath, newPath);
   }
-
-  console.log("Done.");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+/**
+ * Canonical key for a mapping inside a folder node (direct or nested branch).
+ * @param {object} folderNode
+ * @param {object} mapping
+ * @returns {string | null}
+ */
+export function findCanonicalKey(folderNode, mapping) {
+  if (!folderNode || typeof folderNode !== "object") return null;
+  for (const [k, v] of Object.entries(folderNode)) {
+    if (isFileEntryNode(v) && v === mapping) return k;
+    if (v && typeof v === "object" && !isFileEntryNode(v)) {
+      for (const [wk, wv] of Object.entries(v)) {
+        if (isFileEntryNode(wv) && wv === mapping) return wk;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * Plans for disk files that are not already covered by map rows.
+ * @param {object} mapRoot
+ * @param {string[]} imageFiles
+ * @param {string | undefined} only
+ * @param {Set<string>} [usedFrom] resolved paths already planned from map rows
+ * @returns {Promise<{ filePath: string, newPath: string, mode: "rename" | "convert" }[]>}
+ */
+export async function collectRenamePlansFromDisk(
+  mapRoot,
+  imageFiles,
+  only,
+  usedFrom = new Set(),
+) {
+  const plans = [];
+  for (const filePath of imageFiles) {
+    if (usedFrom.has(path.resolve(filePath))) continue;
+
+    const dir = path.dirname(filePath);
+    const oldName = path.basename(filePath);
+    const mapKey = toMapKey(filePath);
+    if (only && oldName !== only && mapKey !== only) continue;
+
+    const mapping = await getMappingForRename(mapRoot, filePath);
+
+    if (!mapping) {
+      console.warn(
+        `No mapping for file, skipping: ${filePath} (re-run OCR so each entry has "originalFileName", or name the file like the map key)`,
+      );
+      continue;
+    }
+
+    const parentRel = path.posix.dirname(mapKey);
+    const folderNode = getNestedFolderNode(mapRoot, parentRel);
+    const canonicalKey = folderNode ? findCanonicalKey(folderNode, mapping) : null;
+    const newName = buildTargetBasename(mapping);
+    const newPath = canonicalKey ? path.join(dir, canonicalKey) : path.join(dir, newName);
+
+    if (newPath === filePath) {
+      console.log(`Name already correct, skipping: ${filePath}`);
+      continue;
+    }
+
+    const sourceExt = path.extname(filePath).toLowerCase();
+    const mode = sourceExt !== ".webp" ? "convert" : "rename";
+    plans.push({ filePath, newPath, mode });
+  }
+  return plans;
+}
+
+/**
+ * CLI body: refresh (optional), scan folders, plan and apply renames.
+ * @param {string[]} [argv]
+ * @param {{
+ *   loadMap?: typeof loadEnemyMap,
+ *   loadFolders?: typeof loadConfiguredFoldersFromRoot,
+ *   collect?: typeof collectImageFilesInFolderOnly,
+ *   refresh?: typeof refreshFileMapWithOcr,
+ *   apply?: typeof applyRenamePlans,
+ *   log?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runRenameEnemies(
+  argv = process.argv.slice(2),
+  {
+    loadMap = loadEnemyMap,
+    loadFolders = loadConfiguredFoldersFromRoot,
+    collect = collectImageFilesInFolderOnly,
+    refresh = refreshFileMapWithOcr,
+    apply = applyRenamePlans,
+    log = (...args) => console.log(...args),
+  } = {},
+) {
+  const { only, skipOcr } = parseArgs(argv);
+  if (!skipOcr) {
+    log("Refreshing file map with OCR...");
+    await refresh({ only });
+  } else {
+    log("Skipping OCR (--skip-ocr / RENAME_SKIP_OCR=1).");
+  }
+  const mapRoot = await loadMap();
+  const configuredFolders = await loadFolders(mapRoot);
+  const imageFiles = [];
+  for (const folder of configuredFolders) {
+    imageFiles.push(...(await collect(folder.absPath)));
+  }
+  log(`Scanning workspace: ${WORKSPACE_ROOT}`);
+  log(
+    `Configured folders: ${
+      configuredFolders.length > 0
+        ? configuredFolders.map((f) => f.relPath).join(", ")
+        : "(none)"
+    }`,
+  );
+
+  /** @type {{ filePath: string, newPath: string, mode: "rename" | "convert" }[]} */
+  const mapPlans = await collectRenamePlansFromMap(mapRoot, only);
+
+  const usedFrom = new Set(mapPlans.map((p) => path.resolve(p.filePath)));
+  const renamePlans = [
+    ...mapPlans,
+    ...(await collectRenamePlansFromDisk(mapRoot, imageFiles, only, usedFrom)),
+  ];
+
+  renamePlans.sort((a, b) => {
+    if (a.mode === b.mode) return 0;
+    if (a.mode === "convert" && b.mode === "rename") return -1;
+    return 1;
+  });
+
+  log(`Applying ${renamePlans.length} rename / convert operation(s)…`);
+  await apply(renamePlans);
+
+  log("Done.");
+  return { mapPlans, renamePlans };
+}
+
+async function main() {
+  await runRenameEnemies();
+}
+
+if (isMain(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
 

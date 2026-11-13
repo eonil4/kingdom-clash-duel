@@ -1,53 +1,45 @@
 /**
  * Extract clan member name + power from formation screenshots via local LM Studio (vision model).
  *
- * This is a sibling to `llm-enemy-extract.mjs` but targets the `userPrompt.image.clan` entries
- * in `config/llm.json`. It provides two main helpers:
+ * Targets the `userPrompt.image.clan` entries in `config/llm.json`:
  *  - extractClanDataFromScreenshot(imagePath, options)
  *  - extractClanDataFromNamePowerCrops(imagePath, options)
  *
  * Env:
  *   LLM_HOST       — default http://127.0.0.1:1234
- *   LLM_MODEL      — default qwen/qwen3-vl-4b
+ *   LLM_MODEL      — default config/llm.json defaultModel
  *   LM_API_TOKEN   — optional Bearer token
  *   LLM_SKIP_CACHE_CLEAR — set 1 to skip prediction-cache clearing
+ *
+ * Shared transport/config/crop/persistence lives in `vision-client.mjs`.
  */
-import fs from "fs/promises";
-import { readFileSync } from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-import sharp from "sharp";
 import {
-  clearLmPredictionCache,
-  shouldClearPredictionCacheBeforeEachCall,
-} from "./clear-lm-prediction-cache.mjs";
-import { canonicalEnemyMapKey, WORKSPACE_ROOT, formatPowerForFilename } from "../file-map-enemies.mjs";
-import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
+  createVisionTarget,
+  cropRoiToPngBuffer,
+  isInvokedDirectly,
+  loadLlmConfig,
+  parseJsonFromLlm as parseJson,
+  parsePowerValue,
+  runVisionExtractCli,
+} from "./vision-client.mjs";
+import sharp from "sharp";
+import { resolveRoiReference } from "../roi.mjs";
 
-// local paths (adjusted for scripts/llm location)
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const CONFIG_PATH = path.join(__dirname, "..", "..", "config", "llm.json");
-
-let _llmConfig = {};
-try {
-  const raw = readFileSync(CONFIG_PATH, "utf8");
-  _llmConfig = JSON.parse(raw);
-} catch {
-  _llmConfig = {};
-}
+const _llmConfig = loadLlmConfig();
 
 export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "qwen/qwen3-vl-4b";
-const DEFAULT_HOST = _llmConfig.host ?? "http://127.0.0.1:1234";
-const CHAT_PATH = "/api/v1/chat";
-const MODELS_PATH = "/api/v1/models";
-const REQUEST_TIMEOUT_MS = _llmConfig.requestTimeoutMs ?? 180_000;
 
-const VISION_MODEL_HINTS = Array.isArray(_llmConfig.visionModelHints)
-  ? _llmConfig.visionModelHints
-  : ["qwen3-vl", "gemma3", "vision", "vl"];
+const VISION_MODEL_HINTS = ["qwen3-vl", "gemma3", "vision", "vl"];
 
-const SYSTEM_PROMPT = _llmConfig.systemPrompt ?? `You extract structured data from Kingdom Clash formation screenshots.
+/** Header geometry for auto-detecting the centered formation name (roiReference pixels). */
+const HEADER_Y = 57;
+const HEADER_HEIGHT = 48;
+const HEADER_SCAN_LEFT = 40;
+const HEADER_SCAN_WIDTH = 840;
+const HEADER_RUN_MERGE_GAP = 6;
+const NAME_CROP_PAD = 6;
+
+const SYSTEM_PROMPT = `You extract structured data from Kingdom Clash formation screenshots.
 Reply with JSON only — no markdown, no prose outside the JSON object.`;
 
 const DEFAULT_NAME_CROP = {
@@ -64,7 +56,7 @@ Return ONLY this JSON shape:
   "nameLatin": "<transliteration>",
   "language": "<detected_language>"
 }`,
-  roi: { x: 500, y: 57, width: 400, height: 48 },
+  roi: { x: 460, y: 57, width: 400, height: 48 },
 };
 
 const DEFAULT_POWER_CROP = {
@@ -82,132 +74,25 @@ Return ONLY this JSON shape:
 };
 
 /**
- * @returns {string}
+ * @param {string} text
  */
-export function resolveUserPromptImage() {
-  const up = _llmConfig.userPrompt;
-  if (typeof up === "string" && up.trim()) return up;
-  if (!up || typeof up !== "object" || Array.isArray(up)) {
-    return DEFAULT_NAME_CROP.prompt;
-  }
-
-  const image = up.image;
-  if (typeof image === "string" && image.trim()) return image;
-  if (image && typeof image === "object" && !Array.isArray(image)) {
-    if (typeof image.prompt === "string" && image.prompt.trim()) return image.prompt;
-  }
-  return DEFAULT_NAME_CROP.prompt;
-}
-
-function normalizeCropConfig(raw, fallback) {
-  if (typeof raw === "string" && raw.trim()) {
-    return { prompt: raw.trim(), roi: { ...fallback.roi } };
-  }
-
-  if (raw && typeof raw === "object" && !Array.isArray(raw)) {
-    const prompt =
-      typeof raw.prompt === "string" && raw.prompt.trim() ? raw.prompt.trim() : fallback.prompt;
-    const roiSrc = raw.roi && typeof raw.roi === "object" ? raw.roi : raw;
-    const x = Number(roiSrc.x);
-    const y = Number(roiSrc.y);
-    const width = Number(roiSrc.width ?? roiSrc.w);
-    const height = Number(roiSrc.height ?? roiSrc.h);
-    const roi =
-      Number.isFinite(x) &&
-      Number.isFinite(y) &&
-      Number.isFinite(width) &&
-      Number.isFinite(height) &&
-      width > 0 &&
-      height > 0
-        ? { x, y, width, height }
-        : { ...fallback.roi };
-    return { prompt, roi };
-  }
-
-  return { prompt: fallback.prompt, roi: { ...fallback.roi } };
-}
-
-export function resolveClanCropConfig(kind) {
-  const fallback = kind === "name" ? DEFAULT_NAME_CROP : DEFAULT_POWER_CROP;
-  const up = _llmConfig.userPrompt;
-  if (!up || typeof up !== "object" || Array.isArray(up)) {
-    return { prompt: fallback.prompt, roi: { ...fallback.roi } };
-  }
-
-  const nested =
-    up.image &&
-    typeof up.image === "object" &&
-    !Array.isArray(up.image) &&
-    up.image.clan &&
-    typeof up.image.clan === "object" &&
-    !Array.isArray(up.image.clan)
-      ? up.image.clan[kind]
-      : undefined;
-
-  if (nested !== undefined) {
-    return normalizeCropConfig(nested, fallback);
-  }
-
-  // Legacy dotted keys: "image.clan.name" / "image.clan.power"
-  return normalizeCropConfig(up[`image.clan.${kind}`], fallback);
-}
-
-function apiBase(host) {
-  return host.replace(/\/+$/, "");
-}
-
-function resolveHost(optionsHost) {
-  return optionsHost ?? process.env.LLM_HOST ?? DEFAULT_HOST;
-}
-
-function resolvePreferredModel(optionsModel) {
-  return optionsModel ?? process.env.LLM_MODEL;
-}
-
-function mimeForImagePath(imagePath) {
-  const ext = path.extname(imagePath).toLowerCase();
-  if (ext === ".jpg" || ext === ".jpeg") return "image/jpeg";
-  if (ext === ".webp") return "image/webp";
-  if (ext === ".gif") return "image/gif";
-  return "image/png";
-}
-
 export function parseJsonFromLlm(text) {
-  const trimmed = String(text ?? "").trim();
-  const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/i);
-  const raw = fenced ? fenced[1].trim() : trimmed;
-  const start = raw.indexOf("{");
-  const end = raw.lastIndexOf("}");
-  if (start === -1 || end === -1 || end <= start) {
-    throw new Error("LLM response did not contain a JSON object.");
-  }
-  return JSON.parse(raw.slice(start, end + 1));
+  return parseJson(text);
 }
 
+/**
+ * @param {unknown} data
+ * @returns {{ power: number, name: string, language?: string, nameLatin?: string }}
+ */
 export function normalizeClanExtraction(data) {
   if (!data || typeof data !== "object" || Array.isArray(data)) {
     throw new Error("LLM JSON must be an object.");
   }
 
   let name = typeof data.name === "string" ? data.name.trim() : "";
-  if (!name) {
-    name = "UNKNOWN";
-  }
+  if (!name) name = "UNKNOWN";
 
-  let power;
-  if (typeof data.power === "number" && Number.isFinite(data.power)) {
-    power = Math.round(data.power);
-  } else if (typeof data.power === "string") {
-    const digits = data.power.replace(/[^\d]+/g, "");
-    power = digits ? Number(digits) : NaN;
-  } else {
-    power = NaN;
-  }
-  if (!Number.isFinite(power) || power <= 0 || power > 999_999_999) {
-    throw new Error(`Invalid power from LLM: ${JSON.stringify(data.power)}`);
-  }
-
-  const out = { power, name };
+  const out = { power: parsePowerValue(data.power), name };
   if (typeof data.language === "string" && data.language.trim()) {
     out.language = data.language.trim();
   }
@@ -217,14 +102,16 @@ export function normalizeClanExtraction(data) {
   return out;
 }
 
+/**
+ * @param {unknown} data
+ * @returns {{ name: string, language?: string, nameLatin?: string }}
+ */
 export function normalizeClanNameExtraction(data) {
   if (!data || typeof data !== "object" || Array.isArray(data)) {
     throw new Error("LLM name JSON must be an object.");
   }
   let name = typeof data.name === "string" ? data.name.trim() : "";
-  if (!name) {
-    name = "UNKNOWN";
-  }
+  if (!name) name = "UNKNOWN";
   const out = { name };
   if (typeof data.language === "string" && data.language.trim()) {
     out.language = data.language.trim();
@@ -235,440 +122,155 @@ export function normalizeClanNameExtraction(data) {
   return out;
 }
 
+/**
+ * @param {unknown} data
+ * @returns {{ power: number }}
+ */
 export function normalizeClanPowerExtraction(data) {
   if (!data || typeof data !== "object" || Array.isArray(data)) {
     throw new Error("LLM power JSON must be an object.");
   }
-  let power;
-  if (typeof data.power === "number" && Number.isFinite(data.power)) {
-    power = Math.round(data.power);
-  } else if (typeof data.power === "string") {
-    const digits = data.power.replace(/[^\d]+/g, "");
-    power = digits ? Number(digits) : NaN;
-  } else {
-    power = NaN;
-  }
-  if (!Number.isFinite(power) || power <= 0 || power > 999_999_999) {
-    throw new Error(`Invalid power from LLM: ${JSON.stringify(data.power)}`);
-  }
-  return { power };
+  return { power: parsePowerValue(data.power) };
 }
 
-function extractTextFromLmStudioResponse(payload) {
-  const output = payload?.output;
-  if (!Array.isArray(output)) {
-    return typeof payload?.output === "string" ? payload.output : "";
-  }
-  return output
-    .filter((part) => part?.type === "message" && typeof part.content === "string")
-    .map((part) => part.content)
-    .join("\n")
-    .trim();
+const target = createVisionTarget({
+  targetKey: "clan",
+  defaultModelFallback: "qwen/qwen3-vl-4b",
+  visionModelHints: VISION_MODEL_HINTS,
+  systemPromptFallback: SYSTEM_PROMPT,
+  // Legacy behaviour: with no `userPrompt.image.prompt`, a name-crop prompt is used for the
+  // full screenshot. Kept as-is until P2-6 is addressed.
+  fullPromptFallback: DEFAULT_NAME_CROP.prompt,
+  nameFallback: DEFAULT_NAME_CROP,
+  powerFallback: DEFAULT_POWER_CROP,
+  normalizeFull: normalizeClanExtraction,
+  normalizeName: normalizeClanNameExtraction,
+  normalizePower: normalizeClanPowerExtraction,
+});
+
+export const resolveUserPromptImage = target.resolveUserPromptImage;
+
+/** @param {"name" | "power"} kind */
+export const resolveClanCropConfig = target.resolveCropConfig;
+
+/**
+ * @param {string} host
+ * @param {string | undefined} [preferred]
+ */
+export function resolveVisionModel(host, preferred) {
+  return target.resolveModel(host, preferred);
 }
 
-export async function resolveVisionModel(host, preferred) {
-  if (preferred?.trim()) return preferred.trim();
-
-  const envModel = resolvePreferredModel();
-  if (envModel?.trim()) return envModel.trim();
-
-  const base = apiBase(host);
-  try {
-    const res = await fetch(`${base}${MODELS_PATH}`);
-    if (!res.ok) return DEFAULT_LLM_MODEL;
-
-    const data = await res.json();
-    const models = data?.models ?? [];
-    const loadedVision = models.filter(
-      (m) =>
-        m?.capabilities?.vision &&
-        Array.isArray(m.loaded_instances) &&
-        m.loaded_instances.length > 0,
-    );
-    const pool = loadedVision.length > 0 ? loadedVision : models.filter((m) => m?.capabilities?.vision);
-    const keys = pool.map((m) => String(m.key ?? "")).filter(Boolean);
-    if (keys.length === 0) {
-      throw new Error(`No vision model loaded in LM Studio. Load one (e.g. ${DEFAULT_LLM_MODEL}) in the app.`);
-    }
-
-    const lower = keys.map((k) => [k, k.toLowerCase()]);
-    for (const hint of VISION_MODEL_HINTS) {
-      const hit = lower.find(([, l]) => l.includes(hint));
-      if (hit) return hit[0];
-    }
-    return keys[0];
-  } catch (err) {
-    if (err instanceof Error && err.message.includes("No vision")) throw err;
-    return DEFAULT_LLM_MODEL;
-  }
+/**
+ * @param {string} imagePath
+ * @param {{ x: number, y: number, width: number, height: number }} roi
+ */
+export function cropClanRoiToPngBuffer(imagePath, roi) {
+  return cropRoiToPngBuffer(imagePath, roi);
 }
 
-async function fetchWithTimeout(url, init, timeoutMs = REQUEST_TIMEOUT_MS) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    return await fetch(url, { ...init, signal: controller.signal });
-  } catch (err) {
-    if (err instanceof Error && err.name === "AbortError") {
-      throw new Error(`LM Studio request timed out after ${timeoutMs / 1000}s.`);
-    }
-    throw new Error(`Cannot reach LM Studio at ${url}. ${err instanceof Error ? err.message : String(err)}`);
-  } finally {
-    clearTimeout(timer);
-  }
-}
+/**
+ * @param {string} imagePath
+ * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
+ */
+export const extractClanDataFromScreenshot = target.extractFromScreenshot;
 
-function clampRoi(roi, meta) {
-  const left = Math.max(0, Math.min(roi.left, meta.width - 1));
-  const top = Math.max(0, Math.min(roi.top, meta.height - 1));
-  const width = Math.max(1, Math.min(roi.width, meta.width - left));
-  const height = Math.max(1, Math.min(roi.height, meta.height - top));
-  return { left, top, width, height };
-}
-
-export async function cropClanRoiToPngBuffer(imagePath, roi) {
+/**
+ * The formation header is centered text — "<back arrow> Player formation <name>" — so a
+ * fixed name crop clips the clan tag on long names and includes the label tail on short
+ * ones. Locate the name start from the header word runs instead.
+ *
+ * Returns ROI in `roiReference` coordinates, or undefined when the header is not recognised.
+ * @param {string} imagePath
+ * @returns {Promise<{ x: number, y: number, width: number, height: number } | undefined>}
+ */
+export async function detectClanNameRoi(imagePath) {
   const meta = await sharp(imagePath).metadata();
-  if (!meta.width || !meta.height) {
-    throw new Error(`Could not read image dimensions: ${imagePath}`);
+  const width = meta.width;
+  const height = meta.height;
+  if (!width || !height) return undefined;
+
+  const reference = resolveRoiReference(_llmConfig) ?? { width, height };
+  const sx = width / reference.width;
+  const sy = height / reference.height;
+  const left = Math.min(Math.round(HEADER_SCAN_LEFT * sx), width - 1);
+  const top = Math.min(Math.round(HEADER_Y * sy), height - 1);
+  const scanWidth = Math.max(1, Math.min(Math.round(HEADER_SCAN_WIDTH * sx), width - left));
+  const scanHeight = Math.max(1, Math.min(Math.round(HEADER_HEIGHT * sy), height - top));
+
+  const { data, info } = await sharp(imagePath)
+    .extract({ left, top, width: scanWidth, height: scanHeight })
+    .greyscale()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const isText = [];
+  for (let x = 0; x < info.width; x++) {
+    let dark = 0;
+    for (let y = 0; y < info.height; y++) if (data[y * info.width + x] < 150) dark++;
+    isText.push(dark >= 1);
   }
-  const box = clampRoi(
-    { left: Math.floor(roi.x), top: Math.floor(roi.y), width: Math.floor(roi.width), height: Math.floor(roi.height) },
-    { width: meta.width, height: meta.height },
-  );
-  return sharp(imagePath).extract(box).png().toBuffer();
+
+  const runs = [];
+  let start = -1;
+  for (let x = 0; x < isText.length; x++) {
+    if (isText[x] && start < 0) start = x;
+    if (!isText[x] && start >= 0) {
+      runs.push([left + start, left + x - 1]);
+      start = -1;
+    }
+  }
+  if (start >= 0) runs.push([left + start, left + isText.length - 1]);
+
+  const merged = [];
+  for (const run of runs) {
+    const last = merged[merged.length - 1];
+    if (last && run[0] - last[1] <= HEADER_RUN_MERGE_GAP * sx) last[1] = run[1];
+    else merged.push([...run]);
+  }
+
+  const runWidth = (i) => (merged[i][1] - merged[i][0]) / sx;
+  const plausible =
+    merged.length >= 4 &&
+    merged[0][0] >= 45 * sx &&
+    merged[0][1] <= 135 * sx &&
+    runWidth(1) > 85 &&
+    runWidth(1) < 135 &&
+    runWidth(2) > 145 &&
+    runWidth(2) < 205;
+  if (!plausible) return undefined;
+
+  const x = Math.round((merged[3][0] - NAME_CROP_PAD * sx) / sx);
+  return {
+    x: Math.max(0, x),
+    y: HEADER_Y,
+    width: Math.max(1, reference.width - x - NAME_CROP_PAD),
+    height: HEADER_HEIGHT,
+  };
 }
 
-async function chatVisionWithImages(host, model, userPrompt, images, timeoutMs) {
-  const url = `${apiBase(host)}${CHAT_PATH}`;
-  const headers = { "Content-Type": "application/json" };
-  const token = process.env.LM_API_TOKEN?.trim();
-  if (token) headers.Authorization = `Bearer ${token}`;
-
-  /** @type {object[]} */
-  const input = [{ type: "text", content: userPrompt }];
-  for (const img of images) {
-    input.push({
-      type: "image",
-      data_url: `data:${img.mime};base64,${img.bytes.toString("base64")}`,
-    });
-  }
-
-  const response = await fetchWithTimeout(
-    url,
-    {
-      method: "POST",
-      headers,
-      body: JSON.stringify({
-        model,
-        system_prompt: SYSTEM_PROMPT,
-        input,
-        temperature: 0,
-      }),
-    },
-    timeoutMs,
-  );
-
-  if (!response.ok) {
-    const body = await response.text().catch(() => "");
-    throw new Error(`LM Studio HTTP ${response.status} for model "${model}": ${body.slice(0, 400) || response.statusText}`);
-  }
-
-  const payload = await response.json();
-  const content = extractTextFromLmStudioResponse(payload);
-  if (!content) throw new Error("LM Studio returned an empty message.");
-  return content;
-}
-
-export async function extractClanDataFromScreenshot(imagePath, options = {}) {
-  const host = resolveHost(options.host);
-  const model = await resolveVisionModel(host, options.model);
-  const timeoutMs = options.timeoutMs ?? REQUEST_TIMEOUT_MS;
-  const clearBeforeEach =
-    options.clearCacheBeforeEachCall !== undefined
-      ? options.clearCacheBeforeEachCall === true
-      : shouldClearPredictionCacheBeforeEachCall({ config: _llmConfig });
-
-  if (clearBeforeEach) {
-    await clearLmPredictionCache({
-      config: _llmConfig,
-      label: "before LLM call",
-    });
-  }
-
-  const imageBytes = await fs.readFile(imagePath);
-  const mime = mimeForImagePath(imagePath);
-  const content = await chatVisionWithImages(
-    host,
-    model,
-    resolveUserPromptImage(),
-    [{ mime, bytes: imageBytes }],
-    timeoutMs,
-  );
-  return normalizeClanExtraction(parseJsonFromLlm(content));
-}
-
+/**
+ * @param {string} imagePath
+ * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean, nameRoi?: { x: number, y: number, width: number, height: number } }} [options]
+ */
 export async function extractClanDataFromNamePowerCrops(imagePath, options = {}) {
-  const host = resolveHost(options.host);
-  const model = await resolveVisionModel(host, options.model);
-  const timeoutMs = options.timeoutMs ?? REQUEST_TIMEOUT_MS;
-  const clearBeforeEach =
-    options.clearCacheBeforeEachCall !== undefined
-      ? options.clearCacheBeforeEachCall === true
-      : shouldClearPredictionCacheBeforeEachCall({ config: _llmConfig });
-
-  if (clearBeforeEach) {
-    await clearLmPredictionCache({
-      config: _llmConfig,
-      label: "before LLM crop calls",
-    });
-  }
-
-  const nameCfg = resolveClanCropConfig("name");
-  const powerCfg = resolveClanCropConfig("power");
-  const nameBytes = await cropClanRoiToPngBuffer(imagePath, nameCfg.roi);
-  const powerBytes = await cropClanRoiToPngBuffer(imagePath, powerCfg.roi);
-
-  const nameContent = await chatVisionWithImages(
-    host,
-    model,
-    nameCfg.prompt,
-    [{ mime: "image/png", bytes: nameBytes }],
-    timeoutMs,
-  );
-  const namePart = normalizeClanNameExtraction(parseJsonFromLlm(nameContent));
-
-  const powerContent = await chatVisionWithImages(
-    host,
-    model,
-    powerCfg.prompt,
-    [{ mime: "image/png", bytes: powerBytes }],
-    timeoutMs,
-  );
-  const powerPart = normalizeClanPowerExtraction(parseJsonFromLlm(powerContent));
-
-  return normalizeClanExtraction({
-    name: namePart.name,
-    power: powerPart.power,
-    language: namePart.language,
-    nameLatin: namePart.nameLatin,
-  });
-}
-
-async function upsertClanDataJsonForImage(imagePath, extracted, durationMs, canonical) {
-  const folder = path.dirname(imagePath);
-  const base = path.basename(imagePath);
-  const dataPath = path.join(folder, "data.json");
-  let existing = {};
-  try {
-    const raw = await fs.readFile(dataPath, "utf8");
-    existing = JSON.parse(raw);
-  } catch {
-    existing = {};
-  }
-  existing[base] = {
-    name: extracted.name,
-    nameLatin: extracted.nameLatin,
-    power: extracted.power,
-    language: extracted.language ?? null,
-    extractedAt: new Date().toISOString(),
-    processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
-    canonical: canonical ?? null,
-  };
-  await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
-  return dataPath;
-}
-
-async function removeOriginalIfCanonicalExists(imagePath, extracted) {
-  try {
-    const canonicalKey = canonicalEnemyMapKey(imagePath, {
-      power: extracted.power,
-      nameLatinRaw: extracted.nameLatin || extracted.name,
-      nameEnglish: undefined,
-      nameRaw: extracted.name,
-    });
-    // canonicalKey uses posix separators; convert to platform path
-    const parts = canonicalKey.split("/").filter(Boolean);
-    const canonicalAbs = path.join(WORKSPACE_ROOT, ...parts);
+  let nameRoi = options.nameRoi;
+  if (!nameRoi) {
     try {
-      await fs.access(canonicalAbs);
-      // canonical webp exists — delete original image
-      await fs.unlink(imagePath);
-      return { deleted: true, canonical: canonicalAbs };
+      nameRoi = await detectClanNameRoi(imagePath);
     } catch {
-      return { deleted: false };
+      nameRoi = undefined;
     }
-  } catch (err) {
-    return { deleted: false, error: err instanceof Error ? err.message : String(err) };
   }
+  return target.extractFromNamePowerCrops(imagePath, nameRoi ? { ...options, nameRoi } : options);
 }
 
-async function renameImageToCanonicalLike(imagePath, extracted) {
-  try {
-    const folder = path.dirname(imagePath);
-    const ext = path.extname(imagePath);
-    const safeName = toSafeEnemyFilenameToken(extracted.nameLatin || extracted.name);
-    const powerToken = formatPowerForFilename(Number(extracted.power));
-    let candidate = `${powerToken}-${safeName}${ext}`;
-    let candidateAbs = path.join(folder, candidate);
-    let i = 1;
-    while (true) {
-      try {
-        await fs.access(candidateAbs);
-        // exists -> try suffix
-        candidate = `${powerToken}-${safeName}-${i}${ext}`;
-        candidateAbs = path.join(folder, candidate);
-        i++;
-        if (i > 1000) break;
-      } catch {
-        // does not exist -> safe to use
-        break;
-      }
-    }
-    await fs.rename(imagePath, candidateAbs);
-    return { renamed: true, newPath: candidateAbs };
-  } catch (err) {
-    return { renamed: false, error: err instanceof Error ? err.message : String(err) };
-  }
-}
-
-function parseExtractCliArgs(argv) {
-  const args = {
-    imagePath: undefined,
-    /** @type {boolean | undefined} */
-    clearCache: undefined,
-  };
-  for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    if (a === "--" || a === undefined) continue;
-    if (a === "--clear-cache") args.clearCache = true;
-    else if (a === "--no-clear-cache") args.clearCache = false;
-    else if (!a.startsWith("-") && !args.imagePath) args.imagePath = a;
-  }
-  return args;
-}
-
-async function cliMain() {
-  const { imagePath, clearCache } = parseExtractCliArgs(process.argv.slice(2));
-  if (!imagePath) {
-    console.error("Usage: node scripts/llm/llm-formation-extract.mjs <image.png> [--clear-cache|--no-clear-cache]");
-    process.exit(1);
-  }
-
-  const host = resolveHost();
-  const model = await resolveVisionModel(host, resolvePreferredModel());
-  const resolved = path.resolve(imagePath);
-  const clearCacheBeforeEachCall = shouldClearPredictionCacheBeforeEachCall({
-    cliOverride: clearCache,
-    config: _llmConfig,
-  });
-
-  console.log(`Provider: LM Studio`);
-  console.log(`Model: ${model}`);
-  console.log(`Host: ${host}`);
-  console.log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
-  console.log(`Image: ${resolved}\n`);
-  // Reconcile data.json: if entries point to old/original filenames but a canonical/renamed file exists,
-  // update data.json keys and remove the old original files.
-  async function reconcileDataJsonWithCanonicalFiles(folder) {
-    const dataPath = path.join(folder, "data.json");
-    const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
-    if (!raw) return;
-    let parsed;
-    try {
-      parsed = JSON.parse(raw);
-    } catch {
-      return;
-    }
-    const files = await fs.readdir(folder).catch(() => []);
-    let changed = false;
-    for (const [oldKey, entry] of Object.entries(parsed)) {
-      if (files.includes(oldKey)) continue; // file still present
-      const nameToken = toSafeEnemyFilenameToken(entry.nameLatin || entry.name || "UNKNOWN");
-      const powerToken = formatPowerForFilename(Number(entry.power || 0));
-      const exts = [".webp", ".png", ".jpg", ".jpeg"];
-      let found = null;
-      for (const ext of exts) {
-        const cand = `${powerToken}-${nameToken}${ext}`;
-        if (files.includes(cand)) {
-          found = cand;
-          break;
-        }
-        for (let i = 1; i <= 10 && !found; i++) {
-          const c2 = `${powerToken}-${nameToken}-${i}${ext}`;
-          if (files.includes(c2)) {
-            found = c2;
-            break;
-          }
-        }
-        if (found) break;
-      }
-      if (found) {
-        // delete oldKey file if exists
-        try {
-          await fs.unlink(path.join(folder, oldKey)).catch(() => {});
-        } catch {
-          // ignore
-        }
-        if (!Object.prototype.hasOwnProperty.call(parsed, found)) {
-          parsed[found] = entry;
-        }
-        delete parsed[oldKey];
-        changed = true;
-      }
-    }
-    if (changed) {
-      await fs.writeFile(path.join(folder, "data.json"), `${JSON.stringify(parsed, null, 2)}\n`, "utf8");
-      console.log(`[Data] reconciled data.json in ${folder}`);
-    }
-  }
-
-  try {
-    await reconcileDataJsonWithCanonicalFiles(path.dirname(resolved));
-  } catch {
-    // ignore reconciliation errors
-  }
-  // Skip processing if this filename is already recorded in data.json for the folder
-  try {
-    const folder = path.dirname(resolved);
-    const base = path.basename(resolved);
-    const dataPath = path.join(folder, "data.json");
-    const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      if (parsed && typeof parsed === "object" && Object.prototype.hasOwnProperty.call(parsed, base)) {
-        console.log(`[Skip] ${base} already present in ${dataPath}`);
-        process.exit(0);
-      }
-    }
-  } catch (err) {
-    // ignore parse errors and continue
-  }
-  const start = performance.now();
-  const result = await extractClanDataFromScreenshot(resolved, {
-    host,
-    model,
-    clearCacheBeforeEachCall,
-  });
-  const durationMs = performance.now() - start;
-  console.log(JSON.stringify(result, null, 2));
-  console.log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
-  try {
-    // Do not rename originals. Persist data.json entry keyed by original filename and include canonical suggestion.
-    const canonicalBase = `${formatPowerForFilename(Number(result.power))}-${toSafeEnemyFilenameToken(
-      result.nameLatin || result.name,
-    )}.webp`;
-    const dataJson = await upsertClanDataJsonForImage(resolved, result, durationMs, canonicalBase);
-    console.log(`[Data] wrote ${dataJson} (processing ${Math.round(durationMs)}ms)`);
-  } catch (err) {
-    console.warn("[Data] failed to write data.json, rename, or cleanup:", err instanceof Error ? err.message : String(err));
-  }
-}
-
-const invokedDirectly = path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
-  cliMain().catch((e) => {
+if (isInvokedDirectly(import.meta.url)) {
+  runVisionExtractCli({
+    scriptName: "llm-formation-extract.mjs",
+    target,
+  }).catch((e) => {
     console.error(e instanceof Error ? e.message : e);
     process.exit(1);
   });
 }
-

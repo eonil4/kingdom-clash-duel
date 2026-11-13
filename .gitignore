@@ -4,6 +4,8 @@ dist
 .DS_Store
 coverage
 /.env.local
+.ocr-debug/
+data/battle/examples/battleResult.json
 
 # APK / native bundles — exceed GitHub's 100 MB per-file limit (keep locally only)
 data/**/*_APKPure.zip

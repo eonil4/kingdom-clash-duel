@@ -1,0 +1,5 @@
+{
+  "playerId": "example-defender",
+  "displayName": "Example Defender",
+  "slots": [{ "kind": "troop", "troopId": "INF", "level": 2, "slotIndex": 0 }]
+}

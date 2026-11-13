@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Build an HTML duel matrix from filenames split by a separator (default `_vs_`).
  *
@@ -44,12 +43,10 @@
  */
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import sharp from "sharp";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const WORKSPACE_ROOT = path.resolve(__dirname, "..");
+import { WORKSPACE_ROOT } from "./enemy-records.mjs";
+import { isMain } from "./cli.mjs";
+import { escapeHtml, wrapHtmlDocument } from "./html-document.mjs";
 
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";
@@ -62,7 +59,7 @@ const DEFAULT_EXTENSIONS = [".jpg", ".png", ".webp"];
  * @param {string} raw
  * @returns {"asc" | "desc"}
  */
-function parseSortDir(raw) {
+export function parseSortDir(raw) {
   const v = String(raw ?? "").trim().toLowerCase();
   if (v === "asc" || v === "ascending") return "asc";
   if (v === "desc" || v === "descending" || v === "") return "desc";
@@ -73,7 +70,7 @@ function parseSortDir(raw) {
  * @param {string | undefined} raw
  * @returns {number | undefined}
  */
-function parseScalePercent(raw) {
+export function parseScalePercent(raw) {
   if (raw === undefined || raw === null || raw === "") return undefined;
   const str = String(raw).trim().replace(/%$/, "");
   const num = Number(str);
@@ -90,7 +87,7 @@ function parseScalePercent(raw) {
  * @param {string} name
  * @returns {{ value: number, isPercent: boolean } | undefined}
  */
-function parseDimension(raw, name) {
+export function parseDimension(raw, name) {
   if (raw === undefined || raw === null || raw === "") return undefined;
   const str = String(raw).trim();
   const isPercent = str.endsWith("%");
@@ -107,7 +104,7 @@ function parseDimension(raw, name) {
 /**
  * @param {{ value: number, isPercent: boolean } | undefined} d
  */
-function formatDim(d) {
+export function formatDim(d) {
   if (!d) return "";
   return d.isPercent ? `${d.value}%` : `${d.value}px`;
 }
@@ -116,7 +113,7 @@ function formatDim(d) {
  * @param {string} raw
  * @returns {string[]}
  */
-function parseExtensions(raw) {
+export function parseExtensions(raw) {
   let value = String(raw).trim();
   if (!value) return [...DEFAULT_EXTENSIONS];
 
@@ -139,7 +136,7 @@ function parseExtensions(raw) {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = {
     folder: undefined,
     separator: DEFAULT_SEPARATOR,
@@ -157,6 +154,8 @@ function parseArgs(argv) {
     rowScroll: true,
     /** In row-scroll mode, only show columns that have duels for that attacker */
     compact: false,
+    /** Emit the zoom toolbar + scaling script */
+    slider: true,
     /** Which view(s) to generate: "both" (default), "enemy" / "enemies", or "clan" */
     view: "both",
     extensions: /** @type {string[]} */ ([]),
@@ -258,6 +257,14 @@ function parseArgs(argv) {
       args.compact = true;
       continue;
     }
+    if (a === "--slider" || a === "--zoom") {
+      args.slider = true;
+      continue;
+    }
+    if (a === "--no-slider" || a === "--no-zoom") {
+      args.slider = false;
+      continue;
+    }
     if (a === "--no-compact" || a === "--all-cols") {
       args.compact = false;
       continue;
@@ -297,7 +304,7 @@ function parseArgs(argv) {
 /**
  * @param {string} folderArg
  */
-function resolveFolderPaths(folderArg) {
+export function resolveFolderPaths(folderArg) {
   const abs = path.isAbsolute(folderArg)
     ? path.resolve(folderArg)
     : path.resolve(WORKSPACE_ROOT, folderArg);
@@ -328,7 +335,7 @@ function compareLabels(a, b, dir) {
  * @param {string} separator
  * @returns {{ clan: string, enemy: string, left: string, right: string } | undefined}
  */
-function splitVsParts(stem, separator) {
+export function splitVsParts(stem, separator) {
   const idx = stem.indexOf(separator);
   if (idx <= 0) return undefined;
   const clan = stem.slice(0, idx);
@@ -429,7 +436,7 @@ function buildImgAttrs(meta, args) {
  * Render one matrix section (e.g. Enemies or Clan).
  * @param {object} param
  */
-function renderMatrixSection({
+export function renderMatrixSection({
   title,
   rows,
   cols,
@@ -493,7 +500,7 @@ function renderMatrixSection({
       html += '<table style="border-collapse: collapse; white-space: nowrap;">\n';
       html += "  <tr>\n";
       if (!args.compact) {
-        html += `    <th align="center" valign="bottom"><sub><b>${escapeHtml(row)}</b></sub></th>\n`;
+        html += `    <th align="center" valign="bottom" scope="col"><sub><b>${escapeHtml(row)}</b></sub></th>\n`;
       }
       for (const col of activeCols) {
         const colW = colWidthMap.get(col) ?? fallbackColW;
@@ -505,7 +512,7 @@ function renderMatrixSection({
         // establishes an intrinsic min-content width, enabling horizontal table scrolling on GitHub.
         const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
         const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
-        html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+        html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}" scope="col"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
       }
       html += "  </tr>\n";
 
@@ -561,14 +568,14 @@ function renderMatrixSection({
       const thStyle = colW ? ` style="min-width: ${colW}px;"` : "";
       const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
       const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
-      html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+      html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}" scope="col"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
     }
     html += "  </tr>\n";
 
     for (const row of rows) {
       html += "  <tr>\n";
       html +=
-        `    <th align="center" valign="middle" ` +
+        `    <th align="center" valign="middle" scope="row" ` +
         `style="writing-mode: vertical-rl; text-orientation: mixed; white-space: nowrap;">` +
         `<sub><b>${escapeHtml(row)}</b></sub></th>\n`;
 
@@ -605,13 +612,11 @@ function renderMatrixSection({
   return html;
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
-  if (!args.folder) {
-    usage();
-    process.exit(1);
-  }
-
+/**
+ * Build `<folder>/index.html` for the given parsed args.
+ * @param {ReturnType<typeof parseArgs>} args
+ */
+export async function runMatrixGenerator(args) {
   const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(args.folder);
   const extensionSet = new Set(args.extensions.map((e) => e.toLowerCase()));
   const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
@@ -661,8 +666,7 @@ async function main() {
   const clans = [...clanSet].sort((a, b) => compareLabels(a, b, args.cols));
 
   if (enemies.length === 0 || clans.length === 0) {
-    console.log(`No duel images matching separator ${JSON.stringify(args.separator)} in: ${targetFolder}`);
-    process.exit(0);
+    return { empty: true, targetFolder };
   }
 
   /** @type {Map<string, { width: number, height: number }>} */
@@ -806,12 +810,49 @@ async function main() {
   }
 
   const outputPath = path.join(targetFolder, "index.html");
-  fs.writeFileSync(outputPath, html, "utf8");
+  fs.writeFileSync(
+    outputPath,
+    wrapHtmlDocument({ title: repoRelativePath, body: html }),
+    "utf8",
+  );
 
-  console.log(`Successfully generated: ${outputPath}`);
-  console.log(`Repo path: ${repoRelativePath}`);
-  console.log(`Separator: ${args.separator}`);
-  console.log(`Sort: rows=${args.rows}, cols=${args.cols}`);
+  return {
+    outputPath,
+    repoRelativePath,
+    sections: sections.map((section) => section.title),
+    enemies: enemies.length,
+    clans: clans.length,
+    totalDuels,
+    skipped,
+    initialPercent,
+    html,
+  };
+}
+
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} argv
+ * @param {{ log?: (...args: any[]) => void }} [deps]
+ */
+export async function runMatrixCli(argv, { log = (...args) => console.log(...args) } = {}) {
+  const args = parseArgs(argv);
+  if (!args.folder) {
+    usage();
+    return { code: 1 };
+  }
+
+  const result = await runMatrixGenerator(args);
+  if (result.empty) {
+    log(
+      `No duel images matching separator ${JSON.stringify(args.separator)} in: ${result.targetFolder}`,
+    );
+    return { code: 0, result };
+  }
+
+  log(`Successfully generated: ${result.outputPath}`);
+  log(`Repo path: ${result.repoRelativePath}`);
+  log(`Separator: ${args.separator}`);
+  log(`Sort: rows=${args.rows}, cols=${args.cols}`);
   const sizeInfo =
     args.width || args.height
       ? [
@@ -823,28 +864,25 @@ async function main() {
       : args.scale
         ? `${args.scale}%`
         : "full (100%)";
-  console.log(`Scale / Size: ${sizeInfo}`);
-  console.log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
-  console.log(`Sections: ${sections.map((s) => s.title).join(", ")}`);
-  console.log(`Enemies: ${enemies.length}, Clan: ${clans.length}, Duels: ${totalDuels}`);
-  console.log(`Extensions: ${args.extensions.join(", ")}`);
-  if (skipped > 0) {
-    console.log(`Skipped files (no separator match): ${skipped}`);
+  log(`Scale / Size: ${sizeInfo}`);
+  log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
+  log(`Sections: ${result.sections.join(", ")}`);
+  log(`Enemies: ${result.enemies}, Clan: ${result.clans}, Duels: ${result.totalDuels}`);
+  log(`Extensions: ${args.extensions.join(", ")}`);
+  if (result.skipped > 0) {
+    log(`Skipped files (no separator match): ${result.skipped}`);
   }
+  return { code: 0, result };
 }
 
-/**
- * @param {string} text
- */
-function escapeHtml(text) {
-  return String(text)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+async function main() {
+  const { code } = await runMatrixCli(process.argv.slice(2));
+  process.exit(code);
 }
 
-main().catch((error) => {
-  console.error(`An error occurred: ${error instanceof Error ? error.message : error}`);
-  process.exit(1);
-});
+if (isMain(import.meta.url)) {
+  main().catch((error) => {
+    console.error(`An error occurred: ${error instanceof Error ? error.message : error}`);
+    process.exit(1);
+  });
+}

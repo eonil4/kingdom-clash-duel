@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Clan Clash headless battle simulator (APK config tables).
  *
@@ -10,10 +9,11 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { loadApkBattleConfig, DEFAULT_CONFIG_DIR } from "./load-apk-config.mjs";
+import { loadApkBattleConfig } from "./load-apk-config.mjs";
 import { resolveArmy } from "./army-resolver.mjs";
-import { simulateCombat, summarizeSide } from "./combat-engine.mjs";
+import { simulateCombat, summarizeSide, DEFENSE_FACTOR, TICK_DT_SEC } from "./combat-engine.mjs";
 import { estimateClashScore } from "./clash-score.mjs";
+import { UsageError, isMain } from "../cli.mjs";
 
 function usage() {
   console.error(
@@ -24,22 +24,23 @@ function usage() {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   /** @type {{ attacker?: string, defender?: string, output?: string, seed?: number, configDir?: string }} */
   const args = {};
   const positionals = [];
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--seed") args.seed = Number(argv[++i]);
+    else if (a.startsWith("--seed=")) args.seed = Number(a.slice("--seed=".length));
     else if (a === "--config-dir") args.configDir = argv[++i];
+    else if (a.startsWith("--config-dir=")) args.configDir = a.slice("--config-dir=".length);
     else if (a === "--help" || a === "-h") {
       usage();
       process.exit(0);
     } else if (!a.startsWith("-")) positionals.push(a);
   }
   if (positionals.length < 3) {
-    usage();
-    process.exit(1);
+    throw new UsageError("Expected <attacker.json> <defender.json> <battleResult.json>.");
   }
   args.attacker = positionals[0];
   args.defender = positionals[1];
@@ -50,7 +51,7 @@ function parseArgs(argv) {
 /**
  * @param {string} filePath
  */
-async function readArmy(filePath) {
+export async function readArmy(filePath) {
   const abs = path.resolve(filePath);
   const raw = await fs.readFile(abs, "utf8");
   return { abs, data: JSON.parse(raw) };
@@ -102,8 +103,11 @@ function unitSummaries(units, side) {
     }));
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
+/**
+ * Run one simulated clash and write the battle report JSON.
+ * @param {ReturnType<typeof parseArgs>} args
+ */
+export async function runBattle(args) {
   const config = await loadApkBattleConfig({ configDir: args.configDir });
 
   const attackerFile = await readArmy(/** @type {string} */ (args.attacker));
@@ -194,9 +198,9 @@ async function main() {
     },
     clash,
     engine: {
-      defenseFactor: 0.5,
-      tickDtSec: 0.25,
-      configSource: DEFAULT_CONFIG_DIR,
+      defenseFactor: DEFENSE_FACTOR,
+      tickDtSec: TICK_DT_SEC,
+      configSource: config.configDir,
     },
   };
 
@@ -204,16 +208,30 @@ async function main() {
   await fs.mkdir(path.dirname(outAbs), { recursive: true });
   await fs.writeFile(outAbs, `${JSON.stringify(result, null, 2)}\n`, "utf8");
 
+  return { result, outputPath: outAbs };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  const { result, outputPath } = await runBattle(args);
+
   console.log(
     `${result.outcome} (${result.outcomeReason}) in ${result.durationSec}s` +
       ` | atkPower=${result.attacker.armyPower} defPower=${result.defender.armyPower}` +
       ` | dmg ${result.attacker.damageDealt}/${result.defender.damageDealt}` +
       ` | points~${result.clash.pointsEstimate}`,
   );
-  console.log(`Wrote ${outAbs}`);
+  console.log(`Wrote ${outputPath}`);
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+if (isMain(import.meta.url)) {
+  main().catch((err) => {
+    if (err instanceof UsageError) {
+      console.error(err.message);
+      usage();
+    } else {
+      console.error(err instanceof Error ? err.message : err);
+    }
+    process.exit(1);
+  });
+}

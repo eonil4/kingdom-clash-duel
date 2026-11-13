@@ -5,8 +5,16 @@ import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
-import { fileURLToPath } from "url";
 import {
+  CLAN_NAME_PICK,
+  DEFAULT_CLAN_NAME_CORRECTIONS,
+  OCR_EARLY_EXIT,
+  OCR_UPSCALE_WIDTHS,
+} from "../constants.mjs";
+import { log } from "../log.mjs";
+import { isMain } from "../cli.mjs";
+import {
+  buildNameBoxes,
   cropBoxFromPercent,
   NAME_BOX,
   NAME_BOX_WIDE,
@@ -19,7 +27,7 @@ import {
 /** Letters, digits, tag punctuation (Windows-safe); excludes reserved filename chars. */
 const NAME_STRIP_OUTSIDE_CLASS = /[^\p{L}\d_\- \\|\[\]]+/gu;
 
-function cleanupName(text) {
+export function cleanupName(text) {
   const cleaned = String(text)
     .replace(/\s+/g, " ")
     .replace(NAME_STRIP_OUTSIDE_CLASS, "")
@@ -42,14 +50,51 @@ function cleanupName(text) {
   return pool[pool.length - 1] ?? "";
 }
 
-function cleanupNamePhrase(text) {
+export function cleanupNamePhrase(text) {
   return String(text)
     .replace(NAME_STRIP_OUTSIDE_CLASS, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function scoreNameCandidate(name) {
+/**
+ * Score a whole phrase by its best token (single tokens score as before).
+ * `scoreNameCandidate` rejects spaces, which used to push every multi-word pick
+ * into the full-image fallback and replace a good name with garbage.
+ * @param {string} name
+ */
+export function scoreNamePhrase(name) {
+  const text = String(name ?? "").trim();
+  if (!text) return -1;
+  const tokens = text.split(/\s+/).filter(Boolean);
+  return Math.max(
+    scoreNameCandidate(text.replace(/\s+/g, "_")),
+    ...tokens.map((token) => scoreNameCandidate(token)),
+  );
+}
+
+/**
+ * Penalise OCR junk shapes in a phrase: 1–2 letter fragments, tokens mixing
+ * Cyrillic and Latin inside one word, and a leading letterless icon fragment.
+ * @param {string} name
+ */
+export function arenaCandidatePenalty(name) {
+  const tokens = String(name ?? "").split(/\s+/).filter(Boolean);
+  let penalty = 0;
+  tokens.forEach((token, index) => {
+    const letters = (token.match(/\p{L}/gu) ?? []).length;
+    // Two-letter all-caps tokens are legit clan tags ("ZR", "SP").
+    const shortTag = /^[\p{Lu}]{2}$/u.test(token);
+    if (letters > 0 && letters <= 2 && tokens.length > 1 && !shortTag) penalty += 8;
+    if (/[\p{sc=Cyrillic}]/u.test(token) && /[A-Za-z]/.test(token)) penalty += 12;
+    if (index === 0 && letters === 0 && !token.includes("[")) penalty += 25;
+    // A digit-led Cyrillic token (e.g. "5ата\К") is an OCR artefact, not a name.
+    if (index === 0 && /^\d/.test(token) && /[\p{sc=Cyrillic}]/u.test(token)) penalty += 40;
+  });
+  return penalty;
+}
+
+export function scoreNameCandidate(name) {
   if (!name) return -1;
   if (!/^[\p{L}][\p{L}\d_\-\\|\[\]]{1,48}$/u.test(name)) return -1;
   let score = name.length;
@@ -60,6 +105,23 @@ function scoreNameCandidate(name) {
   if (/\\/.test(name)) score += 8;
   if (/[\[\]]/.test(name)) score += 5;
   return score;
+}
+
+/**
+ * Arena first-pass output that already looks like a full tag name, so the
+ * remaining recognition variants on the text-area crops can be skipped.
+ * @param {{ data?: { text?: string, confidence?: number } }} result
+ */
+export function isStrongFirstPassResult(result) {
+  const phrase = normalizeOpponentDisplayName(cleanupNamePhrase(result?.data?.text ?? ""));
+  const confidence = Number(result?.data?.confidence) || 0;
+  const letters = phrase.match(/\p{L}/gu) ?? [];
+  return (
+    confidence >= OCR_EARLY_EXIT.minConfidence &&
+    letters.length >= 2 &&
+    /[\\|\[\]]/u.test(phrase) &&
+    arenaNameLineQuality(phrase) >= 0
+  );
 }
 
 /** Penalise HUD-like digit islands; reward mixed-script lines and tag separators. */
@@ -123,7 +185,7 @@ export async function refineEnemyNameWithTestFolderCrops(
 
     const n = normalizeOpponentDisplayName(
       await ocrEnemyName(cropPath, worker, workerRus, {
-        ...options,
+        debugDir: options.debugDir,
         baseLabel: e.name,
       }),
     );
@@ -145,7 +207,22 @@ function isTestFolderPrimaryScreenshot(folderAbsPath, filePath) {
   return lower === "test.png" || /^screenshot_/i.test(base);
 }
 
-function isLikelyOcrNoise(name) {
+/**
+ * Phrase-aware noise check: only a phrase whose every token looks like OCR noise
+ * is noise. `isLikelyOcrNoise` alone judges the last cleanupName token, so a
+ * valid name ending in a tag ("МЕДВЕДЬ ZR") used to be treated as noise.
+ * @param {string} name
+ */
+export function isLikelyOcrNoisePhrase(name) {
+  const tokens = String(name ?? "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (tokens.length === 0) return true;
+  return tokens.every((token) => isLikelyOcrNoise(cleanupName(token)));
+}
+
+export function isLikelyOcrNoise(name) {
   const n = cleanupName(String(name || ""));
   if (!n) return true;
   const oneToken = n.split(/\s+/).length === 1;
@@ -202,7 +279,7 @@ function extractTopRightLineName(ocrData, width, height) {
   return candidates[0]?.text ?? "";
 }
 
-function extractBestPhraseFromRawText(rawText) {
+export function extractBestPhraseFromRawText(rawText) {
   const lines = String(rawText || "")
     .split(/\r?\n/)
     .map((l) => cleanupNamePhrase(l))
@@ -226,10 +303,215 @@ function extractBestPhraseFromRawText(rawText) {
 const LATIN_WHITELIST =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789_- \\|[] ";
 
+const LATIN_ONLY_WHITELIST =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _-\\|[] ";
+
+/**
+ * @typedef {{ key: string, crop: "name" | "wide" | "text" | "textLine", width: number, threshold?: number }} NameVariant
+ * @typedef {{ id: string, worker: "eng" | "rus", psm: string, whitelist: string, onlyWhen?: "tight", variants: NameVariant[] }} NameRecognitionGroup
+ */
+
+/**
+ * Recognition matrix for the name. Each group is one worker parameter set; variants
+ * sharing a crop/threshold reuse one preprocessed buffer. Group order is the historical
+ * pass order — the early-exit check runs on the first group's results, and the
+ * Latin-only repair pass exists only for tight formation boxes.
+ * @type {NameRecognitionGroup[]}
+ */
+export const NAME_RECOGNITION_GROUPS = [
+  {
+    id: "first",
+    worker: "eng",
+    psm: "8",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "nameNeutral", crop: "name", width: OCR_UPSCALE_WIDTHS.name },
+      { key: "nameThreshold", crop: "name", width: OCR_UPSCALE_WIDTHS.name, threshold: 155 },
+      { key: "wideNeutral", crop: "wide", width: OCR_UPSCALE_WIDTHS.nameWide },
+      { key: "wideThreshold", crop: "wide", width: OCR_UPSCALE_WIDTHS.nameWide, threshold: 150 },
+    ],
+  },
+  {
+    id: "text",
+    worker: "eng",
+    psm: "7",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "textNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "textThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "textLineNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "textLineThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+  {
+    id: "textRus",
+    worker: "rus",
+    psm: "7",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "textRusNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "textRusThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "textLineRusNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "textLineRusThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+  {
+    id: "textLatin",
+    worker: "eng",
+    psm: "7",
+    whitelist: LATIN_ONLY_WHITELIST,
+    onlyWhen: "tight",
+    variants: [
+      { key: "latinTextNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "latinTextThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "latinTextLineNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "latinTextLineThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+];
+
+/**
+ * Strip unbalanced tag noise such as a trailing "]" produced by stylised fonts.
+ * @param {string} text
+ */
+export function stripUnbalancedTagNoise(text) {
+  let s = cleanupNamePhrase(String(text ?? ""));
+  const opens = (s.match(/\[/g) ?? []).length;
+  const closes = (s.match(/\]/g) ?? []).length;
+  if (opens === 0 && closes > 0) s = s.replace(/\]/g, "");
+  else if (closes === 0 && opens > 0) s = s.replace(/\[/g, "");
+  else if (closes > opens) s = s.replace(/\]+$/g, "");
+  else if (opens > closes) s = s.replace(/^\[+/g, "");
+  return s.replace(/\s+/g, " ").trim();
+}
+
+/**
+ * Drop OCR glyph noise that masquerades as a leading/trailing tag separator
+ * (e.g. an opponent-level icon read as "|", "\\" or "_").
+ * @param {string} text
+ */
+/**
+ * Strip repeated single-letter/lowercase fragments in front of the name
+ * (e.g. the "У я" of "У я Горький").
+ * @param {string} text
+ */
+export function stripLeadingClippedTokens(text) {
+  let current = cleanupNamePhrase(String(text ?? ""));
+  for (let i = 0; i < 4; i++) {
+    const match = current.match(/^(\S+)\s+(.+)$/u);
+    if (!match) break;
+    const [, first, rest] = match;
+    const single = /^[\p{L}\d]$/u.test(first);
+    const lowercase = /^\p{Ll}+$/u.test(first);
+    // Repeated fragments are single characters ("У я Горький"). A lowercase word
+    // is stripped only before an uppercase name ("hd Myasnik"), not before a
+    // lowercase word ("фил army" keeps its prefix).
+    if (!single && !(lowercase && /^\p{Lu}/u.test(rest))) break;
+    current = rest;
+  }
+  return current;
+}
+
+export function stripEdgeTagSeparators(text) {
+  return String(text)
+    .replace(/^[\s|\\_-]+/u, "")
+    .replace(/[\s|\\_]+$/u, "");
+}
+
+/**
+ * Strip a clipped leading token produced when the name window starts inside the
+ * previous UI label (e.g. the "...n" of "Clan" before "HuN | TOLDI").
+ * @param {string} text
+ */
+export function stripLeadingClippedToken(text) {
+  const s = cleanupNamePhrase(String(text ?? ""));
+  const m = s.match(/^(\S+)\s+(.+)$/u);
+  if (!m) return s;
+  const [, first, rest] = m;
+  const single = /^[\p{L}\d]$/u.test(first);
+  const lowercase = /^\p{Ll}+$/u.test(first);
+  return single || lowercase ? rest : s;
+}
+
+/**
+ * Correct stylised-font confusions in a leading clan tag: the arena/formation font
+ * often renders "HuN" as A/S/H + "ulN" when followed by a tag separator. Only the
+ * leading token is rewritten, and only when a separator follows it.
+ * @param {string} text
+ * @param {Record<string, string>} [corrections] wrong leading token -> replacement
+ */
+export function correctClanNameConfusables(
+  text,
+  corrections = DEFAULT_CLAN_NAME_CORRECTIONS,
+) {
+  const s = cleanupNamePhrase(String(text ?? ""));
+  for (const [wrong, right] of Object.entries(corrections ?? {})) {
+    if (!wrong || typeof right !== "string") continue;
+    const replacement = right.trim();
+    if (!replacement) continue;
+    if (!s.startsWith(wrong)) continue;
+    const rest = s.slice(wrong.length);
+    if (!/^\s*[|\\]/u.test(rest)) continue;
+    return `${replacement}${rest}`;
+  }
+  return s;
+}
+
+/**
+ * Choose a clan/formation name from a Latin-only recognition pass, falling back to
+ * the mixed-script result when the Latin pass is not confident enough.
+ *
+ * @param {{ text: string, confidence?: number }[]} candidates
+ * @param {string} fallbackName
+ */
+export function pickClanName(candidates, fallbackName) {
+  const fallbackText = cleanupNamePhrase(String(fallbackName ?? ""));
+  // Keep a genuinely Cyrillic formation name; garbled Cyrillic islands from a Latin
+  // name (e.g. "Нш|ТОО" for "HuN | TOLDI") still go through the Latin preference.
+  const cyr = (fallbackText.match(/\p{sc=Cyrillic}/gu) ?? []).length;
+  const lat = (fallbackText.match(/[A-Za-z]/g) ?? []).length;
+
+  const scored = (candidates ?? [])
+    .map((c) => ({ text: cleanupNamePhrase(c.text), confidence: Number(c.confidence) || 0 }))
+    .filter((c) => /[\p{L}].*[\p{L}]/u.test(c.text))
+    .map((c) => {
+      const chars = [...c.text];
+      const letters = chars.filter((ch) => /\p{L}/u.test(ch)).length;
+      const latin = chars.filter((ch) => /[A-Za-z]/.test(ch)).length;
+      const latinRatio = letters > 0 ? latin / letters : 0;
+      return { ...c, letters, score: c.confidence + CLAN_NAME_PICK.latinBonus * latinRatio };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const best = scored.find(
+    (c) => c.letters >= CLAN_NAME_PICK.minLetters && c.score >= CLAN_NAME_PICK.minScore,
+  );
+  // Cyrillic only vetoes a weak Latin pass; a confident Latin read still wins over
+  // garbled Cyrillic islands produced from a Latin name.
+  if (best && (cyr < lat || best.score >= CLAN_NAME_PICK.strongScore)) return best.text;
+  if (cyr > 0 && cyr >= lat) return fallbackText;
+  return best ? best.text : fallbackText;
+}
+
 /**
  * @param {import("tesseract.js").Worker} worker
  * @param {import("tesseract.js").Worker} workerRus
- * @param {{ debugDir?: string, baseLabel?: string }} [options]
+ * @param {{ debugDir?: string, baseLabel?: string, nameRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number }, nameBoxStyle?: "arena" | "tight", clanNameCorrections?: Record<string, string> }} [options]
  * @returns {Promise<string>}
  */
 export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
@@ -237,42 +519,62 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const base = baseLabel ?? path.basename(filePath);
   const meta = await sharp(filePath).metadata();
   if (!meta.width || !meta.height) return "";
-  const nameCrop = cropBoxFromPercent(meta, NAME_BOX);
-  const nameCropWide = cropBoxFromPercent(meta, NAME_BOX_WIDE);
-  const nameTextCrop = cropBoxFromPercent(meta, NAME_TEXT_BOX);
-  const nameTextLineCrop = cropBoxFromPercent(meta, NAME_TEXT_LINE_BOX);
-  const nameImg = sharp(filePath).extract(nameCrop);
-  const nameImgWide = sharp(filePath).extract(nameCropWide);
-  const nameTextImg = sharp(filePath).extract(nameTextCrop);
-  const nameTextLineImg = sharp(filePath).extract(nameTextLineCrop);
-  const nameBufNeutral = await preprocessForOcr(nameImg, { width: 1800 });
-  const nameBufThreshold = await preprocessForOcr(nameImg, {
-    width: 1800,
-    threshold: 155,
-  });
-  const nameBufRaw = await preprocessRawForOcr(nameImg, { width: 1800 });
-  const nameWideBufNeutral = await preprocessForOcr(nameImgWide, { width: 2000 });
-  const nameWideBufThreshold = await preprocessForOcr(nameImgWide, {
-    width: 2000,
-    threshold: 150,
-  });
-  const nameWideBufRaw = await preprocessRawForOcr(nameImgWide, { width: 2000 });
-  const nameTextBufNeutral = await preprocessForOcr(nameTextImg, { width: 2200 });
-  const nameTextBufThreshold = await preprocessForOcr(nameTextImg, {
-    width: 2200,
-    threshold: 145,
-  });
-  const nameTextBufRaw = await preprocessRawForOcr(nameTextImg, { width: 2200 });
-  const nameTextLineBufRaw = await preprocessRawForOcr(nameTextLineImg, {
-    width: 2400,
-  });
-  const nameTextLineBufNeutral = await preprocessForOcr(nameTextLineImg, {
-    width: 2400,
-  });
-  const nameTextLineBufThreshold = await preprocessForOcr(nameTextLineImg, {
-    width: 2400,
-    threshold: 140,
-  });
+  const configured = options.nameRoi
+    ? buildNameBoxes(meta, options.nameRoi, options.reference, {
+        style: options.nameBoxStyle ?? "arena",
+      })
+    : undefined;
+  const nameCrop = configured?.name ?? cropBoxFromPercent(meta, NAME_BOX);
+  const nameCropWide = configured?.wide ?? cropBoxFromPercent(meta, NAME_BOX_WIDE);
+  const nameTextCrop = configured?.text ?? cropBoxFromPercent(meta, NAME_TEXT_BOX);
+  const nameTextLineCrop =
+    configured?.textLine ?? cropBoxFromPercent(meta, NAME_TEXT_LINE_BOX);
+  const crops = {
+    name: sharp(filePath).extract(nameCrop),
+    wide: sharp(filePath).extract(nameCropWide),
+    text: sharp(filePath).extract(nameTextCrop),
+    textLine: sharp(filePath).extract(nameTextLineCrop),
+  };
+  /** @type {Map<string, Promise<Buffer>>} */
+  const buffers = new Map();
+  /**
+   * One preprocessed buffer per crop/threshold, shared by every group that uses it.
+   * @param {NameVariant} variant
+   */
+  const bufferFor = (variant) => {
+    const key = `${variant.crop}:${variant.width}:${variant.threshold ?? "neutral"}`;
+    let buf = buffers.get(key);
+    if (!buf) {
+      buf = preprocessForOcr(
+        crops[variant.crop],
+        variant.threshold === undefined
+          ? { width: variant.width }
+          : { width: variant.width, threshold: variant.threshold },
+      );
+      buffers.set(key, buf);
+    }
+    return buf;
+  };
+  /**
+   * Run groups in order; each group applies its own worker parameters.
+   * @param {NameRecognitionGroup[]} groups
+   */
+  const recognizeGroups = async (groups) => {
+    /** @type {Record<string, { data: { text: string, confidence: number } }>} */
+    const out = {};
+    for (const group of groups) {
+      const target = group.worker === "rus" ? workerRus : worker;
+      await target.setParameters({
+        tessedit_char_whitelist: group.whitelist,
+        tessedit_pageseg_mode: group.psm,
+      });
+      for (const variant of group.variants) {
+        out[variant.key] = await target.recognize(await bufferFor(variant));
+      }
+    }
+    return out;
+  };
+
   const fullWidth = 1400;
   const fullHeight = Math.max(
     1,
@@ -282,93 +584,82 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   if (debugDir) {
     await fs.mkdir(debugDir, { recursive: true });
     const prefix = path.join(debugDir, `${base}.`);
-    await fs.writeFile(`${prefix}name-raw.png`, nameBufRaw);
-    await fs.writeFile(`${prefix}name-wide-raw.png`, nameWideBufRaw);
-    await fs.writeFile(`${prefix}name-text-line-raw.png`, nameTextLineBufRaw);
     await fs.writeFile(`${prefix}full.png`, fullBuf);
   }
-  await worker.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "8",
-  });
-  const nameResRaw = await worker.recognize(nameBufRaw);
-  const nameResNeutral = await worker.recognize(nameBufNeutral);
-  const nameResThreshold = await worker.recognize(nameBufThreshold);
-  const nameWideResRaw = await worker.recognize(nameWideBufRaw);
-  const nameWideResNeutral = await worker.recognize(nameWideBufNeutral);
-  const nameWideResThreshold = await worker.recognize(nameWideBufThreshold);
-  await worker.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "7",
-  });
-  const nameTextResRaw = await worker.recognize(nameTextBufRaw);
-  const nameTextResNeutral = await worker.recognize(nameTextBufNeutral);
-  const nameTextResThreshold = await worker.recognize(nameTextBufThreshold);
-  const nameTextLineResRaw = await worker.recognize(nameTextLineBufRaw);
-  const nameTextLineResNeutral = await worker.recognize(nameTextLineBufNeutral);
-  const nameTextLineResThreshold = await worker.recognize(nameTextLineBufThreshold);
-  await worker.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "7",
-  });
-  const nameTextResCyrRaw = await worker.recognize(nameTextBufRaw);
-  const nameTextResCyrNeutral = await worker.recognize(nameTextBufNeutral);
-  const nameTextResCyrThreshold = await worker.recognize(nameTextBufThreshold);
-  await workerRus.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "7",
-  });
-  const nameTextRusRaw = await workerRus.recognize(nameTextBufRaw);
-  const nameTextRusNeutral = await workerRus.recognize(nameTextBufNeutral);
-  const nameTextRusThreshold = await workerRus.recognize(nameTextBufThreshold);
-  const nameTextLineRusRaw = await workerRus.recognize(nameTextLineBufRaw);
-  const nameTextLineRusNeutral = await workerRus.recognize(nameTextLineBufNeutral);
-  const nameTextLineRusThreshold = await workerRus.recognize(nameTextLineBufThreshold);
-  const candidates = [
-    cleanupName(nameResRaw.data.text),
-    cleanupName(nameResNeutral.data.text),
-    cleanupName(nameResThreshold.data.text),
-    cleanupName(nameWideResRaw.data.text),
-    cleanupName(nameWideResNeutral.data.text),
-    cleanupName(nameWideResThreshold.data.text),
-    cleanupNamePhrase(nameTextResRaw.data.text),
-    cleanupNamePhrase(nameTextResNeutral.data.text),
-    cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResRaw.data.text),
-    cleanupNamePhrase(nameTextLineResNeutral.data.text),
-    cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextResCyrRaw.data.text),
-    cleanupNamePhrase(nameTextResCyrNeutral.data.text),
-    cleanupNamePhrase(nameTextResCyrThreshold.data.text),
-    cleanupNamePhrase(nameTextRusRaw.data.text),
-    cleanupNamePhrase(nameTextRusNeutral.data.text),
-    cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusRaw.data.text),
-    cleanupNamePhrase(nameTextLineRusNeutral.data.text),
-    cleanupNamePhrase(nameTextLineRusThreshold.data.text),
+
+  /** @type {{ data: { text: string, confidence: number } }} */
+  const emptyResult = { data: { text: "", confidence: 0 } };
+  /** @type {Record<string, { data: { text: string, confidence: number } }>} */
+  const res = {};
+  for (const group of NAME_RECOGNITION_GROUPS) {
+    for (const variant of group.variants) res[variant.key] = emptyResult;
+  }
+
+  const firstGroup = NAME_RECOGNITION_GROUPS[0];
+  Object.assign(res, await recognizeGroups([firstGroup]));
+
+  // A confident first pass already holds a tag-shaped name; the text-area variants
+  // (and the Cyrillic/Latin repair passes) only add noise from here.
+  const firstPass = firstGroup.variants.map((variant) => res[variant.key]);
+  const strongFirstPass =
+    options.nameBoxStyle !== "tight" ? firstPass.find(isStrongFirstPassResult) : undefined;
+  const confidentFirstPass = strongFirstPass !== undefined;
+  if (confidentFirstPass) log.debug(`[OCR] early exit after first pass: ${base}`);
+
+  /** @type {{ text: string, confidence?: number }[]} */
+  const clanLatinResults = [];
+  if (!confidentFirstPass) {
+    const remainingGroups = NAME_RECOGNITION_GROUPS.filter(
+      (group) =>
+        group.id !== firstGroup.id &&
+        (group.onlyWhen !== "tight" || options.nameBoxStyle === "tight"),
+    );
+    Object.assign(res, await recognizeGroups(remainingGroups));
+    if (options.nameBoxStyle === "tight") {
+      const latinGroup = NAME_RECOGNITION_GROUPS.find((group) => group.id === "textLatin");
+      for (const variant of latinGroup?.variants ?? []) {
+        const result = res[variant.key];
+        clanLatinResults.push({ text: result.data.text, confidence: result.data.confidence });
+      }
+    }
+  }
+  // Arena text-area lines often carry an icon/label fragment before the name
+  // ("hd Myasnik", "sh - KalugaZR"); tight formation names keep their raw phrase.
+  const phraseCleanup =
+    options.nameBoxStyle === "tight"
+      ? cleanupNamePhrase
+      : (text) => stripEdgeTagSeparators(stripLeadingClippedTokens(cleanupNamePhrase(text)));
+  const rawCandidates = [
+    cleanupName(res.nameNeutral.data.text),
+    cleanupName(res.nameThreshold.data.text),
+    cleanupName(res.wideNeutral.data.text),
+    cleanupName(res.wideThreshold.data.text),
+    phraseCleanup(res.textNeutral.data.text),
+    phraseCleanup(res.textThreshold.data.text),
+    phraseCleanup(res.textLineNeutral.data.text),
+    phraseCleanup(res.textLineThreshold.data.text),
+    phraseCleanup(res.textRusNeutral.data.text),
+    phraseCleanup(res.textRusThreshold.data.text),
+    phraseCleanup(res.textLineRusNeutral.data.text),
+    phraseCleanup(res.textLineRusThreshold.data.text),
   ];
+  const candidates = [...rawCandidates];
   candidates.sort((a, b) => {
     const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
     if (dq !== 0) return dq;
     return scoreNameCandidate(b) - scoreNameCandidate(a);
   });
   let name = candidates[0] ?? "";
+  log.debug(`[OCR] ${base} candidates: ${candidates.map((c) => JSON.stringify(c)).join(" | ")}`);
   const textAreaCandidates = [
-    cleanupNamePhrase(nameTextResRaw.data.text),
-    cleanupNamePhrase(nameTextResNeutral.data.text),
-    cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResRaw.data.text),
-    cleanupNamePhrase(nameTextLineResNeutral.data.text),
-    cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextResCyrRaw.data.text),
-    cleanupNamePhrase(nameTextResCyrNeutral.data.text),
-    cleanupNamePhrase(nameTextResCyrThreshold.data.text),
-    cleanupNamePhrase(nameTextRusRaw.data.text),
-    cleanupNamePhrase(nameTextRusNeutral.data.text),
-    cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusRaw.data.text),
-    cleanupNamePhrase(nameTextLineRusNeutral.data.text),
-    cleanupNamePhrase(nameTextLineRusThreshold.data.text),
+    phraseCleanup(res.textNeutral.data.text),
+    phraseCleanup(res.textThreshold.data.text),
+    phraseCleanup(res.textLineNeutral.data.text),
+    phraseCleanup(res.textLineThreshold.data.text),
+    phraseCleanup(res.textRusNeutral.data.text),
+    phraseCleanup(res.textRusThreshold.data.text),
+    phraseCleanup(res.textLineRusNeutral.data.text),
+    phraseCleanup(res.textLineRusThreshold.data.text),
   ].filter((c) => /[\p{L}].*[\p{L}]/u.test(c));
   if (textAreaCandidates.length > 0) {
     const uniq = [...new Set(textAreaCandidates)];
@@ -383,23 +674,140 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
         /[\p{sc=Cyrillic}]/u.test(c) &&
         c.split(/\s+/).filter(Boolean).length >= 2,
     );
-    const pool =
-      mixedScriptOrSep.length > 0
-        ? mixedScriptOrSep
-        : cyrLineCandidates.length > 0
-          ? cyrLineCandidates
-          : uniq;
+    // Clean single-token Cyrillic names ("Мясник", "Павел", "ЮРЧИКЗР") compete with
+    // mixed-script lines; before this they were excluded by the line-only tiers.
+    const cyrTokenCandidates = uniq.filter(
+      (c) =>
+        /[\p{sc=Cyrillic}]/u.test(c) &&
+        c.split(/\s+/).filter(Boolean).length === 1 &&
+        (c.match(/\p{L}/gu) ?? []).length >= 3,
+    );
+    // Lowercase Latin words ("army", "fil") and clean Latin names ("Mazza",
+    // "OVERLORD") are valid reads and should compete with the Cyrillic tiers.
+    const latinLowerCandidates = uniq.filter(
+      (c) => /^[a-z][a-z ]*$/u.test(c) && scoreNamePhrase(c) >= 4,
+    );
+    // Votes count every recognition variant, including the primary name/wide crops:
+    // a reading seen by both the primary crop and text variants outranks a one-off.
+    /** @type {Map<string, number>} */
+    const votes = new Map();
+    rawCandidates.forEach((candidate, index) => {
+      if (!candidate) return;
+      // Primary-crop reads corroborate text-area reads, but duplicated variants of
+      // the same crop are weaker evidence than an independent text pass.
+      const weight = index < 4 ? 0.5 : 1;
+      votes.set(candidate, (votes.get(candidate) ?? 0) + weight);
+    });
+    const basePool = [
+      ...new Set([
+        ...mixedScriptOrSep,
+        ...cyrLineCandidates,
+        ...cyrTokenCandidates,
+        ...latinLowerCandidates,
+      ]),
+    ];
+    const baseMaxVote = basePool.reduce((max, c) => Math.max(max, votes.get(c) ?? 0), 0);
+    // A clean Latin name joins only when more variants read it than any non-Latin
+    // candidate ("Mazza" x6, "OVERLORD" x7); otherwise a valid Cyrillic read wins.
+    const latinCleanCandidates = uniq.filter((c) => {
+      if (
+        !/[A-Za-z]/.test(c) ||
+        /[\p{sc=Cyrillic}]/u.test(c) ||
+        arenaCandidatePenalty(c) !== 0 ||
+        scoreNamePhrase(c) < 4
+      ) {
+        return false;
+      }
+      const voteCount = votes.get(c) ?? 0;
+      // All-caps Latin strings are often Cyrillic-layout lookalikes ("MCKAHAEP"):
+      // they must clearly out-vote the Cyrillic reads to join the pool.
+      const allCaps = !/[a-z]/.test(c);
+      if (voteCount > baseMaxVote && (!allCaps || voteCount > baseMaxVote * 2)) return true;
+      // At parity, a word-like lowercase Latin name still competes ("Mazza"),
+      // while all-caps lookalike garbage does not.
+      return voteCount === baseMaxVote && voteCount > 0 && /[a-z]/.test(c) && /[aeiouy]/i.test(c);
+    });
+    let pool =
+      basePool.length > 0 || latinCleanCandidates.length > 0
+        ? [...new Set([...basePool, ...latinCleanCandidates])]
+        : uniq;
+    if (pool.length > 0 && pool.every((c) => arenaCandidatePenalty(c) > 0)) {
+      // Every tiered candidate is junk-shaped; fall back to clean Latin reads
+      // (e.g. "sigmaZR" competing with "5ата\К").
+      const cleanLatin = uniq.filter(
+        (c) => /[A-Za-z]/.test(c) && arenaCandidatePenalty(c) === 0 && scoreNamePhrase(c) >= 4,
+      );
+      if (cleanLatin.length > 0) pool = cleanLatin;
+    }
     pool.sort((a, b) => {
-      const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
-      if (dq !== 0) return dq;
+      // Weighted: line quality/penalty plus independent variant corroboration.
+      // A large vote margin can outweigh the mixed-script line bonus ("Есаул
+      // Сахалинб5" x5 vs one mixed line), while a genuinely mixed name with a
+      // single corroborating vote still wins.
+      const voteWeight = 7;
+      const sa =
+        arenaNameLineQuality(a) -
+        arenaCandidatePenalty(a) +
+        voteWeight * (votes.get(a) ?? 0);
+      const sb =
+        arenaNameLineQuality(b) -
+        arenaCandidatePenalty(b) +
+        voteWeight * (votes.get(b) ?? 0);
+      if (sb !== sa) return sb - sa;
+      const ds = scoreNamePhrase(b) - scoreNamePhrase(a);
+      if (ds !== 0) return ds;
+      // On an exact tie prefer a readable Latin candidate over Cyrillic glyph noise.
+      const la = /[A-Za-z]/.test(a) ? 1 : 0;
+      const lb = /[A-Za-z]/.test(b) ? 1 : 0;
+      if (la !== lb) return lb - la;
       const aw = a.split(/\s+/).filter(Boolean).length;
       const bw = b.split(/\s+/).filter(Boolean).length;
       if (aw !== bw) return bw - aw;
       return b.length - a.length;
     });
     name = pool[0] ?? name;
+    log.debug(`[OCR] ${base} pool pick: ${JSON.stringify(name)}`);
+    const allCapsCyrillic =
+      /[\p{sc=Cyrillic}]/u.test(name) && !/\p{Ll}/u.test(name);
+    if (arenaCandidatePenalty(name) > 0 || allCapsCyrillic) {
+      // The text-area winner is junk-shaped or an all-caps Cyrillic lookalike; a
+      // word-like reading from the primary crops is more trustworthy ("Dron"
+      // over "ВАТ СО", "Myxa" over "Myx г а").
+      const cleanPrimary = rawCandidates
+        .slice(0, 4)
+        .filter(
+          (c) =>
+            c &&
+            /[A-Za-z]/.test(c) &&
+            /[a-z]/.test(c) &&
+            !/[\p{sc=Cyrillic}]/u.test(c) &&
+            (c.match(/\p{L}/gu) ?? []).length >= 3 &&
+            arenaCandidatePenalty(c) === 0 &&
+            scoreNamePhrase(c) >= 4,
+        )
+        .sort((a, b) => a.length - b.length || scoreNamePhrase(b) - scoreNamePhrase(a));
+      if (cleanPrimary.length > 0) name = cleanPrimary[0];
+    }
   }
-  if (scoreNameCandidate(name) < 4 || isLikelyOcrNoise(name)) {
+  if (strongFirstPass) {
+    // Keep the whole phrase from the strong pass; single-token cleanup would drop
+    // clan tags, and the text-area passes that this exit skips are the noisy ones.
+    name = stripEdgeTagSeparators(
+      normalizeOpponentDisplayName(cleanupNamePhrase(strongFirstPass.data.text)),
+    );
+  }
+  if (options.nameBoxStyle === "tight") {
+    name = correctClanNameConfusables(
+      stripLeadingClippedToken(stripUnbalancedTagNoise(pickClanName(clanLatinResults, name))),
+      options.clanNameCorrections,
+    );
+  }
+
+  if (
+    !confidentFirstPass &&
+    options.nameBoxStyle !== "tight" &&
+    (scoreNamePhrase(name) < 4 || isLikelyOcrNoisePhrase(name))
+  ) {
     await worker.setParameters({
       tessedit_char_whitelist: LATIN_WHITELIST,
       tessedit_pageseg_mode: "11",
@@ -430,34 +838,57 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   return normalizeOpponentDisplayName(cleanupNamePhrase(name));
 }
 
-const __filename = fileURLToPath(import.meta.url);
-async function cliMain() {
-  const imgPath = process.argv[2];
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} [argv]
+ * @param {{
+ *   makeWorker?: (langs: string) => Promise<any>,
+ *   run?: typeof ocrEnemyName,
+ *   log?: (...args: any[]) => void,
+ *   error?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runNameCli(
+  argv = process.argv.slice(2),
+  {
+    makeWorker = (langs) => createWorker(langs),
+    run = ocrEnemyName,
+    log = console.log,
+    error = console.error,
+  } = {},
+) {
+  const [imgPath] = argv;
   if (!imgPath) {
-    console.error("Usage: node scripts/ocr-enemy-name.mjs <image.png>");
-    process.exit(1);
+    error("Usage: node scripts/ocr-enemy-name.mjs <image.png>");
+    return 1;
   }
   const resolved = path.resolve(imgPath);
-  await fs.access(resolved).catch(() => {
-    console.error(`Not found: ${resolved}`);
-    process.exit(1);
-  });
-  const worker = await createWorker("eng+rus");
-  const workerRus = await createWorker("rus");
+  try {
+    await fs.access(resolved);
+  } catch {
+    error(`Not found: ${resolved}`);
+    return 1;
+  }
+  const worker = await makeWorker("eng+rus");
+  const workerRus = await makeWorker("rus");
   try {
     await worker.setParameters({ preserve_interword_spaces: "1" });
     await workerRus.setParameters({ preserve_interword_spaces: "1" });
-    const name = await ocrEnemyName(resolved, worker, workerRus);
-    console.log(name);
+    const name = await run(resolved, worker, workerRus);
+    log(name);
+    return 0;
   } finally {
     await worker.terminate();
     await workerRus.terminate();
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+async function cliMain() {
+  const code = await runNameCli();
+  if (code !== 0) process.exit(code);
+}
+
+if (isMain(import.meta.url)) {
   cliMain().catch((e) => {
     console.error(e);
     process.exit(1);

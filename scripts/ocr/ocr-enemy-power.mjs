@@ -5,10 +5,20 @@ import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
-import { fileURLToPath } from "url";
-import { cropBoxFromPercent, POWER_BOX, preprocessForOcr } from "./ocr-enemy-crops.mjs";
+import {
+  buildPowerBox,
+  cropBoxFromPercent,
+  POWER_BOX,
+  preprocessForOcr,
+} from "./ocr-enemy-crops.mjs";
+import { isMain } from "../cli.mjs";
 
-function cleanupPower(text) {
+/**
+ * Longest digit group wins (OCR may split "8104472" into "8 104 472").
+ * @param {string} text
+ * @returns {number | undefined}
+ */
+export function cleanupPower(text) {
   const raw = String(text ?? "");
   const groupedPattern = /\d{1,3}(?:[ _]\d{3})+/g;
   let bestGrouped = undefined;
@@ -36,13 +46,17 @@ function cleanupPower(text) {
 
 /**
  * @param {import("tesseract.js").Worker} worker
+ * @param {{ powerRoi?: { x: number, y: number, width: number, height: number }, reference?: { width: number, height: number } }} [options]
  * @returns {Promise<number | undefined>}
  */
-export async function ocrEnemyPower(filePath, worker) {
+export async function ocrEnemyPower(filePath, worker, options = {}) {
   const meta = await sharp(filePath).metadata();
   if (!meta.width || !meta.height) return undefined;
 
-  const powerCrop = cropBoxFromPercent(meta, POWER_BOX);
+  const powerCrop =
+    (options.powerRoi
+      ? buildPowerBox(meta, options.powerRoi, options.reference)
+      : undefined) ?? cropBoxFromPercent(meta, POWER_BOX);
   const powerBuf = await preprocessForOcr(sharp(filePath).extract(powerCrop), {
     threshold: 190,
   });
@@ -55,33 +69,46 @@ export async function ocrEnemyPower(filePath, worker) {
   return cleanupPower(powerRes.data.text);
 }
 
-const __filename = fileURLToPath(import.meta.url);
 
-async function cliMain() {
-  const imgPath = process.argv[2];
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} [argv]
+ * @param {{ makeWorker?: () => Promise<any>, log?: (...args: any[]) => void, error?: (...args: any[]) => void }} [deps]
+ */
+export async function runEnemyPowerCli(
+  argv = process.argv.slice(2),
+  { makeWorker = () => createWorker("eng"), log = console.log, error = console.error } = {},
+) {
+  const [imgPath] = argv;
   if (!imgPath) {
-    console.error("Usage: node scripts/ocr-enemy-power.mjs <image.png>");
-    process.exit(1);
+    error("Usage: node scripts/ocr-enemy-power.mjs <image.png>");
+    return 1;
   }
   const resolved = path.resolve(imgPath);
-  await fs.access(resolved).catch(() => {
-    console.error(`Not found: ${resolved}`);
-    process.exit(1);
-  });
+  try {
+    await fs.access(resolved);
+  } catch {
+    error(`Not found: ${resolved}`);
+    return 1;
+  }
 
-  const worker = await createWorker("eng");
+  const worker = await makeWorker();
   try {
     await worker.setParameters({ preserve_interword_spaces: "1" });
     const power = await ocrEnemyPower(resolved, worker);
-    console.log(power === undefined ? "" : String(power));
+    log(power === undefined ? "" : String(power));
+    return 0;
   } finally {
     await worker.terminate();
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+async function cliMain() {
+  const code = await runEnemyPowerCli();
+  if (code !== 0) process.exit(code);
+}
+
+if (isMain(import.meta.url)) {
   cliMain().catch((e) => {
     console.error(e);
     process.exit(1);

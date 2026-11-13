@@ -1,0 +1,65 @@
+{
+  "description": "Arena OCR samples; labels are the Latin tokens recorded in the canonical .webp filenames (pseudo-labels from earlier pipeline runs).",
+  "images": [
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.21.12.375.png",
+      "name": "Gorkiy",
+      "power": 8104472
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.21.48.142.png",
+      "name": "fil akmu",
+      "power": 2336004
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.23.14.658.png",
+      "name": "Omsk 3R",
+      "power": 4397815
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.24.43.492.png",
+      "name": "Myasnik",
+      "power": 2551807
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.20.06.924.png",
+      "name": "sigma ZR",
+      "power": 2918669
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.21.07.458.png",
+      "name": "Pavel",
+      "power": 1049055
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.22.59.858.png",
+      "name": "MEDEBYY ZR",
+      "power": 5542923
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.23.52.508.png",
+      "name": "Kaluga ZR",
+      "power": 7551671
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.25.12.208.png",
+      "name": "yromag",
+      "power": 6977449
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.26.06.791.png",
+      "name": "YURCHIK ZR",
+      "power": 5654638
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.27.06.474.png",
+      "name": "Tserialis ZR",
+      "power": 4944355
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.29.32.258.png",
+      "name": "Dima8 zr",
+      "power": 3372453
+    }
+  ]
+}

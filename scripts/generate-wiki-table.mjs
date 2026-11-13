@@ -1,22 +1,16 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { WORKSPACE_ROOT } from './enemy-records.mjs';
+import { isMain } from './cli.mjs';
+import { escapeHtml, wrapHtmlDocument } from './html-document.mjs';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const WORKSPACE_ROOT = path.resolve(__dirname, '..');
+// Configuration updated to match the exact working GitHub structure
+const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
+const GITHUB_USER = 'eonil4';
+const GITHUB_REPO = 'kingdom-clash-duel';
+const GITHUB_BRANCH = 'main';
 
-// 1. Get the target folder path from command line arguments
-const targetFolderArg = process.argv[2];
-const extensionParts = process.argv.slice(3);
-const extensionArg =
-  extensionParts.length === 0
-    ? '.webp'
-    : extensionParts.length === 1
-      ? extensionParts[0]
-      : extensionParts.join(',');
-
-if (!targetFolderArg) {
+function usage() {
   console.error("Error: Please provide the folder path!");
   console.log(
     "Usage: node generate-wiki-table.mjs <folder_path> [ext|ext1 ext2|ext1,ext2|\"ext1|ext2\"]",
@@ -24,7 +18,6 @@ if (!targetFolderArg) {
   console.log(
     "Examples: .webp | jpg png | jpg,png | \".jpg|.png\" (quote pipe on Windows/cmd)",
   );
-  process.exit(1);
 }
 
 /**
@@ -32,7 +25,7 @@ if (!targetFolderArg) {
  * @param {string} raw
  * @returns {string[]}
  */
-function parseExtensions(raw) {
+export function parseExtensions(raw) {
   let value = String(raw).trim();
   if (!value) return ['.webp'];
 
@@ -57,11 +50,11 @@ function parseExtensions(raw) {
  * Absolute paths under the workspace are converted so URLs never include drive letters.
  * @param {string} folderArg
  */
-function resolveFolderPaths(folderArg) {
+export function resolveFolderPaths(folderArg) {
   const abs = path.isAbsolute(folderArg)
     ? path.resolve(folderArg)
     : path.resolve(WORKSPACE_ROOT, folderArg);
-  let rel = path.relative(WORKSPACE_ROOT, abs).replace(/\\/g, '/');
+  const rel = path.relative(WORKSPACE_ROOT, abs).replace(/\\/g, '/');
   if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
     throw new Error(
       `Folder must be inside the workspace root (${WORKSPACE_ROOT}): ${folderArg}`,
@@ -70,33 +63,28 @@ function resolveFolderPaths(folderArg) {
   return { abs, rel };
 }
 
-const extensions = parseExtensions(extensionArg);
-const extensionSet = new Set(extensions);
+/**
+ * @param {string} text
+ */
 
-// Configuration updated to match the exact working GitHub structure
-const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
-const GITHUB_USER = 'eonil4';
-const GITHUB_REPO = 'kingdom-clash-duel';
-const GITHUB_BRANCH = 'main';
+/**
+ * Build the single-column image table and write `<folder>/index.html`.
+ * @param {string} targetFolderArg
+ * @param {string} [extensionArg]
+ */
+export function generateWikiTable(targetFolderArg, extensionArg = '.webp') {
+  const extensions = parseExtensions(extensionArg);
+  const extensionSet = new Set(extensions);
+  const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(targetFolderArg);
+  const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
 
-const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(targetFolderArg);
-
-// Generate the base GitHub RAW URL with standard /refs/heads/ path
-const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
-
-try {
-  // Read all files from the target directory
   const files = fs.readdirSync(targetFolder);
-
   const images = files
     .filter((file) => extensionSet.has(path.extname(file).toLowerCase()))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
   if (images.length === 0) {
-    console.log(
-      `No images with extension(s) ${extensions.join(', ')} found in: ${targetFolder}`,
-    );
-    process.exit(0);
+    return { empty: true, targetFolder, extensions };
   }
 
   // 2. Build the HTML table block (Single column layout)
@@ -105,19 +93,20 @@ try {
   for (let i = 0; i < images.length; i++) {
     const imageName = images[i];
 
-    // Crucial fix: Encode the filename to correctly escape % and special characters
+    // Encode the filename to correctly escape % and special characters
     const encodedImageName = encodeURIComponent(imageName);
     const imageUrl = `${baseUrl}/${encodedImageName}`;
 
     const displayName = path.basename(imageName, path.extname(imageName));
+    const safeName = escapeHtml(displayName);
 
     const id = displayName.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
     // Add H3 anchor similar to duels for quick navigation
     html += `  <tr>\n`;
     html += `    <td align="center" valign="middle">\n`;
-    html += `      <h3 id="img-${id}"><a href="#img-${id}">${displayName}</a></h3>\n`;
-    html += `      <img src="${imageUrl}" height="800" alt="${displayName}" /><br />\n`;
-    html += `      <sub><b>${displayName}</b></sub>\n`;
+    html += `      <h3 id="img-${id}"><a href="#img-${id}">${safeName}</a></h3>\n`;
+    html += `      <img src="${imageUrl}" height="800" alt="${safeName}" /><br />\n`;
+    html += `      <sub><b>${safeName}</b></sub>\n`;
     html += `    </td>\n`;
     html += `  </tr>\n`;
   }
@@ -125,13 +114,62 @@ try {
 
   // 3. Save the output as index.html in the target folder
   const outputPath = path.join(targetFolder, 'index.html');
-  fs.writeFileSync(outputPath, html, 'utf8');
+  fs.writeFileSync(
+    outputPath,
+    wrapHtmlDocument({ title: repoRelativePath, body: html }),
+    'utf8',
+  );
 
-  console.log(`Successfully generated: ${outputPath}`);
-  console.log(`Repo path: ${repoRelativePath}`);
-  console.log(`Extensions: ${extensions.join(', ')}`);
-  console.log(`Total images in the table: ${images.length}`);
-} catch (error) {
-  console.error(`An error occurred while processing the folder: ${error.message}`);
-  process.exit(1);
+  return { empty: false, images: images.length, outputPath, repoRelativePath, extensions, html };
+}
+
+/**
+ * CLI body; returns `{ usage: true }` or `{ error }` instead of exiting.
+ * @param {string[]} argv
+ */
+export function runWikiTableCli(argv) {
+  const targetFolderArg = argv[0];
+  const extensionParts = argv.slice(1);
+  const extensionArg =
+    extensionParts.length === 0
+      ? '.webp'
+      : extensionParts.length === 1
+        ? extensionParts[0]
+        : extensionParts.join(',');
+
+  if (!targetFolderArg) {
+    usage();
+    return { usage: true };
+  }
+
+  try {
+    const result = generateWikiTable(targetFolderArg, extensionArg);
+    if (result.empty) {
+      console.log(
+        `No images with extension(s) ${result.extensions.join(', ')} found in: ${result.targetFolder}`,
+      );
+      return result;
+    }
+
+    console.log(`Successfully generated: ${result.outputPath}`);
+    console.log(`Repo path: ${result.repoRelativePath}`);
+    console.log(`Extensions: ${result.extensions.join(', ')}`);
+    console.log(`Total images in the table: ${result.images}`);
+    return result;
+  } catch (error) {
+    console.error(`An error occurred while processing the folder: ${error.message}`);
+    return { error: error.message };
+  }
+}
+
+/**
+ * @param {string[]} argv
+ */
+function main(argv) {
+  const result = runWikiTableCli(argv);
+  if (result.usage || result.error) process.exit(1);
+}
+
+if (isMain(import.meta.url)) {
+  main(process.argv.slice(2));
 }

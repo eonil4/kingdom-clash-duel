@@ -1,0 +1,5 @@
+{
+  "_note": "Synthetic example data for battle:clan_clash:example; values mirror the test fixture.",
+  "pvpClashPointToTokenRate": 0.001,
+  "pvpClashTokenBattleLimit": 2000
+}

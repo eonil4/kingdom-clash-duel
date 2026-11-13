@@ -2,8 +2,31 @@ import { describe, expect, it } from "vitest";
 import {
   convertTextToLatinArtifacts,
   detectAlphabetKind,
+  runConvertTextCli,
   transliterateToLatin,
 } from "../../convert-text-to-latin.mjs";
+
+describe("runConvertTextCli", () => {
+  it("prints artifacts or a usage error", () => {
+    const logs: string[] = [];
+    const errors: string[] = [];
+    expect(
+      runConvertTextCli(["Babka", "MAG"], {
+        log: (line) => logs.push(String(line)),
+        error: (line) => errors.push(String(line)),
+      }),
+    ).toBe(0);
+    expect(JSON.parse(logs[0])).toHaveProperty("latinRaw");
+
+    expect(
+      runConvertTextCli(["--"], {
+        log: (line) => logs.push(String(line)),
+        error: (line) => errors.push(String(line)),
+      }),
+    ).toBe(1);
+    expect(errors[0]).toContain("Usage:");
+  });
+});
 
 describe("convert-text-to-latin", () => {
   it("transliterates Cyrillic", () => {

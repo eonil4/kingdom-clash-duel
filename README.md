@@ -1,11 +1,13 @@
-# Arena fight practice
+# Kingdom Clash Duel
 
-Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into `data/clan_clash/fileMap.json` and WebP assets.
+![CI](https://github.com/eonil4/kingdom-clash-duel/actions/workflows/ci.yml/badge.svg)
+
+Node tooling for Kingdom Clash arena enemy screenshots: OCR / local vision LLM extraction into per-folder `data/clan_clash/**/data.json` and WebP assets.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) 22+
+- [pnpm](https://pnpm.io/) 12 (pinned via `packageManager`; `corepack enable` is the easiest way)
 
 ## Setup
 
@@ -15,35 +17,49 @@ pnpm install
 
 Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first install; builds are allowed in `pnpm-workspace.yaml` (`allowBuilds`).
 
+`pnpm run ci` runs the unit suite plus the relative-import check (`pnpm check:imports`, scanning `scripts/` and `tests/`); the same steps run in GitHub Actions on every push and pull request, on both Linux and Windows (`.github/workflows/ci.yml`).
+
 ## Commands
 
 | Command | Description |
 |--------|-------------|
 | `pnpm test:unit` | Vitest (single run) |
+| `pnpm test:coverage` | Vitest with V8 coverage + thresholds (run on Linux CI) |
 | `pnpm test:unit:watch` | Vitest watch mode |
 | `pnpm run ci` | Unit tests |
 
 ## Enemy OCR and asset scripts
 
-Scripts read **`data/clan_clash/fileMap.json`**, discover directories under that tree that exist on disk and contain images, then OCR screenshots (top-right opponent name + power). When the source file is named **`XXX_XXX_XXX-<slug>.png`** (nine-digit power in three groups), that power is taken from the filename and OCR power is only used as a fallback or mismatch warning. If **`slug`** contains **`%HH`** percent escapes (same scheme as canonical filenames), that slug is decoded and used as the **Latin label** and canonical **`.webp`** name; OCR still supplies Cyrillic **`name`** when it finds Cyrillic text. Outputs are written back into `fileMap.json` under nested keys: **`<folder>/<originalBasename>/<canonical>.webp`**.
+Scripts use per-folder **`data.json`** as the only store: `data/clan_clash/YYYY-MM-DD/data.json` maps each source screenshot to its canonical `.webp`. OCR scans those date folders (subfolders such as `clan/`, `victory/`, `duel/` are not arena panels) and records results back into the same `data.json`. When the source file is named **`XXX_XXX_XXX-<slug>.png`** (nine-digit power in three groups), that power is taken from the filename and OCR power is only used as a fallback or mismatch warning. If **`slug`** contains **`%HH`** percent escapes (same scheme as canonical filenames), that slug is decoded and used as the **Latin label** and canonical **`.webp`** name; OCR still supplies Cyrillic **`name`** when it finds Cyrillic text.
 
 Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in the canonical basename (for example `\` → `%5C`).
 
+Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured. Formation OCR also reads `ocr.clanNameCorrections` (wrong leading clan tag → replacement) from the same file; the built-in table applies when it is absent.
+
+`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 11/12, and 59.1% name similarity on the two OCR-only samples (the remaining miss is a small-caps name with an inline icon). Arena screenshots have their own fixture (`tests/fixtures/arena-ocr/labels.json`, pseudo-labels from earlier canonical filenames) and evaluator (`pnpm eval:arena-ocr`): name similarity improved 40.2% → 83.0% through clipping icon/label fragments, phrase scoring by best token, junk penalties, weighted all-variant votes, a vote-gated clean-Latin tier and a clean-primary override for junk or all-caps-Cyrillic winners (3/12 exact, power 10/12). A disjoint 12-sample holdout (`tests/fixtures/arena-ocr/holdout.json`) validates that the tuning generalises: 43.2% similarity with the pre-tuning scorer → 77.9% now (3/12 exact, power 10/12). The arena name path remains the known weak spot and production runs should use `llm-enemy-extract.mjs`.
+
+OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent. Name recognition uses two workers (`eng+rus`, `rus`); power recognition runs on a third digits-only `eng` worker concurrently with the name pass (three live workers during a run). On arena screenshots a confident, tag-shaped first pass skips the remaining text-area OCR variants and keeps its phrase; clan (`tight`) runs the full sequence including the Latin repair pass.
+
+Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (default), `debug`); `debug` prints per-file timings and the indexed-source count. Fallback diagnostics (unreadable/unparseable `data.json`, skipped folders) print once per process.
+
 | Command | Description |
 |--------|-------------|
-| `pnpm ocr:enemy` | Main pipeline: OCR images → update `data/clan_clash/fileMap.json` |
-| `pnpm ocr:enemies` | Same as `ocr:enemy` |
+| `pnpm ocr:enemy` | Main pipeline: OCR images → update per-folder `data.json` |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
+| `pnpm ocr:clan` | OCR clan formation screenshots (`<date>/clan`) → per-folder `data.json` |
+| `pnpm eval:clan-ocr` | Report clan OCR accuracy against the labelled fixture |
+| `pnpm eval:arena-ocr` | Report arena OCR accuracy against the labelled fixture |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm ocr:enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm llm:convert:webp` | From map: create `.webp` beside originals if missing |
-| `pnpm ocr:enemies:process` | Runs `ocr:enemies` then `llm:convert:webp` |
-| `pnpm llm:convert` | LM Studio vision → WebP + `fileMap.json` |
+| `pnpm ocr:enemies:process` | Runs `ocr:enemy` then `llm:convert:webp` |
+| `pnpm ocr:rename-enemies` | Rename/convert sources onto canonical names |
+| `node scripts/llm/convert.mjs <folder>` | Extract → WebP + `data.json` (`--extractor llm\|ocr`, `--mode crops\|screenshot`) |
 | `pnpm llm:show-llm-config` | Print resolved LLM host / model / cache settings |
 
 ### Local vision LLM (LM Studio)
 
-For `convert.js` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
+For `convert.mjs` / `llm-enemy-extract.mjs`, use [LM Studio](https://lmstudio.ai/) with a loaded vision model on port **1234**:
 
 ```bash
 set LLM_MODEL=qwen/qwen3-vl-8b
@@ -51,21 +67,21 @@ set LLM_HOST=http://127.0.0.1:1234
 pnpm llm:convert
 ```
 
-`convert.js` skips PNGs that already have a canonical WebP (per `fileMap.json`). Use `--force` to re-run LLM and overwrite. Failed LLM calls retry per `config/llm.json`.
+`convert.mjs` skips PNGs that already have a canonical WebP (per folder `data.json`). Use `--force` to re-run extraction and overwrite. Failed LLM calls retry per `config/llm.json` (`llmMaxAttempts`, escalating `llmTimeoutPerAttemptMs`); `llmMaxTotalMs` caps the whole retry sequence per image (120 s in the current config — 0 or absent means no cap). Two extraction strategies: `--extractor llm` (default; `--mode crops` for name + power ROI crops, `--mode screenshot` for the whole screenshot) and `--extractor ocr` (local tesseract, no LM Studio needed; `--mode` is ignored). Both share the same runner, so OCR runs also produce the canonical WebP and timed `data.json` entries.
 
 Pass arguments to Node after `--`:
 
 ```bash
 pnpm ocr:enemy -- --only test.png --force-ocr
-pnpm ocr:enemy:power -- data/enemies/2026-05-08/test/test.png
+pnpm ocr:enemy:power -- data/clan_clash/2026-11-06/<image>.png
 pnpm ocr:enemy:latin -- "Бабка\\MAG"
 pnpm llm:convert:webp -- --dry-run
 pnpm ocr:enemies:process
 ```
 
-Common flags for **`ocr:enemy`** / **`ocr-enemy.mjs`**: `--out`, `--only`, `--limit`, `--debug-crops`, `--force-ocr`.
+Common flags for **`ocr:enemy`** / **`ocr-enemy.mjs`**: `--only`, `--limit`, `--debug-crops`, `--force-ocr`.
 
-To **rename or convert sources** onto canonical names (and drop PNG/JPEG after convert), run `node scripts/llm/rename-enemies.mjs` (`--skip-ocr` if the map is already fresh).
+To **rename or convert sources** onto canonical names (and drop PNG/JPEG after convert), run `pnpm ocr:rename-enemies` (`--skip-ocr` if the map is already fresh).
 
 Crop a rectangle from an image:
 
@@ -99,15 +115,17 @@ In directories named **`test`**, only **`test.png`** and **`Screenshot_*`** file
 }
 ```
 
-On disk, sources stay in **`data/enemies/2026-05-08/test/`** next to generated **`*.webp`** files.
+Sources stay in their date folder (for example `data/clan_clash/2026-11-06/`) next to the generated **`*.webp`** files and the folder's `data.json`.
 
 ## Project layout (high level)
 
-- `scripts/` — Enemy OCR, LLM convert, WebP helpers
-- `config/` — LLM settings (`llm.json`)
+- `scripts/pipeline/` — extraction strategy contract, shared runner, per-folder data.json store
+- `scripts/ocr/` — tesseract scan CLIs (`ocr-enemy`, `ocr-clan`) and name/power building blocks
+- `scripts/llm/` — LM Studio client, extraction descriptors, `convert.mjs`, WebP helpers
+- `scripts/battle/` — Clan Clash simulator (APK config tables → battle report)
+- `config/` — LLM settings (`llm.json`, including crop ROIs and `roiReference`)
 - `tests/unit/` — Vitest unit tests
-- `data/clan_clash/` — Clan clash images + `fileMap.json`
-- `data/enemies/` — Enemy images (by date / folder)
+- `data/clan_clash/` — Clan clash images + per-folder `data.json`
 
 ## License
 

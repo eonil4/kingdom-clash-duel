@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Extract a rectangular region from an image and save it.
  *
@@ -11,6 +10,7 @@
 import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
+import { UsageError, isMain } from "./cli.mjs";
 
 function usage() {
   console.error(
@@ -22,11 +22,12 @@ function usage() {
  * @param {string} name
  * @param {string} raw
  */
-function parseNonNegInt(name, raw) {
+export function parseNonNegInt(name, raw) {
   const value = Number(raw);
   if (!Number.isFinite(value) || !Number.isInteger(value) || value < 0) {
-    console.error(`Invalid ${name}: expected non-negative integer, got ${JSON.stringify(raw)}`);
-    process.exit(1);
+    throw new UsageError(
+      `Invalid ${name}: expected non-negative integer, got ${JSON.stringify(raw)}`,
+    );
   }
   return value;
 }
@@ -34,10 +35,9 @@ function parseNonNegInt(name, raw) {
 /**
  * @param {string[]} argv
  */
-function parseArgs(argv) {
+export function parseArgs(argv) {
   if (argv.length < 6) {
-    usage();
-    process.exit(1);
+    throw new UsageError("Missing arguments: <input> <output> <x> <y> <width> <height>");
   }
 
   const [input, output, xRaw, yRaw, wRaw, hRaw] = argv;
@@ -47,15 +47,19 @@ function parseArgs(argv) {
   const height = parseNonNegInt("height", hRaw);
 
   if (width === 0 || height === 0) {
-    console.error("width and height must be greater than 0");
-    process.exit(1);
+    throw new UsageError("width and height must be greater than 0");
   }
 
   return { input, output, left, top, width, height };
 }
 
-async function main() {
-  const { input, output, left, top, width, height } = parseArgs(process.argv.slice(2));
+/**
+ * Crop one region and write it; throws on missing input or out-of-bounds crops.
+ * @param {string[]} argv
+ * @param {{ log?: (...args: any[]) => void }} [deps]
+ */
+export async function runExtractImage(argv, { log = (...args) => console.log(...args) } = {}) {
+  const { input, output, left, top, width, height } = parseArgs(argv);
 
   const inputAbs = path.resolve(input);
   const outputAbs = path.resolve(output);
@@ -63,22 +67,19 @@ async function main() {
   try {
     await fs.access(inputAbs);
   } catch {
-    console.error(`Input image not found: ${inputAbs}`);
-    process.exit(1);
+    throw new Error(`Input image not found: ${inputAbs}`);
   }
 
   const meta = await sharp(inputAbs).metadata();
   if (!meta.width || !meta.height) {
-    console.error(`Could not read image dimensions: ${inputAbs}`);
-    process.exit(1);
+    throw new Error(`Could not read image dimensions: ${inputAbs}`);
   }
 
   if (left + width > meta.width || top + height > meta.height) {
-    console.error(
+    throw new Error(
       `Crop out of bounds: requested (${left},${top}) ${width}x${height} ` +
         `but image is ${meta.width}x${meta.height}`,
     );
-    process.exit(1);
   }
 
   await fs.mkdir(path.dirname(outputAbs), { recursive: true });
@@ -87,14 +88,26 @@ async function main() {
     .extract({ left, top, width, height })
     .toFile(outputAbs);
 
-  console.log(
+  log(
     `Extracted ${width}x${height} at (${left},${top}) from ${meta.width}x${meta.height}`,
   );
-  console.log(`  ${inputAbs}`);
-  console.log(`  -> ${outputAbs}`);
+  log(`  ${inputAbs}`);
+  log(`  -> ${outputAbs}`);
+  return { inputAbs, outputAbs, meta };
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.message : err);
-  process.exit(1);
-});
+async function main() {
+  await runExtractImage(process.argv.slice(2));
+}
+
+if (isMain(import.meta.url)) {
+  main().catch((err) => {
+    if (err instanceof UsageError) {
+      console.error(err.message);
+      usage();
+    } else {
+      console.error(err instanceof Error ? err.message : err);
+    }
+    process.exit(1);
+  });
+}

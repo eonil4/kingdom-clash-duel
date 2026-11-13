@@ -3,43 +3,51 @@
  *
  * Usage:
  *   node scripts/llm/convert-to-webp.mjs
- *   node scripts/llm/convert-to-webp.mjs --map data/clan_clash/fileMap.json
  *   node scripts/llm/convert-to-webp.mjs --dry-run
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 import { writeWebpFromRasterFile } from "./enemy-image-webp.mjs";
 import {
   collectEnemyEntriesFromMap,
-  DEFAULT_FILE_MAP_PATH,
-  loadExistingFileMap,
+  loadEnemyMap,
   WORKSPACE_ROOT,
-} from "../file-map-enemies.mjs";
+} from "../enemy-records.mjs";
+import { isMain } from "../cli.mjs";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-function parseArgs(argv) {
-  const args = { mapPath: DEFAULT_FILE_MAP_PATH, dryRun: false };
+export function parseArgs(argv) {
+  const args = { dryRun: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--map") args.mapPath = path.resolve(argv[++i]);
-    else if (a === "--dry-run") args.dryRun = true;
+    if (a === "--dry-run") args.dryRun = true;
   }
   return args;
 }
 
-async function main() {
-  const { mapPath, dryRun } = parseArgs(process.argv.slice(2));
-  const mapRoot = await loadExistingFileMap(mapPath);
-  const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
+/**
+ * Convert mapped originals to canonical webp files; returns the counters.
+ * @param {{
+ *   dryRun?: boolean,
+ *   rows?: { folderAbs: string, canonicalKey: string, originalFileName: string, entry: object }[],
+ *   access?: (filePath: string) => Promise<unknown>,
+ *   write?: (from: string, to: string) => Promise<unknown>,
+ * }} [options]
+ */
+export async function runConvertToWebp({
+  dryRun = false,
+  rows,
+  access = (filePath) => fs.access(filePath),
+  write = writeWebpFromRasterFile,
+} = {}) {
+  const mappedRows =
+    rows ??
+    collectEnemyEntriesFromMap(await loadEnemyMap(), WORKSPACE_ROOT);
 
   let planned = 0;
   let skipped = 0;
   let missing = 0;
 
-  for (const { folderAbs, canonicalKey, originalFileName, entry } of rows) {
+  for (const { folderAbs, canonicalKey, originalFileName, entry } of mappedRows) {
     const orig =
       (typeof originalFileName === "string" ? originalFileName.trim() : "") ||
       (typeof entry.originalFileName === "string" ? entry.originalFileName.trim() : "");
@@ -53,7 +61,7 @@ async function main() {
     const toPath = path.join(folderAbs, canonicalKey);
 
     try {
-      await fs.access(fromPath);
+      await access(fromPath);
     } catch {
       console.warn(`Source missing: ${fromPath}`);
       missing++;
@@ -61,7 +69,7 @@ async function main() {
     }
 
     try {
-      await fs.access(toPath);
+      await access(toPath);
       skipped++;
       continue;
     } catch {
@@ -75,8 +83,15 @@ async function main() {
     }
 
     console.log(`Converting:\n  ${fromPath}\n  -> ${toPath}`);
-    await writeWebpFromRasterFile(fromPath, toPath);
+    await write(fromPath, toPath);
   }
+
+  return { planned, skipped, missing };
+}
+
+async function main() {
+  const { dryRun } = parseArgs(process.argv.slice(2));
+  const { planned, skipped, missing } = await runConvertToWebp({ dryRun });
 
   console.log(
     dryRun
@@ -85,8 +100,10 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (isMain(import.meta.url)) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
 
