@@ -59,7 +59,7 @@ const DEFAULT_EXTENSIONS = [".jpg", ".png", ".webp"];
  * @param {string} raw
  * @returns {"asc" | "desc"}
  */
-function parseSortDir(raw) {
+export function parseSortDir(raw) {
   const v = String(raw ?? "").trim().toLowerCase();
   if (v === "asc" || v === "ascending") return "asc";
   if (v === "desc" || v === "descending" || v === "") return "desc";
@@ -70,7 +70,7 @@ function parseSortDir(raw) {
  * @param {string | undefined} raw
  * @returns {number | undefined}
  */
-function parseScalePercent(raw) {
+export function parseScalePercent(raw) {
   if (raw === undefined || raw === null || raw === "") return undefined;
   const str = String(raw).trim().replace(/%$/, "");
   const num = Number(str);
@@ -87,7 +87,7 @@ function parseScalePercent(raw) {
  * @param {string} name
  * @returns {{ value: number, isPercent: boolean } | undefined}
  */
-function parseDimension(raw, name) {
+export function parseDimension(raw, name) {
   if (raw === undefined || raw === null || raw === "") return undefined;
   const str = String(raw).trim();
   const isPercent = str.endsWith("%");
@@ -104,7 +104,7 @@ function parseDimension(raw, name) {
 /**
  * @param {{ value: number, isPercent: boolean } | undefined} d
  */
-function formatDim(d) {
+export function formatDim(d) {
   if (!d) return "";
   return d.isPercent ? `${d.value}%` : `${d.value}px`;
 }
@@ -113,7 +113,7 @@ function formatDim(d) {
  * @param {string} raw
  * @returns {string[]}
  */
-function parseExtensions(raw) {
+export function parseExtensions(raw) {
   let value = String(raw).trim();
   if (!value) return [...DEFAULT_EXTENSIONS];
 
@@ -304,7 +304,7 @@ export function parseArgs(argv) {
 /**
  * @param {string} folderArg
  */
-function resolveFolderPaths(folderArg) {
+export function resolveFolderPaths(folderArg) {
   const abs = path.isAbsolute(folderArg)
     ? path.resolve(folderArg)
     : path.resolve(WORKSPACE_ROOT, folderArg);
@@ -436,7 +436,7 @@ function buildImgAttrs(meta, args) {
  * Render one matrix section (e.g. Enemies or Clan).
  * @param {object} param
  */
-function renderMatrixSection({
+export function renderMatrixSection({
   title,
   rows,
   cols,
@@ -612,13 +612,11 @@ function renderMatrixSection({
   return html;
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
-  if (!args.folder) {
-    usage();
-    process.exit(1);
-  }
-
+/**
+ * Build `<folder>/index.html` for the given parsed args.
+ * @param {ReturnType<typeof parseArgs>} args
+ */
+export async function runMatrixGenerator(args) {
   const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(args.folder);
   const extensionSet = new Set(args.extensions.map((e) => e.toLowerCase()));
   const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
@@ -668,8 +666,7 @@ async function main() {
   const clans = [...clanSet].sort((a, b) => compareLabels(a, b, args.cols));
 
   if (enemies.length === 0 || clans.length === 0) {
-    console.log(`No duel images matching separator ${JSON.stringify(args.separator)} in: ${targetFolder}`);
-    process.exit(0);
+    return { empty: true, targetFolder };
   }
 
   /** @type {Map<string, { width: number, height: number }>} */
@@ -819,8 +816,36 @@ async function main() {
     "utf8",
   );
 
-  console.log(`Successfully generated: ${outputPath}`);
-  console.log(`Repo path: ${repoRelativePath}`);
+  return {
+    outputPath,
+    repoRelativePath,
+    sections: sections.map((section) => section.title),
+    enemies: enemies.length,
+    clans: clans.length,
+    totalDuels,
+    skipped,
+    initialPercent,
+    html,
+  };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  if (!args.folder) {
+    usage();
+    process.exit(1);
+  }
+
+  const result = await runMatrixGenerator(args);
+  if (result.empty) {
+    console.log(
+      `No duel images matching separator ${JSON.stringify(args.separator)} in: ${result.targetFolder}`,
+    );
+    return;
+  }
+
+  console.log(`Successfully generated: ${result.outputPath}`);
+  console.log(`Repo path: ${result.repoRelativePath}`);
   console.log(`Separator: ${args.separator}`);
   console.log(`Sort: rows=${args.rows}, cols=${args.cols}`);
   const sizeInfo =
@@ -836,11 +861,11 @@ async function main() {
         : "full (100%)";
   console.log(`Scale / Size: ${sizeInfo}`);
   console.log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
-  console.log(`Sections: ${sections.map((s) => s.title).join(", ")}`);
-  console.log(`Enemies: ${enemies.length}, Clan: ${clans.length}, Duels: ${totalDuels}`);
+  console.log(`Sections: ${result.sections.join(", ")}`);
+  console.log(`Enemies: ${result.enemies}, Clan: ${result.clans}, Duels: ${result.totalDuels}`);
   console.log(`Extensions: ${args.extensions.join(", ")}`);
-  if (skipped > 0) {
-    console.log(`Skipped files (no separator match): ${skipped}`);
+  if (result.skipped > 0) {
+    console.log(`Skipped files (no separator match): ${result.skipped}`);
   }
 }
 

@@ -527,7 +527,7 @@ export async function reconcileDataJsonWithCanonicalFiles(folder) {
 /**
  * @param {string[]} argv
  */
-function parseExtractCliArgs(argv) {
+export function parseExtractCliArgs(argv) {
   const args = {
     imagePath: undefined,
     /** @type {boolean | undefined} */

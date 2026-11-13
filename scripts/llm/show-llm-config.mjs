@@ -35,21 +35,23 @@ function loadEnvLocal() {
   return res.parsed ?? {};
 }
 
-async function main() {
-  const config = await loadConfig();
-  // Load .env.local (preferred) and then fallback to process.env
-  const envLocal = loadEnvLocal();
+/**
+ * Build the printable summary for config/env sources.
+ * @param {Record<string, any>} config
+ * @param {Record<string, string | undefined>} [envLocal]
+ * @param {Record<string, string | undefined>} [env]
+ */
+export function composeConfigSummary(config = {}, envLocal = {}, env = process.env) {
+  const host = envLocal.LLM_HOST ?? env.LLM_HOST ?? config.host ?? "http://127.0.0.1:1234";
+  const model = envLocal.LLM_MODEL ?? env.LLM_MODEL ?? config.defaultModel ?? null;
+  const token = envLocal.LM_API_TOKEN ?? env.LM_API_TOKEN ?? null;
+  const skipCache = envLocal.LLM_SKIP_CACHE_CLEAR ?? env.LLM_SKIP_CACHE_CLEAR ?? null;
 
-  const host = envLocal.LLM_HOST ?? process.env.LLM_HOST ?? config.host ?? "http://127.0.0.1:1234";
-  const model = envLocal.LLM_MODEL ?? process.env.LLM_MODEL ?? config.defaultModel ?? null;
-  const token = envLocal.LM_API_TOKEN ?? process.env.LM_API_TOKEN ?? null;
-  const skipCache = envLocal.LLM_SKIP_CACHE_CLEAR ?? process.env.LLM_SKIP_CACHE_CLEAR ?? null;
-
-  const out = {
-    host: formatSource(host, envLocal.LLM_HOST ? ".env.local" : process.env.LLM_HOST ? "env" : "config"),
-    model: formatSource(model, envLocal.LLM_MODEL ? ".env.local" : process.env.LLM_MODEL ? "env" : "config"),
+  return {
+    host: formatSource(host, envLocal.LLM_HOST ? ".env.local" : env.LLM_HOST ? "env" : "config"),
+    model: formatSource(model, envLocal.LLM_MODEL ? ".env.local" : env.LLM_MODEL ? "env" : "config"),
     tokenPresent: !!token,
-    tokenSource: token ? (envLocal.LM_API_TOKEN ? ".env.local" : process.env.LM_API_TOKEN ? "env" : null) : null,
+    tokenSource: token ? (envLocal.LM_API_TOKEN ? ".env.local" : env.LM_API_TOKEN ? "env" : null) : null,
     requestTimeoutMs: formatSource(config.requestTimeoutMs ?? 180000, "config"),
     clearPredictionCacheBeforeRun: formatSource(
       config.clearPredictionCacheBeforeRun === true,
@@ -60,8 +62,15 @@ async function main() {
       "config",
     ),
     predictionCachePaths: formatSource(config.predictionCachePaths ?? [], "config"),
-    skipCacheClearFlag: formatSource(skipCache ?? null, envLocal.LLM_SKIP_CACHE_CLEAR ? ".env.local" : process.env.LLM_SKIP_CACHE_CLEAR ? "env" : null),
+    skipCacheClearFlag: formatSource(skipCache ?? null, envLocal.LLM_SKIP_CACHE_CLEAR ? ".env.local" : env.LLM_SKIP_CACHE_CLEAR ? "env" : null),
   };
+}
+
+async function main() {
+  const config = await loadConfig();
+  // Load .env.local (preferred) and then fallback to process.env
+  const envLocal = loadEnvLocal();
+  const out = composeConfigSummary(config, envLocal);
 
   console.log(JSON.stringify(out, null, 2));
   // also print helpful pointers

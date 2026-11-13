@@ -68,6 +68,62 @@ export function resolveFolderPaths(folderArg) {
  */
 
 /**
+ * Build the single-column image table and write `<folder>/index.html`.
+ * @param {string} targetFolderArg
+ * @param {string} [extensionArg]
+ */
+export function generateWikiTable(targetFolderArg, extensionArg = '.webp') {
+  const extensions = parseExtensions(extensionArg);
+  const extensionSet = new Set(extensions);
+  const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(targetFolderArg);
+  const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
+
+  const files = fs.readdirSync(targetFolder);
+  const images = files
+    .filter((file) => extensionSet.has(path.extname(file).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+  if (images.length === 0) {
+    return { empty: true, targetFolder, extensions };
+  }
+
+  // 2. Build the HTML table block (Single column layout)
+  let html = '<table>\n';
+
+  for (let i = 0; i < images.length; i++) {
+    const imageName = images[i];
+
+    // Encode the filename to correctly escape % and special characters
+    const encodedImageName = encodeURIComponent(imageName);
+    const imageUrl = `${baseUrl}/${encodedImageName}`;
+
+    const displayName = path.basename(imageName, path.extname(imageName));
+    const safeName = escapeHtml(displayName);
+
+    const id = displayName.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
+    // Add H3 anchor similar to duels for quick navigation
+    html += `  <tr>\n`;
+    html += `    <td align="center" valign="middle">\n`;
+    html += `      <h3 id="img-${id}"><a href="#img-${id}">${safeName}</a></h3>\n`;
+    html += `      <img src="${imageUrl}" height="800" alt="${safeName}" /><br />\n`;
+    html += `      <sub><b>${safeName}</b></sub>\n`;
+    html += `    </td>\n`;
+    html += `  </tr>\n`;
+  }
+  html += '</table>\n';
+
+  // 3. Save the output as index.html in the target folder
+  const outputPath = path.join(targetFolder, 'index.html');
+  fs.writeFileSync(
+    outputPath,
+    wrapHtmlDocument({ title: repoRelativePath, body: html }),
+    'utf8',
+  );
+
+  return { empty: false, images: images.length, outputPath, repoRelativePath, extensions, html };
+}
+
+/**
  * @param {string[]} argv
  */
 function main(argv) {
@@ -85,62 +141,19 @@ function main(argv) {
     process.exit(1);
   }
 
-  const extensions = parseExtensions(extensionArg);
-  const extensionSet = new Set(extensions);
-  const { abs: targetFolder, rel: repoRelativePath } = resolveFolderPaths(targetFolderArg);
-  const baseUrl = `${GITHUB_BASE_URL}/${GITHUB_USER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${repoRelativePath}`;
-
   try {
-    const files = fs.readdirSync(targetFolder);
-
-    const images = files
-      .filter((file) => extensionSet.has(path.extname(file).toLowerCase()))
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
-
-    if (images.length === 0) {
+    const result = generateWikiTable(targetFolderArg, extensionArg);
+    if (result.empty) {
       console.log(
-        `No images with extension(s) ${extensions.join(', ')} found in: ${targetFolder}`,
+        `No images with extension(s) ${result.extensions.join(', ')} found in: ${result.targetFolder}`,
       );
-      process.exit(0);
+      return;
     }
 
-    // 2. Build the HTML table block (Single column layout)
-    let html = '<table>\n';
-
-    for (let i = 0; i < images.length; i++) {
-      const imageName = images[i];
-
-      // Encode the filename to correctly escape % and special characters
-      const encodedImageName = encodeURIComponent(imageName);
-      const imageUrl = `${baseUrl}/${encodedImageName}`;
-
-      const displayName = path.basename(imageName, path.extname(imageName));
-      const safeName = escapeHtml(displayName);
-
-      const id = displayName.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '').toLowerCase();
-      // Add H3 anchor similar to duels for quick navigation
-      html += `  <tr>\n`;
-      html += `    <td align="center" valign="middle">\n`;
-      html += `      <h3 id="img-${id}"><a href="#img-${id}">${safeName}</a></h3>\n`;
-      html += `      <img src="${imageUrl}" height="800" alt="${safeName}" /><br />\n`;
-      html += `      <sub><b>${safeName}</b></sub>\n`;
-      html += `    </td>\n`;
-      html += `  </tr>\n`;
-    }
-    html += '</table>\n';
-
-    // 3. Save the output as index.html in the target folder
-    const outputPath = path.join(targetFolder, 'index.html');
-    fs.writeFileSync(
-      outputPath,
-      wrapHtmlDocument({ title: repoRelativePath, body: html }),
-      'utf8',
-    );
-
-    console.log(`Successfully generated: ${outputPath}`);
-    console.log(`Repo path: ${repoRelativePath}`);
-    console.log(`Extensions: ${extensions.join(', ')}`);
-    console.log(`Total images in the table: ${images.length}`);
+    console.log(`Successfully generated: ${result.outputPath}`);
+    console.log(`Repo path: ${result.repoRelativePath}`);
+    console.log(`Extensions: ${result.extensions.join(', ')}`);
+    console.log(`Total images in the table: ${result.images}`);
   } catch (error) {
     console.error(`An error occurred while processing the folder: ${error.message}`);
     process.exit(1);

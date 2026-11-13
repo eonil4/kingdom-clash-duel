@@ -1,12 +1,55 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it } from "vitest";
+import fs from "fs/promises";
 import os from "os";
 import path from "path";
 import {
+  generateWikiTable,
   parseExtensions,
   resolveFolderPaths,
 } from "../../scripts/generate-wiki-table.mjs";
 import { escapeHtml } from "../../scripts/html-document.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
+
+const dirs: string[] = [];
+
+async function tmpDir() {
+  const dir = await fs.mkdtemp(path.join(WORKSPACE_ROOT, ".tmp-table-"));
+  dirs.push(dir);
+  return dir;
+}
+
+afterEach(async () => {
+  for (const dir of dirs.splice(0)) {
+    await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
+  }
+});
+
+describe("generateWikiTable", () => {
+  it("writes a self-describing table for matching extensions", async () => {
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "b.webp"), "");
+    await fs.writeFile(path.join(dir, "a.webp"), "");
+    await fs.writeFile(path.join(dir, "c.png"), "");
+
+    const result = generateWikiTable(dir, ".webp");
+    expect(result).toMatchObject({ empty: false, images: 2 });
+    const html = await fs.readFile(result.outputPath, "utf8");
+    expect(html).toContain("<!DOCTYPE html>");
+    expect(html).toContain('<h3 id="img-a">');
+    expect(html).toContain("a.webp");
+    expect(html).not.toContain("c.png");
+  });
+
+  it("joins multiple extensions and reports empty folders", async () => {
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "a.jpg"), "");
+    await fs.writeFile(path.join(dir, "c.png"), "");
+    expect(generateWikiTable(dir, "jpg,png")).toMatchObject({ empty: false, images: 2 });
+
+    const empty = generateWikiTable(await tmpDir(), ".webp");
+    expect(empty).toMatchObject({ empty: true, extensions: [".webp"] });
+  });
+});
 
 describe("parseExtensions", () => {
   it("defaults to .webp for empty input", () => {

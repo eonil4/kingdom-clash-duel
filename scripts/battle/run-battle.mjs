@@ -103,8 +103,11 @@ function unitSummaries(units, side) {
     }));
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
+/**
+ * Run one simulated clash and write the battle report JSON.
+ * @param {ReturnType<typeof parseArgs>} args
+ */
+export async function runBattle(args) {
   const config = await loadApkBattleConfig({ configDir: args.configDir });
 
   const attackerFile = await readArmy(/** @type {string} */ (args.attacker));
@@ -205,13 +208,20 @@ async function main() {
   await fs.mkdir(path.dirname(outAbs), { recursive: true });
   await fs.writeFile(outAbs, `${JSON.stringify(result, null, 2)}\n`, "utf8");
 
+  return { result, outputPath: outAbs };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  const { result, outputPath } = await runBattle(args);
+
   console.log(
     `${result.outcome} (${result.outcomeReason}) in ${result.durationSec}s` +
       ` | atkPower=${result.attacker.armyPower} defPower=${result.defender.armyPower}` +
       ` | dmg ${result.attacker.damageDealt}/${result.defender.damageDealt}` +
       ` | points~${result.clash.pointsEstimate}`,
   );
-  console.log(`Wrote ${outAbs}`);
+  console.log(`Wrote ${outputPath}`);
 }
 
 if (isMain(import.meta.url)) {

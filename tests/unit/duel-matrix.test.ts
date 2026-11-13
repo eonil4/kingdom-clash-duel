@@ -55,6 +55,33 @@ describe("parseArgs", () => {
     expect(parseArgs(["--compact", "--no-compact"]).compact).toBe(false);
     expect(parseArgs(["--no-slider"]).slider).toBe(false);
     expect(parseArgs(["--no-slider", "--slider"]).slider).toBe(true);
+    const equals = parseArgs([
+      "--view=clan",
+      "--separator=@",
+      "--rows=asc",
+      "--columns=asc",
+      "--percent=25",
+      "--width=300px",
+      "--height=50%",
+      "--maxHeight=400px",
+      "--frame=false",
+    ]);
+    expect(equals).toMatchObject({
+      view: "clan",
+      separator: "@",
+      rows: "asc",
+      cols: "asc",
+      scale: 25,
+      width: { value: 300, isPercent: false },
+      height: { value: 50, isPercent: true },
+      maxHeight: "400px",
+      frame: false,
+    });
+    expect(parseArgs(["-w", "300"]).width).toEqual({ value: 300, isPercent: false });
+    expect(parseArgs(["-h", "50%"]).height).toEqual({ value: 50, isPercent: true });
+    expect(parseArgs(["-p=40"]).scale).toBe(40);
+    expect(parseArgs(["--separator="]).separator).toBe("#");
+
     expect(parseArgs(["--single-table"]).rowScroll).toBe(false);
     expect(parseArgs(["--single-table", "--row-scroll"]).rowScroll).toBe(true);
     expect(parseArgs(["--no-frame"]).frame).toBe(false);

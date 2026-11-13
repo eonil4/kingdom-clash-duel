@@ -24,16 +24,30 @@ export function parseArgs(argv) {
   return args;
 }
 
-async function main() {
-  const { dryRun } = parseArgs(process.argv.slice(2));
-  const mapRoot = await loadEnemyMap();
-  const rows = collectEnemyEntriesFromMap(mapRoot, WORKSPACE_ROOT);
+/**
+ * Convert mapped originals to canonical webp files; returns the counters.
+ * @param {{
+ *   dryRun?: boolean,
+ *   rows?: { folderAbs: string, canonicalKey: string, originalFileName: string, entry: object }[],
+ *   access?: (filePath: string) => Promise<unknown>,
+ *   write?: (from: string, to: string) => Promise<unknown>,
+ * }} [options]
+ */
+export async function runConvertToWebp({
+  dryRun = false,
+  rows,
+  access = (filePath) => fs.access(filePath),
+  write = writeWebpFromRasterFile,
+} = {}) {
+  const mappedRows =
+    rows ??
+    collectEnemyEntriesFromMap(await loadEnemyMap(), WORKSPACE_ROOT);
 
   let planned = 0;
   let skipped = 0;
   let missing = 0;
 
-  for (const { folderAbs, canonicalKey, originalFileName, entry } of rows) {
+  for (const { folderAbs, canonicalKey, originalFileName, entry } of mappedRows) {
     const orig =
       (typeof originalFileName === "string" ? originalFileName.trim() : "") ||
       (typeof entry.originalFileName === "string" ? entry.originalFileName.trim() : "");
@@ -47,7 +61,7 @@ async function main() {
     const toPath = path.join(folderAbs, canonicalKey);
 
     try {
-      await fs.access(fromPath);
+      await access(fromPath);
     } catch {
       console.warn(`Source missing: ${fromPath}`);
       missing++;
@@ -55,7 +69,7 @@ async function main() {
     }
 
     try {
-      await fs.access(toPath);
+      await access(toPath);
       skipped++;
       continue;
     } catch {
@@ -69,8 +83,15 @@ async function main() {
     }
 
     console.log(`Converting:\n  ${fromPath}\n  -> ${toPath}`);
-    await writeWebpFromRasterFile(fromPath, toPath);
+    await write(fromPath, toPath);
   }
+
+  return { planned, skipped, missing };
+}
+
+async function main() {
+  const { dryRun } = parseArgs(process.argv.slice(2));
+  const { planned, skipped, missing } = await runConvertToWebp({ dryRun });
 
   console.log(
     dryRun

@@ -74,6 +74,68 @@ function makeConfig() {
   };
 }
 
+describe("resolveArmy errors and fallbacks", () => {
+  it("rejects invalid armies, slots and unknown ids", () => {
+    expect(() => resolveArmy(makeConfig(), null, "attacker")).toThrow("Invalid army input");
+    expect(() => resolveArmy(makeConfig(), { slots: [] }, "attacker")).toThrow("no slots");
+    expect(() =>
+      resolveArmy(makeConfig(), { slots: [{ kind: "troop", troopId: "T1", level: 0 }] }, "attacker"),
+    ).toThrow("Invalid troop slot");
+    expect(() =>
+      resolveArmy(makeConfig(), { slots: [{ kind: "troop", troopId: "NOPE", level: 1 }] }, "attacker"),
+    ).toThrow("Unknown troopId");
+    expect(() =>
+      resolveArmy(makeConfig(), { slots: [{ kind: "troop", troopId: "T1", level: 9 }] }, "attacker"),
+    ).toThrow("Unknown troopsLevel");
+    expect(() =>
+      resolveArmy(makeConfig(), { slots: [{ kind: "hero", heroId: "NOPE", level: 1 }] }, "attacker"),
+    ).toThrow("Unknown heroId");
+    expect(() =>
+      resolveArmy(makeConfig(), { slots: [{ kind: "hero", heroId: "H1", level: 9 }] }, "attacker"),
+    ).toThrow("Unknown heroLevel");
+  });
+
+  it("rejects unknown gear levels and resolves armour gear", () => {
+    expect(() =>
+      resolveArmy(
+        makeConfig(),
+        {
+          slots: [
+            { kind: "hero", heroId: "H1", level: 1, gear: { weapon: "G1", weaponLevel: 9 } },
+          ],
+        },
+        "attacker",
+      ),
+    ).toThrow("Unknown gearLevel");
+
+    const cfg = makeConfig();
+    cfg.gearLevel = { ...cfg.gearLevel, G2_level1: { abilityId: "A4" } };
+    const army = resolveArmy(
+      cfg,
+      { slots: [{ kind: "hero", heroId: "H1", level: 1, gear: { armor: "G2", armorLevel: 1 } }] },
+      "defender",
+    );
+    expect(army.units[0].gearAbilityIds).toEqual(["A4"]);
+  });
+
+  it("falls back to level stats when no ability row exists", () => {
+    const cfg = makeConfig();
+    cfg.troopAbilityByLevel = new Map();
+    cfg.abilityByKey = new Map();
+    const army = resolveArmy(
+      cfg,
+      { slots: [{ kind: "troop", troopId: "T1", level: 1 }] },
+      "attacker",
+    );
+    expect(army.units[0]).toMatchObject({
+      attack: 10,
+      attackRange: 1,
+      attackCooldown: 1,
+      attackType: "Melee",
+    });
+  });
+});
+
 describe("resolveArmy", () => {
   it("resolves a troop slot into per-unit instances and a card", () => {
     const army = resolveArmy(

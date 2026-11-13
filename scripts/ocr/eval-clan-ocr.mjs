@@ -60,6 +60,81 @@ export function similarity(a, b) {
   return 1 - levenshtein(a, b) / max;
 }
 
+/**
+ * @typedef {{ item: { name: string, power: number, path: string }, actual: string, power?: number, note?: string }} ClanOcrRow
+ */
+
+/**
+ * Compute exact/similarity metrics and the hinted vs OCR-only split.
+ * @param {ClanOcrRow[]} rows
+ * @param {{ verbose?: boolean }} [options]
+ */
+export function evaluateClanRows(rows, { verbose = false } = {}) {
+  let nameOk = 0;
+  let powerOk = 0;
+  let simSum = 0;
+  /** @type {string[]} */
+  const failureLines = [];
+  for (const row of rows) {
+    const expected = normalizeForCompare(row.item.name);
+    const actual = normalizeForCompare(row.actual);
+    const sim = similarity(expected, actual);
+    simSum += sim;
+    if (expected === actual) nameOk++;
+    if (row.power === row.item.power) powerOk++;
+    if (verbose || expected !== actual || row.power !== row.item.power) {
+      const flags = [
+        expected === actual ? "name ok" : `name ${(sim * 100).toFixed(0)}%`,
+        row.power === row.item.power ? "power ok" : `power ${row.power ?? "?"}`,
+      ].join(", ");
+      failureLines.push(
+        `${flags.padEnd(22)} expected="${row.item.name}" actual="${row.actual}"` +
+          `${row.note ? ` (${row.note})` : ""}`,
+      );
+    }
+  }
+
+  const n = rows.length || 1;
+  /** @type {{ label: string, n: number, exact: number, similarityPct: string }[]} */
+  const groups = [];
+  // Split out samples without percent-encoded filename hints: those are the ones
+  // where the OCR name actually decides the result.
+  /** @type {Record<"hinted" | "ocr-only", ClanOcrRow[]>} */
+  const split = { hinted: [], "ocr-only": [] };
+  for (const row of rows) {
+    const hint = parseLatinNameHintFromEncodedOriginalBasename(path.basename(row.item.path));
+    split[hint !== undefined ? "hinted" : "ocr-only"].push(row);
+  }
+  for (const [label, group] of Object.entries(split)) {
+    if (group.length === 0) continue;
+    let exact = 0;
+    let sim = 0;
+    for (const row of group) {
+      const expected = normalizeForCompare(row.item.name);
+      const actual = normalizeForCompare(row.actual);
+      if (expected === actual) exact++;
+      sim += similarity(expected, actual);
+    }
+    groups.push({
+      label,
+      n: group.length,
+      exact,
+      similarityPct: ((sim / group.length) * 100).toFixed(1),
+    });
+  }
+
+  return {
+    samples: rows.length,
+    nameOk,
+    namePct: ((nameOk / n) * 100).toFixed(0),
+    similarityPct: ((simSum / n) * 100).toFixed(1),
+    powerOk,
+    powerPct: ((powerOk / n) * 100).toFixed(0),
+    failureLines,
+    groups,
+  };
+}
+
 function parseArgs(argv) {
   const args = { labels: "tests/fixtures/clan-ocr/labels.json", limit: undefined, verbose: false };
   for (let i = 0; i < argv.length; i++) {
@@ -112,51 +187,16 @@ async function main() {
     return;
   }
 
-  let nameOk = 0;
-  let powerOk = 0;
-  let simSum = 0;
-  for (const row of rows) {
-    const expected = normalizeForCompare(row.item.name);
-    const actual = normalizeForCompare(row.actual);
-    const sim = similarity(expected, actual);
-    simSum += sim;
-    if (expected === actual) nameOk++;
-    if (row.power === row.item.power) powerOk++;
-    if (verbose || expected !== actual || row.power !== row.item.power) {
-      const flags = [
-        expected === actual ? "name ok" : `name ${(sim * 100).toFixed(0)}%`,
-        row.power === row.item.power ? "power ok" : `power ${row.power ?? "?"}`,
-      ].join(", ");
-      console.log(`${flags.padEnd(22)} expected="${row.item.name}" actual="${row.actual}"${row.note ? ` (${row.note})` : ""}`);
-    }
-  }
-
-  const n = rows.length || 1;
+  const summary = evaluateClanRows(rows, { verbose });
+  for (const line of summary.failureLines) console.log(line);
   console.log("");
-  console.log(`samples: ${rows.length}`);
-  console.log(`name exact: ${nameOk}/${rows.length} (${((nameOk / n) * 100).toFixed(0)}%)`);
-  console.log(`name similarity: ${((simSum / n) * 100).toFixed(1)}%`);
-  console.log(`power exact: ${powerOk}/${rows.length} (${((powerOk / n) * 100).toFixed(0)}%)`);
-
-  // Split out samples without percent-encoded filename hints: those are the ones
-  // where the OCR name actually decides the result.
-  const groups = { hinted: [], "ocr-only": [] };
-  for (const row of rows) {
-    const hint = parseLatinNameHintFromEncodedOriginalBasename(path.basename(row.item.path));
-    groups[hint !== undefined ? "hinted" : "ocr-only"].push(row);
-  }
-  for (const [label, group] of Object.entries(groups)) {
-    if (group.length === 0) continue;
-    let exact = 0;
-    let sim = 0;
-    for (const row of group) {
-      const expected = normalizeForCompare(row.item.name);
-      const actual = normalizeForCompare(row.actual);
-      if (expected === actual) exact++;
-      sim += similarity(expected, actual);
-    }
+  console.log(`samples: ${summary.samples}`);
+  console.log(`name exact: ${summary.nameOk}/${summary.samples} (${summary.namePct}%)`);
+  console.log(`name similarity: ${summary.similarityPct}%`);
+  console.log(`power exact: ${summary.powerOk}/${summary.samples} (${summary.powerPct}%)`);
+  for (const group of summary.groups) {
     console.log(
-      `${label.padEnd(9)} n=${group.length} name exact ${exact}/${group.length}, similarity ${((sim / group.length) * 100).toFixed(1)}%`,
+      `${group.label.padEnd(9)} n=${group.n} name exact ${group.exact}/${group.n}, similarity ${group.similarityPct}%`,
     );
   }
 }

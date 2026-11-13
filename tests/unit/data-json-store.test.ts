@@ -101,6 +101,38 @@ describe("read/writeFolderEntries", () => {
     expect(await readFolderEntries(dir)).toEqual({});
   });
 
+  it("warns once when data.json cannot be read", async () => {
+    const prevLevel = process.env.LOG_LEVEL;
+    process.env.LOG_LEVEL = "warn";
+    const dir = await tmpDir();
+    await fs.mkdir(path.join(dir, "data.json"));
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    try {
+      expect(await readFolderEntries(dir)).toEqual({});
+      expect(await readFolderEntries(dir)).toEqual({});
+      expect(warn).toHaveBeenCalledTimes(1);
+      expect(String(warn.mock.calls[0][0])).toContain("cannot read");
+    } finally {
+      if (prevLevel === undefined) delete process.env.LOG_LEVEL;
+      else process.env.LOG_LEVEL = prevLevel;
+    }
+  });
+
+  it("ignores a data.json that is not an object", async () => {
+    const prevLevel = process.env.LOG_LEVEL;
+    process.env.LOG_LEVEL = "warn";
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "data.json"), "[]", "utf8");
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    try {
+      expect(await readFolderEntries(dir)).toEqual({});
+      expect(String(warn.mock.calls[0][0])).toContain("expected a JSON object");
+    } finally {
+      if (prevLevel === undefined) delete process.env.LOG_LEVEL;
+      else process.env.LOG_LEVEL = prevLevel;
+    }
+  });
+
   it("warns once per folder when data.json is malformed", async () => {
     const prevLevel = process.env.LOG_LEVEL;
     process.env.LOG_LEVEL = "warn";
