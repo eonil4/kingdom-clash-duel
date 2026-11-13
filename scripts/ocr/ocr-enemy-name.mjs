@@ -207,6 +207,21 @@ function isTestFolderPrimaryScreenshot(folderAbsPath, filePath) {
   return lower === "test.png" || /^screenshot_/i.test(base);
 }
 
+/**
+ * Phrase-aware noise check: only a phrase whose every token looks like OCR noise
+ * is noise. `isLikelyOcrNoise` alone judges the last cleanupName token, so a
+ * valid name ending in a tag ("МЕДВЕДЬ ZR") used to be treated as noise.
+ * @param {string} name
+ */
+export function isLikelyOcrNoisePhrase(name) {
+  const tokens = String(name ?? "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (tokens.length === 0) return true;
+  return tokens.every((token) => isLikelyOcrNoise(cleanupName(token)));
+}
+
 export function isLikelyOcrNoise(name) {
   const n = cleanupName(String(name || ""));
   if (!n) return true;
@@ -704,9 +719,12 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
         return false;
       }
       const voteCount = votes.get(c) ?? 0;
-      if (voteCount > baseMaxVote) return true;
-      // At parity, a word-like lowercase Latin name still competes ("Mazza",
-      // "Stas ZV"), while all-caps lookalike garbage ("MCKAHAEP") does not.
+      // All-caps Latin strings are often Cyrillic-layout lookalikes ("MCKAHAEP"):
+      // they must clearly out-vote the Cyrillic reads to join the pool.
+      const allCaps = !/[a-z]/.test(c);
+      if (voteCount > baseMaxVote && (!allCaps || voteCount > baseMaxVote * 2)) return true;
+      // At parity, a word-like lowercase Latin name still competes ("Mazza"),
+      // while all-caps lookalike garbage does not.
       return voteCount === baseMaxVote && voteCount > 0 && /[a-z]/.test(c) && /[aeiouy]/i.test(c);
     });
     let pool =
@@ -722,15 +740,20 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
       if (cleanLatin.length > 0) pool = cleanLatin;
     }
     pool.sort((a, b) => {
-      const dq =
+      // Weighted: line quality/penalty plus independent variant corroboration.
+      // A large vote margin can outweigh the mixed-script line bonus ("Есаул
+      // Сахалинб5" x5 vs one mixed line), while a genuinely mixed name with a
+      // single corroborating vote still wins.
+      const voteWeight = 7;
+      const sa =
+        arenaNameLineQuality(a) -
+        arenaCandidatePenalty(a) +
+        voteWeight * (votes.get(a) ?? 0);
+      const sb =
         arenaNameLineQuality(b) -
-        arenaCandidatePenalty(b) -
-        (arenaNameLineQuality(a) - arenaCandidatePenalty(a));
-      if (dq !== 0) return dq;
-      // A reading produced by several variants is more trustworthy than a
-      // one-off glyph salad ("Mazza" x6 vs "суМатна").
-      const dv = (votes.get(b) ?? 0) - (votes.get(a) ?? 0);
-      if (dv !== 0) return dv;
+        arenaCandidatePenalty(b) +
+        voteWeight * (votes.get(b) ?? 0);
+      if (sb !== sa) return sb - sa;
       const ds = scoreNamePhrase(b) - scoreNamePhrase(a);
       if (ds !== 0) return ds;
       // On an exact tie prefer a readable Latin candidate over Cyrillic glyph noise.
@@ -744,15 +767,19 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     });
     name = pool[0] ?? name;
     log.debug(`[OCR] ${base} pool pick: ${JSON.stringify(name)}`);
-    if (arenaCandidatePenalty(name) > 0) {
-      // The text-area winner is junk-shaped; a clean reading from the primary
-      // name/wide crops is more trustworthy ("Myxa" over "Myx г а").
+    const allCapsCyrillic =
+      /[\p{sc=Cyrillic}]/u.test(name) && !/\p{Ll}/u.test(name);
+    if (arenaCandidatePenalty(name) > 0 || allCapsCyrillic) {
+      // The text-area winner is junk-shaped or an all-caps Cyrillic lookalike; a
+      // word-like reading from the primary crops is more trustworthy ("Dron"
+      // over "ВАТ СО", "Myxa" over "Myx г а").
       const cleanPrimary = rawCandidates
         .slice(0, 4)
         .filter(
           (c) =>
             c &&
             /[A-Za-z]/.test(c) &&
+            /[a-z]/.test(c) &&
             !/[\p{sc=Cyrillic}]/u.test(c) &&
             (c.match(/\p{L}/gu) ?? []).length >= 3 &&
             arenaCandidatePenalty(c) === 0 &&
@@ -779,7 +806,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   if (
     !confidentFirstPass &&
     options.nameBoxStyle !== "tight" &&
-    (scoreNamePhrase(name) < 4 || isLikelyOcrNoise(name))
+    (scoreNamePhrase(name) < 4 || isLikelyOcrNoisePhrase(name))
   ) {
     await worker.setParameters({
       tessedit_char_whitelist: LATIN_WHITELIST,

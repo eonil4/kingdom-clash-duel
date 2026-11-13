@@ -8,6 +8,7 @@ import {
   correctClanNameConfusables,
   extractBestPhraseFromRawText,
   isLikelyOcrNoise,
+  isLikelyOcrNoisePhrase,
   isStrongFirstPassResult,
   normalizeOpponentDisplayName,
   pickClanName,
@@ -161,6 +162,20 @@ describe("isLikelyOcrNoise", () => {
   it("accepts real names", () => {
     expect(isLikelyOcrNoise("HuN")).toBe(false);
     expect(isLikelyOcrNoise("HuN MAG")).toBe(false);
+  });
+});
+
+describe("isLikelyOcrNoisePhrase", () => {
+  it("does not treat a name ending in a short tag as noise", () => {
+    expect(isLikelyOcrNoisePhrase("медведь29 ZR")).toBe(false);
+    expect(isLikelyOcrNoisePhrase("МЕДВЕДЬ ZR")).toBe(false);
+    expect(isLikelyOcrNoise("ZR")).toBe(true);
+  });
+
+  it("treats an all-noise phrase and empty input as noise", () => {
+    expect(isLikelyOcrNoisePhrase("PRT BCDF")).toBe(true);
+    expect(isLikelyOcrNoisePhrase("")).toBe(true);
+    expect(isLikelyOcrNoisePhrase("   ")).toBe(true);
   });
 });
 

@@ -80,6 +80,27 @@ describe("ocrEnemyName flow", () => {
     expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Ailiec");
   });
 
+  it("keeps a name ending in a short tag instead of falling back", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call === 4) return { text: "медведь29 ZR", confidence: 80 };
+      if (call === 8) return { text: "medvedk29 ZR v", confidence: 90 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("медведь29 ZR");
+  });
+
+  it("replaces an all-caps Cyrillic winner with a word-like primary reading", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call === 0) return { text: "Dron", confidence: 80 };
+      if (call === 4) return { text: "ВАТ СО", confidence: 80 };
+      if (call === 5) return { text: "ВАТ СО", confidence: 80 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Dron");
+  });
+
   it("replaces a junk-shaped text winner with a clean primary reading", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) => {
