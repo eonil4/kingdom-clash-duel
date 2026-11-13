@@ -68,6 +68,14 @@ describe("ocrEnemyName flow", () => {
     expect(workerRus.recognize).not.toHaveBeenCalled();
   });
 
+  it("strips a clipped label fragment from an arena candidate", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) =>
+      call === 4 ? { text: "hd Myasnik", confidence: 80 } : empty,
+    );
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Myasnik");
+  });
+
   it("uses text-area candidates when the first pass is weak", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) =>

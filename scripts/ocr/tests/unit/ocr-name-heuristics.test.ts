@@ -221,6 +221,7 @@ describe("stripEdgeTagSeparators", () => {
     expect(stripEdgeTagSeparators("|| Николай SKF")).toBe("Николай SKF");
     expect(stripEdgeTagSeparators(String.raw`\МишкинСы H-1922`)).toBe("МишкинСы H-1922");
     expect(stripEdgeTagSeparators("GumitronWATAHA |")).toBe("GumitronWATAHA");
+    expect(stripEdgeTagSeparators("- KalugaZR")).toBe("KalugaZR");
   });
 
   it("keeps real tags and inner separators", () => {

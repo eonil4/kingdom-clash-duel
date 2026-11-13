@@ -355,7 +355,7 @@ export function stripUnbalancedTagNoise(text) {
  */
 export function stripEdgeTagSeparators(text) {
   return String(text)
-    .replace(/^[\s|\\_]+/u, "")
+    .replace(/^[\s|\\_-]+/u, "")
     .replace(/[\s|\\_]+$/u, "");
 }
 
@@ -549,19 +549,25 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
       }
     }
   }
+  // Arena text-area lines often carry an icon/label fragment before the name
+  // ("hd Myasnik", "sh - KalugaZR"); tight formation names keep their raw phrase.
+  const phraseCleanup =
+    options.nameBoxStyle === "tight"
+      ? cleanupNamePhrase
+      : (text) => stripEdgeTagSeparators(stripLeadingClippedToken(cleanupNamePhrase(text)));
   const candidates = [
     cleanupName(res.nameNeutral.data.text),
     cleanupName(res.nameThreshold.data.text),
     cleanupName(res.wideNeutral.data.text),
     cleanupName(res.wideThreshold.data.text),
-    cleanupNamePhrase(res.textNeutral.data.text),
-    cleanupNamePhrase(res.textThreshold.data.text),
-    cleanupNamePhrase(res.textLineNeutral.data.text),
-    cleanupNamePhrase(res.textLineThreshold.data.text),
-    cleanupNamePhrase(res.textRusNeutral.data.text),
-    cleanupNamePhrase(res.textRusThreshold.data.text),
-    cleanupNamePhrase(res.textLineRusNeutral.data.text),
-    cleanupNamePhrase(res.textLineRusThreshold.data.text),
+    phraseCleanup(res.textNeutral.data.text),
+    phraseCleanup(res.textThreshold.data.text),
+    phraseCleanup(res.textLineNeutral.data.text),
+    phraseCleanup(res.textLineThreshold.data.text),
+    phraseCleanup(res.textRusNeutral.data.text),
+    phraseCleanup(res.textRusThreshold.data.text),
+    phraseCleanup(res.textLineRusNeutral.data.text),
+    phraseCleanup(res.textLineRusThreshold.data.text),
   ];
   candidates.sort((a, b) => {
     const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
@@ -570,14 +576,14 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   });
   let name = candidates[0] ?? "";
   const textAreaCandidates = [
-    cleanupNamePhrase(res.textNeutral.data.text),
-    cleanupNamePhrase(res.textThreshold.data.text),
-    cleanupNamePhrase(res.textLineNeutral.data.text),
-    cleanupNamePhrase(res.textLineThreshold.data.text),
-    cleanupNamePhrase(res.textRusNeutral.data.text),
-    cleanupNamePhrase(res.textRusThreshold.data.text),
-    cleanupNamePhrase(res.textLineRusNeutral.data.text),
-    cleanupNamePhrase(res.textLineRusThreshold.data.text),
+    phraseCleanup(res.textNeutral.data.text),
+    phraseCleanup(res.textThreshold.data.text),
+    phraseCleanup(res.textLineNeutral.data.text),
+    phraseCleanup(res.textLineThreshold.data.text),
+    phraseCleanup(res.textRusNeutral.data.text),
+    phraseCleanup(res.textRusThreshold.data.text),
+    phraseCleanup(res.textLineRusNeutral.data.text),
+    phraseCleanup(res.textLineRusThreshold.data.text),
   ].filter((c) => /[\p{L}].*[\p{L}]/u.test(c));
   if (textAreaCandidates.length > 0) {
     const uniq = [...new Set(textAreaCandidates)];
