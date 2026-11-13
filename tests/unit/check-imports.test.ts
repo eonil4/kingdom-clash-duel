@@ -1,3 +1,4 @@
+// check-imports:ignore-file — the import-like strings below are fixtures, not imports.
 import { afterEach, describe, expect, it } from "vitest";
 import fs from "fs/promises";
 import os from "os";
@@ -70,6 +71,19 @@ describe("findBrokenImports", () => {
     const file = path.join(dir, "a.mjs");
     await fs.writeFile(path.join(dir, "b.mjs"), "", "utf8");
     await fs.writeFile(file, 'export * from "./b.mjs";\n', "utf8");
+    expect(findBrokenImports([file])).toEqual([]);
+  });
+
+  it("skips files that opt out with the ignore marker", async () => {
+    const dir = await tmpDir();
+    const file = path.join(dir, "fixture.mjs");
+    await fs.writeFile(
+      file,
+      ['// check-imports:ignore-file', 'const s = "import a from \'./missing.mjs\'";', ""].join(
+        "\n",
+      ),
+      "utf8",
+    );
     expect(findBrokenImports([file])).toEqual([]);
   });
 });

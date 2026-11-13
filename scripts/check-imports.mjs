@@ -1,7 +1,11 @@
 /**
- * Verify that every relative `from`/`import()` specifier under a root resolves.
+ * Verify that every relative `from`/`import()` specifier under the given roots
+ * (default: scripts + tests) resolves.
  *
- * Usage: node scripts/check-imports.mjs [root]   (default: scripts)
+ * Files that intentionally contain import-like strings (fixtures) can opt out with
+ * the comment marker `check-imports:ignore-file`.
+ *
+ * Usage: node scripts/check-imports.mjs [root ...]
  */
 import fs from "fs";
 import path from "path";
@@ -38,6 +42,7 @@ export function findBrokenImports(files) {
   const broken = [];
   for (const file of files) {
     const src = fs.readFileSync(file, "utf8");
+    if (src.includes("check-imports:ignore-file")) continue;
     const re = /(?:from\s+|import\s*\(\s*)['"](\.[^'"]+)['"]/g;
     let match;
     while ((match = re.exec(src))) {
@@ -48,12 +53,30 @@ export function findBrokenImports(files) {
   return broken;
 }
 
+/** Directories checked when no explicit root is given. */
+export const DEFAULT_ROOTS = ["scripts", "tests"];
+
+/**
+ * @param {string[]} roots
+ * @returns {string[]}
+ */
+export function collectFromRoots(roots) {
+  const files = [];
+  for (const root of roots) {
+    const abs = path.resolve(root);
+    if (!fs.existsSync(abs)) continue;
+    files.push(...collectScriptFiles(abs));
+  }
+  return files;
+}
+
 /**
  * @param {string[]} argv
  */
 function main(argv) {
-  const root = path.resolve(argv[0] ?? "scripts");
-  const files = collectScriptFiles(root);
+  const args = argv.filter((a) => a !== undefined && a !== "--");
+  const roots = args.length > 0 ? args : DEFAULT_ROOTS;
+  const files = collectFromRoots(roots);
   const broken = findBrokenImports(files);
   for (const { file, specifier } of broken) {
     console.error(`MISSING ${file} -> ${specifier}`);
@@ -62,7 +85,9 @@ function main(argv) {
     console.error(`${broken.length} broken relative import(s).`);
     process.exit(1);
   }
-  console.log(`All relative imports resolve (${files.length} files).`);
+  console.log(
+    `All relative imports resolve (${files.length} files across ${roots.join(", ")}).`,
+  );
 }
 
 const invokedDirectly =
