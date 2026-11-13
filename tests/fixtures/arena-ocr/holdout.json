@@ -1,0 +1,65 @@
+{
+  "description": "Held-out arena OCR samples (not used for tuning); labels are the Latin tokens recorded in existing canonical .webp filenames (pseudo-labels).",
+  "images": [
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.21.21.242.png",
+      "name": "medved29.ZR",
+      "power": 4193076
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.21.59.175.png",
+      "name": "TARAKAH",
+      "power": 3939536
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_10.23.31.608.png",
+      "name": "Razrushitel%27_ZR",
+      "power": 3432017
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_11.12.38.858.png",
+      "name": "Mazza",
+      "power": 2709643
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.20.26.041.png",
+      "name": "4iliec",
+      "power": 2929728
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.22.06.741.png",
+      "name": "Esaul_Sakhalin65",
+      "power": 7844663
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.23.17.524.png",
+      "name": "%2ADron16%2A",
+      "power": 6884270
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.24.12.807.png",
+      "name": "OVERLORD",
+      "power": 6832163
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.25.27.275.png",
+      "name": "Myxa",
+      "power": 6814630
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.26.19.108.png",
+      "name": "ISKANDER_ZR",
+      "power": 2602886
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.27.19.908.png",
+      "name": "Stas_%22ZV%22",
+      "power": 3648255
+    },
+    {
+      "path": "data/clan_clash/2026-11-06/Screenshot_2026.11.06_12.29.44.108.png",
+      "name": "SANA.I.ZR",
+      "power": 7132434
+    }
+  ]
+}

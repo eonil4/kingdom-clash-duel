@@ -4,19 +4,39 @@ import path from "path";
 import { runArenaOcrEval } from "../../scripts/ocr/eval-arena-ocr.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
-describe("arena OCR fixture", () => {
-  it("lists existing samples with positive power", async () => {
-    const fixture = JSON.parse(
-      await fs.readFile(
-        path.join(WORKSPACE_ROOT, "tests/fixtures/arena-ocr/labels.json"),
-        "utf8",
-      ),
-    );
-    expect(fixture.images.length).toBeGreaterThanOrEqual(12);
-    for (const image of fixture.images) {
-      expect(image.name.trim()).not.toBe("");
-      expect(image.power).toBeGreaterThan(0);
-      await expect(fs.access(path.resolve(WORKSPACE_ROOT, image.path))).resolves.toBeUndefined();
+describe("arena OCR fixtures", () => {
+  for (const name of ["labels.json", "holdout.json"]) {
+    it(`lists existing samples with positive power (${name})`, async () => {
+      const fixture = JSON.parse(
+        await fs.readFile(
+          path.join(WORKSPACE_ROOT, "tests/fixtures/arena-ocr", name),
+          "utf8",
+        ),
+      );
+      expect(fixture.images.length).toBeGreaterThanOrEqual(12);
+      for (const image of fixture.images) {
+        expect(image.name.trim()).not.toBe("");
+        expect(image.power).toBeGreaterThan(0);
+        await expect(
+          fs.access(path.resolve(WORKSPACE_ROOT, image.path)),
+        ).resolves.toBeUndefined();
+      }
+    });
+  }
+
+  it("keeps tuning and holdout samples disjoint", async () => {
+    const load = async (name: string) =>
+      JSON.parse(
+        await fs.readFile(
+          path.join(WORKSPACE_ROOT, "tests/fixtures/arena-ocr", name),
+          "utf8",
+        ),
+      ) as { images: { path: string }[] };
+    const tuning = await load("labels.json");
+    const holdout = await load("holdout.json");
+    const tuningPaths = new Set(tuning.images.map((image) => image.path));
+    for (const image of holdout.images) {
+      expect(tuningPaths.has(image.path)).toBe(false);
     }
   });
 });
