@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import path from "path";
+import { fileURLToPath } from "url";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
 
 async function main() {
@@ -22,5 +23,9 @@ async function main() {
   }
 }
 
-main();
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
+if (invokedDirectly) {
+  main();
+}
 

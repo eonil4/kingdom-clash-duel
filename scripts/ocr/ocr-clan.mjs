@@ -6,6 +6,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
+import { fileURLToPath } from "url";
 import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
@@ -93,7 +94,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+const invokedDirectly =
+  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
+if (invokedDirectly) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

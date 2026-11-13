@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 39 source files, 7,442 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 39 source files, 7,462 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -33,8 +33,8 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,368 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 9 | 1,452 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `llm/` | 11 | 2,373 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `ocr/` | 9 | 1,467 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 924 | `run-battle.mjs` |
 | `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
 | root | 6 | 1,627 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
@@ -233,7 +233,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - `generate-wiki-table.mjs` is importable (guarded `main`), with `parseExtensions`/`escapeHtml`/`resolveFolderPaths` covered by tests. `clan-clash.mjs` exposes `parseArgs`/`parseFullFlag`/`parseRecursiveLevel`/`resolveConvertTarget` for tests.
 - Real bug found by the new cache tests: `resolvePredictionCachePaths` normalised an empty env expansion to `"."` (the cwd) before filtering; empty paths are now dropped before normalisation, so `clearLmPredictionCache` can never be handed the working directory.
 - Post-audit CI: `.github/workflows/ci.yml` runs frozen install + unit tests + `check:imports` on every push/PR on both Ubuntu and Windows; `packageManager` is pinned to `pnpm@12.15.0` and `scripts/check-imports.mjs` (with tests) makes the mechanical import check part of `pnpm run ci`.
-- Remaining CLI parsers covered: `extract_image` (coordinate validation via mocked `process.exit`) and `show-llm-config` (`formatSource`, real config load). Both CLIs guard `main()` and lost their shebangs so tests can import them.
+- Remaining CLI parsers covered: `extract_image` (coordinate validation via mocked `process.exit`) and `show-llm-config` (`formatSource`, real config load). Both CLIs guard `main()` and lost their shebangs so tests can import them. The OCR scan CLIs and the manual LLM test now guard `main()` as well, and `package.json` declares `engines.node >= 22` to match CI/README.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -246,7 +246,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 ## 6. P4 — tests, scripts, docs
 
 ### P4-1 Coverage gaps — **resolved**
-**Status: fixed 2026-11-12** — 48 new tests across seven files:
+**Status: fixed 2026-11-12** — 48 new tests across seven files (audit-era batch; later CLI/engine/eval tests bring the suite to 28 files / 188 tests):
 1. `tests/unit/llm-normalizers.test.ts` (13) — enemy/clan normalisers, power-string parsing, name requirements vs `UNKNOWN`, invalid power bounds, fenced/prose JSON extraction. Pins two behaviours worth knowing: `"-5"` parses to `5` (non-digits stripped) and clan results never carry `englishName`.
 2. `tests/unit/enemy-records.test.ts` (7) — power padding, token dedup, percent-escaping, `<folder>/<source>/<canonical>.webp` resolution for png- and webp-keyed entries, source-path lookup with backslash normalisation.
 3. `tests/unit/battle-outcome.test.ts` (5) — full `decideOutcome` ordering (wipe → living count → HP → damage → tie) including `timeout_*` reasons.

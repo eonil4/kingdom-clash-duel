@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
