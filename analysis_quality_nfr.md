@@ -51,9 +51,8 @@ Thresholds and sizes are inline and undocumented in one place: `warnBelowPower =
 ### 2.6 `process.exit` inside parsers (LOW) — **resolved**
 `extract_image.mjs` and `run-battle.mjs` parsers now throw `UsageError` (`scripts/cli.mjs`); the CLI entry points print the message + usage and exit 1, and tests assert the errors instead of mocking `process.exit`.
 
-### 2.7 Silent-by-comment catches (LOW-MEDIUM)
-Several catches swallow errors with only a comment (`data-json-store.mjs` read, `enemy-records.mjs` walk/stat paths, `loadConfiguredFolders`). They are intentional fallbacks but invisible.
-**Fix:** `DEBUG=1` diagnostic path or a single `warnOnce()` helper.
+### 2.7 Silent-by-comment catches (LOW-MEDIUM) — **resolved**
+`logOnce(level, key, …)` (`log.mjs`) dedupes a diagnostic per key and level. Unreadable/unparseable `data.json` now warns once per folder in both the store read and the map merge (missing files stay silent), and a discovered folder that cannot be read logs once at `debug`. `loadEnemyMap`'s parse fallback and `loadConfiguredFolders`' readdir fallback are covered; only genuinely expected fallbacks (ENOENT on a new folder, logical-only map segments) remain silent.
 
 ### 2.8 Layout tables & generated HTML metadata (LOW, accessibility) — **resolved**
 Both generators now emit a full document via `scripts/html-document.mjs` (`<!DOCTYPE html>`, `<html lang="en">`, charset, viewport, escaped `<title>`), and matrix headers carry `scope="col"`/`scope="row"`. GitHub's table rendering is unchanged.
@@ -158,8 +157,9 @@ The first batch from §5 is implemented on `refactor`:
 | 13 | Early exit on a strong first pass (§3.1) | **done** | `isStrongFirstPassResult` (tag shape, ≥60 confidence, no HUD islands) keeps the normalized phrase via `stripEdgeTagSeparators` and skips the 12 text-area variants + fallback on arena images; clan keeps the full pass for the Latin repair. A/B 30 real screenshots: 3 names fixed/cleaned, 0 regressions; triggering images 3.4 s → 0.86 s, 10-image sample −12%; `ocr-name-heuristics.test.ts` +4 */
 | 14 | LLM total retry budget (§3.2) | **done** | `maxTotalMs` in `createLlmStrategy` (config `llmMaxTotalMs`, 120 s) clamps per-attempt timeouts and backoff to the remaining budget, skips attempts once it is spent and throws a budget error with the last failure; exhausted-run worst case ~6 min → 2 min; `llm-strategy.test.ts` +3 with an injected clock |
 | 15 | Config-driven clan-name corrections (§2.2) | **done** | `correctClanNameConfusables(text, corrections)` is table-driven with `DEFAULT_CLAN_NAME_CORRECTIONS`; `ocr.clanNameCorrections` in `config/llm.json` overrides it (strategy trims, drops invalid entries, falls back to the default); eval unchanged; `ocr-name-heuristics.test.ts` +1 and `ocr-strategy.test.ts` +2 |
+| 16 | Diagnose previously silent fallbacks (§2.7) | **done** | `logOnce(level, key, …)` dedupes per key/level; unreadable/unparseable `data.json` warns once per folder (store read and map merge), unreadable discovered folders log once at `debug`; `log.test.ts` +1, `data-json-store.test.ts` +1 |
 
-Current suite: `pnpm test:unit` 31 files / 219 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
+Current suite: `pnpm test:unit` 31 files / 221 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-All items from §5, all four §3.1 options, the §3.2 retry budget and the §2.2 config table are addressed. Still open as notes: the `clearPredictionCacheBeforeEachCall` A/B (§3.2), silent-catch diagnostics (§2.7), a declarative recognition table (§2.9), and targeted tests for the lowest-covered CLIs (§4).
+All items from §5, all four §3.1 options, the §3.2 retry budget, the §2.2 config table and the §2.7 fallback diagnostics are addressed. Still open as notes: the `clearPredictionCacheBeforeEachCall` A/B (§3.2), a declarative recognition table (§2.9), and targeted tests for the lowest-covered CLIs (§4).
 

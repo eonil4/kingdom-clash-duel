@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { log } from "../../scripts/log.mjs";
+import { log, logOnce } from "../../scripts/log.mjs";
 
 const saved = process.env.LOG_LEVEL;
 
@@ -47,5 +47,15 @@ describe("log", () => {
     log.debug("d");
     log.info("i");
     expect(out).toHaveBeenCalledTimes(2);
+  });
+
+  it("logOnce dedupes per key and level", () => {
+    process.env.LOG_LEVEL = "debug";
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    logOnce("warn", "kcd-logonce-a", "first");
+    logOnce("warn", "kcd-logonce-a", "first again");
+    logOnce("warn", "kcd-logonce-b", "other");
+    expect(warn).toHaveBeenCalledTimes(2);
+    expect(warn).toHaveBeenNthCalledWith(2, "other");
   });
 });

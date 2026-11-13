@@ -27,3 +27,19 @@ export const log = {
     if (threshold() >= LEVELS.debug) console.log(...args);
   },
 };
+
+const seenOnce = new Set();
+
+/**
+ * Log at `level` only the first time `key` is seen in this process. Used for
+ * per-file/fallback diagnostics that would otherwise repeat for every item.
+ * @param {"error" | "warn" | "info" | "debug"} level
+ * @param {string} key
+ * @param {...unknown} args
+ */
+export function logOnce(level, key, ...args) {
+  const dedupeKey = `${level}:${key}`;
+  if (seenOnce.has(dedupeKey)) return;
+  seenOnce.add(dedupeKey);
+  log[level](...args);
+}

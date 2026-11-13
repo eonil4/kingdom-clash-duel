@@ -8,6 +8,12 @@
 import fs from "fs/promises";
 import path from "path";
 import { writeJsonAtomic } from "../atomic-json.mjs";
+import { logOnce } from "../log.mjs";
+
+/** @param {unknown} err */
+function errorMessage(err) {
+  return err instanceof Error ? err.message : String(err);
+}
 
 /**
  * @param {string} folderAbs
@@ -21,11 +27,27 @@ function dataJsonPath(folderAbs) {
  * @returns {Promise<Record<string, object>>}
  */
 export async function readFolderEntries(folderAbs) {
+  const file = dataJsonPath(folderAbs);
+  let raw;
   try {
-    const parsed = JSON.parse(await fs.readFile(dataJsonPath(folderAbs), "utf8"));
+    raw = await fs.readFile(file, "utf8");
+  } catch (err) {
+    // A missing data.json is the normal case for a new folder.
+    if (/** @type {NodeJS.ErrnoException} */ (err)?.code !== "ENOENT") {
+      logOnce("warn", `data-json-read:${file}`, `[Data] cannot read ${file}: ${errorMessage(err)}`);
+    }
+    return {};
+  }
+  try {
+    const parsed = JSON.parse(raw);
     if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed;
-  } catch {
-    // missing or unreadable -> start empty
+    logOnce("warn", `data-json-shape:${file}`, `[Data] ignoring ${file}: expected a JSON object`);
+  } catch (err) {
+    logOnce(
+      "warn",
+      `data-json-parse:${file}`,
+      `[Data] ignoring unparseable ${file}: ${errorMessage(err)}`,
+    );
   }
   return {};
 }

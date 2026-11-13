@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
@@ -17,6 +17,7 @@ async function tmpDir() {
 }
 
 afterEach(async () => {
+  vi.restoreAllMocks();
   for (const dir of dirs.splice(0)) {
     await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
   }
@@ -98,5 +99,22 @@ describe("read/writeFolderEntries", () => {
 
     await fs.writeFile(path.join(dir, "data.json"), "not json", "utf8");
     expect(await readFolderEntries(dir)).toEqual({});
+  });
+
+  it("warns once per folder when data.json is malformed", async () => {
+    const prevLevel = process.env.LOG_LEVEL;
+    process.env.LOG_LEVEL = "warn";
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "data.json"), "{oops", "utf8");
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    try {
+      expect(await readFolderEntries(dir)).toEqual({});
+      expect(await readFolderEntries(dir)).toEqual({});
+      expect(warn).toHaveBeenCalledTimes(1);
+      expect(String(warn.mock.calls[0][0])).toContain("ignoring unparseable");
+    } finally {
+      if (prevLevel === undefined) delete process.env.LOG_LEVEL;
+      else process.env.LOG_LEVEL = prevLevel;
+    }
   });
 });

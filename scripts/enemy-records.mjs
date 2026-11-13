@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { writeJsonAtomic } from "./atomic-json.mjs";
 import { toSafeEnemyFilenameToken } from "./ocr/enemy-filename-tokens.mjs";
-import { log } from "./log.mjs";
+import { log, logOnce } from "./log.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -82,7 +82,12 @@ export async function loadConfiguredFolders(workspaceRoot = WORKSPACE_ROOT) {
     let files;
     try {
       files = await fs.readdir(absPath);
-    } catch {
+    } catch (err) {
+      logOnce(
+        "debug",
+        `configured-folder:${absPath}`,
+        `[Data] cannot read ${absPath}: ${err instanceof Error ? err.message : String(err)}`,
+      );
       continue;
     }
     if (!files.some((f) => IMAGE_EXT_RE.test(f))) continue;
@@ -174,8 +179,13 @@ export async function loadEnemyMap(workspaceRoot = WORKSPACE_ROOT) {
           }
         }
       }
-    } catch {
-      // ignore
+    } catch (err) {
+      const failedPath = path.join(dir, "data.json");
+      logOnce(
+        "warn",
+        `data-json-parse:${failedPath}`,
+        `[Data] ignoring unparseable ${failedPath}: ${err instanceof Error ? err.message : String(err)}`,
+      );
     }
 
     for (const e of entries || []) {
@@ -278,7 +288,15 @@ export async function saveEnemyMap(mapRoot) {
       try {
         const raw = await fs.readFile(dataPath, "utf8");
         existing = JSON.parse(raw);
-      } catch {
+      } catch (err) {
+        if (/** @type {NodeJS.ErrnoException} */ (err)?.code !== "ENOENT") {
+          logOnce(
+            "warn",
+            `data-json-merge:${dataPath}`,
+            `[Data] merging into unreadable ${dataPath} (its entries will be replaced): ` +
+              `${err instanceof Error ? err.message : String(err)}`,
+          );
+        }
         existing = {};
       }
       for (const it of items) {

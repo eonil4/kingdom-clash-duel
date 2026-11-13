@@ -40,7 +40,7 @@ Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy RO
 
 OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent. Name recognition uses two workers (`eng+rus`, `rus`); power recognition runs on a third digits-only `eng` worker concurrently with the name pass (three live workers during a run). On arena screenshots a confident, tag-shaped first pass skips the remaining text-area OCR variants and keeps its phrase; clan (`tight`) runs the full sequence including the Latin repair pass.
 
-Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (default), `debug`); `debug` prints per-file timings and the indexed-source count.
+Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (default), `debug`); `debug` prints per-file timings and the indexed-source count. Fallback diagnostics (unreadable/unparseable `data.json`, skipped folders) print once per process.
 
 | Command | Description |
 |--------|-------------|
