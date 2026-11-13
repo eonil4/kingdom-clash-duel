@@ -31,13 +31,14 @@ Cleans up `scripts/` from a full audit (`analysis_qwen_3_5_4b.md`, plus a qualit
 - **Cross-cutting** — timeout defaults unified; reconcile moves stale originals to `_orphaned/`; battle report exports its constants and real config dir; gallery filenames escaped; EBUSY/EPERM retry for WebP; cross-platform cache-clear; `.ocr-debug/` ignored; `package.json`/README drift fixed; unused `rimraf` removed.
 - **Script parameter fixes** — `battle:clan_clash:example` now ships synthetic armies + config tables under `data/battle/examples/` and passes `--config-dir`, so it runs without an APK dump (Victory, 1000 vs 300 power); the generated `battleResult.json` is gitignored. The qwen test script key/model now match its `qwen_qwen3-vl-4b` fixture folder (was 8b against a 4b folder), and the battle doc shows `--config-dir` plus the corrected script name.
 - **Vision CLI logging fix** — the injectable `log` parameter in `runVisionExtract` shadowed the module logger, so `log.info("[Data] wrote …")` threw after a successful `data.json` write and was misreported as a write failure; the module logger is now imported as `logger` and the success test asserts no warning. Vitest's test timeout is 15 s to avoid flakes from real sharp processing under load.
+- **Clan name ROI fix** — the formation header is centered text (`Player formation <name>`), so a fixed name crop clipped the clan tag on long names (`uN | Phoenix`) and captured the `formation` tail on short ones (`on HuN|Pufi`). `detectClanNameRoi` finds the name run from dark-text column gaps in the header and `extractClanDataFromNamePowerCrops` uses it automatically (a caller-supplied `nameRoi` wins; the vision client gained that override). The configured clan name ROI moves to x=460 with the prompt typo fixed. Validated on the 40-image `2026-11-13` clan folder: 40/40 extracted, every record starts with the full `HuN` tag, powers unchanged.
 - **Tests** — OCR pass de-duplicated with exported heuristics; unit tests for normalisers, map helpers, ROI scaling, OCR scan/eval, atomic writes, all CLI arg parsers, wiki/HTML helpers, cache paths, import checker, APK config, army resolution, battle sim/outcome, pipeline runner/store, both strategies, the OCR heuristics (`isStrongFirstPassResult`, `stripEdgeTagSeparators`), the correction-table override/fallback, the once-per-key diagnostics, and the LLM retry budget (injected clock: timeout clamping, exhaustion, delay clamping).
 
 ## Test plan
 
-- [x] `pnpm test:unit` — 42 files / 378 tests pass
+- [x] `pnpm test:unit` — 43 files / 382 tests pass
 - [x] `pnpm test:coverage` — ratcheted thresholds 93/81/81/93 pass locally; coverage 93.8% statements / 82.3% branches / 82.5% functions
-- [x] `pnpm check:imports` — 85 files clean
+- [x] `pnpm check:imports` — 89 files clean
 - [x] `pnpm battle:clan_clash:example` — runs with the committed synthetic config; Victory (`enemy_wiped`), 3.5 s, 1000 vs 300 power
 - [x] Lowest-covered CLIs import safely and their helpers are covered (power parsing, screenshot filter, clan-folder discovery, convert/rename args, map navigation, target basename)
 - [x] `pnpm eval:clan-ocr` — 11/12 exact, 93.2% similarity (OCR-only 59.1%), power 12/12 (improved by the shared scoring changes)
@@ -49,6 +50,7 @@ Cleans up `scripts/` from a full audit (`analysis_qwen_3_5_4b.md`, plus a qualit
 - [x] Fallback diagnostics — malformed `data.json` warns once across two reads; `logOnce` dedupes per key/level
 - [x] Reproduced the Windows-only failure locally by converting both shebang modules to CRLF (2 suites failed), then verified the same CRLF checkout passes after the fix
 - [x] Galleries emit full documents: `<!DOCTYPE html>`, `lang`, charset, escaped title, `scope="col"/"row"` verified on temp folders
+- [x] Formation name ROI — synthetic header tests (short name, shifted long name, missing header) plus an 8-image probe; the 40-image clan re-extraction kept the full `HuN` tag in every record, with 19 WebPs regenerated and 19 stale ones removed
 
 ## Commits
 
@@ -108,10 +110,12 @@ Cleans up `scripts/` from a full audit (`analysis_qwen_3_5_4b.md`, plus a qualit
 - `36a0167` Fix holdout glyph misses via votes, gates and phrase noise
 - `875047d` Make the battle example self-contained and fix the qwen test script
 - `cbbfce0` Fix logger shadowing in the vision extract CLI
+- `ca47250` Detect the clan name start in the formation header
 
 ## Notes
 
-- **CI status:** `179ff21` is green on both OSes; `875047d` and `cbbfce0` were pushed after that — check the latest runs before merging.
+- **CI status:** `cbbfce0` is green on both OSes (Ubuntu + Windows); `ca47250` and the data commit after it were pushed later — check the latest runs before merging.
+- **Clan name crop:** the formation header centers `Player formation <name>`, so no fixed x works for every name; `detectClanNameRoi` derives the name start per image from the header word runs (falls back to the configured x=460). Stylised glyphs (`Csᵃti`, `ßᵃ®ßi€`, a boxed `Ø`) remain model-dependent reads even with a clean crop.
 - **New warning behaviour:** a corrupt `data.json` now warns once and is still replaced on the next write (previous entries are lost, as before — now at least visible). Missing files stay silent; folder-read failures are debug-level (`LOG_LEVEL=debug`).
 - **Config changes stack up:** `llmMaxTotalMs: 120000` (two effective 60 s attempts; raise it or use `0` on slow hardware) and `ocr.clanNameCorrections` (same values as the built-in default; add another clan's misread here). Local copies of `config/llm.json` need both merged; a config corrections table replaces the built-in table entirely (not a merge).
 - **Arena OCR accuracy is still the weak spot, now measured, tuned and validated:** `pnpm eval:arena-ocr` reports 3/12 exact, 83.0% similarity (40.2% baseline → 48.5% fragment cleanup → 63.6% phrase scoring → 77.2% pooling/penalty refinements → 78.2% vote selection → 83.0% weighted votes + overrides), power 10/12 on the tuning fixture; on a disjoint 12-sample holdout the pre-tuning scorer scores 43.2% vs **77.9%** now (3/12 exact), so the gain generalises. Named holdout misses: `medved29.ZR` exact, `Esaul_Sakhalin65` 94%, `ISKANDER_ZR` 82%; `Stas ZV` remains at 42% because its two tag reads are equally supported, and `TARAKAH` at 86% because its canonical label looks like a historical misread. Remaining misses are genuine glyph misreads (`3`↔`Z`, `MEDEBYY`→`MEDVED`, `Рима8`→`Rima8`, `5ата\К` for `sigmaZR`) plus pseudo-label formatting; candidate logging at `LOG_LEVEL=debug` makes further tuning measurable. Use `llm-enemy-extract.mjs` for production arena names.
@@ -120,4 +124,4 @@ Cleans up `scripts/` from a full audit (`analysis_qwen_3_5_4b.md`, plus a qualit
 - **Memory:** an OCR run holds three tesseract workers (`eng+rus`, `rus`, `eng`).
 - **Still open as notes:** only the `clearPredictionCacheBeforeEachCall` A/B (§3.2), which needs a live LM Studio.
 - **Coverage:** thresholds are 93/81/81/93 against the measured 93.8/82.5/82.7. 100% is deliberately not pursued: the residual code is `main()` wrappers that call `process.exit`, failure branches that require a live LM Studio or a failing child process, and platform-specific fs errors; the manual `run-llm-real-test.mjs` integration script is excluded. If a future change legitimately drops coverage, lower the thresholds deliberately rather than adding filler tests.
-- **Housekeeping:** `.qoder/` stays untracked; PR edits are manual (no `gh`/token).
+- **Housekeeping:** the PR text is maintained in `.qoder/pr-description.md` (now committed); edits on GitHub are still manual (no `gh`/token).
