@@ -13,8 +13,9 @@ import {
   loadEnemyMap,
   WORKSPACE_ROOT,
 } from "../enemy-records.mjs";
+import { isMain } from "../cli.mjs";
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = { dryRun: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -78,8 +79,10 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (isMain(import.meta.url)) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
 

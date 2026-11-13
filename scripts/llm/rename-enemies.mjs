@@ -12,6 +12,7 @@ import {
   loadEnemyMap,
   WORKSPACE_ROOT,
 } from "../enemy-records.mjs";
+import { isMain } from "../cli.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,7 +30,7 @@ const SUPPORTED_IMAGE_EXTENSIONS = new Set([
 
 const OCR_SCRIPT_PATH = path.join(__dirname, "..", "ocr", "ocr-enemy.mjs");
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = { only: undefined, skipOcr: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -63,7 +64,7 @@ function delay(ms) {
 }
 
 /** Windows often returns EBUSY right after Sharp finishes writing the new file. */
-async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
+export async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
   let lastErr;
   for (let i = 0; i < attempts; i++) {
     try {
@@ -82,7 +83,7 @@ async function unlinkWithRetry(filePath, { attempts = 10, baseMs = 40 } = {}) {
   throw lastErr;
 }
 
-async function collectImageFilesInFolderOnly(dir) {
+export async function collectImageFilesInFolderOnly(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
   const files = [];
 
@@ -95,14 +96,14 @@ async function collectImageFilesInFolderOnly(dir) {
   return files;
 }
 
-function toMapKey(filePath) {
+export function toMapKey(filePath) {
   return path
     .relative(WORKSPACE_ROOT, filePath)
     .split(path.sep)
     .join("/");
 }
 
-function getNestedMapping(source, mapKey) {
+export function getNestedMapping(source, mapKey) {
   const parts = mapKey.split("/").filter(Boolean);
   let cursor = source;
   for (const part of parts) {
@@ -113,7 +114,7 @@ function getNestedMapping(source, mapKey) {
   return cursor;
 }
 
-function getNestedFolderNode(source, folderRelPosix) {
+export function getNestedFolderNode(source, folderRelPosix) {
   const parts = folderRelPosix.split("/").filter(Boolean);
   let cursor = source;
   for (const part of parts) {
@@ -121,6 +122,21 @@ function getNestedFolderNode(source, folderRelPosix) {
     cursor = cursor[part];
   }
   return cursor;
+}
+
+/**
+ * Canonical basename for a map entry: the Latin token wins, and the English token
+ * is appended only when it differs.
+ * @param {{ power: number, name?: string, nameLatin?: string, nameEnglish?: string }} entry
+ */
+export function buildTargetBasename(entry) {
+  const { power, name, nameLatin, nameEnglish } = entry ?? {};
+  const formattedPower = formatPowerForFilename(power);
+  const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
+  const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
+  const englishSuffix =
+    englishNameToken && englishNameToken !== latinNameToken ? `-${englishNameToken}` : "";
+  return `${formattedPower}-${latinNameToken}${englishSuffix}.webp`;
 }
 
 async function main() {
@@ -291,13 +307,7 @@ async function main() {
         })(folderNode, mapping)
       : null;
 
-    const { power, name, nameLatin, nameEnglish } = mapping;
-    const formattedPower = formatPowerForFilename(power);
-    const latinNameToken = toSafeEnemyFilenameToken(String(nameLatin || name || ""));
-    const englishNameToken = toSafeEnemyFilenameToken(String(nameEnglish || ""));
-    const newName = latinNameToken === englishNameToken
-      ? `${formattedPower}-${latinNameToken}.webp`
-      : `${formattedPower}-${latinNameToken}-${englishNameToken}.webp`;
+    const newName = buildTargetBasename(mapping);
     const newPath = canonicalKey
       ? path.join(dir, canonicalKey)
       : path.join(dir, newName);
@@ -348,8 +358,10 @@ async function main() {
   console.log("Done.");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (isMain(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
 

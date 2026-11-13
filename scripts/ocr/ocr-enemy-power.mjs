@@ -13,7 +13,12 @@ import {
 } from "./ocr-enemy-crops.mjs";
 import { isMain } from "../cli.mjs";
 
-function cleanupPower(text) {
+/**
+ * Longest digit group wins (OCR may split "8104472" into "8 104 472").
+ * @param {string} text
+ * @returns {number | undefined}
+ */
+export function cleanupPower(text) {
   const raw = String(text ?? "");
   const groupedPattern = /\d{1,3}(?:[ _]\d{3})+/g;
   let bestGrouped = undefined;

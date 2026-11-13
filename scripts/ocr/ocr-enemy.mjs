@@ -23,7 +23,13 @@ import {
 } from "./scan-cli.mjs";
 import { isMain } from "../cli.mjs";
 
-function isFullScreenshotForOcr(folderAbsPath, filePath) {
+/**
+ * In `test/` folders only the primary screenshots are OCR sources; sibling crops
+ * are reference images used to refine names.
+ * @param {string} folderAbsPath
+ * @param {string} filePath
+ */
+export function isFullScreenshotForOcr(folderAbsPath, filePath) {
   if (path.basename(folderAbsPath).toLowerCase() !== "test") return true;
   const base = path.basename(filePath);
   const lower = base.toLowerCase();

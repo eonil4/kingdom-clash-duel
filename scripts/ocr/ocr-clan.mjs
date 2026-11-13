@@ -21,10 +21,11 @@ import { isMain } from "../cli.mjs";
 
 /**
  * `data/clan_clash/<date>/clan` folders that exist and contain images.
+ * @param {string} [workspaceRoot]
  * @returns {Promise<{ absPath: string, relPath: string }[]>}
  */
-async function discoverClanFolders() {
-  const root = path.join(WORKSPACE_ROOT, "data", "clan_clash");
+export async function discoverClanFolders(workspaceRoot = WORKSPACE_ROOT) {
+  const root = path.join(workspaceRoot, "data", "clan_clash");
   let entries;
   try {
     entries = await fs.readdir(root, { withFileTypes: true });
@@ -46,7 +47,7 @@ async function discoverClanFolders() {
     }
     out.push({
       absPath,
-      relPath: path.relative(WORKSPACE_ROOT, absPath).split(path.sep).join("/"),
+      relPath: path.relative(workspaceRoot, absPath).split(path.sep).join("/"),
     });
   }
   return out.sort((a, b) => a.relPath.localeCompare(b.relPath));
