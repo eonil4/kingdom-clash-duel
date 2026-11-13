@@ -246,7 +246,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR works offline: workers use the bundled `eng.traineddata`/`rus.traineddata` at the repo root (`langPath`, `gzip:false`, temp cache), falling back to tesseract.js's download only when those files are absent; a sample run created no download cache.
 - Typed usage errors: `extract_image` and `run-battle` parsers now throw `UsageError` (`cli.mjs`) instead of calling `process.exit`, so they are reusable/testable; the CLIs print the message + usage and exit 1.
 - Leveled logging: pipeline chatter goes through `log.mjs` (`LOG_LEVEL=silent|error|warn|info|debug`, default info); `debug` adds per-file timings and the indexed-source count. Verified on a real clan run (`[Debug] … 2546ms`).
-- Coverage in CI: `@vitest/coverage-v8` + `pnpm test:coverage` (V8, `scripts/**/*.mjs`, thresholds 55/75/60/55). Baseline: 56.2% statements, 78.2% branches, 61.2% functions; the Linux CI leg runs the coverage job.
+- Coverage in CI: `@vitest/coverage-v8` + `pnpm test:coverage` (V8, `scripts/**/*.mjs`). Baseline was 56.2% statements / 78.2% branches / 61.2% functions; after the CLI-coverage work (59.7 / 78.7 / 64.0) the thresholds were ratcheted from 55/75/60/55 to 58/77/62/58. The Linux CI leg runs the coverage job.
 - Self-describing galleries: `html-document.mjs` wraps both generators in `<!DOCTYPE html><html lang="en">` with charset/viewport/title, and matrix headers now carry `scope="col"/"row"`; `escapeHtml` is shared from the helper.
 
 ### P3-6 Strong points worth keeping
