@@ -5,7 +5,8 @@ import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
-import { fileURLToPath } from "url";
+import { CLAN_NAME_PICK, OCR_UPSCALE_WIDTHS } from "../constants.mjs";
+import { isMain } from "../cli.mjs";
 import {
   buildNameBoxes,
   cropBoxFromPercent,
@@ -296,14 +297,16 @@ export function pickClanName(candidates, fallbackName) {
       const letters = chars.filter((ch) => /\p{L}/u.test(ch)).length;
       const latin = chars.filter((ch) => /[A-Za-z]/.test(ch)).length;
       const latinRatio = letters > 0 ? latin / letters : 0;
-      return { ...c, letters, score: c.confidence + 25 * latinRatio };
+      return { ...c, letters, score: c.confidence + CLAN_NAME_PICK.latinBonus * latinRatio };
     })
     .sort((a, b) => b.score - a.score);
 
-  const best = scored.find((c) => c.letters >= 4 && c.score >= 20);
+  const best = scored.find(
+    (c) => c.letters >= CLAN_NAME_PICK.minLetters && c.score >= CLAN_NAME_PICK.minScore,
+  );
   // Cyrillic only vetoes a weak Latin pass; a confident Latin read still wins over
   // garbled Cyrillic islands produced from a Latin name.
-  if (best && (cyr < lat || best.score >= 80)) return best.text;
+  if (best && (cyr < lat || best.score >= CLAN_NAME_PICK.strongScore)) return best.text;
   if (cyr > 0 && cyr >= lat) return fallbackText;
   return best ? best.text : fallbackText;
 }
@@ -333,32 +336,32 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameImgWide = sharp(filePath).extract(nameCropWide);
   const nameTextImg = sharp(filePath).extract(nameTextCrop);
   const nameTextLineImg = sharp(filePath).extract(nameTextLineCrop);
-  const nameBufNeutral = await preprocessForOcr(nameImg, { width: 1800 });
+  const nameBufNeutral = await preprocessForOcr(nameImg, { width: OCR_UPSCALE_WIDTHS.name });
   const nameBufThreshold = await preprocessForOcr(nameImg, {
-    width: 1800,
+    width: OCR_UPSCALE_WIDTHS.name,
     threshold: 155,
   });
-  const nameBufRaw = await preprocessRawForOcr(nameImg, { width: 1800 });
-  const nameWideBufNeutral = await preprocessForOcr(nameImgWide, { width: 2000 });
+  const nameBufRaw = await preprocessRawForOcr(nameImg, { width: OCR_UPSCALE_WIDTHS.name });
+  const nameWideBufNeutral = await preprocessForOcr(nameImgWide, { width: OCR_UPSCALE_WIDTHS.nameWide });
   const nameWideBufThreshold = await preprocessForOcr(nameImgWide, {
-    width: 2000,
+    width: OCR_UPSCALE_WIDTHS.nameWide,
     threshold: 150,
   });
-  const nameWideBufRaw = await preprocessRawForOcr(nameImgWide, { width: 2000 });
-  const nameTextBufNeutral = await preprocessForOcr(nameTextImg, { width: 2200 });
+  const nameWideBufRaw = await preprocessRawForOcr(nameImgWide, { width: OCR_UPSCALE_WIDTHS.nameWide });
+  const nameTextBufNeutral = await preprocessForOcr(nameTextImg, { width: OCR_UPSCALE_WIDTHS.nameText });
   const nameTextBufThreshold = await preprocessForOcr(nameTextImg, {
-    width: 2200,
+    width: OCR_UPSCALE_WIDTHS.nameText,
     threshold: 145,
   });
-  const nameTextBufRaw = await preprocessRawForOcr(nameTextImg, { width: 2200 });
+  const nameTextBufRaw = await preprocessRawForOcr(nameTextImg, { width: OCR_UPSCALE_WIDTHS.nameText });
   const nameTextLineBufRaw = await preprocessRawForOcr(nameTextLineImg, {
-    width: 2400,
+    width: OCR_UPSCALE_WIDTHS.nameTextLine,
   });
   const nameTextLineBufNeutral = await preprocessForOcr(nameTextLineImg, {
-    width: 2400,
+    width: OCR_UPSCALE_WIDTHS.nameTextLine,
   });
   const nameTextLineBufThreshold = await preprocessForOcr(nameTextLineImg, {
-    width: 2400,
+    width: OCR_UPSCALE_WIDTHS.nameTextLine,
     threshold: 140,
   });
   const fullWidth = 1400;
@@ -535,9 +538,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   return normalizeOpponentDisplayName(cleanupNamePhrase(name));
 }
 
-const __filename = fileURLToPath(import.meta.url);
-async function cliMain() {
-  const imgPath = process.argv[2];
+async function cliMain() {  const imgPath = process.argv[2];
   if (!imgPath) {
     console.error("Usage: node scripts/ocr-enemy-name.mjs <image.png>");
     process.exit(1);
@@ -560,9 +561,7 @@ async function cliMain() {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   cliMain().catch((e) => {
     console.error(e);
     process.exit(1);

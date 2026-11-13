@@ -43,9 +43,9 @@
  */
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { WORKSPACE_ROOT } from "./enemy-records.mjs";
+import { isMain } from "./cli.mjs";
 
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";
@@ -850,9 +850,7 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;");
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((error) => {
     console.error(`An error occurred: ${error instanceof Error ? error.message : error}`);
     process.exit(1);

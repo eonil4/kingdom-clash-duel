@@ -9,7 +9,7 @@
  */
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
+import { isMain } from "./cli.mjs";
 
 export const SCRIPT_FILE_RE = /\.(mjs|js|ts)$/;
 
@@ -90,8 +90,6 @@ function main(argv) {
   );
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main(process.argv.slice(2));
 }

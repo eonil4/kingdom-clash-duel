@@ -7,6 +7,7 @@
  */
 import fs from "fs/promises";
 import path from "path";
+import { writeJsonAtomic } from "../atomic-json.mjs";
 
 /**
  * @param {string} folderAbs
@@ -34,7 +35,7 @@ export async function readFolderEntries(folderAbs) {
  * @param {Record<string, object>} entries
  */
 export async function writeFolderEntries(folderAbs, entries) {
-  await fs.writeFile(dataJsonPath(folderAbs), `${JSON.stringify(entries, null, 2)}\n`, "utf8");
+  await writeJsonAtomic(dataJsonPath(folderAbs), entries);
 }
 
 /**

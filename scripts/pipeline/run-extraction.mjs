@@ -8,7 +8,7 @@ import path from "path";
 import { writeWebpFromRasterFile } from "../llm/enemy-image-webp.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import {
-  findEnemyRowBySourceRel,
+  buildEnemySourceIndex,
   loadEnemyMap,
   saveEnemyMap,
   setNestedMapping,
@@ -22,22 +22,22 @@ import {
 } from "./data-json-store.mjs";
 
 /**
- * @param {object} mapRoot
+ * @param {Map<string, { folderAbs: string, canonicalKey: string, row: object }>} sourceIndex
  * @param {string} imagePath
  */
-async function resolveExistingOutput(mapRoot, imagePath) {
+async function resolveExistingOutput(sourceIndex, imagePath) {
   const sourceRel = toMapKey(imagePath);
-  const row = findEnemyRowBySourceRel(mapRoot, sourceRel);
-  if (!row?.canonicalKey) {
+  const hit = sourceIndex.get(sourceRel);
+  if (!hit?.canonicalKey) {
     return { sourceRel, row: undefined, webpPath: undefined, exists: false };
   }
 
-  const webpPath = path.join(row.folderAbs, row.canonicalKey);
+  const webpPath = path.join(hit.folderAbs, hit.canonicalKey);
   try {
     await fs.access(webpPath);
-    return { sourceRel, row, webpPath, exists: true };
+    return { sourceRel, row: hit.row, webpPath, exists: true };
   } catch {
-    return { sourceRel, row, webpPath, exists: false };
+    return { sourceRel, row: hit.row, webpPath, exists: false };
   }
 }
 
@@ -69,7 +69,6 @@ function mapEntryFromRow(entry) {
  *   recordTiming?: boolean,
  *   force?: boolean,
  *   logProcessing?: boolean,
- *   cacheEntries?: boolean,
  *   logError?: (err: unknown, ctx: { filePath: string, basename: string, folderAbs: string }) => void,
  * }} options
  */
@@ -81,7 +80,6 @@ export async function runExtraction({
   recordTiming = false,
   force = false,
   logProcessing = true,
-  cacheEntries = true,
   logError,
 }) {
   assertStrategy(strategy);
@@ -97,7 +95,13 @@ export async function runExtraction({
     writtenDataFiles: new Set(),
   };
 
+  const totalFiles = folders.reduce((sum, folder) => sum + folder.files.length, 0);
+  // Nothing to do: skip strategy.prepare() so CLIs don't spawn workers/connect for a no-op run.
+  if (totalFiles === 0) return stats;
+
   const mapRoot = map ? await loadEnemyMap() : undefined;
+  const sourceIndex = map ? buildEnemySourceIndex(mapRoot) : undefined;
+  let mapDirty = false;
   /** @type {Map<string, Record<string, object>>} */
   const entriesByFolder = new Map();
   /**
@@ -117,10 +121,7 @@ export async function runExtraction({
       for (const filePath of files) {
         const basename = path.basename(filePath);
         try {
-          // With `map`, saveEnemyMap may add keys mid-run; re-read to avoid dropping them.
-          const entries = cacheEntries
-            ? await entriesFor(folderAbs)
-            : await readFolderEntries(folderAbs);
+          const entries = await entriesFor(folderAbs);
           const ctx = { filePath, basename, folderAbs, entries };
 
           if (strategy.shouldSkip) {
@@ -137,7 +138,7 @@ export async function runExtraction({
           let usedMapOnly = false;
 
           if (map && !force) {
-            const existing = await resolveExistingOutput(mapRoot, filePath);
+            const existing = await resolveExistingOutput(sourceIndex, filePath);
             if (existing.exists && existing.webpPath) {
               console.log(
                 `\n[Skip] ${basename} — WebP exists: ${path.basename(existing.webpPath)}`,
@@ -186,6 +187,7 @@ export async function runExtraction({
                 power: record.power,
                 ...(record.nameEnglish ? { nameEnglish: record.nameEnglish } : {}),
               });
+              mapDirty = true;
             }
 
             entries[basename] = buildStoredRecord(record, {
@@ -205,10 +207,6 @@ export async function runExtraction({
             try {
               await fs.access(outputPath);
               console.log(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
-              if (!usedMapOnly && map) {
-                await saveEnemyMap(mapRoot);
-                console.log("\t[Data] saved data.json");
-              }
               stats.skipped++;
               continue;
             } catch {
@@ -218,10 +216,7 @@ export async function runExtraction({
 
           console.log(`\t[Conversion] -> ${path.basename(outputPath)}`);
           await writeWebpFromRasterFile(filePath, outputPath);
-          if (map) {
-            await saveEnemyMap(mapRoot);
-            console.log("\t[Data] saved data.json");
-          }
+          if (map) mapDirty = true;
           if (usedMapOnly) {
             stats.convertedFromMap++;
           } else {
@@ -242,6 +237,13 @@ export async function runExtraction({
     }
   } finally {
     await strategy.dispose();
+  }
+
+  // Persist the nested map once per run instead of after every file. Per-file records
+  // are already stored in data.json by writeFolderEntries above.
+  if (map && mapDirty) {
+    await saveEnemyMap(mapRoot);
+    console.log("\t[Data] saved data.json");
   }
 
   return stats;

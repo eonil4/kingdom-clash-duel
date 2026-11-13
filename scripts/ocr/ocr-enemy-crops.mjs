@@ -1,5 +1,6 @@
 /** Normalized crop rectangles — fallback when config/llm.json has no ROI. */
 import { scaleRoiToImage } from "../roi.mjs";
+import { OCR_NAME_BOX_GROWTH } from "../constants.mjs";
 
 export const NAME_BOX = { x: 0.68, y: 0.0, w: 0.30, h: 0.09 };
 export const NAME_BOX_WIDE = { x: 0.60, y: 0.0, w: 0.38, h: 0.11 };
@@ -66,15 +67,20 @@ export function buildNameBoxes(meta, roi, reference, { style = "arena" } = {}) {
   if (!scaled) return undefined;
   // "tight" (formation screens) avoids pulling neighbouring UI labels into the crops;
   // a few pixels of padding help tesseract with stylised formation fonts.
-  const pad = style === "tight" ? { x: 4, y: 3 } : { x: 0, y: 0 };
+  const pad =
+    style === "tight"
+      ? { x: OCR_NAME_BOX_GROWTH.tight.padX, y: OCR_NAME_BOX_GROWTH.tight.padY }
+      : { x: 0, y: 0 };
   const base = {
     x: scaled.x - pad.x,
     y: scaled.y - pad.y,
     width: scaled.width + 2 * pad.x,
     height: scaled.height + 2 * pad.y,
   };
-  const wideGrow = style === "tight" ? [0.03, 0.05] : [0.15, 0.3];
-  const textGrow = style === "tight" ? [0.0, 0.02] : [0.03, 0.08];
+  const wideGrow =
+    style === "tight" ? OCR_NAME_BOX_GROWTH.tight.wide : OCR_NAME_BOX_GROWTH.arena.wide;
+  const textGrow =
+    style === "tight" ? OCR_NAME_BOX_GROWTH.tight.text : OCR_NAME_BOX_GROWTH.arena.text;
   return {
     name: clampPixelBox(meta, { left: base.x, top: base.y, width: base.width, height: base.height }),
     wide: clampPixelBox(meta, growBox(base, wideGrow[0], wideGrow[1])),

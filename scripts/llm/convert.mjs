@@ -24,12 +24,13 @@ import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
 import { createLlmStrategy, resolveLlmMode } from "../pipeline/llm-strategy.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
-import { loadLlmConfig, isInvokedDirectly, REQUEST_TIMEOUT_MS } from "./vision-client.mjs";
+import { loadLlmConfig, REQUEST_TIMEOUT_MS } from "./vision-client.mjs";
 import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
   shouldClearPredictionCacheBeforeRun,
 } from "./clear-lm-prediction-cache.mjs";
+import { isMain } from "../cli.mjs";
 
 const _llmConfig = loadLlmConfig();
 
@@ -175,7 +176,6 @@ async function main() {
     map: true,
     recordTiming: true,
     force,
-    cacheEntries: false,
   });
 
   const llmStats = summarizeDurations(stats.durations);
@@ -190,7 +190,7 @@ async function main() {
   console.log("Store: per-folder data.json");
 }
 
-if (isInvokedDirectly(import.meta.url)) {
+if (isMain(import.meta.url)) {
   main().catch((err) => {
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);

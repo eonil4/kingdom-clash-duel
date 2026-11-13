@@ -1,11 +1,30 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import fs from "fs/promises";
 import os from "os";
 import path from "path";
 import {
+  buildEnemySourceIndex,
   canonicalEnemyMapKey,
   collectEnemyEntriesFromMap,
   findEnemyRowBySourceRel,
+  isValidStoredEntry,
+  loadEnemyMap,
 } from "../../scripts/enemy-records.mjs";
+
+const dirs: string[] = [];
+
+async function tmpDir() {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "kc-records-"));
+  dirs.push(dir);
+  return dir;
+}
+
+afterEach(async () => {
+  vi.restoreAllMocks();
+  for (const dir of dirs.splice(0)) {
+    await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
+  }
+});
 
 const WS = path.join(os.tmpdir(), "kc-ws");
 const SOURCE = path.join(WS, "data", "clan_clash", "2026-11-06", "Screenshot_x.png");
@@ -92,6 +111,28 @@ describe("collectEnemyEntriesFromMap", () => {
   });
 });
 
+describe("buildEnemySourceIndex", () => {
+  const mapRoot = {
+    data: {
+      clan_clash: {
+        "2026-11-06": {
+          "Screenshot_x.png": {
+            "008_104_472-Gorkiy.webp": { name: "Gorkiy", power: 8104472 },
+          },
+        },
+      },
+    },
+  };
+
+  it("indexes rows by posix source path", () => {
+    const index = buildEnemySourceIndex(mapRoot, WS);
+    const hit = index.get("data/clan_clash/2026-11-06/Screenshot_x.png");
+    expect(hit?.canonicalKey).toBe("008_104_472-Gorkiy.webp");
+    expect(hit?.folderAbs).toBe(FOLDER);
+    expect(index.get("data/clan_clash/2026-11-06/other.png")).toBeUndefined();
+  });
+});
+
 describe("findEnemyRowBySourceRel", () => {
   const mapRoot = {
     data: {
@@ -123,5 +164,49 @@ describe("findEnemyRowBySourceRel", () => {
     expect(
       findEnemyRowBySourceRel(mapRoot, "data/clan_clash/2026-11-06/other.png", WS),
     ).toBeUndefined();
+  });
+});
+
+describe("isValidStoredEntry", () => {
+  it("accepts records with positive power and a name", () => {
+    expect(isValidStoredEntry({ name: "HuN", power: 1000 })).toBe(true);
+    expect(isValidStoredEntry({ nameLatin: "HuN", power: 1000 })).toBe(true);
+    expect(isValidStoredEntry({ name: "HuN", power: 1000, canonical: "a.webp" })).toBe(true);
+  });
+
+  it("rejects placeholders and malformed entries", () => {
+    expect(isValidStoredEntry(null)).toBe(false);
+    expect(isValidStoredEntry([])).toBe(false);
+    expect(isValidStoredEntry({ name: "HuN", power: 0 })).toBe(false);
+    expect(isValidStoredEntry({ name: "HuN", power: -5 })).toBe(false);
+    expect(isValidStoredEntry({ name: "", power: 10 })).toBe(false);
+    expect(isValidStoredEntry({ power: 10 })).toBe(false);
+    expect(isValidStoredEntry({ name: "HuN", power: 10, canonical: 42 })).toBe(false);
+  });
+});
+
+describe("loadEnemyMap validation", () => {
+  it("skips invalid entries and warns once per folder", async () => {
+    const ws = await tmpDir();
+    const folder = path.join(ws, "data", "clan_clash", "2026-01-01");
+    await fs.mkdir(folder, { recursive: true });
+    await fs.writeFile(
+      path.join(folder, "data.json"),
+      JSON.stringify({
+        "good.png": { name: "HuN", power: 1234 },
+        "zero.png": { name: "X", power: 0 },
+        "nameless.png": { power: 5, name: "" },
+      }),
+      "utf8",
+    );
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+
+    const map = await loadEnemyMap(ws);
+    const rows = collectEnemyEntriesFromMap(map, ws);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].entry).toMatchObject({ name: "HuN", power: 1234 });
+    expect(warn).toHaveBeenCalledTimes(1);
+    expect(warn.mock.calls[0][0]).toContain("skipped 2 invalid entries");
   });
 });

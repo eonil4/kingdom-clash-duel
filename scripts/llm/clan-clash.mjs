@@ -27,8 +27,9 @@
 import fs from "fs";
 import path from "path";
 import { spawn } from "child_process";
-import { fileURLToPath } from "url";
 import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { isMain } from "../cli.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -404,9 +405,7 @@ async function main() {
   process.exit(worstCode);
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((err) => {
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);

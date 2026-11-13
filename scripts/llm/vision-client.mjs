@@ -14,6 +14,7 @@ import {
   clearLmPredictionCache,
   shouldClearPredictionCacheBeforeEachCall,
 } from "./clear-lm-prediction-cache.mjs";
+import { writeJsonAtomic } from "../atomic-json.mjs";
 import { formatPowerForFilename } from "../enemy-records.mjs";
 import { resolveCropConfig, resolveRoiReference, scaleRoiToImage } from "../roi.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
@@ -449,7 +450,7 @@ export async function upsertDataJsonForImage(imagePath, extracted, durationMs, c
     processingMs: typeof durationMs === "number" ? Math.round(durationMs) : null,
     canonical: canonical ?? null,
   };
-  await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+  await writeJsonAtomic(dataPath, existing);
   return dataPath;
 }
 
@@ -517,7 +518,7 @@ export async function reconcileDataJsonWithCanonicalFiles(folder) {
     }
   }
   if (changed) {
-    await fs.writeFile(dataPath, `${JSON.stringify(parsed, null, 2)}\n`, "utf8");
+    await writeJsonAtomic(dataPath, parsed);
     console.log(`[Data] reconciled data.json in ${folder}`);
   }
 }

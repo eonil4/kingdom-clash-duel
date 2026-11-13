@@ -3,8 +3,8 @@
  * Filename-safe tokens use `toSafeEnemyFilenameToken` from enemy-filename-tokens.mjs.
  */
 import path from "path";
-import { fileURLToPath } from "url";
 import { toSafeEnemyFilenameToken } from "./enemy-filename-tokens.mjs";
+import { isMain } from "../cli.mjs";
 
 const CYR_TO_LAT = {
   А: "A",
@@ -150,7 +150,6 @@ export function convertTextToLatinArtifacts(displayName) {
   };
 }
 
-const __filename = fileURLToPath(import.meta.url);
 
 async function cliMain() {
   const argv = process.argv.slice(2).filter((a) => a !== "--");
@@ -162,9 +161,7 @@ async function cliMain() {
   console.log(JSON.stringify(convertTextToLatinArtifacts(text), null, 2));
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   cliMain().catch((e) => {
     console.error(e);
     process.exit(1);

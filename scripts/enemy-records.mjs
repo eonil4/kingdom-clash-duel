@@ -1,14 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { writeJsonAtomic } from "./atomic-json.mjs";
 import { toSafeEnemyFilenameToken } from "./ocr/enemy-filename-tokens.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const WORKSPACE_ROOT = path.join(__dirname, "..");
-/** Single store: per-folder `data.json` files under this root. */
-const DATA_ROOT = path.join(WORKSPACE_ROOT, "data", "clan_clash");
 
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|bmp|tiff?)$/i;
 
@@ -94,7 +93,27 @@ export async function loadConfiguredFolders(workspaceRoot = WORKSPACE_ROOT) {
   return out.sort((a, b) => a.relPath.localeCompare(b.relPath));
 }
 
-export async function loadEnemyMap() {
+/**
+ * A usable record needs a positive power and at least one name form. Hand-edited or
+ * half-written entries must never become placeholder rows that get persisted back.
+ * @param {unknown} entry
+ */
+export function isValidStoredEntry(entry) {
+  if (!entry || typeof entry !== "object" || Array.isArray(entry)) return false;
+  const e = /** @type {any} */ (entry);
+  const power = Number(e.power);
+  const name = typeof e.name === "string" ? e.name.trim() : "";
+  const nameLatin = typeof e.nameLatin === "string" ? e.nameLatin.trim() : "";
+  if (!Number.isFinite(power) || power <= 0) return false;
+  if (!name && !nameLatin) return false;
+  if (e.canonical != null && typeof e.canonical !== "string") return false;
+  return true;
+}
+
+/**
+ * @param {string} [workspaceRoot]
+ */
+export async function loadEnemyMap(workspaceRoot = WORKSPACE_ROOT) {
   // Build the nested map from per-folder data.json files under data/clan_clash
   const root = {};
   async function walkDirs(dir) {
@@ -111,31 +130,46 @@ export async function loadEnemyMap() {
       if (raw) {
         const parsed = JSON.parse(raw);
         if (parsed && typeof parsed === "object") {
-          const relDir = path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
+          const relDir = path.relative(workspaceRoot, dir).split(path.sep).join("/");
+          let skipped = 0;
           for (const [origName, entry] of Object.entries(parsed)) {
+            if (!isValidStoredEntry(entry)) {
+              skipped += 1;
+              continue;
+            }
+            const e = /** @type {any} */ (entry);
             // data.json is the store: honour its `originalFileName`/`canonical` fields when present.
             const storedOriginal =
-              typeof entry?.originalFileName === "string" ? entry.originalFileName.trim() : "";
+              typeof e.originalFileName === "string" ? e.originalFileName.trim() : "";
             const sourceName = storedOriginal || origName;
             const canonicalName =
-              (typeof entry?.canonical === "string" && entry.canonical.trim()) ||
+              (typeof e.canonical === "string" && e.canonical.trim()) ||
               (path.extname(origName).toLowerCase() === ".webp" ? origName : "");
             const mapKey =
               canonicalName && relDir
                 ? `${relDir}/${sourceName}/${canonicalName}`
-                : canonicalEnemyMapKey(path.join(dir, sourceName), {
-                    power: Number(entry?.power) || 0,
-                    nameLatinRaw: entry?.nameLatin || entry?.name || "",
-                    nameEnglish: undefined,
-                    nameRaw: entry?.name || undefined,
-                  });
+                : canonicalEnemyMapKey(
+                    path.join(dir, sourceName),
+                    {
+                      power: Number(e.power),
+                      nameLatinRaw: e.nameLatin || e.name || "",
+                      nameEnglish: undefined,
+                      nameRaw: e.name || undefined,
+                    },
+                    workspaceRoot,
+                  );
             setNestedMapping(root, mapKey, {
-              name: entry?.name || null,
-              nameLatin: entry?.nameLatin || null,
-              power: entry?.power || null,
-              language: entry?.language ?? null,
+              name: e.name || null,
+              nameLatin: e.nameLatin || null,
+              power: Number(e.power),
+              language: e.language ?? null,
               originalFileName: sourceName,
             });
+          }
+          if (skipped > 0) {
+            console.warn(
+              `[Data] skipped ${skipped} invalid entr${skipped === 1 ? "y" : "ies"} in ${dataPath}`,
+            );
           }
         }
       }
@@ -149,7 +183,7 @@ export async function loadEnemyMap() {
       }
     }
   }
-  await walkDirs(DATA_ROOT).catch(() => {});
+  await walkDirs(path.join(workspaceRoot, "data", "clan_clash")).catch(() => {});
   return root;
 }
 
@@ -258,7 +292,7 @@ export async function saveEnemyMap(mapRoot) {
           language: it.entry.language ?? prev.language ?? null,
         };
       }
-      await fs.writeFile(dataPath, `${JSON.stringify(existing, null, 2)}\n`, "utf8");
+      await writeJsonAtomic(dataPath, existing);
     } catch (err) {
       console.warn(
         `[Data] failed to write ${path.join(folder, "data.json")}: ` +
@@ -324,4 +358,27 @@ export function findEnemyRowBySourceRel(mapRoot, sourceRel, workspaceRoot = WORK
     if (rel === norm) return row;
   }
   return undefined;
+}
+
+/**
+ * Index rows by posix source path once per run, so per-file lookups are O(1).
+ * @param {object} mapRoot
+ * @param {string} [workspaceRoot]
+ * @returns {Map<string, { folderAbs: string, canonicalKey: string, row: object }>}
+ */
+export function buildEnemySourceIndex(mapRoot, workspaceRoot = WORKSPACE_ROOT) {
+  const index = new Map();
+  for (const row of collectEnemyEntriesFromMap(mapRoot, workspaceRoot)) {
+    if (!row.originalFileName) continue;
+    const rel = path
+      .relative(workspaceRoot, path.join(row.folderAbs, row.originalFileName))
+      .split(path.sep)
+      .join("/");
+    index.set(rel, {
+      folderAbs: row.folderAbs,
+      canonicalKey: row.canonicalKey,
+      row,
+    });
+  }
+  return index;
 }

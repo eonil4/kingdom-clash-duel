@@ -10,11 +10,11 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 import { loadApkBattleConfig } from "./load-apk-config.mjs";
 import { resolveArmy } from "./army-resolver.mjs";
 import { simulateCombat, summarizeSide, DEFENSE_FACTOR, TICK_DT_SEC } from "./combat-engine.mjs";
 import { estimateClashScore } from "./clash-score.mjs";
+import { isMain } from "../cli.mjs";
 
 function usage() {
   console.error(
@@ -216,9 +216,7 @@ async function main() {
   console.log(`Wrote ${outAbs}`);
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((err) => {
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);

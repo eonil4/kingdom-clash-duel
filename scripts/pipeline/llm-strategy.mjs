@@ -7,6 +7,7 @@
 import path from "path";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
 import { canonicalEnemyMapKey } from "../enemy-records.mjs";
+import { LOW_POWER_WARN_THRESHOLD } from "../constants.mjs";
 import {
   extractEnemyDataFromNamePowerCrops,
   extractEnemyDataFromScreenshot,
@@ -110,7 +111,7 @@ export function createLlmStrategy({
   attempts = 3,
   timeoutPerAttemptMs = 60_000,
   retryBaseDelayMs = 1500,
-  warnBelowPower = 444,
+  warnBelowPower = LOW_POWER_WARN_THRESHOLD,
   clearCacheBeforeEachCall,
   extractFns = LLM_MODES,
   delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),

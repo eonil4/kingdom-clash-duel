@@ -6,7 +6,6 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 import { WORKSPACE_ROOT } from "../enemy-records.mjs";
 import { createOcrStrategy } from "../pipeline/ocr-strategy.mjs";
 import { runExtraction } from "../pipeline/run-extraction.mjs";
@@ -18,6 +17,7 @@ import {
   parseScanArgs,
   selectTargets,
 } from "./scan-cli.mjs";
+import { isMain } from "../cli.mjs";
 
 /**
  * `data/clan_clash/<date>/clan` folders that exist and contain images.
@@ -94,9 +94,7 @@ async function main() {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((err) => {
     console.error(err);
     process.exit(1);

@@ -5,13 +5,13 @@ import fs from "fs/promises";
 import path from "path";
 import sharp from "sharp";
 import { createWorker } from "tesseract.js";
-import { fileURLToPath } from "url";
 import {
   buildPowerBox,
   cropBoxFromPercent,
   POWER_BOX,
   preprocessForOcr,
 } from "./ocr-enemy-crops.mjs";
+import { isMain } from "../cli.mjs";
 
 function cleanupPower(text) {
   const raw = String(text ?? "");
@@ -64,7 +64,6 @@ export async function ocrEnemyPower(filePath, worker, options = {}) {
   return cleanupPower(powerRes.data.text);
 }
 
-const __filename = fileURLToPath(import.meta.url);
 
 async function cliMain() {
   const imgPath = process.argv[2];
@@ -88,9 +87,7 @@ async function cliMain() {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   cliMain().catch((e) => {
     console.error(e);
     process.exit(1);

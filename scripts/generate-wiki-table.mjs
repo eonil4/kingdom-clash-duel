@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { WORKSPACE_ROOT } from './enemy-records.mjs';
+import { isMain } from './cli.mjs';
 
 // Configuration updated to match the exact working GitHub structure
 const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
@@ -149,8 +149,6 @@ function main(argv) {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? '') === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main(process.argv.slice(2));
 }

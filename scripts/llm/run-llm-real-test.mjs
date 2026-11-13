@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import path from "path";
-import { fileURLToPath } from "url";
 import { extractEnemyDataFromScreenshot } from "./llm-enemy-extract.mjs";
+import { isMain } from "../cli.mjs";
 
 async function main() {
   const src = process.argv[2] || "data/enemies/test/Screenshot_2026.06.19_09.49.47.958.png";
@@ -23,9 +23,7 @@ async function main() {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main();
 }
 

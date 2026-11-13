@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
+import { isMain } from "../cli.mjs";
 
 // ROOT is two levels up from scripts/llm -> project root
 const __filename = fileURLToPath(import.meta.url);
@@ -70,9 +71,7 @@ async function main() {
   console.log(`  env local (ignored by git): ${ENV_LOCAL}`);
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(__filename);
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((e) => {
     console.error(e instanceof Error ? e.message : e);
     process.exit(1);

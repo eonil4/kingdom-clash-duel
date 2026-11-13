@@ -131,6 +131,17 @@ describe("runExtraction", () => {
     expect(strategy.calls).toEqual([]);
   });
 
+  it("returns immediately without preparing the strategy when there are no files", async () => {
+    const strategy = fakeStrategy();
+    const stats = await runExtraction({
+      folders: [{ absPath: path.join(os.tmpdir(), "kc-empty"), files: [] }],
+      strategy,
+    });
+
+    expect(stats).toMatchObject({ converted: 0, skipped: 0, failed: 0 });
+    expect(strategy.calls).toEqual([]);
+  });
+
   it("rejects strategies that do not implement the contract", async () => {
     await expect(
       runExtraction({

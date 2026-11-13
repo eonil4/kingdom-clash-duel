@@ -7,7 +7,6 @@
  */
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 import {
   loadConfiguredFolders,
   toMapKey,
@@ -22,6 +21,7 @@ import {
   parseScanArgs,
   selectTargets,
 } from "./scan-cli.mjs";
+import { isMain } from "../cli.mjs";
 
 function isFullScreenshotForOcr(folderAbsPath, filePath) {
   if (path.basename(folderAbsPath).toLowerCase() !== "test") return true;
@@ -89,9 +89,7 @@ async function main() {
   }
 }
 
-const invokedDirectly =
-  path.resolve(process.argv[1] ?? "") === path.resolve(fileURLToPath(import.meta.url));
-if (invokedDirectly) {
+if (isMain(import.meta.url)) {
   main().catch((err) => {
     console.error(err);
     process.exit(1);

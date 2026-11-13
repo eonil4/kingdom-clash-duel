@@ -2,6 +2,7 @@
  * Abstract Clan Clash combat engine (no animation).
  * Damage formula is a placeholder until APK/IL2CPP confirms the real curve.
  */
+import { SPLASH_DAMAGE_FACTOR } from "../constants.mjs";
 
 export const DEFENSE_FACTOR = 0.5;
 const DEFAULT_MAX_DURATION_SEC = 300;
@@ -141,7 +142,7 @@ export function simulateCombat(opts) {
         );
         if (splashPool.length > 0) {
           const splashTarget = splashPool[0];
-          const splash = Math.max(1, Math.floor(computeDamage(unit.attack, splashTarget.defense) * 0.35));
+          const splash = Math.max(1, Math.floor(computeDamage(unit.attack, splashTarget.defense) * SPLASH_DAMAGE_FACTOR));
           const applied = Math.min(splashTarget.hp, splash);
           splashTarget.hp -= applied;
           splashTarget.damageTaken += applied;

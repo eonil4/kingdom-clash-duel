@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 39 source files, 7,527 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 42 source files, 7,669 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -33,16 +33,16 @@ C. Armies → deterministic battle report
 
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
-| `llm/` | 11 | 2,373 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 9 | 1,486 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `llm/` | 11 | 2,370 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
+| `ocr/` | 9 | 1,479 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 924 | `run-battle.mjs` |
-| `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 6 | 1,652 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
-| `ocr/tests/` | 3 | 216 | collected by vitest |
+| `pipeline/` | 5 | 780 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
+| root | 9 | 1,800 | `enemy-records.mjs`, `roi.mjs`, `atomic-json.mjs`, `cli.mjs`, `constants.mjs`, `check-imports.mjs`, `generate-wiki-*.mjs`, `extract_image.mjs` |
+| `ocr/tests/` | 3 | 316 | collected by vitest |
 
-Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
+Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, atomic JSON writes, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **28 files / 192 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **29 files / 199 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -234,6 +234,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - Real bug found by the new cache tests: `resolvePredictionCachePaths` normalised an empty env expansion to `"."` (the cwd) before filtering; empty paths are now dropped before normalisation, so `clearLmPredictionCache` can never be handed the working directory.
 - Post-audit CI: `.github/workflows/ci.yml` runs frozen install + unit tests + `check:imports` on every push/PR on both Ubuntu and Windows; the import check now scans `scripts/` **and** `tests/` (with an explicit `check-imports:ignore-file` marker for fixture files), `packageManager` is pinned to `pnpm@12.15.0`, and `pnpm run ci` chains both steps.
 - Remaining CLI parsers covered: `extract_image` (coordinate validation via mocked `process.exit`) and `show-llm-config` (`formatSource`, real config load). Both CLIs guard `main()` and lost their shebangs so tests can import them. The OCR scan CLIs and the manual LLM test now guard `main()` as well, and `package.json` declares `engines.node >= 22` to match CI/README.
+- Quality/NFR batch (see `analysis_quality_nfr.md` §7): atomic `data.json` writes (`atomic-json.mjs`, temp+rename with EBUSY retry) in every writer; `loadEnemyMap` skips and warns once per folder for invalid/placeholder entries and accepts an injectable workspace root; the runner skips `strategy.prepare()` for empty runs (0.22 s instead of spawning tesseract workers), defers `saveEnemyMap` to once per run instead of per file, and uses a prebuilt source→row index for O(1) lookups; shared `isMain()` (`cli.mjs`) replaced 15 duplicated guards; tunables live in `constants.mjs`. Measured: clan eval unchanged (92.4% similarity, 54.5% OCR-only, 11/12 exact), convert OCR smoke persists once per run with no `.tmp` leftovers.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -294,7 +295,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 192/192)
+pnpm test:unit                       # must stay green (currently 199/199)
 pnpm check:imports                   # relative specifiers resolve in scripts/ and tests/
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
