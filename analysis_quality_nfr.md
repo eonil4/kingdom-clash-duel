@@ -72,7 +72,7 @@ Both generators now emit a full document via `scripts/html-document.mjs` (`<!DOC
 
 1. **Trim redundant variants (est. −20–30%).** Neutral/raw/threshold are run on name, wide, text and line crops; several are near-duplicates (measured outputs identical on the fixture). Drop variants one at a time and keep the one the eval shows is load-bearing.
 2. **Skip `prepare()` when there are no files (est. −1–2 s for empty/CI runs).** `run-extraction.mjs:114` creates two workers before discovering zero targets.
-3. **Parallelise name and power (est. −15–25% on multi-core, +1 worker memory).** Power OCR is one recognition; run it on a third worker concurrently with name OCR. Tesseract workers are not concurrency-safe individually.
+3. **Parallelise name and power — done, measured −4–5% (+1 worker).** `ocrEnemyPower` now runs on its own digits-only `eng` worker concurrently with the name pass (`Promise.all`), since a tesseract worker is not concurrency-safe. Instrumented eval (6 clan images): power **76–80 ms/image**, name **1.65–1.7 s/image**, and per-image wall time equals the name pass (serial sum ≈ name + power), so the power pass is fully off the critical path. The gain is ~80 ms/image rather than the estimated 15–25% because the 17-recognition name pass dominates; it also costs one extra worker's memory.
 4. **Early exit (est. −10–20%).** If the first candidate group already matches a strong pattern (tag separator + confidence above threshold), skip the remaining groups.
 
 ### 3.2 LLM path
@@ -155,8 +155,9 @@ The first batch from §5 is implemented on `refactor`:
 | 9 | Logger with levels (§4 observability) | **done** | `scripts/log.mjs` (`LOG_LEVEL=silent…debug`, default info); pipeline/strategies/vision-client diagnostics migrated; `debug` adds per-file timings + indexed-source count; `tests/unit/log.test.ts` |
 | 10 | Coverage tooling (§4 testability) | **done** | `@vitest/coverage-v8` + `pnpm test:coverage`; V8 coverage over `scripts/**/*.mjs` with thresholds (55/75/60/55); baseline measured at 56.2 stmts / 78.2 branch / 61.2 funcs; Linux CI runs the coverage job |
 | 11 | Self-describing HTML output (§2.8) | **done** | `scripts/html-document.mjs` wraps both generators (doctype/lang/charset/viewport/title) and shares `escapeHtml`; matrix headers get `scope="col"/"row"`; `tests/unit/html-document.test.ts` |
+| 12 | Parallel name/power OCR (§3.1) | **done** | third `eng` worker runs `ocrEnemyPower` concurrently with the name pass; `dispose()` covers all three (also on partial `prepare()` failure); `tests/unit/ocr-strategy.test.ts` asserts the distinct worker, real overlap, and teardown. Measured power 76–80 ms/image vs ~1.7 s name pass → wall time equals the name pass (−~80 ms/image, +1 worker) |
 
-Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
+Current suite: `pnpm test:unit` 31 files / 209 tests; `pnpm check:imports` 72 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: optional third OCR worker for parallel name/power (§3.1).
+All items from §5 are addressed. The only remaining §3.1 idea is option 4 (early exit after a strong candidate group), which stays unmeasured rather than implemented.
 

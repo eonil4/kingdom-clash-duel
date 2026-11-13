@@ -121,6 +121,10 @@ export function createOcrStrategy({
   let worker;
   /** @type {any} */
   let workerRus;
+  // Power runs concurrently with the name pass; a tesseract worker is not
+  // concurrency-safe, so it gets its own digits-only worker.
+  /** @type {any} */
+  let workerPower;
 
   return {
     id: "ocr",
@@ -130,6 +134,7 @@ export function createOcrStrategy({
       try {
         worker = await makeWorker("eng+rus");
         workerRus = await makeWorker("rus");
+        workerPower = await makeWorker("eng");
         await worker.setParameters({ preserve_interword_spaces: "1" });
         await workerRus.setParameters({ preserve_interword_spaces: "1" });
       } catch (err) {
@@ -139,7 +144,7 @@ export function createOcrStrategy({
     },
 
     async dispose() {
-      for (const w of [worker, workerRus]) {
+      for (const w of [worker, workerRus, workerPower]) {
         if (w && typeof w.terminate === "function") {
           try {
             await w.terminate();
@@ -150,6 +155,7 @@ export function createOcrStrategy({
       }
       worker = undefined;
       workerRus = undefined;
+      workerPower = undefined;
     },
 
     async shouldSkip({ filePath, basename, entries }) {
@@ -165,7 +171,16 @@ export function createOcrStrategy({
 
     async extract({ filePath, basename }) {
       const powerFromFilename = parsePowerFromFilename(basename);
-      const powerOcr = await ocrPower(filePath, worker, { powerRoi, reference });
+      const [powerOcr, nameOcr] = await Promise.all([
+        ocrPower(filePath, workerPower, { powerRoi, reference }),
+        ocrName(filePath, worker, workerRus, {
+          debugDir,
+          baseLabel: basename,
+          nameRoi,
+          reference,
+          nameBoxStyle: applyArenaRefinement ? "arena" : "tight",
+        }),
+      ]);
       const power = powerFromFilename !== undefined ? powerFromFilename : powerOcr;
 
       let warn;
@@ -177,13 +192,7 @@ export function createOcrStrategy({
         warn = `Using filename power ${powerFromFilename} (OCR said ${powerOcr}): ${basename}`;
       }
 
-      let name = await ocrName(filePath, worker, workerRus, {
-        debugDir,
-        baseLabel: basename,
-        nameRoi,
-        reference,
-        nameBoxStyle: applyArenaRefinement ? "arena" : "tight",
-      });
+      let name = nameOcr;
       if (applyArenaRefinement) {
         name = await refineName(
           path.dirname(filePath),

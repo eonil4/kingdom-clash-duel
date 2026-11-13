@@ -13,8 +13,14 @@ function fakeWorker() {
 function makeDeps(overrides: Record<string, unknown> = {}) {
   const worker = fakeWorker();
   const workerRus = fakeWorker();
+  const workerPower = fakeWorker();
+  const workers: Record<string, ReturnType<typeof fakeWorker>> = {
+    "eng+rus": worker,
+    rus: workerRus,
+    eng: workerPower,
+  };
   const deps = {
-    createWorker: vi.fn(async (lang: string) => (lang === "rus" ? workerRus : worker)),
+    createWorker: vi.fn(async (lang: string) => workers[lang]),
     ocrName: vi.fn(async () => "Горький"),
     refineName: vi.fn(async (_folder: string, _file: string, name: string) => name),
     ocrPower: vi.fn(async () => 576),
@@ -22,7 +28,7 @@ function makeDeps(overrides: Record<string, unknown> = {}) {
     parseHint: vi.fn(() => undefined),
     ...overrides,
   };
-  return { worker, workerRus, deps };
+  return { worker, workerRus, workerPower, deps };
 }
 
 const folderAbs = path.join(WORKSPACE_ROOT, "data", "clan_clash", "2026-11-06");
@@ -37,19 +43,21 @@ describe("createOcrStrategy", () => {
     expect(options?.cachePath).toContain("kc-tesseract");
     expect(defaultWorkerOptions(path.join(WORKSPACE_ROOT, "does-not-exist"))).toBeUndefined();
   });
-  it("creates both workers in prepare and terminates them in dispose", async () => {
-    const { worker, workerRus, deps } = makeDeps();
+  it("creates all three workers in prepare and terminates them in dispose", async () => {
+    const { worker, workerRus, workerPower, deps } = makeDeps();
     const strategy = createOcrStrategy({ deps });
 
     await strategy.prepare();
     expect(deps.createWorker).toHaveBeenCalledWith("eng+rus");
     expect(deps.createWorker).toHaveBeenCalledWith("rus");
+    expect(deps.createWorker).toHaveBeenCalledWith("eng");
     expect(worker.setParameters).toHaveBeenCalledWith({ preserve_interword_spaces: "1" });
     expect(workerRus.setParameters).toHaveBeenCalledWith({ preserve_interword_spaces: "1" });
 
     await strategy.dispose();
     expect(worker.terminate).toHaveBeenCalledTimes(1);
     expect(workerRus.terminate).toHaveBeenCalledTimes(1);
+    expect(workerPower.terminate).toHaveBeenCalledTimes(1);
   });
 
   it("disposes the first worker when the second cannot be created", async () => {
@@ -67,6 +75,65 @@ describe("createOcrStrategy", () => {
     const strategy = createOcrStrategy({ deps });
     await expect(strategy.prepare()).rejects.toThrow("no rus model");
     expect(first.terminate).toHaveBeenCalledTimes(1);
+  });
+
+  it("disposes earlier workers when the power worker cannot be created", async () => {
+    const first = fakeWorker();
+    const second = fakeWorker();
+    let calls = 0;
+    const deps = {
+      ...makeDeps().deps,
+      createWorker: vi.fn(async () => {
+        calls += 1;
+        if (calls === 3) throw new Error("no eng model");
+        return calls === 1 ? first : second;
+      }),
+    };
+
+    const strategy = createOcrStrategy({ deps });
+    await expect(strategy.prepare()).rejects.toThrow("no eng model");
+    expect(first.terminate).toHaveBeenCalledTimes(1);
+    expect(second.terminate).toHaveBeenCalledTimes(1);
+  });
+
+  it("runs power OCR on its own worker concurrently with the name pass", async () => {
+    let nameStarted!: () => void;
+    const nameStartedPromise = new Promise<void>((resolve) => {
+      nameStarted = resolve;
+    });
+    let powerStarted!: () => void;
+    const powerStartedPromise = new Promise<void>((resolve) => {
+      powerStarted = resolve;
+    });
+    const within = (promise: Promise<void>, ms: number) =>
+      Promise.race([
+        promise.then(() => true),
+        new Promise<boolean>((resolve) => setTimeout(() => resolve(false), ms)),
+      ]);
+
+    let powerWorker: unknown;
+    const { worker, workerRus, workerPower, deps } = makeDeps({
+      ocrPower: vi.fn(async (_file: string, w: unknown) => {
+        powerWorker = w;
+        powerStarted();
+        expect(await within(nameStartedPromise, 1000)).toBe(true);
+        return 576;
+      }),
+      ocrName: vi.fn(async () => {
+        nameStarted();
+        expect(await within(powerStartedPromise, 1000)).toBe(true);
+        return "Горький";
+      }),
+    });
+    const strategy = createOcrStrategy({ deps });
+    await strategy.prepare();
+
+    const outcome = await strategy.extract({ filePath, basename, folderAbs, entries: {} });
+
+    expect(outcome.record.power).toBe(8104472);
+    expect(powerWorker).toBe(workerPower);
+    expect(powerWorker).not.toBe(worker);
+    expect(powerWorker).not.toBe(workerRus);
   });
 
   it("skips recorded and already-canonical sources unless forced", async () => {
