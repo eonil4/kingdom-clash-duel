@@ -68,6 +68,19 @@ describe("ocrEnemyName flow", () => {
     expect(workerRus.recognize).not.toHaveBeenCalled();
   });
 
+  it("keeps a multi-word candidate instead of falling back to the full image", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call === 4) return { text: "я Горький", confidence: 80 };
+      if (call === 8) return { text: "GARBAGE NAME", confidence: 90 };
+      return empty;
+    });
+    const workerRus = fakeRus();
+
+    expect(await ocrEnemyName(file, worker, workerRus)).toBe("Горький");
+    expect(worker.recognize).toHaveBeenCalledTimes(8);
+  });
+
   it("strips a clipped label fragment from an arena candidate", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) =>

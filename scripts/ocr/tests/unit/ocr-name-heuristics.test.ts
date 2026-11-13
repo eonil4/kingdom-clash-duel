@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   NAME_RECOGNITION_GROUPS,
+  arenaCandidatePenalty,
   arenaNameLineQuality,
   cleanupName,
   cleanupNamePhrase,
@@ -11,6 +12,7 @@ import {
   normalizeOpponentDisplayName,
   pickClanName,
   scoreNameCandidate,
+  scoreNamePhrase,
   stripEdgeTagSeparators,
   stripLeadingClippedToken,
   stripUnbalancedTagNoise,
@@ -77,6 +79,33 @@ describe("scoreNameCandidate", () => {
   it("penalises HUD-like tokens", () => {
     expect(scoreNameCandidate("VS")).toBe(-1);
     expect(scoreNameCandidate("123")).toBe(-1);
+  });
+});
+
+describe("scoreNamePhrase", () => {
+  it("scores multi-word phrases by their best token", () => {
+    expect(scoreNamePhrase("я Горький")).toBeGreaterThanOrEqual(4);
+    expect(scoreNamePhrase("Рима8 zr")).toBeGreaterThanOrEqual(4);
+    expect(scoreNamePhrase("HuN | TOLDI")).toBeGreaterThanOrEqual(4);
+    expect(scoreNamePhrase("")).toBe(-1);
+  });
+
+  it("still rejects pure digit phrases", () => {
+    expect(scoreNamePhrase("123 456")).toBe(-1);
+  });
+});
+
+describe("arenaCandidatePenalty", () => {
+  it("penalises short fragments and mixed-script tokens", () => {
+    expect(arenaCandidatePenalty("С оМяснйк")).toBeGreaterThan(0);
+    expect(arenaCandidatePenalty("Мяснik")).toBeGreaterThanOrEqual(12);
+    expect(arenaCandidatePenalty("Myasnik")).toBe(0);
+    expect(arenaCandidatePenalty("MEDEBYY ZR")).toBe(0);
+  });
+
+  it("penalises a leading letterless icon fragment", () => {
+    expect(arenaCandidatePenalty("] IHOPYMK SP")).toBeGreaterThanOrEqual(15);
+    expect(arenaCandidatePenalty("[MAG] HuN")).toBe(0);
   });
 });
 

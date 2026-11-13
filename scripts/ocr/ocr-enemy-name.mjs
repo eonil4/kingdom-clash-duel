@@ -57,6 +57,41 @@ export function cleanupNamePhrase(text) {
     .trim();
 }
 
+/**
+ * Score a whole phrase by its best token (single tokens score as before).
+ * `scoreNameCandidate` rejects spaces, which used to push every multi-word pick
+ * into the full-image fallback and replace a good name with garbage.
+ * @param {string} name
+ */
+export function scoreNamePhrase(name) {
+  const text = String(name ?? "").trim();
+  if (!text) return -1;
+  const tokens = text.split(/\s+/).filter(Boolean);
+  return Math.max(
+    scoreNameCandidate(text.replace(/\s+/g, "_")),
+    ...tokens.map((token) => scoreNameCandidate(token)),
+  );
+}
+
+/**
+ * Penalise OCR junk shapes in a phrase: 1–2 letter fragments, tokens mixing
+ * Cyrillic and Latin inside one word, and a leading letterless icon fragment.
+ * @param {string} name
+ */
+export function arenaCandidatePenalty(name) {
+  const tokens = String(name ?? "").split(/\s+/).filter(Boolean);
+  let penalty = 0;
+  tokens.forEach((token, index) => {
+    const letters = (token.match(/\p{L}/gu) ?? []).length;
+    // Two-letter all-caps tokens are legit clan tags ("ZR", "SP").
+    const shortTag = /^[\p{Lu}]{2}$/u.test(token);
+    if (letters > 0 && letters <= 2 && tokens.length > 1 && !shortTag) penalty += 8;
+    if (/[\p{sc=Cyrillic}]/u.test(token) && /[A-Za-z]/.test(token)) penalty += 12;
+    if (index === 0 && letters === 0 && !token.includes("[")) penalty += 15;
+  });
+  return penalty;
+}
+
 export function scoreNameCandidate(name) {
   if (!name) return -1;
   if (!/^[\p{L}][\p{L}\d_\-\\|\[\]]{1,48}$/u.test(name)) return -1;
@@ -575,6 +610,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     return scoreNameCandidate(b) - scoreNameCandidate(a);
   });
   let name = candidates[0] ?? "";
+  log.debug(`[OCR] ${base} candidates: ${candidates.map((c) => JSON.stringify(c)).join(" | ")}`);
   const textAreaCandidates = [
     phraseCleanup(res.textNeutral.data.text),
     phraseCleanup(res.textThreshold.data.text),
@@ -605,7 +641,10 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
           ? cyrLineCandidates
           : uniq;
     pool.sort((a, b) => {
-      const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
+      const dq =
+        arenaNameLineQuality(b) -
+        arenaCandidatePenalty(b) -
+        (arenaNameLineQuality(a) - arenaCandidatePenalty(a));
       if (dq !== 0) return dq;
       const aw = a.split(/\s+/).filter(Boolean).length;
       const bw = b.split(/\s+/).filter(Boolean).length;
@@ -613,6 +652,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
       return b.length - a.length;
     });
     name = pool[0] ?? name;
+    log.debug(`[OCR] ${base} pool pick: ${JSON.stringify(name)}`);
   }
   if (strongFirstPass) {
     // Keep the whole phrase from the strong pass; single-token cleanup would drop
@@ -631,7 +671,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   if (
     !confidentFirstPass &&
     options.nameBoxStyle !== "tight" &&
-    (scoreNameCandidate(name) < 4 || isLikelyOcrNoise(name))
+    (scoreNamePhrase(name) < 4 || isLikelyOcrNoise(name))
   ) {
     await worker.setParameters({
       tessedit_char_whitelist: LATIN_WHITELIST,
