@@ -1,0 +1,109 @@
+
+Processing folder (convert / crops): C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13 (49 PNGs, missing only) [cache: beforeRun=true, beforeEachCall=true]
+	[Cache] Cleared before run: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+
+[Skip] Screenshot_2026.11.13_01.08.23.615.png — WebP exists: 003_710_145-DODGE_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.08.49.198.png — WebP exists: 009_766_627-%2A_%2A_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.09.05.415.png — WebP exists: 008_776_880-l%27_xa_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.09.13.464.png — WebP exists: 005_437_883-Irop_k%2ARUS%2A.webp
+
+[Skip] Screenshot_2026.11.13_01.09.29.848.png — WebP exists: 007_585_220-ViktorDoboyRUS.webp
+
+[Skip] Screenshot_2026.11.13_01.09.38.415.png — WebP exists: 005_373_404-Emi_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.09.46.598.png — WebP exists: 004_052_999-Ivan_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.09.57.831.png — WebP exists: 004_508_248-Teo_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.10.30.598.png — WebP exists: 004_569_286-Dushanbe_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.10.42.264.png — WebP exists: 005_526_523-TALYA_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.10.54.098.png — WebP exists: 006_371_807-KOST%27_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.11.06.464.png — WebP exists: 002_697_902-PulEmRus.webp
+
+[Skip] Screenshot_2026.11.13_01.11.21.598.png — WebP exists: 008_344_892-Dizaster_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.11.38.864.png — WebP exists: 004_151_831-Ravil._RUS..webp
+
+[Skip] Screenshot_2026.11.13_01.11.59.049.png — WebP exists: 000_809_109-KALL_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.12.12.132.png — WebP exists: 001_243_413-BAYANISTA.webp
+
+[Skip] Screenshot_2026.11.13_01.12.32.781.png — WebP exists: 004_290_206-Yar_Ort_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.12.46.497.png — WebP exists: 002_320_426-snickers._RUS..webp
+
+[Skip] Screenshot_2026.11.13_01.12.58.448.png — WebP exists: 002_119_722-polk_Igory_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.13.14.648.png — WebP exists: 001_848_277-Aydar_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.13.27.531.png — WebP exists: 002_438_073-Aleksandr_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.13.44.064.png — WebP exists: 003_880_516-Yara_%2ARUS%2A.webp
+
+[Skip] Screenshot_2026.11.13_01.13.55.898.png — WebP exists: 001_377_572-Vadim191078_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.14.07.464.png — WebP exists: 000_606_854-HomWjr_%7C_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.14.20.231.png — WebP exists: 000_514_260-PulbeyRu.webp
+
+[Skip] Screenshot_2026.11.13_01.14.33.414.png — WebP exists: 001_963_411-Kirill_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.14.56.231.png — WebP exists: 002_233_009-Den_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.15.06.198.png — WebP exists: 005_918_630-RostoyRus.webp
+
+[Skip] Screenshot_2026.11.13_01.15.18.881.png — WebP exists: 007_335_978-T_nyy_Zhnech_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.15.32.864.png — WebP exists: 005_321_360-San_San%7CRU.webp
+
+[Skip] Screenshot_2026.11.13_01.15.48.864.png — WebP exists: 005_838_587-Mitay_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.16.04.431.png — WebP exists: 006_325_068-Bvanya_Bus.webp
+
+[Skip] Screenshot_2026.11.13_01.16.19.881.png — WebP exists: 009_778_750-TANCHIKA_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.16.35.814.png — WebP exists: 006_818_403-Indyuk_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.16.52.798.png — WebP exists: 009_077_264-CRASH_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.17.16.931.png — WebP exists: 007_198_663-HomW%7CRUS.webp
+
+[Skip] Screenshot_2026.11.13_01.17.30.331.png — WebP exists: 009_891_471-GUN_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.17.41.914.png — WebP exists: 009_977_108-BatemnRUS.webp
+
+[Skip] Screenshot_2026.11.13_01.17.58.014.png — WebP exists: 007_473_301-LEO_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.18.15.431.png — WebP exists: 009_477_137-Vurdalak_PUS.webp
+
+[Skip] Screenshot_2026.11.13_01.18.33.214.png — WebP exists: 006_317_983-PLUT_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.18.45.697.png — WebP exists: 007_827_357-elephant_RUS.webp
+
+[Skip] Screenshot_2026.11.13_01.18.56.498.png — WebP exists: 007_352_699-Milp-M%2FRUS%2F.webp
+
+[Skip] Screenshot_2026.11.13_01.19.19.831.png — WebP exists: 006_145_676-KUBIK_RUB.webp
+
+[Skip] Screenshot_2026.11.13_01.19.32.714.png — WebP exists: 003_410_838-Patron_%2ARUS%2A.webp
+
+[Skip] Screenshot_2026.11.13_01.19.47.014.png — WebP exists: 006_417_473-Ravenio.RUS..webp
+
+[Skip] Screenshot_2026.11.13_01.19.58.564.png — WebP exists: 003_293_696-AntivirUS.webp
+
+[Skip] Screenshot_2026.11.13_01.20.10.964.png — WebP exists: 003_221_474-korm_rus.webp
+
+[Skip] Screenshot_2026.11.13_01.20.22.631.png — WebP exists: 003_399_352-Ruslan.Rus.webp
+
+Done (convert / crops): 0 new (LLM), 0 from map only, 49 skipped (complete), 0 failed.
+Store: per-folder data.json
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-13\index.html
+Repo path: data/clan_clash/2026-11-13
+Extensions: .webp
+Total images in the table: 49
