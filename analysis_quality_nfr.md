@@ -57,9 +57,8 @@ Thresholds and sizes are inline and undocumented in one place: `warnBelowPower =
 ### 2.8 Layout tables & generated HTML metadata (LOW, accessibility) — **resolved**
 Both generators now emit a full document via `scripts/html-document.mjs` (`<!DOCTYPE html>`, `<html lang="en">`, charset, viewport, escaped `<title>`), and matrix headers carry `scope="col"`/`scope="row"`. GitHub's table rendering is unchanged.
 
-### 2.9 Large single-function OCR pipeline (LOW, maintainability)
-`ocrEnemyName` spans ~200 lines (`ocr-enemy-name.mjs:326-560`) with 20+ local buffers and a hand-rolled candidate list. It works and is heuristic by nature, but the preprocessing matrix is implicit.
-**Fix (with §3.2):** drive recognitions from a small declarative table `{crop, preprocess, psm, whitelist}`; easier to trim and measure.
+### 2.9 Large single-function OCR pipeline (LOW, maintainability) — **resolved**
+`ocrEnemyName` now drives recognitions from `NAME_RECOGNITION_GROUPS` — 4 groups / 16 variants of `{ crop, width, threshold?, worker, psm, whitelist }`, with a per-crop/threshold buffer cache and one group runner. The arena early exit reads the first group's results, and the Latin-only repair group is gated with `onlyWhen: "tight"`. Candidate scoring is unchanged; behaviour verified byte-identical on 10 real arena screenshots and unchanged on the labelled clan eval.
 
 ---
 
@@ -159,8 +158,9 @@ The first batch from §5 is implemented on `refactor`:
 | 15 | Config-driven clan-name corrections (§2.2) | **done** | `correctClanNameConfusables(text, corrections)` is table-driven with `DEFAULT_CLAN_NAME_CORRECTIONS`; `ocr.clanNameCorrections` in `config/llm.json` overrides it (strategy trims, drops invalid entries, falls back to the default); eval unchanged; `ocr-name-heuristics.test.ts` +1 and `ocr-strategy.test.ts` +2 |
 | 16 | Diagnose previously silent fallbacks (§2.7) | **done** | `logOnce(level, key, …)` dedupes per key/level; unreadable/unparseable `data.json` warns once per folder (store read and map merge), unreadable discovered folders log once at `debug`; `log.test.ts` +1, `data-json-store.test.ts` +1 |
 | 17 | Tests for the lowest-covered CLIs (§4) | **done** | exported pure helpers (`cleanupPower`, `isFullScreenshotForOcr`, `discoverClanFolders(workspaceRoot)`, `convert-to-webp.parseArgs`, rename-enemies `parseArgs`/map helpers/`buildTargetBasename`) and guarded `main()` in convert-to-webp/rename-enemies; `buildTargetBasename` also fixes a trailing-dash name when no English token exists. Coverage 56.8 → 59.7 stmts / 61.2 → 64.0 funcs (ocr-clan 0→51%, ocr-enemy 0→34%, convert-to-webp 0→29%, rename-enemies 0→31%, ocr-enemy-power 20→49%); 4 new files, +19 tests |
+| 18 | Declarative OCR recognition matrix (§2.9) | **done** | `NAME_RECOGNITION_GROUPS` (4 groups / 16 variants: crop, width, threshold, worker, psm, whitelist) with a cached buffer per crop/threshold and one group runner; the early exit reads the first group and the Latin repair group is `onlyWhen: "tight"`. Arena A/B on 10 real screenshots byte-identical; clan eval unchanged; `ocr-name-heuristics.test.ts` +2 |
 
-Current suite: `pnpm test:unit` 35 files / 240 tests; `pnpm check:imports` 76 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
+Current suite: `pnpm test:unit` 35 files / 242 tests; `pnpm check:imports` 76 files; `pnpm eval:clan-ocr` unchanged (11/12 exact, 91.7% overall, OCR-only 1/2, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-All items from §5, all four §3.1 options, the §3.2 retry budget, the §2.2 config table, the §2.7 fallback diagnostics and the §4 CLI test gap are addressed. Still open as notes: the `clearPredictionCacheBeforeEachCall` A/B (§3.2) and a declarative recognition table (§2.9).
+All items from §5, all four §3.1 options, the §3.2 retry budget, the §2.2 config table, the §2.7 fallback diagnostics, the §4 CLI test gap and the §2.9 recognition matrix are addressed. The only remaining note is the `clearPredictionCacheBeforeEachCall` A/B (§3.2), which needs a live LM Studio.
 

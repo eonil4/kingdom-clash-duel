@@ -255,6 +255,85 @@ const LATIN_ONLY_WHITELIST =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _-\\|[] ";
 
 /**
+ * @typedef {{ key: string, crop: "name" | "wide" | "text" | "textLine", width: number, threshold?: number }} NameVariant
+ * @typedef {{ id: string, worker: "eng" | "rus", psm: string, whitelist: string, onlyWhen?: "tight", variants: NameVariant[] }} NameRecognitionGroup
+ */
+
+/**
+ * Recognition matrix for the name. Each group is one worker parameter set; variants
+ * sharing a crop/threshold reuse one preprocessed buffer. Group order is the historical
+ * pass order — the early-exit check runs on the first group's results, and the
+ * Latin-only repair pass exists only for tight formation boxes.
+ * @type {NameRecognitionGroup[]}
+ */
+export const NAME_RECOGNITION_GROUPS = [
+  {
+    id: "first",
+    worker: "eng",
+    psm: "8",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "nameNeutral", crop: "name", width: OCR_UPSCALE_WIDTHS.name },
+      { key: "nameThreshold", crop: "name", width: OCR_UPSCALE_WIDTHS.name, threshold: 155 },
+      { key: "wideNeutral", crop: "wide", width: OCR_UPSCALE_WIDTHS.nameWide },
+      { key: "wideThreshold", crop: "wide", width: OCR_UPSCALE_WIDTHS.nameWide, threshold: 150 },
+    ],
+  },
+  {
+    id: "text",
+    worker: "eng",
+    psm: "7",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "textNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "textThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "textLineNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "textLineThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+  {
+    id: "textRus",
+    worker: "rus",
+    psm: "7",
+    whitelist: LATIN_WHITELIST,
+    variants: [
+      { key: "textRusNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "textRusThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "textLineRusNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "textLineRusThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+  {
+    id: "textLatin",
+    worker: "eng",
+    psm: "7",
+    whitelist: LATIN_ONLY_WHITELIST,
+    onlyWhen: "tight",
+    variants: [
+      { key: "latinTextNeutral", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText },
+      { key: "latinTextThreshold", crop: "text", width: OCR_UPSCALE_WIDTHS.nameText, threshold: 145 },
+      { key: "latinTextLineNeutral", crop: "textLine", width: OCR_UPSCALE_WIDTHS.nameTextLine },
+      {
+        key: "latinTextLineThreshold",
+        crop: "textLine",
+        width: OCR_UPSCALE_WIDTHS.nameTextLine,
+        threshold: 140,
+      },
+    ],
+  },
+];
+
+/**
  * Strip unbalanced tag noise such as a trailing "]" produced by stylised fonts.
  * @param {string} text
  */
@@ -376,20 +455,52 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameTextCrop = configured?.text ?? cropBoxFromPercent(meta, NAME_TEXT_BOX);
   const nameTextLineCrop =
     configured?.textLine ?? cropBoxFromPercent(meta, NAME_TEXT_LINE_BOX);
-  const nameImg = sharp(filePath).extract(nameCrop);
-  const nameImgWide = sharp(filePath).extract(nameCropWide);
-  const nameTextImg = sharp(filePath).extract(nameTextCrop);
-  const nameTextLineImg = sharp(filePath).extract(nameTextLineCrop);
-  const nameBufNeutral = await preprocessForOcr(nameImg, { width: OCR_UPSCALE_WIDTHS.name });
-  const nameBufThreshold = await preprocessForOcr(nameImg, {
-    width: OCR_UPSCALE_WIDTHS.name,
-    threshold: 155,
-  });
-  const nameWideBufNeutral = await preprocessForOcr(nameImgWide, { width: OCR_UPSCALE_WIDTHS.nameWide });
-  const nameWideBufThreshold = await preprocessForOcr(nameImgWide, {
-    width: OCR_UPSCALE_WIDTHS.nameWide,
-    threshold: 150,
-  });
+  const crops = {
+    name: sharp(filePath).extract(nameCrop),
+    wide: sharp(filePath).extract(nameCropWide),
+    text: sharp(filePath).extract(nameTextCrop),
+    textLine: sharp(filePath).extract(nameTextLineCrop),
+  };
+  /** @type {Map<string, Promise<Buffer>>} */
+  const buffers = new Map();
+  /**
+   * One preprocessed buffer per crop/threshold, shared by every group that uses it.
+   * @param {NameVariant} variant
+   */
+  const bufferFor = (variant) => {
+    const key = `${variant.crop}:${variant.width}:${variant.threshold ?? "neutral"}`;
+    let buf = buffers.get(key);
+    if (!buf) {
+      buf = preprocessForOcr(
+        crops[variant.crop],
+        variant.threshold === undefined
+          ? { width: variant.width }
+          : { width: variant.width, threshold: variant.threshold },
+      );
+      buffers.set(key, buf);
+    }
+    return buf;
+  };
+  /**
+   * Run groups in order; each group applies its own worker parameters.
+   * @param {NameRecognitionGroup[]} groups
+   */
+  const recognizeGroups = async (groups) => {
+    /** @type {Record<string, { data: { text: string, confidence: number } }>} */
+    const out = {};
+    for (const group of groups) {
+      const target = group.worker === "rus" ? workerRus : worker;
+      await target.setParameters({
+        tessedit_char_whitelist: group.whitelist,
+        tessedit_pageseg_mode: group.psm,
+      });
+      for (const variant of group.variants) {
+        out[variant.key] = await target.recognize(await bufferFor(variant));
+      }
+    }
+    return out;
+  };
+
   const fullWidth = 1400;
   const fullHeight = Math.max(
     1,
@@ -401,97 +512,56 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     const prefix = path.join(debugDir, `${base}.`);
     await fs.writeFile(`${prefix}full.png`, fullBuf);
   }
-  await worker.setParameters({
-    tessedit_char_whitelist: LATIN_WHITELIST,
-    tessedit_pageseg_mode: "8",
-  });
-  const nameResNeutral = await worker.recognize(nameBufNeutral);
-  const nameResThreshold = await worker.recognize(nameBufThreshold);
-  const nameWideResNeutral = await worker.recognize(nameWideBufNeutral);
-  const nameWideResThreshold = await worker.recognize(nameWideBufThreshold);
+
+  /** @type {{ data: { text: string, confidence: number } }} */
+  const emptyResult = { data: { text: "", confidence: 0 } };
+  /** @type {Record<string, { data: { text: string, confidence: number } }>} */
+  const res = {};
+  for (const group of NAME_RECOGNITION_GROUPS) {
+    for (const variant of group.variants) res[variant.key] = emptyResult;
+  }
+
+  const firstGroup = NAME_RECOGNITION_GROUPS[0];
+  Object.assign(res, await recognizeGroups([firstGroup]));
 
   // A confident first pass already holds a tag-shaped name; the text-area variants
   // (and the Cyrillic/Latin repair passes) only add noise from here.
-  const firstPass = [nameResNeutral, nameResThreshold, nameWideResNeutral, nameWideResThreshold];
+  const firstPass = firstGroup.variants.map((variant) => res[variant.key]);
   const strongFirstPass =
     options.nameBoxStyle !== "tight" ? firstPass.find(isStrongFirstPassResult) : undefined;
   const confidentFirstPass = strongFirstPass !== undefined;
   if (confidentFirstPass) log.debug(`[OCR] early exit after first pass: ${base}`);
 
-  /** @type {{ data: { text: string, confidence: number } }} */
-  const emptyResult = { data: { text: "", confidence: 0 } };
-  let nameTextResNeutral = emptyResult;
-  let nameTextResThreshold = emptyResult;
-  let nameTextLineResNeutral = emptyResult;
-  let nameTextLineResThreshold = emptyResult;
-  let nameTextRusNeutral = emptyResult;
-  let nameTextRusThreshold = emptyResult;
-  let nameTextLineRusNeutral = emptyResult;
-  let nameTextLineRusThreshold = emptyResult;
-  // Formation mode: a Latin-only pass avoids Cyrillic/Latin confusions (H→Н, etc.)
-  // produced by the mixed whitelist on stylised fonts.
   /** @type {{ text: string, confidence?: number }[]} */
   const clanLatinResults = [];
-
   if (!confidentFirstPass) {
-    const nameTextBufNeutral = await preprocessForOcr(nameTextImg, { width: OCR_UPSCALE_WIDTHS.nameText });
-    const nameTextBufThreshold = await preprocessForOcr(nameTextImg, {
-      width: OCR_UPSCALE_WIDTHS.nameText,
-      threshold: 145,
-    });
-    const nameTextLineBufNeutral = await preprocessForOcr(nameTextLineImg, {
-      width: OCR_UPSCALE_WIDTHS.nameTextLine,
-    });
-    const nameTextLineBufThreshold = await preprocessForOcr(nameTextLineImg, {
-      width: OCR_UPSCALE_WIDTHS.nameTextLine,
-      threshold: 140,
-    });
-    await worker.setParameters({
-      tessedit_char_whitelist: LATIN_WHITELIST,
-      tessedit_pageseg_mode: "7",
-    });
-    nameTextResNeutral = await worker.recognize(nameTextBufNeutral);
-    nameTextResThreshold = await worker.recognize(nameTextBufThreshold);
-    nameTextLineResNeutral = await worker.recognize(nameTextLineBufNeutral);
-    nameTextLineResThreshold = await worker.recognize(nameTextLineBufThreshold);
-    await workerRus.setParameters({
-      tessedit_char_whitelist: LATIN_WHITELIST,
-      tessedit_pageseg_mode: "7",
-    });
-    nameTextRusNeutral = await workerRus.recognize(nameTextBufNeutral);
-    nameTextRusThreshold = await workerRus.recognize(nameTextBufThreshold);
-    nameTextLineRusNeutral = await workerRus.recognize(nameTextLineBufNeutral);
-    nameTextLineRusThreshold = await workerRus.recognize(nameTextLineBufThreshold);
-
+    const remainingGroups = NAME_RECOGNITION_GROUPS.filter(
+      (group) =>
+        group.id !== firstGroup.id &&
+        (group.onlyWhen !== "tight" || options.nameBoxStyle === "tight"),
+    );
+    Object.assign(res, await recognizeGroups(remainingGroups));
     if (options.nameBoxStyle === "tight") {
-      await worker.setParameters({
-        tessedit_char_whitelist: LATIN_ONLY_WHITELIST,
-        tessedit_pageseg_mode: "7",
-      });
-      for (const buf of [
-        nameTextBufNeutral,
-        nameTextBufThreshold,
-        nameTextLineBufNeutral,
-        nameTextLineBufThreshold,
-      ]) {
-        const res = await worker.recognize(buf);
-        clanLatinResults.push({ text: res.data.text, confidence: res.data.confidence });
+      const latinGroup = NAME_RECOGNITION_GROUPS.find((group) => group.id === "textLatin");
+      for (const variant of latinGroup?.variants ?? []) {
+        const result = res[variant.key];
+        clanLatinResults.push({ text: result.data.text, confidence: result.data.confidence });
       }
     }
   }
   const candidates = [
-    cleanupName(nameResNeutral.data.text),
-    cleanupName(nameResThreshold.data.text),
-    cleanupName(nameWideResNeutral.data.text),
-    cleanupName(nameWideResThreshold.data.text),
-    cleanupNamePhrase(nameTextResNeutral.data.text),
-    cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResNeutral.data.text),
-    cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextRusNeutral.data.text),
-    cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusNeutral.data.text),
-    cleanupNamePhrase(nameTextLineRusThreshold.data.text),
+    cleanupName(res.nameNeutral.data.text),
+    cleanupName(res.nameThreshold.data.text),
+    cleanupName(res.wideNeutral.data.text),
+    cleanupName(res.wideThreshold.data.text),
+    cleanupNamePhrase(res.textNeutral.data.text),
+    cleanupNamePhrase(res.textThreshold.data.text),
+    cleanupNamePhrase(res.textLineNeutral.data.text),
+    cleanupNamePhrase(res.textLineThreshold.data.text),
+    cleanupNamePhrase(res.textRusNeutral.data.text),
+    cleanupNamePhrase(res.textRusThreshold.data.text),
+    cleanupNamePhrase(res.textLineRusNeutral.data.text),
+    cleanupNamePhrase(res.textLineRusThreshold.data.text),
   ];
   candidates.sort((a, b) => {
     const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
@@ -500,14 +570,14 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   });
   let name = candidates[0] ?? "";
   const textAreaCandidates = [
-    cleanupNamePhrase(nameTextResNeutral.data.text),
-    cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResNeutral.data.text),
-    cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextRusNeutral.data.text),
-    cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusNeutral.data.text),
-    cleanupNamePhrase(nameTextLineRusThreshold.data.text),
+    cleanupNamePhrase(res.textNeutral.data.text),
+    cleanupNamePhrase(res.textThreshold.data.text),
+    cleanupNamePhrase(res.textLineNeutral.data.text),
+    cleanupNamePhrase(res.textLineThreshold.data.text),
+    cleanupNamePhrase(res.textRusNeutral.data.text),
+    cleanupNamePhrase(res.textRusThreshold.data.text),
+    cleanupNamePhrase(res.textLineRusNeutral.data.text),
+    cleanupNamePhrase(res.textLineRusThreshold.data.text),
   ].filter((c) => /[\p{L}].*[\p{L}]/u.test(c));
   if (textAreaCandidates.length > 0) {
     const uniq = [...new Set(textAreaCandidates)];

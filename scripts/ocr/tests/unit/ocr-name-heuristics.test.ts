@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  NAME_RECOGNITION_GROUPS,
   arenaNameLineQuality,
   cleanupName,
   cleanupNamePhrase,
@@ -190,6 +191,27 @@ describe("correctClanNameConfusables", () => {
     // The override replaces the built-in table entirely.
     expect(correctClanNameConfusables("AulN|TOLDI", { ZzZ: "HuN" })).toBe("AulN|TOLDI");
     expect(correctClanNameConfusables("AulN|TOLDI", { AulN: "  " })).toBe("AulN|TOLDI");
+  });
+});
+
+describe("NAME_RECOGNITION_GROUPS", () => {
+  it("keeps unique variant keys and puts the early-exit pass first", () => {
+    const keys = NAME_RECOGNITION_GROUPS.flatMap((g) => g.variants.map((v) => v.key));
+    expect(new Set(keys).size).toBe(keys.length);
+    expect(NAME_RECOGNITION_GROUPS[0]).toMatchObject({ id: "first", psm: "8" });
+    expect(NAME_RECOGNITION_GROUPS[0].variants.map((v) => v.key)).toEqual([
+      "nameNeutral",
+      "nameThreshold",
+      "wideNeutral",
+      "wideThreshold",
+    ]);
+  });
+
+  it("runs the Latin-only repair pass only for tight formation boxes", () => {
+    const latin = NAME_RECOGNITION_GROUPS.find((g) => g.id === "textLatin");
+    expect(latin?.onlyWhen).toBe("tight");
+    expect(latin?.whitelist).toContain("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    expect(latin?.whitelist).not.toMatch(/[А-Яа-я]/);
   });
 });
 
