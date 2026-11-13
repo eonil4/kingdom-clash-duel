@@ -37,7 +37,7 @@ const CONFIG_PATH = path.join(ROOT, "config", "llm.json");
 const CLAN_CLASH_ROOT = path.join(ROOT, "data", "clan_clash");
 const WIKI_SCRIPT = path.join(ROOT, "scripts", "generate-wiki-table.mjs");
 
-function loadDefaultModel() {
+export function loadDefaultModel() {
   try {
     const cfg = JSON.parse(readFileSync(CONFIG_PATH, "utf8"));
     if (typeof cfg.defaultModel === "string" && cfg.defaultModel.trim()) {
@@ -50,10 +50,10 @@ function loadDefaultModel() {
 }
 
 /** Latest `YYYY-MM-DD` folder under data/clan_clash, else undefined. */
-function resolveDefaultDir() {
+export function resolveDefaultDir(clanClashRoot = CLAN_CLASH_ROOT) {
   try {
     const names = fs
-      .readdirSync(CLAN_CLASH_ROOT, { withFileTypes: true })
+      .readdirSync(clanClashRoot, { withFileTypes: true })
       .filter((e) => e.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(e.name))
       .map((e) => e.name)
       .sort();
@@ -173,7 +173,7 @@ export function resolveConvertTarget(name) {
  * @param {number} maxDepth
  * @returns {string[]}
  */
-function collectDirsUpToDepth(rootAbs, maxDepth) {
+export function collectDirsUpToDepth(rootAbs, maxDepth) {
   /** @type {string[]} */
   const out = [];
 
@@ -207,7 +207,7 @@ function collectDirsUpToDepth(rootAbs, maxDepth) {
  * @param {string} dirAbs
  * @returns {boolean}
  */
-function dirExistsAndNotEmpty(dirAbs) {
+export function dirExistsAndNotEmpty(dirAbs) {
   try {
     const st = fs.statSync(dirAbs);
     if (!st.isDirectory()) return false;
@@ -222,7 +222,7 @@ function dirExistsAndNotEmpty(dirAbs) {
  * @param {{ cwd?: string, env?: NodeJS.ProcessEnv, logFd?: number }} [options]
  * @returns {Promise<number>}
  */
-function runNode(nodeArgs, options = {}) {
+export function runNode(nodeArgs, options = {}) {
   const { cwd = ROOT, env = process.env, logFd } = options;
   return new Promise((resolve) => {
     const child = spawn(process.execPath, nodeArgs, {
@@ -245,19 +245,19 @@ function runNode(nodeArgs, options = {}) {
  * @param {string[]} extensions
  * @param {number} [logFd]
  */
-async function runWikiTable(dirAbs, extensions, logFd) {
+export async function runWikiTable(dirAbs, extensions, logFd, run = runNode) {
   const rel = path.relative(ROOT, dirAbs).replace(/\\/g, "/") || dirAbs;
   console.log(`\n[Wiki] ${rel} (${extensions.join(" ")})`);
   // Pass repo-relative path so GitHub URLs never embed absolute Windows paths.
-  return runNode([WIKI_SCRIPT, rel, ...extensions], { logFd });
+  return run([WIKI_SCRIPT, rel, ...extensions], { logFd });
 }
 
 /**
  * @param {string} dirAbs
  * @param {number} [logFd]
  */
-async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
-  let code = await runWikiTable(dirAbs, ["webp"], logFd);
+export async function runWikiTablesAfterConvert(dirAbs, logFd, env, run = runNode) {
+  let code = await runWikiTable(dirAbs, ["webp"], logFd, run);
   if (code !== 0) return code;
 
   const clanDir = path.join(dirAbs, "clan");
@@ -276,7 +276,7 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
           for (const f of files) {
             const img = path.join(clanDir, f);
             console.log(`\t[LLM-formation] ${f}`);
-            const rc = await runNode([extractor, img], { env, logFd: clanLogFd });
+            const rc = await run([extractor, img], { env, logFd: clanLogFd });
             if (rc !== 0) {
               console.warn(`\t[LLM-formation] extractor failed for ${f} (exit ${rc})`);
             }
@@ -288,7 +288,7 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
         console.warn(`[LLM-formation] error while processing clan folder: ${err instanceof Error ? err.message : err}`);
       }
 
-      code = await runWikiTable(clanDir, ["jpg", "png"], clanLogFd);
+      code = await runWikiTable(clanDir, ["jpg", "png"], clanLogFd, run);
       if (code !== 0) return code;
     } finally {
       try {
@@ -303,7 +303,7 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
 
   const clanDuelsDir = path.join(dirAbs, "clan_duels");
   if (dirExistsAndNotEmpty(clanDuelsDir)) {
-    code = await runWikiTable(clanDuelsDir, ["jpg", "png"], logFd);
+    code = await runWikiTable(clanDuelsDir, ["jpg", "png"], logFd, run);
     if (code !== 0) return code;
   } else {
     console.log(`\n[Wiki] skip clan_duels (missing or empty): ${clanDuelsDir}`);
@@ -322,19 +322,14 @@ async function runWikiTablesAfterConvert(dirAbs, logFd, env) {
  * @param {NodeJS.ProcessEnv} options.env
  * @param {number} options.logFd
  */
-async function processFolder({
-  folderAbs,
-  convertScript,
-  convertMode,
-  passthrough,
-  full,
-  env,
-  logFd,
-}) {
+export async function processFolder(
+  { folderAbs, convertScript, convertMode, passthrough, full, env, logFd },
+  run = runNode,
+) {
   const rel = path.relative(ROOT, folderAbs).replace(/\\/g, "/") || folderAbs;
   console.log(`\n======== ${rel} ========`);
 
-  const convertCode = await runNode([convertScript, folderAbs, "--mode", convertMode, ...passthrough], {
+  const convertCode = await run([convertScript, folderAbs, "--mode", convertMode, ...passthrough], {
     env,
     logFd,
   });
@@ -345,13 +340,72 @@ async function processFolder({
     return 0;
   }
 
-  return runWikiTablesAfterConvert(folderAbs, logFd, env);
+  return runWikiTablesAfterConvert(folderAbs, logFd, env, run);
+}
+
+/**
+ * Convert every folder down to the recursion depth, then optionally build wiki tables.
+ * @param {{
+ *   dirAbs: string,
+ *   script?: string,
+ *   model?: string,
+ *   passthrough?: string[],
+ *   full?: boolean,
+ *   recursive?: number,
+ * }} job
+ * @param {{ run?: typeof runNode, env?: NodeJS.ProcessEnv }} [options]
+ * @returns {Promise<number>} worst child exit code
+ */
+export async function runClanClash(
+  { dirAbs, script = "convert2", model, passthrough = [], full = false, recursive = 0 },
+  { run = runNode, env = process.env } = {},
+) {
+  const { script: convertScript, mode: convertMode } = resolveConvertTarget(script);
+  const logPath = path.join(dirAbs, "log.txt");
+  const resolvedModel = model ?? env.LLM_MODEL ?? loadDefaultModel();
+  const folders = collectDirsUpToDepth(dirAbs, recursive);
+
+  await fs.promises.mkdir(dirAbs, { recursive: true });
+  const logFd = fs.openSync(logPath, "a");
+
+  const childEnv = { ...env, LLM_MODEL: resolvedModel };
+
+  console.log(
+    `LLM convert: script=convert.mjs mode=${convertMode} model=${resolvedModel} full=${full} recursive=${recursive}`,
+  );
+  console.log(`Root: ${dirAbs}`);
+  console.log(`Folders (${folders.length}):`);
+  for (const f of folders) {
+    console.log(`  - ${path.relative(ROOT, f).replace(/\\/g, "/") || f}`);
+  }
+  console.log(`Log: ${logPath}`);
+
+  let worstCode = 0;
+  try {
+    for (const folderAbs of folders) {
+      const code = await processFolder(
+        {
+          folderAbs,
+          convertScript,
+          convertMode,
+          passthrough,
+          full,
+          env: childEnv,
+          logFd,
+        },
+        run,
+      );
+      if (code !== 0) worstCode = code;
+    }
+  } finally {
+    fs.closeSync(logFd);
+  }
+  return worstCode;
 }
 
 async function main() {
   const parsed = parseArgs(process.argv.slice(2));
   const dir = parsed.dir ?? resolveDefaultDir();
-  const { script, model, passthrough, full, recursive } = parsed;
   if (!dir) {
     console.error(
       "Usage: node scripts/llm/clan-clash.mjs [<dir>] [--full] [--recursive <n>] [--force] [--model <id>]\n" +
@@ -366,42 +420,8 @@ async function main() {
     process.exit(1);
   }
 
-  const { script: convertScript, mode: convertMode } = resolveConvertTarget(script);
-  const logPath = path.join(dirAbs, "log.txt");
-  const resolvedModel = model ?? process.env.LLM_MODEL ?? loadDefaultModel();
-  const folders = collectDirsUpToDepth(dirAbs, recursive);
-
-  await fs.promises.mkdir(dirAbs, { recursive: true });
-  const logFd = fs.openSync(logPath, "a");
-
-  const childEnv = { ...process.env, LLM_MODEL: resolvedModel };
-
-  console.log(
-    `LLM convert: script=convert.mjs mode=${convertMode} model=${resolvedModel} full=${full} recursive=${recursive}`,
-  );
-  console.log(`Root: ${dirAbs}`);
-  console.log(`Folders (${folders.length}):`);
-  for (const f of folders) {
-    console.log(`  - ${path.relative(ROOT, f).replace(/\\/g, "/") || f}`);
-  }
-  console.log(`Log: ${logPath}`);
-
-  let worstCode = 0;
-  for (const folderAbs of folders) {
-    const code = await processFolder({
-      folderAbs,
-      convertScript,
-      convertMode,
-      passthrough,
-      full,
-      env: childEnv,
-      logFd,
-    });
-    if (code !== 0) worstCode = code;
-  }
-
-  fs.closeSync(logFd);
-  process.exit(worstCode);
+  const code = await runClanClash({ dirAbs, ...parsed });
+  process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

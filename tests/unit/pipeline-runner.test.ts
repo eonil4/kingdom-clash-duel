@@ -4,6 +4,7 @@ import os from "os";
 import path from "path";
 import { runExtraction } from "../../scripts/pipeline/run-extraction.mjs";
 import { readFolderEntries } from "../../scripts/pipeline/data-json-store.mjs";
+import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
 const dirs: string[] = [];
 
@@ -149,5 +150,54 @@ describe("runExtraction", () => {
         strategy: { id: "broken" },
       } as never),
     ).rejects.toThrow(TypeError);
+  });
+});
+
+describe("runExtraction map path", () => {
+  async function seedMappedImage(date: string, withWebp: boolean) {
+    const dir = path.join(WORKSPACE_ROOT, "data", "clan_clash", date);
+    dirs.push(dir);
+    await fs.mkdir(dir, { recursive: true });
+    const canonical = "000_000_005-Name.webp";
+    if (withWebp) await fs.writeFile(path.join(dir, canonical), "x");
+    const file = path.join(dir, "Screenshot_1.png");
+    await fs.writeFile(file, "x");
+    await fs.writeFile(
+      path.join(dir, "data.json"),
+      JSON.stringify({
+        "Screenshot_1.png": { name: "Name", nameLatin: "Name", power: 5, canonical },
+      }),
+      "utf8",
+    );
+    return { dir, file };
+  }
+
+  it("skips a source whose canonical webp already exists", async () => {
+    const { dir, file } = await seedMappedImage("2099-01-04", true);
+    const strategy = fakeStrategy();
+
+    const stats = await runExtraction({
+      folders: [{ absPath: dir, files: [file] }],
+      strategy,
+      map: true,
+    });
+
+    expect(stats).toMatchObject({ converted: 0, skipped: 1, failed: 0 });
+    expect(strategy.calls).toEqual(["prepare", "dispose"]);
+  });
+
+  it("counts map-only rows when the webp is missing and webp output is off", async () => {
+    const { dir, file } = await seedMappedImage("2099-01-05", false);
+    const strategy = fakeStrategy();
+
+    const stats = await runExtraction({
+      folders: [{ absPath: dir, files: [file] }],
+      strategy,
+      map: true,
+      webp: false,
+    });
+
+    expect(stats).toMatchObject({ converted: 1, skipped: 0, failed: 0 });
+    expect(strategy.calls).toEqual(["prepare", "dispose"]);
   });
 });

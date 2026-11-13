@@ -12,12 +12,12 @@ export default defineConfig({
       reporter: ["text", "json-summary"],
       include: ["scripts/**/*.mjs"],
       exclude: ["scripts/**/tests/**"],
-      // Measured 81.0 stmts / 81.1 branch / 80.3 funcs; keep ~1 point of margin.
+      // Measured 84.0 stmts / 81.4 branch / 84.3 funcs; keep ~1 point of margin.
       thresholds: {
-        statements: 80,
+        statements: 83,
         branches: 80,
-        functions: 79,
-        lines: 80,
+        functions: 83,
+        lines: 83,
       },
     },
   },
