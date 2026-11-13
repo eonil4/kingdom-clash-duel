@@ -68,6 +68,28 @@ describe("ocrEnemyName flow", () => {
     expect(workerRus.recognize).not.toHaveBeenCalled();
   });
 
+  it("lets a primary-crop reading out-vote a one-off Cyrillic line", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call === 0) return { text: "Ailiec", confidence: 80 };
+      if (call === 1) return { text: "Ailiec", confidence: 80 };
+      if (call === 4) return { text: "Ailiec", confidence: 80 };
+      if (call === 5) return { text: "сот аЖёст", confidence: 80 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Ailiec");
+  });
+
+  it("replaces a junk-shaped text winner with a clean primary reading", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) => {
+      if (call === 0) return { text: "Myxa", confidence: 80 };
+      if (call === 4) return { text: "Myx г а", confidence: 80 };
+      return empty;
+    });
+    expect(await ocrEnemyName(file, worker, fakeRus())).toBe("Myxa");
+  });
+
   it("prefers a repeatedly-read Latin name over Cyrillic lookalikes", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) => {

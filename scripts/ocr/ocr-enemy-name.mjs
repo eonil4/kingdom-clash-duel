@@ -614,7 +614,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     options.nameBoxStyle === "tight"
       ? cleanupNamePhrase
       : (text) => stripEdgeTagSeparators(stripLeadingClippedTokens(cleanupNamePhrase(text)));
-  const candidates = [
+  const rawCandidates = [
     cleanupName(res.nameNeutral.data.text),
     cleanupName(res.nameThreshold.data.text),
     cleanupName(res.wideNeutral.data.text),
@@ -628,6 +628,7 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     phraseCleanup(res.textLineRusNeutral.data.text),
     phraseCleanup(res.textLineRusThreshold.data.text),
   ];
+  const candidates = [...rawCandidates];
   candidates.sort((a, b) => {
     const dq = arenaNameLineQuality(b) - arenaNameLineQuality(a);
     if (dq !== 0) return dq;
@@ -671,11 +672,17 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     const latinLowerCandidates = uniq.filter(
       (c) => /^[a-z][a-z ]*$/u.test(c) && scoreNamePhrase(c) >= 4,
     );
+    // Votes count every recognition variant, including the primary name/wide crops:
+    // a reading seen by both the primary crop and text variants outranks a one-off.
     /** @type {Map<string, number>} */
     const votes = new Map();
-    for (const candidate of textAreaCandidates) {
-      votes.set(candidate, (votes.get(candidate) ?? 0) + 1);
-    }
+    rawCandidates.forEach((candidate, index) => {
+      if (!candidate) return;
+      // Primary-crop reads corroborate text-area reads, but duplicated variants of
+      // the same crop are weaker evidence than an independent text pass.
+      const weight = index < 4 ? 0.5 : 1;
+      votes.set(candidate, (votes.get(candidate) ?? 0) + weight);
+    });
     const basePool = [
       ...new Set([
         ...mixedScriptOrSep,
@@ -737,6 +744,23 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     });
     name = pool[0] ?? name;
     log.debug(`[OCR] ${base} pool pick: ${JSON.stringify(name)}`);
+    if (arenaCandidatePenalty(name) > 0) {
+      // The text-area winner is junk-shaped; a clean reading from the primary
+      // name/wide crops is more trustworthy ("Myxa" over "Myx г а").
+      const cleanPrimary = rawCandidates
+        .slice(0, 4)
+        .filter(
+          (c) =>
+            c &&
+            /[A-Za-z]/.test(c) &&
+            !/[\p{sc=Cyrillic}]/u.test(c) &&
+            (c.match(/\p{L}/gu) ?? []).length >= 3 &&
+            arenaCandidatePenalty(c) === 0 &&
+            scoreNamePhrase(c) >= 4,
+        )
+        .sort((a, b) => a.length - b.length || scoreNamePhrase(b) - scoreNamePhrase(a));
+      if (cleanPrimary.length > 0) name = cleanPrimary[0];
+    }
   }
   if (strongFirstPass) {
     // Keep the whole phrase from the strong pass; single-token cleanup would drop
