@@ -107,6 +107,11 @@ async function main() {
     await strategy.dispose();
   }
 
+  if (rows.length === 0) {
+    console.log("no samples matched (check --labels/--limit)");
+    return;
+  }
+
   let nameOk = 0;
   let powerOk = 0;
   let simSum = 0;

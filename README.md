@@ -42,6 +42,7 @@ Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy RO
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update per-folder `data.json` |
 | `pnpm ocr:enemy:power` | OCR power only (CLI: image path) |
 | `pnpm ocr:clan` | OCR clan formation screenshots (`<date>/clan`) → per-folder `data.json` |
+| `pnpm eval:clan-ocr` | Report clan OCR accuracy against the labelled fixture |
 | `pnpm ocr:enemy:name` | OCR name only (CLI: image path) |
 | `pnpm ocr:enemy:latin` | Transliterate / Latin tokens from text (CLI args) |
 | `pnpm llm:convert:webp` | From map: create `.webp` beside originals if missing |

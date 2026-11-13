@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 39 source files, 7,522 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 39 source files, 7,527 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -34,7 +34,7 @@ C. Armies → deterministic battle report
 | Area | Files | LOC | Entry points |
 |---|---:|---:|---|
 | `llm/` | 11 | 2,373 | `clan-clash.mjs` (orchestrator), `convert.mjs --extractor`, `vision-client.mjs` + `llm-*-extract.mjs` descriptors, `rename-enemies.mjs`, `convert-to-webp.mjs` |
-| `ocr/` | 9 | 1,481 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
+| `ocr/` | 9 | 1,486 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 924 | `run-battle.mjs` |
 | `pipeline/` | 5 | 776 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
 | root | 6 | 1,652 | `enemy-records.mjs`, `roi.mjs`, `check-imports.mjs`, `generate-wiki-matrix.mjs`, `generate-wiki-table.mjs`, `extract_image.mjs` |
