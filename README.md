@@ -24,6 +24,7 @@ Native addons (**sharp**, **tesseract.js**, **esbuild**) may compile on first in
 | Command | Description |
 |--------|-------------|
 | `pnpm test:unit` | Vitest (single run) |
+| `pnpm test:coverage` | Vitest with V8 coverage + thresholds (run on Linux CI) |
 | `pnpm test:unit:watch` | Vitest watch mode |
 | `pnpm run ci` | Unit tests |
 

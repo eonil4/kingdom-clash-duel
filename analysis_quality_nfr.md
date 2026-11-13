@@ -103,7 +103,7 @@ Generated `index.html` files start with `<table>` only — no `<html lang>`, `<m
 | **Security** | no shell interpolation of filenames (spawn arg arrays), URL encoding, path-containment checks for generators, token never printed, env expansion only from trusted config | Low | keep; add a note that `config/llm.json` is trusted input |
 | **Portability** | Node 22 engines, dual-OS CI, path normalization via `toMapKey`, Windows EBUSY retry | Low | tesseract network dependency is the remaining platform risk |
 | **Maintainability** | JSDoc types, 192 tests, strategy/runner seams; but 572-line OCR module, 861-line matrix generator, duplicated guards, magic numbers | Medium | §2.3, §2.4, §2.9 |
-| **Testability** | DI strategies, guarded CLIs, synthetic APK fixtures, labelled OCR harness; no coverage measurement | Low-Medium | add `@vitest/coverage-v8` and a coverage threshold |
+| **Testability** | DI strategies, guarded CLIs, synthetic APK fixtures, labelled OCR harness; V8 coverage with thresholds in CI (`pnpm test:coverage`) | Low | add targeted tests for the lowest-covered CLIs (`rename-enemies`, `ocr-enemy`/`ocr-clan` mains) |
 | **Accessibility (generated HTML)** | layout tables, no document head/lang | Low | §2.8 |
 | **Determinism** | seeded battle sim, `temperature: 0` for LLM; tesseract output can drift with version | Low | pin/track tesseract version in docs |
 | **Scalability** | map rebuild scans all folders at startup (43 ms now); per-file map saves | Medium | §3.4/3.5 |
@@ -154,8 +154,9 @@ The first batch from §5 is implemented on `refactor`:
 | 7 | Offline tesseract language data (§4 reliability) | **done** | `defaultWorkerOptions()` points tesseract at the bundled `eng/rus.traineddata` (`gzip:false`, temp cache) and falls back to the CDN only when they are missing; eval sample 100%, no download cache created |
 | 8 | Typed usage errors in parsers (§2.6) | **done** | `UsageError` in `cli.mjs`; `extract_image`/`run-battle` parsers throw, CLIs print usage + exit 1; tests assert messages |
 | 9 | Logger with levels (§4 observability) | **done** | `scripts/log.mjs` (`LOG_LEVEL=silent…debug`, default info); pipeline/strategies/vision-client diagnostics migrated; `debug` adds per-file timings + indexed-source count; `tests/unit/log.test.ts` |
+| 10 | Coverage tooling (§4 testability) | **done** | `@vitest/coverage-v8` + `pnpm test:coverage`; V8 coverage over `scripts/**/*.mjs` with thresholds (55/75/60/55); baseline measured at 56.2 stmts / 78.2 branch / 61.2 funcs; Linux CI runs the coverage job |
 
 Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), coverage tooling and the HTML document wrapper (§2.8/§4).
+Still open from this analysis: optional third OCR worker for parallel name/power (§3.1) and the generated-HTML document wrapper (§2.8).
 

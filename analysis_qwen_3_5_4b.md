@@ -239,6 +239,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR works offline: workers use the bundled `eng.traineddata`/`rus.traineddata` at the repo root (`langPath`, `gzip:false`, temp cache), falling back to tesseract.js's download only when those files are absent; a sample run created no download cache.
 - Typed usage errors: `extract_image` and `run-battle` parsers now throw `UsageError` (`cli.mjs`) instead of calling `process.exit`, so they are reusable/testable; the CLIs print the message + usage and exit 1.
 - Leveled logging: pipeline chatter goes through `log.mjs` (`LOG_LEVEL=silent|error|warn|info|debug`, default info); `debug` adds per-file timings and the indexed-source count. Verified on a real clan run (`[Debug] … 2546ms`).
+- Coverage in CI: `@vitest/coverage-v8` + `pnpm test:coverage` (V8, `scripts/**/*.mjs`, thresholds 55/75/60/55). Baseline: 56.2% statements, 78.2% branches, 61.2% functions; the Linux CI leg runs the coverage job.
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -300,6 +301,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 
 ```bash
 pnpm test:unit                       # must stay green (currently 204/204)
+pnpm test:coverage                   # V8 coverage + thresholds
 pnpm check:imports                   # relative specifiers resolve in scripts/ and tests/
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline
