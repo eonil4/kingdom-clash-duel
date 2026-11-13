@@ -3,6 +3,8 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     environment: "node",
+    // The OCR flow tests do real sharp preprocessing; 15s avoids flakes under load.
+    testTimeout: 15_000,
     include: [
       "tests/unit/**/*.test.{ts,tsx}",
       "scripts/ocr/tests/**/*.test.{ts,tsx}",

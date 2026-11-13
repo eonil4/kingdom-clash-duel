@@ -18,7 +18,7 @@ import { writeJsonAtomic } from "../atomic-json.mjs";
 import { formatPowerForFilename } from "../enemy-records.mjs";
 import { resolveCropConfig, resolveRoiReference, scaleRoiToImage } from "../roi.mjs";
 import { toSafeEnemyFilenameToken } from "../ocr/enemy-filename-tokens.mjs";
-import { log } from "../log.mjs";
+import { log as logger } from "../log.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -501,7 +501,7 @@ export async function reconcileDataJsonWithCanonicalFiles(folder) {
         const trashDir = path.join(folder, "_orphaned");
         await fs.mkdir(trashDir, { recursive: true });
         await fs.rename(stalePath, path.join(trashDir, oldKey));
-        log.info(`[Data] moved stale original to _orphaned/: ${oldKey}`);
+        logger.info(`[Data] moved stale original to _orphaned/: ${oldKey}`);
       } catch (err) {
         const code = err && typeof err === "object" && "code" in err ? err.code : undefined;
         if (code !== "ENOENT") {
@@ -520,7 +520,7 @@ export async function reconcileDataJsonWithCanonicalFiles(folder) {
   }
   if (changed) {
     await writeJsonAtomic(dataPath, parsed);
-    log.info(`[Data] reconciled data.json in ${folder}`);
+    logger.info(`[Data] reconciled data.json in ${folder}`);
   }
 }
 
@@ -641,7 +641,7 @@ export async function runVisionExtract({
   let dataPath;
   try {
     dataPath = await upsert(resolved, result, durationMs, canonicalBase);
-    log.info(`[Data] wrote ${dataPath} (processing ${Math.round(durationMs)}ms)`);
+    logger.info(`[Data] wrote ${dataPath} (processing ${Math.round(durationMs)}ms)`);
   } catch (err) {
     warn(
       "[Data] failed to write data.json:",

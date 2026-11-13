@@ -320,6 +320,7 @@ describe("runVisionExtract", () => {
     await fs.writeFile(file, "x");
     const target = fakeTarget();
     const logs: string[] = [];
+    const warns: string[] = [];
 
     const outcome = await runVisionExtract({
       argv: [file],
@@ -331,6 +332,7 @@ describe("runVisionExtract", () => {
       config: {},
       reconcile: async () => {},
       log: (line) => logs.push(String(line)),
+      warn: (...args) => warns.push(args.join(" ")),
     });
 
     expect(outcome.result).toMatchObject({ power: 123 });
@@ -344,6 +346,7 @@ describe("runVisionExtract", () => {
       "shot.png processed",
     );
     expect(logs.join("\n")).toContain("Model: m");
+    expect(warns).toEqual([]);
   });
 
   it("skips already-recorded images and reports usage", async () => {
