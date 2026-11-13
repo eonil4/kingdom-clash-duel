@@ -151,8 +151,9 @@ The first batch from §5 is implemented on `refactor`:
 | 3 | Skip `prepare()` on empty runs | **done** | `run-extraction.mjs` early return; `ocr-enemy`/`ocr-clan --limit 0` now ~0.22 s (was worker init) |
 | 4 | Batched map saves + source index | **done** | one `saveEnemyMap` per run (`mapDirty`), `buildEnemySourceIndex` for lookups; runner tests +1 |
 | 5 | Shared `isMain()` + constants | **done** | `scripts/cli.mjs` used by 15 CLIs (no `invokedDirectly` left); `scripts/constants.mjs` for 444/picker/widths/growth/battle factors |
+| 6 | OCR variant trim (§3.1) | **done** | removed the redundant `raw` passes (24 → 17 recognitions): single-image OCR 7.4 s → **4.9 s (−34%)**; eval exact unchanged 11/12, overall similarity 92.4 → 91.7, power 12/12 |
 
 Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: OCR variant trimming + optional third worker (§3.1, needs A/B), typed usage errors (§2.6), logger with levels (§4), coverage tooling and HTML document wrapper (§2.8/§4), and offline tesseract language data (§4 reliability).
+Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), typed usage errors (§2.6), logger with levels (§4), coverage tooling and HTML document wrapper (§2.8/§4), and offline tesseract language data (§4 reliability).
 

@@ -341,21 +341,15 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     width: OCR_UPSCALE_WIDTHS.name,
     threshold: 155,
   });
-  const nameBufRaw = await preprocessRawForOcr(nameImg, { width: OCR_UPSCALE_WIDTHS.name });
   const nameWideBufNeutral = await preprocessForOcr(nameImgWide, { width: OCR_UPSCALE_WIDTHS.nameWide });
   const nameWideBufThreshold = await preprocessForOcr(nameImgWide, {
     width: OCR_UPSCALE_WIDTHS.nameWide,
     threshold: 150,
   });
-  const nameWideBufRaw = await preprocessRawForOcr(nameImgWide, { width: OCR_UPSCALE_WIDTHS.nameWide });
   const nameTextBufNeutral = await preprocessForOcr(nameTextImg, { width: OCR_UPSCALE_WIDTHS.nameText });
   const nameTextBufThreshold = await preprocessForOcr(nameTextImg, {
     width: OCR_UPSCALE_WIDTHS.nameText,
     threshold: 145,
-  });
-  const nameTextBufRaw = await preprocessRawForOcr(nameTextImg, { width: OCR_UPSCALE_WIDTHS.nameText });
-  const nameTextLineBufRaw = await preprocessRawForOcr(nameTextLineImg, {
-    width: OCR_UPSCALE_WIDTHS.nameTextLine,
   });
   const nameTextLineBufNeutral = await preprocessForOcr(nameTextLineImg, {
     width: OCR_UPSCALE_WIDTHS.nameTextLine,
@@ -373,39 +367,30 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   if (debugDir) {
     await fs.mkdir(debugDir, { recursive: true });
     const prefix = path.join(debugDir, `${base}.`);
-    await fs.writeFile(`${prefix}name-raw.png`, nameBufRaw);
-    await fs.writeFile(`${prefix}name-wide-raw.png`, nameWideBufRaw);
-    await fs.writeFile(`${prefix}name-text-line-raw.png`, nameTextLineBufRaw);
     await fs.writeFile(`${prefix}full.png`, fullBuf);
   }
   await worker.setParameters({
     tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "8",
   });
-  const nameResRaw = await worker.recognize(nameBufRaw);
   const nameResNeutral = await worker.recognize(nameBufNeutral);
   const nameResThreshold = await worker.recognize(nameBufThreshold);
-  const nameWideResRaw = await worker.recognize(nameWideBufRaw);
   const nameWideResNeutral = await worker.recognize(nameWideBufNeutral);
   const nameWideResThreshold = await worker.recognize(nameWideBufThreshold);
   await worker.setParameters({
     tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "7",
   });
-  const nameTextResRaw = await worker.recognize(nameTextBufRaw);
   const nameTextResNeutral = await worker.recognize(nameTextBufNeutral);
   const nameTextResThreshold = await worker.recognize(nameTextBufThreshold);
-  const nameTextLineResRaw = await worker.recognize(nameTextLineBufRaw);
   const nameTextLineResNeutral = await worker.recognize(nameTextLineBufNeutral);
   const nameTextLineResThreshold = await worker.recognize(nameTextLineBufThreshold);
   await workerRus.setParameters({
     tessedit_char_whitelist: LATIN_WHITELIST,
     tessedit_pageseg_mode: "7",
   });
-  const nameTextRusRaw = await workerRus.recognize(nameTextBufRaw);
   const nameTextRusNeutral = await workerRus.recognize(nameTextBufNeutral);
   const nameTextRusThreshold = await workerRus.recognize(nameTextBufThreshold);
-  const nameTextLineRusRaw = await workerRus.recognize(nameTextLineBufRaw);
   const nameTextLineRusNeutral = await workerRus.recognize(nameTextLineBufNeutral);
   const nameTextLineRusThreshold = await workerRus.recognize(nameTextLineBufThreshold);
 
@@ -420,7 +405,6 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     });
     for (const buf of [
       nameTextBufNeutral,
-      nameTextBufRaw,
       nameTextBufThreshold,
       nameTextLineBufNeutral,
       nameTextLineBufThreshold,
@@ -430,22 +414,16 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     }
   }
   const candidates = [
-    cleanupName(nameResRaw.data.text),
     cleanupName(nameResNeutral.data.text),
     cleanupName(nameResThreshold.data.text),
-    cleanupName(nameWideResRaw.data.text),
     cleanupName(nameWideResNeutral.data.text),
     cleanupName(nameWideResThreshold.data.text),
-    cleanupNamePhrase(nameTextResRaw.data.text),
     cleanupNamePhrase(nameTextResNeutral.data.text),
     cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResRaw.data.text),
     cleanupNamePhrase(nameTextLineResNeutral.data.text),
     cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextRusRaw.data.text),
     cleanupNamePhrase(nameTextRusNeutral.data.text),
     cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusRaw.data.text),
     cleanupNamePhrase(nameTextLineRusNeutral.data.text),
     cleanupNamePhrase(nameTextLineRusThreshold.data.text),
   ];
@@ -456,16 +434,12 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   });
   let name = candidates[0] ?? "";
   const textAreaCandidates = [
-    cleanupNamePhrase(nameTextResRaw.data.text),
     cleanupNamePhrase(nameTextResNeutral.data.text),
     cleanupNamePhrase(nameTextResThreshold.data.text),
-    cleanupNamePhrase(nameTextLineResRaw.data.text),
     cleanupNamePhrase(nameTextLineResNeutral.data.text),
     cleanupNamePhrase(nameTextLineResThreshold.data.text),
-    cleanupNamePhrase(nameTextRusRaw.data.text),
     cleanupNamePhrase(nameTextRusNeutral.data.text),
     cleanupNamePhrase(nameTextRusThreshold.data.text),
-    cleanupNamePhrase(nameTextLineRusRaw.data.text),
     cleanupNamePhrase(nameTextLineRusNeutral.data.text),
     cleanupNamePhrase(nameTextLineRusThreshold.data.text),
   ].filter((c) => /[\p{L}].*[\p{L}]/u.test(c));
