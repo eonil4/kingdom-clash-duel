@@ -657,27 +657,54 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   return normalizeOpponentDisplayName(cleanupNamePhrase(name));
 }
 
-async function cliMain() {  const imgPath = process.argv[2];
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} [argv]
+ * @param {{
+ *   makeWorker?: (langs: string) => Promise<any>,
+ *   run?: typeof ocrEnemyName,
+ *   log?: (...args: any[]) => void,
+ *   error?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runNameCli(
+  argv = process.argv.slice(2),
+  {
+    makeWorker = (langs) => createWorker(langs),
+    run = ocrEnemyName,
+    log = console.log,
+    error = console.error,
+  } = {},
+) {
+  const [imgPath] = argv;
   if (!imgPath) {
-    console.error("Usage: node scripts/ocr-enemy-name.mjs <image.png>");
-    process.exit(1);
+    error("Usage: node scripts/ocr-enemy-name.mjs <image.png>");
+    return 1;
   }
   const resolved = path.resolve(imgPath);
-  await fs.access(resolved).catch(() => {
-    console.error(`Not found: ${resolved}`);
-    process.exit(1);
-  });
-  const worker = await createWorker("eng+rus");
-  const workerRus = await createWorker("rus");
+  try {
+    await fs.access(resolved);
+  } catch {
+    error(`Not found: ${resolved}`);
+    return 1;
+  }
+  const worker = await makeWorker("eng+rus");
+  const workerRus = await makeWorker("rus");
   try {
     await worker.setParameters({ preserve_interword_spaces: "1" });
     await workerRus.setParameters({ preserve_interword_spaces: "1" });
-    const name = await ocrEnemyName(resolved, worker, workerRus);
-    console.log(name);
+    const name = await run(resolved, worker, workerRus);
+    log(name);
+    return 0;
   } finally {
     await worker.terminate();
     await workerRus.terminate();
   }
+}
+
+async function cliMain() {
+  const code = await runNameCli();
+  if (code !== 0) process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

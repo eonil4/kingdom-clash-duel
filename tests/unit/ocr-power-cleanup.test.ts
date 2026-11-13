@@ -3,7 +3,11 @@ import fs from "fs/promises";
 import os from "os";
 import path from "path";
 import sharp from "sharp";
-import { cleanupPower, ocrEnemyPower } from "../../scripts/ocr/ocr-enemy-power.mjs";
+import {
+  cleanupPower,
+  ocrEnemyPower,
+  runEnemyPowerCli,
+} from "../../scripts/ocr/ocr-enemy-power.mjs";
 
 sharp.cache(false);
 
@@ -59,6 +63,38 @@ describe("ocrEnemyPower", () => {
     expect(worker.setParameters).toHaveBeenCalledWith(
       expect.objectContaining({ tessedit_pageseg_mode: "6" }),
     );
+  });
+
+  it("runs the CLI with an injected worker and reports usage errors", async () => {
+    const dir = await fs.mkdtemp(path.join(os.tmpdir(), "kc-power-"));
+    dirs.push(dir);
+    const file = path.join(dir, "shot.png");
+    await sharp({ create: { width: 120, height: 240, channels: 3, background: "#111" } })
+      .png()
+      .toFile(file);
+    const worker = {
+      setParameters: vi.fn(async () => {}),
+      recognize: vi.fn(async () => ({ data: { text: "8 104 472" } })),
+      terminate: vi.fn(async () => {}),
+    };
+    const logs: string[] = [];
+
+    const code = await runEnemyPowerCli([file], {
+      makeWorker: async () => worker,
+      log: (line) => logs.push(String(line)),
+      error: () => {},
+    });
+
+    expect(code).toBe(0);
+    expect(logs).toEqual(["8104472"]);
+    expect(worker.terminate).toHaveBeenCalled();
+    expect(await runEnemyPowerCli([], { log: () => {}, error: () => {} })).toBe(1);
+    expect(
+      await runEnemyPowerCli([path.join(dir, "missing.png")], {
+        log: () => {},
+        error: () => {},
+      }),
+    ).toBe(1);
   });
 
   it("falls back to the fractional box without a configured ROI", async () => {

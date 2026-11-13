@@ -141,6 +141,37 @@ describe("wiki helpers", () => {
     expect(failing.calls).toHaveLength(1);
   });
 
+  it("continues after a failed formation extractor and stops on failing clan/duel wikis", async () => {
+    const root = await tmpDir();
+    const clan = path.join(root, "clan");
+    const duels = path.join(root, "clan_duels");
+    await fs.mkdir(clan, { recursive: true });
+    await fs.mkdir(duels, { recursive: true });
+    await fs.writeFile(path.join(clan, "000_000_005-Name.png"), "");
+    await fs.writeFile(path.join(duels, "duel.jpg"), "");
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+
+    const formationFails = fakeRun((args) =>
+      path.basename(args[0]) === "llm-formation-extract.mjs" ? 1 : 0,
+    );
+    expect(await runWikiTablesAfterConvert(root, undefined, {}, formationFails.run)).toBe(0);
+    expect(warn).toHaveBeenCalled();
+
+    const clanWikiFails = fakeRun((args) =>
+      path.basename(args[0]) === "generate-wiki-table.mjs" && args.includes("jpg") ? 3 : 0,
+    );
+    expect(await runWikiTablesAfterConvert(root, undefined, {}, clanWikiFails.run)).toBe(3);
+
+    const duelsOnly = await tmpDir();
+    const duelsDir = path.join(duelsOnly, "clan_duels");
+    await fs.mkdir(duelsDir, { recursive: true });
+    await fs.writeFile(path.join(duelsDir, "duel.jpg"), "");
+    const duelsFail = fakeRun((args) =>
+      String(args[1]).includes("clan_duels") && args.includes("jpg") ? 4 : 0,
+    );
+    expect(await runWikiTablesAfterConvert(duelsOnly, undefined, {}, duelsFail.run)).toBe(4);
+  });
+
 });
 
 describe("processFolder and runClanClash", () => {
@@ -211,6 +242,14 @@ describe("processFolder and runClanClash", () => {
     expect(
       await runClanClash({ dirAbs: root, model: "m" }, { run: failing.run, env: {} }),
     ).toBe(7);
+  });
+
+  it("runs wiki tables after convert when --full is set", async () => {
+    const root = await tmpDir();
+    const { run, calls } = fakeRun(0);
+    expect(await runClanClash({ dirAbs: root, full: true, model: "m" }, { run, env: {} })).toBe(0);
+    expect(calls).toHaveLength(2);
+    expect(path.basename(calls[1].args[0])).toBe("generate-wiki-table.mjs");
   });
 
   it("uses LLM_MODEL from the supplied environment", async () => {

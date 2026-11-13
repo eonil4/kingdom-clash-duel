@@ -13,7 +13,7 @@ const RETRY_BASE_MS = 40;
 /**
  * @param {unknown} err
  */
-function isRetryableFsError(err) {
+export function isRetryableFsError(err) {
   if (!err || typeof err !== "object" || !("code" in err)) return false;
   return err.code === "EBUSY" || err.code === "EPERM";
 }
@@ -21,9 +21,21 @@ function isRetryableFsError(err) {
 /**
  * @param {string} filePath
  * @param {unknown} value
- * @param {{ indent?: number }} [options]
+ * @param {{
+ *   indent?: number,
+ *   rename?: (from: string, to: string) => Promise<unknown>,
+ *   delay?: (ms: number) => Promise<unknown>,
+ * }} [options]
  */
-export async function writeJsonAtomic(filePath, value, { indent = 2 } = {}) {
+export async function writeJsonAtomic(
+  filePath,
+  value,
+  {
+    indent = 2,
+    rename = (from, to) => fs.rename(from, to),
+    delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
+  } = {},
+) {
   const dir = path.dirname(filePath);
   await fs.mkdir(dir, { recursive: true });
   const tmpPath = path.join(
@@ -35,7 +47,7 @@ export async function writeJsonAtomic(filePath, value, { indent = 2 } = {}) {
   let lastErr;
   for (let attempt = 0; attempt < RENAME_ATTEMPTS; attempt++) {
     try {
-      await fs.rename(tmpPath, filePath);
+      await rename(tmpPath, filePath);
       return;
     } catch (err) {
       lastErr = err;
@@ -47,7 +59,7 @@ export async function writeJsonAtomic(filePath, value, { indent = 2 } = {}) {
         }
         throw err;
       }
-      await new Promise((resolve) => setTimeout(resolve, RETRY_BASE_MS * (attempt + 1)));
+      await delay(RETRY_BASE_MS * (attempt + 1));
     }
   }
   throw lastErr;

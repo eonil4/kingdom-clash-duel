@@ -71,23 +71,35 @@ export function collectFromRoots(roots) {
 }
 
 /**
+ * CLI body; returns the exit code instead of exiting.
  * @param {string[]} argv
+ * @param {{ log?: (...args: any[]) => void, error?: (...args: any[]) => void }} [deps]
  */
-function main(argv) {
+export function runImportCheck(
+  argv,
+  { log = (...args) => console.log(...args), error = (...args) => console.error(...args) } = {},
+) {
   const args = argv.filter((a) => a !== undefined && a !== "--");
   const roots = args.length > 0 ? args : DEFAULT_ROOTS;
   const files = collectFromRoots(roots);
   const broken = findBrokenImports(files);
   for (const { file, specifier } of broken) {
-    console.error(`MISSING ${file} -> ${specifier}`);
+    error(`MISSING ${file} -> ${specifier}`);
   }
   if (broken.length > 0) {
-    console.error(`${broken.length} broken relative import(s).`);
-    process.exit(1);
+    error(`${broken.length} broken relative import(s).`);
+    return { code: 1, files, broken };
   }
-  console.log(
-    `All relative imports resolve (${files.length} files across ${roots.join(", ")}).`,
-  );
+  log(`All relative imports resolve (${files.length} files across ${roots.join(", ")}).`);
+  return { code: 0, files, broken };
+}
+
+/**
+ * @param {string[]} argv
+ */
+function main(argv) {
+  const { code } = runImportCheck(argv);
+  if (code !== 0) process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

@@ -3,7 +3,11 @@ import fs from "fs/promises";
 import os from "os";
 import path from "path";
 import sharp from "sharp";
-import { ocrEnemyName } from "../../scripts/ocr/ocr-enemy-name.mjs";
+import {
+  ocrEnemyName,
+  refineEnemyNameWithTestFolderCrops,
+  runNameCli,
+} from "../../scripts/ocr/ocr-enemy-name.mjs";
 
 sharp.cache(false);
 
@@ -98,6 +102,38 @@ describe("ocrEnemyName flow", () => {
     );
   });
 
+  it("prefers a top-right line over single-word lines", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) =>
+      call === 8
+        ? {
+            text: "Alpha\nBeta",
+            confidence: 5,
+            lines: [{ text: "HuN MAG", bbox: { x0: 1200, y0: 20 }, confidence: 90 }],
+          }
+        : empty,
+    );
+    const workerRus = fakeRus();
+
+    expect(await ocrEnemyName(file, worker, workerRus)).toBe("HuN MAG");
+  });
+
+  it("falls back to a top-right word when no line matches", async () => {
+    const file = await sampleImage();
+    const worker = fakeWorker((call) =>
+      call === 8
+        ? {
+            text: "Alpha",
+            confidence: 5,
+            words: [{ text: "Kilo", bbox: { x0: 1300, y0: 50 }, confidence: 80 }],
+          }
+        : empty,
+    );
+    const workerRus = fakeRus();
+
+    expect(await ocrEnemyName(file, worker, workerRus)).toBe("Kilo");
+  });
+
   it("runs the Latin repair pass for tight boxes and corrects the leading tag", async () => {
     const file = await sampleImage();
     const worker = fakeWorker((call) =>
@@ -117,5 +153,109 @@ describe("ocrEnemyName flow", () => {
         tessedit_char_whitelist: expect.not.stringMatching(/[А-Яа-я]/),
       }),
     );
+  });
+});
+
+describe("runNameCli", () => {
+  it("creates both workers, runs the OCR and terminates them", async () => {
+    const dir = await fs.mkdtemp(path.join(os.tmpdir(), "kc-name-cli-"));
+    dirs.push(dir);
+    const file = path.join(dir, "shot.png");
+    await fs.writeFile(file, "x");
+
+    const workers: { lang: string; worker: { setParameters: any; terminate: any } }[] = [];
+    const makeWorker = vi.fn(async (lang: string) => {
+      const worker = { setParameters: vi.fn(async () => {}), terminate: vi.fn(async () => {}) };
+      workers.push({ lang, worker });
+      return worker;
+    });
+    const logs: string[] = [];
+    const run = vi.fn(async () => "HuN|TOLDI");
+
+    const code = await runNameCli([file], {
+      makeWorker,
+      run,
+      log: (line) => logs.push(String(line)),
+      error: () => {},
+    });
+
+    expect(code).toBe(0);
+    expect(makeWorker).toHaveBeenCalledWith("eng+rus");
+    expect(makeWorker).toHaveBeenCalledWith("rus");
+    expect(logs).toEqual(["HuN|TOLDI"]);
+    for (const { worker } of workers) {
+      expect(worker.setParameters).toHaveBeenCalledWith({ preserve_interword_spaces: "1" });
+      expect(worker.terminate).toHaveBeenCalled();
+    }
+    expect(await runNameCli([], { log: () => {}, error: () => {} })).toBe(1);
+    expect(
+      await runNameCli([path.join(dir, "missing.png")], { log: () => {}, error: () => {} }),
+    ).toBe(1);
+  });
+});
+
+describe("refineEnemyNameWithTestFolderCrops", () => {
+  async function testFolder(files: Record<string, number | "tiny">) {
+    const root = await fs.mkdtemp(path.join(os.tmpdir(), "kc-ocr-refine-"));
+    dirs.push(root);
+    const dir = path.join(root, "test");
+    await fs.mkdir(dir, { recursive: true });
+    for (const [name, spec] of Object.entries(files)) {
+      const target = path.join(dir, name);
+      if (spec === "tiny") {
+        await sharp({ create: { width: 60, height: 120, channels: 3, background: "#444" } })
+          .png()
+          .toFile(target);
+      } else {
+        await fs.writeFile(target, Buffer.alloc(spec));
+      }
+    }
+    return dir;
+  }
+
+  it("merges name OCR from small reference crops in test folders", async () => {
+    const dir = await testFolder({
+      "Screenshot_full.png": "tiny",
+      "ref.png": "tiny",
+      "001_000_000.png": "tiny",
+      "big.png": 130_000,
+    });
+    const worker = fakeWorker(() => ({ text: String.raw`HuN\TOLDI`, confidence: 90 }));
+
+    const name = await refineEnemyNameWithTestFolderCrops(
+      dir,
+      path.join(dir, "Screenshot_full.png"),
+      "x",
+      worker,
+      fakeRus(),
+    );
+
+    expect(name).toBe(String.raw`HuN\TOLDI`);
+  });
+
+  it("keeps the preliminary name outside test folders or without usable crops", async () => {
+    const outside = await fs.mkdtemp(path.join(os.tmpdir(), "kc-ocr-refine-"));
+    dirs.push(outside);
+    const worker = fakeWorker(() => ({ text: "HuN | TOLDI", confidence: 90 }));
+    expect(
+      await refineEnemyNameWithTestFolderCrops(
+        outside,
+        path.join(outside, "a.png"),
+        " Prelim ",
+        worker,
+        fakeRus(),
+      ),
+    ).toBe("Prelim");
+
+    const onlyPrimary = await testFolder({ "Screenshot_full.png": "tiny", "test.png": "tiny" });
+    expect(
+      await refineEnemyNameWithTestFolderCrops(
+        onlyPrimary,
+        path.join(onlyPrimary, "Screenshot_full.png"),
+        "Prelim",
+        worker,
+        fakeRus(),
+      ),
+    ).toBe("Prelim");
   });
 });

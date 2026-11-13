@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
@@ -7,11 +7,15 @@ import {
   applyRenamePlans,
   buildTargetBasename,
   collectImageFilesInFolderOnly,
+  collectRenamePlansFromDisk,
   collectRenamePlansFromMap,
+  findCanonicalKey,
   getMappingForRename,
   getNestedFolderNode,
   getNestedMapping,
   parseArgs,
+  refreshFileMapWithOcr,
+  runRenameEnemies,
   toMapKey,
   unlinkWithRetry,
 } from "../../scripts/llm/rename-enemies.mjs";
@@ -184,6 +188,171 @@ describe("plan and apply helpers", () => {
     await applyRenamePlans([{ filePath: leftover, newPath: target, mode: "convert" }]);
     expect(await fs.readFile(target, "utf8")).toBe("existing");
     await expect(fs.access(leftover)).rejects.toThrow();
+  });
+});
+
+describe("disk planning and OCR refresh", () => {
+  async function workspaceTmpDir() {
+    const dir = await fs.mkdtemp(path.join(WORKSPACE_ROOT, ".tmp-rename-"));
+    dirs.push(dir);
+    return dir;
+  }
+
+  function relOf(dir: string) {
+    return path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
+  }
+
+  it("plans disk files via originalFileName/canonical pairs", async () => {
+    const dir = await workspaceTmpDir();
+    const rel = relOf(dir);
+    const source = path.join(dir, "Screenshot_1.png");
+    await fs.writeFile(source, "");
+    const map = {
+      [rel]: {
+        "000_000_005-Name.webp": {
+          power: 5,
+          name: "Name",
+          nameLatin: "Name",
+          originalFileName: "Screenshot_1.png",
+        },
+      },
+    };
+
+    expect(await collectRenamePlansFromDisk(map, [source], undefined, new Set())).toEqual([
+      {
+        filePath: source,
+        newPath: path.join(dir, "000_000_005-Name.webp"),
+        mode: "convert",
+      },
+    ]);
+  });
+
+  it("skips used, filtered and unmapped files", async () => {
+    const dir = await workspaceTmpDir();
+    const used = path.join(dir, "used.png");
+    await fs.writeFile(used, "");
+    expect(
+      await collectRenamePlansFromDisk({}, [used], undefined, new Set([path.resolve(used)])),
+    ).toEqual([]);
+
+    const other = path.join(dir, "other.png");
+    await fs.writeFile(other, "");
+    expect(await collectRenamePlansFromDisk({}, [other], "wanted.png", new Set())).toEqual([]);
+
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    expect(await collectRenamePlansFromDisk({}, [other], undefined, new Set())).toEqual([]);
+    expect(String(warn.mock.calls[0][0])).toContain("No mapping for file");
+  });
+
+  it("keeps correct names and renames webp sources", async () => {
+    const dir = await workspaceTmpDir();
+    const rel = relOf(dir);
+    expect(
+      await collectRenamePlansFromDisk(
+        { [rel]: { "000_000_005-Name.webp": { power: 5, name: "Name" } } },
+        [path.join(dir, "000_000_005-Name.webp")],
+        undefined,
+        new Set(),
+      ),
+    ).toEqual([]);
+
+    const webp = path.join(dir, "Screenshot_1.webp");
+    await fs.writeFile(webp, "");
+    const plans = await collectRenamePlansFromDisk(
+      {
+        [rel]: {
+          "000_000_005-Name.webp": {
+            power: 5,
+            name: "Name",
+            originalFileName: "Screenshot_1.webp",
+          },
+        },
+      },
+      [webp],
+      undefined,
+      new Set(),
+    );
+    expect(plans).toEqual([
+      { filePath: webp, newPath: path.join(dir, "000_000_005-Name.webp"), mode: "rename" },
+    ]);
+  });
+
+  it("finds direct and nested canonical keys", () => {
+    const entry = { power: 1, name: "N" };
+    const folderNode = { "000_000_001-N.webp": entry, nestedFolder: { "002.webp": {} } };
+    expect(findCanonicalKey(folderNode, entry)).toBe("000_000_001-N.webp");
+    expect(findCanonicalKey(folderNode, folderNode.nestedFolder)).toBeNull();
+    expect(findCanonicalKey({}, entry)).toBeNull();
+  });
+
+  it("wraps the OCR refresh child process", async () => {
+    const { EventEmitter } = await import("events");
+    const child = new EventEmitter();
+    const spawnFn = vi.fn(() => child);
+    const running = refreshFileMapWithOcr({ only: "x.png" }, spawnFn as never);
+    child.emit("exit", 0);
+    await expect(running).resolves.toBeUndefined();
+    expect(spawnFn).toHaveBeenCalledWith(
+      process.execPath,
+      expect.arrayContaining(["--only", "x.png"]),
+      expect.anything(),
+    );
+
+    const failingChild = new EventEmitter();
+    const failing = refreshFileMapWithOcr({}, (() => failingChild) as never);
+    failingChild.emit("exit", 2);
+    await expect(failing).rejects.toThrow("exit code 2");
+  });
+});
+
+describe("runRenameEnemies", () => {
+  it("skips OCR, scans folders and applies sorted plans", async () => {
+    const dir = await fs.mkdtemp(path.join(WORKSPACE_ROOT, ".tmp-rename-"));
+    dirs.push(dir);
+    const rel = path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
+    const source = path.join(dir, "Screenshot_1.png");
+    await fs.writeFile(source, "");
+    const map = {
+      [rel]: {
+        "000_000_005-Name.webp": {
+          power: 5,
+          name: "Name",
+          nameLatin: "Name",
+          originalFileName: "Screenshot_1.png",
+        },
+      },
+    };
+    const logs: string[] = [];
+    const apply = vi.fn(async () => {});
+
+    const result = await runRenameEnemies(["--skip-ocr"], {
+      loadMap: async () => map,
+      loadFolders: async () => [{ absPath: dir, relPath: rel }],
+      collect: async () => [source],
+      apply,
+      log: (line) => logs.push(String(line)),
+    });
+
+    expect(result.renamePlans).toHaveLength(1);
+    expect(apply).toHaveBeenCalledWith(result.renamePlans);
+    expect(logs.join("\n")).toContain("Skipping OCR");
+    expect(logs.join("\n")).toContain("Applying 1");
+  });
+
+  it("refreshes the map when OCR is not skipped", async () => {
+    const refresh = vi.fn(async () => {});
+    const logs: string[] = [];
+    await runRenameEnemies([], {
+      loadMap: async () => ({}),
+      loadFolders: async () => [],
+      collect: async () => [],
+      refresh,
+      apply: async () => {},
+      log: (line) => logs.push(String(line)),
+    });
+    expect(refresh).toHaveBeenCalledWith({ only: undefined });
+    expect(logs[0]).toContain("Refreshing");
+    expect(logs.join("\n")).toContain("Configured folders: (none)");
   });
 });
 

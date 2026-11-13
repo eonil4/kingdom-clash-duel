@@ -53,8 +53,13 @@ export function parseArgs(argv) {
   return { input, output, left, top, width, height };
 }
 
-async function main() {
-  const { input, output, left, top, width, height } = parseArgs(process.argv.slice(2));
+/**
+ * Crop one region and write it; throws on missing input or out-of-bounds crops.
+ * @param {string[]} argv
+ * @param {{ log?: (...args: any[]) => void }} [deps]
+ */
+export async function runExtractImage(argv, { log = (...args) => console.log(...args) } = {}) {
+  const { input, output, left, top, width, height } = parseArgs(argv);
 
   const inputAbs = path.resolve(input);
   const outputAbs = path.resolve(output);
@@ -62,22 +67,19 @@ async function main() {
   try {
     await fs.access(inputAbs);
   } catch {
-    console.error(`Input image not found: ${inputAbs}`);
-    process.exit(1);
+    throw new Error(`Input image not found: ${inputAbs}`);
   }
 
   const meta = await sharp(inputAbs).metadata();
   if (!meta.width || !meta.height) {
-    console.error(`Could not read image dimensions: ${inputAbs}`);
-    process.exit(1);
+    throw new Error(`Could not read image dimensions: ${inputAbs}`);
   }
 
   if (left + width > meta.width || top + height > meta.height) {
-    console.error(
+    throw new Error(
       `Crop out of bounds: requested (${left},${top}) ${width}x${height} ` +
         `but image is ${meta.width}x${meta.height}`,
     );
-    process.exit(1);
   }
 
   await fs.mkdir(path.dirname(outputAbs), { recursive: true });
@@ -86,11 +88,16 @@ async function main() {
     .extract({ left, top, width, height })
     .toFile(outputAbs);
 
-  console.log(
+  log(
     `Extracted ${width}x${height} at (${left},${top}) from ${meta.width}x${meta.height}`,
   );
-  console.log(`  ${inputAbs}`);
-  console.log(`  -> ${outputAbs}`);
+  log(`  ${inputAbs}`);
+  log(`  -> ${outputAbs}`);
+  return { inputAbs, outputAbs, meta };
+}
+
+async function main() {
+  await runExtractImage(process.argv.slice(2));
 }
 
 if (isMain(import.meta.url)) {

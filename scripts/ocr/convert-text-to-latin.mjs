@@ -151,14 +151,28 @@ export function convertTextToLatinArtifacts(displayName) {
 }
 
 
-async function cliMain() {
-  const argv = process.argv.slice(2).filter((a) => a !== "--");
-  const text = argv.join(" ").trim();
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} [argv]
+ * @param {{ log?: (...args: any[]) => void, error?: (...args: any[]) => void }} [deps]
+ */
+export function runConvertTextCli(
+  argv = process.argv.slice(2),
+  { log = (...args) => console.log(...args), error = (...args) => console.error(...args) } = {},
+) {
+  const args = argv.filter((a) => a !== "--");
+  const text = args.join(" ").trim();
   if (!text) {
-    console.error('Usage: node scripts/ocr/convert-text-to-latin.mjs "Some Name"');
-    process.exit(1);
+    error('Usage: node scripts/ocr/convert-text-to-latin.mjs "Some Name"');
+    return 1;
   }
-  console.log(JSON.stringify(convertTextToLatinArtifacts(text), null, 2));
+  log(JSON.stringify(convertTextToLatinArtifacts(text), null, 2));
+  return 0;
+}
+
+async function cliMain() {
+  const code = runConvertTextCli();
+  if (code !== 0) process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

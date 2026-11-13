@@ -1,8 +1,11 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
-import { writeJsonAtomic } from "../../scripts/atomic-json.mjs";
+import {
+  isRetryableFsError,
+  writeJsonAtomic,
+} from "../../scripts/atomic-json.mjs";
 
 const dirs: string[] = [];
 
@@ -16,6 +19,36 @@ afterEach(async () => {
   for (const dir of dirs.splice(0)) {
     await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
   }
+});
+
+describe("rename retries", () => {
+  it("retries EBUSY and EPERM but not other errors", async () => {
+    const dir = await tmpDir();
+    const target = path.join(dir, "x.json");
+    const busy = Object.assign(new Error("busy"), { code: "EBUSY" });
+    const rename = vi
+      .fn()
+      .mockRejectedValueOnce(busy)
+      .mockRejectedValueOnce(Object.assign(new Error("perm"), { code: "EPERM" }))
+      .mockResolvedValueOnce(undefined);
+    const delay = vi.fn(async () => {});
+
+    await writeJsonAtomic(target, { a: 1 }, { rename, delay });
+    expect(rename).toHaveBeenCalledTimes(3);
+    expect(delay).toHaveBeenCalledTimes(2);
+
+    const denied = Object.assign(new Error("denied"), { code: "EACCES" });
+    await expect(
+      writeJsonAtomic(path.join(dir, "y.json"), { a: 1 }, {
+        rename: vi.fn().mockRejectedValue(denied),
+        delay,
+      }),
+    ).rejects.toThrow("denied");
+    expect(isRetryableFsError(busy)).toBe(true);
+    expect(isRetryableFsError(denied)).toBe(false);
+    expect(isRetryableFsError(null)).toBe(false);
+    await expect(fs.access(path.join(dir, "y.json"))).rejects.toThrow();
+  });
 });
 
 describe("writeJsonAtomic", () => {

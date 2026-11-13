@@ -82,6 +82,8 @@ export async function runExtraction({
   force = false,
   logProcessing = true,
   logError,
+  mapLoader = loadEnemyMap,
+  mapSaver = saveEnemyMap,
 }) {
   assertStrategy(strategy);
 
@@ -100,7 +102,7 @@ export async function runExtraction({
   // Nothing to do: skip strategy.prepare() so CLIs don't spawn workers/connect for a no-op run.
   if (totalFiles === 0) return stats;
 
-  const mapRoot = map ? await loadEnemyMap() : undefined;
+  const mapRoot = map ? await mapLoader() : undefined;
   const sourceIndex = map ? buildEnemySourceIndex(mapRoot) : undefined;
   if (sourceIndex) log.debug(`[Debug] indexed ${sourceIndex.size} known source(s)`);
   let mapDirty = false;
@@ -245,7 +247,7 @@ export async function runExtraction({
   // Persist the nested map once per run instead of after every file. Per-file records
   // are already stored in data.json by writeFolderEntries above.
   if (map && mapDirty) {
-    await saveEnemyMap(mapRoot);
+    await mapSaver(mapRoot);
     log.info("\t[Data] saved data.json");
   }
 

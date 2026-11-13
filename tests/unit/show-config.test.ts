@@ -1,8 +1,13 @@
 import { describe, expect, it } from "vitest";
+import fs from "fs/promises";
+import os from "os";
+import path from "path";
 import {
   composeConfigSummary,
   formatSource,
   loadConfig,
+  loadEnvLocal,
+  runShowConfig,
 } from "../../scripts/llm/show-llm-config.mjs";
 
 describe("show-llm-config", () => {
@@ -46,6 +51,33 @@ describe("show-llm-config", () => {
     expect(defaults.tokenSource).toBeNull();
     expect(defaults.skipCacheClearFlag).toEqual({ value: null, source: null });
     expect(defaults.clearPredictionCacheBeforeRun).toEqual({ value: false, source: "config" });
+  });
+
+  it("loads .env.local when present and returns {} otherwise", async () => {
+    const dir = await fs.mkdtemp(path.join(os.tmpdir(), "kc-env-"));
+    const file = path.join(dir, ".env.local");
+    await fs.writeFile(file, "LLM_HOST=local-host\n");
+    const saved = process.env.LLM_HOST;
+    try {
+      expect(loadEnvLocal(file)).toMatchObject({ LLM_HOST: "local-host" });
+    } finally {
+      if (saved === undefined) delete process.env.LLM_HOST;
+      else process.env.LLM_HOST = saved;
+    }
+    expect(loadEnvLocal(path.join(dir, "missing"))).toEqual({});
+    await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
+  });
+
+  it("prints the summary and file pointers", () => {
+    const logs: string[] = [];
+    const out = runShowConfig({
+      config: { host: "cfg" },
+      envLocal: { LLM_MODEL: "m" },
+      log: (line) => logs.push(String(line)),
+    });
+    expect(out.model).toEqual({ value: "m", source: ".env.local" });
+    expect(logs.join("\n")).toContain("Files:");
+    expect(logs.join("\n")).toContain("config:");
   });
 
   it("loads config/llm.json including the ROI reference", async () => {

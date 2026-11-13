@@ -51,7 +51,7 @@ export function parseArgs(argv) {
 /**
  * @param {string} filePath
  */
-async function readArmy(filePath) {
+export async function readArmy(filePath) {
   const abs = path.resolve(filePath);
   const raw = await fs.readFile(abs, "utf8");
   return { abs, data: JSON.parse(raw) };

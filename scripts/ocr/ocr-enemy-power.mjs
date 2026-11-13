@@ -70,26 +70,42 @@ export async function ocrEnemyPower(filePath, worker, options = {}) {
 }
 
 
-async function cliMain() {
-  const imgPath = process.argv[2];
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} [argv]
+ * @param {{ makeWorker?: () => Promise<any>, log?: (...args: any[]) => void, error?: (...args: any[]) => void }} [deps]
+ */
+export async function runEnemyPowerCli(
+  argv = process.argv.slice(2),
+  { makeWorker = () => createWorker("eng"), log = console.log, error = console.error } = {},
+) {
+  const [imgPath] = argv;
   if (!imgPath) {
-    console.error("Usage: node scripts/ocr-enemy-power.mjs <image.png>");
-    process.exit(1);
+    error("Usage: node scripts/ocr-enemy-power.mjs <image.png>");
+    return 1;
   }
   const resolved = path.resolve(imgPath);
-  await fs.access(resolved).catch(() => {
-    console.error(`Not found: ${resolved}`);
-    process.exit(1);
-  });
+  try {
+    await fs.access(resolved);
+  } catch {
+    error(`Not found: ${resolved}`);
+    return 1;
+  }
 
-  const worker = await createWorker("eng");
+  const worker = await makeWorker();
   try {
     await worker.setParameters({ preserve_interword_spaces: "1" });
     const power = await ocrEnemyPower(resolved, worker);
-    console.log(power === undefined ? "" : String(power));
+    log(power === undefined ? "" : String(power));
+    return 0;
   } finally {
     await worker.terminate();
   }
+}
+
+async function cliMain() {
+  const code = await runEnemyPowerCli();
+  if (code !== 0) process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

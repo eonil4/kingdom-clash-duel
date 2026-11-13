@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
@@ -11,6 +11,7 @@ import {
   parseScalePercent,
   parseSortDir,
   resolveFolderPaths,
+  runMatrixCli,
   runMatrixGenerator,
 } from "../../scripts/generate-wiki-matrix.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
@@ -142,10 +143,54 @@ describe("runMatrixGenerator", () => {
     expect(byWidth.html).toContain("Reset (50%)");
   });
 
+  it("covers explicit dimensions, extension filters and enemy-only views", async () => {
+    const dir = await sampleFolder();
+    const sized = await runMatrixGenerator(
+      parseArgs([dir, "--width", "300", "--height", "600", "--view", "enemy"]),
+    );
+    expect(sized.sections).toEqual(["Enemies"]);
+    expect(sized.html).toContain('width="300" height="600"');
+
+    const pngOnly = await runMatrixGenerator(parseArgs([dir, "png"]));
+    expect(pngOnly.totalDuels).toBe(1);
+
+    const noFrame = await runMatrixGenerator(
+      parseArgs([dir, "--single-table", "--no-frame", "--max-height", "none"]),
+    );
+    expect(noFrame.html).not.toContain("max-height:");
+  });
+
   it("reports an empty result when no file matches the separator", async () => {
     const dir = await tmpDir();
     await fs.writeFile(path.join(dir, "noduel.png"), "");
     const result = await runMatrixGenerator(parseArgs([dir]));
     expect(result).toEqual({ empty: true, targetFolder: dir });
+  });
+});
+
+describe("runMatrixCli", () => {
+  it("prints a summary for generated matrices", async () => {
+    const dir = await sampleFolder();
+    const logs: string[] = [];
+    const { code, result } = await runMatrixCli([dir], {
+      log: (line) => logs.push(String(line)),
+    });
+    expect(code).toBe(0);
+    expect(result?.sections).toEqual(["Enemies", "Clan"]);
+    expect(logs.join("\n")).toContain("Successfully generated");
+    expect(logs.join("\n")).toContain("Mode: row-scroll");
+  });
+
+  it("returns code 1 without a folder and 0 for empty folders", async () => {
+    const error = vi.spyOn(console, "error").mockImplementation(() => {});
+    expect(await runMatrixCli([])).toEqual({ code: 1 });
+    expect(error).toHaveBeenCalled();
+
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "noduel.png"), "");
+    const logs: string[] = [];
+    const empty = await runMatrixCli([dir], { log: (line) => logs.push(String(line)) });
+    expect(empty.code).toBe(0);
+    expect(logs[0]).toContain("No duel images");
   });
 });

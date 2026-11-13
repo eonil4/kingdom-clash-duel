@@ -1,7 +1,8 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
+import sharp from "sharp";
 import { runExtraction } from "../../scripts/pipeline/run-extraction.mjs";
 import { readFolderEntries } from "../../scripts/pipeline/data-json-store.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
@@ -199,5 +200,64 @@ describe("runExtraction map path", () => {
 
     expect(stats).toMatchObject({ converted: 1, skipped: 0, failed: 0 });
     expect(strategy.calls).toEqual(["prepare", "dispose"]);
+  });
+
+  it("extracts and saves the map when force bypasses map-only reuse", async () => {
+    const { dir, files } = await seedFolder(["a.png"]);
+    const strategy = fakeStrategy();
+    const saver = vi.fn(async () => {});
+    const map = {};
+
+    const stats = await runExtraction({
+      folders: [{ absPath: dir, files }],
+      strategy,
+      map: true,
+      force: true,
+      webp: false,
+      mapLoader: async () => map,
+      mapSaver: saver,
+    });
+
+    expect(stats).toMatchObject({ converted: 1, skipped: 0, failed: 0 });
+    expect(strategy.calls).toContain("extract:a.png");
+    expect(saver).toHaveBeenCalledWith(map);
+  });
+
+  it("converts map-only rows to webp and saves the map once", async () => {
+    const dir = path.join(WORKSPACE_ROOT, "data", "clan_clash", "2099-01-06");
+    dirs.push(dir);
+    await fs.mkdir(dir, { recursive: true });
+    const source = path.join(dir, "Screenshot_1.png");
+    await sharp({ create: { width: 8, height: 4, channels: 3, background: "#000" } })
+      .png()
+      .toFile(source);
+    const rel = path.relative(WORKSPACE_ROOT, dir).split(path.sep).join("/");
+    const canonical = "000_000_005-Name.webp";
+    const map = {
+      [rel]: {
+        [canonical]: {
+          power: 5,
+          name: "Name",
+          nameLatin: "Name",
+          originalFileName: "Screenshot_1.png",
+        },
+      },
+    };
+    const saver = vi.fn(async () => {});
+    const strategy = fakeStrategy();
+
+    const stats = await runExtraction({
+      folders: [{ absPath: dir, files: [source] }],
+      strategy,
+      map: true,
+      webp: true,
+      mapLoader: async () => map,
+      mapSaver: saver,
+    });
+
+    expect(stats).toMatchObject({ converted: 0, convertedFromMap: 1, skipped: 0, failed: 0 });
+    expect(saver).toHaveBeenCalledWith(map);
+    expect(strategy.calls).toEqual(["prepare", "dispose"]);
+    await expect(fs.access(path.join(dir, canonical))).resolves.toBeUndefined();
   });
 });

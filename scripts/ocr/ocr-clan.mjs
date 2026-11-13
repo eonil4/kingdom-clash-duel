@@ -53,46 +53,73 @@ export async function discoverClanFolders(workspaceRoot = WORKSPACE_ROOT) {
   return out.sort((a, b) => a.relPath.localeCompare(b.relPath));
 }
 
-async function main() {
-  const { limit, only, debugCrops, forceOcr } = parseScanArgs(process.argv.slice(2));
+/**
+ * @param {string[]} [argv]
+ * @param {{
+ *   discover?: typeof discoverClanFolders,
+ *   collect?: typeof collectImageFiles,
+ *   run?: typeof runExtraction,
+ *   config?: object,
+ *   makeStrategy?: (options: object) => any,
+ *   log?: (...args: any[]) => void,
+ *   warn?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runOcrClanScan(argv = process.argv.slice(2), deps = {}) {
+  const {
+    discover = discoverClanFolders,
+    collect = collectImageFiles,
+    run = runExtraction,
+    config = loadLlmConfig(),
+    makeStrategy = (options) => createOcrStrategy(options),
+    log = (...args) => console.log(...args),
+    warn = (...args) => console.warn(...args),
+  } = deps;
 
-  const clanFolders = await discoverClanFolders();
+  const { limit, only, debugCrops, forceOcr } = parseScanArgs(argv);
+
+  const clanFolders = await discover();
   let all = [];
   for (const folder of clanFolders) {
-    all.push(...(await collectImageFiles(folder.absPath)));
+    all.push(...(await collect(folder.absPath)));
   }
 
   const targets = selectTargets(all, { only, limit });
 
-  console.log(`Scanning workspace: ${WORKSPACE_ROOT}`);
-  console.log(
+  log(`Scanning workspace: ${WORKSPACE_ROOT}`);
+  log(
     `Clan folders: ${
       clanFolders.length > 0 ? clanFolders.map((f) => f.relPath).join(", ") : "(none)"
     }`,
   );
-  console.log(`Images: ${targets.length}`);
+  log(`Images: ${targets.length}`);
 
-  const stats = await runExtraction({
+  const stats = await run({
     folders: groupFilesByFolder(targets),
-    strategy: createOcrStrategy({
+    strategy: makeStrategy({
       force: forceOcr,
       debugCrops,
       targetKey: "clan",
-      config: loadLlmConfig(),
+      config,
     }),
     webp: false,
     map: false,
     recordTiming: false,
     logProcessing: false,
     logError: (err, { filePath }) => {
-      console.warn(`Failed OCR: ${filePath}`);
-      console.warn(err);
+      warn(`Failed OCR: ${filePath}`);
+      warn(err);
     },
   });
 
   if (stats.writtenDataFiles.size > 0) {
-    console.log(`Updated ${stats.writtenDataFiles.size} data.json file(s)`);
+    log(`Updated ${stats.writtenDataFiles.size} data.json file(s)`);
   }
+  return stats;
+}
+
+async function main() {
+  await runOcrClanScan();
 }
 
 if (isMain(import.meta.url)) {

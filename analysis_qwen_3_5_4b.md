@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 44 source files, 8,274 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 44 source files, 8,643 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -42,7 +42,7 @@ C. Armies → deterministic battle report
 
 Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, atomic JSON writes, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **40 files / 312 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **41 files / 358 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -246,7 +246,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR works offline: workers use the bundled `eng.traineddata`/`rus.traineddata` at the repo root (`langPath`, `gzip:false`, temp cache), falling back to tesseract.js's download only when those files are absent; a sample run created no download cache.
 - Typed usage errors: `extract_image` and `run-battle` parsers now throw `UsageError` (`cli.mjs`) instead of calling `process.exit`, so they are reusable/testable; the CLIs print the message + usage and exit 1.
 - Leveled logging: pipeline chatter goes through `log.mjs` (`LOG_LEVEL=silent|error|warn|info|debug`, default info); `debug` adds per-file timings and the indexed-source count. Verified on a real clan run (`[Debug] … 2546ms`).
-- Coverage in CI: `@vitest/coverage-v8` + `pnpm test:coverage` (V8, `scripts/**/*.mjs`). Baseline was 56.2% statements / 78.2% branches / 61.2% functions; the coverage push lifted it to **84.0 / 81.4 / 84.3** and the thresholds were ratcheted to 83/80/83/83. The last step exported clan-clash's run/discovery helpers and covered them with an injected runner (45% → 91% stmts), and seeded a mapped folder under `data/clan_clash` for the runner's webp-exists and map-only branches (run-extraction 62% → 82% stmts). The push added generated-image + fake-worker OCR flow tests, a stubbed-`fetch` vision-client suite, a synthetic end-to-end battle run, matrix/table generation over temp folders, evaluator summary extraction, rename plan/apply helpers and per-module error paths (39 files / 298 tests). The Linux CI leg runs the coverage job.
+- Coverage in CI: `@vitest/coverage-v8` + `pnpm test:coverage` (V8, `scripts/**/*.mjs`; the manual LM Studio `run-llm-real-test.mjs` is excluded). Baseline was 56.2% statements / 78.2% branches / 61.2% functions; successive pushes lifted it to **93.8 / 82.5 / 82.7** with thresholds 93/81/81/93. The final push exported the remaining run helpers (`runMatrixCli`, `runConvert`, `runVisionExtract`, `runRenameEnemies`, `runOcrEnemyScan`, `runOcrClanScan`, `runClanClash`, `runClanOcrEval`, `runImportCheck`, `runExtractImage`, `runEnemyPowerCli`, `runNameCli`, `runConvertTextCli`, `runShowConfig`, `runWikiTableCli`), made atomic rename and the runner's map I/O injectable, and covered OCR refinement/fallbacks, evaluator runs, gear/error paths and CLI summaries. Remaining gaps are `main()` wrappers that call `process.exit`, live-service/child-process failure branches, and platform-specific paths. The push added generated-image + fake-worker OCR flow tests, a stubbed-`fetch` vision-client suite, a synthetic end-to-end battle run, matrix/table generation over temp folders, evaluator summary extraction, rename plan/apply helpers and per-module error paths (39 files / 298 tests). The Linux CI leg runs the coverage job.
 - Self-describing galleries: `html-document.mjs` wraps both generators in `<!DOCTYPE html><html lang="en">` with charset/viewport/title, and matrix headers now carry `scope="col"/"row"`; `escapeHtml` is shared from the helper.
 
 ### P3-6 Strong points worth keeping
@@ -308,7 +308,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 312/312)
+pnpm test:unit                       # must stay green (currently 358/358)
 pnpm test:coverage                   # V8 coverage + thresholds
 pnpm check:imports                   # relative specifiers resolve in scripts/ and tests/
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report

@@ -37,10 +37,32 @@ export function isFullScreenshotForOcr(folderAbsPath, filePath) {
   return /^screenshot_/i.test(base);
 }
 
-async function main() {
-  const { limit, only, debugCrops, forceOcr } = parseScanArgs(process.argv.slice(2));
+/**
+ * @param {string[]} [argv]
+ * @param {{
+ *   loadFolders?: typeof loadConfiguredFolders,
+ *   collect?: typeof collectImageFiles,
+ *   run?: typeof runExtraction,
+ *   config?: object,
+ *   makeStrategy?: (options: object) => any,
+ *   log?: (...args: any[]) => void,
+ *   warn?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runOcrEnemyScan(argv = process.argv.slice(2), deps = {}) {
+  const {
+    loadFolders = loadConfiguredFolders,
+    collect = collectImageFiles,
+    run = runExtraction,
+    config = loadLlmConfig(),
+    makeStrategy = (options) => createOcrStrategy(options),
+    log = (...args) => console.log(...args),
+    warn = (...args) => console.warn(...args),
+  } = deps;
 
-  const configuredFolders = await loadConfiguredFolders();
+  const { limit, only, debugCrops, forceOcr } = parseScanArgs(argv);
+
+  const configuredFolders = await loadFolders();
   let all = [];
   if (configuredFolders.length > 0) {
     for (const folder of configuredFolders) {
@@ -48,51 +70,56 @@ async function main() {
       try {
         const stat = await fs.stat(folderPath);
         if (!stat.isDirectory()) {
-          console.warn(`Configured path is not a folder, skipping: ${folderPath}`);
+          warn(`Configured path is not a folder, skipping: ${folderPath}`);
           continue;
         }
-        const inFolder = await collectImageFiles(folderPath);
+        const inFolder = await collect(folderPath);
         for (const fp of inFolder) {
           if (!isFullScreenshotForOcr(folderPath, fp)) {
-            console.log(`Skipping reference crop in test/: ${toMapKey(fp)}`);
+            log(`Skipping reference crop in test/: ${toMapKey(fp)}`);
             continue;
           }
           all.push(fp);
         }
       } catch {
-        console.warn(`Configured folder not found, skipping: ${folderPath}`);
+        warn(`Configured folder not found, skipping: ${folderPath}`);
       }
     }
   }
 
   const targets = selectTargets(all, { only, limit });
 
-  console.log(`Scanning workspace: ${WORKSPACE_ROOT}`);
-  console.log(
+  log(`Scanning workspace: ${WORKSPACE_ROOT}`);
+  log(
     `Configured folders: ${
       configuredFolders.length > 0
         ? configuredFolders.map((f) => f.relPath).join(", ")
         : "(none)"
     }`,
   );
-  console.log(`Images: ${targets.length}`);
+  log(`Images: ${targets.length}`);
 
-  const stats = await runExtraction({
+  const stats = await run({
     folders: groupFilesByFolder(targets),
-    strategy: createOcrStrategy({ force: forceOcr, debugCrops, config: loadLlmConfig() }),
+    strategy: makeStrategy({ force: forceOcr, debugCrops, config }),
     webp: false,
     map: false,
     recordTiming: false,
     logProcessing: false,
     logError: (err, { filePath }) => {
-      console.warn(`Failed OCR: ${filePath}`);
-      console.warn(err);
+      warn(`Failed OCR: ${filePath}`);
+      warn(err);
     },
   });
 
   if (stats.writtenDataFiles.size > 0) {
-    console.log(`Updated ${stats.writtenDataFiles.size} data.json file(s)`);
+    log(`Updated ${stats.writtenDataFiles.size} data.json file(s)`);
   }
+  return stats;
+}
+
+async function main() {
+  await runOcrEnemyScan();
 }
 
 if (isMain(import.meta.url)) {

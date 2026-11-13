@@ -16,6 +16,7 @@ import {
   resolveHost,
   resolveUserPromptImage,
   resolveVisionModel,
+  runVisionExtract,
   upsertDataJsonForImage,
 } from "../../scripts/llm/vision-client.mjs";
 
@@ -272,6 +273,16 @@ describe("createVisionTarget", () => {
     await expect(
       target.extractFromScreenshot(file, { model: "vision", clearCacheBeforeEachCall: false }),
     ).rejects.toThrow("empty message");
+
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => {
+        throw new Error("ECONNREFUSED");
+      }),
+    );
+    await expect(
+      target.extractFromScreenshot(file, { model: "vision", clearCacheBeforeEachCall: false }),
+    ).rejects.toThrow("Cannot reach LM Studio");
   });
 });
 
@@ -285,6 +296,103 @@ describe("ROI cropping", () => {
     await expect(
       cropRoiToPngBuffer(file, { x: 0, y: 0, width: 0, height: 0 }),
     ).rejects.toThrow("Invalid ROI");
+  });
+});
+
+describe("runVisionExtract", () => {
+  function fakeTarget() {
+    const calls: unknown[] = [];
+    return {
+      calls,
+      async resolveModel(_host: string, model?: string) {
+        return model ?? "resolved-model";
+      },
+      async extractFromScreenshot(file: string, options: unknown) {
+        calls.push({ file, options });
+        return { name: "Alpha", nameLatin: "Alpha", power: 123 };
+      },
+    };
+  }
+
+  it("extracts, writes data.json and appends the folder log", async () => {
+    const dir = await tmpDir();
+    const file = path.join(dir, "shot.png");
+    await fs.writeFile(file, "x");
+    const target = fakeTarget();
+    const logs: string[] = [];
+
+    const outcome = await runVisionExtract({
+      argv: [file],
+      target: target as never,
+      logPerFolder: true,
+      host: "http://h",
+      model: "m",
+      env: {},
+      config: {},
+      reconcile: async () => {},
+      log: (line) => logs.push(String(line)),
+    });
+
+    expect(outcome.result).toMatchObject({ power: 123 });
+    expect(outcome.dataPath).toBe(path.join(dir, "data.json"));
+    const entries = JSON.parse(await fs.readFile(path.join(dir, "data.json"), "utf8"));
+    expect(entries["shot.png"]).toMatchObject({
+      name: "Alpha",
+      canonical: "000_000_123-Alpha.webp",
+    });
+    expect(await fs.readFile(path.join(dir, "log.txt"), "utf8")).toContain(
+      "shot.png processed",
+    );
+    expect(logs.join("\n")).toContain("Model: m");
+  });
+
+  it("skips already-recorded images and reports usage", async () => {
+    const dir = await tmpDir();
+    const file = path.join(dir, "shot.png");
+    await fs.writeFile(file, "x");
+    await fs.writeFile(
+      path.join(dir, "data.json"),
+      JSON.stringify({ "shot.png": { name: "X", power: 1 } }),
+    );
+    const target = fakeTarget();
+
+    const skipped = await runVisionExtract({
+      argv: [file],
+      target: target as never,
+      env: {},
+      config: {},
+      reconcile: async () => {},
+      log: () => {},
+    });
+
+    expect(skipped).toMatchObject({ skipped: true });
+    expect(target.calls).toHaveLength(0);
+    expect(
+      await runVisionExtract({ argv: [], target: target as never, env: {}, config: {} }),
+    ).toEqual({ usage: true });
+  });
+
+  it("still returns the result when writing data.json fails", async () => {
+    const dir = await tmpDir();
+    const file = path.join(dir, "shot.png");
+    await fs.writeFile(file, "x");
+    const warns: string[] = [];
+
+    const outcome = await runVisionExtract({
+      argv: [file],
+      target: fakeTarget() as never,
+      env: {},
+      config: {},
+      reconcile: async () => {},
+      upsert: async () => {
+        throw new Error("disk full");
+      },
+      warn: (...args) => warns.push(args.join(" ")),
+      log: () => {},
+    });
+
+    expect(outcome.result).toBeTruthy();
+    expect(warns.join("\n")).toContain("disk full");
   });
 });
 

@@ -146,13 +146,16 @@ function parseArgs(argv) {
   return args;
 }
 
-async function main() {
-  const { labels, limit, verbose } = parseArgs(process.argv.slice(2));
-  const labelsPath = path.resolve(WORKSPACE_ROOT, labels);
-  const fixture = JSON.parse(await fs.readFile(labelsPath, "utf8"));
-  const images = fixture.images.slice(0, typeof limit === "number" ? limit : fixture.images.length);
-
-  const strategy = createOcrStrategy({ targetKey: "clan", config: loadLlmConfig() });
+/**
+ * Run the strategy over labelled samples and collect comparison rows.
+ * @param {{ labels: { images: { path: string, name: string, power: number }[] }, limit?: number, strategy: any }} options
+ */
+export async function evaluateClanFixture({ labels, limit, strategy }) {
+  const images = labels.images.slice(
+    0,
+    typeof limit === "number" ? limit : labels.images.length,
+  );
+  /** @type {ClanOcrRow[]} */
   const rows = [];
   await strategy.prepare();
   try {
@@ -175,30 +178,74 @@ async function main() {
           power: outcome.record.power,
         });
       } catch (err) {
-        rows.push({ item, actual: "", power: undefined, note: err instanceof Error ? err.message : String(err) });
+        rows.push({
+          item,
+          actual: "",
+          power: undefined,
+          note: err instanceof Error ? err.message : String(err),
+        });
       }
     }
   } finally {
     await strategy.dispose();
   }
+  return rows;
+}
 
-  if (rows.length === 0) {
-    console.log("no samples matched (check --labels/--limit)");
-    return;
-  }
-
-  const summary = evaluateClanRows(rows, { verbose });
-  for (const line of summary.failureLines) console.log(line);
-  console.log("");
-  console.log(`samples: ${summary.samples}`);
-  console.log(`name exact: ${summary.nameOk}/${summary.samples} (${summary.namePct}%)`);
-  console.log(`name similarity: ${summary.similarityPct}%`);
-  console.log(`power exact: ${summary.powerOk}/${summary.samples} (${summary.powerPct}%)`);
+/**
+ * @param {ReturnType<typeof evaluateClanRows>} summary
+ * @param {(...args: any[]) => void} [log]
+ */
+export function reportClanEvaluation(summary, log = (...args) => console.log(...args)) {
+  for (const line of summary.failureLines) log(line);
+  log("");
+  log(`samples: ${summary.samples}`);
+  log(`name exact: ${summary.nameOk}/${summary.samples} (${summary.namePct}%)`);
+  log(`name similarity: ${summary.similarityPct}%`);
+  log(`power exact: ${summary.powerOk}/${summary.samples} (${summary.powerPct}%)`);
   for (const group of summary.groups) {
-    console.log(
+    log(
       `${group.label.padEnd(9)} n=${group.n} name exact ${group.exact}/${group.n}, similarity ${group.similarityPct}%`,
     );
   }
+}
+
+/**
+ * CLI body: load labels, evaluate, report.
+ * @param {string[]} [argv]
+ * @param {{
+ *   loadLabels?: (labelsPath: string) => Promise<{ images: { path: string, name: string, power: number }[] }>,
+ *   makeStrategy?: () => any,
+ *   log?: (...args: any[]) => void,
+ *   root?: string,
+ * }} [deps]
+ */
+export async function runClanOcrEval(
+  argv = process.argv.slice(2),
+  {
+    loadLabels = (labelsPath) => fs.readFile(labelsPath, "utf8").then(JSON.parse),
+    makeStrategy = () => createOcrStrategy({ targetKey: "clan", config: loadLlmConfig() }),
+    log = (...args) => console.log(...args),
+    root = WORKSPACE_ROOT,
+  } = {},
+) {
+  const { labels, limit, verbose } = parseArgs(argv);
+  const fixture = await loadLabels(path.resolve(root, labels));
+  const strategy = makeStrategy();
+  const rows = await evaluateClanFixture({ labels: fixture, limit, strategy });
+
+  if (rows.length === 0) {
+    log("no samples matched (check --labels/--limit)");
+    return { rows, summary: undefined };
+  }
+
+  const summary = evaluateClanRows(rows, { verbose });
+  reportClanEvaluation(summary, log);
+  return { rows, summary };
+}
+
+async function main() {
+  await runClanOcrEval();
 }
 
 if (isMain(import.meta.url)) {

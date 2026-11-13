@@ -25,9 +25,8 @@ export async function loadConfig() {
   }
 }
 
-function loadEnvLocal() {
+export function loadEnvLocal(envPath = ENV_LOCAL) {
   // Load .env.local if present (but do not require it)
-  const envPath = ENV_LOCAL;
   const res = dotenv.config({ path: envPath });
   if (res.error) {
     return {};
@@ -66,18 +65,26 @@ export function composeConfigSummary(config = {}, envLocal = {}, env = process.e
   };
 }
 
+/**
+ * Print the config summary and file pointers.
+ * @param {{ config?: object, envLocal?: Record<string, string | undefined>, log?: (...args: any[]) => void }} [options]
+ */
+export function runShowConfig({ config = {}, envLocal = {}, log = (...args) => console.log(...args) } = {}) {
+  const out = composeConfigSummary(config, envLocal);
+
+  log(JSON.stringify(out, null, 2));
+  // also print helpful pointers
+  log("\nFiles:");
+  log(`  config: ${CONFIG_PATH}`);
+  log(`  env example: ${ENV_EXAMPLE}`);
+  log(`  env local (ignored by git): ${ENV_LOCAL}`);
+  return out;
+}
+
 async function main() {
   const config = await loadConfig();
   // Load .env.local (preferred) and then fallback to process.env
-  const envLocal = loadEnvLocal();
-  const out = composeConfigSummary(config, envLocal);
-
-  console.log(JSON.stringify(out, null, 2));
-  // also print helpful pointers
-  console.log("\nFiles:");
-  console.log(`  config: ${CONFIG_PATH}`);
-  console.log(`  env example: ${ENV_EXAMPLE}`);
-  console.log(`  env local (ignored by git): ${ENV_LOCAL}`);
+  runShowConfig({ config, envLocal: loadEnvLocal() });
 }
 
 if (isMain(import.meta.url)) {

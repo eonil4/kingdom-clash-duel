@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
-import { runBattle } from "../../scripts/battle/run-battle.mjs";
+import { readArmy, runBattle } from "../../scripts/battle/run-battle.mjs";
 
 const dirs: string[] = [];
 
@@ -55,6 +55,20 @@ afterEach(async () => {
   for (const dir of dirs.splice(0)) {
     await fs.rm(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 50 });
   }
+});
+
+describe("readArmy", () => {
+  it("reads JSON and surfaces missing/invalid files", async () => {
+    const dir = await tmpDir("kc-battle-army-");
+    const valid = path.join(dir, "army.json");
+    await fs.writeFile(valid, JSON.stringify({ slots: [] }));
+    expect((await readArmy(valid)).data).toEqual({ slots: [] });
+
+    await expect(readArmy(path.join(dir, "missing.json"))).rejects.toThrow();
+    const invalid = path.join(dir, "invalid.json");
+    await fs.writeFile(invalid, "{oops");
+    await expect(readArmy(invalid)).rejects.toThrow();
+  });
 });
 
 describe("runBattle", () => {

@@ -94,7 +94,7 @@ export function parseArgs(argv) {
 }
 
 /** @param {number[]} samplesMs */
-function summarizeDurations(samplesMs) {
+export function summarizeDurations(samplesMs) {
   if (samplesMs.length === 0) return null;
   const sorted = [...samplesMs].sort((a, b) => a - b);
   const min = sorted[0];
@@ -106,63 +106,83 @@ function summarizeDurations(samplesMs) {
 }
 
 /** @param {number} ms */
-function formatDuration(ms) {
+export function formatDuration(ms) {
   return ms >= 60_000 ? `${(ms / 60_000).toFixed(1)}m` : `${(ms / 1000).toFixed(1)}s`;
 }
 
-async function main() {
-  const { folder, extractor, mode, modeExplicit, force, model, clearCache } = parseArgs(
-    process.argv.slice(2),
-  );
-  if (!folder) {
-    console.error(
-      "Usage: node scripts/llm/convert.mjs <folder> [--extractor llm|ocr] [--mode crops|screenshot] [--force] [--model <id>] [--clear-cache|--no-clear-cache]",
-    );
-    process.exit(1);
-  }
+/**
+ * Run convert for the parsed CLI args; returns the runner stats (or `{ empty: true }`).
+ * @param {ReturnType<typeof parseArgs>} parsed
+ * @param {{
+ *   readdir?: typeof fs.readdir,
+ *   run?: typeof runExtraction,
+ *   config?: object,
+ *   clearCache?: typeof clearLmPredictionCache,
+ *   shouldClearBeforeEach?: typeof shouldClearPredictionCacheBeforeEachCall,
+ *   shouldClearBeforeRun?: typeof shouldClearPredictionCacheBeforeRun,
+ *   makeLlm?: typeof createLlmStrategy,
+ *   makeOcr?: typeof createOcrStrategy,
+ *   root?: string,
+ *   log?: (...args: any[]) => void,
+ *   warn?: (...args: any[]) => void,
+ * }} [deps]
+ */
+export async function runConvert(
+  { folder, extractor, mode, modeExplicit, force, model, clearCache },
+  deps = {},
+) {
+  const {
+    readdir = fs.readdir,
+    run = runExtraction,
+    config = _llmConfig,
+    clearCache: clearCacheFn = clearLmPredictionCache,
+    shouldClearBeforeEach = shouldClearPredictionCacheBeforeEachCall,
+    shouldClearBeforeRun = shouldClearPredictionCacheBeforeRun,
+    makeLlm = createLlmStrategy,
+    makeOcr = createOcrStrategy,
+    root = WORKSPACE_ROOT,
+    log = (...args) => console.log(...args),
+    warn = (...args) => console.warn(...args),
+  } = deps;
+
   if (extractor === "ocr" && modeExplicit) {
-    console.warn("--mode is ignored with --extractor ocr");
+    warn("--mode is ignored with --extractor ocr");
   }
 
-  const clearBeforeEach = shouldClearPredictionCacheBeforeEachCall({
-    cliOverride: clearCache,
-    config: _llmConfig,
-  });
-  const clearBeforeRun = shouldClearPredictionCacheBeforeRun({
-    config: _llmConfig,
-  });
+  const clearBeforeEach = shouldClearBeforeEach({ cliOverride: clearCache, config });
+  const clearBeforeRun = shouldClearBeforeRun({ config });
 
   const folderAbs = path.isAbsolute(folder)
     ? folder
-    : path.resolve(WORKSPACE_ROOT, folder.replace(/^(\.\.\/)+/, ""));
+    : path.resolve(root, folder.replace(/^(\.\.\/)+/, ""));
 
-  const entries = await fs.readdir(folderAbs, { withFileTypes: true });
+  const entries = await readdir(folderAbs, { withFileTypes: true });
   const pngFiles = entries
     .filter((e) => e.isFile() && e.name.toLowerCase().endsWith(".png"))
     .map((e) => e.name)
     .sort((a, b) => a.localeCompare(b));
 
   if (pngFiles.length === 0) {
-    console.warn(`No PNG files in ${folderAbs}`);
-    return;
+    warn(`No PNG files in ${folderAbs}`);
+    return { empty: true };
   }
 
   const label = extractor === "llm" ? mode : "ocr";
-  console.log(
+  log(
     `\nProcessing folder (convert / ${label}): ${folderAbs} (${pngFiles.length} PNGs, ${force ? "force" : "missing only"})` +
       (extractor === "llm" ? ` [cache: beforeRun=${clearBeforeRun}, beforeEachCall=${clearBeforeEach}]` : ""),
   );
 
   if (extractor === "llm" && clearBeforeRun) {
-    await clearLmPredictionCache({
-      config: _llmConfig,
+    await clearCacheFn({
+      config,
       label: "before run",
     });
   }
 
   const strategy =
     extractor === "llm"
-      ? createLlmStrategy({
+      ? makeLlm({
           mode,
           model,
           attempts: LLM_MAX_ATTEMPTS,
@@ -171,9 +191,9 @@ async function main() {
           maxTotalMs: LLM_MAX_TOTAL_MS,
           clearCacheBeforeEachCall: clearBeforeEach,
         })
-      : createOcrStrategy({ force, config: _llmConfig });
+      : makeOcr({ force, config });
 
-  const stats = await runExtraction({
+  const stats = await run({
     folders: [
       { absPath: folderAbs, files: pngFiles.map((name) => path.join(folderAbs, name)) },
     ],
@@ -189,11 +209,23 @@ async function main() {
     ? ` ${extractor === "llm" ? "LLM" : "OCR"} min/median/max: ${formatDuration(llmStats.min)} / ${formatDuration(llmStats.median)} / ${formatDuration(llmStats.max)}`
     : "";
 
-  console.log(
+  log(
     `\nDone (convert / ${label}): ${stats.converted} new (${extractor === "llm" ? "LLM" : "OCR"}), ` +
       `${stats.convertedFromMap} from map only, ${stats.skipped} skipped (complete), ${stats.failed} failed.${timingSuffix}`,
   );
-  console.log("Store: per-folder data.json");
+  log("Store: per-folder data.json");
+  return stats;
+}
+
+async function main() {
+  const parsed = parseArgs(process.argv.slice(2));
+  if (!parsed.folder) {
+    console.error(
+      "Usage: node scripts/llm/convert.mjs <folder> [--extractor llm|ocr] [--mode crops|screenshot] [--force] [--model <id>] [--clear-cache|--no-clear-cache]",
+    );
+    process.exit(1);
+  }
+  await runConvert(parsed);
 }
 
 if (isMain(import.meta.url)) {

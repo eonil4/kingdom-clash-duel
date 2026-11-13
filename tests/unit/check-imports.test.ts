@@ -6,6 +6,7 @@ import path from "path";
 import {
   collectScriptFiles,
   findBrokenImports,
+  runImportCheck,
 } from "../../scripts/check-imports.mjs";
 
 const dirs: string[] = [];
@@ -15,6 +16,46 @@ async function tmpDir() {
   dirs.push(dir);
   return dir;
 }
+
+describe("runImportCheck", () => {
+  it("reports broken imports and returns code 1", async () => {
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "b.mjs"), "export const b = 1;\n");
+    await fs.writeFile(path.join(dir, "a.mjs"), 'export { b } from "./b.mjs";\n');
+    await fs.writeFile(path.join(dir, "bad.mjs"), 'export { x } from "./missing.mjs";\n');
+    await fs.writeFile(
+      path.join(dir, "ignored.mjs"),
+      '// check-imports:ignore-file\nexport { y } from "./missing-too.mjs";\n',
+    );
+    const logs: string[] = [];
+    const errors: string[] = [];
+
+    const result = runImportCheck([dir], {
+      log: (line) => logs.push(String(line)),
+      error: (line) => errors.push(String(line)),
+    });
+
+    expect(result.code).toBe(1);
+    expect(result.broken).toHaveLength(1);
+    expect(result.broken[0].specifier).toBe("./missing.mjs");
+    expect(errors.join("\n")).toContain("MISSING");
+    expect(errors.join("\n")).toContain("1 broken relative import");
+    expect(logs).toEqual([]);
+  });
+
+  it("reports success and tolerates missing roots", async () => {
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "ok.mjs"), "");
+    const logs: string[] = [];
+
+    const ok = runImportCheck([dir, "--", path.join(dir, "missing")], {
+      log: (line) => logs.push(String(line)),
+      error: () => {},
+    });
+    expect(ok.code).toBe(0);
+    expect(logs[0]).toContain("All relative imports resolve (1 files");
+  });
+});
 
 afterEach(async () => {
   for (const dir of dirs.splice(0)) {

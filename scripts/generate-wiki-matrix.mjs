@@ -829,25 +829,30 @@ export async function runMatrixGenerator(args) {
   };
 }
 
-async function main() {
-  const args = parseArgs(process.argv.slice(2));
+/**
+ * CLI body; returns the exit code instead of exiting.
+ * @param {string[]} argv
+ * @param {{ log?: (...args: any[]) => void }} [deps]
+ */
+export async function runMatrixCli(argv, { log = (...args) => console.log(...args) } = {}) {
+  const args = parseArgs(argv);
   if (!args.folder) {
     usage();
-    process.exit(1);
+    return { code: 1 };
   }
 
   const result = await runMatrixGenerator(args);
   if (result.empty) {
-    console.log(
+    log(
       `No duel images matching separator ${JSON.stringify(args.separator)} in: ${result.targetFolder}`,
     );
-    return;
+    return { code: 0, result };
   }
 
-  console.log(`Successfully generated: ${result.outputPath}`);
-  console.log(`Repo path: ${result.repoRelativePath}`);
-  console.log(`Separator: ${args.separator}`);
-  console.log(`Sort: rows=${args.rows}, cols=${args.cols}`);
+  log(`Successfully generated: ${result.outputPath}`);
+  log(`Repo path: ${result.repoRelativePath}`);
+  log(`Separator: ${args.separator}`);
+  log(`Sort: rows=${args.rows}, cols=${args.cols}`);
   const sizeInfo =
     args.width || args.height
       ? [
@@ -859,14 +864,20 @@ async function main() {
       : args.scale
         ? `${args.scale}%`
         : "full (100%)";
-  console.log(`Scale / Size: ${sizeInfo}`);
-  console.log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
-  console.log(`Sections: ${result.sections.join(", ")}`);
-  console.log(`Enemies: ${result.enemies}, Clan: ${result.clans}, Duels: ${result.totalDuels}`);
-  console.log(`Extensions: ${args.extensions.join(", ")}`);
+  log(`Scale / Size: ${sizeInfo}`);
+  log(`Mode: ${args.rowScroll ? `row-scroll (table per row, compact=${args.compact})` : "single-table"}`);
+  log(`Sections: ${result.sections.join(", ")}`);
+  log(`Enemies: ${result.enemies}, Clan: ${result.clans}, Duels: ${result.totalDuels}`);
+  log(`Extensions: ${args.extensions.join(", ")}`);
   if (result.skipped > 0) {
-    console.log(`Skipped files (no separator match): ${result.skipped}`);
+    log(`Skipped files (no separator match): ${result.skipped}`);
   }
+  return { code: 0, result };
+}
+
+async function main() {
+  const { code } = await runMatrixCli(process.argv.slice(2));
+  process.exit(code);
 }
 
 if (isMain(import.meta.url)) {

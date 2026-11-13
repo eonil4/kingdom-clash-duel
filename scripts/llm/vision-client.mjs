@@ -552,31 +552,54 @@ export function parseExtractCliArgs(argv) {
  *   logPerFolder?: boolean,
  * }} args
  */
-export async function runVisionExtractCli({ scriptName, target, logPerFolder = false }) {
-  const { imagePath, clearCache } = parseExtractCliArgs(process.argv.slice(2));
-  if (!imagePath) {
-    console.error(
-      `Usage: node scripts/llm/${scriptName} <image.png> [--clear-cache|--no-clear-cache]`,
-    );
-    process.exit(1);
-  }
+/**
+ * Extract one image into per-folder data.json; returns `{ usage: true }` when no image.
+ * @param {{
+ *   argv?: string[],
+ *   target: ReturnType<typeof createVisionTarget>,
+ *   logPerFolder?: boolean,
+ *   host?: string,
+ *   model?: string,
+ *   env?: NodeJS.ProcessEnv,
+ *   config?: object,
+ *   reconcile?: typeof reconcileDataJsonWithCanonicalFiles,
+ *   upsert?: typeof upsertDataJsonForImage,
+ *   log?: (...args: any[]) => void,
+ *   warn?: (...args: any[]) => void,
+ * }} options
+ */
+export async function runVisionExtract({
+  argv = process.argv.slice(2),
+  target,
+  logPerFolder = false,
+  host,
+  model: modelOption,
+  env = process.env,
+  config = loadLlmConfig(),
+  reconcile = reconcileDataJsonWithCanonicalFiles,
+  upsert = upsertDataJsonForImage,
+  log = (...args) => console.log(...args),
+  warn = (...args) => console.warn(...args),
+}) {
+  const { imagePath, clearCache } = parseExtractCliArgs(argv);
+  if (!imagePath) return { usage: true };
 
-  const host = resolveHost();
-  const model = await target.resolveModel(host, process.env.LLM_MODEL);
+  const resolvedHost = host ?? resolveHost();
+  const model = await target.resolveModel(resolvedHost, modelOption ?? env.LLM_MODEL);
   const resolved = path.resolve(imagePath);
   const clearCacheBeforeEachCall = shouldClearPredictionCacheBeforeEachCall({
     cliOverride: clearCache,
-    config: loadLlmConfig(),
+    config,
   });
 
-  console.log(`Provider: LM Studio`);
-  console.log(`Model: ${model}`);
-  console.log(`Host: ${host}`);
-  console.log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
-  console.log(`Image: ${resolved}\n`);
+  log(`Provider: LM Studio`);
+  log(`Model: ${model}`);
+  log(`Host: ${resolvedHost}`);
+  log(`Clear cache before call: ${clearCacheBeforeEachCall}`);
+  log(`Image: ${resolved}\n`);
 
   try {
-    await reconcileDataJsonWithCanonicalFiles(path.dirname(resolved));
+    await reconcile(path.dirname(resolved));
   } catch {
     // ignore reconciliation errors
   }
@@ -588,9 +611,13 @@ export async function runVisionExtractCli({ scriptName, target, logPerFolder = f
     const raw = await fs.readFile(dataPath, "utf8").catch(() => "");
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (parsed && typeof parsed === "object" && Object.prototype.hasOwnProperty.call(parsed, base)) {
-        console.log(`[Skip] ${base} already present in ${dataPath}`);
-        process.exit(0);
+      if (
+        parsed &&
+        typeof parsed === "object" &&
+        Object.prototype.hasOwnProperty.call(parsed, base)
+      ) {
+        log(`[Skip] ${base} already present in ${dataPath}`);
+        return { skipped: true, resolved };
       }
     }
   } catch {
@@ -599,23 +626,24 @@ export async function runVisionExtractCli({ scriptName, target, logPerFolder = f
 
   const start = performance.now();
   const result = await target.extractFromScreenshot(resolved, {
-    host,
+    host: resolvedHost,
     model,
     clearCacheBeforeEachCall,
   });
   const durationMs = performance.now() - start;
-  console.log(JSON.stringify(result, null, 2));
-  console.log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
+  log(JSON.stringify(result, null, 2));
+  log(`[Time] LLM extraction: ${Math.round(durationMs)}ms`);
 
   const canonicalBase = `${formatPowerForFilename(Number(result.power))}-${toSafeEnemyFilenameToken(
     result.nameLatin || result.name,
   )}.webp`;
 
+  let dataPath;
   try {
-    const dataJson = await upsertDataJsonForImage(resolved, result, durationMs, canonicalBase);
-    log.info(`[Data] wrote ${dataJson} (processing ${Math.round(durationMs)}ms)`);
+    dataPath = await upsert(resolved, result, durationMs, canonicalBase);
+    log.info(`[Data] wrote ${dataPath} (processing ${Math.round(durationMs)}ms)`);
   } catch (err) {
-    console.warn(
+    warn(
       "[Data] failed to write data.json:",
       err instanceof Error ? err.message : String(err),
     );
@@ -632,4 +660,21 @@ export async function runVisionExtractCli({ scriptName, target, logPerFolder = f
       // ignore logging errors
     }
   }
+
+  return { result, durationMs, resolved, dataPath };
+}
+
+export async function runVisionExtractCli({ scriptName, target, logPerFolder = false }) {
+  const outcome = await runVisionExtract({
+    argv: process.argv.slice(2),
+    target,
+    logPerFolder,
+  });
+  if (outcome.usage) {
+    console.error(
+      `Usage: node scripts/llm/${scriptName} <image.png> [--clear-cache|--no-clear-cache]`,
+    );
+    process.exit(1);
+  }
+  return outcome;
 }

@@ -124,9 +124,10 @@ export function generateWikiTable(targetFolderArg, extensionArg = '.webp') {
 }
 
 /**
+ * CLI body; returns `{ usage: true }` or `{ error }` instead of exiting.
  * @param {string[]} argv
  */
-function main(argv) {
+export function runWikiTableCli(argv) {
   const targetFolderArg = argv[0];
   const extensionParts = argv.slice(1);
   const extensionArg =
@@ -138,7 +139,7 @@ function main(argv) {
 
   if (!targetFolderArg) {
     usage();
-    process.exit(1);
+    return { usage: true };
   }
 
   try {
@@ -147,17 +148,26 @@ function main(argv) {
       console.log(
         `No images with extension(s) ${result.extensions.join(', ')} found in: ${result.targetFolder}`,
       );
-      return;
+      return result;
     }
 
     console.log(`Successfully generated: ${result.outputPath}`);
     console.log(`Repo path: ${result.repoRelativePath}`);
     console.log(`Extensions: ${result.extensions.join(', ')}`);
     console.log(`Total images in the table: ${result.images}`);
+    return result;
   } catch (error) {
     console.error(`An error occurred while processing the folder: ${error.message}`);
-    process.exit(1);
+    return { error: error.message };
   }
+}
+
+/**
+ * @param {string[]} argv
+ */
+function main(argv) {
+  const result = runWikiTableCli(argv);
+  if (result.usage || result.error) process.exit(1);
 }
 
 if (isMain(import.meta.url)) {

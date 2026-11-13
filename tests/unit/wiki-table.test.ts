@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import fs from "fs/promises";
 import os from "os";
 import path from "path";
@@ -6,6 +6,7 @@ import {
   generateWikiTable,
   parseExtensions,
   resolveFolderPaths,
+  runWikiTableCli,
 } from "../../scripts/generate-wiki-table.mjs";
 import { escapeHtml } from "../../scripts/html-document.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
@@ -48,6 +49,30 @@ describe("generateWikiTable", () => {
 
     const empty = generateWikiTable(await tmpDir(), ".webp");
     expect(empty).toMatchObject({ empty: true, extensions: [".webp"] });
+  });
+});
+
+describe("runWikiTableCli", () => {
+  it("prints results for valid folders and reports usage/errors", async () => {
+    const log = vi.spyOn(console, "log").mockImplementation(() => {});
+    const error = vi.spyOn(console, "error").mockImplementation(() => {});
+
+    const dir = await tmpDir();
+    await fs.writeFile(path.join(dir, "a.webp"), "");
+    const ok = runWikiTableCli([dir, "webp"]);
+    expect(ok.outputPath).toContain("index.html");
+    expect(log.mock.calls.some(([line]) => String(line).includes("Successfully generated"))).toBe(
+      true,
+    );
+
+    const empty = runWikiTableCli([await tmpDir(), "webp"]);
+    expect(empty).toMatchObject({ empty: true });
+
+    expect(runWikiTableCli([])).toEqual({ usage: true });
+
+    const missing = runWikiTableCli([path.join(WORKSPACE_ROOT, "no-such-folder-xyz"), "webp"]);
+    expect(missing.error).toBeTruthy();
+    expect(error).toHaveBeenCalled();
   });
 });
 
