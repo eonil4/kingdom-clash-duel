@@ -12,6 +12,7 @@ import {
   extractEnemyDataFromNamePowerCrops,
   extractEnemyDataFromScreenshot,
 } from "../llm/llm-enemy-extract.mjs";
+import { log as logger } from "../log.mjs";
 
 /** @type {Record<"crops" | "screenshot", { logTag: string, extract: Function }>} */
 export const LLM_MODES = {
@@ -137,7 +138,7 @@ export function createLlmStrategy({
       for (let attempt = 1; attempt <= attempts; attempt++) {
         const timeoutMs = attempt * timeoutPerAttemptMs;
         try {
-          console.log(
+          logger.info(
             `\t${logTag} ${basename} (attempt ${attempt}/${attempts}, timeout ${timeoutMs / 1000}s)...`,
           );
           const extracted = await extract(filePath, {
@@ -174,7 +175,7 @@ export function createLlmStrategy({
         } catch (err) {
           lastErr = err;
           const msg = err instanceof Error ? err.message : String(err);
-          console.warn(`\t${logTag} attempt ${attempt}/${attempts} failed: ${msg}`);
+          logger.warn(`\t${logTag} attempt ${attempt}/${attempts} failed: ${msg}`);
           if (attempt < attempts) {
             await delay(retryBaseDelayMs * attempt);
           }

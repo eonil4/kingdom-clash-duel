@@ -1,7 +1,7 @@
 # Script Folder Analysis — `scripts/`
 
 **Revision:** 2026-11-12
-**Scope:** `scripts/**` — 42 source files, 7,688 lines (excluding generated HTML/JSON and `node_modules`).
+**Scope:** `scripts/**` — 43 source files, 7,725 lines (excluding generated HTML/JSON and `node_modules`).
 **Method:** every file read in full; relative-import resolution verified mechanically; `pnpm test:unit` executed; behavior checked against `package.json`, `config/llm.json`, `vitest.config.ts`, `README.md`.
 
 ---
@@ -37,12 +37,12 @@ C. Armies → deterministic battle report
 | `ocr/` | 9 | 1,453 | `ocr-enemy.mjs` / `ocr-clan.mjs` (discovery CLIs), `eval-clan-ocr.mjs` (labelled evaluation), `scan-cli.mjs`, `ocr-enemy-name/power.mjs`, `convert-text-to-latin.mjs` |
 | `battle/` | 5 | 928 | `run-battle.mjs` |
 | `pipeline/` | 5 | 806 | `run-extraction.mjs`, `extraction-strategy.mjs`, `data-json-store.mjs`, `ocr-strategy.mjs`, `llm-strategy.mjs` |
-| root | 9 | 1,815 | `enemy-records.mjs`, `roi.mjs`, `atomic-json.mjs`, `cli.mjs`, `constants.mjs`, `check-imports.mjs`, `generate-wiki-*.mjs`, `extract_image.mjs` |
+| root | 10 | 1,845 | `enemy-records.mjs`, `roi.mjs`, `atomic-json.mjs`, `cli.mjs`, `log.mjs`, `constants.mjs`, `check-imports.mjs`, `generate-wiki-*.mjs`, `extract_image.mjs` |
 | `ocr/tests/` | 3 | 316 | collected by vitest |
 
 Unit tests outside `scripts/` live in `tests/unit/` (normalisers, enemy map helpers, ROI/scaling, OCR scan helpers, clan OCR evaluation, atomic JSON writes, convert/battle/clan-clash/extract_image CLI args, show-llm-config, wiki-table helpers, cache-path expansion, import checker, APK config loading, army resolution, battle engine simulation/outcome, duel splitting, pipeline runner/store, OCR/LLM strategies, battle sim, power parsing, WebP conversion).
 
-Current test status: **29 files / 201 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
+Current test status: **30 files / 204 tests pass**. `vitest.config.ts` collects `tests/unit/**` and `scripts/ocr/tests/**`; the uncollected `scripts/llm/test/` folder was removed on 2026-11-12 (see P0-5).
 
 ---
 
@@ -238,6 +238,7 @@ Historical detail: `nameTextResCyr*` was a verbatim repeat of `nameTextRes*`, an
 - OCR speed trim: dropped the redundant `raw` preprocessing passes (7 of 24 recognitions); single-image OCR 7.4 s → 4.9 s (−34%). Labelled eval: name exact unchanged 11/12, overall similarity 92.4% → 91.7% (only the known small-caps sample moved), power 12/12.
 - OCR works offline: workers use the bundled `eng.traineddata`/`rus.traineddata` at the repo root (`langPath`, `gzip:false`, temp cache), falling back to tesseract.js's download only when those files are absent; a sample run created no download cache.
 - Typed usage errors: `extract_image` and `run-battle` parsers now throw `UsageError` (`cli.mjs`) instead of calling `process.exit`, so they are reusable/testable; the CLIs print the message + usage and exit 1.
+- Leveled logging: pipeline chatter goes through `log.mjs` (`LOG_LEVEL=silent|error|warn|info|debug`, default info); `debug` adds per-file timings and the indexed-source count. Verified on a real clan run (`[Debug] … 2546ms`).
 
 ### P3-6 Strong points worth keeping
 - Retry with linear backoff and per-attempt timeouts (`convert.mjs`); `AbortController` timeouts with actionable messages (`vision-client.mjs`).
@@ -298,7 +299,7 @@ Fixed earlier: `README.md` store description (P2-1); `convert-with-llm.js` heade
 ## 8. How to verify after changes
 
 ```bash
-pnpm test:unit                       # must stay green (currently 201/201)
+pnpm test:unit                       # must stay green (currently 204/204)
 pnpm check:imports                   # relative specifiers resolve in scripts/ and tests/
 pnpm eval:clan-ocr                   # labelled clan OCR accuracy report
 node scripts/llm/convert.mjs <folder> --extractor ocr   # OCR drives the webp pipeline offline

@@ -39,6 +39,8 @@ Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy RO
 
 OCR uses the bundled `eng.traineddata` / `rus.traineddata` at the repository root, so it runs without network access; tesseract.js falls back to its download only if those files are absent.
 
+Set `LOG_LEVEL` to control pipeline logging (`silent`, `error`, `warn`, `info` (default), `debug`); `debug` prints per-file timings and the indexed-source count.
+
 | Command | Description |
 |--------|-------------|
 | `pnpm ocr:enemy` | Main pipeline: OCR images → update per-folder `data.json` |

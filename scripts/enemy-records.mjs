@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { writeJsonAtomic } from "./atomic-json.mjs";
 import { toSafeEnemyFilenameToken } from "./ocr/enemy-filename-tokens.mjs";
+import { log } from "./log.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -167,7 +168,7 @@ export async function loadEnemyMap(workspaceRoot = WORKSPACE_ROOT) {
             });
           }
           if (skipped > 0) {
-            console.warn(
+            log.warn(
               `[Data] skipped ${skipped} invalid entr${skipped === 1 ? "y" : "ies"} in ${dataPath}`,
             );
           }
@@ -294,7 +295,7 @@ export async function saveEnemyMap(mapRoot) {
       }
       await writeJsonAtomic(dataPath, existing);
     } catch (err) {
-      console.warn(
+      log.warn(
         `[Data] failed to write ${path.join(folder, "data.json")}: ` +
           `${err instanceof Error ? err.message : String(err)}`,
       );

@@ -6,6 +6,7 @@ import os from "os";
 import path from "path";
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
+import { log } from "../log.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -100,11 +101,11 @@ export async function clearLmPredictionCache(options = {}) {
   }
 
   if (cleared.length > 0) {
-    console.log(`\t[Cache] Cleared ${label}: ${cleared.length} path(s)`);
-    for (const p of cleared) console.log(`\t[Cache]   - ${p}`);
+    log.info(`\t[Cache] Cleared ${label}: ${cleared.length} path(s)`);
+    for (const p of cleared) log.info(`\t[Cache]   - ${p}`);
   }
   for (const f of failed) {
-    console.warn(`\t[Cache] Failed to clear ${f.path}: ${f.error}`);
+    log.warn(`\t[Cache] Failed to clear ${f.path}: ${f.error}`);
   }
 
   return { cleared, missing, failed };
@@ -144,7 +145,7 @@ export function shouldClearPredictionCacheBeforeRun(options = {}) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
   clearLmPredictionCache({ label: "LM prediction cache" }).catch((err) => {
-    console.error(err instanceof Error ? err.message : err);
+    log.error(err instanceof Error ? err.message : err);
     process.exit(1);
   });
 }

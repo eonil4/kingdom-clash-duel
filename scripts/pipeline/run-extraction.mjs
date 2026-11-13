@@ -20,6 +20,7 @@ import {
   readFolderEntries,
   writeFolderEntries,
 } from "./data-json-store.mjs";
+import { log } from "../log.mjs";
 
 /**
  * @param {Map<string, { folderAbs: string, canonicalKey: string, row: object }>} sourceIndex
@@ -101,6 +102,7 @@ export async function runExtraction({
 
   const mapRoot = map ? await loadEnemyMap() : undefined;
   const sourceIndex = map ? buildEnemySourceIndex(mapRoot) : undefined;
+  if (sourceIndex) log.debug(`[Debug] indexed ${sourceIndex.size} known source(s)`);
   let mapDirty = false;
   /** @type {Map<string, Record<string, object>>} */
   const entriesByFolder = new Map();
@@ -127,7 +129,7 @@ export async function runExtraction({
           if (strategy.shouldSkip) {
             const reason = await strategy.shouldSkip(ctx);
             if (reason) {
-              console.log(reason);
+              log.info(reason);
               stats.skipped++;
               continue;
             }
@@ -140,7 +142,7 @@ export async function runExtraction({
           if (map && !force) {
             const existing = await resolveExistingOutput(sourceIndex, filePath);
             if (existing.exists && existing.webpPath) {
-              console.log(
+              log.info(
                 `\n[Skip] ${basename} — WebP exists: ${path.basename(existing.webpPath)}`,
               );
               stats.skipped++;
@@ -154,29 +156,30 @@ export async function runExtraction({
               mapKey = existing.row.fullMapKey;
               outputPath = existing.webpPath;
               usedMapOnly = true;
-              if (logProcessing) console.log(`\n[Processing] ${basename}`);
-              console.log(`\t[Map] Using existing entry -> ${path.basename(outputPath)}`);
+              if (logProcessing) log.info(`\n[Processing] ${basename}`);
+              log.info(`\t[Map] Using existing entry -> ${path.basename(outputPath)}`);
             }
           }
 
           if (!usedMapOnly) {
-            if (logProcessing) console.log(`\n[Processing] ${basename}`);
+            if (logProcessing) log.info(`\n[Processing] ${basename}`);
 
             const startedAt = performance.now();
             const outcome = await strategy.extract(ctx);
             const durationMs = performance.now() - startedAt;
 
             if ("skip" in outcome && outcome.skip) {
-              console.warn(outcome.reason);
+              log.warn(outcome.reason);
               stats.skipped++;
               continue;
             }
 
             const timing = outcome.durationMs ?? durationMs;
             stats.durations.push(timing);
+            log.debug(`\t[Debug] ${basename} ${Math.round(timing)}ms`);
             const { record } = outcome;
-            if (outcome.log) console.log(outcome.log);
-            if (outcome.warn) console.error(outcome.warn);
+            if (outcome.log) log.info(outcome.log);
+            if (outcome.warn) log.error(outcome.warn);
 
             mapKey = `${toMapKey(filePath)}/${record.canonical}`;
             outputPath = path.join(folderAbs, record.canonical);
@@ -206,7 +209,7 @@ export async function runExtraction({
           if (!force) {
             try {
               await fs.access(outputPath);
-              console.log(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
+              log.info(`\t[Skip] WebP already exists: ${path.basename(outputPath)}`);
               stats.skipped++;
               continue;
             } catch {
@@ -214,7 +217,7 @@ export async function runExtraction({
             }
           }
 
-          console.log(`\t[Conversion] -> ${path.basename(outputPath)}`);
+          log.info(`\t[Conversion] -> ${path.basename(outputPath)}`);
           await writeWebpFromRasterFile(filePath, outputPath);
           if (map) mapDirty = true;
           if (usedMapOnly) {
@@ -227,7 +230,7 @@ export async function runExtraction({
           if (logError) {
             logError(err, { filePath, basename, folderAbs });
           } else {
-            console.error(
+            log.error(
               `\t[Error] ${basename}:`,
               err instanceof Error ? err.message : err,
             );
@@ -243,7 +246,7 @@ export async function runExtraction({
   // are already stored in data.json by writeFolderEntries above.
   if (map && mapDirty) {
     await saveEnemyMap(mapRoot);
-    console.log("\t[Data] saved data.json");
+    log.info("\t[Data] saved data.json");
   }
 
   return stats;

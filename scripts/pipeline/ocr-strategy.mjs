@@ -24,6 +24,7 @@ import {
   refineEnemyNameWithTestFolderCrops,
 } from "../ocr/ocr-enemy-name.mjs";
 import { ocrEnemyPower } from "../ocr/ocr-enemy-power.mjs";
+import { log } from "../log.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -220,7 +221,7 @@ export function createOcrStrategy({
           latinRaw: hintArt.latinRaw,
           ...(hintArt.nameEnglish ? { nameEnglish: hintArt.nameEnglish } : {}),
         };
-        console.log(`Latin label from percent-encoded filename slug: ${latinHint}`);
+        log.info(`Latin label from percent-encoded filename slug: ${latinHint}`);
       }
 
       const canonicalKey = canonicalEnemyMapKey(filePath, {

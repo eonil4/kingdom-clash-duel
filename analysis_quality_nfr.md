@@ -153,8 +153,9 @@ The first batch from §5 is implemented on `refactor`:
 | 6 | OCR variant trim (§3.1) | **done** | removed the redundant `raw` passes (24 → 17 recognitions): single-image OCR 7.4 s → **4.9 s (−34%)**; eval exact unchanged 11/12, overall similarity 92.4 → 91.7, power 12/12 |
 | 7 | Offline tesseract language data (§4 reliability) | **done** | `defaultWorkerOptions()` points tesseract at the bundled `eng/rus.traineddata` (`gzip:false`, temp cache) and falls back to the CDN only when they are missing; eval sample 100%, no download cache created |
 | 8 | Typed usage errors in parsers (§2.6) | **done** | `UsageError` in `cli.mjs`; `extract_image`/`run-battle` parsers throw, CLIs print usage + exit 1; tests assert messages |
+| 9 | Logger with levels (§4 observability) | **done** | `scripts/log.mjs` (`LOG_LEVEL=silent…debug`, default info); pipeline/strategies/vision-client diagnostics migrated; `debug` adds per-file timings + indexed-source count; `tests/unit/log.test.ts` |
 
 Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), logger with levels (§4), coverage tooling and HTML document wrapper (§2.8/§4).
+Still open from this analysis: optional third OCR worker for parallel name/power (§3.1), coverage tooling and the HTML document wrapper (§2.8/§4).
 
