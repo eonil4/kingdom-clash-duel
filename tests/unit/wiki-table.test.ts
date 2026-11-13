@@ -2,10 +2,10 @@ import { describe, expect, it } from "vitest";
 import os from "os";
 import path from "path";
 import {
-  escapeHtml,
   parseExtensions,
   resolveFolderPaths,
 } from "../../scripts/generate-wiki-table.mjs";
+import { escapeHtml } from "../../scripts/html-document.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
 describe("parseExtensions", () => {

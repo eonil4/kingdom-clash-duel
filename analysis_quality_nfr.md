@@ -56,9 +56,8 @@ Thresholds and sizes are inline and undocumented in one place: `warnBelowPower =
 Several catches swallow errors with only a comment (`data-json-store.mjs` read, `enemy-records.mjs` walk/stat paths, `loadConfiguredFolders`). They are intentional fallbacks but invisible.
 **Fix:** `DEBUG=1` diagnostic path or a single `warnOnce()` helper.
 
-### 2.8 Layout tables & generated HTML metadata (LOW, accessibility)
-Generated `index.html` files start with `<table>` only — no `<html lang>`, `<meta charset>`, viewport; matrix uses tables for layout and empty cells without headers. GitHub's renderer mitigates, but the files are not self-describing documents.
-**Fix:** wrap output in a minimal `<html lang="en"><head><meta charset="utf-8">…` document (does not affect GitHub table rendering) and add `scope="col"`/`scope="row"` on matrix headers.
+### 2.8 Layout tables & generated HTML metadata (LOW, accessibility) — **resolved**
+Both generators now emit a full document via `scripts/html-document.mjs` (`<!DOCTYPE html>`, `<html lang="en">`, charset, viewport, escaped `<title>`), and matrix headers carry `scope="col"`/`scope="row"`. GitHub's table rendering is unchanged.
 
 ### 2.9 Large single-function OCR pipeline (LOW, maintainability)
 `ocrEnemyName` spans ~200 lines (`ocr-enemy-name.mjs:326-560`) with 20+ local buffers and a hand-rolled candidate list. It works and is heuristic by nature, but the preprocessing matrix is implicit.
@@ -155,8 +154,9 @@ The first batch from §5 is implemented on `refactor`:
 | 8 | Typed usage errors in parsers (§2.6) | **done** | `UsageError` in `cli.mjs`; `extract_image`/`run-battle` parsers throw, CLIs print usage + exit 1; tests assert messages |
 | 9 | Logger with levels (§4 observability) | **done** | `scripts/log.mjs` (`LOG_LEVEL=silent…debug`, default info); pipeline/strategies/vision-client diagnostics migrated; `debug` adds per-file timings + indexed-source count; `tests/unit/log.test.ts` |
 | 10 | Coverage tooling (§4 testability) | **done** | `@vitest/coverage-v8` + `pnpm test:coverage`; V8 coverage over `scripts/**/*.mjs` with thresholds (55/75/60/55); baseline measured at 56.2 stmts / 78.2 branch / 61.2 funcs; Linux CI runs the coverage job |
+| 11 | Self-describing HTML output (§2.8) | **done** | `scripts/html-document.mjs` wraps both generators (doctype/lang/charset/viewport/title) and shares `escapeHtml`; matrix headers get `scope="col"/"row"`; `tests/unit/html-document.test.ts` |
 
 Post-batch measurements: `pnpm test:unit` 29 files / 199 tests; `pnpm check:imports` 68 files; `pnpm eval:clan-ocr` unchanged (92.4% overall, 54.5% OCR-only, 11/12 exact, power 12/12); `convert --extractor ocr` smoke persists `data.json` once per run and leaves no `.tmp` files.
 
-Still open from this analysis: optional third OCR worker for parallel name/power (§3.1) and the generated-HTML document wrapper (§2.8).
+Still open from this analysis: optional third OCR worker for parallel name/power (§3.1).
 

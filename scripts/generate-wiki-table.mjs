@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { WORKSPACE_ROOT } from './enemy-records.mjs';
 import { isMain } from './cli.mjs';
+import { escapeHtml, wrapHtmlDocument } from './html-document.mjs';
 
 // Configuration updated to match the exact working GitHub structure
 const GITHUB_BASE_URL = 'https://raw.githubusercontent.com';
@@ -65,13 +66,6 @@ export function resolveFolderPaths(folderArg) {
 /**
  * @param {string} text
  */
-export function escapeHtml(text) {
-  return String(text)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
 
 /**
  * @param {string[]} argv
@@ -137,7 +131,11 @@ function main(argv) {
 
     // 3. Save the output as index.html in the target folder
     const outputPath = path.join(targetFolder, 'index.html');
-    fs.writeFileSync(outputPath, html, 'utf8');
+    fs.writeFileSync(
+      outputPath,
+      wrapHtmlDocument({ title: repoRelativePath, body: html }),
+      'utf8',
+    );
 
     console.log(`Successfully generated: ${outputPath}`);
     console.log(`Repo path: ${repoRelativePath}`);

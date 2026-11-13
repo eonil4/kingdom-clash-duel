@@ -46,6 +46,7 @@ import path from "path";
 import sharp from "sharp";
 import { WORKSPACE_ROOT } from "./enemy-records.mjs";
 import { isMain } from "./cli.mjs";
+import { escapeHtml, wrapHtmlDocument } from "./html-document.mjs";
 
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com";
 const GITHUB_USER = "eonil4";
@@ -499,7 +500,7 @@ function renderMatrixSection({
       html += '<table style="border-collapse: collapse; white-space: nowrap;">\n';
       html += "  <tr>\n";
       if (!args.compact) {
-        html += `    <th align="center" valign="bottom"><sub><b>${escapeHtml(row)}</b></sub></th>\n`;
+        html += `    <th align="center" valign="bottom" scope="col"><sub><b>${escapeHtml(row)}</b></sub></th>\n`;
       }
       for (const col of activeCols) {
         const colW = colWidthMap.get(col) ?? fallbackColW;
@@ -511,7 +512,7 @@ function renderMatrixSection({
         // establishes an intrinsic min-content width, enabling horizontal table scrolling on GitHub.
         const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
         const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
-        html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+        html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}" scope="col"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
       }
       html += "  </tr>\n";
 
@@ -567,14 +568,14 @@ function renderMatrixSection({
       const thStyle = colW ? ` style="min-width: ${colW}px;"` : "";
       const nbspCount = Math.max(1, Math.round((colW + 20) / 4.1));
       const spacer = `<span class="col-spacer">${"&nbsp;".repeat(nbspCount)}</span>`;
-      html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
+      html += `    <th align="center" valign="bottom"${thWidth}${thStyle} data-orig-w="${origColW}" scope="col"><sub><b>${escapeHtml(col)}</b></sub><br />${spacer}</th>\n`;
     }
     html += "  </tr>\n";
 
     for (const row of rows) {
       html += "  <tr>\n";
       html +=
-        `    <th align="center" valign="middle" ` +
+        `    <th align="center" valign="middle" scope="row" ` +
         `style="writing-mode: vertical-rl; text-orientation: mixed; white-space: nowrap;">` +
         `<sub><b>${escapeHtml(row)}</b></sub></th>\n`;
 
@@ -812,7 +813,11 @@ async function main() {
   }
 
   const outputPath = path.join(targetFolder, "index.html");
-  fs.writeFileSync(outputPath, html, "utf8");
+  fs.writeFileSync(
+    outputPath,
+    wrapHtmlDocument({ title: repoRelativePath, body: html }),
+    "utf8",
+  );
 
   console.log(`Successfully generated: ${outputPath}`);
   console.log(`Repo path: ${repoRelativePath}`);
@@ -837,17 +842,6 @@ async function main() {
   if (skipped > 0) {
     console.log(`Skipped files (no separator match): ${skipped}`);
   }
-}
-
-/**
- * @param {string} text
- */
-function escapeHtml(text) {
-  return String(text)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }
 
 if (isMain(import.meta.url)) {
