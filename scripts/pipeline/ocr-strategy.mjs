@@ -5,12 +5,15 @@
  * sibling test-folder crops may refine the name, names are transliterated to Latin
  * artifacts, and incomplete results are skipped rather than failed.
  */
+import fs from "fs";
+import os from "os";
 import path from "path";
 import { fileURLToPath } from "url";
 import { createWorker } from "tesseract.js";
 import {
   canonicalEnemyMapKey,
   parsePowerFromOriginalBasename,
+  WORKSPACE_ROOT,
 } from "../enemy-records.mjs";
 import { convertTextToLatinArtifacts } from "../ocr/convert-text-to-latin.mjs";
 import { parseLatinNameHintFromEncodedOriginalBasename } from "../ocr/enemy-filename-tokens.mjs";
@@ -45,6 +48,23 @@ function configuredRoi(config, targetKey, kind) {
 }
 
 /**
+ * Prefer the traineddata bundled at the repo root so OCR works without network.
+ * Falls back to tesseract.js defaults (CDN + its own cache) when files are absent.
+ * @param {string} [workspaceRoot]
+ */
+export function defaultWorkerOptions(workspaceRoot = WORKSPACE_ROOT) {
+  const files = ["eng.traineddata", "rus.traineddata"];
+  if (!files.every((name) => fs.existsSync(path.join(workspaceRoot, name)))) {
+    return undefined;
+  }
+  return {
+    langPath: workspaceRoot,
+    gzip: false,
+    cachePath: path.join(os.tmpdir(), "kc-tesseract"),
+  };
+}
+
+/**
  * @param {{
  *   force?: boolean,
  *   debugCrops?: boolean,
@@ -73,7 +93,7 @@ export function createOcrStrategy({
     throw new Error(`Unknown OCR target ${JSON.stringify(targetKey)} (use enemy or clan)`);
   }
   const {
-    createWorker: makeWorker = createWorker,
+    createWorker: injectedWorkerFactory,
     ocrName = ocrEnemyName,
     refineName = refineEnemyNameWithTestFolderCrops,
     ocrPower = ocrEnemyPower,
@@ -82,6 +102,12 @@ export function createOcrStrategy({
     normalizeName = normalizeOpponentDisplayName,
     parsePowerFromFilename = parsePowerFromOriginalBasename,
   } = deps;
+
+  const workerOptions = deps.workerOptions ?? defaultWorkerOptions();
+  const makeWorker = injectedWorkerFactory
+    ? injectedWorkerFactory
+    : (langs) =>
+        workerOptions ? createWorker(langs, undefined, workerOptions) : createWorker(langs);
 
   const debugDir = debugCrops ? path.join(__dirname, ".ocr-debug") : undefined;
   const reference = resolveRoiReference(config);

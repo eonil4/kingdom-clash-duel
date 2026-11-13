@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import path from "path";
-import { createOcrStrategy } from "../../scripts/pipeline/ocr-strategy.mjs";
+import { createOcrStrategy, defaultWorkerOptions } from "../../scripts/pipeline/ocr-strategy.mjs";
 import { WORKSPACE_ROOT } from "../../scripts/enemy-records.mjs";
 
 function fakeWorker() {
@@ -30,6 +30,13 @@ const filePath = path.join(folderAbs, "Screenshot_x.png");
 const basename = "Screenshot_x.png";
 
 describe("createOcrStrategy", () => {
+  it("uses the bundled traineddata so OCR works offline", () => {
+    const options = defaultWorkerOptions();
+    expect(options).toMatchObject({ gzip: false });
+    expect(options?.langPath).toBe(WORKSPACE_ROOT);
+    expect(options?.cachePath).toContain("kc-tesseract");
+    expect(defaultWorkerOptions(path.join(WORKSPACE_ROOT, "does-not-exist"))).toBeUndefined();
+  });
   it("creates both workers in prepare and terminates them in dispose", async () => {
     const { worker, workerRus, deps } = makeDeps();
     const strategy = createOcrStrategy({ deps });
