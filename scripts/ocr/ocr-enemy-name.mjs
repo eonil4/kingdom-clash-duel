@@ -227,6 +227,73 @@ export function extractBestPhraseFromRawText(rawText) {
 const LATIN_WHITELIST =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789_- \\|[] ";
 
+const LATIN_ONLY_WHITELIST =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 _-\\|[] ";
+
+/**
+ * Strip unbalanced tag noise such as a trailing "]" produced by stylised fonts.
+ * @param {string} text
+ */
+export function stripUnbalancedTagNoise(text) {
+  let s = cleanupNamePhrase(String(text ?? ""));
+  const opens = (s.match(/\[/g) ?? []).length;
+  const closes = (s.match(/\]/g) ?? []).length;
+  if (opens === 0 && closes > 0) s = s.replace(/\]/g, "");
+  else if (closes === 0 && opens > 0) s = s.replace(/\[/g, "");
+  else if (closes > opens) s = s.replace(/\]+$/g, "");
+  else if (opens > closes) s = s.replace(/^\[+/g, "");
+  return s.replace(/\s+/g, " ").trim();
+}
+
+/**
+ * Strip a clipped leading token produced when the name window starts inside the
+ * previous UI label (e.g. the "...n" of "Clan" before "HuN | TOLDI").
+ * @param {string} text
+ */
+export function stripLeadingClippedToken(text) {
+  const s = cleanupNamePhrase(String(text ?? ""));
+  const m = s.match(/^(\S+)\s+(.+)$/u);
+  if (!m) return s;
+  const [, first, rest] = m;
+  const single = /^[\p{L}\d]$/u.test(first);
+  const shortLower = /^[\p{Ll}]{2}$/u.test(first) && /^[\p{Lu}]/u.test(rest);
+  return single || shortLower ? rest : s;
+}
+
+/**
+ * Choose a clan/formation name from a Latin-only recognition pass, falling back to
+ * the mixed-script result when the Latin pass is not confident enough.
+ *
+ * @param {{ text: string, confidence?: number }[]} candidates
+ * @param {string} fallbackName
+ */
+export function pickClanName(candidates, fallbackName) {
+  const fallbackText = cleanupNamePhrase(String(fallbackName ?? ""));
+  // Keep a genuinely Cyrillic formation name; garbled Cyrillic islands from a Latin
+  // name (e.g. "Нш|ТОО" for "HuN | TOLDI") still go through the Latin preference.
+  const cyr = (fallbackText.match(/\p{sc=Cyrillic}/gu) ?? []).length;
+  const lat = (fallbackText.match(/[A-Za-z]/g) ?? []).length;
+
+  const scored = (candidates ?? [])
+    .map((c) => ({ text: cleanupNamePhrase(c.text), confidence: Number(c.confidence) || 0 }))
+    .filter((c) => /[\p{L}].*[\p{L}]/u.test(c.text))
+    .map((c) => {
+      const chars = [...c.text];
+      const letters = chars.filter((ch) => /\p{L}/u.test(ch)).length;
+      const latin = chars.filter((ch) => /[A-Za-z]/.test(ch)).length;
+      const latinRatio = letters > 0 ? latin / letters : 0;
+      return { ...c, letters, score: c.confidence + 25 * latinRatio };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const best = scored.find((c) => c.letters >= 4 && c.score >= 20);
+  // Cyrillic only vetoes a weak Latin pass; a confident Latin read still wins over
+  // garbled Cyrillic islands produced from a Latin name.
+  if (best && (cyr < lat || best.score >= 80)) return best.text;
+  if (cyr > 0 && cyr >= lat) return fallbackText;
+  return best ? best.text : fallbackText;
+}
+
 /**
  * @param {import("tesseract.js").Worker} worker
  * @param {import("tesseract.js").Worker} workerRus
@@ -324,6 +391,27 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
   const nameTextLineRusRaw = await workerRus.recognize(nameTextLineBufRaw);
   const nameTextLineRusNeutral = await workerRus.recognize(nameTextLineBufNeutral);
   const nameTextLineRusThreshold = await workerRus.recognize(nameTextLineBufThreshold);
+
+  // Formation mode: a Latin-only pass avoids Cyrillic/Latin confusions (H→Н, etc.)
+  // produced by the mixed whitelist on stylised fonts.
+  /** @type {{ text: string, confidence?: number }[]} */
+  let clanLatinResults = [];
+  if (options.nameBoxStyle === "tight") {
+    await worker.setParameters({
+      tessedit_char_whitelist: LATIN_ONLY_WHITELIST,
+      tessedit_pageseg_mode: "7",
+    });
+    for (const buf of [
+      nameTextBufNeutral,
+      nameTextBufRaw,
+      nameTextBufThreshold,
+      nameTextLineBufNeutral,
+      nameTextLineBufThreshold,
+    ]) {
+      const res = await worker.recognize(buf);
+      clanLatinResults.push({ text: res.data.text, confidence: res.data.confidence });
+    }
+  }
   const candidates = [
     cleanupName(nameResRaw.data.text),
     cleanupName(nameResNeutral.data.text),
@@ -393,6 +481,12 @@ export async function ocrEnemyName(filePath, worker, workerRus, options = {}) {
     });
     name = pool[0] ?? name;
   }
+  if (options.nameBoxStyle === "tight") {
+    name = stripLeadingClippedToken(
+      stripUnbalancedTagNoise(pickClanName(clanLatinResults, name)),
+    );
+  }
+
   if (
     options.nameBoxStyle !== "tight" &&
     (scoreNameCandidate(name) < 4 || isLikelyOcrNoise(name))

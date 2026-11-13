@@ -35,7 +35,7 @@ Reserved characters in Windows filenames (`<>:"'/\\|?*`) are percent-encoded in 
 
 Crop regions for both the OCR and LLM paths come from `config/llm.json` enemy ROIs (`userPrompt.image.enemy.{name,power}.roi`), scaled from the `roiReference` size (currently 900×1600) to the actual screenshot. The OCR fractional boxes remain only as fallbacks when no enemy ROI is configured.
 
-`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members.
+`pnpm ocr:clan` runs the same OCR strategy against `data/clan_clash/<date>/clan` folders using the `clan` ROIs. Formation fonts are stylised, so treat this path as best-effort — `llm-formation-extract.mjs` remains the primary extractor for clan members. A labelled sample set (`tests/fixtures/clan-ocr/labels.json`, labels from the LLM extractor) and evaluator (`pnpm eval:clan-ocr`) report name/power accuracy; current results on 12 samples: power 12/12, name exact 10/12, and 44.5% name similarity on the two OCR-only samples (the misses are small-caps names with inline icons).
 
 | Command | Description |
 |--------|-------------|

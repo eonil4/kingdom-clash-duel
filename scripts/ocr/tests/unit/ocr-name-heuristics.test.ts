@@ -6,7 +6,10 @@ import {
   extractBestPhraseFromRawText,
   isLikelyOcrNoise,
   normalizeOpponentDisplayName,
+  pickClanName,
   scoreNameCandidate,
+  stripLeadingClippedToken,
+  stripUnbalancedTagNoise,
 } from "../../ocr-enemy-name.mjs";
 
 describe("cleanupName", () => {
@@ -124,5 +127,81 @@ describe("isLikelyOcrNoise", () => {
   it("accepts real names", () => {
     expect(isLikelyOcrNoise("HuN")).toBe(false);
     expect(isLikelyOcrNoise("HuN MAG")).toBe(false);
+  });
+});
+
+describe("stripUnbalancedTagNoise", () => {
+  it("drops unmatched trailing brackets", () => {
+    expect(stripUnbalancedTagNoise("HuN | TOLDI]")).toBe("HuN | TOLDI");
+    expect(stripUnbalancedTagNoise("[HuN | TOLDI")).toBe("HuN | TOLDI");
+  });
+
+  it("drops unmatched brackets anywhere in the text", () => {
+    expect(stripUnbalancedTagNoise("AulN]|TOLDI")).toBe("AulN|TOLDI");
+  });
+
+  it("keeps balanced tags intact", () => {
+    expect(stripUnbalancedTagNoise("[MAG] HuN")).toBe("[MAG] HuN");
+  });
+});
+
+describe("stripLeadingClippedToken", () => {
+  it("drops a clipped single character before the real name", () => {
+    expect(stripLeadingClippedToken("n HuN | TOLDI")).toBe("HuN | TOLDI");
+    expect(stripLeadingClippedToken("1 MAG")).toBe("MAG");
+  });
+
+  it("drops a short lowercase fragment before a capitalised name", () => {
+    expect(stripLeadingClippedToken("an HuN")).toBe("HuN");
+  });
+
+  it("keeps plausible names intact", () => {
+    expect(stripLeadingClippedToken("HuN | TOLDI")).toBe("HuN | TOLDI");
+    expect(stripLeadingClippedToken("HuN|Lehel")).toBe("HuN|Lehel");
+    expect(stripLeadingClippedToken("A")).toBe("A");
+  });
+});
+
+describe("pickClanName", () => {
+  it("prefers the more Latin candidate when confidences are close", () => {
+    expect(
+      pickClanName(
+        [
+          { text: "Нш|ТОО]", confidence: 85 },
+          { text: "HuN | TOLDI", confidence: 70 },
+        ],
+        "fallback",
+      ),
+    ).toBe("HuN | TOLDI");
+  });
+
+  it("falls back when the Latin pass is weak or unusable", () => {
+    expect(pickClanName([{ text: "HuN", confidence: 20 }], "fallback")).toBe("fallback");
+    expect(pickClanName([{ text: "1", confidence: 99 }], "fallback")).toBe("fallback");
+    expect(pickClanName([], "fallback")).toBe("fallback");
+  });
+
+  it("keeps Cyrillic formation names when the Latin pass is weak", () => {
+    expect(
+      pickClanName([{ text: "HuN | TOLDI", confidence: 40 }], String.raw`Бабка\MAG`),
+    ).toBe(String.raw`Бабка\MAG`);
+  });
+
+  it("prefers a confident Latin read over garbled Cyrillic islands", () => {
+    expect(
+      pickClanName([{ text: "AulN] | TOLDI", confidence: 65 }], "Н|м\\ | ОНО]"),
+    ).toBe("AulN] | TOLDI");
+  });
+
+  it("uses confidence to break ties between valid candidates", () => {
+    expect(
+      pickClanName(
+        [
+          { text: "HuN Low", confidence: 62 },
+          { text: "HuN High", confidence: 90 },
+        ],
+        "fallback",
+      ),
+    ).toBe("HuN High");
   });
 });

@@ -62,9 +62,17 @@ function growBox(box, fx, fy) {
  * @param {{ style?: "arena" | "tight" }} [options]
  */
 export function buildNameBoxes(meta, roi, reference, { style = "arena" } = {}) {
-  const base = scaleRoiToImage(roi, meta, reference);
-  if (!base) return undefined;
-  // "tight" (formation screens) avoids pulling neighbouring UI labels into the crops.
+  const scaled = scaleRoiToImage(roi, meta, reference);
+  if (!scaled) return undefined;
+  // "tight" (formation screens) avoids pulling neighbouring UI labels into the crops;
+  // a few pixels of padding help tesseract with stylised formation fonts.
+  const pad = style === "tight" ? { x: 4, y: 3 } : { x: 0, y: 0 };
+  const base = {
+    x: scaled.x - pad.x,
+    y: scaled.y - pad.y,
+    width: scaled.width + 2 * pad.x,
+    height: scaled.height + 2 * pad.y,
+  };
   const wideGrow = style === "tight" ? [0.03, 0.05] : [0.15, 0.3];
   const textGrow = style === "tight" ? [0.0, 0.02] : [0.03, 0.08];
   return {

@@ -116,7 +116,8 @@ describe("OCR crop boxes from configured ROIs", () => {
   it("uses tighter variants for the clan/formation style", () => {
     const arena = buildNameBoxes(REFERENCE, NAME_ROI, REFERENCE);
     const tight = buildNameBoxes(REFERENCE, NAME_ROI, REFERENCE, { style: "tight" });
-    expect(tight?.name).toEqual(arena?.name);
+    // tight style pads the configured box a few pixels for tesseract
+    expect(tight?.name).toEqual({ left: 482, top: 115, width: 298, height: 42 });
     expect((tight?.wide?.width ?? 0) < (arena?.wide?.width ?? 0)).toBe(true);
     expect((tight?.wide?.height ?? 0) < (arena?.wide?.height ?? 0)).toBe(true);
   });
