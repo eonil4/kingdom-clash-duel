@@ -245,6 +245,37 @@ describe("createVisionTarget", () => {
     expect(target.resolveCropConfig("name")).toMatchObject({ prompt: expect.any(String) });
   });
 
+  it("honours a caller-supplied name crop ROI override", async () => {
+    const file = await sampleImage();
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(jsonResponse({ output: '{"name":"Alpha"}' }))
+      .mockResolvedValueOnce(jsonResponse({ output: '{"power":1}' }));
+    vi.stubGlobal("fetch", fetchMock);
+    const target = createVisionTarget(descriptor);
+
+    await target.extractFromNamePowerCrops(file, {
+      host: "http://host",
+      model: "vision",
+      clearCacheBeforeEachCall: false,
+      nameRoi: { x: 10, y: 10, width: 180, height: 40 },
+    });
+
+    const cropSize = async (call: unknown[]) => {
+      const body = JSON.parse((call[1] as RequestInit).body as string);
+      const bytes = Buffer.from(String(body.input[1].data_url).split(",")[1], "base64");
+      const meta = await sharp(bytes).metadata();
+      return { width: meta.width, height: meta.height };
+    };
+
+    expect(await cropSize(fetchMock.mock.calls[0])).toEqual({ width: 24, height: 6 });
+    const powerRoi = target.resolveCropConfig("power").roi;
+    expect(await cropSize(fetchMock.mock.calls[1])).toEqual({
+      width: Math.max(1, Math.round(powerRoi.width * (120 / 900))),
+      height: Math.max(1, Math.round(powerRoi.height * (240 / 1600))),
+    });
+  });
+
   it("surfaces HTTP and transport errors", async () => {
     const file = await sampleImage();
     const target = createVisionTarget(descriptor);

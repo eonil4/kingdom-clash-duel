@@ -22,12 +22,22 @@ import {
   parsePowerValue,
   runVisionExtractCli,
 } from "./vision-client.mjs";
+import sharp from "sharp";
+import { resolveRoiReference } from "../roi.mjs";
 
 const _llmConfig = loadLlmConfig();
 
 export const DEFAULT_LLM_MODEL = _llmConfig.defaultModel ?? "qwen/qwen3-vl-4b";
 
 const VISION_MODEL_HINTS = ["qwen3-vl", "gemma3", "vision", "vl"];
+
+/** Header geometry for auto-detecting the centered formation name (roiReference pixels). */
+const HEADER_Y = 57;
+const HEADER_HEIGHT = 48;
+const HEADER_SCAN_LEFT = 40;
+const HEADER_SCAN_WIDTH = 840;
+const HEADER_RUN_MERGE_GAP = 6;
+const NAME_CROP_PAD = 6;
 
 const SYSTEM_PROMPT = `You extract structured data from Kingdom Clash formation screenshots.
 Reply with JSON only — no markdown, no prose outside the JSON object.`;
@@ -46,7 +56,7 @@ Return ONLY this JSON shape:
   "nameLatin": "<transliteration>",
   "language": "<detected_language>"
 }`,
-  roi: { x: 500, y: 57, width: 400, height: 48 },
+  roi: { x: 460, y: 57, width: 400, height: 48 },
 };
 
 const DEFAULT_POWER_CROP = {
@@ -166,10 +176,94 @@ export function cropClanRoiToPngBuffer(imagePath, roi) {
 export const extractClanDataFromScreenshot = target.extractFromScreenshot;
 
 /**
+ * The formation header is centered text — "<back arrow> Player formation <name>" — so a
+ * fixed name crop clips the clan tag on long names and includes the label tail on short
+ * ones. Locate the name start from the header word runs instead.
+ *
+ * Returns ROI in `roiReference` coordinates, or undefined when the header is not recognised.
  * @param {string} imagePath
- * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
+ * @returns {Promise<{ x: number, y: number, width: number, height: number } | undefined>}
  */
-export const extractClanDataFromNamePowerCrops = target.extractFromNamePowerCrops;
+export async function detectClanNameRoi(imagePath) {
+  const meta = await sharp(imagePath).metadata();
+  const width = meta.width;
+  const height = meta.height;
+  if (!width || !height) return undefined;
+
+  const reference = resolveRoiReference(_llmConfig) ?? { width, height };
+  const sx = width / reference.width;
+  const sy = height / reference.height;
+  const left = Math.min(Math.round(HEADER_SCAN_LEFT * sx), width - 1);
+  const top = Math.min(Math.round(HEADER_Y * sy), height - 1);
+  const scanWidth = Math.max(1, Math.min(Math.round(HEADER_SCAN_WIDTH * sx), width - left));
+  const scanHeight = Math.max(1, Math.min(Math.round(HEADER_HEIGHT * sy), height - top));
+
+  const { data, info } = await sharp(imagePath)
+    .extract({ left, top, width: scanWidth, height: scanHeight })
+    .greyscale()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const isText = [];
+  for (let x = 0; x < info.width; x++) {
+    let dark = 0;
+    for (let y = 0; y < info.height; y++) if (data[y * info.width + x] < 150) dark++;
+    isText.push(dark >= 1);
+  }
+
+  const runs = [];
+  let start = -1;
+  for (let x = 0; x < isText.length; x++) {
+    if (isText[x] && start < 0) start = x;
+    if (!isText[x] && start >= 0) {
+      runs.push([left + start, left + x - 1]);
+      start = -1;
+    }
+  }
+  if (start >= 0) runs.push([left + start, left + isText.length - 1]);
+
+  const merged = [];
+  for (const run of runs) {
+    const last = merged[merged.length - 1];
+    if (last && run[0] - last[1] <= HEADER_RUN_MERGE_GAP * sx) last[1] = run[1];
+    else merged.push([...run]);
+  }
+
+  const runWidth = (i) => (merged[i][1] - merged[i][0]) / sx;
+  const plausible =
+    merged.length >= 4 &&
+    merged[0][0] >= 45 * sx &&
+    merged[0][1] <= 135 * sx &&
+    runWidth(1) > 85 &&
+    runWidth(1) < 135 &&
+    runWidth(2) > 145 &&
+    runWidth(2) < 205;
+  if (!plausible) return undefined;
+
+  const x = Math.round((merged[3][0] - NAME_CROP_PAD * sx) / sx);
+  return {
+    x: Math.max(0, x),
+    y: HEADER_Y,
+    width: Math.max(1, reference.width - x - NAME_CROP_PAD),
+    height: HEADER_HEIGHT,
+  };
+}
+
+/**
+ * @param {string} imagePath
+ * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean, nameRoi?: { x: number, y: number, width: number, height: number } }} [options]
+ */
+export async function extractClanDataFromNamePowerCrops(imagePath, options = {}) {
+  let nameRoi = options.nameRoi;
+  if (!nameRoi) {
+    try {
+      nameRoi = await detectClanNameRoi(imagePath);
+    } catch {
+      nameRoi = undefined;
+    }
+  }
+  return target.extractFromNamePowerCrops(imagePath, nameRoi ? { ...options, nameRoi } : options);
+}
 
 if (isInvokedDirectly(import.meta.url)) {
   runVisionExtractCli({

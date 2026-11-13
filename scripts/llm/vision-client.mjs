@@ -367,7 +367,7 @@ export function createVisionTarget(descriptor) {
 
   /**
    * @param {string} imagePath
-   * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean }} [options]
+   * @param {{ host?: string, model?: string, timeoutMs?: number, clearCacheBeforeEachCall?: boolean, nameRoi?: { x: number, y: number, width: number, height: number } }} [options]
    */
   async function extractFromNamePowerCrops(imagePath, options = {}) {
     const host = resolveHost(options.host);
@@ -378,7 +378,7 @@ export function createVisionTarget(descriptor) {
 
     const nameCfg = resolveCropConfig(userPrompt, descriptor.targetKey, "name", descriptor.nameFallback);
     const powerCfg = resolveCropConfig(userPrompt, descriptor.targetKey, "power", descriptor.powerFallback);
-    const nameBytes = await cropRoiToPngBuffer(imagePath, nameCfg.roi);
+    const nameBytes = await cropRoiToPngBuffer(imagePath, options.nameRoi ?? nameCfg.roi);
     const powerBytes = await cropRoiToPngBuffer(imagePath, powerCfg.roi);
 
     const nameContent = await chatVisionWithImages(
