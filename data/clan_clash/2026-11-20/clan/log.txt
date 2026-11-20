@@ -1,0 +1,786 @@
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.46.54.662.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 10355553,
+  "name": "HuN|Morfi",
+  "language": "English",
+  "nameLatin": "HuN|Morfi"
+}
+[Time] LLM extraction: 45707ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 45707ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.47.31.812.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 10223739,
+  "name": "HuN|Pufi",
+  "language": "English",
+  "nameLatin": "HuN|Pufi"
+}
+[Time] LLM extraction: 44779ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44779ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.47.38.245.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 8655778,
+  "name": "HuN|Norbee",
+  "language": "English",
+  "nameLatin": "HuN|Norbee"
+}
+[Time] LLM extraction: 44620ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44620ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.47.48.111.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 8533456,
+  "name": "HuN|Csati",
+  "language": "Czech",
+  "nameLatin": "Hun|Csati"
+}
+[Time] LLM extraction: 46972ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 46972ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.47.56.228.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 8319544,
+  "name": "HuN| ÐreÐÐ",
+  "language": "Cyrillic",
+  "nameLatin": "HuN| DreDD"
+}
+[Time] LLM extraction: 57203ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 57203ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.48.15.028.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 8154726,
+  "name": "HuN | Phoenix",
+  "language": "English",
+  "nameLatin": "HuN | Phoenix"
+}
+[Time] LLM extraction: 44869ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44869ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.48.32.278.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7850304,
+  "name": "HUN|Elcfe",
+  "language": "Cyrillic",
+  "nameLatin": "HUN|Elcfe"
+}
+[Time] LLM extraction: 46565ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 46565ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.48.38.995.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7732317,
+  "name": "HuN|Lehel",
+  "language": "English",
+  "nameLatin": "HuN|Lehel"
+}
+[Time] LLM extraction: 45291ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 45291ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.48.44.645.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7682879,
+  "name": "HuN | G-Héro™",
+  "language": "French",
+  "nameLatin": "HuN | G-Héro™"
+}
+[Time] LLM extraction: 44067ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44067ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.49.00.178.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7622979,
+  "name": "HuN | Treff2",
+  "language": "English",
+  "nameLatin": "HuN | Treff2"
+}
+[Time] LLM extraction: 46851ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 46851ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.49.07.878.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7616206,
+  "name": "HuN|Szabi",
+  "language": "Hungarian",
+  "nameLatin": "Hun|Szabi"
+}
+[Time] LLM extraction: 45883ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 45883ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.49.29.095.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7526879,
+  "name": "HUN|B®B;€",
+  "language": "Cyrillic",
+  "nameLatin": "HUN|B®B;€"
+}
+[Time] LLM extraction: 46457ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 46457ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.19_23.49.59.228.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7507167,
+  "name": "HuN|Konrád gróf",
+  "language": "Hungarian",
+  "nameLatin": "HuN|Konrad grof"
+}
+[Time] LLM extraction: 44521ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44521ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.15.729.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7287058,
+  "name": "HuN|eonil",
+  "language": "English",
+  "nameLatin": "Huneonil"
+}
+[Time] LLM extraction: 43435ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 43435ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.25.045.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7072481,
+  "name": "HuN | Hado",
+  "language": "English",
+  "nameLatin": "HuN | Hado"
+}
+[Time] LLM extraction: 44334ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44334ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.32.578.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 7009918,
+  "name": "HuN|zSepultura",
+  "language": "English",
+  "nameLatin": "HunzSepultura"
+}
+[Time] LLM extraction: 44984ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 44984ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.43.278.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6656095,
+  "name": "HuN|LordEdmund",
+  "language": "English",
+  "nameLatin": "HuN|LordEdmund"
+}
+[Time] LLM extraction: 42965ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 42965ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.50.745.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6509883,
+  "name": "HuN | საქართველო",
+  "language": "Georgian",
+  "nameLatin": "HuN | Sakartvelo"
+}
+[Time] LLM extraction: 43974ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 43974ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.02.56.428.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6359160,
+  "name": "HuN|Tamásss",
+  "language": "Hungarian",
+  "nameLatin": "Hun|Tamasss"
+}
+[Time] LLM extraction: 40784ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 40784ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.02.645.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6357367,
+  "name": "HuN|Tillusq01",
+  "language": "English",
+  "nameLatin": "HuN|Tillusq01"
+}
+[Time] LLM extraction: 38066ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 38066ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.10.011.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6356534,
+  "name": "HuN|Hercules",
+  "language": "English",
+  "nameLatin": "HuN|Hercules"
+}
+[Time] LLM extraction: 32532ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 32532ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.16.845.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6290912,
+  "name": "HuN|Mitit",
+  "language": "English",
+  "nameLatin": "HuN|Mitit"
+}
+[Time] LLM extraction: 30289ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 30289ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.29.295.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6250112,
+  "name": "HuN|Hunter ®",
+  "language": "English",
+  "nameLatin": "HuN|Hunter"
+}
+[Time] LLM extraction: 28804ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28804ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.36.361.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 6086228,
+  "name": "HuN | Baxi",
+  "language": "English",
+  "nameLatin": "HuN | Baxi"
+}
+[Time] LLM extraction: 28862ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28862ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.42.061.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5986041,
+  "name": "HuN| Bullpapa",
+  "language": "English",
+  "nameLatin": "HuN| Bullpapa"
+}
+[Time] LLM extraction: 27831ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 27831ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.52.378.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5862709,
+  "name": "UNKNOWN",
+  "language": "unknown"
+}
+[Time] LLM extraction: 25656ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 25656ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.03.57.795.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5802022,
+  "name": "HuN| NIX",
+  "language": "English",
+  "nameLatin": "HuN| NIX"
+}
+[Time] LLM extraction: 27557ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 27557ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.03.245.png
+
+	[Cache] Failed to clear C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs: ENOTEMPTY: directory not empty, rmdir 'C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs'
+{
+  "power": 5651177,
+  "name": "Batman HuN2",
+  "language": "English",
+  "nameLatin": "Batman HuN2"
+}
+[Time] LLM extraction: 27577ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 27577ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.17.561.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5628032,
+  "name": "HuN|Tivadar",
+  "language": "English",
+  "nameLatin": "HuN|Tivadar"
+}
+[Time] LLM extraction: 28439ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28439ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.25.130.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5566883,
+  "name": "HuN|Justme#34",
+  "language": "English",
+  "nameLatin": "HuN|Justme#34"
+}
+[Time] LLM extraction: 29032ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29032ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.34.461.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5441878,
+  "name": "HuN | Nachmalem",
+  "language": "German",
+  "nameLatin": "HuN | Nachmalem"
+}
+[Time] LLM extraction: 29188ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29188ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.39.145.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5407479,
+  "name": "HuN|Farkas",
+  "language": "English",
+  "nameLatin": "HuN|Farkas"
+}
+[Time] LLM extraction: 29597ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29597ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.44.328.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5378631,
+  "name": "HuN|PlayerX",
+  "language": "English",
+  "nameLatin": "HuN|PlayerX"
+}
+[Time] LLM extraction: 28950ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28950ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.50.061.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5305191,
+  "name": "HuN|Travis",
+  "language": "English",
+  "nameLatin": "HuN|Travis"
+}
+[Time] LLM extraction: 28531ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28531ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.04.55.761.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 5256352,
+  "name": "HuN| Attila",
+  "language": "English",
+  "nameLatin": "HuN| Attila"
+}
+[Time] LLM extraction: 28898ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28898ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.23.661.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4815408,
+  "name": "HuN | Vikii",
+  "language": "English",
+  "nameLatin": "HuN | Vikii"
+}
+[Time] LLM extraction: 30097ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 30097ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.29.178.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4517342,
+  "name": "HuN|NapSugaR",
+  "language": "English",
+  "nameLatin": "HunNapsugaR"
+}
+[Time] LLM extraction: 30202ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 30202ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.34.161.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4437852,
+  "name": "HuN|〇尺Y",
+  "language": "Chinese",
+  "nameLatin": "HuN|〇尺Y"
+}
+[Time] LLM extraction: 29699ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29699ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.39.561.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4426203,
+  "name": "HuN|nudli",
+  "language": "English",
+  "nameLatin": "Hun|nudli"
+}
+[Time] LLM extraction: 29095ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29095ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.45.178.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4149882,
+  "name": "HuN|Kensei",
+  "language": "English",
+  "nameLatin": "HuN|Kensei"
+}
+[Time] LLM extraction: 31718ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 31718ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.49.961.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 4110424,
+  "name": "HuN | Sven",
+  "language": "English",
+  "nameLatin": "HuN | Sven"
+}
+[Time] LLM extraction: 32219ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 32219ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.55.228.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 3762115,
+  "name": "HuN|Peet04",
+  "language": "English",
+  "nameLatin": "HuN|Peet04"
+}
+[Time] LLM extraction: 31329ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 31329ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.05.59.811.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 3286660,
+  "name": "HuN|AxeLock",
+  "language": "English",
+  "nameLatin": "HuN|AxeLock"
+}
+[Time] LLM extraction: 29422ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29422ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.05.478.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 3152438,
+  "name": "HuN|Godd",
+  "language": "English",
+  "nameLatin": "HuN|Godd"
+}
+[Time] LLM extraction: 28880ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28880ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.09.878.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 2925060,
+  "name": "HuN|Tomi7",
+  "language": "English",
+  "nameLatin": "Hun|Tomi7"
+}
+[Time] LLM extraction: 29037ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29037ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.14.828.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 2912328,
+  "name": "HUN| Norbert",
+  "language": "English",
+  "nameLatin": "HUN| Norbert"
+}
+[Time] LLM extraction: 28709ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28709ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.20.495.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 2771592,
+  "name": "HuN|C◎Rgu$",
+  "language": "Chinese",
+  "nameLatin": "Hun|C◎Rgu$"
+}
+[Time] LLM extraction: 29973ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 29973ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.26.628.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 1814831,
+  "name": "HuN | TOLDI",
+  "language": "English",
+  "nameLatin": "HuN | TOLDI"
+}
+[Time] LLM extraction: 28945ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28945ms)
+Provider: LM Studio
+Model: qwen/qwen3-vl-8b
+Host: http://127.0.0.1:1234
+Clear cache before call: true
+Image: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\Screenshot_2026.11.20_00.06.33.345.png
+
+	[Cache] Cleared before LLM call: 1 path(s)
+	[Cache]   - C:\Users\ZsoltTakacs\.lmstudio\.internal\api-prediction-history\packs
+{
+  "power": 169161,
+  "name": "Lõlõ",
+  "language": "Estonian",
+  "nameLatin": "Lõlõ"
+}
+[Time] LLM extraction: 28371ms
+[Data] wrote C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\data.json (processing 28371ms)
+Successfully generated: C:\DEV\workspace\kingdom-clash-duel\data\clan_clash\2026-11-20\clan\index.html
+Repo path: data/clan_clash/2026-11-20/clan
+Extensions: .jpg, .png
+Total images in the table: 49
